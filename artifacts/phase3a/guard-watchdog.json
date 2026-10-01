@@ -1,0 +1,7 @@
+{
+  "source": "LIVE WindowsProbe / independent Guard thread",
+  "reason": "watchdog_timeout",
+  "status": "timed_out",
+  "elapsed_ms": 1032,
+  "no_executor_input": true
+}

@@ -1,0 +1,100 @@
+{
+  "source": "NEW SERVER / REAL GAME LOG / NOT CURRENT CHAT HOST",
+  "tools": [
+    "get_summary",
+    "get_politics",
+    "get_industry",
+    "get_research",
+    "get_focus",
+    "get_changes",
+    "get_diagnostics"
+  ],
+  "hoi4://state/current": {
+    "status": "stale",
+    "received_at": "2026-10-01T06:28:45.010379+00:00",
+    "game_date": " 24:00, 21 1月, 1936",
+    "latest_seq": 706660,
+    "state": {
+      "protocol_version": 2,
+      "seq": 706660,
+      "game_date": " 24:00, 21 1月, 1936",
+      "country": "GER",
+      "politics": {
+        "political_power": 27.804,
+        "stability": 0.81,
+        "war_support": 0.35
+      },
+      "manpower": {
+        "available": 1332532,
+        "source_thousands": 1332.532
+      },
+      "industry": {
+        "civilian_factories": 35,
+        "military_factories": 28,
+        "dockyards": 10
+      },
+      "origin": "daily",
+      "research": {
+        "slot_count": 4,
+        "tracked_technologies": [
+          {
+            "tech_id": "basic_machine_tools",
+            "researching": true,
+            "researched": false
+          },
+          {
+            "tech_id": "construction1",
+            "researching": true,
+            "researched": false
+          },
+          {
+            "tech_id": "electronic_mechanical_engineering",
+            "researching": true,
+            "researched": false
+          }
+        ]
+      },
+      "focus": {
+        "tracked_id": "GER_remilitarize_the_rhineland",
+        "completed": false,
+        "progress_lower_bound": 0.6,
+        "progress_upper_bound": 0.7
+      }
+    },
+    "parser_errors": [],
+    "session_id": "f4868dc9-d613-442f-b484-6e9b9138f1e4",
+    "revision": 0,
+    "freshness_basis": "log_mtime_upper_bound",
+    "log_read_error": null
+  },
+  "hoi4://telemetry/capabilities": {
+    "read_only": true,
+    "country": "GER",
+    "protocol_version": 2,
+    "accepted_protocol_versions": [
+      1,
+      2
+    ],
+    "available": [
+      "politics",
+      "manpower",
+      "factory_totals",
+      "research_slots",
+      "tracked_technology_predicates",
+      "tracked_focus_progress_interval"
+    ],
+    "tracked_technologies": [
+      "basic_machine_tools",
+      "construction1",
+      "electronic_mechanical_engineering"
+    ],
+    "tracked_focus": "GER_remilitarize_the_rhineland",
+    "extended_fields_live_verified": true,
+    "unknown_fields": {
+      "active_research": "Only three tracked technologies; slot-to-tech and remaining time are UNKNOWN.",
+      "current_focus": "Current focus ID is UNKNOWN; tracked focus progress is a predicate-derived interval.",
+      "production_lines": "Per-line equipment, efficiency and progress are not verified."
+    },
+    "notifications": "MCP 2026 subscriptions/listen; older clients can poll get_changes"
+  }
+}

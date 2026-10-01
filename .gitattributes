@@ -1,0 +1,4 @@
+# Preserve captured telemetry and action evidence bytes on Windows.
+/artifacts/** -text
+/phase2b-* -text
+/*.log -text

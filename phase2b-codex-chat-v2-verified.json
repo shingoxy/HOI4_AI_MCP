@@ -1,0 +1,227 @@
+{
+  "source": "ACTUAL CURRENT CODEX CHAT MCP CALLS AFTER HOST RESTART",
+  "verified_at": "2026-10-01 06:40:58 UTC",
+  "visible_tools": [
+    "mcp__hoi4_telemetry__get_changes",
+    "mcp__hoi4_telemetry__get_diagnostics",
+    "mcp__hoi4_telemetry__get_focus",
+    "mcp__hoi4_telemetry__get_industry",
+    "mcp__hoi4_telemetry__get_politics",
+    "mcp__hoi4_telemetry__get_research",
+    "mcp__hoi4_telemetry__get_summary"
+  ],
+  "results": {
+    "get_research": {
+      "isError": false,
+      "structuredContent": {
+        "status": "stale",
+        "received_at": "2026-10-01T06:28:45.010379+00:00",
+        "game_date": " 24:00, 21 1月, 1936",
+        "latest_seq": 706660,
+        "parser_errors": [],
+        "session_id": "3591c03c-7458-4828-a531-d1afa80aaf3c",
+        "revision": 0,
+        "freshness_basis": "log_mtime_upper_bound",
+        "log_read_error": null,
+        "country": "GER",
+        "research": {
+          "slot_count": 4,
+          "tracked_technologies": [
+            {
+              "tech_id": "basic_machine_tools",
+              "researching": true,
+              "researched": false
+            },
+            {
+              "tech_id": "construction1",
+              "researching": true,
+              "researched": false
+            },
+            {
+              "tech_id": "electronic_mechanical_engineering",
+              "researching": true,
+              "researched": false
+            }
+          ]
+        },
+        "scope": "slot_count_and_three_tracked_technologies",
+        "slot_assignment": {
+          "status": "UNKNOWN",
+          "reason": "Only three tracked technologies; slot-to-tech and remaining time are UNKNOWN."
+        }
+      }
+    },
+    "get_focus": {
+      "isError": false,
+      "structuredContent": {
+        "status": "stale",
+        "received_at": "2026-10-01T06:28:45.010379+00:00",
+        "game_date": " 24:00, 21 1月, 1936",
+        "latest_seq": 706660,
+        "parser_errors": [],
+        "session_id": "3591c03c-7458-4828-a531-d1afa80aaf3c",
+        "revision": 0,
+        "freshness_basis": "log_mtime_upper_bound",
+        "log_read_error": null,
+        "country": "GER",
+        "focus": {
+          "tracked_id": "GER_remilitarize_the_rhineland",
+          "completed": false,
+          "progress_lower_bound": 0.6,
+          "progress_upper_bound": 0.7
+        },
+        "scope": "tracked_focus_only; progress_interval_in_tenths",
+        "current_focus": {
+          "status": "UNKNOWN",
+          "reason": "Current focus ID is UNKNOWN; tracked focus progress is a predicate-derived interval."
+        }
+      }
+    },
+    "get_diagnostics": {
+      "isError": false,
+      "structuredContent": {
+        "status": "stale",
+        "received_at": "2026-10-01T06:28:45.010379+00:00",
+        "game_date": " 24:00, 21 1月, 1936",
+        "latest_seq": 706660,
+        "parser_errors": [],
+        "session_id": "3591c03c-7458-4828-a531-d1afa80aaf3c",
+        "revision": 0,
+        "freshness_basis": "log_mtime_upper_bound",
+        "log_read_error": null,
+        "log_path": "D:\\Documents\\Paradox Interactive\\Hearts of Iron IV\\logs\\game.log",
+        "log_generation": 1,
+        "unknown_fields": {
+          "active_research": {
+            "status": "UNKNOWN",
+            "reason": "Only three tracked technologies; slot-to-tech and remaining time are UNKNOWN."
+          },
+          "current_focus": {
+            "status": "UNKNOWN",
+            "reason": "Current focus ID is UNKNOWN; tracked focus progress is a predicate-derived interval."
+          },
+          "production_lines": {
+            "status": "UNKNOWN",
+            "reason": "Per-line equipment, efficiency and progress are not verified."
+          }
+        }
+      }
+    },
+    "get_summary": {
+      "isError": false,
+      "structuredContent": {
+        "status": "stale",
+        "received_at": "2026-10-01T06:28:45.010379+00:00",
+        "game_date": " 24:00, 21 1月, 1936",
+        "latest_seq": 706660,
+        "state": {
+          "protocol_version": 2,
+          "seq": 706660,
+          "game_date": " 24:00, 21 1月, 1936",
+          "country": "GER",
+          "politics": {
+            "political_power": 27.804,
+            "stability": 0.81,
+            "war_support": 0.35
+          },
+          "manpower": {
+            "available": 1332532,
+            "source_thousands": 1332.532
+          },
+          "industry": {
+            "civilian_factories": 35,
+            "military_factories": 28,
+            "dockyards": 10
+          },
+          "origin": "daily",
+          "research": {
+            "slot_count": 4,
+            "tracked_technologies": [
+              {
+                "tech_id": "basic_machine_tools",
+                "researching": true,
+                "researched": false
+              },
+              {
+                "tech_id": "construction1",
+                "researching": true,
+                "researched": false
+              },
+              {
+                "tech_id": "electronic_mechanical_engineering",
+                "researching": true,
+                "researched": false
+              }
+            ]
+          },
+          "focus": {
+            "tracked_id": "GER_remilitarize_the_rhineland",
+            "completed": false,
+            "progress_lower_bound": 0.6,
+            "progress_upper_bound": 0.7
+          }
+        },
+        "parser_errors": [],
+        "session_id": "3591c03c-7458-4828-a531-d1afa80aaf3c",
+        "revision": 0,
+        "freshness_basis": "log_mtime_upper_bound",
+        "log_read_error": null
+      }
+    },
+    "get_politics": {
+      "isError": false,
+      "structuredContent": {
+        "status": "stale",
+        "received_at": "2026-10-01T06:28:45.010379+00:00",
+        "game_date": " 24:00, 21 1月, 1936",
+        "latest_seq": 706660,
+        "parser_errors": [],
+        "session_id": "3591c03c-7458-4828-a531-d1afa80aaf3c",
+        "revision": 0,
+        "freshness_basis": "log_mtime_upper_bound",
+        "log_read_error": null,
+        "country": "GER",
+        "politics": {
+          "political_power": 27.804,
+          "stability": 0.81,
+          "war_support": 0.35
+        }
+      }
+    },
+    "get_industry": {
+      "isError": false,
+      "structuredContent": {
+        "status": "stale",
+        "received_at": "2026-10-01T06:28:45.010379+00:00",
+        "game_date": " 24:00, 21 1月, 1936",
+        "latest_seq": 706660,
+        "parser_errors": [],
+        "session_id": "3591c03c-7458-4828-a531-d1afa80aaf3c",
+        "revision": 0,
+        "freshness_basis": "log_mtime_upper_bound",
+        "log_read_error": null,
+        "country": "GER",
+        "industry": {
+          "civilian_factories": 35,
+          "military_factories": 28,
+          "dockyards": 10
+        },
+        "scope": "factory_totals_only",
+        "production_lines": {
+          "status": "UNKNOWN",
+          "reason": "Per-line equipment, efficiency and progress are not verified."
+        }
+      }
+    },
+    "get_changes": {
+      "isError": false,
+      "structuredContent": {
+        "session_id": "3591c03c-7458-4828-a531-d1afa80aaf3c",
+        "latest_revision": 0,
+        "history_truncated": false,
+        "events": []
+      }
+    }
+  },
+  "outcome": "PASS / CURRENT CHAT HOST VERIFIED / PROTOCOL V2"
+}

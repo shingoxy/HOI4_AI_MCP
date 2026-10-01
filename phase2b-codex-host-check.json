@@ -1,0 +1,236 @@
+{
+  "source": "isolated Codex app-server; no thread/start, thread/resume or turn/start",
+  "other_mcp_servers_disabled_for_this_process": true,
+  "initialize": {
+    "id": 1,
+    "result": {
+      "userAgent": "Codex Desktop/0.151.0 (Windows 10.0.26200; x86_64) dumb (hoi4-host-verify; 1)",
+      "codexHome": "C:\\Users\\28778\\.codex",
+      "platformFamily": "windows",
+      "platformOs": "windows"
+    }
+  },
+  "mcp_inventory": {
+    "id": 2,
+    "result": {
+      "data": [
+        {
+          "name": "hoi4_telemetry",
+          "runtimeStatus": null,
+          "pluginId": null,
+          "serverInfo": {
+            "name": "HOI4 Read-only Telemetry",
+            "title": null,
+            "version": "0.2.0",
+            "description": null,
+            "icons": null,
+            "websiteUrl": null
+          },
+          "tools": {
+            "get_industry": {
+              "name": "get_industry",
+              "description": "Read factory totals only; per-line production remains UNKNOWN.",
+              "inputSchema": {
+                "properties": {},
+                "type": "object",
+                "title": "get_industryArguments"
+              },
+              "outputSchema": {
+                "type": "object",
+                "additionalProperties": true,
+                "title": "get_industryDictOutput"
+              },
+              "annotations": {
+                "readOnlyHint": true,
+                "destructiveHint": false,
+                "idempotentHint": true,
+                "openWorldHint": false
+              }
+            },
+            "get_changes": {
+              "name": "get_changes",
+              "description": "Read up to 100 retained changes after a revision from this process. Does not consume them.",
+              "inputSchema": {
+                "properties": {
+                  "after_revision": {
+                    "default": 0,
+                    "minimum": 0,
+                    "title": "After Revision",
+                    "type": "integer"
+                  }
+                },
+                "type": "object",
+                "title": "get_changesArguments"
+              },
+              "outputSchema": {
+                "type": "object",
+                "additionalProperties": true,
+                "title": "get_changesDictOutput"
+              },
+              "annotations": {
+                "readOnlyHint": true,
+                "destructiveHint": false,
+                "idempotentHint": true,
+                "openWorldHint": false
+              }
+            },
+            "get_diagnostics": {
+              "name": "get_diagnostics",
+              "description": "Read source errors, parser errors and explicitly unsupported telemetry fields.",
+              "inputSchema": {
+                "properties": {},
+                "type": "object",
+                "title": "get_diagnosticsArguments"
+              },
+              "outputSchema": {
+                "type": "object",
+                "additionalProperties": true,
+                "title": "get_diagnosticsDictOutput"
+              },
+              "annotations": {
+                "readOnlyHint": true,
+                "destructiveHint": false,
+                "idempotentHint": true,
+                "openWorldHint": false
+              }
+            },
+            "get_summary": {
+              "name": "get_summary",
+              "description": "Return the latest complete GER state with freshness and parser errors.",
+              "inputSchema": {
+                "properties": {},
+                "type": "object",
+                "title": "get_summaryArguments"
+              },
+              "outputSchema": {
+                "type": "object",
+                "additionalProperties": true,
+                "title": "get_summaryDictOutput"
+              },
+              "annotations": {
+                "readOnlyHint": true,
+                "destructiveHint": false,
+                "idempotentHint": true,
+                "openWorldHint": false
+              }
+            },
+            "get_politics": {
+              "name": "get_politics",
+              "description": "Read political power, stability and war support, including freshness.",
+              "inputSchema": {
+                "properties": {},
+                "type": "object",
+                "title": "get_politicsArguments"
+              },
+              "outputSchema": {
+                "type": "object",
+                "additionalProperties": true,
+                "title": "get_politicsDictOutput"
+              },
+              "annotations": {
+                "readOnlyHint": true,
+                "destructiveHint": false,
+                "idempotentHint": true,
+                "openWorldHint": false
+              }
+            }
+          },
+          "resources": [
+            {
+              "description": "Current state; subscribed clients refetch on resource update notifications.",
+              "mimeType": "application/json",
+              "name": "current_state",
+              "uri": "hoi4://state/current"
+            },
+            {
+              "description": "",
+              "mimeType": "application/json",
+              "name": "capabilities",
+              "uri": "hoi4://telemetry/capabilities"
+            }
+          ],
+          "resourceTemplates": [],
+          "authStatus": "unsupported"
+        },
+        {
+          "name": "jlceda",
+          "runtimeStatus": null,
+          "pluginId": null,
+          "serverInfo": null,
+          "tools": {},
+          "resources": [],
+          "resourceTemplates": [],
+          "authStatus": "unsupported"
+        },
+        {
+          "name": "matlab",
+          "runtimeStatus": null,
+          "pluginId": null,
+          "serverInfo": null,
+          "tools": {},
+          "resources": [],
+          "resourceTemplates": [],
+          "authStatus": "unsupported"
+        },
+        {
+          "name": "node_repl",
+          "runtimeStatus": null,
+          "pluginId": null,
+          "serverInfo": null,
+          "tools": {},
+          "resources": [],
+          "resourceTemplates": [],
+          "authStatus": "unsupported"
+        },
+        {
+          "name": "obsidian",
+          "runtimeStatus": null,
+          "pluginId": null,
+          "serverInfo": null,
+          "tools": {},
+          "resources": [],
+          "resourceTemplates": [],
+          "authStatus": "unsupported"
+        },
+        {
+          "name": "openaiDeveloperDocs",
+          "runtimeStatus": null,
+          "pluginId": null,
+          "serverInfo": null,
+          "tools": {},
+          "resources": [],
+          "resourceTemplates": [],
+          "authStatus": "unsupported"
+        }
+      ],
+      "nextCursor": null
+    }
+  },
+  "current_resource": {
+    "id": 3,
+    "result": {
+      "contents": [
+        {
+          "uri": "hoi4://state/current",
+          "mimeType": "application/json",
+          "text": "{\"status\": \"stale\", \"received_at\": \"2026-09-30T14:04:40.032897+00:00\", \"game_date\": \" 24:00, 12 1月, 1936\", \"latest_seq\": 706651, \"state\": {\"protocol_version\": 1, \"seq\": 706651, \"game_date\": \" 24:00, 12 1月, 1936\", \"country\": \"GER\", \"politics\": {\"political_power\": 15.888, \"stability\": 0.81, \"war_support\": 0.35}, \"manpower\": {\"available\": 1294088, \"source_thousands\": 1294.088}, \"industry\": {\"civilian_factories\": 36, \"military_factories\": 28, \"dockyards\": 10}, \"origin\": \"daily\"}, \"parser_errors\": [], \"session_id\": \"5f270e4d-2b22-477f-ae6e-9f3bb1a99ac3\", \"revision\": 0, \"freshness_basis\": \"log_mtime_upper_bound\", \"log_read_error\": null}"
+        }
+      ],
+      "originCallId": null
+    }
+  },
+  "capabilities_resource": {
+    "id": 4,
+    "result": {
+      "contents": [
+        {
+          "uri": "hoi4://telemetry/capabilities",
+          "mimeType": "application/json",
+          "text": "{\"read_only\": true, \"country\": \"GER\", \"protocol_version\": 1, \"available\": [\"politics\", \"manpower\", \"factory_totals\"], \"unknown_fields\": {\"research_slots\": \"No research-slot telemetry in protocol v1.\", \"active_research\": \"Slot-to-tech and remaining time are not verified.\", \"current_focus\": \"Current focus ID and progress are not verified.\", \"production_lines\": \"Per-line equipment, efficiency and progress are not verified.\"}, \"notifications\": \"MCP 2026 subscriptions/listen; older clients can poll get_changes\"}"
+        }
+      ],
+      "originCallId": null
+    }
+  },
+  "global_config_unchanged_in_this_check": true
+}

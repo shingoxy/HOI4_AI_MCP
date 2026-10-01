@@ -1,0 +1,4 @@
+[mcp_servers.hoi4_telemetry]
+command = 'D:\Projects\HOI4 AI Operator\.venv\Scripts\python.exe'
+args = ['D:\Projects\HOI4 AI Operator\scripts\run_mcp.py']
+enabled_tools = ['get_summary', 'get_politics', 'get_industry', 'get_research', 'get_focus', 'get_changes', 'get_diagnostics']

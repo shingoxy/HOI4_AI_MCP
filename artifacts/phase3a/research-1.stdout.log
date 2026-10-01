@@ -1,0 +1,1 @@
+{"accepted": false, "action_id": "e6103173-7253-4748-b564-ece4323dc7d6", "status": "timed_out", "action": "select_research", "target": "basic_machine_tools", "retry_count": 0, "telemetry_confirmation": {}, "ui_confirmation": false, "reason": "worker_timeout", "recovery": "escape_sent", "duration_ms": 11359}

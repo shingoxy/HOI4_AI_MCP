@@ -1,0 +1,107 @@
+[13:51:11][no_game_date][dlc.cpp:218]: Invalid supported_version in  file: mod/ugc_2243912940.mod line: 10
+[13:51:11][no_game_date][dlc.cpp:218]: Invalid supported_version in  file: mod/ugc_2574617273.mod line: 14
+[13:51:11][no_game_date][dlc.cpp:218]: Invalid supported_version in  file: mod/ugc_2977114459.mod line: 8
+[13:51:13][no_game_date][pdx_localize.cpp:1091]: Invalid key name at line 95 and column 3 in localisation/simp_chinese/yuanbanhanhua_l_simp_chinese.yml
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400001 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400002 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400003 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400004 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400005 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400006 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400007 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400008 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400009 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400010 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400011 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400012 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400013 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400014 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400015 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400016 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400017 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400018 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400019 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400020 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400021 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400022 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400023 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400024 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400025 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400026 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400027 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400028 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400029 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400030 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400031 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400032 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400033 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400034 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400035 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400036 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400037 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400038 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400073 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400039 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400040 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400041 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400042 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400043 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400044 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400045 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400046 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400047 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400048 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400049 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400050 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400051 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400052 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400053 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400054 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400055 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400056 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400057 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400058 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400059 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400060 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400061 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400062 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400063 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400064 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400065 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400066 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400067 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400068 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400069 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400070 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400071 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40400072 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40500001 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40500002 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40500003 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40500004 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40500005 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40500006 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40500007 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40500008 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40500009 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40500024 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40500022 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40500023 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40500010 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40500011 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40500012 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40500013 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40500014 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40500015 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40500016 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40500017 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40500018 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40500019 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40500020 50. Already exists in game. This might crash the game.
+[13:51:37][no_game_date][id.cpp:104]: Failed to create id 40500021 50. Already exists in game. This might crash the game.
+[13:51:42][1936.01.01.12][effect.cpp:445]: Invalid effect 'IRQ_kamil_shabib' in history/countries/IRQ - Iraq.txt line : 116
+[13:51:42][1936.01.01.12][effect.cpp:358]: Error: "Unknown effect-type: IRQ_kamil_shabib, near line: 116" in file: "history/countries/IRQ - Iraq.txt" near line: 127
+[13:51:42][1936.01.01.12][effectimplementation.cpp:5544]: history/countries/KAZ - Kazakhstan.txt:125: recruit_character: Unknown character 
+[13:51:42][1936.01.01.12][effectimplementation.cpp:5544]: history/countries/TRA - Transylvania.txt:103: recruit_character: Unknown character 
+[14:10:48][1936.04.03.15][gameidler.cpp:1576]: AI tried to post an invalid command: order_assign_command
+[14:10:48][1936.04.03.16][gameidler.cpp:1576]: AI tried to post an invalid command: order_assign_command

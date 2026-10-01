@@ -1,0 +1,292 @@
+{
+  "source": "LIVE HOI4 / official SDK stdio / semantic Executor / Computer Use",
+  "actions": [
+    {
+      "test": "A",
+      "result": {
+        "accepted": true,
+        "action_id": "216cf5b5-1df2-4aa1-9cfc-db4975fdddaf",
+        "status": "uncertain",
+        "retry_count": 0,
+        "telemetry_confirmation": {},
+        "ui_confirmation": {},
+        "timings_ms": {
+          "snapshot": 16,
+          "navigation": 1140,
+          "adjustment": 0,
+          "confirmation": 0
+        },
+        "line_id": "prod-3f3ed8500b65-0001-0001",
+        "snapshot_version": 1,
+        "before": {
+          "equipment": "Kar 98k式步枪",
+          "equipment_game_id": null,
+          "position": 0,
+          "factories": 10,
+          "identity_source": "gui",
+          "stable_game_identity": false,
+          "visible": true,
+          "maximum_assignable_factories": 18,
+          "game_line_limit": 150,
+          "supported_factory_count_max": 15,
+          "efficiency": null,
+          "current_output": null,
+          "line_id": "prod-3f3ed8500b65-0001-0001"
+        },
+        "reason": "production_number_unreadable",
+        "recovery": "escape_sent",
+        "duration_ms": 5172
+      }
+    }
+  ],
+  "before_telemetry": {
+    "status": "fresh",
+    "received_at": "2026-10-01T11:21:50.860734+00:00",
+    "game_date": " 24:00, 2 2月, 1936",
+    "latest_seq": 706672,
+    "state": {
+      "protocol_version": 2,
+      "seq": 706672,
+      "game_date": " 24:00, 2 2月, 1936",
+      "country": "GER",
+      "politics": {
+        "political_power": 43.692,
+        "stability": 0.81,
+        "war_support": 0.35
+      },
+      "manpower": {
+        "available": 1334493,
+        "source_thousands": 1334.493
+      },
+      "industry": {
+        "civilian_factories": 36,
+        "military_factories": 28,
+        "dockyards": 10
+      },
+      "origin": "daily",
+      "research": {
+        "slot_count": 4,
+        "tracked_technologies": [
+          {
+            "tech_id": "basic_machine_tools",
+            "researching": true,
+            "researched": false
+          },
+          {
+            "tech_id": "construction1",
+            "researching": true,
+            "researched": false
+          },
+          {
+            "tech_id": "electronic_mechanical_engineering",
+            "researching": true,
+            "researched": false
+          }
+        ]
+      },
+      "focus": {
+        "tracked_id": "GER_remilitarize_the_rhineland",
+        "completed": false,
+        "progress_lower_bound": 0.9,
+        "progress_upper_bound": 1.0
+      }
+    },
+    "parser_errors": [],
+    "session_id": "729eb16b-f854-4460-a481-0a1efb8e8997",
+    "revision": 0,
+    "freshness_basis": "log_mtime_upper_bound",
+    "log_read_error": null
+  },
+  "initial_snapshot": {
+    "accepted": true,
+    "action_id": "43db68d8-7161-406c-89aa-ce360d0bc611",
+    "status": "confirmed",
+    "retry_count": 0,
+    "telemetry_confirmation": {},
+    "ui_confirmation": {},
+    "timings_ms": {
+      "snapshot": 32,
+      "navigation": 953,
+      "adjustment": 0,
+      "confirmation": 0
+    },
+    "lines": [
+      {
+        "equipment": "Kar 98k式步枪",
+        "equipment_game_id": null,
+        "position": 0,
+        "factories": 10,
+        "identity_source": "gui",
+        "stable_game_identity": false,
+        "visible": true,
+        "maximum_assignable_factories": 18,
+        "game_line_limit": 150,
+        "supported_factory_count_max": 15,
+        "efficiency": null,
+        "current_output": null,
+        "line_id": "prod-3f3ed8500b65-0001-0001"
+      },
+      {
+        "equipment": "支援装备",
+        "equipment_game_id": null,
+        "position": 1,
+        "factories": 2,
+        "identity_source": "gui",
+        "stable_game_identity": false,
+        "visible": true,
+        "maximum_assignable_factories": 10,
+        "game_line_limit": 150,
+        "supported_factory_count_max": 15,
+        "efficiency": null,
+        "current_output": null,
+        "line_id": "prod-3f3ed8500b65-0001-0002"
+      },
+      {
+        "equipment": "105毫米18型轻型野战炮",
+        "equipment_game_id": null,
+        "position": 2,
+        "factories": 1,
+        "identity_source": "gui",
+        "stable_game_identity": false,
+        "visible": true,
+        "maximum_assignable_factories": 9,
+        "game_line_limit": 150,
+        "supported_factory_count_max": 15,
+        "efficiency": null,
+        "current_output": null,
+        "line_id": "prod-3f3ed8500b65-0001-0003"
+      },
+      {
+        "equipment": "二号轻型坦克A型",
+        "equipment_game_id": null,
+        "position": 3,
+        "factories": 2,
+        "identity_source": "gui",
+        "stable_game_identity": false,
+        "visible": true,
+        "maximum_assignable_factories": 10,
+        "game_line_limit": 150,
+        "supported_factory_count_max": 15,
+        "efficiency": null,
+        "current_output": null,
+        "line_id": "prod-3f3ed8500b65-0001-0004"
+      },
+      {
+        "equipment": "欧宝 闪电",
+        "equipment_game_id": null,
+        "position": 4,
+        "factories": 2,
+        "identity_source": "gui",
+        "stable_game_identity": false,
+        "visible": true,
+        "maximum_assignable_factories": 10,
+        "game_line_limit": 150,
+        "supported_factory_count_max": 15,
+        "efficiency": null,
+        "current_output": null,
+        "line_id": "prod-3f3ed8500b65-0001-0005"
+      },
+      {
+        "equipment": "梅塞施密特 Bf-109D",
+        "equipment_game_id": null,
+        "position": 5,
+        "factories": 1,
+        "identity_source": "gui",
+        "stable_game_identity": false,
+        "visible": true,
+        "maximum_assignable_factories": 9,
+        "game_line_limit": 150,
+        "supported_factory_count_max": 15,
+        "efficiency": null,
+        "current_output": null,
+        "line_id": "prod-3f3ed8500b65-0001-0006"
+      }
+    ],
+    "assigned_military_factories": 20,
+    "available_military_factories": 8,
+    "military_factories": 28,
+    "scope": "six_complete_top_viewport_military_lines",
+    "source": "GUI",
+    "factory_count_evidence": "numeric counter AND unscaled 15-cell factory grid",
+    "snapshot_version": 1,
+    "session_id": "3f3ed8500b65",
+    "telemetry_seq": 706672,
+    "stable_game_identity": false,
+    "duration_ms": 985
+  },
+  "final_snapshot": {
+    "accepted": false,
+    "action_id": "670d7999-0aaf-417d-bf93-d4ea161397c5",
+    "status": "failed",
+    "retry_count": 0,
+    "telemetry_confirmation": {},
+    "ui_confirmation": {},
+    "timings_ms": {
+      "snapshot": 0,
+      "navigation": 797,
+      "adjustment": 0,
+      "confirmation": 0
+    },
+    "reason": "production_number_unreadable",
+    "recovery": "escape_sent",
+    "duration_ms": 1500
+  },
+  "after_telemetry": {
+    "status": "fresh",
+    "received_at": "2026-10-01T11:22:03.525814+00:00",
+    "game_date": " 24:00, 3 2月, 1936",
+    "latest_seq": 706673,
+    "state": {
+      "protocol_version": 2,
+      "seq": 706673,
+      "game_date": " 24:00, 3 2月, 1936",
+      "country": "GER",
+      "politics": {
+        "political_power": 45.016,
+        "stability": 0.81,
+        "war_support": 0.35
+      },
+      "manpower": {
+        "available": 1334493,
+        "source_thousands": 1334.493
+      },
+      "industry": {
+        "civilian_factories": 36,
+        "military_factories": 28,
+        "dockyards": 10
+      },
+      "origin": "daily",
+      "research": {
+        "slot_count": 4,
+        "tracked_technologies": [
+          {
+            "tech_id": "basic_machine_tools",
+            "researching": true,
+            "researched": false
+          },
+          {
+            "tech_id": "construction1",
+            "researching": true,
+            "researched": false
+          },
+          {
+            "tech_id": "electronic_mechanical_engineering",
+            "researching": true,
+            "researched": false
+          }
+        ]
+      },
+      "focus": {
+        "tracked_id": "GER_remilitarize_the_rhineland",
+        "completed": false,
+        "progress_lower_bound": 0.9,
+        "progress_upper_bound": 1.0
+      }
+    },
+    "parser_errors": [],
+    "session_id": "729eb16b-f854-4460-a481-0a1efb8e8997",
+    "revision": 1,
+    "freshness_basis": "frame_received_at",
+    "log_read_error": null
+  }
+}

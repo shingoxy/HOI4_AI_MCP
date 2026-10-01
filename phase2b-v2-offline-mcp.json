@@ -1,0 +1,204 @@
+{
+  "source": "SIMULATED protocol v2 frame, official MCP client over real stdio; NOT LIVE HOI4",
+  "result": {
+    "tools": [
+      "get_summary",
+      "get_politics",
+      "get_industry",
+      "get_research",
+      "get_focus",
+      "get_changes",
+      "get_diagnostics"
+    ],
+    "get_summary": {
+      "status": "fresh",
+      "received_at": "2026-10-01T05:15:52.530733+00:00",
+      "game_date": "day 706640",
+      "latest_seq": 706640,
+      "state": {
+        "protocol_version": 2,
+        "seq": 706640,
+        "game_date": "day 706640",
+        "country": "GER",
+        "politics": {
+          "political_power": 52.3,
+          "stability": 0.9,
+          "war_support": 0.5
+        },
+        "manpower": {
+          "available": 1280000,
+          "source_thousands": 1280.0
+        },
+        "industry": {
+          "civilian_factories": 30,
+          "military_factories": 28,
+          "dockyards": 10
+        },
+        "origin": "daily",
+        "research": {
+          "slot_count": 4,
+          "tracked_technologies": [
+            {
+              "tech_id": "basic_machine_tools",
+              "researching": false,
+              "researched": false
+            },
+            {
+              "tech_id": "construction1",
+              "researching": true,
+              "researched": false
+            },
+            {
+              "tech_id": "electronic_mechanical_engineering",
+              "researching": false,
+              "researched": false
+            }
+          ]
+        },
+        "focus": {
+          "tracked_id": "GER_remilitarize_the_rhineland",
+          "completed": false,
+          "progress_lower_bound": 0.2,
+          "progress_upper_bound": 0.3
+        }
+      },
+      "parser_errors": [],
+      "session_id": "0c92d7ff-a998-4ee1-a74f-11bf95dddfb2",
+      "revision": 0,
+      "freshness_basis": "log_mtime_upper_bound",
+      "log_read_error": null
+    },
+    "get_politics": {
+      "status": "fresh",
+      "received_at": "2026-10-01T05:15:52.530733+00:00",
+      "game_date": "day 706640",
+      "latest_seq": 706640,
+      "parser_errors": [],
+      "session_id": "0c92d7ff-a998-4ee1-a74f-11bf95dddfb2",
+      "revision": 0,
+      "freshness_basis": "log_mtime_upper_bound",
+      "log_read_error": null,
+      "country": "GER",
+      "politics": {
+        "political_power": 52.3,
+        "stability": 0.9,
+        "war_support": 0.5
+      }
+    },
+    "get_industry": {
+      "status": "fresh",
+      "received_at": "2026-10-01T05:15:52.530733+00:00",
+      "game_date": "day 706640",
+      "latest_seq": 706640,
+      "parser_errors": [],
+      "session_id": "0c92d7ff-a998-4ee1-a74f-11bf95dddfb2",
+      "revision": 0,
+      "freshness_basis": "log_mtime_upper_bound",
+      "log_read_error": null,
+      "country": "GER",
+      "industry": {
+        "civilian_factories": 30,
+        "military_factories": 28,
+        "dockyards": 10
+      },
+      "scope": "factory_totals_only",
+      "production_lines": {
+        "status": "UNKNOWN",
+        "reason": "Per-line equipment, efficiency and progress are not verified."
+      }
+    },
+    "get_research": {
+      "status": "fresh",
+      "received_at": "2026-10-01T05:15:52.530733+00:00",
+      "game_date": "day 706640",
+      "latest_seq": 706640,
+      "parser_errors": [],
+      "session_id": "0c92d7ff-a998-4ee1-a74f-11bf95dddfb2",
+      "revision": 0,
+      "freshness_basis": "log_mtime_upper_bound",
+      "log_read_error": null,
+      "country": "GER",
+      "research": {
+        "slot_count": 4,
+        "tracked_technologies": [
+          {
+            "tech_id": "basic_machine_tools",
+            "researching": false,
+            "researched": false
+          },
+          {
+            "tech_id": "construction1",
+            "researching": true,
+            "researched": false
+          },
+          {
+            "tech_id": "electronic_mechanical_engineering",
+            "researching": false,
+            "researched": false
+          }
+        ]
+      },
+      "scope": "slot_count_and_three_tracked_technologies",
+      "slot_assignment": {
+        "status": "UNKNOWN",
+        "reason": "Only three tracked technologies; slot-to-tech and remaining time are UNKNOWN."
+      }
+    },
+    "get_focus": {
+      "status": "fresh",
+      "received_at": "2026-10-01T05:15:52.530733+00:00",
+      "game_date": "day 706640",
+      "latest_seq": 706640,
+      "parser_errors": [],
+      "session_id": "0c92d7ff-a998-4ee1-a74f-11bf95dddfb2",
+      "revision": 0,
+      "freshness_basis": "log_mtime_upper_bound",
+      "log_read_error": null,
+      "country": "GER",
+      "focus": {
+        "tracked_id": "GER_remilitarize_the_rhineland",
+        "completed": false,
+        "progress_lower_bound": 0.2,
+        "progress_upper_bound": 0.3
+      },
+      "scope": "tracked_focus_only; progress_interval_in_tenths",
+      "current_focus": {
+        "status": "UNKNOWN",
+        "reason": "Current focus ID is UNKNOWN; tracked focus progress is a predicate-derived interval."
+      }
+    },
+    "get_changes": {
+      "session_id": "0c92d7ff-a998-4ee1-a74f-11bf95dddfb2",
+      "latest_revision": 0,
+      "history_truncated": false,
+      "events": []
+    },
+    "get_diagnostics": {
+      "status": "fresh",
+      "received_at": "2026-10-01T05:15:52.530733+00:00",
+      "game_date": "day 706640",
+      "latest_seq": 706640,
+      "parser_errors": [],
+      "session_id": "0c92d7ff-a998-4ee1-a74f-11bf95dddfb2",
+      "revision": 0,
+      "freshness_basis": "log_mtime_upper_bound",
+      "log_read_error": null,
+      "log_path": "C:\\Users\\28778\\AppData\\Local\\Temp\\hoi4-v2-offline-y0kpidt6\\simulated.log",
+      "log_generation": 1,
+      "unknown_fields": {
+        "active_research": {
+          "status": "UNKNOWN",
+          "reason": "Only three tracked technologies; slot-to-tech and remaining time are UNKNOWN."
+        },
+        "current_focus": {
+          "status": "UNKNOWN",
+          "reason": "Current focus ID is UNKNOWN; tracked focus progress is a predicate-derived interval."
+        },
+        "production_lines": {
+          "status": "UNKNOWN",
+          "reason": "Per-line equipment, efficiency and progress are not verified."
+        }
+      }
+    }
+  }
+}

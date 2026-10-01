@@ -1,0 +1,292 @@
+{
+  "stage": "Phase 3A",
+  "status": "CODE COMPLETE / OFFLINE TESTED / LIVE VERIFIED (bounded PoC)",
+  "conditions": {
+    "resolution": [
+      2560,
+      1080
+    ],
+    "ui_scale": 1.0,
+    "country": "GER",
+    "scenario": "1936",
+    "game_version": "1.19.3",
+    "language": "Chinese"
+  },
+  "metrics": {
+    "select_research": {
+      "confirmed_selections": 3,
+      "average_duration_ms": 13979.67,
+      "automatic_retry_count": 0
+    },
+    "select_focus": {
+      "confirmed_selections": 3,
+      "average_duration_ms": 8172,
+      "automatic_retry_count": 0
+    }
+  },
+  "successful_actions": [
+    {
+      "evidence": "focus-1-confirm.json",
+      "accepted": true,
+      "action_id": "a57565f9-d6f5-405a-a8d0-61f2ecf72150",
+      "status": "confirmed",
+      "action": "select_focus",
+      "target": "GER_remilitarize_the_rhineland",
+      "retry_count": 0,
+      "telemetry_confirmation": {
+        "before_seq": 706670,
+        "after_seq": 706671,
+        "focus_id": "GER_remilitarize_the_rhineland",
+        "ui_active_name_and_cancel": true,
+        "completed": false,
+        "progress_interval": [
+          0.2,
+          0.3
+        ],
+        "active_focus_id_source": "GUI name plus cancel control; telemetry ID remains UNKNOWN",
+        "new_frame": true
+      },
+      "ui_confirmation": true,
+      "duration_ms": 8922
+    },
+    {
+      "evidence": "focus-2-confirm.json",
+      "accepted": true,
+      "action_id": "539d9408-0e95-47b8-97cf-fc8b88015d5e",
+      "status": "confirmed",
+      "action": "select_focus",
+      "target": "GER_remilitarize_the_rhineland",
+      "retry_count": 0,
+      "telemetry_confirmation": {
+        "before_seq": 706676,
+        "after_seq": 706677,
+        "focus_id": "GER_remilitarize_the_rhineland",
+        "ui_active_name_and_cancel": true,
+        "completed": false,
+        "progress_interval": [
+          0.2,
+          0.3
+        ],
+        "active_focus_id_source": "GUI name plus cancel control; telemetry ID remains UNKNOWN",
+        "new_frame": true
+      },
+      "ui_confirmation": true,
+      "duration_ms": 8594
+    },
+    {
+      "evidence": "focus-3-confirm.json",
+      "accepted": true,
+      "action_id": "d832caf4-37a0-47bd-ac6c-2dcd31c0b323",
+      "status": "confirmed",
+      "action": "select_focus",
+      "target": "GER_remilitarize_the_rhineland",
+      "retry_count": 0,
+      "telemetry_confirmation": {
+        "before_seq": 706686,
+        "after_seq": 706687,
+        "focus_id": "GER_remilitarize_the_rhineland",
+        "ui_active_name_and_cancel": true,
+        "completed": false,
+        "progress_interval": [
+          0.2,
+          0.3
+        ],
+        "active_focus_id_source": "GUI name plus cancel control; telemetry ID remains UNKNOWN",
+        "new_frame": true
+      },
+      "ui_confirmation": true,
+      "duration_ms": 7000
+    },
+    {
+      "evidence": "research-1-confirm.json",
+      "accepted": true,
+      "action_id": "06825f8d-e1e4-4f4e-8166-b09dd54668bf",
+      "status": "confirmed",
+      "action": "select_research",
+      "target": "basic_machine_tools",
+      "retry_count": 0,
+      "telemetry_confirmation": {
+        "before_seq": 706650,
+        "after_seq": 706652,
+        "tech_id": "basic_machine_tools",
+        "slot": 0,
+        "ui_slot_matches": true,
+        "researching": true,
+        "researched": false,
+        "slot_assignment_source": "GUI name template; telemetry mapping remains UNKNOWN",
+        "new_frame": true
+      },
+      "ui_confirmation": true,
+      "duration_ms": 19532
+    },
+    {
+      "evidence": "research-2-confirm.json",
+      "accepted": true,
+      "action_id": "b92e76c0-38ea-41d3-9d4d-c00a076fabef",
+      "status": "confirmed",
+      "action": "select_research",
+      "target": "construction1",
+      "retry_count": 0,
+      "telemetry_confirmation": {
+        "before_seq": 706657,
+        "after_seq": 706659,
+        "tech_id": "construction1",
+        "slot": 1,
+        "ui_slot_matches": true,
+        "researching": true,
+        "researched": false,
+        "slot_assignment_source": "GUI name template; telemetry mapping remains UNKNOWN",
+        "new_frame": true
+      },
+      "ui_confirmation": true,
+      "duration_ms": 13735
+    },
+    {
+      "evidence": "research-3-confirm.json",
+      "accepted": true,
+      "action_id": "635c45d4-fd1d-4e25-aa93-41cd2f8d9459",
+      "status": "confirmed",
+      "action": "select_research",
+      "target": "electronic_mechanical_engineering",
+      "retry_count": 0,
+      "telemetry_confirmation": {
+        "before_seq": 706664,
+        "after_seq": 706665,
+        "tech_id": "electronic_mechanical_engineering",
+        "slot": 2,
+        "ui_slot_matches": true,
+        "researching": true,
+        "researched": false,
+        "slot_assignment_source": "GUI name template; telemetry mapping remains UNKNOWN",
+        "new_frame": true
+      },
+      "ui_confirmation": true,
+      "duration_ms": 8672
+    }
+  ],
+  "other_sdk_attempts": [
+    {
+      "evidence": "stale-rejected.json",
+      "accepted": false,
+      "action_id": "021d37ee-bc76-4d41-8964-0b69eb26218e",
+      "status": "rejected",
+      "action": "select_research",
+      "target": "basic_machine_tools",
+      "retry_count": 0,
+      "telemetry_confirmation": {},
+      "ui_confirmation": false,
+      "reason": "stale_telemetry",
+      "duration_ms": 0
+    },
+    {
+      "evidence": "research-1.json",
+      "accepted": false,
+      "action_id": "e6103173-7253-4748-b564-ece4323dc7d6",
+      "status": "timed_out",
+      "action": "select_research",
+      "target": "basic_machine_tools",
+      "retry_count": 0,
+      "telemetry_confirmation": {},
+      "ui_confirmation": false,
+      "reason": "worker_timeout",
+      "recovery": "escape_sent",
+      "duration_ms": 11359
+    },
+    {
+      "evidence": "research-1-retry.json",
+      "accepted": false,
+      "action_id": "a535a928-6860-4e62-8885-ac9fce99493d",
+      "status": "failed",
+      "action": "select_research",
+      "target": "basic_machine_tools",
+      "retry_count": 0,
+      "telemetry_confirmation": {},
+      "ui_confirmation": false,
+      "reason": "computer_use_error:Error: Expected PNG screenshot",
+      "recovery": "escape_sent",
+      "duration_ms": 1469
+    },
+    {
+      "evidence": "loss-of-focus.json",
+      "accepted": false,
+      "action_id": "4651069d-9db7-4c9b-9168-3208a2791da3",
+      "status": "timed_out",
+      "action": "select_research",
+      "target": "basic_machine_tools",
+      "retry_count": 0,
+      "telemetry_confirmation": {},
+      "ui_confirmation": false,
+      "reason": "worker_timeout",
+      "recovery": "skipped_safety_stop",
+      "duration_ms": 20031
+    }
+  ],
+  "manual_reissued_research_calls": 2,
+  "live_guard_checks": {
+    "guard-f12.json": {
+      "source": "LIVE WindowsProbe / independent Guard thread",
+      "reason": "emergency_stop",
+      "status": "failed",
+      "elapsed_ms": 1172,
+      "no_executor_input": true
+    },
+    "guard-focus-loss.json": {
+      "source": "LIVE WindowsProbe / independent Guard thread",
+      "reason": "loss_of_focus",
+      "status": "failed",
+      "elapsed_ms": 1281,
+      "no_executor_input": true
+    },
+    "guard-watchdog.json": {
+      "source": "LIVE WindowsProbe / independent Guard thread",
+      "reason": "watchdog_timeout",
+      "status": "timed_out",
+      "elapsed_ms": 1032,
+      "no_executor_input": true
+    }
+  },
+  "offline_tests": {
+    "passed": 79,
+    "subtests_passed": 10,
+    "syntax_check": "passed",
+    "pip_check": "passed"
+  },
+  "archived_log_diagnostics": {
+    "parser_errors": [],
+    "log_read_error": null,
+    "latest_seq": 706749
+  },
+  "mod_selection_unchanged": true,
+  "mod_selection_sha256": "5e8a8d6d07ed63f2f456eb421ca83e370d4c00343a01abc0a835d00390ea3ff6",
+  "original_manual_saves": {
+    "GER_1936_01_01_12.hoi4": {
+      "unchanged": true,
+      "sha256": "7964a9999af7877a3afd7f22b0981689d961046970688734c26b345be0fe348b"
+    },
+    "GER_1936_01_06_23.hoi4": {
+      "unchanged": true,
+      "sha256": "37cb12bc948a34d1c445e6787c6354828614dc45920b3b1acfeead34633850f9"
+    }
+  },
+  "original_autosave_backed_up": true,
+  "final_game": {
+    "gui_date": "1936-01-22 11:00",
+    "paused": true,
+    "restored_via_normal_load": "GER_1936_01_22_11.hoi4",
+    "research_gui": "original three tracked technologies in slots 0,1,2; slot 3 empty",
+    "focus_gui": "Rhineland name and cancel control present",
+    "telemetry_after_restore": "No new daily frames requested; cached later timeline must not be treated as restored state"
+  },
+  "unknown": [
+    "telemetry active focus ID",
+    "telemetry full slot assignment",
+    "other resolutions / languages / mod combinations",
+    "current-chat GUI tools registration"
+  ],
+  "cheat_or_effect_mutations": false,
+  "phase3b_started": false,
+  "successful_selection_count_checks": "All six exclude already_satisfied; research before false -> after true",
+  "final_restored_gui_identity_check": "passed using actual final screenshots and Templates/UIState",
+  "final_targeted_regression": "19 passed after capability and crop assertions",
+  "final_pump_syntax_check": "loaded successfully in Computer Use node_repl; no GUI input"
+}

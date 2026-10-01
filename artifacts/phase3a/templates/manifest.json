@@ -1,0 +1,221 @@
+{
+  "conditions": "HOI4 1.19.3 / GER / Chinese / 2560x1080 / UI scale 1.0",
+  "crops": {
+    "research_title": [
+      "research-active",
+      [
+        35,
+        89,
+        94,
+        119
+      ]
+    ],
+    "politics_title": [
+      "politics-active",
+      [
+        35,
+        89,
+        94,
+        119
+      ]
+    ],
+    "slot_basic_machine_tools": [
+      "research-active",
+      [
+        65,
+        310,
+        131,
+        329
+      ]
+    ],
+    "slot_construction1": [
+      "research-active",
+      [
+        65,
+        410,
+        138,
+        429
+      ]
+    ],
+    "slot_electronic_mechanical_engineering": [
+      "research-active",
+      [
+        65,
+        510,
+        164,
+        529
+      ]
+    ],
+    "slot_empty": [
+      "research-active",
+      [
+        65,
+        610,
+        161,
+        630
+      ]
+    ],
+    "slot_frame": [
+      "research-active",
+      [
+        14,
+        305,
+        26,
+        385
+      ]
+    ],
+    "tech_bar": [
+      "industry-tree",
+      [
+        25,
+        95,
+        210,
+        129
+      ]
+    ],
+    "node_basic_machine_tools": [
+      "industry-tree",
+      [
+        246,
+        327,
+        294,
+        373
+      ]
+    ],
+    "node_construction1": [
+      "industry-tree",
+      [
+        818,
+        469,
+        862,
+        510
+      ]
+    ],
+    "node_electronic_mechanical_engineering": [
+      "electronics-tree",
+      [
+        277,
+        330,
+        314,
+        370
+      ]
+    ],
+    "detail_basic_machine_tools": [
+      "basic-detail",
+      [
+        732,
+        116,
+        801,
+        137
+      ]
+    ],
+    "detail_construction1": [
+      "construction-detail",
+      [
+        726,
+        116,
+        808,
+        137
+      ]
+    ],
+    "detail_electronic_mechanical_engineering": [
+      "electronics-detail",
+      [
+        714,
+        116,
+        821,
+        137
+      ]
+    ],
+    "research_start": [
+      "basic-detail",
+      [
+        894,
+        158,
+        1008,
+        187
+      ]
+    ],
+    "replace_title": [
+      "research-replace",
+      [
+        1218,
+        377,
+        1366,
+        408
+      ]
+    ],
+    "replace_ok": [
+      "research-replace",
+      [
+        1363,
+        665,
+        1388,
+        688
+      ]
+    ],
+    "focus_active": [
+      "politics-active",
+      [
+        335,
+        159,
+        468,
+        181
+      ]
+    ],
+    "focus_cancel": [
+      "politics-active",
+      [
+        503,
+        140,
+        521,
+        159
+      ]
+    ],
+    "focus_empty": [
+      "focus-idle",
+      [
+        353,
+        159,
+        448,
+        181
+      ]
+    ],
+    "focus_tree_title": [
+      "focus-tree",
+      [
+        35,
+        89,
+        239,
+        120
+      ]
+    ],
+    "focus_node": [
+      "focus-tree",
+      [
+        1422,
+        245,
+        1528,
+        267
+      ]
+    ],
+    "focus_detail": [
+      "focus-detail",
+      [
+        679,
+        113,
+        831,
+        138
+      ]
+    ],
+    "focus_start": [
+      "focus-detail",
+      [
+        894,
+        156,
+        1008,
+        185
+      ]
+    ]
+  }
+}

@@ -1,1 +1,9 @@
 /reference/HOI4-AI/
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+/artifacts/phase3a/runtime/
+/artifacts/phase3a/test-temp-*/
+/artifacts/phase3a/save-backup/
+/artifacts/phase3b1/test-temp-*/

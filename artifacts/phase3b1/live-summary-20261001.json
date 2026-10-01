@@ -1,0 +1,216 @@
+{
+  "phase": "3B-1",
+  "status": "CODE COMPLETE / OFFLINE TESTED / LIVE VERIFIED (bounded PoC)",
+  "created_at": "2026-10-01T11:55:14.003263+00:00",
+  "conditions": {
+    "game": "HOI4 1.19.3",
+    "country": "GER 1936",
+    "language": "Chinese",
+    "resolution": [
+      2560,
+      1080
+    ],
+    "ui_scale": 1.0,
+    "transport": "official MCP SDK stdio / Computer Use @oai/sky pump"
+  },
+  "live_source": "live-session-3.json",
+  "required_confirmed": 3,
+  "restore_confirmed": 1,
+  "actions": [
+    {
+      "test": "A",
+      "action_id": "1d9dedf7-88f6-44cb-9ade-9a00ee61aeef",
+      "status": "confirmed",
+      "equipment": "Kar 98k式步枪",
+      "before_factories": 10,
+      "after_factories": 12,
+      "duration_ms": 8500,
+      "timings_ms": {
+        "snapshot": 16,
+        "navigation": 875,
+        "adjustment": 5531,
+        "confirmation": 1156
+      },
+      "retry_count": 0,
+      "telemetry_confirmation": {
+        "before_seq": 706663,
+        "after_seq": 706663,
+        "military_factories": 28,
+        "totals_agree": true,
+        "per_line_count": "UNKNOWN; confirmation source is GUI"
+      },
+      "ui_confirmation": {
+        "same_equipment_and_position": true,
+        "requested_factories": 12,
+        "readback_factories": 12,
+        "repeated_readback": true,
+        "count_sources": "numeric counter AND unscaled 15-cell factory grid"
+      }
+    },
+    {
+      "test": "B",
+      "action_id": "800f5fe9-5d55-4f28-af64-102ec08165fa",
+      "status": "confirmed",
+      "equipment": "Kar 98k式步枪",
+      "before_factories": 12,
+      "after_factories": 10,
+      "duration_ms": 9875,
+      "timings_ms": {
+        "snapshot": 31,
+        "navigation": 2547,
+        "adjustment": 5500,
+        "confirmation": 938
+      },
+      "retry_count": 0,
+      "telemetry_confirmation": {
+        "before_seq": 706663,
+        "after_seq": 706664,
+        "military_factories": 28,
+        "totals_agree": true,
+        "per_line_count": "UNKNOWN; confirmation source is GUI"
+      },
+      "ui_confirmation": {
+        "same_equipment_and_position": true,
+        "requested_factories": 10,
+        "readback_factories": 10,
+        "repeated_readback": true,
+        "count_sources": "numeric counter AND unscaled 15-cell factory grid"
+      }
+    },
+    {
+      "test": "C",
+      "action_id": "b2ea2b64-9d47-4032-9ec4-b886e144ee5c",
+      "status": "confirmed",
+      "equipment": "支援装备",
+      "before_factories": 2,
+      "after_factories": 3,
+      "duration_ms": 7000,
+      "timings_ms": {
+        "snapshot": 16,
+        "navigation": 2593,
+        "adjustment": 2562,
+        "confirmation": 969
+      },
+      "retry_count": 0,
+      "telemetry_confirmation": {
+        "before_seq": 706664,
+        "after_seq": 706665,
+        "military_factories": 28,
+        "totals_agree": true,
+        "per_line_count": "UNKNOWN; confirmation source is GUI"
+      },
+      "ui_confirmation": {
+        "same_equipment_and_position": true,
+        "requested_factories": 3,
+        "readback_factories": 3,
+        "repeated_readback": true,
+        "count_sources": "numeric counter AND unscaled 15-cell factory grid"
+      }
+    },
+    {
+      "test": "RESTORE",
+      "action_id": "86afc1b8-e0d4-4c5d-ab96-ea58cfc2cfd1",
+      "status": "confirmed",
+      "equipment": "支援装备",
+      "before_factories": 3,
+      "after_factories": 2,
+      "duration_ms": 7063,
+      "timings_ms": {
+        "snapshot": 15,
+        "navigation": 2610,
+        "adjustment": 2641,
+        "confirmation": 906
+      },
+      "retry_count": 0,
+      "telemetry_confirmation": {
+        "before_seq": 706665,
+        "after_seq": 706665,
+        "military_factories": 28,
+        "totals_agree": true,
+        "per_line_count": "UNKNOWN; confirmation source is GUI"
+      },
+      "ui_confirmation": {
+        "same_equipment_and_position": true,
+        "requested_factories": 2,
+        "readback_factories": 2,
+        "repeated_readback": true,
+        "count_sources": "numeric counter AND unscaled 15-cell factory grid"
+      }
+    }
+  ],
+  "average_required_duration_ms": 8458.33,
+  "average_required_timings_ms": {
+    "snapshot": 21,
+    "navigation": 2005,
+    "adjustment": 4531,
+    "confirmation": 1021
+  },
+  "average_including_restore_duration_ms": 8109.5,
+  "retry_count_total": 0,
+  "failures": [
+    {
+      "session": 1,
+      "stage": "SDK stdio startup",
+      "reason": "Windows sandbox named-pipe WinError 5; no GUI action"
+    },
+    {
+      "session": 2,
+      "results": [
+        {
+          "test": "A",
+          "status": "uncertain",
+          "reason": "production_number_unreadable",
+          "duration_ms": 5172,
+          "retry_count": 0
+        }
+      ],
+      "source": "live-session-2.json",
+      "fix": "header foreground translation/IoU plus alternate assigned-grid template; no double-submit"
+    }
+  ],
+  "offline_tests": {
+    "passed": 124,
+    "subtests_passed": 10,
+    "log": "offline-tests.log",
+    "duration_seconds": 5.5,
+    "compileall": true,
+    "pip_check": true,
+    "git_diff_check": true
+  },
+  "parser_errors_before": [],
+  "parser_errors_after": [],
+  "log_read_errors": [
+    null,
+    null
+  ],
+  "restored": {
+    "normal_factory_actions": true,
+    "snapshot_counts": [
+      10,
+      2,
+      1,
+      2,
+      2,
+      1
+    ],
+    "normal_GUI_load": "GER_1936_01_22_11.hoi4",
+    "game_date_observed": "1936-01-22 11:00",
+    "paused_observed": true,
+    "GUI_readback": "restored-readback.json",
+    "new_daily_telemetry_after_restore": false,
+    "autosave": "overwritten naturally by HOI4 during test/debug progression; no direct save write"
+  },
+  "mod_selection_sha256_before": "5e8a8d6d07ed63f2f456eb421ca83e370d4c00343a01abc0a835d00390ea3ff6",
+  "mod_selection_sha256_after": "5e8a8d6d07ed63f2f456eb421ca83e370d4c00343a01abc0a835d00390ea3ff6",
+  "unknown": [
+    "stable game line/equipment/variant IDs",
+    "per-line telemetry",
+    "efficiency",
+    "current output",
+    "arbitrary viewport/layout",
+    "fourth/fifth line and 0/15 endpoint live verification",
+    "current chat new production-tool registration"
+  ],
+  "post_live_changes": "Added observation-only gating for truncated identities and explicit GUI equipment-type metadata; first/second line input/readback path unchanged; offline suite rerun",
+  "technical_debt": "Computer Use session pump dependency; no native worker rewrite"
+}

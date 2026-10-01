@@ -1,0 +1,130 @@
+{
+  "verification_date": "2026-10-01",
+  "source": "actual tools exposed to this Codex chat; existing protocol v1 log",
+  "results": {
+    "get_summary": {
+      "isError": false,
+      "payload": {
+        "status": "stale",
+        "received_at": "2026-09-30T14:04:40.032897+00:00",
+        "game_date": " 24:00, 12 1月, 1936",
+        "latest_seq": 706651,
+        "state": {
+          "protocol_version": 1,
+          "seq": 706651,
+          "game_date": " 24:00, 12 1月, 1936",
+          "country": "GER",
+          "politics": {
+            "political_power": 15.888,
+            "stability": 0.81,
+            "war_support": 0.35
+          },
+          "manpower": {
+            "available": 1294088,
+            "source_thousands": 1294.088
+          },
+          "industry": {
+            "civilian_factories": 36,
+            "military_factories": 28,
+            "dockyards": 10
+          },
+          "origin": "daily"
+        },
+        "parser_errors": [],
+        "session_id": "050192dc-49ef-4163-96fb-f42d078eb447",
+        "revision": 0,
+        "freshness_basis": "log_mtime_upper_bound",
+        "log_read_error": null
+      }
+    },
+    "get_diagnostics": {
+      "isError": false,
+      "payload": {
+        "status": "stale",
+        "received_at": "2026-09-30T14:04:40.032897+00:00",
+        "game_date": " 24:00, 12 1月, 1936",
+        "latest_seq": 706651,
+        "parser_errors": [],
+        "session_id": "050192dc-49ef-4163-96fb-f42d078eb447",
+        "revision": 0,
+        "freshness_basis": "log_mtime_upper_bound",
+        "log_read_error": null,
+        "log_path": "D:\\Documents\\Paradox Interactive\\Hearts of Iron IV\\logs\\game.log",
+        "log_generation": 1,
+        "unknown_fields": {
+          "research_slots": {
+            "status": "UNKNOWN",
+            "reason": "No research-slot telemetry in protocol v1."
+          },
+          "active_research": {
+            "status": "UNKNOWN",
+            "reason": "Slot-to-tech and remaining time are not verified."
+          },
+          "current_focus": {
+            "status": "UNKNOWN",
+            "reason": "Current focus ID and progress are not verified."
+          },
+          "production_lines": {
+            "status": "UNKNOWN",
+            "reason": "Per-line equipment, efficiency and progress are not verified."
+          }
+        }
+      }
+    },
+    "get_politics": {
+      "isError": false,
+      "payload": {
+        "status": "stale",
+        "received_at": "2026-09-30T14:04:40.032897+00:00",
+        "game_date": " 24:00, 12 1月, 1936",
+        "latest_seq": 706651,
+        "parser_errors": [],
+        "session_id": "050192dc-49ef-4163-96fb-f42d078eb447",
+        "revision": 0,
+        "freshness_basis": "log_mtime_upper_bound",
+        "log_read_error": null,
+        "country": "GER",
+        "politics": {
+          "political_power": 15.888,
+          "stability": 0.81,
+          "war_support": 0.35
+        }
+      }
+    },
+    "get_industry": {
+      "isError": false,
+      "payload": {
+        "status": "stale",
+        "received_at": "2026-09-30T14:04:40.032897+00:00",
+        "game_date": " 24:00, 12 1月, 1936",
+        "latest_seq": 706651,
+        "parser_errors": [],
+        "session_id": "050192dc-49ef-4163-96fb-f42d078eb447",
+        "revision": 0,
+        "freshness_basis": "log_mtime_upper_bound",
+        "log_read_error": null,
+        "country": "GER",
+        "industry": {
+          "civilian_factories": 36,
+          "military_factories": 28,
+          "dockyards": 10
+        },
+        "scope": "factory_totals_only",
+        "production_lines": {
+          "status": "UNKNOWN",
+          "reason": "Per-line equipment, efficiency and progress are not verified."
+        }
+      }
+    },
+    "get_changes": {
+      "isError": false,
+      "payload": {
+        "session_id": "050192dc-49ef-4163-96fb-f42d078eb447",
+        "latest_revision": 0,
+        "history_truncated": false,
+        "events": []
+      }
+    }
+  },
+  "extended_v2_live_verified": false
+}

@@ -1,0 +1,168 @@
+{
+  "conditions": "HOI4 1.19.3 / GER / Chinese / 2560x1080 / scale 1.0 / top viewport",
+  "source": "production-before.jpg",
+  "crops": {
+    "production_title": [
+      35,
+      89,
+      95,
+      119
+    ],
+    "production_top_scroll": [
+      523,
+      369,
+      537,
+      400
+    ],
+    "production_add": [
+      463,
+      376,
+      485,
+      398
+    ],
+    "production_sub": [
+      388,
+      376,
+      411,
+      398
+    ],
+    "production_grid_on": [
+      328,
+      409,
+      349,
+      425
+    ],
+    "production_scale": [
+      286,
+      404,
+      321,
+      473
+    ],
+    "production_name_0": [
+      46,
+      375,
+      220,
+      396
+    ],
+    "production_type_0": [
+      13,
+      402,
+      160,
+      420
+    ],
+    "production_priority_0": [
+      14,
+      380,
+      31,
+      397
+    ],
+    "production_name_1": [
+      46,
+      486,
+      220,
+      507
+    ],
+    "production_type_1": [
+      13,
+      513,
+      160,
+      531
+    ],
+    "production_priority_1": [
+      14,
+      491,
+      31,
+      508
+    ],
+    "production_name_2": [
+      46,
+      597,
+      220,
+      618
+    ],
+    "production_type_2": [
+      13,
+      624,
+      160,
+      642
+    ],
+    "production_priority_2": [
+      14,
+      602,
+      31,
+      619
+    ],
+    "production_name_3": [
+      46,
+      708,
+      220,
+      729
+    ],
+    "production_type_3": [
+      13,
+      735,
+      160,
+      753
+    ],
+    "production_priority_3": [
+      14,
+      713,
+      31,
+      730
+    ],
+    "production_name_4": [
+      46,
+      819,
+      220,
+      840
+    ],
+    "production_type_4": [
+      13,
+      846,
+      160,
+      864
+    ],
+    "production_priority_4": [
+      14,
+      824,
+      31,
+      841
+    ],
+    "production_name_5": [
+      46,
+      930,
+      220,
+      951
+    ],
+    "production_type_5": [
+      13,
+      957,
+      160,
+      975
+    ],
+    "production_priority_5": [
+      14,
+      935,
+      31,
+      952
+    ]
+  },
+  "equipment_names": [
+    "Kar 98k式步枪",
+    "支援装备",
+    "105毫米18型轻型野...",
+    "二号轻型坦克A型",
+    "欧宝 “闪电”",
+    "梅塞施密特 Bf-109D..."
+  ],
+  "factory_digits": "0123456789",
+  "header_digits": "0123456789/",
+  "font_source": "D:\\Software\\Steam\\steamapps\\common\\Hearts of Iron IV\\gfx\\fonts\\chinese\\hoi_18_1of4",
+  "factory_range": [
+    0,
+    15
+  ],
+  "alternate_grid_source": "readback-11-failure.jpg / first line's 11th assigned factory",
+  "identity_note": "Visible GUI labels, including truncation; not equipment game IDs",
+  "action_identity_note": "Truncated equipment labels are observation-only; assignment rejected"
+}

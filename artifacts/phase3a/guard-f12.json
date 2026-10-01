@@ -1,0 +1,7 @@
+{
+  "source": "LIVE WindowsProbe / independent Guard thread",
+  "reason": "emergency_stop",
+  "status": "failed",
+  "elapsed_ms": 1172,
+  "no_executor_input": true
+}

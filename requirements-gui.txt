@@ -1,0 +1,4 @@
+-r requirements-mcp.txt
+numpy==2.4.6
+pillow==12.3.0
+opencv-python-headless==5.0.0.93

@@ -1,0 +1,1 @@
+{"accepted": false, "action_id": "a535a928-6860-4e62-8885-ac9fce99493d", "status": "failed", "action": "select_research", "target": "basic_machine_tools", "retry_count": 0, "telemetry_confirmation": {}, "ui_confirmation": false, "reason": "computer_use_error:Error: Expected PNG screenshot", "recovery": "escape_sent", "duration_ms": 1469}

@@ -1,0 +1,132 @@
+{
+  "source": "LIVE HOI4 / SDK stdio / Computer Use",
+  "before": {
+    "status": "fresh",
+    "received_at": "2026-10-01T08:17:51.022276+00:00",
+    "game_date": " 24:00, 4 1月, 1936",
+    "latest_seq": 706643,
+    "state": {
+      "protocol_version": 2,
+      "seq": 706643,
+      "game_date": " 24:00, 4 1月, 1936",
+      "country": "GER",
+      "politics": {
+        "political_power": 5.296,
+        "stability": 0.81,
+        "war_support": 0.35
+      },
+      "manpower": {
+        "available": 1332620,
+        "source_thousands": 1332.62
+      },
+      "industry": {
+        "civilian_factories": 35,
+        "military_factories": 28,
+        "dockyards": 10
+      },
+      "origin": "daily",
+      "research": {
+        "slot_count": 4,
+        "tracked_technologies": [
+          {
+            "tech_id": "basic_machine_tools",
+            "researching": false,
+            "researched": false
+          },
+          {
+            "tech_id": "construction1",
+            "researching": true,
+            "researched": false
+          },
+          {
+            "tech_id": "electronic_mechanical_engineering",
+            "researching": true,
+            "researched": false
+          }
+        ]
+      },
+      "focus": {
+        "tracked_id": "GER_remilitarize_the_rhineland",
+        "completed": false,
+        "progress_lower_bound": 0.1,
+        "progress_upper_bound": 0.2
+      }
+    },
+    "parser_errors": [],
+    "session_id": "1aadbcf6-80f3-415a-a641-2e8fa0655ab3",
+    "revision": 0,
+    "freshness_basis": "log_mtime_upper_bound",
+    "log_read_error": null
+  },
+  "action_result": {
+    "accepted": false,
+    "action_id": "e6103173-7253-4748-b564-ece4323dc7d6",
+    "status": "timed_out",
+    "action": "select_research",
+    "target": "basic_machine_tools",
+    "retry_count": 0,
+    "telemetry_confirmation": {},
+    "ui_confirmation": false,
+    "reason": "worker_timeout",
+    "recovery": "escape_sent",
+    "duration_ms": 11359
+  },
+  "after": {
+    "status": "fresh",
+    "received_at": "2026-10-01T08:18:03.668969+00:00",
+    "game_date": " 24:00, 5 1月, 1936",
+    "latest_seq": 706644,
+    "state": {
+      "protocol_version": 2,
+      "seq": 706644,
+      "game_date": " 24:00, 5 1月, 1936",
+      "country": "GER",
+      "politics": {
+        "political_power": 6.62,
+        "stability": 0.81,
+        "war_support": 0.35
+      },
+      "manpower": {
+        "available": 1332620,
+        "source_thousands": 1332.62
+      },
+      "industry": {
+        "civilian_factories": 35,
+        "military_factories": 28,
+        "dockyards": 10
+      },
+      "origin": "daily",
+      "research": {
+        "slot_count": 4,
+        "tracked_technologies": [
+          {
+            "tech_id": "basic_machine_tools",
+            "researching": false,
+            "researched": false
+          },
+          {
+            "tech_id": "construction1",
+            "researching": true,
+            "researched": false
+          },
+          {
+            "tech_id": "electronic_mechanical_engineering",
+            "researching": true,
+            "researched": false
+          }
+        ]
+      },
+      "focus": {
+        "tracked_id": "GER_remilitarize_the_rhineland",
+        "completed": false,
+        "progress_lower_bound": 0.1,
+        "progress_upper_bound": 0.2
+      }
+    },
+    "parser_errors": [],
+    "session_id": "1aadbcf6-80f3-415a-a641-2e8fa0655ab3",
+    "revision": 1,
+    "freshness_basis": "frame_received_at",
+    "log_read_error": null
+  }
+}

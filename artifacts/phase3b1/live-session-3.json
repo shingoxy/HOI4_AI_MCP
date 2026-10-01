@@ -1,0 +1,603 @@
+{
+  "source": "LIVE HOI4 / official SDK stdio / semantic Executor / Computer Use",
+  "actions": [
+    {
+      "test": "A",
+      "result": {
+        "accepted": true,
+        "action_id": "1d9dedf7-88f6-44cb-9ade-9a00ee61aeef",
+        "status": "confirmed",
+        "retry_count": 0,
+        "telemetry_confirmation": {
+          "before_seq": 706663,
+          "after_seq": 706663,
+          "military_factories": 28,
+          "totals_agree": true,
+          "per_line_count": "UNKNOWN; confirmation source is GUI"
+        },
+        "ui_confirmation": {
+          "same_equipment_and_position": true,
+          "requested_factories": 12,
+          "readback_factories": 12,
+          "repeated_readback": true,
+          "count_sources": "numeric counter AND unscaled 15-cell factory grid"
+        },
+        "timings_ms": {
+          "snapshot": 16,
+          "navigation": 875,
+          "adjustment": 5531,
+          "confirmation": 1156
+        },
+        "line_id": "prod-c284b27995f7-0001-0001",
+        "snapshot_version": 1,
+        "before": {
+          "equipment": "Kar 98k式步枪",
+          "equipment_game_id": null,
+          "position": 0,
+          "factories": 10,
+          "identity_source": "gui",
+          "stable_game_identity": false,
+          "visible": true,
+          "maximum_assignable_factories": 18,
+          "game_line_limit": 150,
+          "supported_factory_count_max": 15,
+          "efficiency": null,
+          "current_output": null,
+          "line_id": "prod-c284b27995f7-0001-0001"
+        },
+        "after": {
+          "equipment": "Kar 98k式步枪",
+          "equipment_game_id": null,
+          "position": 0,
+          "factories": 12,
+          "identity_source": "gui",
+          "stable_game_identity": false,
+          "visible": true,
+          "maximum_assignable_factories": 18,
+          "game_line_limit": 150,
+          "supported_factory_count_max": 15,
+          "efficiency": null,
+          "current_output": null,
+          "line_id": "prod-c284b27995f7-0001-0001"
+        },
+        "duration_ms": 8500
+      }
+    },
+    {
+      "test": "B",
+      "result": {
+        "accepted": true,
+        "action_id": "800f5fe9-5d55-4f28-af64-102ec08165fa",
+        "status": "confirmed",
+        "retry_count": 0,
+        "telemetry_confirmation": {
+          "before_seq": 706663,
+          "after_seq": 706664,
+          "military_factories": 28,
+          "totals_agree": true,
+          "per_line_count": "UNKNOWN; confirmation source is GUI"
+        },
+        "ui_confirmation": {
+          "same_equipment_and_position": true,
+          "requested_factories": 10,
+          "readback_factories": 10,
+          "repeated_readback": true,
+          "count_sources": "numeric counter AND unscaled 15-cell factory grid"
+        },
+        "timings_ms": {
+          "snapshot": 31,
+          "navigation": 2547,
+          "adjustment": 5500,
+          "confirmation": 938
+        },
+        "line_id": "prod-c284b27995f7-0001-0001",
+        "snapshot_version": 1,
+        "before": {
+          "equipment": "Kar 98k式步枪",
+          "equipment_game_id": null,
+          "position": 0,
+          "factories": 12,
+          "identity_source": "gui",
+          "stable_game_identity": false,
+          "visible": true,
+          "maximum_assignable_factories": 18,
+          "game_line_limit": 150,
+          "supported_factory_count_max": 15,
+          "efficiency": null,
+          "current_output": null,
+          "line_id": "prod-c284b27995f7-0001-0001"
+        },
+        "after": {
+          "equipment": "Kar 98k式步枪",
+          "equipment_game_id": null,
+          "position": 0,
+          "factories": 10,
+          "identity_source": "gui",
+          "stable_game_identity": false,
+          "visible": true,
+          "maximum_assignable_factories": 18,
+          "game_line_limit": 150,
+          "supported_factory_count_max": 15,
+          "efficiency": null,
+          "current_output": null,
+          "line_id": "prod-c284b27995f7-0001-0001"
+        },
+        "duration_ms": 9875
+      }
+    },
+    {
+      "test": "C",
+      "result": {
+        "accepted": true,
+        "action_id": "b2ea2b64-9d47-4032-9ec4-b886e144ee5c",
+        "status": "confirmed",
+        "retry_count": 0,
+        "telemetry_confirmation": {
+          "before_seq": 706664,
+          "after_seq": 706665,
+          "military_factories": 28,
+          "totals_agree": true,
+          "per_line_count": "UNKNOWN; confirmation source is GUI"
+        },
+        "ui_confirmation": {
+          "same_equipment_and_position": true,
+          "requested_factories": 3,
+          "readback_factories": 3,
+          "repeated_readback": true,
+          "count_sources": "numeric counter AND unscaled 15-cell factory grid"
+        },
+        "timings_ms": {
+          "snapshot": 16,
+          "navigation": 2593,
+          "adjustment": 2562,
+          "confirmation": 969
+        },
+        "line_id": "prod-c284b27995f7-0001-0002",
+        "snapshot_version": 1,
+        "before": {
+          "equipment": "支援装备",
+          "equipment_game_id": null,
+          "position": 1,
+          "factories": 2,
+          "identity_source": "gui",
+          "stable_game_identity": false,
+          "visible": true,
+          "maximum_assignable_factories": 10,
+          "game_line_limit": 150,
+          "supported_factory_count_max": 15,
+          "efficiency": null,
+          "current_output": null,
+          "line_id": "prod-c284b27995f7-0001-0002"
+        },
+        "after": {
+          "equipment": "支援装备",
+          "equipment_game_id": null,
+          "position": 1,
+          "factories": 3,
+          "identity_source": "gui",
+          "stable_game_identity": false,
+          "visible": true,
+          "maximum_assignable_factories": 10,
+          "game_line_limit": 150,
+          "supported_factory_count_max": 15,
+          "efficiency": null,
+          "current_output": null,
+          "line_id": "prod-c284b27995f7-0001-0002"
+        },
+        "duration_ms": 7000
+      }
+    },
+    {
+      "test": "RESTORE",
+      "result": {
+        "accepted": true,
+        "action_id": "86afc1b8-e0d4-4c5d-ab96-ea58cfc2cfd1",
+        "status": "confirmed",
+        "retry_count": 0,
+        "telemetry_confirmation": {
+          "before_seq": 706665,
+          "after_seq": 706665,
+          "military_factories": 28,
+          "totals_agree": true,
+          "per_line_count": "UNKNOWN; confirmation source is GUI"
+        },
+        "ui_confirmation": {
+          "same_equipment_and_position": true,
+          "requested_factories": 2,
+          "readback_factories": 2,
+          "repeated_readback": true,
+          "count_sources": "numeric counter AND unscaled 15-cell factory grid"
+        },
+        "timings_ms": {
+          "snapshot": 15,
+          "navigation": 2610,
+          "adjustment": 2641,
+          "confirmation": 906
+        },
+        "line_id": "prod-c284b27995f7-0001-0002",
+        "snapshot_version": 1,
+        "before": {
+          "equipment": "支援装备",
+          "equipment_game_id": null,
+          "position": 1,
+          "factories": 3,
+          "identity_source": "gui",
+          "stable_game_identity": false,
+          "visible": true,
+          "maximum_assignable_factories": 10,
+          "game_line_limit": 150,
+          "supported_factory_count_max": 15,
+          "efficiency": null,
+          "current_output": null,
+          "line_id": "prod-c284b27995f7-0001-0002"
+        },
+        "after": {
+          "equipment": "支援装备",
+          "equipment_game_id": null,
+          "position": 1,
+          "factories": 2,
+          "identity_source": "gui",
+          "stable_game_identity": false,
+          "visible": true,
+          "maximum_assignable_factories": 10,
+          "game_line_limit": 150,
+          "supported_factory_count_max": 15,
+          "efficiency": null,
+          "current_output": null,
+          "line_id": "prod-c284b27995f7-0001-0002"
+        },
+        "duration_ms": 7063
+      }
+    }
+  ],
+  "before_telemetry": {
+    "status": "fresh",
+    "received_at": "2026-10-01T11:34:43.079203+00:00",
+    "game_date": " 24:00, 23 1月, 1936",
+    "latest_seq": 706662,
+    "state": {
+      "protocol_version": 2,
+      "seq": 706662,
+      "game_date": " 24:00, 23 1月, 1936",
+      "country": "GER",
+      "politics": {
+        "political_power": 30.452,
+        "stability": 0.81,
+        "war_support": 0.35
+      },
+      "manpower": {
+        "available": 1332532,
+        "source_thousands": 1332.532
+      },
+      "industry": {
+        "civilian_factories": 35,
+        "military_factories": 28,
+        "dockyards": 10
+      },
+      "origin": "daily",
+      "research": {
+        "slot_count": 4,
+        "tracked_technologies": [
+          {
+            "tech_id": "basic_machine_tools",
+            "researching": true,
+            "researched": false
+          },
+          {
+            "tech_id": "construction1",
+            "researching": true,
+            "researched": false
+          },
+          {
+            "tech_id": "electronic_mechanical_engineering",
+            "researching": true,
+            "researched": false
+          }
+        ]
+      },
+      "focus": {
+        "tracked_id": "GER_remilitarize_the_rhineland",
+        "completed": false,
+        "progress_lower_bound": 0.6,
+        "progress_upper_bound": 0.7
+      }
+    },
+    "parser_errors": [],
+    "session_id": "130596ee-6cdc-4cab-874c-1b85b153ca1e",
+    "revision": 0,
+    "freshness_basis": "log_mtime_upper_bound",
+    "log_read_error": null
+  },
+  "initial_snapshot": {
+    "accepted": true,
+    "action_id": "36f5ee6e-0000-4cf1-be4c-9c2ea9ef8549",
+    "status": "confirmed",
+    "retry_count": 0,
+    "telemetry_confirmation": {},
+    "ui_confirmation": {},
+    "timings_ms": {
+      "snapshot": 31,
+      "navigation": 2766,
+      "adjustment": 0,
+      "confirmation": 0
+    },
+    "lines": [
+      {
+        "equipment": "Kar 98k式步枪",
+        "equipment_game_id": null,
+        "position": 0,
+        "factories": 10,
+        "identity_source": "gui",
+        "stable_game_identity": false,
+        "visible": true,
+        "maximum_assignable_factories": 18,
+        "game_line_limit": 150,
+        "supported_factory_count_max": 15,
+        "efficiency": null,
+        "current_output": null,
+        "line_id": "prod-c284b27995f7-0001-0001"
+      },
+      {
+        "equipment": "支援装备",
+        "equipment_game_id": null,
+        "position": 1,
+        "factories": 2,
+        "identity_source": "gui",
+        "stable_game_identity": false,
+        "visible": true,
+        "maximum_assignable_factories": 10,
+        "game_line_limit": 150,
+        "supported_factory_count_max": 15,
+        "efficiency": null,
+        "current_output": null,
+        "line_id": "prod-c284b27995f7-0001-0002"
+      },
+      {
+        "equipment": "105毫米18型轻型野...",
+        "equipment_game_id": null,
+        "position": 2,
+        "factories": 1,
+        "identity_source": "gui",
+        "stable_game_identity": false,
+        "visible": true,
+        "maximum_assignable_factories": 9,
+        "game_line_limit": 150,
+        "supported_factory_count_max": 15,
+        "efficiency": null,
+        "current_output": null,
+        "line_id": "prod-c284b27995f7-0001-0003"
+      },
+      {
+        "equipment": "二号轻型坦克A型",
+        "equipment_game_id": null,
+        "position": 3,
+        "factories": 2,
+        "identity_source": "gui",
+        "stable_game_identity": false,
+        "visible": true,
+        "maximum_assignable_factories": 10,
+        "game_line_limit": 150,
+        "supported_factory_count_max": 15,
+        "efficiency": null,
+        "current_output": null,
+        "line_id": "prod-c284b27995f7-0001-0004"
+      },
+      {
+        "equipment": "欧宝 “闪电”",
+        "equipment_game_id": null,
+        "position": 4,
+        "factories": 2,
+        "identity_source": "gui",
+        "stable_game_identity": false,
+        "visible": true,
+        "maximum_assignable_factories": 10,
+        "game_line_limit": 150,
+        "supported_factory_count_max": 15,
+        "efficiency": null,
+        "current_output": null,
+        "line_id": "prod-c284b27995f7-0001-0005"
+      },
+      {
+        "equipment": "梅塞施密特 Bf-109D...",
+        "equipment_game_id": null,
+        "position": 5,
+        "factories": 1,
+        "identity_source": "gui",
+        "stable_game_identity": false,
+        "visible": true,
+        "maximum_assignable_factories": 9,
+        "game_line_limit": 150,
+        "supported_factory_count_max": 15,
+        "efficiency": null,
+        "current_output": null,
+        "line_id": "prod-c284b27995f7-0001-0006"
+      }
+    ],
+    "assigned_military_factories": 20,
+    "available_military_factories": 8,
+    "military_factories": 28,
+    "scope": "six_complete_top_viewport_military_lines",
+    "source": "GUI",
+    "factory_count_evidence": "numeric counter AND unscaled 15-cell factory grid",
+    "snapshot_version": 1,
+    "session_id": "c284b27995f7",
+    "telemetry_seq": 706662,
+    "stable_game_identity": false,
+    "duration_ms": 2797
+  },
+  "final_snapshot": {
+    "accepted": true,
+    "action_id": "47daaaec-3b5a-4b09-8d7e-7b26bb73b15c",
+    "status": "confirmed",
+    "retry_count": 0,
+    "telemetry_confirmation": {},
+    "ui_confirmation": {},
+    "timings_ms": {
+      "snapshot": 31,
+      "navigation": 2360,
+      "adjustment": 0,
+      "confirmation": 0
+    },
+    "lines": [
+      {
+        "equipment": "Kar 98k式步枪",
+        "equipment_game_id": null,
+        "position": 0,
+        "factories": 10,
+        "identity_source": "gui",
+        "stable_game_identity": false,
+        "visible": true,
+        "maximum_assignable_factories": 18,
+        "game_line_limit": 150,
+        "supported_factory_count_max": 15,
+        "efficiency": null,
+        "current_output": null,
+        "line_id": "prod-c284b27995f7-0002-0001"
+      },
+      {
+        "equipment": "支援装备",
+        "equipment_game_id": null,
+        "position": 1,
+        "factories": 2,
+        "identity_source": "gui",
+        "stable_game_identity": false,
+        "visible": true,
+        "maximum_assignable_factories": 10,
+        "game_line_limit": 150,
+        "supported_factory_count_max": 15,
+        "efficiency": null,
+        "current_output": null,
+        "line_id": "prod-c284b27995f7-0002-0002"
+      },
+      {
+        "equipment": "105毫米18型轻型野...",
+        "equipment_game_id": null,
+        "position": 2,
+        "factories": 1,
+        "identity_source": "gui",
+        "stable_game_identity": false,
+        "visible": true,
+        "maximum_assignable_factories": 9,
+        "game_line_limit": 150,
+        "supported_factory_count_max": 15,
+        "efficiency": null,
+        "current_output": null,
+        "line_id": "prod-c284b27995f7-0002-0003"
+      },
+      {
+        "equipment": "二号轻型坦克A型",
+        "equipment_game_id": null,
+        "position": 3,
+        "factories": 2,
+        "identity_source": "gui",
+        "stable_game_identity": false,
+        "visible": true,
+        "maximum_assignable_factories": 10,
+        "game_line_limit": 150,
+        "supported_factory_count_max": 15,
+        "efficiency": null,
+        "current_output": null,
+        "line_id": "prod-c284b27995f7-0002-0004"
+      },
+      {
+        "equipment": "欧宝 “闪电”",
+        "equipment_game_id": null,
+        "position": 4,
+        "factories": 2,
+        "identity_source": "gui",
+        "stable_game_identity": false,
+        "visible": true,
+        "maximum_assignable_factories": 10,
+        "game_line_limit": 150,
+        "supported_factory_count_max": 15,
+        "efficiency": null,
+        "current_output": null,
+        "line_id": "prod-c284b27995f7-0002-0005"
+      },
+      {
+        "equipment": "梅塞施密特 Bf-109D...",
+        "equipment_game_id": null,
+        "position": 5,
+        "factories": 1,
+        "identity_source": "gui",
+        "stable_game_identity": false,
+        "visible": true,
+        "maximum_assignable_factories": 9,
+        "game_line_limit": 150,
+        "supported_factory_count_max": 15,
+        "efficiency": null,
+        "current_output": null,
+        "line_id": "prod-c284b27995f7-0002-0006"
+      }
+    ],
+    "assigned_military_factories": 20,
+    "available_military_factories": 8,
+    "military_factories": 28,
+    "scope": "six_complete_top_viewport_military_lines",
+    "source": "GUI",
+    "factory_count_evidence": "numeric counter AND unscaled 15-cell factory grid",
+    "snapshot_version": 2,
+    "session_id": "c284b27995f7",
+    "telemetry_seq": 706665,
+    "stable_game_identity": false,
+    "duration_ms": 2406
+  },
+  "after_telemetry": {
+    "status": "fresh",
+    "received_at": "2026-10-01T11:35:20.618734+00:00",
+    "game_date": " 24:00, 26 1月, 1936",
+    "latest_seq": 706665,
+    "state": {
+      "protocol_version": 2,
+      "seq": 706665,
+      "game_date": " 24:00, 26 1月, 1936",
+      "country": "GER",
+      "politics": {
+        "political_power": 34.424,
+        "stability": 0.81,
+        "war_support": 0.35
+      },
+      "manpower": {
+        "available": 1332488,
+        "source_thousands": 1332.488
+      },
+      "industry": {
+        "civilian_factories": 35,
+        "military_factories": 28,
+        "dockyards": 10
+      },
+      "origin": "daily",
+      "research": {
+        "slot_count": 4,
+        "tracked_technologies": [
+          {
+            "tech_id": "basic_machine_tools",
+            "researching": true,
+            "researched": false
+          },
+          {
+            "tech_id": "construction1",
+            "researching": true,
+            "researched": false
+          },
+          {
+            "tech_id": "electronic_mechanical_engineering",
+            "researching": true,
+            "researched": false
+          }
+        ]
+      },
+      "focus": {
+        "tracked_id": "GER_remilitarize_the_rhineland",
+        "completed": false,
+        "progress_lower_bound": 0.7,
+        "progress_upper_bound": 0.8
+      }
+    },
+    "parser_errors": [],
+    "session_id": "130596ee-6cdc-4cab-874c-1b85b153ca1e",
+    "revision": 3,
+    "freshness_basis": "frame_received_at",
+    "log_read_error": null
+  }
+}

@@ -1,0 +1,99 @@
+# Temporary variables only: no persistent state or gameplay effects.
+codex_emit_state = {
+	set_temp_variable = { codex_seq = global.num_days }
+	set_temp_variable = { codex_pp = political_power }
+	set_temp_variable = { codex_stability = stability }
+	set_temp_variable = { codex_war_support = has_war_support }
+	set_temp_variable = { codex_manpower_k = manpower_k }
+	set_temp_variable = { codex_civ = num_of_civilian_factories }
+	set_temp_variable = { codex_mil = num_of_military_factories }
+	set_temp_variable = { codex_dock = num_of_naval_factories }
+	set_temp_variable = { codex_research_slots = amount_research_slots }
+	set_temp_variable = { codex_researching_0 = 0 }
+	set_temp_variable = { codex_researched_0 = 0 }
+	if = {
+		limit = { is_researching_technology = basic_machine_tools }
+		set_temp_variable = { codex_researching_0 = 1 }
+	}
+	if = {
+		limit = { has_tech = basic_machine_tools }
+		set_temp_variable = { codex_researched_0 = 1 }
+	}
+	set_temp_variable = { codex_researching_1 = 0 }
+	set_temp_variable = { codex_researched_1 = 0 }
+	if = {
+		limit = { is_researching_technology = construction1 }
+		set_temp_variable = { codex_researching_1 = 1 }
+	}
+	if = {
+		limit = { has_tech = construction1 }
+		set_temp_variable = { codex_researched_1 = 1 }
+	}
+	set_temp_variable = { codex_researching_2 = 0 }
+	set_temp_variable = { codex_researched_2 = 0 }
+	if = {
+		limit = { is_researching_technology = electronic_mechanical_engineering }
+		set_temp_variable = { codex_researching_2 = 1 }
+	}
+	if = {
+		limit = { has_tech = electronic_mechanical_engineering }
+		set_temp_variable = { codex_researched_2 = 1 }
+	}
+	set_temp_variable = { codex_focus_completed = 0 }
+	set_temp_variable = { codex_focus_lower = 0 }
+	set_temp_variable = { codex_focus_upper = 0.1 }
+	if = {
+		limit = { focus_progress = { focus = GER_remilitarize_the_rhineland progress > 0.1 } }
+		set_temp_variable = { codex_focus_lower = 0.1 }
+		set_temp_variable = { codex_focus_upper = 0.2 }
+	}
+	if = {
+		limit = { focus_progress = { focus = GER_remilitarize_the_rhineland progress > 0.2 } }
+		set_temp_variable = { codex_focus_lower = 0.2 }
+		set_temp_variable = { codex_focus_upper = 0.3 }
+	}
+	if = {
+		limit = { focus_progress = { focus = GER_remilitarize_the_rhineland progress > 0.3 } }
+		set_temp_variable = { codex_focus_lower = 0.3 }
+		set_temp_variable = { codex_focus_upper = 0.4 }
+	}
+	if = {
+		limit = { focus_progress = { focus = GER_remilitarize_the_rhineland progress > 0.4 } }
+		set_temp_variable = { codex_focus_lower = 0.4 }
+		set_temp_variable = { codex_focus_upper = 0.5 }
+	}
+	if = {
+		limit = { focus_progress = { focus = GER_remilitarize_the_rhineland progress > 0.5 } }
+		set_temp_variable = { codex_focus_lower = 0.5 }
+		set_temp_variable = { codex_focus_upper = 0.6 }
+	}
+	if = {
+		limit = { focus_progress = { focus = GER_remilitarize_the_rhineland progress > 0.6 } }
+		set_temp_variable = { codex_focus_lower = 0.6 }
+		set_temp_variable = { codex_focus_upper = 0.7 }
+	}
+	if = {
+		limit = { focus_progress = { focus = GER_remilitarize_the_rhineland progress > 0.7 } }
+		set_temp_variable = { codex_focus_lower = 0.7 }
+		set_temp_variable = { codex_focus_upper = 0.8 }
+	}
+	if = {
+		limit = { focus_progress = { focus = GER_remilitarize_the_rhineland progress > 0.8 } }
+		set_temp_variable = { codex_focus_lower = 0.8 }
+		set_temp_variable = { codex_focus_upper = 0.9 }
+	}
+	if = {
+		limit = { focus_progress = { focus = GER_remilitarize_the_rhineland progress > 0.9 } }
+		set_temp_variable = { codex_focus_lower = 0.9 }
+		set_temp_variable = { codex_focus_upper = 1.0 }
+	}
+	if = {
+		limit = { has_completed_focus = GER_remilitarize_the_rhineland }
+		set_temp_variable = { codex_focus_completed = 1 }
+		set_temp_variable = { codex_focus_lower = 1 }
+		set_temp_variable = { codex_focus_upper = 1 }
+	}
+	log = "CODEX_STATE_BEGIN|version=2|seq=[?codex_seq]|origin=[?codex_origin]"
+	log = "CODEX|date=[GetDateText]|tag=[THIS.GetTag]|political_power=[?codex_pp]|stability=[?codex_stability]|war_support=[?codex_war_support]|manpower_k=[?codex_manpower_k]|civilian_factories=[?codex_civ]|military_factories=[?codex_mil]|dockyards=[?codex_dock]|research_slots=[?codex_research_slots]|researching_basic_machine_tools=[?codex_researching_0]|researched_basic_machine_tools=[?codex_researched_0]|researching_construction1=[?codex_researching_1]|researched_construction1=[?codex_researched_1]|researching_electronic_mechanical_engineering=[?codex_researching_2]|researched_electronic_mechanical_engineering=[?codex_researched_2]|focus_completed=[?codex_focus_completed]|focus_progress_lower=[?codex_focus_lower]|focus_progress_upper=[?codex_focus_upper]"
+	log = "CODEX_STATE_END|seq=[?codex_seq]"
+}

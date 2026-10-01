@@ -1,0 +1,62 @@
+Traceback (most recent call last):
+  File "D:\Projects\HOI4 AI Operator\scripts\phase3b1_client.py", line 54, in <module>
+    asyncio.run(run(parser.parse_args()))
+  File "D:\Software\MiniConda3-py311\Lib\asyncio\runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "D:\Software\MiniConda3-py311\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\MiniConda3-py311\Lib\asyncio\base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "D:\Projects\HOI4 AI Operator\scripts\phase3b1_client.py", line 22, in run
+    async with Client(transport, read_timeout_seconds=120) as client:
+  File "D:\Projects\HOI4 AI Operator\.venv\Lib\site-packages\mcp\client\client.py", line 454, in __aenter__
+    session = await self._build_session(exit_stack)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\HOI4 AI Operator\.venv\Lib\site-packages\mcp\client\client.py", line 427, in _build_session
+    dispatcher = await self._connect(exit_stack, self.mode, self.raise_exceptions)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\HOI4 AI Operator\.venv\Lib\site-packages\mcp\client\client.py", line 97, in connect
+    read_stream, write_stream = await exit_stack.enter_async_context(transport)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\MiniConda3-py311\Lib\contextlib.py", line 650, in enter_async_context
+    result = await _enter(cm)
+             ^^^^^^^^^^^^^^^^
+  File "D:\Software\MiniConda3-py311\Lib\contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\HOI4 AI Operator\.venv\Lib\site-packages\mcp\client\stdio.py", line 125, in stdio_client
+    process = await _create_platform_compatible_process(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\HOI4 AI Operator\.venv\Lib\site-packages\mcp\client\stdio.py", line 340, in _create_platform_compatible_process
+    return await create_windows_process(command, args, env, errlog, cwd)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\HOI4 AI Operator\.venv\Lib\site-packages\mcp\os\win32\utilities.py", line 156, in create_windows_process
+    process = await anyio.open_process(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\HOI4 AI Operator\.venv\Lib\site-packages\anyio\_core\_subprocesses.py", line 184, in open_process
+    return await get_async_backend().open_process(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\HOI4 AI Operator\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 2810, in open_process
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\MiniConda3-py311\Lib\asyncio\base_events.py", line 1708, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\MiniConda3-py311\Lib\asyncio\windows_events.py", line 399, in _make_subprocess_transport
+    transp = _WindowsSubprocessTransport(self, protocol, args, shell,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\MiniConda3-py311\Lib\asyncio\base_subprocess.py", line 36, in __init__
+    self._start(args=args, shell=shell, stdin=stdin, stdout=stdout,
+  File "D:\Software\MiniConda3-py311\Lib\asyncio\windows_events.py", line 929, in _start
+    self._proc = windows_utils.Popen(
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\MiniConda3-py311\Lib\asyncio\windows_utils.py", line 136, in __init__
+    stdin_rh, stdin_wh = pipe(overlapped=(False, True), duplex=True)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\MiniConda3-py311\Lib\asyncio\windows_utils.py", line 63, in pipe
+    h2 = _winapi.CreateFile(
+         ^^^^^^^^^^^^^^^^^^^
+PermissionError: [WinError 5] ¾Ü¾ø·ÃÎÊ¡£

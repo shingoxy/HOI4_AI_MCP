@@ -1,0 +1,62 @@
+{
+  "evidence": "D:\\Projects\\HOI4 AI Operator\\phase2b-live-20260930-214738.log",
+  "session_ids": [
+    "8843d312-9187-445c-9202-97b3c839e530"
+  ],
+  "notifications": 14,
+  "event_counts": {
+    "log_reset": 1,
+    "state_updated": 9,
+    "timeline_reset": 1
+  },
+  "status_counts": {
+    "unavailable": 1,
+    "fresh": 10,
+    "stale": 3
+  },
+  "parser_errors": [],
+  "read_errors": [],
+  "timeline_reset": [
+    {
+      "revision": 10,
+      "kind": "timeline_reset",
+      "seq": 706646,
+      "game_date": " 24:00, 7 1月, 1936",
+      "observed_at": "2026-09-30T13:53:31.312970+00:00",
+      "fields": {}
+    }
+  ],
+  "final_summary": {
+    "status": "stale",
+    "received_at": "2026-09-30T13:53:36.531432+00:00",
+    "game_date": " 24:00, 8 1月, 1936",
+    "latest_seq": 706647,
+    "state": {
+      "protocol_version": 1,
+      "seq": 706647,
+      "game_date": " 24:00, 8 1月, 1936",
+      "country": "GER",
+      "politics": {
+        "political_power": 10.592,
+        "stability": 0.81,
+        "war_support": 0.35
+      },
+      "manpower": {
+        "available": 1294176,
+        "source_thousands": 1294.176
+      },
+      "industry": {
+        "civilian_factories": 36,
+        "military_factories": 28,
+        "dockyards": 10
+      },
+      "origin": "daily"
+    },
+    "parser_errors": [],
+    "session_id": "8843d312-9187-445c-9202-97b3c839e530",
+    "revision": 11,
+    "freshness_basis": "frame_received_at",
+    "log_read_error": null
+  },
+  "end_reason": "operator_interrupted_after_observed_acceptance_conditions; no watch_finished record"
+}

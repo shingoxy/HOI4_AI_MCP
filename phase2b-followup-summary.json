@@ -1,0 +1,82 @@
+{
+  "evidence": "D:\\Projects\\HOI4 AI Operator\\phase2b-followup-20260930-220348.log",
+  "baseline": {
+    "status": "stale",
+    "received_at": "2026-09-30T13:53:36.291067+00:00",
+    "game_date": " 24:00, 8 1月, 1936",
+    "latest_seq": 706647,
+    "state": {
+      "protocol_version": 1,
+      "seq": 706647,
+      "game_date": " 24:00, 8 1月, 1936",
+      "country": "GER",
+      "politics": {
+        "political_power": 10.592,
+        "stability": 0.81,
+        "war_support": 0.35
+      },
+      "manpower": {
+        "available": 1294176,
+        "source_thousands": 1294.176
+      },
+      "industry": {
+        "civilian_factories": 36,
+        "military_factories": 28,
+        "dockyards": 10
+      },
+      "origin": "daily"
+    },
+    "parser_errors": [],
+    "session_id": "39598cde-43fe-4ef8-8377-682db9491b36",
+    "revision": 0,
+    "freshness_basis": "log_mtime_upper_bound",
+    "log_read_error": null
+  },
+  "finished": {
+    "event": "watch_finished",
+    "counts": {
+      "notifications": 5,
+      "state_updated": 4,
+      "timeline_reset": 0,
+      "log_reset": 0,
+      "stale_seen": true
+    },
+    "diagnostics": {
+      "status": "stale",
+      "received_at": "2026-09-30T14:04:40.235889+00:00",
+      "game_date": " 24:00, 12 1月, 1936",
+      "latest_seq": 706651,
+      "parser_errors": [],
+      "session_id": "39598cde-43fe-4ef8-8377-682db9491b36",
+      "revision": 4,
+      "freshness_basis": "frame_received_at",
+      "log_read_error": null,
+      "log_path": "D:\\Documents\\Paradox Interactive\\Hearts of Iron IV\\logs\\game.log",
+      "log_generation": 1,
+      "unknown_fields": {
+        "research_slots": {
+          "status": "UNKNOWN",
+          "reason": "No research-slot telemetry in protocol v1."
+        },
+        "active_research": {
+          "status": "UNKNOWN",
+          "reason": "Slot-to-tech and remaining time are not verified."
+        },
+        "current_focus": {
+          "status": "UNKNOWN",
+          "reason": "Current focus ID and progress are not verified."
+        },
+        "production_lines": {
+          "status": "UNKNOWN",
+          "reason": "Per-line equipment, efficiency and progress are not verified."
+        }
+      }
+    }
+  },
+  "current_chat_resource_probe": {
+    "server": "hoi4_telemetry",
+    "error": "resources/list failed: unknown MCP server 'hoi4_telemetry'"
+  },
+  "current_chat_hoi4_tools": [],
+  "codex_host_evidence": "phase2b-codex-host-check.json"
+}

@@ -1,0 +1,285 @@
+{
+  "source": "REAL HOI4 1.19.3 Germany 1936; normal UI via Computer Use; no cheats",
+  "mod_selection": {
+    "enabled_mods": [
+      "mod/codex_telemetry.mod",
+      "mod/ugc_2067895531.mod",
+      "mod/ugc_3057320899.mod"
+    ],
+    "disabled_dlcs": []
+  },
+  "complete_frames": 266,
+  "parser_errors": [],
+  "first_frame": {
+    "protocol_version": 2,
+    "seq": 706640,
+    "game_date": " 12:00, 1 1月, 1936",
+    "country": "GER",
+    "politics": {
+      "political_power": 2.324,
+      "stability": 0.81,
+      "war_support": 0.35
+    },
+    "manpower": {
+      "available": 1332620,
+      "source_thousands": 1332.62
+    },
+    "industry": {
+      "civilian_factories": 35,
+      "military_factories": 28,
+      "dockyards": 10
+    },
+    "origin": "startup",
+    "research": {
+      "slot_count": 4,
+      "tracked_technologies": [
+        {
+          "tech_id": "basic_machine_tools",
+          "researching": false,
+          "researched": false
+        },
+        {
+          "tech_id": "construction1",
+          "researching": false,
+          "researched": false
+        },
+        {
+          "tech_id": "electronic_mechanical_engineering",
+          "researching": false,
+          "researched": false
+        }
+      ]
+    },
+    "focus": {
+      "tracked_id": "GER_remilitarize_the_rhineland",
+      "completed": false,
+      "progress_lower_bound": 0.0,
+      "progress_upper_bound": 0.1
+    }
+  },
+  "last_frame": {
+    "protocol_version": 2,
+    "seq": 706660,
+    "game_date": " 24:00, 21 1月, 1936",
+    "country": "GER",
+    "politics": {
+      "political_power": 27.804,
+      "stability": 0.81,
+      "war_support": 0.35
+    },
+    "manpower": {
+      "available": 1332532,
+      "source_thousands": 1332.532
+    },
+    "industry": {
+      "civilian_factories": 35,
+      "military_factories": 28,
+      "dockyards": 10
+    },
+    "origin": "daily",
+    "research": {
+      "slot_count": 4,
+      "tracked_technologies": [
+        {
+          "tech_id": "basic_machine_tools",
+          "researching": true,
+          "researched": false
+        },
+        {
+          "tech_id": "construction1",
+          "researching": true,
+          "researched": false
+        },
+        {
+          "tech_id": "electronic_mechanical_engineering",
+          "researching": true,
+          "researched": false
+        }
+      ]
+    },
+    "focus": {
+      "tracked_id": "GER_remilitarize_the_rhineland",
+      "completed": false,
+      "progress_lower_bound": 0.6,
+      "progress_upper_bound": 0.7
+    }
+  },
+  "first_tech_completed": {
+    "electronic_mechanical_engineering": {
+      "seq": 706748,
+      "date": " 24:00, 19 4月, 1936"
+    },
+    "basic_machine_tools": {
+      "seq": 706801,
+      "date": " 24:00, 11 6月, 1936"
+    },
+    "construction1": {
+      "seq": 706854,
+      "date": " 24:00, 3 8月, 1936"
+    }
+  },
+  "first_focus_completed": {
+    "seq": 706674,
+    "date": " 24:00, 4 2月, 1936"
+  },
+  "focus_intervals": [
+    [
+      0.0,
+      0.1
+    ],
+    [
+      0.1,
+      0.2
+    ],
+    [
+      0.2,
+      0.3
+    ],
+    [
+      0.3,
+      0.4
+    ],
+    [
+      0.4,
+      0.5
+    ],
+    [
+      0.5,
+      0.6
+    ],
+    [
+      0.6,
+      0.7
+    ],
+    [
+      0.7,
+      0.8
+    ],
+    [
+      0.8,
+      0.9
+    ],
+    [
+      0.9,
+      1.0
+    ],
+    [
+      1.0,
+      1.0
+    ]
+  ],
+  "streams": {
+    "progress": {
+      "file": "phase2b-v2-live-20261001.jsonl",
+      "finish": {
+        "event": "watch_finished",
+        "counts": {
+          "notifications": 204,
+          "state_updated": 202,
+          "timeline_reset": 0,
+          "log_reset": 0,
+          "stale_seen": true
+        },
+        "diagnostics": {
+          "status": "fresh",
+          "received_at": "2026-10-01T06:15:56.438322+00:00",
+          "game_date": " 24:00, 21 7��, 1936",
+          "latest_seq": 706841,
+          "parser_errors": [],
+          "session_id": "423139da-e710-45a4-889e-0e6005e59913",
+          "revision": 202,
+          "freshness_basis": "frame_received_at",
+          "log_read_error": null,
+          "log_path": "D:\\Documents\\Paradox Interactive\\Hearts of Iron IV\\logs\\game.log",
+          "log_generation": 1,
+          "unknown_fields": {
+            "active_research": {
+              "status": "UNKNOWN",
+              "reason": "Only three tracked technologies; slot-to-tech and remaining time are UNKNOWN."
+            },
+            "current_focus": {
+              "status": "UNKNOWN",
+              "reason": "Current focus ID is UNKNOWN; tracked focus progress is a predicate-derived interval."
+            },
+            "production_lines": {
+              "status": "UNKNOWN",
+              "reason": "Per-line equipment, efficiency and progress are not verified."
+            }
+          }
+        }
+      },
+      "timeline_resets": [],
+      "replacement_characters": 2026,
+      "parser_or_read_error_rows": 0
+    },
+    "rollback": {
+      "file": "phase2b-v2-rollback-20261001.jsonl",
+      "finish": {
+        "event": "watch_finished",
+        "counts": {
+          "notifications": 10,
+          "state_updated": 9,
+          "timeline_reset": 1,
+          "log_reset": 0,
+          "stale_seen": false
+        },
+        "diagnostics": {
+          "status": "fresh",
+          "received_at": "2026-10-01T06:26:40.334360+00:00",
+          "game_date": " 24:00, 11 1月, 1936",
+          "latest_seq": 706650,
+          "parser_errors": [],
+          "session_id": "f97d6c15-48df-42f4-b14d-c2713a3126c0",
+          "revision": 10,
+          "freshness_basis": "frame_received_at",
+          "log_read_error": null,
+          "log_path": "D:\\Documents\\Paradox Interactive\\Hearts of Iron IV\\logs\\game.log",
+          "log_generation": 1,
+          "unknown_fields": {
+            "active_research": {
+              "status": "UNKNOWN",
+              "reason": "Only three tracked technologies; slot-to-tech and remaining time are UNKNOWN."
+            },
+            "current_focus": {
+              "status": "UNKNOWN",
+              "reason": "Current focus ID is UNKNOWN; tracked focus progress is a predicate-derived interval."
+            },
+            "production_lines": {
+              "status": "UNKNOWN",
+              "reason": "Per-line equipment, efficiency and progress are not verified."
+            }
+          }
+        }
+      },
+      "timeline_resets": [
+        {
+          "revision": 1,
+          "kind": "timeline_reset",
+          "seq": 706641,
+          "game_date": " 24:00, 2 1月, 1936",
+          "observed_at": "2026-10-01T06:24:48.214485+00:00",
+          "fields": {}
+        }
+      ],
+      "replacement_characters": 0,
+      "parser_or_read_error_rows": 0
+    }
+  },
+  "telemetry_related_game_errors": [],
+  "game_log_sha256": "624ba551f8dff2af72af61c63b5e64c560ad21e5e3e451b59a2c5942477aecf9",
+  "save_effects": {
+    "created": "GER_1936_01_01_12.hoi4",
+    "existing_manual_save": "GER_1936_01_06_23.hoi4 retained",
+    "autosave": "Normal game advancement replaced prior autosave; old 1942 autosave was not backed up. No backup save present in folder."
+  },
+  "current_chat_host": "Old service rejects protocol v2; current chat refresh pending, not a new-server parser error.",
+  "offline_validation": {
+    "pytest": "33 passed, 10 subtests passed",
+    "compileall": "passed",
+    "git_diff_check": "passed",
+    "document_links": "passed"
+  },
+  "progress_session_resumed_after_stale": true,
+  "raw_game_log_replacement_characters": 0,
+  "monitor_processes": "Both finished normally with exit code 0"
+}
