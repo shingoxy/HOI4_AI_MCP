@@ -38,6 +38,7 @@ def post(worker, path, body, *, token=None):
 
 
 def test_unknown_commands_and_malformed_requests_rejected(worker):
+    assert not worker.ready()
     with pytest.raises(HTTPError) as unauthorized:
         post(worker, "/next", {}, token="wrong")
     assert unauthorized.value.code == 403
@@ -45,6 +46,8 @@ def test_unknown_commands_and_malformed_requests_rejected(worker):
         with pytest.raises(HTTPError) as invalid:
             post(worker, "/permit", body)
         assert invalid.value.code == 409
+    assert post(worker, "/next", {}) is None
+    assert worker.ready()
 
 
 def test_focus_loss_invalidates_pending_command_and_skips_input(worker):

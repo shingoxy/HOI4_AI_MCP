@@ -1,0 +1,398 @@
+{
+  "source": "LIVE HOI4 / official SDK stdio / semantic API / normal GUI",
+  "actions": [
+    {
+      "action": "get_advisors",
+      "arguments": {},
+      "result": {
+        "action": "get_advisors",
+        "accepted": true,
+        "status": "confirmed",
+        "action_id": "093e350e-851e-44e7-b304-95477bb943d6",
+        "retry_count": 0,
+        "duration_ms": 1578,
+        "timings_ms": {
+          "precheck": 0,
+          "navigation": 1578,
+          "target_lookup": 0,
+          "submit": 0,
+          "readback": 0,
+          "confirmation": 0,
+          "total": 1578
+        },
+        "slots": [
+          {
+            "position": 0,
+            "advisor_id": null,
+            "identity_source": "gui",
+            "stable_game_identity": false,
+            "slot_id": "advisor-3951e5900ba2-0001-0000",
+            "identity_signature": "2bd81d605d8aabaf008edb9d9fca6aed7f2615a6183373801eea6711bcc8ff55"
+          },
+          {
+            "position": 1,
+            "advisor_id": null,
+            "identity_source": "gui",
+            "stable_game_identity": false,
+            "slot_id": "advisor-3951e5900ba2-0001-0001",
+            "identity_signature": "074b53a3c83df4841947bb5f7cea1c3b1e3ce83b7a3e5424e7b58fb80205b983"
+          },
+          {
+            "position": 2,
+            "advisor_id": null,
+            "identity_source": "gui",
+            "stable_game_identity": false,
+            "slot_id": "advisor-3951e5900ba2-0001-0002",
+            "identity_signature": "c75c3711c5b36adafeb757589f606ac642c522a1eec89824eae6bd1b54ff4e37"
+          }
+        ],
+        "identity_source": "gui",
+        "stable_game_identity": false,
+        "scope": "three political advisor slots; empty or calibrated Schacht only",
+        "session_id": "3951e5900ba2",
+        "snapshot_version": 1,
+        "ttl_seconds": 120,
+        "telemetry_seq": 707063,
+        "catalog": {
+          "advisor_schacht": {
+            "display": "亚尔马·沙赫特",
+            "cost": 75,
+            "game_character_id": "GER_hjalmar_schacht",
+            "identity_source": "gui portrait and localized name",
+            "supported": true,
+            "scope": "GER; MEFO present; normal GUI enabled option"
+          }
+        }
+      }
+    },
+    {
+      "action": "hire_advisor",
+      "arguments": {
+        "advisor_id": "advisor_schacht"
+      },
+      "result": {
+        "action": "hire_advisor",
+        "accepted": true,
+        "status": "confirmed",
+        "action_id": "0be1eb7c-0e92-4a56-adcb-c27e7565fd64",
+        "retry_count": 0,
+        "duration_ms": 7782,
+        "timings_ms": {
+          "precheck": 16,
+          "navigation": 938,
+          "target_lookup": 0,
+          "submit": 4031,
+          "readback": 937,
+          "confirmation": 922,
+          "total": 7782
+        },
+        "before": {
+          "slots": [
+            {
+              "position": 0,
+              "advisor_id": null
+            },
+            {
+              "position": 1,
+              "advisor_id": null
+            },
+            {
+              "position": 2,
+              "advisor_id": null
+            }
+          ],
+          "identity_source": "gui",
+          "stable_game_identity": false,
+          "scope": "three political advisor slots; empty or calibrated Schacht only"
+        },
+        "after": {
+          "slots": [
+            {
+              "position": 0,
+              "advisor_id": "advisor_schacht",
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "slot_id": "advisor-3951e5900ba2-0002-0000",
+              "identity_signature": "ae78c485e74fe395ee5d234ab3e344ec52f451747b37bf1737141e7db1bf945d"
+            },
+            {
+              "position": 1,
+              "advisor_id": null,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "slot_id": "advisor-3951e5900ba2-0002-0001",
+              "identity_signature": "074b53a3c83df4841947bb5f7cea1c3b1e3ce83b7a3e5424e7b58fb80205b983"
+            },
+            {
+              "position": 2,
+              "advisor_id": null,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "slot_id": "advisor-3951e5900ba2-0002-0002",
+              "identity_signature": "c75c3711c5b36adafeb757589f606ac642c522a1eec89824eae6bd1b54ff4e37"
+            }
+          ],
+          "identity_source": "gui",
+          "stable_game_identity": false,
+          "scope": "three political advisor slots; empty or calibrated Schacht only",
+          "session_id": "3951e5900ba2",
+          "snapshot_version": 2,
+          "ttl_seconds": 120,
+          "telemetry_seq": 707063
+        },
+        "ui_confirmation": {
+          "exact_three_slot_transition": true,
+          "repeated_readback": true
+        },
+        "telemetry_confirmation": {
+          "before_seq": 707063,
+          "after_seq": 707063,
+          "political_power_before": 314.376,
+          "political_power_after": 314.376,
+          "advisor_state": "UNKNOWN; GUI confirms portrait identity"
+        }
+      }
+    },
+    {
+      "action": "hire_advisor",
+      "arguments": {
+        "advisor_id": "advisor_schacht"
+      },
+      "result": {
+        "action": "hire_advisor",
+        "accepted": true,
+        "status": "already_satisfied",
+        "action_id": "431d324b-2b2a-4d73-87ac-9e789c751ca9",
+        "retry_count": 0,
+        "duration_ms": 3359,
+        "timings_ms": {
+          "precheck": 0,
+          "navigation": 2453,
+          "target_lookup": 0,
+          "submit": 0,
+          "readback": 0,
+          "confirmation": 0,
+          "total": 3359
+        },
+        "before": {
+          "slots": [
+            {
+              "position": 0,
+              "advisor_id": "advisor_schacht"
+            },
+            {
+              "position": 1,
+              "advisor_id": null
+            },
+            {
+              "position": 2,
+              "advisor_id": null
+            }
+          ],
+          "identity_source": "gui",
+          "stable_game_identity": false,
+          "scope": "three political advisor slots; empty or calibrated Schacht only"
+        },
+        "after": {
+          "slots": [
+            {
+              "position": 0,
+              "advisor_id": "advisor_schacht"
+            },
+            {
+              "position": 1,
+              "advisor_id": null
+            },
+            {
+              "position": 2,
+              "advisor_id": null
+            }
+          ],
+          "identity_source": "gui",
+          "stable_game_identity": false,
+          "scope": "three political advisor slots; empty or calibrated Schacht only"
+        }
+      }
+    },
+    {
+      "action": "get_advisors",
+      "arguments": {},
+      "result": {
+        "action": "get_advisors",
+        "accepted": true,
+        "status": "confirmed",
+        "action_id": "eaf1c7d6-911e-4375-b736-c0fb605d738d",
+        "retry_count": 0,
+        "duration_ms": 2859,
+        "timings_ms": {
+          "precheck": 0,
+          "navigation": 2859,
+          "target_lookup": 0,
+          "submit": 0,
+          "readback": 0,
+          "confirmation": 0,
+          "total": 2859
+        },
+        "slots": [
+          {
+            "position": 0,
+            "advisor_id": "advisor_schacht",
+            "identity_source": "gui",
+            "stable_game_identity": false,
+            "slot_id": "advisor-3951e5900ba2-0003-0000",
+            "identity_signature": "ae78c485e74fe395ee5d234ab3e344ec52f451747b37bf1737141e7db1bf945d"
+          },
+          {
+            "position": 1,
+            "advisor_id": null,
+            "identity_source": "gui",
+            "stable_game_identity": false,
+            "slot_id": "advisor-3951e5900ba2-0003-0001",
+            "identity_signature": "074b53a3c83df4841947bb5f7cea1c3b1e3ce83b7a3e5424e7b58fb80205b983"
+          },
+          {
+            "position": 2,
+            "advisor_id": null,
+            "identity_source": "gui",
+            "stable_game_identity": false,
+            "slot_id": "advisor-3951e5900ba2-0003-0002",
+            "identity_signature": "c75c3711c5b36adafeb757589f606ac642c522a1eec89824eae6bd1b54ff4e37"
+          }
+        ],
+        "identity_source": "gui",
+        "stable_game_identity": false,
+        "scope": "three political advisor slots; empty or calibrated Schacht only",
+        "session_id": "3951e5900ba2",
+        "snapshot_version": 3,
+        "ttl_seconds": 120,
+        "telemetry_seq": 707064,
+        "catalog": {
+          "advisor_schacht": {
+            "display": "亚尔马·沙赫特",
+            "cost": 75,
+            "game_character_id": "GER_hjalmar_schacht",
+            "identity_source": "gui portrait and localized name",
+            "supported": true,
+            "scope": "GER; MEFO present; normal GUI enabled option"
+          }
+        }
+      }
+    }
+  ],
+  "before_telemetry": {
+    "status": "fresh",
+    "received_at": "2026-10-01T18:42:33.356038+00:00",
+    "game_date": " 24:00, 28 2月, 1937",
+    "latest_seq": 707063,
+    "state": {
+      "protocol_version": 2,
+      "seq": 707063,
+      "game_date": " 24:00, 28 2月, 1937",
+      "country": "GER",
+      "politics": {
+        "political_power": 314.376,
+        "stability": 0.81,
+        "war_support": 0.35564
+      },
+      "manpower": {
+        "available": 1353634,
+        "source_thousands": 1353.634
+      },
+      "industry": {
+        "civilian_factories": 37,
+        "military_factories": 28,
+        "dockyards": 10
+      },
+      "origin": "daily",
+      "research": {
+        "slot_count": 4,
+        "tracked_technologies": [
+          {
+            "tech_id": "basic_machine_tools",
+            "researching": false,
+            "researched": false
+          },
+          {
+            "tech_id": "construction1",
+            "researching": false,
+            "researched": false
+          },
+          {
+            "tech_id": "electronic_mechanical_engineering",
+            "researching": false,
+            "researched": false
+          }
+        ]
+      },
+      "focus": {
+        "tracked_id": "GER_remilitarize_the_rhineland",
+        "completed": false,
+        "progress_lower_bound": 0.0,
+        "progress_upper_bound": 0.1
+      }
+    },
+    "parser_errors": [],
+    "session_id": "4f2f0ad9-c51d-4b26-8e45-1b0b5d9ffa8a",
+    "revision": 1,
+    "freshness_basis": "frame_received_at",
+    "log_read_error": null
+  },
+  "after_telemetry": {
+    "status": "fresh",
+    "received_at": "2026-10-01T18:42:46.655604+00:00",
+    "game_date": " 24:00, 1 3月, 1937",
+    "latest_seq": 707064,
+    "state": {
+      "protocol_version": 2,
+      "seq": 707064,
+      "game_date": " 24:00, 1 3月, 1937",
+      "country": "GER",
+      "politics": {
+        "political_power": 241.7,
+        "stability": 0.81,
+        "war_support": 0.35562
+      },
+      "manpower": {
+        "available": 1355721,
+        "source_thousands": 1355.721
+      },
+      "industry": {
+        "civilian_factories": 37,
+        "military_factories": 28,
+        "dockyards": 10
+      },
+      "origin": "daily",
+      "research": {
+        "slot_count": 4,
+        "tracked_technologies": [
+          {
+            "tech_id": "basic_machine_tools",
+            "researching": false,
+            "researched": false
+          },
+          {
+            "tech_id": "construction1",
+            "researching": false,
+            "researched": false
+          },
+          {
+            "tech_id": "electronic_mechanical_engineering",
+            "researching": false,
+            "researched": false
+          }
+        ]
+      },
+      "focus": {
+        "tracked_id": "GER_remilitarize_the_rhineland",
+        "completed": false,
+        "progress_lower_bound": 0.0,
+        "progress_upper_bound": 0.1
+      }
+    },
+    "parser_errors": [],
+    "session_id": "4f2f0ad9-c51d-4b26-8e45-1b0b5d9ffa8a",
+    "revision": 2,
+    "freshness_basis": "frame_received_at",
+    "log_read_error": null
+  }
+}

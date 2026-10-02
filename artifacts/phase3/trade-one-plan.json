@@ -1,0 +1,3 @@
+[
+  {"action": "set_trade_import", "arguments": {"resource": "steel", "country": "SWE", "civilian_factories": 1}}
+]

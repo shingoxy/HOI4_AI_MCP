@@ -1,0 +1,11 @@
+{
+  "conditions": "1.19.3 / GER 1936 / base Chinese / Telemetry Mod only / 2560x1080 / 1.0",
+  "production_scope": "all military rows in compact layout; at most 10; naval excluded",
+  "sources": [
+    "military-compact.jpg",
+    "production-top.jpg",
+    "filters-all.jpg",
+    "equipment-picker.jpg"
+  ],
+  "equipment_game_ids": "UNKNOWN; semantic catalog is independent"
+}

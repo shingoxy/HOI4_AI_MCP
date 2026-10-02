@@ -1,0 +1,5 @@
+[
+  {"action":"set_trade_import","arguments":{"resource":"steel","country":"SWE","civilian_factories":1}},
+  {"action":"set_trade_import","arguments":{"resource":"steel","country":"SWE","civilian_factories":1},"expected":["already_satisfied"]},
+  {"action":"set_trade_import","arguments":{"resource":"steel","country":"SWE","civilian_factories":0}}
+]

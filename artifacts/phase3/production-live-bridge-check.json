@@ -1,0 +1,86 @@
+{
+  "source": "LIVE HOI4 / official SDK stdio / semantic API / normal GUI",
+  "actions": [
+    {
+      "action": "get_production_lines",
+      "arguments": {},
+      "result": {
+        "action": "get_production_lines",
+        "accepted": false,
+        "status": "timed_out",
+        "action_id": "e73ea159-f1ea-4941-956a-18a6021bcacc",
+        "retry_count": 0,
+        "duration_ms": 20000,
+        "timings_ms": {
+          "precheck": 0,
+          "navigation": 10000,
+          "target_lookup": 0,
+          "submit": 0,
+          "readback": 0,
+          "confirmation": 0,
+          "total": 20000
+        },
+        "reason": "ui_timeout",
+        "recovery": "skipped_safety_stop"
+      }
+    }
+  ],
+  "before_telemetry": {
+    "status": "fresh",
+    "received_at": "2026-10-01T17:15:16.701890+00:00",
+    "game_date": " 24:00, 2 10月, 1936",
+    "latest_seq": 706914,
+    "state": {
+      "protocol_version": 2,
+      "seq": 706914,
+      "game_date": " 24:00, 2 10月, 1936",
+      "country": "GER",
+      "politics": {
+        "political_power": 639.1,
+        "stability": 0.81,
+        "war_support": 0.35681
+      },
+      "manpower": {
+        "available": 1346240,
+        "source_thousands": 1346.24
+      },
+      "industry": {
+        "civilian_factories": 37,
+        "military_factories": 28,
+        "dockyards": 10
+      },
+      "origin": "daily",
+      "research": {
+        "slot_count": 4,
+        "tracked_technologies": [
+          {
+            "tech_id": "basic_machine_tools",
+            "researching": false,
+            "researched": false
+          },
+          {
+            "tech_id": "construction1",
+            "researching": false,
+            "researched": false
+          },
+          {
+            "tech_id": "electronic_mechanical_engineering",
+            "researching": false,
+            "researched": false
+          }
+        ]
+      },
+      "focus": {
+        "tracked_id": "GER_remilitarize_the_rhineland",
+        "completed": false,
+        "progress_lower_bound": 0.0,
+        "progress_upper_bound": 0.1
+      }
+    },
+    "parser_errors": [],
+    "session_id": "44389072-371e-4caa-aa21-af378e7dbc85",
+    "revision": 0,
+    "freshness_basis": "log_mtime_upper_bound",
+    "log_read_error": null
+  }
+}

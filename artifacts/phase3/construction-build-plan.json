@@ -1,0 +1,5 @@
+[
+  {"action":"get_construction"},
+  {"action":"build","arguments":{"state_id":64,"building_type":"military_factory"}},
+  {"action":"build","arguments":{"state_id":66,"building_type":"infrastructure"}}
+]

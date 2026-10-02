@@ -1,0 +1,1426 @@
+{
+  "source": "LIVE HOI4 / official SDK stdio / semantic API / normal GUI",
+  "actions": [
+    {
+      "action": "get_production_lines",
+      "arguments": {},
+      "result": {
+        "action": "get_production_lines",
+        "accepted": true,
+        "status": "confirmed",
+        "action_id": "9d38e7fd-6270-45f6-9746-13896621e02e",
+        "retry_count": 0,
+        "duration_ms": 3125,
+        "timings_ms": {
+          "precheck": 0,
+          "navigation": 2968,
+          "target_lookup": 0,
+          "submit": 0,
+          "readback": 157,
+          "confirmation": 0,
+          "total": 3125
+        },
+        "lines": [
+          {
+            "equipment": "Kar 98k式步枪",
+            "equipment_type": "步兵装备 I型",
+            "equipment_id": "infantry_equipment_1",
+            "equipment_game_id": null,
+            "position": 0,
+            "factories": 10,
+            "identity_source": "gui",
+            "stable_game_identity": false,
+            "visible": true,
+            "identity_complete": true,
+            "action_supported": true,
+            "maximum_assignable_factories": 16,
+            "supported_factory_count_max": 15,
+            "line_id": "prod-d5c01a26227b-0001-0001",
+            "identity_signature": "a47a6d7d8f170a3535592cf2086386f2fa94590e2287beaf01702b46900a7834"
+          },
+          {
+            "equipment": "支援装备",
+            "equipment_type": "支援装备",
+            "equipment_id": "support_equipment_1",
+            "equipment_game_id": null,
+            "position": 1,
+            "factories": 2,
+            "identity_source": "gui",
+            "stable_game_identity": false,
+            "visible": true,
+            "identity_complete": true,
+            "action_supported": true,
+            "maximum_assignable_factories": 8,
+            "supported_factory_count_max": 15,
+            "line_id": "prod-d5c01a26227b-0001-0002",
+            "identity_signature": "77475cc3967bc186c8e738858bab7baee94635233267d1bfb94d0daf2884ba05"
+          },
+          {
+            "equipment": "105毫米18型轻型野...",
+            "equipment_type": "牵引式火炮",
+            "equipment_id": "artillery_equipment_1",
+            "equipment_game_id": null,
+            "position": 2,
+            "factories": 1,
+            "identity_source": "gui",
+            "stable_game_identity": false,
+            "visible": true,
+            "identity_complete": false,
+            "action_supported": false,
+            "maximum_assignable_factories": 7,
+            "supported_factory_count_max": 15,
+            "line_id": "prod-d5c01a26227b-0001-0003",
+            "identity_signature": "d8f156915e8cec41bb17b2be5e7060dfb9be56e37bd1c67dbbd6b7a74f3dfc3c"
+          },
+          {
+            "equipment": "Panzer II A型",
+            "equipment_type": "改进型轻型坦克",
+            "equipment_id": null,
+            "equipment_game_id": null,
+            "position": 3,
+            "factories": 2,
+            "identity_source": "gui",
+            "stable_game_identity": false,
+            "visible": true,
+            "identity_complete": true,
+            "action_supported": true,
+            "maximum_assignable_factories": 8,
+            "supported_factory_count_max": 15,
+            "line_id": "prod-d5c01a26227b-0001-0004",
+            "identity_signature": "070f87cd4699054e8dafe9f7c6a6e00792c664b243b2b18e5b74c919f2a34272"
+          },
+          {
+            "equipment": "欧宝 “闪电”",
+            "equipment_type": "卡车",
+            "equipment_id": null,
+            "equipment_game_id": null,
+            "position": 4,
+            "factories": 2,
+            "identity_source": "gui",
+            "stable_game_identity": false,
+            "visible": true,
+            "identity_complete": true,
+            "action_supported": true,
+            "maximum_assignable_factories": 8,
+            "supported_factory_count_max": 15,
+            "line_id": "prod-d5c01a26227b-0001-0005",
+            "identity_signature": "742c9683e256afe9f2c0733fc5072abb10740fa677fcd42843be651b92833c79"
+          },
+          {
+            "equipment": "Bf109 D",
+            "equipment_type": "基础小型机身",
+            "equipment_id": null,
+            "equipment_game_id": null,
+            "position": 5,
+            "factories": 1,
+            "identity_source": "gui",
+            "stable_game_identity": false,
+            "visible": true,
+            "identity_complete": true,
+            "action_supported": true,
+            "maximum_assignable_factories": 7,
+            "supported_factory_count_max": 15,
+            "line_id": "prod-d5c01a26227b-0001-0006",
+            "identity_signature": "fc9cbfa5f1e49da499ebfd2a9a873e8aa9cb183715931907fc2d6c5d2d27783e"
+          },
+          {
+            "equipment": "Ju 87",
+            "equipment_type": "基础近距支援机",
+            "equipment_id": null,
+            "equipment_game_id": null,
+            "position": 6,
+            "factories": 1,
+            "identity_source": "gui",
+            "stable_game_identity": false,
+            "visible": true,
+            "identity_complete": true,
+            "action_supported": true,
+            "maximum_assignable_factories": 7,
+            "supported_factory_count_max": 15,
+            "line_id": "prod-d5c01a26227b-0001-0007",
+            "identity_signature": "c06a514a563dd41adf224da4b9a0d3a8a00a74e35fa1cc32840f85ccc508a9b8"
+          },
+          {
+            "equipment": "He 111",
+            "equipment_type": "基础中型机身",
+            "equipment_id": null,
+            "equipment_game_id": null,
+            "position": 7,
+            "factories": 1,
+            "identity_source": "gui",
+            "stable_game_identity": false,
+            "visible": true,
+            "identity_complete": true,
+            "action_supported": true,
+            "maximum_assignable_factories": 7,
+            "supported_factory_count_max": 15,
+            "line_id": "prod-d5c01a26227b-0001-0008",
+            "identity_signature": "3b237d70691368418d0167c104b88bd9811f529018bbccdbc902ef5de5b32e3c"
+          },
+          {
+            "equipment": "Kar 98k式步枪",
+            "equipment_type": "步兵装备 I型",
+            "equipment_id": "infantry_equipment_1",
+            "equipment_game_id": null,
+            "position": 8,
+            "factories": 1,
+            "identity_source": "gui",
+            "stable_game_identity": false,
+            "visible": true,
+            "identity_complete": true,
+            "action_supported": true,
+            "maximum_assignable_factories": 7,
+            "supported_factory_count_max": 15,
+            "line_id": "prod-d5c01a26227b-0001-0009",
+            "identity_signature": "44342fcb7d1bcd31c9377fde35e17f2e68c59d2645183d99aa8e5dfc86ff909f"
+          },
+          {
+            "equipment": "支援装备",
+            "equipment_type": "支援装备",
+            "equipment_id": "support_equipment_1",
+            "equipment_game_id": null,
+            "position": 9,
+            "factories": 1,
+            "identity_source": "gui",
+            "stable_game_identity": false,
+            "visible": true,
+            "identity_complete": true,
+            "action_supported": true,
+            "maximum_assignable_factories": 7,
+            "supported_factory_count_max": 15,
+            "line_id": "prod-d5c01a26227b-0001-0010",
+            "identity_signature": "19d7c1a2eb3b6dc82fd3c426b9073e8f0304e5af8fbb830973cc6a95f4aa80a4"
+          }
+        ],
+        "military_factories": 28,
+        "assigned_military_factories": 22,
+        "available_military_factories": 6,
+        "scope": "complete military list; <=10 compact calibrated rows; naval lines excluded",
+        "source": "GUI",
+        "factory_count_evidence": "every numeric row count AND global assigned total; setters additionally require target numeric AND 15-cell grid",
+        "snapshot_version": 1,
+        "session_id": "d5c01a26227b",
+        "telemetry_seq": 706979,
+        "stable_game_identity": false,
+        "ttl_seconds": 120
+      }
+    },
+    {
+      "action": "reorder_production_line",
+      "arguments": {
+        "line_id": "prod-d5c01a26227b-0001-0001",
+        "direction": "down"
+      },
+      "result": {
+        "action": "reorder_production_line",
+        "accepted": true,
+        "status": "confirmed",
+        "action_id": "68b4ec67-3653-41c4-8b9b-f2196e089543",
+        "retry_count": 0,
+        "duration_ms": 10313,
+        "timings_ms": {
+          "precheck": 0,
+          "navigation": 1938,
+          "target_lookup": 125,
+          "submit": 2640,
+          "readback": 2844,
+          "confirmation": 1875,
+          "total": 10313
+        },
+        "before": {
+          "lines": [
+            {
+              "equipment": "Kar 98k式步枪",
+              "equipment_type": "步兵装备 I型",
+              "equipment_id": "infantry_equipment_1",
+              "equipment_game_id": null,
+              "position": 0,
+              "factories": 10,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "visible": true,
+              "identity_complete": true,
+              "action_supported": true,
+              "maximum_assignable_factories": 16,
+              "supported_factory_count_max": 15
+            },
+            {
+              "equipment": "支援装备",
+              "equipment_type": "支援装备",
+              "equipment_id": "support_equipment_1",
+              "equipment_game_id": null,
+              "position": 1,
+              "factories": 2,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "visible": true,
+              "identity_complete": true,
+              "action_supported": true,
+              "maximum_assignable_factories": 8,
+              "supported_factory_count_max": 15
+            },
+            {
+              "equipment": "105毫米18型轻型野...",
+              "equipment_type": "牵引式火炮",
+              "equipment_id": "artillery_equipment_1",
+              "equipment_game_id": null,
+              "position": 2,
+              "factories": 1,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "visible": true,
+              "identity_complete": false,
+              "action_supported": false,
+              "maximum_assignable_factories": 7,
+              "supported_factory_count_max": 15
+            },
+            {
+              "equipment": "Panzer II A型",
+              "equipment_type": "改进型轻型坦克",
+              "equipment_id": null,
+              "equipment_game_id": null,
+              "position": 3,
+              "factories": 2,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "visible": true,
+              "identity_complete": true,
+              "action_supported": true,
+              "maximum_assignable_factories": 8,
+              "supported_factory_count_max": 15
+            },
+            {
+              "equipment": "欧宝 “闪电”",
+              "equipment_type": "卡车",
+              "equipment_id": null,
+              "equipment_game_id": null,
+              "position": 4,
+              "factories": 2,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "visible": true,
+              "identity_complete": true,
+              "action_supported": true,
+              "maximum_assignable_factories": 8,
+              "supported_factory_count_max": 15
+            },
+            {
+              "equipment": "Bf109 D",
+              "equipment_type": "基础小型机身",
+              "equipment_id": null,
+              "equipment_game_id": null,
+              "position": 5,
+              "factories": 1,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "visible": true,
+              "identity_complete": true,
+              "action_supported": true,
+              "maximum_assignable_factories": 7,
+              "supported_factory_count_max": 15
+            },
+            {
+              "equipment": "Ju 87",
+              "equipment_type": "基础近距支援机",
+              "equipment_id": null,
+              "equipment_game_id": null,
+              "position": 6,
+              "factories": 1,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "visible": true,
+              "identity_complete": true,
+              "action_supported": true,
+              "maximum_assignable_factories": 7,
+              "supported_factory_count_max": 15
+            },
+            {
+              "equipment": "He 111",
+              "equipment_type": "基础中型机身",
+              "equipment_id": null,
+              "equipment_game_id": null,
+              "position": 7,
+              "factories": 1,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "visible": true,
+              "identity_complete": true,
+              "action_supported": true,
+              "maximum_assignable_factories": 7,
+              "supported_factory_count_max": 15
+            },
+            {
+              "equipment": "Kar 98k式步枪",
+              "equipment_type": "步兵装备 I型",
+              "equipment_id": "infantry_equipment_1",
+              "equipment_game_id": null,
+              "position": 8,
+              "factories": 1,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "visible": true,
+              "identity_complete": true,
+              "action_supported": true,
+              "maximum_assignable_factories": 7,
+              "supported_factory_count_max": 15
+            },
+            {
+              "equipment": "支援装备",
+              "equipment_type": "支援装备",
+              "equipment_id": "support_equipment_1",
+              "equipment_game_id": null,
+              "position": 9,
+              "factories": 1,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "visible": true,
+              "identity_complete": true,
+              "action_supported": true,
+              "maximum_assignable_factories": 7,
+              "supported_factory_count_max": 15
+            }
+          ],
+          "military_factories": 28,
+          "assigned_military_factories": 22,
+          "available_military_factories": 6,
+          "scope": "complete military list; <=10 compact calibrated rows; naval lines excluded",
+          "source": "GUI",
+          "factory_count_evidence": "every numeric row count AND global assigned total; setters additionally require target numeric AND 15-cell grid"
+        },
+        "after": {
+          "lines": [
+            {
+              "equipment": "支援装备",
+              "equipment_type": "支援装备",
+              "equipment_id": "support_equipment_1",
+              "equipment_game_id": null,
+              "position": 0,
+              "factories": 2,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "visible": true,
+              "identity_complete": true,
+              "action_supported": true,
+              "maximum_assignable_factories": 8,
+              "supported_factory_count_max": 15,
+              "line_id": "prod-d5c01a26227b-0002-0001",
+              "identity_signature": "8e77f5465fed45916fe2d58d772ae2aa42001fc71310207a62c230f4c5451ac1"
+            },
+            {
+              "equipment": "Kar 98k式步枪",
+              "equipment_type": "步兵装备 I型",
+              "equipment_id": "infantry_equipment_1",
+              "equipment_game_id": null,
+              "position": 1,
+              "factories": 10,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "visible": true,
+              "identity_complete": true,
+              "action_supported": true,
+              "maximum_assignable_factories": 16,
+              "supported_factory_count_max": 15,
+              "line_id": "prod-d5c01a26227b-0002-0002",
+              "identity_signature": "297823b54d4ab1e6e2e96962f5a2c8dae60cc53f42d4f7cab1a742ffb4486be9"
+            },
+            {
+              "equipment": "105毫米18型轻型野...",
+              "equipment_type": "牵引式火炮",
+              "equipment_id": "artillery_equipment_1",
+              "equipment_game_id": null,
+              "position": 2,
+              "factories": 1,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "visible": true,
+              "identity_complete": false,
+              "action_supported": false,
+              "maximum_assignable_factories": 7,
+              "supported_factory_count_max": 15,
+              "line_id": "prod-d5c01a26227b-0002-0003",
+              "identity_signature": "d8f156915e8cec41bb17b2be5e7060dfb9be56e37bd1c67dbbd6b7a74f3dfc3c"
+            },
+            {
+              "equipment": "Panzer II A型",
+              "equipment_type": "改进型轻型坦克",
+              "equipment_id": null,
+              "equipment_game_id": null,
+              "position": 3,
+              "factories": 2,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "visible": true,
+              "identity_complete": true,
+              "action_supported": true,
+              "maximum_assignable_factories": 8,
+              "supported_factory_count_max": 15,
+              "line_id": "prod-d5c01a26227b-0002-0004",
+              "identity_signature": "070f87cd4699054e8dafe9f7c6a6e00792c664b243b2b18e5b74c919f2a34272"
+            },
+            {
+              "equipment": "欧宝 “闪电”",
+              "equipment_type": "卡车",
+              "equipment_id": null,
+              "equipment_game_id": null,
+              "position": 4,
+              "factories": 2,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "visible": true,
+              "identity_complete": true,
+              "action_supported": true,
+              "maximum_assignable_factories": 8,
+              "supported_factory_count_max": 15,
+              "line_id": "prod-d5c01a26227b-0002-0005",
+              "identity_signature": "742c9683e256afe9f2c0733fc5072abb10740fa677fcd42843be651b92833c79"
+            },
+            {
+              "equipment": "Bf109 D",
+              "equipment_type": "基础小型机身",
+              "equipment_id": null,
+              "equipment_game_id": null,
+              "position": 5,
+              "factories": 1,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "visible": true,
+              "identity_complete": true,
+              "action_supported": true,
+              "maximum_assignable_factories": 7,
+              "supported_factory_count_max": 15,
+              "line_id": "prod-d5c01a26227b-0002-0006",
+              "identity_signature": "fc9cbfa5f1e49da499ebfd2a9a873e8aa9cb183715931907fc2d6c5d2d27783e"
+            },
+            {
+              "equipment": "Ju 87",
+              "equipment_type": "基础近距支援机",
+              "equipment_id": null,
+              "equipment_game_id": null,
+              "position": 6,
+              "factories": 1,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "visible": true,
+              "identity_complete": true,
+              "action_supported": true,
+              "maximum_assignable_factories": 7,
+              "supported_factory_count_max": 15,
+              "line_id": "prod-d5c01a26227b-0002-0007",
+              "identity_signature": "c06a514a563dd41adf224da4b9a0d3a8a00a74e35fa1cc32840f85ccc508a9b8"
+            },
+            {
+              "equipment": "He 111",
+              "equipment_type": "基础中型机身",
+              "equipment_id": null,
+              "equipment_game_id": null,
+              "position": 7,
+              "factories": 1,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "visible": true,
+              "identity_complete": true,
+              "action_supported": true,
+              "maximum_assignable_factories": 7,
+              "supported_factory_count_max": 15,
+              "line_id": "prod-d5c01a26227b-0002-0008",
+              "identity_signature": "3b237d70691368418d0167c104b88bd9811f529018bbccdbc902ef5de5b32e3c"
+            },
+            {
+              "equipment": "Kar 98k式步枪",
+              "equipment_type": "步兵装备 I型",
+              "equipment_id": "infantry_equipment_1",
+              "equipment_game_id": null,
+              "position": 8,
+              "factories": 1,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "visible": true,
+              "identity_complete": true,
+              "action_supported": true,
+              "maximum_assignable_factories": 7,
+              "supported_factory_count_max": 15,
+              "line_id": "prod-d5c01a26227b-0002-0009",
+              "identity_signature": "44342fcb7d1bcd31c9377fde35e17f2e68c59d2645183d99aa8e5dfc86ff909f"
+            },
+            {
+              "equipment": "支援装备",
+              "equipment_type": "支援装备",
+              "equipment_id": "support_equipment_1",
+              "equipment_game_id": null,
+              "position": 9,
+              "factories": 1,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "visible": true,
+              "identity_complete": true,
+              "action_supported": true,
+              "maximum_assignable_factories": 7,
+              "supported_factory_count_max": 15,
+              "line_id": "prod-d5c01a26227b-0002-0010",
+              "identity_signature": "19d7c1a2eb3b6dc82fd3c426b9073e8f0304e5af8fbb830973cc6a95f4aa80a4"
+            }
+          ],
+          "military_factories": 28,
+          "assigned_military_factories": 22,
+          "available_military_factories": 6,
+          "scope": "complete military list; <=10 compact calibrated rows; naval lines excluded",
+          "source": "GUI",
+          "factory_count_evidence": "every numeric row count AND global assigned total; setters additionally require target numeric AND 15-cell grid",
+          "snapshot_version": 2,
+          "session_id": "d5c01a26227b",
+          "telemetry_seq": 706980,
+          "stable_game_identity": false,
+          "ttl_seconds": 120
+        },
+        "diff": {
+          "removed": [],
+          "before_order": [
+            [
+              "Kar 98k式步枪",
+              "步兵装备 I型",
+              10
+            ],
+            [
+              "支援装备",
+              "支援装备",
+              2
+            ],
+            [
+              "105毫米18型轻型野...",
+              "牵引式火炮",
+              1
+            ],
+            [
+              "Panzer II A型",
+              "改进型轻型坦克",
+              2
+            ],
+            [
+              "欧宝 “闪电”",
+              "卡车",
+              2
+            ],
+            [
+              "Bf109 D",
+              "基础小型机身",
+              1
+            ],
+            [
+              "Ju 87",
+              "基础近距支援机",
+              1
+            ],
+            [
+              "He 111",
+              "基础中型机身",
+              1
+            ],
+            [
+              "Kar 98k式步枪",
+              "步兵装备 I型",
+              1
+            ],
+            [
+              "支援装备",
+              "支援装备",
+              1
+            ]
+          ],
+          "after_order": [
+            [
+              "支援装备",
+              "支援装备",
+              2
+            ],
+            [
+              "Kar 98k式步枪",
+              "步兵装备 I型",
+              10
+            ],
+            [
+              "105毫米18型轻型野...",
+              "牵引式火炮",
+              1
+            ],
+            [
+              "Panzer II A型",
+              "改进型轻型坦克",
+              2
+            ],
+            [
+              "欧宝 “闪电”",
+              "卡车",
+              2
+            ],
+            [
+              "Bf109 D",
+              "基础小型机身",
+              1
+            ],
+            [
+              "Ju 87",
+              "基础近距支援机",
+              1
+            ],
+            [
+              "He 111",
+              "基础中型机身",
+              1
+            ],
+            [
+              "Kar 98k式步枪",
+              "步兵装备 I型",
+              1
+            ],
+            [
+              "支援装备",
+              "支援装备",
+              1
+            ]
+          ]
+        },
+        "ui_confirmation": {
+          "exact_list_transition": true,
+          "repeated_readback": true,
+          "scope": "complete military list; <=10 compact calibrated rows; naval lines excluded"
+        },
+        "telemetry_confirmation": {
+          "before_seq": 706979,
+          "after_seq": 706980,
+          "totals_agree": true,
+          "per_line_state": "UNKNOWN; GUI confirmation"
+        }
+      }
+    },
+    {
+      "action": "reorder_production_line",
+      "arguments": {
+        "line_id": "prod-d5c01a26227b-0002-0002",
+        "direction": "up"
+      },
+      "result": {
+        "action": "reorder_production_line",
+        "accepted": true,
+        "status": "confirmed",
+        "action_id": "907407cd-f619-4d01-aee2-b7f1d4e93b0f",
+        "retry_count": 0,
+        "duration_ms": 11797,
+        "timings_ms": {
+          "precheck": 0,
+          "navigation": 3328,
+          "target_lookup": 109,
+          "submit": 2797,
+          "readback": 2781,
+          "confirmation": 1860,
+          "total": 11797
+        },
+        "before": {
+          "lines": [
+            {
+              "equipment": "支援装备",
+              "equipment_type": "支援装备",
+              "equipment_id": "support_equipment_1",
+              "equipment_game_id": null,
+              "position": 0,
+              "factories": 2,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "visible": true,
+              "identity_complete": true,
+              "action_supported": true,
+              "maximum_assignable_factories": 8,
+              "supported_factory_count_max": 15
+            },
+            {
+              "equipment": "Kar 98k式步枪",
+              "equipment_type": "步兵装备 I型",
+              "equipment_id": "infantry_equipment_1",
+              "equipment_game_id": null,
+              "position": 1,
+              "factories": 10,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "visible": true,
+              "identity_complete": true,
+              "action_supported": true,
+              "maximum_assignable_factories": 16,
+              "supported_factory_count_max": 15
+            },
+            {
+              "equipment": "105毫米18型轻型野...",
+              "equipment_type": "牵引式火炮",
+              "equipment_id": "artillery_equipment_1",
+              "equipment_game_id": null,
+              "position": 2,
+              "factories": 1,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "visible": true,
+              "identity_complete": false,
+              "action_supported": false,
+              "maximum_assignable_factories": 7,
+              "supported_factory_count_max": 15
+            },
+            {
+              "equipment": "Panzer II A型",
+              "equipment_type": "改进型轻型坦克",
+              "equipment_id": null,
+              "equipment_game_id": null,
+              "position": 3,
+              "factories": 2,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "visible": true,
+              "identity_complete": true,
+              "action_supported": true,
+              "maximum_assignable_factories": 8,
+              "supported_factory_count_max": 15
+            },
+            {
+              "equipment": "欧宝 “闪电”",
+              "equipment_type": "卡车",
+              "equipment_id": null,
+              "equipment_game_id": null,
+              "position": 4,
+              "factories": 2,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "visible": true,
+              "identity_complete": true,
+              "action_supported": true,
+              "maximum_assignable_factories": 8,
+              "supported_factory_count_max": 15
+            },
+            {
+              "equipment": "Bf109 D",
+              "equipment_type": "基础小型机身",
+              "equipment_id": null,
+              "equipment_game_id": null,
+              "position": 5,
+              "factories": 1,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "visible": true,
+              "identity_complete": true,
+              "action_supported": true,
+              "maximum_assignable_factories": 7,
+              "supported_factory_count_max": 15
+            },
+            {
+              "equipment": "Ju 87",
+              "equipment_type": "基础近距支援机",
+              "equipment_id": null,
+              "equipment_game_id": null,
+              "position": 6,
+              "factories": 1,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "visible": true,
+              "identity_complete": true,
+              "action_supported": true,
+              "maximum_assignable_factories": 7,
+              "supported_factory_count_max": 15
+            },
+            {
+              "equipment": "He 111",
+              "equipment_type": "基础中型机身",
+              "equipment_id": null,
+              "equipment_game_id": null,
+              "position": 7,
+              "factories": 1,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "visible": true,
+              "identity_complete": true,
+              "action_supported": true,
+              "maximum_assignable_factories": 7,
+              "supported_factory_count_max": 15
+            },
+            {
+              "equipment": "Kar 98k式步枪",
+              "equipment_type": "步兵装备 I型",
+              "equipment_id": "infantry_equipment_1",
+              "equipment_game_id": null,
+              "position": 8,
+              "factories": 1,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "visible": true,
+              "identity_complete": true,
+              "action_supported": true,
+              "maximum_assignable_factories": 7,
+              "supported_factory_count_max": 15
+            },
+            {
+              "equipment": "支援装备",
+              "equipment_type": "支援装备",
+              "equipment_id": "support_equipment_1",
+              "equipment_game_id": null,
+              "position": 9,
+              "factories": 1,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "visible": true,
+              "identity_complete": true,
+              "action_supported": true,
+              "maximum_assignable_factories": 7,
+              "supported_factory_count_max": 15
+            }
+          ],
+          "military_factories": 28,
+          "assigned_military_factories": 22,
+          "available_military_factories": 6,
+          "scope": "complete military list; <=10 compact calibrated rows; naval lines excluded",
+          "source": "GUI",
+          "factory_count_evidence": "every numeric row count AND global assigned total; setters additionally require target numeric AND 15-cell grid"
+        },
+        "after": {
+          "lines": [
+            {
+              "equipment": "Kar 98k式步枪",
+              "equipment_type": "步兵装备 I型",
+              "equipment_id": "infantry_equipment_1",
+              "equipment_game_id": null,
+              "position": 0,
+              "factories": 10,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "visible": true,
+              "identity_complete": true,
+              "action_supported": true,
+              "maximum_assignable_factories": 16,
+              "supported_factory_count_max": 15,
+              "line_id": "prod-d5c01a26227b-0003-0001",
+              "identity_signature": "a47a6d7d8f170a3535592cf2086386f2fa94590e2287beaf01702b46900a7834"
+            },
+            {
+              "equipment": "支援装备",
+              "equipment_type": "支援装备",
+              "equipment_id": "support_equipment_1",
+              "equipment_game_id": null,
+              "position": 1,
+              "factories": 2,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "visible": true,
+              "identity_complete": true,
+              "action_supported": true,
+              "maximum_assignable_factories": 8,
+              "supported_factory_count_max": 15,
+              "line_id": "prod-d5c01a26227b-0003-0002",
+              "identity_signature": "77475cc3967bc186c8e738858bab7baee94635233267d1bfb94d0daf2884ba05"
+            },
+            {
+              "equipment": "105毫米18型轻型野...",
+              "equipment_type": "牵引式火炮",
+              "equipment_id": "artillery_equipment_1",
+              "equipment_game_id": null,
+              "position": 2,
+              "factories": 1,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "visible": true,
+              "identity_complete": false,
+              "action_supported": false,
+              "maximum_assignable_factories": 7,
+              "supported_factory_count_max": 15,
+              "line_id": "prod-d5c01a26227b-0003-0003",
+              "identity_signature": "d8f156915e8cec41bb17b2be5e7060dfb9be56e37bd1c67dbbd6b7a74f3dfc3c"
+            },
+            {
+              "equipment": "Panzer II A型",
+              "equipment_type": "改进型轻型坦克",
+              "equipment_id": null,
+              "equipment_game_id": null,
+              "position": 3,
+              "factories": 2,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "visible": true,
+              "identity_complete": true,
+              "action_supported": true,
+              "maximum_assignable_factories": 8,
+              "supported_factory_count_max": 15,
+              "line_id": "prod-d5c01a26227b-0003-0004",
+              "identity_signature": "070f87cd4699054e8dafe9f7c6a6e00792c664b243b2b18e5b74c919f2a34272"
+            },
+            {
+              "equipment": "欧宝 “闪电”",
+              "equipment_type": "卡车",
+              "equipment_id": null,
+              "equipment_game_id": null,
+              "position": 4,
+              "factories": 2,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "visible": true,
+              "identity_complete": true,
+              "action_supported": true,
+              "maximum_assignable_factories": 8,
+              "supported_factory_count_max": 15,
+              "line_id": "prod-d5c01a26227b-0003-0005",
+              "identity_signature": "742c9683e256afe9f2c0733fc5072abb10740fa677fcd42843be651b92833c79"
+            },
+            {
+              "equipment": "Bf109 D",
+              "equipment_type": "基础小型机身",
+              "equipment_id": null,
+              "equipment_game_id": null,
+              "position": 5,
+              "factories": 1,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "visible": true,
+              "identity_complete": true,
+              "action_supported": true,
+              "maximum_assignable_factories": 7,
+              "supported_factory_count_max": 15,
+              "line_id": "prod-d5c01a26227b-0003-0006",
+              "identity_signature": "fc9cbfa5f1e49da499ebfd2a9a873e8aa9cb183715931907fc2d6c5d2d27783e"
+            },
+            {
+              "equipment": "Ju 87",
+              "equipment_type": "基础近距支援机",
+              "equipment_id": null,
+              "equipment_game_id": null,
+              "position": 6,
+              "factories": 1,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "visible": true,
+              "identity_complete": true,
+              "action_supported": true,
+              "maximum_assignable_factories": 7,
+              "supported_factory_count_max": 15,
+              "line_id": "prod-d5c01a26227b-0003-0007",
+              "identity_signature": "c06a514a563dd41adf224da4b9a0d3a8a00a74e35fa1cc32840f85ccc508a9b8"
+            },
+            {
+              "equipment": "He 111",
+              "equipment_type": "基础中型机身",
+              "equipment_id": null,
+              "equipment_game_id": null,
+              "position": 7,
+              "factories": 1,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "visible": true,
+              "identity_complete": true,
+              "action_supported": true,
+              "maximum_assignable_factories": 7,
+              "supported_factory_count_max": 15,
+              "line_id": "prod-d5c01a26227b-0003-0008",
+              "identity_signature": "3b237d70691368418d0167c104b88bd9811f529018bbccdbc902ef5de5b32e3c"
+            },
+            {
+              "equipment": "Kar 98k式步枪",
+              "equipment_type": "步兵装备 I型",
+              "equipment_id": "infantry_equipment_1",
+              "equipment_game_id": null,
+              "position": 8,
+              "factories": 1,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "visible": true,
+              "identity_complete": true,
+              "action_supported": true,
+              "maximum_assignable_factories": 7,
+              "supported_factory_count_max": 15,
+              "line_id": "prod-d5c01a26227b-0003-0009",
+              "identity_signature": "44342fcb7d1bcd31c9377fde35e17f2e68c59d2645183d99aa8e5dfc86ff909f"
+            },
+            {
+              "equipment": "支援装备",
+              "equipment_type": "支援装备",
+              "equipment_id": "support_equipment_1",
+              "equipment_game_id": null,
+              "position": 9,
+              "factories": 1,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "visible": true,
+              "identity_complete": true,
+              "action_supported": true,
+              "maximum_assignable_factories": 7,
+              "supported_factory_count_max": 15,
+              "line_id": "prod-d5c01a26227b-0003-0010",
+              "identity_signature": "19d7c1a2eb3b6dc82fd3c426b9073e8f0304e5af8fbb830973cc6a95f4aa80a4"
+            }
+          ],
+          "military_factories": 28,
+          "assigned_military_factories": 22,
+          "available_military_factories": 6,
+          "scope": "complete military list; <=10 compact calibrated rows; naval lines excluded",
+          "source": "GUI",
+          "factory_count_evidence": "every numeric row count AND global assigned total; setters additionally require target numeric AND 15-cell grid",
+          "snapshot_version": 3,
+          "session_id": "d5c01a26227b",
+          "telemetry_seq": 706981,
+          "stable_game_identity": false,
+          "ttl_seconds": 120
+        },
+        "diff": {
+          "removed": [],
+          "before_order": [
+            [
+              "支援装备",
+              "支援装备",
+              2
+            ],
+            [
+              "Kar 98k式步枪",
+              "步兵装备 I型",
+              10
+            ],
+            [
+              "105毫米18型轻型野...",
+              "牵引式火炮",
+              1
+            ],
+            [
+              "Panzer II A型",
+              "改进型轻型坦克",
+              2
+            ],
+            [
+              "欧宝 “闪电”",
+              "卡车",
+              2
+            ],
+            [
+              "Bf109 D",
+              "基础小型机身",
+              1
+            ],
+            [
+              "Ju 87",
+              "基础近距支援机",
+              1
+            ],
+            [
+              "He 111",
+              "基础中型机身",
+              1
+            ],
+            [
+              "Kar 98k式步枪",
+              "步兵装备 I型",
+              1
+            ],
+            [
+              "支援装备",
+              "支援装备",
+              1
+            ]
+          ],
+          "after_order": [
+            [
+              "Kar 98k式步枪",
+              "步兵装备 I型",
+              10
+            ],
+            [
+              "支援装备",
+              "支援装备",
+              2
+            ],
+            [
+              "105毫米18型轻型野...",
+              "牵引式火炮",
+              1
+            ],
+            [
+              "Panzer II A型",
+              "改进型轻型坦克",
+              2
+            ],
+            [
+              "欧宝 “闪电”",
+              "卡车",
+              2
+            ],
+            [
+              "Bf109 D",
+              "基础小型机身",
+              1
+            ],
+            [
+              "Ju 87",
+              "基础近距支援机",
+              1
+            ],
+            [
+              "He 111",
+              "基础中型机身",
+              1
+            ],
+            [
+              "Kar 98k式步枪",
+              "步兵装备 I型",
+              1
+            ],
+            [
+              "支援装备",
+              "支援装备",
+              1
+            ]
+          ]
+        },
+        "ui_confirmation": {
+          "exact_list_transition": true,
+          "repeated_readback": true,
+          "scope": "complete military list; <=10 compact calibrated rows; naval lines excluded"
+        },
+        "telemetry_confirmation": {
+          "before_seq": 706980,
+          "after_seq": 706981,
+          "totals_agree": true,
+          "per_line_state": "UNKNOWN; GUI confirmation"
+        }
+      }
+    },
+    {
+      "action": "delete_production_line",
+      "arguments": {
+        "line_id": "prod-d5c01a26227b-0003-0009"
+      },
+      "result": {
+        "action": "delete_production_line",
+        "accepted": true,
+        "status": "uncertain",
+        "action_id": "64f74ab1-9772-4b5d-99da-69671c93680d",
+        "retry_count": 0,
+        "duration_ms": 7515,
+        "timings_ms": {
+          "precheck": 0,
+          "navigation": 3531,
+          "target_lookup": 109,
+          "submit": 1063,
+          "readback": 1859,
+          "confirmation": 0,
+          "total": 7515
+        },
+        "before": {
+          "lines": [
+            {
+              "equipment": "Kar 98k式步枪",
+              "equipment_type": "步兵装备 I型",
+              "equipment_id": "infantry_equipment_1",
+              "equipment_game_id": null,
+              "position": 0,
+              "factories": 10,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "visible": true,
+              "identity_complete": true,
+              "action_supported": true,
+              "maximum_assignable_factories": 16,
+              "supported_factory_count_max": 15
+            },
+            {
+              "equipment": "支援装备",
+              "equipment_type": "支援装备",
+              "equipment_id": "support_equipment_1",
+              "equipment_game_id": null,
+              "position": 1,
+              "factories": 2,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "visible": true,
+              "identity_complete": true,
+              "action_supported": true,
+              "maximum_assignable_factories": 8,
+              "supported_factory_count_max": 15
+            },
+            {
+              "equipment": "105毫米18型轻型野...",
+              "equipment_type": "牵引式火炮",
+              "equipment_id": "artillery_equipment_1",
+              "equipment_game_id": null,
+              "position": 2,
+              "factories": 1,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "visible": true,
+              "identity_complete": false,
+              "action_supported": false,
+              "maximum_assignable_factories": 7,
+              "supported_factory_count_max": 15
+            },
+            {
+              "equipment": "Panzer II A型",
+              "equipment_type": "改进型轻型坦克",
+              "equipment_id": null,
+              "equipment_game_id": null,
+              "position": 3,
+              "factories": 2,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "visible": true,
+              "identity_complete": true,
+              "action_supported": true,
+              "maximum_assignable_factories": 8,
+              "supported_factory_count_max": 15
+            },
+            {
+              "equipment": "欧宝 “闪电”",
+              "equipment_type": "卡车",
+              "equipment_id": null,
+              "equipment_game_id": null,
+              "position": 4,
+              "factories": 2,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "visible": true,
+              "identity_complete": true,
+              "action_supported": true,
+              "maximum_assignable_factories": 8,
+              "supported_factory_count_max": 15
+            },
+            {
+              "equipment": "Bf109 D",
+              "equipment_type": "基础小型机身",
+              "equipment_id": null,
+              "equipment_game_id": null,
+              "position": 5,
+              "factories": 1,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "visible": true,
+              "identity_complete": true,
+              "action_supported": true,
+              "maximum_assignable_factories": 7,
+              "supported_factory_count_max": 15
+            },
+            {
+              "equipment": "Ju 87",
+              "equipment_type": "基础近距支援机",
+              "equipment_id": null,
+              "equipment_game_id": null,
+              "position": 6,
+              "factories": 1,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "visible": true,
+              "identity_complete": true,
+              "action_supported": true,
+              "maximum_assignable_factories": 7,
+              "supported_factory_count_max": 15
+            },
+            {
+              "equipment": "He 111",
+              "equipment_type": "基础中型机身",
+              "equipment_id": null,
+              "equipment_game_id": null,
+              "position": 7,
+              "factories": 1,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "visible": true,
+              "identity_complete": true,
+              "action_supported": true,
+              "maximum_assignable_factories": 7,
+              "supported_factory_count_max": 15
+            },
+            {
+              "equipment": "Kar 98k式步枪",
+              "equipment_type": "步兵装备 I型",
+              "equipment_id": "infantry_equipment_1",
+              "equipment_game_id": null,
+              "position": 8,
+              "factories": 1,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "visible": true,
+              "identity_complete": true,
+              "action_supported": true,
+              "maximum_assignable_factories": 7,
+              "supported_factory_count_max": 15
+            },
+            {
+              "equipment": "支援装备",
+              "equipment_type": "支援装备",
+              "equipment_id": "support_equipment_1",
+              "equipment_game_id": null,
+              "position": 9,
+              "factories": 1,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "visible": true,
+              "identity_complete": true,
+              "action_supported": true,
+              "maximum_assignable_factories": 7,
+              "supported_factory_count_max": 15
+            }
+          ],
+          "military_factories": 28,
+          "assigned_military_factories": 22,
+          "available_military_factories": 6,
+          "scope": "complete military list; <=10 compact calibrated rows; naval lines excluded",
+          "source": "GUI",
+          "factory_count_evidence": "every numeric row count AND global assigned total; setters additionally require target numeric AND 15-cell grid"
+        },
+        "reason": "unexpected_state_change",
+        "recovery": "escape_sent"
+      }
+    }
+  ],
+  "before_telemetry": {
+    "status": "fresh",
+    "received_at": "2026-10-01T17:28:48.941845+00:00",
+    "game_date": " 24:00, 6 12月, 1936",
+    "latest_seq": 706979,
+    "state": {
+      "protocol_version": 2,
+      "seq": 706979,
+      "game_date": " 24:00, 6 12月, 1936",
+      "country": "GER",
+      "politics": {
+        "political_power": 790.16,
+        "stability": 0.81,
+        "war_support": 0.35732
+      },
+      "manpower": {
+        "available": 1350105,
+        "source_thousands": 1350.105
+      },
+      "industry": {
+        "civilian_factories": 37,
+        "military_factories": 28,
+        "dockyards": 10
+      },
+      "origin": "daily",
+      "research": {
+        "slot_count": 4,
+        "tracked_technologies": [
+          {
+            "tech_id": "basic_machine_tools",
+            "researching": false,
+            "researched": false
+          },
+          {
+            "tech_id": "construction1",
+            "researching": false,
+            "researched": false
+          },
+          {
+            "tech_id": "electronic_mechanical_engineering",
+            "researching": false,
+            "researched": false
+          }
+        ]
+      },
+      "focus": {
+        "tracked_id": "GER_remilitarize_the_rhineland",
+        "completed": false,
+        "progress_lower_bound": 0.0,
+        "progress_upper_bound": 0.1
+      }
+    },
+    "parser_errors": [],
+    "session_id": "d07367ff-8581-495b-bb0d-6e219c9033c9",
+    "revision": 1,
+    "freshness_basis": "frame_received_at",
+    "log_read_error": null
+  }
+}

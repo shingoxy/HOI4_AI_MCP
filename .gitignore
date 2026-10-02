@@ -7,3 +7,6 @@ __pycache__/
 /artifacts/phase3a/test-temp-*/
 /artifacts/phase3a/save-backup/
 /artifacts/phase3b1/test-temp-*/
+/artifacts/phase3/save-backup/
+/artifacts/phase3/runtime/
+/artifacts/phase3/test-temp-*/

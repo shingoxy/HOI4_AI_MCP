@@ -1,0 +1,833 @@
+{
+  "source": "LIVE HOI4 / official SDK stdio / semantic API / normal GUI",
+  "actions": [
+    {
+      "action": "get_construction",
+      "arguments": {},
+      "result": {
+        "action": "get_construction",
+        "accepted": true,
+        "status": "confirmed",
+        "action_id": "ec61a056-a9ea-44f9-87a2-a83d7f1eb0e8",
+        "retry_count": 0,
+        "duration_ms": 2718,
+        "timings_ms": {
+          "precheck": 0,
+          "navigation": 2609,
+          "target_lookup": 0,
+          "submit": 0,
+          "readback": 109,
+          "confirmation": 0,
+          "total": 2718
+        },
+        "queue": [
+          {
+            "state_id": 64,
+            "state_display": "勃兰登堡",
+            "building_type": "military_factory",
+            "count": 1,
+            "position": 0,
+            "assigned_civilian_factories": 15,
+            "progress": null,
+            "identity_source": "gui",
+            "stable_game_identity": false,
+            "queue_item_id": "construction-5e65384c9209-0001-0000",
+            "identity_signature": "cc3c54f44ff68b614c4f6c9f90bf304333c10ca640809101d07b6d20c3ea5713"
+          },
+          {
+            "state_id": 66,
+            "state_display": "下西里西亚",
+            "building_type": "infrastructure",
+            "count": 1,
+            "position": 1,
+            "assigned_civilian_factories": null,
+            "progress": null,
+            "identity_source": "gui",
+            "stable_game_identity": false,
+            "queue_item_id": "construction-5e65384c9209-0001-0001",
+            "identity_signature": "564446148eded2632a3370e431fc1727d722a855bbbf5213cc2ba569a2364c9d"
+          }
+        ],
+        "identity_source": "gui",
+        "stable_game_identity": false,
+        "scope": "complete visible queue; <=8 one-building rows; states 64/65/66 only",
+        "unknown_fields": [
+          "numeric_progress",
+          "uncalibrated_factory_allocations",
+          "internal_queue_id"
+        ],
+        "session_id": "5e65384c9209",
+        "snapshot_version": 1,
+        "ttl_seconds": 120,
+        "telemetry_seq": 707043
+      }
+    },
+    {
+      "action": "build",
+      "arguments": {
+        "state_id": 65,
+        "building_type": "civilian_factory"
+      },
+      "result": {
+        "action": "build",
+        "accepted": true,
+        "status": "confirmed",
+        "action_id": "8accd732-d8e3-40d4-b061-aae59993596e",
+        "retry_count": 0,
+        "duration_ms": 12500,
+        "timings_ms": {
+          "precheck": 0,
+          "navigation": 922,
+          "target_lookup": 110,
+          "submit": 8500,
+          "readback": 875,
+          "confirmation": 859,
+          "total": 12500
+        },
+        "before": {
+          "queue": [
+            {
+              "state_id": 64,
+              "state_display": "勃兰登堡",
+              "building_type": "military_factory",
+              "count": 1,
+              "position": 0,
+              "assigned_civilian_factories": 15,
+              "progress": null
+            },
+            {
+              "state_id": 66,
+              "state_display": "下西里西亚",
+              "building_type": "infrastructure",
+              "count": 1,
+              "position": 1,
+              "assigned_civilian_factories": null,
+              "progress": null
+            }
+          ],
+          "identity_source": "gui",
+          "stable_game_identity": false,
+          "scope": "complete visible queue; <=8 one-building rows; states 64/65/66 only",
+          "unknown_fields": [
+            "numeric_progress",
+            "uncalibrated_factory_allocations",
+            "internal_queue_id"
+          ]
+        },
+        "after": {
+          "queue": [
+            {
+              "state_id": 64,
+              "state_display": "勃兰登堡",
+              "building_type": "military_factory",
+              "count": 1,
+              "position": 0,
+              "assigned_civilian_factories": 15,
+              "progress": null,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "queue_item_id": "construction-5e65384c9209-0002-0000",
+              "identity_signature": "cc3c54f44ff68b614c4f6c9f90bf304333c10ca640809101d07b6d20c3ea5713"
+            },
+            {
+              "state_id": 66,
+              "state_display": "下西里西亚",
+              "building_type": "infrastructure",
+              "count": 1,
+              "position": 1,
+              "assigned_civilian_factories": null,
+              "progress": null,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "queue_item_id": "construction-5e65384c9209-0002-0001",
+              "identity_signature": "564446148eded2632a3370e431fc1727d722a855bbbf5213cc2ba569a2364c9d"
+            },
+            {
+              "state_id": 65,
+              "state_display": "萨克森",
+              "building_type": "civilian_factory",
+              "count": 1,
+              "position": 2,
+              "assigned_civilian_factories": 0,
+              "progress": null,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "queue_item_id": "construction-5e65384c9209-0002-0002",
+              "identity_signature": "c63f686ddde8a13b9735ae46ea8f04161099edbd8dac175e1a58977f50e3fe78"
+            }
+          ],
+          "identity_source": "gui",
+          "stable_game_identity": false,
+          "scope": "complete visible queue; <=8 one-building rows; states 64/65/66 only",
+          "unknown_fields": [
+            "numeric_progress",
+            "uncalibrated_factory_allocations",
+            "internal_queue_id"
+          ],
+          "session_id": "5e65384c9209",
+          "snapshot_version": 2,
+          "ttl_seconds": 120,
+          "telemetry_seq": 707044
+        },
+        "diff": {
+          "before_order": [
+            [
+              64,
+              "military_factory",
+              1
+            ],
+            [
+              66,
+              "infrastructure",
+              1
+            ]
+          ],
+          "after_order": [
+            [
+              64,
+              "military_factory",
+              1
+            ],
+            [
+              66,
+              "infrastructure",
+              1
+            ],
+            [
+              65,
+              "civilian_factory",
+              1
+            ]
+          ],
+          "exact_transition": true
+        },
+        "ui_confirmation": {
+          "exact_queue_transition": true,
+          "repeated_readback": true
+        },
+        "telemetry_confirmation": {
+          "before_seq": 707043,
+          "after_seq": 707044,
+          "queue_state": "UNKNOWN; GUI confirmation"
+        }
+      }
+    },
+    {
+      "action": "change_construction_priority",
+      "arguments": {
+        "queue_item_id": "construction-5e65384c9209-0002-0002",
+        "direction": "up"
+      },
+      "result": {
+        "action": "change_construction_priority",
+        "accepted": true,
+        "status": "confirmed",
+        "action_id": "2eebfcfc-7bf3-4b18-a053-a8f8a57cac3c",
+        "retry_count": 0,
+        "duration_ms": 7032,
+        "timings_ms": {
+          "precheck": 0,
+          "navigation": 2782,
+          "target_lookup": 109,
+          "submit": 1047,
+          "readback": 875,
+          "confirmation": 1281,
+          "total": 7032
+        },
+        "before": {
+          "queue": [
+            {
+              "state_id": 64,
+              "state_display": "勃兰登堡",
+              "building_type": "military_factory",
+              "count": 1,
+              "position": 0,
+              "assigned_civilian_factories": 15,
+              "progress": null
+            },
+            {
+              "state_id": 66,
+              "state_display": "下西里西亚",
+              "building_type": "infrastructure",
+              "count": 1,
+              "position": 1,
+              "assigned_civilian_factories": null,
+              "progress": null
+            },
+            {
+              "state_id": 65,
+              "state_display": "萨克森",
+              "building_type": "civilian_factory",
+              "count": 1,
+              "position": 2,
+              "assigned_civilian_factories": 0,
+              "progress": null
+            }
+          ],
+          "identity_source": "gui",
+          "stable_game_identity": false,
+          "scope": "complete visible queue; <=8 one-building rows; states 64/65/66 only",
+          "unknown_fields": [
+            "numeric_progress",
+            "uncalibrated_factory_allocations",
+            "internal_queue_id"
+          ]
+        },
+        "after": {
+          "queue": [
+            {
+              "state_id": 64,
+              "state_display": "勃兰登堡",
+              "building_type": "military_factory",
+              "count": 1,
+              "position": 0,
+              "assigned_civilian_factories": 15,
+              "progress": null,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "queue_item_id": "construction-5e65384c9209-0003-0000",
+              "identity_signature": "cc3c54f44ff68b614c4f6c9f90bf304333c10ca640809101d07b6d20c3ea5713"
+            },
+            {
+              "state_id": 65,
+              "state_display": "萨克森",
+              "building_type": "civilian_factory",
+              "count": 1,
+              "position": 1,
+              "assigned_civilian_factories": null,
+              "progress": null,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "queue_item_id": "construction-5e65384c9209-0003-0001",
+              "identity_signature": "4e588fd9536de65c2dc7d1644a0b27deb711f05befe430aaaf2c05811b223391"
+            },
+            {
+              "state_id": 66,
+              "state_display": "下西里西亚",
+              "building_type": "infrastructure",
+              "count": 1,
+              "position": 2,
+              "assigned_civilian_factories": 0,
+              "progress": null,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "queue_item_id": "construction-5e65384c9209-0003-0002",
+              "identity_signature": "476a740dc55471e99d051c85f4023779d6fb5ac86240c322e65d6df93fec6ebf"
+            }
+          ],
+          "identity_source": "gui",
+          "stable_game_identity": false,
+          "scope": "complete visible queue; <=8 one-building rows; states 64/65/66 only",
+          "unknown_fields": [
+            "numeric_progress",
+            "uncalibrated_factory_allocations",
+            "internal_queue_id"
+          ],
+          "session_id": "5e65384c9209",
+          "snapshot_version": 3,
+          "ttl_seconds": 120,
+          "telemetry_seq": 707044
+        },
+        "diff": {
+          "before_order": [
+            [
+              64,
+              "military_factory",
+              1
+            ],
+            [
+              66,
+              "infrastructure",
+              1
+            ],
+            [
+              65,
+              "civilian_factory",
+              1
+            ]
+          ],
+          "after_order": [
+            [
+              64,
+              "military_factory",
+              1
+            ],
+            [
+              65,
+              "civilian_factory",
+              1
+            ],
+            [
+              66,
+              "infrastructure",
+              1
+            ]
+          ],
+          "exact_transition": true
+        },
+        "ui_confirmation": {
+          "exact_queue_transition": true,
+          "repeated_readback": true
+        },
+        "telemetry_confirmation": {
+          "before_seq": 707044,
+          "after_seq": 707044,
+          "queue_state": "UNKNOWN; GUI confirmation"
+        }
+      }
+    },
+    {
+      "action": "cancel_construction",
+      "arguments": {
+        "queue_item_id": "construction-5e65384c9209-0003-0000"
+      },
+      "result": {
+        "action": "cancel_construction",
+        "accepted": true,
+        "status": "confirmed",
+        "action_id": "2f963346-7a28-4d92-96d1-1d3d7cf558ee",
+        "retry_count": 0,
+        "duration_ms": 7359,
+        "timings_ms": {
+          "precheck": 0,
+          "navigation": 2781,
+          "target_lookup": 125,
+          "submit": 1828,
+          "readback": 859,
+          "confirmation": 875,
+          "total": 7359
+        },
+        "before": {
+          "queue": [
+            {
+              "state_id": 64,
+              "state_display": "勃兰登堡",
+              "building_type": "military_factory",
+              "count": 1,
+              "position": 0,
+              "assigned_civilian_factories": 15,
+              "progress": null
+            },
+            {
+              "state_id": 65,
+              "state_display": "萨克森",
+              "building_type": "civilian_factory",
+              "count": 1,
+              "position": 1,
+              "assigned_civilian_factories": null,
+              "progress": null
+            },
+            {
+              "state_id": 66,
+              "state_display": "下西里西亚",
+              "building_type": "infrastructure",
+              "count": 1,
+              "position": 2,
+              "assigned_civilian_factories": 0,
+              "progress": null
+            }
+          ],
+          "identity_source": "gui",
+          "stable_game_identity": false,
+          "scope": "complete visible queue; <=8 one-building rows; states 64/65/66 only",
+          "unknown_fields": [
+            "numeric_progress",
+            "uncalibrated_factory_allocations",
+            "internal_queue_id"
+          ]
+        },
+        "after": {
+          "queue": [
+            {
+              "state_id": 65,
+              "state_display": "萨克森",
+              "building_type": "civilian_factory",
+              "count": 1,
+              "position": 0,
+              "assigned_civilian_factories": 15,
+              "progress": null,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "queue_item_id": "construction-5e65384c9209-0004-0000",
+              "identity_signature": "dc59ddb1f471fddda85136c8319305a3fde32e66e2853019997640253314cef2"
+            },
+            {
+              "state_id": 66,
+              "state_display": "下西里西亚",
+              "building_type": "infrastructure",
+              "count": 1,
+              "position": 1,
+              "assigned_civilian_factories": null,
+              "progress": null,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "queue_item_id": "construction-5e65384c9209-0004-0001",
+              "identity_signature": "564446148eded2632a3370e431fc1727d722a855bbbf5213cc2ba569a2364c9d"
+            }
+          ],
+          "identity_source": "gui",
+          "stable_game_identity": false,
+          "scope": "complete visible queue; <=8 one-building rows; states 64/65/66 only",
+          "unknown_fields": [
+            "numeric_progress",
+            "uncalibrated_factory_allocations",
+            "internal_queue_id"
+          ],
+          "session_id": "5e65384c9209",
+          "snapshot_version": 4,
+          "ttl_seconds": 120,
+          "telemetry_seq": 707045
+        },
+        "diff": {
+          "before_order": [
+            [
+              64,
+              "military_factory",
+              1
+            ],
+            [
+              65,
+              "civilian_factory",
+              1
+            ],
+            [
+              66,
+              "infrastructure",
+              1
+            ]
+          ],
+          "after_order": [
+            [
+              65,
+              "civilian_factory",
+              1
+            ],
+            [
+              66,
+              "infrastructure",
+              1
+            ]
+          ],
+          "exact_transition": true
+        },
+        "ui_confirmation": {
+          "exact_queue_transition": true,
+          "repeated_readback": true
+        },
+        "telemetry_confirmation": {
+          "before_seq": 707044,
+          "after_seq": 707045,
+          "queue_state": "UNKNOWN; GUI confirmation"
+        }
+      }
+    },
+    {
+      "action": "cancel_construction",
+      "arguments": {
+        "queue_item_id": "construction-5e65384c9209-0004-0000"
+      },
+      "result": {
+        "action": "cancel_construction",
+        "accepted": true,
+        "status": "confirmed",
+        "action_id": "8ec01946-e861-454d-b0a1-be7eb603310c",
+        "retry_count": 0,
+        "duration_ms": 7500,
+        "timings_ms": {
+          "precheck": 0,
+          "navigation": 2406,
+          "target_lookup": 110,
+          "submit": 1906,
+          "readback": 859,
+          "confirmation": 860,
+          "total": 7500
+        },
+        "before": {
+          "queue": [
+            {
+              "state_id": 65,
+              "state_display": "萨克森",
+              "building_type": "civilian_factory",
+              "count": 1,
+              "position": 0,
+              "assigned_civilian_factories": 15,
+              "progress": null
+            },
+            {
+              "state_id": 66,
+              "state_display": "下西里西亚",
+              "building_type": "infrastructure",
+              "count": 1,
+              "position": 1,
+              "assigned_civilian_factories": null,
+              "progress": null
+            }
+          ],
+          "identity_source": "gui",
+          "stable_game_identity": false,
+          "scope": "complete visible queue; <=8 one-building rows; states 64/65/66 only",
+          "unknown_fields": [
+            "numeric_progress",
+            "uncalibrated_factory_allocations",
+            "internal_queue_id"
+          ]
+        },
+        "after": {
+          "queue": [
+            {
+              "state_id": 66,
+              "state_display": "下西里西亚",
+              "building_type": "infrastructure",
+              "count": 1,
+              "position": 0,
+              "assigned_civilian_factories": 15,
+              "progress": null,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "queue_item_id": "construction-5e65384c9209-0005-0000",
+              "identity_signature": "83f250c4b7c57e66841801f4548ec9c08cabc3ee64c20817d26eb862a26a03a5"
+            }
+          ],
+          "identity_source": "gui",
+          "stable_game_identity": false,
+          "scope": "complete visible queue; <=8 one-building rows; states 64/65/66 only",
+          "unknown_fields": [
+            "numeric_progress",
+            "uncalibrated_factory_allocations",
+            "internal_queue_id"
+          ],
+          "session_id": "5e65384c9209",
+          "snapshot_version": 5,
+          "ttl_seconds": 120,
+          "telemetry_seq": 707045
+        },
+        "diff": {
+          "before_order": [
+            [
+              65,
+              "civilian_factory",
+              1
+            ],
+            [
+              66,
+              "infrastructure",
+              1
+            ]
+          ],
+          "after_order": [
+            [
+              66,
+              "infrastructure",
+              1
+            ]
+          ],
+          "exact_transition": true
+        },
+        "ui_confirmation": {
+          "exact_queue_transition": true,
+          "repeated_readback": true
+        },
+        "telemetry_confirmation": {
+          "before_seq": 707045,
+          "after_seq": 707045,
+          "queue_state": "UNKNOWN; GUI confirmation"
+        }
+      }
+    },
+    {
+      "action": "cancel_construction",
+      "arguments": {
+        "queue_item_id": "construction-5e65384c9209-0005-0000"
+      },
+      "result": {
+        "action": "cancel_construction",
+        "accepted": true,
+        "status": "confirmed",
+        "action_id": "7bb8af3a-01f4-4019-8364-2001da7a9589",
+        "retry_count": 0,
+        "duration_ms": 6937,
+        "timings_ms": {
+          "precheck": 0,
+          "navigation": 2390,
+          "target_lookup": 110,
+          "submit": 1812,
+          "readback": 844,
+          "confirmation": 875,
+          "total": 6937
+        },
+        "before": {
+          "queue": [
+            {
+              "state_id": 66,
+              "state_display": "下西里西亚",
+              "building_type": "infrastructure",
+              "count": 1,
+              "position": 0,
+              "assigned_civilian_factories": 15,
+              "progress": null
+            }
+          ],
+          "identity_source": "gui",
+          "stable_game_identity": false,
+          "scope": "complete visible queue; <=8 one-building rows; states 64/65/66 only",
+          "unknown_fields": [
+            "numeric_progress",
+            "uncalibrated_factory_allocations",
+            "internal_queue_id"
+          ]
+        },
+        "after": {
+          "queue": [],
+          "identity_source": "gui",
+          "stable_game_identity": false,
+          "scope": "complete visible queue; <=8 one-building rows; states 64/65/66 only",
+          "unknown_fields": [
+            "numeric_progress",
+            "uncalibrated_factory_allocations",
+            "internal_queue_id"
+          ],
+          "session_id": "5e65384c9209",
+          "snapshot_version": 6,
+          "ttl_seconds": 120,
+          "telemetry_seq": 707046
+        },
+        "diff": {
+          "before_order": [
+            [
+              66,
+              "infrastructure",
+              1
+            ]
+          ],
+          "after_order": [],
+          "exact_transition": true
+        },
+        "ui_confirmation": {
+          "exact_queue_transition": true,
+          "repeated_readback": true
+        },
+        "telemetry_confirmation": {
+          "before_seq": 707045,
+          "after_seq": 707046,
+          "queue_state": "UNKNOWN; GUI confirmation"
+        }
+      }
+    }
+  ],
+  "before_telemetry": {
+    "status": "fresh",
+    "received_at": "2026-10-01T18:19:31.177823+00:00",
+    "game_date": " 24:00, 8 2月, 1937",
+    "latest_seq": 707043,
+    "state": {
+      "protocol_version": 2,
+      "seq": 707043,
+      "game_date": " 24:00, 8 2月, 1937",
+      "country": "GER",
+      "politics": {
+        "political_power": 938.896,
+        "stability": 0.81,
+        "war_support": 0.35621
+      },
+      "manpower": {
+        "available": 1354044,
+        "source_thousands": 1354.044
+      },
+      "industry": {
+        "civilian_factories": 37,
+        "military_factories": 28,
+        "dockyards": 10
+      },
+      "origin": "daily",
+      "research": {
+        "slot_count": 4,
+        "tracked_technologies": [
+          {
+            "tech_id": "basic_machine_tools",
+            "researching": false,
+            "researched": false
+          },
+          {
+            "tech_id": "construction1",
+            "researching": false,
+            "researched": false
+          },
+          {
+            "tech_id": "electronic_mechanical_engineering",
+            "researching": false,
+            "researched": false
+          }
+        ]
+      },
+      "focus": {
+        "tracked_id": "GER_remilitarize_the_rhineland",
+        "completed": false,
+        "progress_lower_bound": 0.0,
+        "progress_upper_bound": 0.1
+      }
+    },
+    "parser_errors": [],
+    "session_id": "10908622-c329-4408-8a23-ac51ac4f33eb",
+    "revision": 1,
+    "freshness_basis": "frame_received_at",
+    "log_read_error": null
+  },
+  "after_telemetry": {
+    "status": "fresh",
+    "received_at": "2026-10-01T18:20:08.710706+00:00",
+    "game_date": " 24:00, 11 2月, 1937",
+    "latest_seq": 707046,
+    "state": {
+      "protocol_version": 2,
+      "seq": 707046,
+      "game_date": " 24:00, 11 2月, 1937",
+      "country": "GER",
+      "politics": {
+        "political_power": 945.868,
+        "stability": 0.81,
+        "war_support": 0.35609
+      },
+      "manpower": {
+        "available": 1354022,
+        "source_thousands": 1354.022
+      },
+      "industry": {
+        "civilian_factories": 37,
+        "military_factories": 28,
+        "dockyards": 10
+      },
+      "origin": "daily",
+      "research": {
+        "slot_count": 4,
+        "tracked_technologies": [
+          {
+            "tech_id": "basic_machine_tools",
+            "researching": false,
+            "researched": false
+          },
+          {
+            "tech_id": "construction1",
+            "researching": false,
+            "researched": false
+          },
+          {
+            "tech_id": "electronic_mechanical_engineering",
+            "researching": false,
+            "researched": false
+          }
+        ]
+      },
+      "focus": {
+        "tracked_id": "GER_remilitarize_the_rhineland",
+        "completed": false,
+        "progress_lower_bound": 0.0,
+        "progress_upper_bound": 0.1
+      }
+    },
+    "parser_errors": [],
+    "session_id": "10908622-c329-4408-8a23-ac51ac4f33eb",
+    "revision": 4,
+    "freshness_basis": "frame_received_at",
+    "log_read_error": null
+  }
+}

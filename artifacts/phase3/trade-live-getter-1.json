@@ -1,0 +1,235 @@
+{
+  "source": "LIVE HOI4 / official SDK stdio / semantic API / normal GUI",
+  "actions": [
+    {
+      "action": "get_trade_state",
+      "arguments": {},
+      "result": {
+        "action": "get_trade_state",
+        "accepted": true,
+        "status": "confirmed",
+        "action_id": "c5f6f67b-ec2f-4fcb-b65e-47630f9effc8",
+        "retry_count": 0,
+        "duration_ms": 5796,
+        "timings_ms": {
+          "precheck": 0,
+          "navigation": 5796,
+          "target_lookup": 0,
+          "submit": 0,
+          "readback": 0,
+          "confirmation": 0,
+          "total": 5796
+        },
+        "imports": [
+          {
+            "resource": "steel",
+            "country": "SWE",
+            "civilian_factories": 0,
+            "requested_amount": 0,
+            "delivered_amount": 0,
+            "position": 0,
+            "identity_source": "gui",
+            "stable_game_identity": false,
+            "trade_id": "trade-a6a2670be9f5-0001-0000",
+            "identity_signature": "07310e53eb8693def49abef3de4c57b67a44ad975455bd7e0e5a375adf55c122"
+          }
+        ],
+        "available_civilian_factories": 20,
+        "identity_source": "gui",
+        "stable_game_identity": false,
+        "complete_trade_state": false,
+        "scope": "SWE steel only; 0..2 civilian factories; requested AND delivered readback",
+        "unknown_fields": [
+          "other_resources_and_countries",
+          "internal_trade_id"
+        ],
+        "session_id": "a6a2670be9f5",
+        "snapshot_version": 1,
+        "ttl_seconds": 120,
+        "telemetry_seq": 706641,
+        "ui_observation_retry_count": 0
+      }
+    },
+    {
+      "action": "set_trade_import",
+      "arguments": {
+        "resource": "steel",
+        "country": "SWE",
+        "civilian_factories": 0
+      },
+      "result": {
+        "action": "set_trade_import",
+        "accepted": true,
+        "status": "already_satisfied",
+        "action_id": "05e8ef4b-2682-4d39-a22b-57e3a899dbb4",
+        "retry_count": 0,
+        "duration_ms": 4610,
+        "timings_ms": {
+          "precheck": 0,
+          "navigation": 3704,
+          "target_lookup": 0,
+          "submit": 0,
+          "readback": 0,
+          "confirmation": 0,
+          "total": 4610
+        },
+        "before": {
+          "imports": [
+            {
+              "resource": "steel",
+              "country": "SWE",
+              "civilian_factories": 0,
+              "requested_amount": 0,
+              "delivered_amount": 0
+            }
+          ],
+          "available_civilian_factories": 20,
+          "identity_source": "gui",
+          "stable_game_identity": false,
+          "complete_trade_state": false,
+          "scope": "SWE steel only; 0..2 civilian factories; requested AND delivered readback",
+          "unknown_fields": [
+            "other_resources_and_countries",
+            "internal_trade_id"
+          ]
+        },
+        "after": {
+          "imports": [
+            {
+              "resource": "steel",
+              "country": "SWE",
+              "civilian_factories": 0,
+              "requested_amount": 0,
+              "delivered_amount": 0
+            }
+          ],
+          "available_civilian_factories": 20,
+          "identity_source": "gui",
+          "stable_game_identity": false,
+          "complete_trade_state": false,
+          "scope": "SWE steel only; 0..2 civilian factories; requested AND delivered readback",
+          "unknown_fields": [
+            "other_resources_and_countries",
+            "internal_trade_id"
+          ]
+        }
+      }
+    }
+  ],
+  "before_telemetry": {
+    "status": "fresh",
+    "received_at": "2026-10-01T19:45:04.846918+00:00",
+    "game_date": " 24:00, 2 1月, 1936",
+    "latest_seq": 706641,
+    "state": {
+      "protocol_version": 2,
+      "seq": 706641,
+      "game_date": " 24:00, 2 1月, 1936",
+      "country": "GER",
+      "politics": {
+        "political_power": 2.648,
+        "stability": 0.81,
+        "war_support": 0.35
+      },
+      "manpower": {
+        "available": 1332620,
+        "source_thousands": 1332.62
+      },
+      "industry": {
+        "civilian_factories": 35,
+        "military_factories": 28,
+        "dockyards": 10
+      },
+      "origin": "daily",
+      "research": {
+        "slot_count": 4,
+        "tracked_technologies": [
+          {
+            "tech_id": "basic_machine_tools",
+            "researching": true,
+            "researched": false
+          },
+          {
+            "tech_id": "construction1",
+            "researching": true,
+            "researched": false
+          },
+          {
+            "tech_id": "electronic_mechanical_engineering",
+            "researching": true,
+            "researched": false
+          }
+        ]
+      },
+      "focus": {
+        "tracked_id": "GER_remilitarize_the_rhineland",
+        "completed": false,
+        "progress_lower_bound": 0.0,
+        "progress_upper_bound": 0.1
+      }
+    },
+    "parser_errors": [],
+    "session_id": "4bcf0184-6e83-40fe-b453-9d318b2ed20a",
+    "revision": 1,
+    "freshness_basis": "frame_received_at",
+    "log_read_error": null
+  },
+  "after_telemetry": {
+    "status": "fresh",
+    "received_at": "2026-10-01T19:45:04.846918+00:00",
+    "game_date": " 24:00, 2 1月, 1936",
+    "latest_seq": 706641,
+    "state": {
+      "protocol_version": 2,
+      "seq": 706641,
+      "game_date": " 24:00, 2 1月, 1936",
+      "country": "GER",
+      "politics": {
+        "political_power": 2.648,
+        "stability": 0.81,
+        "war_support": 0.35
+      },
+      "manpower": {
+        "available": 1332620,
+        "source_thousands": 1332.62
+      },
+      "industry": {
+        "civilian_factories": 35,
+        "military_factories": 28,
+        "dockyards": 10
+      },
+      "origin": "daily",
+      "research": {
+        "slot_count": 4,
+        "tracked_technologies": [
+          {
+            "tech_id": "basic_machine_tools",
+            "researching": true,
+            "researched": false
+          },
+          {
+            "tech_id": "construction1",
+            "researching": true,
+            "researched": false
+          },
+          {
+            "tech_id": "electronic_mechanical_engineering",
+            "researching": true,
+            "researched": false
+          }
+        ]
+      },
+      "focus": {
+        "tracked_id": "GER_remilitarize_the_rhineland",
+        "completed": false,
+        "progress_lower_bound": 0.0,
+        "progress_upper_bound": 0.1
+      }
+    },
+    "parser_errors": [],
+    "session_id": "4bcf0184-6e83-40fe-b453-9d318b2ed20a",
+    "revision": 1,
+    "freshness_basis": "frame_received_at",
+    "log_read_error": null
+  }
+}

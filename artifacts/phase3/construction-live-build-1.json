@@ -1,0 +1,357 @@
+{
+  "source": "LIVE HOI4 / official SDK stdio / semantic API / normal GUI",
+  "actions": [
+    {
+      "action": "get_construction",
+      "arguments": {},
+      "result": {
+        "action": "get_construction",
+        "accepted": true,
+        "status": "confirmed",
+        "action_id": "55e6bae1-564e-4cd7-b4dd-7f231136dbec",
+        "retry_count": 0,
+        "duration_ms": 2797,
+        "timings_ms": {
+          "precheck": 0,
+          "navigation": 2656,
+          "target_lookup": 0,
+          "submit": 0,
+          "readback": 141,
+          "confirmation": 0,
+          "total": 2797
+        },
+        "queue": [],
+        "identity_source": "gui",
+        "stable_game_identity": false,
+        "scope": "complete visible queue; <=8 one-building rows; states 64/65/66 only",
+        "unknown_fields": [
+          "numeric_progress",
+          "uncalibrated_factory_allocations",
+          "internal_queue_id"
+        ],
+        "session_id": "2b9d877a3998",
+        "snapshot_version": 1,
+        "ttl_seconds": 120,
+        "telemetry_seq": 707038
+      }
+    },
+    {
+      "action": "build",
+      "arguments": {
+        "state_id": 64,
+        "building_type": "military_factory"
+      },
+      "result": {
+        "action": "build",
+        "accepted": true,
+        "status": "confirmed",
+        "action_id": "5d15bbbf-b217-43fa-b6cf-915cee91ddd0",
+        "retry_count": 0,
+        "duration_ms": 13281,
+        "timings_ms": {
+          "precheck": 0,
+          "navigation": 1265,
+          "target_lookup": 110,
+          "submit": 8859,
+          "readback": 891,
+          "confirmation": 906,
+          "total": 13281
+        },
+        "before": {
+          "queue": [],
+          "identity_source": "gui",
+          "stable_game_identity": false,
+          "scope": "complete visible queue; <=8 one-building rows; states 64/65/66 only",
+          "unknown_fields": [
+            "numeric_progress",
+            "uncalibrated_factory_allocations",
+            "internal_queue_id"
+          ]
+        },
+        "after": {
+          "queue": [
+            {
+              "state_id": 64,
+              "state_display": "勃兰登堡",
+              "building_type": "military_factory",
+              "count": 1,
+              "position": 0,
+              "assigned_civilian_factories": 15,
+              "progress": null,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "queue_item_id": "construction-2b9d877a3998-0002-0000",
+              "identity_signature": "cc3c54f44ff68b614c4f6c9f90bf304333c10ca640809101d07b6d20c3ea5713"
+            }
+          ],
+          "identity_source": "gui",
+          "stable_game_identity": false,
+          "scope": "complete visible queue; <=8 one-building rows; states 64/65/66 only",
+          "unknown_fields": [
+            "numeric_progress",
+            "uncalibrated_factory_allocations",
+            "internal_queue_id"
+          ],
+          "session_id": "2b9d877a3998",
+          "snapshot_version": 2,
+          "ttl_seconds": 120,
+          "telemetry_seq": 707039
+        },
+        "diff": {
+          "before_order": [],
+          "after_order": [
+            [
+              64,
+              "military_factory",
+              1
+            ]
+          ],
+          "exact_transition": true
+        },
+        "ui_confirmation": {
+          "exact_queue_transition": true,
+          "repeated_readback": true
+        },
+        "telemetry_confirmation": {
+          "before_seq": 707038,
+          "after_seq": 707039,
+          "queue_state": "UNKNOWN; GUI confirmation"
+        }
+      }
+    },
+    {
+      "action": "build",
+      "arguments": {
+        "state_id": 66,
+        "building_type": "infrastructure"
+      },
+      "result": {
+        "action": "build",
+        "accepted": true,
+        "status": "confirmed",
+        "action_id": "fd01808a-5686-4e2b-b0cb-45afbfc78af8",
+        "retry_count": 0,
+        "duration_ms": 13500,
+        "timings_ms": {
+          "precheck": 0,
+          "navigation": 2750,
+          "target_lookup": 125,
+          "submit": 7953,
+          "readback": 891,
+          "confirmation": 875,
+          "total": 13500
+        },
+        "before": {
+          "queue": [
+            {
+              "state_id": 64,
+              "state_display": "勃兰登堡",
+              "building_type": "military_factory",
+              "count": 1,
+              "position": 0,
+              "assigned_civilian_factories": 15,
+              "progress": null
+            }
+          ],
+          "identity_source": "gui",
+          "stable_game_identity": false,
+          "scope": "complete visible queue; <=8 one-building rows; states 64/65/66 only",
+          "unknown_fields": [
+            "numeric_progress",
+            "uncalibrated_factory_allocations",
+            "internal_queue_id"
+          ]
+        },
+        "after": {
+          "queue": [
+            {
+              "state_id": 64,
+              "state_display": "勃兰登堡",
+              "building_type": "military_factory",
+              "count": 1,
+              "position": 0,
+              "assigned_civilian_factories": 15,
+              "progress": null,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "queue_item_id": "construction-2b9d877a3998-0003-0000",
+              "identity_signature": "cc3c54f44ff68b614c4f6c9f90bf304333c10ca640809101d07b6d20c3ea5713"
+            },
+            {
+              "state_id": 66,
+              "state_display": "下西里西亚",
+              "building_type": "infrastructure",
+              "count": 1,
+              "position": 1,
+              "assigned_civilian_factories": null,
+              "progress": null,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "queue_item_id": "construction-2b9d877a3998-0003-0001",
+              "identity_signature": "564446148eded2632a3370e431fc1727d722a855bbbf5213cc2ba569a2364c9d"
+            }
+          ],
+          "identity_source": "gui",
+          "stable_game_identity": false,
+          "scope": "complete visible queue; <=8 one-building rows; states 64/65/66 only",
+          "unknown_fields": [
+            "numeric_progress",
+            "uncalibrated_factory_allocations",
+            "internal_queue_id"
+          ],
+          "session_id": "2b9d877a3998",
+          "snapshot_version": 3,
+          "ttl_seconds": 120,
+          "telemetry_seq": 707040
+        },
+        "diff": {
+          "before_order": [
+            [
+              64,
+              "military_factory",
+              1
+            ]
+          ],
+          "after_order": [
+            [
+              64,
+              "military_factory",
+              1
+            ],
+            [
+              66,
+              "infrastructure",
+              1
+            ]
+          ],
+          "exact_transition": true
+        },
+        "ui_confirmation": {
+          "exact_queue_transition": true,
+          "repeated_readback": true
+        },
+        "telemetry_confirmation": {
+          "before_seq": 707039,
+          "after_seq": 707040,
+          "queue_state": "UNKNOWN; GUI confirmation"
+        }
+      }
+    }
+  ],
+  "before_telemetry": {
+    "status": "fresh",
+    "received_at": "2026-10-01T18:17:19.184873+00:00",
+    "game_date": " 24:00, 3 2月, 1937",
+    "latest_seq": 707038,
+    "state": {
+      "protocol_version": 2,
+      "seq": 707038,
+      "game_date": " 24:00, 3 2月, 1937",
+      "country": "GER",
+      "politics": {
+        "political_power": 927.276,
+        "stability": 0.81,
+        "war_support": 0.35641
+      },
+      "manpower": {
+        "available": 1354044,
+        "source_thousands": 1354.044
+      },
+      "industry": {
+        "civilian_factories": 37,
+        "military_factories": 28,
+        "dockyards": 10
+      },
+      "origin": "daily",
+      "research": {
+        "slot_count": 4,
+        "tracked_technologies": [
+          {
+            "tech_id": "basic_machine_tools",
+            "researching": false,
+            "researched": false
+          },
+          {
+            "tech_id": "construction1",
+            "researching": false,
+            "researched": false
+          },
+          {
+            "tech_id": "electronic_mechanical_engineering",
+            "researching": false,
+            "researched": false
+          }
+        ]
+      },
+      "focus": {
+        "tracked_id": "GER_remilitarize_the_rhineland",
+        "completed": false,
+        "progress_lower_bound": 0.0,
+        "progress_upper_bound": 0.1
+      }
+    },
+    "parser_errors": [],
+    "session_id": "5d4b4ae2-fa0e-4631-a61f-d5616f72884e",
+    "revision": 1,
+    "freshness_basis": "frame_received_at",
+    "log_read_error": null
+  },
+  "after_telemetry": {
+    "status": "fresh",
+    "received_at": "2026-10-01T18:17:44.146790+00:00",
+    "game_date": " 24:00, 5 2月, 1937",
+    "latest_seq": 707040,
+    "state": {
+      "protocol_version": 2,
+      "seq": 707040,
+      "game_date": " 24:00, 5 2月, 1937",
+      "country": "GER",
+      "politics": {
+        "political_power": 931.924,
+        "stability": 0.81,
+        "war_support": 0.35633
+      },
+      "manpower": {
+        "available": 1354044,
+        "source_thousands": 1354.044
+      },
+      "industry": {
+        "civilian_factories": 37,
+        "military_factories": 28,
+        "dockyards": 10
+      },
+      "origin": "daily",
+      "research": {
+        "slot_count": 4,
+        "tracked_technologies": [
+          {
+            "tech_id": "basic_machine_tools",
+            "researching": false,
+            "researched": false
+          },
+          {
+            "tech_id": "construction1",
+            "researching": false,
+            "researched": false
+          },
+          {
+            "tech_id": "electronic_mechanical_engineering",
+            "researching": false,
+            "researched": false
+          }
+        ]
+      },
+      "focus": {
+        "tracked_id": "GER_remilitarize_the_rhineland",
+        "completed": false,
+        "progress_lower_bound": 0.0,
+        "progress_upper_bound": 0.1
+      }
+    },
+    "parser_errors": [],
+    "session_id": "5d4b4ae2-fa0e-4631-a61f-d5616f72884e",
+    "revision": 3,
+    "freshness_basis": "frame_received_at",
+    "log_read_error": null
+  }
+}

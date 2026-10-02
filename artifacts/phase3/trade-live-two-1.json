@@ -1,0 +1,205 @@
+{
+  "source": "LIVE HOI4 / official SDK stdio / semantic API / normal GUI",
+  "actions": [
+    {
+      "action": "set_trade_import",
+      "arguments": {
+        "resource": "steel",
+        "country": "SWE",
+        "civilian_factories": 2
+      },
+      "result": {
+        "action": "set_trade_import",
+        "accepted": true,
+        "status": "confirmed",
+        "action_id": "ce2e41c2-9a09-4044-8d89-145cbc0ad80a",
+        "retry_count": 0,
+        "duration_ms": 17172,
+        "timings_ms": {
+          "precheck": 0,
+          "navigation": 3656,
+          "target_lookup": 0,
+          "submit": 5407,
+          "readback": 3547,
+          "confirmation": 3500,
+          "total": 17172
+        },
+        "before": {
+          "imports": [
+            {
+              "resource": "steel",
+              "country": "SWE",
+              "civilian_factories": 1,
+              "requested_amount": 8,
+              "delivered_amount": 8
+            }
+          ],
+          "available_civilian_factories": 17,
+          "identity_source": "gui",
+          "stable_game_identity": false,
+          "complete_trade_state": false,
+          "scope": "SWE steel only; 0..2 civilian factories; requested AND delivered readback",
+          "unknown_fields": [
+            "other_resources_and_countries",
+            "internal_trade_id"
+          ]
+        },
+        "after": {
+          "imports": [
+            {
+              "resource": "steel",
+              "country": "SWE",
+              "civilian_factories": 2,
+              "requested_amount": 16,
+              "delivered_amount": 16,
+              "position": 0,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "trade_id": "trade-512888512293-0001-0000",
+              "identity_signature": "aab94e001675b549b5291c4dca122cbd524967144fc95b252dc44926f4caf92e"
+            }
+          ],
+          "available_civilian_factories": 16,
+          "identity_source": "gui",
+          "stable_game_identity": false,
+          "complete_trade_state": false,
+          "scope": "SWE steel only; 0..2 civilian factories; requested AND delivered readback",
+          "unknown_fields": [
+            "other_resources_and_countries",
+            "internal_trade_id"
+          ],
+          "session_id": "512888512293",
+          "snapshot_version": 1,
+          "ttl_seconds": 120,
+          "telemetry_seq": 707085
+        },
+        "ui_confirmation": {
+          "contract_country_resource_factories": true,
+          "requested_and_delivered_amount": true,
+          "reopened_contract_and_repeated_readback": true
+        },
+        "telemetry_confirmation": {
+          "before_seq": 707083,
+          "after_seq": 707085,
+          "trade_state": "UNKNOWN; scoped GUI contract confirmation"
+        }
+      }
+    }
+  ],
+  "before_telemetry": {
+    "status": "fresh",
+    "received_at": "2026-10-01T19:14:07.800931+00:00",
+    "game_date": " 24:00, 20 3月, 1937",
+    "latest_seq": 707083,
+    "state": {
+      "protocol_version": 2,
+      "seq": 707083,
+      "game_date": " 24:00, 20 3月, 1937",
+      "country": "GER",
+      "politics": {
+        "political_power": 285.856,
+        "stability": 0.81,
+        "war_support": 0.35524
+      },
+      "manpower": {
+        "available": 1355633,
+        "source_thousands": 1355.633
+      },
+      "industry": {
+        "civilian_factories": 37,
+        "military_factories": 28,
+        "dockyards": 10
+      },
+      "origin": "daily",
+      "research": {
+        "slot_count": 4,
+        "tracked_technologies": [
+          {
+            "tech_id": "basic_machine_tools",
+            "researching": false,
+            "researched": false
+          },
+          {
+            "tech_id": "construction1",
+            "researching": false,
+            "researched": false
+          },
+          {
+            "tech_id": "electronic_mechanical_engineering",
+            "researching": false,
+            "researched": false
+          }
+        ]
+      },
+      "focus": {
+        "tracked_id": "GER_remilitarize_the_rhineland",
+        "completed": false,
+        "progress_lower_bound": 0.0,
+        "progress_upper_bound": 0.1
+      }
+    },
+    "parser_errors": [],
+    "session_id": "bb5c9db9-863e-4799-8d62-dc01dbae770e",
+    "revision": 3,
+    "freshness_basis": "frame_received_at",
+    "log_read_error": null
+  },
+  "after_telemetry": {
+    "status": "fresh",
+    "received_at": "2026-10-01T19:14:32.984766+00:00",
+    "game_date": " 24:00, 22 3月, 1937",
+    "latest_seq": 707085,
+    "state": {
+      "protocol_version": 2,
+      "seq": 707085,
+      "game_date": " 24:00, 22 3月, 1937",
+      "country": "GER",
+      "politics": {
+        "political_power": 290.504,
+        "stability": 0.81,
+        "war_support": 0.35796
+      },
+      "manpower": {
+        "available": 1355633,
+        "source_thousands": 1355.633
+      },
+      "industry": {
+        "civilian_factories": 37,
+        "military_factories": 28,
+        "dockyards": 10
+      },
+      "origin": "daily",
+      "research": {
+        "slot_count": 4,
+        "tracked_technologies": [
+          {
+            "tech_id": "basic_machine_tools",
+            "researching": false,
+            "researched": false
+          },
+          {
+            "tech_id": "construction1",
+            "researching": false,
+            "researched": false
+          },
+          {
+            "tech_id": "electronic_mechanical_engineering",
+            "researching": false,
+            "researched": false
+          }
+        ]
+      },
+      "focus": {
+        "tracked_id": "GER_remilitarize_the_rhineland",
+        "completed": false,
+        "progress_lower_bound": 0.0,
+        "progress_upper_bound": 0.1
+      }
+    },
+    "parser_errors": [],
+    "session_id": "bb5c9db9-863e-4799-8d62-dc01dbae770e",
+    "revision": 5,
+    "freshness_basis": "frame_received_at",
+    "log_read_error": null
+  }
+}

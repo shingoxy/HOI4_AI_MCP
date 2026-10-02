@@ -1,0 +1,206 @@
+{
+  "source": "LIVE HOI4 / official SDK stdio / semantic API / normal GUI",
+  "actions": [
+    {
+      "action": "set_trade_import",
+      "arguments": {
+        "resource": "steel",
+        "country": "SWE",
+        "civilian_factories": 0
+      },
+      "result": {
+        "action": "set_trade_import",
+        "accepted": true,
+        "status": "confirmed",
+        "action_id": "9c839e25-3e42-4537-8a8a-aa6862c15f9f",
+        "retry_count": 0,
+        "duration_ms": 19859,
+        "timings_ms": {
+          "precheck": 0,
+          "navigation": 4531,
+          "target_lookup": 0,
+          "submit": 7266,
+          "readback": 3562,
+          "confirmation": 3578,
+          "total": 19859
+        },
+        "before": {
+          "imports": [
+            {
+              "resource": "steel",
+              "country": "SWE",
+              "civilian_factories": 2,
+              "requested_amount": 16,
+              "delivered_amount": 16
+            }
+          ],
+          "available_civilian_factories": 16,
+          "identity_source": "gui",
+          "stable_game_identity": false,
+          "complete_trade_state": false,
+          "scope": "SWE steel only; 0..2 civilian factories; requested AND delivered readback",
+          "unknown_fields": [
+            "other_resources_and_countries",
+            "internal_trade_id"
+          ]
+        },
+        "ui_observation_retry_count": 0,
+        "after": {
+          "imports": [
+            {
+              "resource": "steel",
+              "country": "SWE",
+              "civilian_factories": 0,
+              "requested_amount": 0,
+              "delivered_amount": 0,
+              "position": 0,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "trade_id": "trade-f5cfba229e9b-0001-0000",
+              "identity_signature": "07310e53eb8693def49abef3de4c57b67a44ad975455bd7e0e5a375adf55c122"
+            }
+          ],
+          "available_civilian_factories": 18,
+          "identity_source": "gui",
+          "stable_game_identity": false,
+          "complete_trade_state": false,
+          "scope": "SWE steel only; 0..2 civilian factories; requested AND delivered readback",
+          "unknown_fields": [
+            "other_resources_and_countries",
+            "internal_trade_id"
+          ],
+          "session_id": "f5cfba229e9b",
+          "snapshot_version": 1,
+          "ttl_seconds": 120,
+          "telemetry_seq": 707102
+        },
+        "ui_confirmation": {
+          "contract_country_resource_factories": true,
+          "requested_and_delivered_amount": true,
+          "reopened_contract_and_repeated_readback": true
+        },
+        "telemetry_confirmation": {
+          "before_seq": 707101,
+          "after_seq": 707102,
+          "trade_state": "UNKNOWN; scoped GUI contract confirmation"
+        }
+      }
+    }
+  ],
+  "before_telemetry": {
+    "status": "fresh",
+    "received_at": "2026-10-01T19:20:04.245555+00:00",
+    "game_date": " 24:00, 7 4月, 1937",
+    "latest_seq": 707101,
+    "state": {
+      "protocol_version": 2,
+      "seq": 707101,
+      "game_date": " 24:00, 7 4月, 1937",
+      "country": "GER",
+      "politics": {
+        "political_power": 327.688,
+        "stability": 0.81,
+        "war_support": 0.35764
+      },
+      "manpower": {
+        "available": 1357671,
+        "source_thousands": 1357.671
+      },
+      "industry": {
+        "civilian_factories": 37,
+        "military_factories": 28,
+        "dockyards": 10
+      },
+      "origin": "daily",
+      "research": {
+        "slot_count": 4,
+        "tracked_technologies": [
+          {
+            "tech_id": "basic_machine_tools",
+            "researching": false,
+            "researched": false
+          },
+          {
+            "tech_id": "construction1",
+            "researching": false,
+            "researched": false
+          },
+          {
+            "tech_id": "electronic_mechanical_engineering",
+            "researching": false,
+            "researched": false
+          }
+        ]
+      },
+      "focus": {
+        "tracked_id": "GER_remilitarize_the_rhineland",
+        "completed": false,
+        "progress_lower_bound": 0.0,
+        "progress_upper_bound": 0.1
+      }
+    },
+    "parser_errors": [],
+    "session_id": "f01b738a-c630-4c99-a9b7-b4bc6e0f9399",
+    "revision": 3,
+    "freshness_basis": "frame_received_at",
+    "log_read_error": null
+  },
+  "after_telemetry": {
+    "status": "fresh",
+    "received_at": "2026-10-01T19:20:16.794432+00:00",
+    "game_date": " 24:00, 8 4月, 1937",
+    "latest_seq": 707102,
+    "state": {
+      "protocol_version": 2,
+      "seq": 707102,
+      "game_date": " 24:00, 8 4月, 1937",
+      "country": "GER",
+      "politics": {
+        "political_power": 330.012,
+        "stability": 0.81,
+        "war_support": 0.35762
+      },
+      "manpower": {
+        "available": 1357671,
+        "source_thousands": 1357.671
+      },
+      "industry": {
+        "civilian_factories": 37,
+        "military_factories": 28,
+        "dockyards": 10
+      },
+      "origin": "daily",
+      "research": {
+        "slot_count": 4,
+        "tracked_technologies": [
+          {
+            "tech_id": "basic_machine_tools",
+            "researching": false,
+            "researched": false
+          },
+          {
+            "tech_id": "construction1",
+            "researching": false,
+            "researched": false
+          },
+          {
+            "tech_id": "electronic_mechanical_engineering",
+            "researching": false,
+            "researched": false
+          }
+        ]
+      },
+      "focus": {
+        "tracked_id": "GER_remilitarize_the_rhineland",
+        "completed": false,
+        "progress_lower_bound": 0.0,
+        "progress_upper_bound": 0.1
+      }
+    },
+    "parser_errors": [],
+    "session_id": "f01b738a-c630-4c99-a9b7-b4bc6e0f9399",
+    "revision": 4,
+    "freshness_basis": "frame_received_at",
+    "log_read_error": null
+  }
+}

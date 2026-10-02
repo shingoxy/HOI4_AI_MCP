@@ -1,0 +1,71 @@
+{
+  "manual_and_autosave_hash_comparison": [
+    {
+      "name": "autosave.hoi4",
+      "sha256_before": "e27d9f5fc7e22c52b4ae092d415797f0fd226822ca46d7fb3d96a747f762a460",
+      "sha256_after": "e27d9f5fc7e22c52b4ae092d415797f0fd226822ca46d7fb3d96a747f762a460",
+      "unchanged": true
+    },
+    {
+      "name": "GER_1936_01_01_12.hoi4",
+      "sha256_before": "7964a9999af7877a3afd7f22b0981689d961046970688734c26b345be0fe348b",
+      "sha256_after": "7964a9999af7877a3afd7f22b0981689d961046970688734c26b345be0fe348b",
+      "unchanged": true
+    },
+    {
+      "name": "GER_1936_01_06_23.hoi4",
+      "sha256_before": "37cb12bc948a34d1c445e6787c6354828614dc45920b3b1acfeead34633850f9",
+      "sha256_after": "37cb12bc948a34d1c445e6787c6354828614dc45920b3b1acfeead34633850f9",
+      "unchanged": true
+    },
+    {
+      "name": "GER_1936_01_22_11.hoi4",
+      "sha256_before": "cb7e5356af7dcf4b8a3a47714a8e283e12d0c1463bc0ae0c6a739c9d21d1fdc6",
+      "sha256_after": "cb7e5356af7dcf4b8a3a47714a8e283e12d0c1463bc0ae0c6a739c9d21d1fdc6",
+      "unchanged": true
+    },
+    {
+      "name": "PRC_1936_10_12_10.hoi4",
+      "sha256_before": "5562fbbeade99b3db7f1081485b2c636c1a696fac6342a475e3d0692d19aecf4",
+      "sha256_after": "5562fbbeade99b3db7f1081485b2c636c1a696fac6342a475e3d0692d19aecf4",
+      "unchanged": true
+    },
+    {
+      "name": "PRC_1939_08_12_09.hoi4",
+      "sha256_before": "168e5ef9ade1e9736cc55c77ff19d8e1d7518288f3a894dd42e90cfd1ef6d027",
+      "sha256_after": "168e5ef9ade1e9736cc55c77ff19d8e1d7518288f3a894dd42e90cfd1ef6d027",
+      "unchanged": true
+    },
+    {
+      "name": "PRC_1942_02_28_03.hoi4",
+      "sha256_before": "ce1f4b6dffa621c4d4d3b700bab8cf9fe5bb62edf01d7b52ee79878224778a16",
+      "sha256_after": "ce1f4b6dffa621c4d4d3b700bab8cf9fe5bb62edf01d7b52ee79878224778a16",
+      "unchanged": true
+    },
+    {
+      "name": "PRC_1942_06_01_02.hoi4",
+      "sha256_before": "7188f1bc326778da78be7943731d245f5b1333634a35a9ff8e7d1ba332bc25d7",
+      "sha256_after": "7188f1bc326778da78be7943731d245f5b1333634a35a9ff8e7d1ba332bc25d7",
+      "unchanged": true
+    }
+  ],
+  "paused": null,
+  "gui_date": null,
+  "mod_unchanged": true,
+  "restored_via": "normal in-game Load menu",
+  "fresh_post_load_telemetry_verified": false,
+  "loaded_save": "GER_1936_01_01_12.hoi4",
+  "mod_sha256": "f3c55e20cdd8c2de4fa21f4fa94350590e3ae40f8b5e0a2d1bd8a204af485cdb",
+  "last_fully_verified_restore": {
+    "gui_date": "1936-01-01 12:00",
+    "paused": true,
+    "advisors": "three empty slots verified by same GUI reader",
+    "construction": "empty queue verified by same GUI reader",
+    "capture": "captures/restored-final.jpg",
+    "before_standalone_trade_getter": true
+  },
+  "final_reload_submitted": true,
+  "final_reload_gui_verified": false,
+  "final_verification_reason": "window_minimized; no automatic refocus; latest Load completion unknown",
+  "hashes_checked_at": "2026-10-02T00:22:52.8561986Z"
+}

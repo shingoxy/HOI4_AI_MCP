@@ -40,8 +40,13 @@ class MCPTests(unittest.IsolatedAsyncioTestCase):
             self.assertEqual({t.name for t in tools}, {
                 "get_summary", "get_politics", "get_industry", "get_research", "get_focus", "get_changes", "get_diagnostics",
                 "select_research", "select_focus", "get_production_lines", "set_production_factory_count",
+                "get_equipment_catalog", "create_production_line", "delete_production_line", "reorder_production_line",
+                "get_construction", "build", "cancel_construction", "change_construction_priority",
+                "change_economy_law", "change_conscription_law", "get_advisors", "hire_advisor",
+                "get_trade_state", "set_trade_import",
             })
-            self.assertTrue(all(t.annotations.read_only_hint for t in tools if t.name.startswith("get_") and t.name != "get_production_lines"))
+            self.assertTrue(all(t.annotations.read_only_hint for t in tools if t.name.startswith("get_") and
+                                t.name not in {"get_production_lines", "get_construction", "get_advisors", "get_trade_state"}))
             self.assertFalse(next(t for t in tools if t.name == "get_production_lines").annotations.read_only_hint)
             self.assertTrue(all(not t.annotations.read_only_hint for t in tools if t.name.startswith("select_")))
             rejected = (await client.call_tool("select_focus", {"focus_id": "GER_remilitarize_the_rhineland"})).structured_content
@@ -180,7 +185,7 @@ class MCPTests(unittest.IsolatedAsyncioTestCase):
                 await process.wait()
         self.assertEqual(process.returncode, 0)
         self.assertEqual(responses[1]["result"]["protocolVersion"], "2025-11-25")
-        self.assertEqual(len(responses[2]["result"]["tools"]), 11)
+        self.assertEqual(len(responses[2]["result"]["tools"]), 25)
         self.assertEqual(responses[3]["result"]["structuredContent"]["game_date"], "1 1月, 1936")
         self.assertEqual(before, (self.path.read_bytes(), self.path.stat().st_mtime_ns))
 

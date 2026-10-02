@@ -1,0 +1,17 @@
+# HOI4 AI Operator architecture
+
+Agent → adapter → semantic Observation / Action / Result → MCP or Python API → domain service → deterministic GUI executor → InputBackend → HOI4.
+
+`OperatorAPI.execute(action, arguments)` only accepts semantic method arguments. Coordinates, templates, HWND, PID and Computer Use objects are private executor/backend configuration. `executor/backend.py` defines the current replaceable input boundary; `worker.py` implements the guarded local bridge, and `scripts/computer_use_pump.js` alone imports `@oai/sky`. Domain services do not import that package. No full Agent Adapter or native backend rewrite is included.
+
+Existing Research / Focus / factory-count proof remains in its historical reports. New actions use `contracts.py` and `executor/pipeline.py`: fresh telemetry → guarded navigation → identity verification → at most one submission → exact readback → repeated confirmation. Legacy actions retain their proven transaction paths pending gradual migration; their result format is not yet fully unified.
+
+Production extends existing session-local snapshots with version, TTL and identity signature. Construction, advisor and trade observations use the same session-local identity principle: 120-second TTL, changed-identity/version rejection, explicit GUI source and `stable_game_identity=false`. Mutations invalidate uncertain snapshots and never automatically resubmit. Per-line telemetry, complete construction progress and complete trade telemetry remain UNKNOWN; GUI evidence is separately identified.
+
+New domain boundaries are `actions/production_lines.py`, `construction.py`, `politics.py`, `trade.py` and corresponding `executor/*_service.py` / `*_ui.py`. Catalogs provide semantic targets; `non_military_layout.py` owns private fixed-profile layout. The shared pipeline provides precheck, navigation, target verification, one submission, readback, confirmation and cleanup. Cleanup failure cannot retain the action lock or erase already established confirmation.
+
+The Python facade accepts, for example, `operator.execute("build", {"state_id": 64, "building_type": "military_factory"})`. The Agent cannot configure or pass HWND, coordinates, templates or backend objects through action arguments. MCP v0.6.0 exposes 25 tools; the operator explicitly configures the private `--non-military` runtime at startup. Other Agent vendors and a complete Agent Adapter are future integrations, not verified clients in this PoC.
+
+The current backend requires an authorized Computer Use pump. Backend readiness is checked before live client actions; this does not extend action, bridge or watchdog deadlines. Focus loss, F12, HWND/PID/process checks and guarded Esc recovery remain in force. No automatic refocus, Mod edits, console, effects or direct save edits are permitted. This session's explicit user authorization permits normal GUI launch/unpause; no launch was necessary.
+
+Current calibrated profile: HOI4 1.19.3, GER 1936 start, base Chinese, Telemetry Mod only, 2560×1080, scale 1.0; legal preparation naturally advanced into 1937. Catalogs deliberately reject uncalibrated targets. Limited Phase 3 is OFFLINE TESTED / LIVE VERIFIED: production create/delete/order, three states and three construction types, two economy/conscription laws, Schacht and SWE steel imports at 0–2 civilian factories. See [Phase 3 report](PHASE3_NON_MILITARY_EXECUTOR.md) for precise proof, latency, failures and UNKNOWN. Army / Front / Air / Navy / strategy planning remain outside scope; no Phase 4 implementation was started.

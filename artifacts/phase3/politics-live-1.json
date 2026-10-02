@@ -1,0 +1,359 @@
+{
+  "source": "LIVE HOI4 / official SDK stdio / semantic API / normal GUI",
+  "actions": [
+    {
+      "action": "change_economy_law",
+      "arguments": {
+        "law_id": "low_economic_mobilisation"
+      },
+      "result": {
+        "action": "change_economy_law",
+        "accepted": true,
+        "status": "confirmed",
+        "action_id": "536af8bb-0b56-4df1-93c0-c71dd51fa184",
+        "retry_count": 0,
+        "duration_ms": 10359,
+        "timings_ms": {
+          "precheck": 0,
+          "navigation": 2484,
+          "target_lookup": 0,
+          "submit": 1688,
+          "readback": 2594,
+          "confirmation": 1953,
+          "total": 10359
+        },
+        "before": {
+          "current_law": "partial_economic_mobilisation",
+          "choices": {
+            "low_economic_mobilisation": {
+              "selected": false,
+              "enabled": true,
+              "cost": 150
+            },
+            "partial_economic_mobilisation": {
+              "selected": true,
+              "enabled": false,
+              "cost": 150
+            }
+          },
+          "identity_source": "gui",
+          "stable_game_identity": true
+        },
+        "after": {
+          "current_law": "low_economic_mobilisation",
+          "choices": {
+            "low_economic_mobilisation": {
+              "selected": true,
+              "enabled": false,
+              "cost": 150
+            },
+            "partial_economic_mobilisation": {
+              "selected": false,
+              "enabled": true,
+              "cost": 150
+            }
+          },
+          "identity_source": "gui",
+          "stable_game_identity": true
+        },
+        "ui_confirmation": {
+          "current_law_identity": "low_economic_mobilisation",
+          "repeated_readback": true
+        },
+        "telemetry_confirmation": {
+          "before_seq": 707050,
+          "after_seq": 707050,
+          "political_power_before": 880.164,
+          "political_power_after": 880.164,
+          "active_law": "UNKNOWN; GUI confirms law ID"
+        }
+      }
+    },
+    {
+      "action": "change_economy_law",
+      "arguments": {
+        "law_id": "partial_economic_mobilisation"
+      },
+      "result": {
+        "action": "change_economy_law",
+        "accepted": true,
+        "status": "confirmed",
+        "action_id": "2ec599d8-c2b0-4ad8-bc6f-65121fde51c2",
+        "retry_count": 0,
+        "duration_ms": 13391,
+        "timings_ms": {
+          "precheck": 0,
+          "navigation": 4672,
+          "target_lookup": 0,
+          "submit": 1860,
+          "readback": 2875,
+          "confirmation": 1984,
+          "total": 13391
+        },
+        "before": {
+          "current_law": "low_economic_mobilisation",
+          "choices": {
+            "low_economic_mobilisation": {
+              "selected": true,
+              "enabled": false,
+              "cost": 150
+            },
+            "partial_economic_mobilisation": {
+              "selected": false,
+              "enabled": true,
+              "cost": 150
+            }
+          },
+          "identity_source": "gui",
+          "stable_game_identity": true
+        },
+        "after": {
+          "current_law": "partial_economic_mobilisation",
+          "choices": {
+            "low_economic_mobilisation": {
+              "selected": false,
+              "enabled": true,
+              "cost": 150
+            },
+            "partial_economic_mobilisation": {
+              "selected": true,
+              "enabled": false,
+              "cost": 150
+            }
+          },
+          "identity_source": "gui",
+          "stable_game_identity": true
+        },
+        "ui_confirmation": {
+          "current_law_identity": "partial_economic_mobilisation",
+          "repeated_readback": true
+        },
+        "telemetry_confirmation": {
+          "before_seq": 707050,
+          "after_seq": 707051,
+          "political_power_before": 880.164,
+          "political_power_after": 733.488,
+          "active_law": "UNKNOWN; GUI confirms law ID"
+        }
+      }
+    },
+    {
+      "action": "change_conscription_law",
+      "arguments": {
+        "law_id": "volunteer_only"
+      },
+      "result": {
+        "action": "change_conscription_law",
+        "accepted": true,
+        "status": "confirmed",
+        "action_id": "2dbf75b7-0830-4043-8b0a-898c4058d2e1",
+        "retry_count": 0,
+        "duration_ms": 12750,
+        "timings_ms": {
+          "precheck": 0,
+          "navigation": 4266,
+          "target_lookup": 0,
+          "submit": 2047,
+          "readback": 2750,
+          "confirmation": 2000,
+          "total": 12750
+        },
+        "before": {
+          "current_law": "limited_conscription",
+          "choices": {
+            "volunteer_only": {
+              "selected": false,
+              "enabled": true,
+              "cost": 150
+            },
+            "limited_conscription": {
+              "selected": true,
+              "enabled": false,
+              "cost": 150
+            }
+          },
+          "identity_source": "gui",
+          "stable_game_identity": true
+        },
+        "after": {
+          "current_law": "volunteer_only",
+          "choices": {
+            "volunteer_only": {
+              "selected": true,
+              "enabled": false,
+              "cost": 150
+            },
+            "limited_conscription": {
+              "selected": false,
+              "enabled": true,
+              "cost": 150
+            }
+          },
+          "identity_source": "gui",
+          "stable_game_identity": true
+        },
+        "ui_confirmation": {
+          "current_law_identity": "volunteer_only",
+          "repeated_readback": true
+        },
+        "telemetry_confirmation": {
+          "before_seq": 707051,
+          "after_seq": 707052,
+          "political_power_before": 733.488,
+          "political_power_after": 586.812,
+          "active_law": "UNKNOWN; GUI confirms law ID"
+        }
+      }
+    },
+    {
+      "action": "change_conscription_law",
+      "arguments": {
+        "law_id": "limited_conscription"
+      },
+      "result": {
+        "action": "change_conscription_law",
+        "accepted": true,
+        "status": "confirmed",
+        "action_id": "d2bee3c1-29aa-485b-8135-6d186e2178a7",
+        "retry_count": 0,
+        "duration_ms": 21516,
+        "timings_ms": {
+          "precheck": 0,
+          "navigation": 4047,
+          "target_lookup": 0,
+          "submit": 1719,
+          "readback": 2687,
+          "confirmation": 1719,
+          "total": 21516
+        },
+        "before": {
+          "current_law": "volunteer_only",
+          "choices": {
+            "volunteer_only": {
+              "selected": true,
+              "enabled": false,
+              "cost": 150
+            },
+            "limited_conscription": {
+              "selected": false,
+              "enabled": true,
+              "cost": 150
+            }
+          },
+          "identity_source": "gui",
+          "stable_game_identity": true
+        },
+        "after": {
+          "current_law": "limited_conscription",
+          "choices": {
+            "volunteer_only": {
+              "selected": false,
+              "enabled": true,
+              "cost": 150
+            },
+            "limited_conscription": {
+              "selected": true,
+              "enabled": false,
+              "cost": 150
+            }
+          },
+          "identity_source": "gui",
+          "stable_game_identity": true
+        },
+        "ui_confirmation": {
+          "current_law_identity": "limited_conscription",
+          "repeated_readback": true
+        },
+        "telemetry_confirmation": {
+          "before_seq": 707052,
+          "after_seq": 707053,
+          "political_power_before": 586.812,
+          "political_power_after": 440.136,
+          "active_law": "UNKNOWN; GUI confirms law ID"
+        },
+        "cleanup": "safety_stop"
+      }
+    },
+    {
+      "action": "get_advisors",
+      "arguments": {},
+      "result": {
+        "action": "get_advisors",
+        "accepted": false,
+        "status": "timed_out",
+        "action_id": "5c763d03-6de6-4185-8334-e545a94c1046",
+        "retry_count": 0,
+        "duration_ms": 20015,
+        "timings_ms": {
+          "precheck": 0,
+          "navigation": 10015,
+          "target_lookup": 0,
+          "submit": 0,
+          "readback": 0,
+          "confirmation": 0,
+          "total": 20015
+        },
+        "reason": "ui_timeout",
+        "recovery": "skipped_safety_stop"
+      }
+    }
+  ],
+  "before_telemetry": {
+    "status": "fresh",
+    "received_at": "2026-10-01T18:38:00.364712+00:00",
+    "game_date": " 24:00, 15 2月, 1937",
+    "latest_seq": 707050,
+    "state": {
+      "protocol_version": 2,
+      "seq": 707050,
+      "game_date": " 24:00, 15 2月, 1937",
+      "country": "GER",
+      "politics": {
+        "political_power": 880.164,
+        "stability": 0.81,
+        "war_support": 0.35593
+      },
+      "manpower": {
+        "available": 1354022,
+        "source_thousands": 1354.022
+      },
+      "industry": {
+        "civilian_factories": 37,
+        "military_factories": 28,
+        "dockyards": 10
+      },
+      "origin": "daily",
+      "research": {
+        "slot_count": 4,
+        "tracked_technologies": [
+          {
+            "tech_id": "basic_machine_tools",
+            "researching": false,
+            "researched": false
+          },
+          {
+            "tech_id": "construction1",
+            "researching": false,
+            "researched": false
+          },
+          {
+            "tech_id": "electronic_mechanical_engineering",
+            "researching": false,
+            "researched": false
+          }
+        ]
+      },
+      "focus": {
+        "tracked_id": "GER_remilitarize_the_rhineland",
+        "completed": false,
+        "progress_lower_bound": 0.0,
+        "progress_upper_bound": 0.1
+      }
+    },
+    "parser_errors": [],
+    "session_id": "fd9651db-ce0d-44c6-a0e7-24517ac37ba9",
+    "revision": 1,
+    "freshness_basis": "frame_received_at",
+    "log_read_error": null
+  }
+}

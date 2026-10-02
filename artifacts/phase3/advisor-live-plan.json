@@ -1,0 +1,6 @@
+[
+  {"action":"get_advisors"},
+  {"action":"hire_advisor","arguments":{"advisor_id":"advisor_schacht"}},
+  {"action":"hire_advisor","arguments":{"advisor_id":"advisor_schacht"}},
+  {"action":"get_advisors"}
+]

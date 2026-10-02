@@ -54,8 +54,9 @@ globalThis.runGuiPump = async function (durationMs = 45000) {
         await post('/permit', {id});
         const observation = guiState;
         globalThis.guiState = null;
+        if (!['left','right'].includes(args.button || 'left')) throw Error('Button not allowed');
         await sky.click({window:observation.window, screenshotId:args.screenshot_id,
-          x:args.point[0], y:args.point[1]});
+          x:args.point[0], y:args.point[1], mouse_button:args.button || 'left'});
         await new Promise(r => setTimeout(r, 500));
         // Every input refreshes immediately; Python then consumes this state
         // on its next capture without asking a model to interpret the image.
@@ -63,13 +64,27 @@ globalThis.runGuiPump = async function (durationMs = 45000) {
         globalThis.targetWindow = guiState.window;
         globalThis.guiCaptureReady = true;
       } else if (op === 'key') {
-        if (!['Escape', 'w', 'q', 'y', 'Return'].includes(args.key)) throw Error('Key not allowed');
+        if (!['Escape', 'w', 'q', 'y', 't', 'r', 'Return'].includes(args.key)) throw Error('Key not allowed');
         if (!globalThis.guiState)
           globalThis.guiState = await sky.get_window_state({window:targetWindow});
         await post('/permit', {id});
         globalThis.guiState = null;
         await sky.press_key({window:targetWindow,key:args.key});
         await new Promise(r => setTimeout(r, 500));
+        globalThis.guiState = await sky.get_window_state({window:targetWindow});
+        globalThis.targetWindow = guiState.window;
+        globalThis.guiCaptureReady = true;
+      } else if (op === 'scroll') {
+        if (!guiState || guiState.screenshots[0].id !== args.screenshot_id)
+          throw Error('Stale screenshot');
+        if (!Number.isInteger(args.delta) || !args.delta || Math.abs(args.delta)>2400)
+          throw Error('Scroll not allowed');
+        await post('/permit', {id});
+        const observation = guiState;
+        globalThis.guiState = null;
+        await sky.scroll({window:observation.window,screenshotId:args.screenshot_id,
+          x:args.point[0],y:args.point[1],scrollX:0,scrollY:args.delta});
+        await new Promise(r => setTimeout(r,500));
         globalThis.guiState = await sky.get_window_state({window:targetWindow});
         globalThis.targetWindow = guiState.window;
         globalThis.guiCaptureReady = true;

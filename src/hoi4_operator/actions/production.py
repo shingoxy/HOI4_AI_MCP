@@ -1,6 +1,8 @@
 """GUI-derived session identities; these are never claimed to be game line IDs."""
 
 from copy import deepcopy
+import hashlib
+import json
 import time
 from uuid import uuid4
 
@@ -27,9 +29,12 @@ class ProductionSnapshots:
         self.view = deepcopy(view)
         self.created = time.monotonic()
         self.view.update(snapshot_version=self.version, session_id=self.session,
-                         telemetry_seq=seq, stable_game_identity=False)
+                         telemetry_seq=seq, stable_game_identity=False, ttl_seconds=self.ttl)
         for index, line in enumerate(self.view["lines"], 1):
             line["line_id"] = f"prod-{self.session}-{self.version:04d}-{index:04d}"
+            line["identity_signature"] = hashlib.sha256(json.dumps(
+                [line["equipment"], line.get("equipment_type"), line["position"], line["factories"]],
+                ensure_ascii=False).encode()).hexdigest()
         return deepcopy(self.view)
 
     def lookup(self, line_id):
@@ -52,11 +57,14 @@ class ProductionSnapshots:
 
     def update(self, view):
         ids = [line["line_id"] for line in self.view["lines"]]
-        metadata = {k: self.view[k] for k in ("snapshot_version", "session_id", "telemetry_seq", "stable_game_identity")}
+        metadata = {k: self.view[k] for k in ("snapshot_version", "session_id", "telemetry_seq", "stable_game_identity", "ttl_seconds")}
         self.view = deepcopy(view)
         self.view.update(metadata)
         for line, ident in zip(self.view["lines"], ids):
             line["line_id"] = ident
+            line["identity_signature"] = hashlib.sha256(json.dumps(
+                [line["equipment"], line.get("equipment_type"), line["position"], line["factories"]],
+                ensure_ascii=False).encode()).hexdigest()
         self.created = time.monotonic()
 
     def invalidate(self):

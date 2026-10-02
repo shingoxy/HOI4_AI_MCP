@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "command": ".venv/Scripts/python.exe -m pytest -q --basetemp=artifacts/phase3/test-temp-wrapup",
+  "passed": 194,
+  "subtests_passed": 10,
+  "duration_seconds": 7.18,
+  "compileall": "passed: src scripts tests",
+  "pip_check": "No broken requirements found.",
+  "summary_generation": "passed",
+  "live_evidence": "live-summary-20261002.json",
+  "proof_limit": "Offline checks do not independently establish live HOI4 behavior. Live action results are separately retained; final reload GUI capture unavailable because the window was minimized."
+}

@@ -1,10 +1,20 @@
 # 项目状态
 
-更新日期：2026-10-01
+更新日期：2026-10-02
 
 ## 当前阶段
 
-**Phase 3B-1：CODE COMPLETE / OFFLINE TESTED / LIVE VERIFIED（限定 Production GUI Executor PoC）。** `get_production_lines()` 建立 GUI 来源的 session-local snapshot，`set_production_factory_count(line_id, factories)` 正常增减工厂并精确重复读回。官方 SDK stdio 实机 3 次 confirmed（10→12、12→10、另一条 2→3），另一次 3→2 正常恢复。报告：[PHASE3B1_PRODUCTION_EXECUTOR.md](PHASE3B1_PRODUCTION_EXECUTOR.md)。本轮在 Phase 3B-1 停止，不进入 Construction / Laws / Army。
+**Phase 3 — Non-Military GUI Executor：COMPLETE / OFFLINE TESTED / LIVE VERIFIED（限定 PoC）。** Production 剩余动作、Construction、Laws、Advisors、Trade 已达到本轮限定验收标准；停止于 Phase 3，不进入 Phase 4 / Army / Front / Air / Navy。报告：[PHASE3_NON_MILITARY_EXECUTOR.md](PHASE3_NON_MILITARY_EXECUTOR.md)，架构：[ARCHITECTURE.md](ARCHITECTURE.md)。
+
+vendor-neutral contract / Python facade / InputBackend / guarded transaction 已落实。官方 SDK stdio → 正常 GUI → 重复 readback confirmed：Production create ×2 / reorder ×2 / delete ×2；Construction 三州三建筑 build ×3 / cancel ×6 / priority ×2；经济法 ×2 / 征兵法 ×2（含恢复）；沙赫特 hire ×1；SWE steel import ×4（含归零恢复）及独立 Trade getter ×1。提交 retry 均为 0。原 Research / Focus / factory assignment 的既有 live 证据保留，没有重测。
+
+最终离线 **194 passed / 10 subtests passed**；compileall、pip check、模板重建和 git diff --check 通过。统一结果区分六种状态；snapshot 使用 session/version/TTL/signature，未知身份拒绝操作，提交后不自动重试。GUI 派生生产、建筑、顾问和贸易证据单独标注，不冒称逐线 telemetry。平均延迟、10 条原始失败和恢复记录见 [实机汇总](artifacts/phase3/live-summary-20261002.json)。
+
+测试后通过正常 GUI 恢复生产、建筑、法律和贸易，再正常读取 `GER_1936_01_01_12.hoi4`，第一次恢复已确认 **1936-01-01 12:00 / paused**、顾问三槽为空、建筑队列为空。独立 Trade getter 需短暂正常推进到 1936 年 1 月 2–3 日取得 fresh telemetry；之后再次提交正常读档。收尾时游戏窗口已最小化，不自动拉前台，因此第二次加载结束的 GUI 状态未复核；[恢复记录](artifacts/phase3/restoration.json)明确区分已验证状态和最终 UNKNOWN。8 个原存档（含 autosave）及 Mod 选择 SHA256 仍与基线一致。当前 chat 新 action 注册 UNKNOWN，官方 SDK 的 25 个 MCP tools 已验证；Phase 3 提交包含实现、测试、文档与验证证据，运行时凭据、存档备份和临时测试目录不纳入 Git。
+
+操作者明确允许直接 Computer Use 和正常 GUI 自动解除暂停/启动游戏；不自动拉前台，不修改 Mod 选择，不使用 cheat/effect/save mutation。当前实測 base Chinese / Telemetry Mod only / 2560×1080 / scale 1.0。测试从 GER 1936 开局自然推进到 1937，时间变化单独记录，不冒称全部 live 位于 1936。
+
+**历史 Phase 3B-1：CODE COMPLETE / OFFLINE TESTED / LIVE VERIFIED（限定 Production GUI Executor PoC）。** `get_production_lines()` 与 `set_production_factory_count()` 既有验收见 [PHASE3B1_PRODUCTION_EXECUTOR.md](PHASE3B1_PRODUCTION_EXECUTOR.md)。
 
 Phase 3A 保持 **CODE COMPLETE / OFFLINE TESTED / LIVE VERIFIED**；Research 和 National Focus GUI action 各 3 次 confirmed，既有安全 guard 实机证据保留，本轮没有重演。报告：[PHASE3A_GUI_EXECUTOR.md](PHASE3A_GUI_EXECUTOR.md)。
 
@@ -14,6 +24,7 @@ Phase 2A 保持 **CODE COMPLETE / OFFLINE TESTED / LIVE VERIFIED (GERMANY 1936 +
 
 ## 已实现
 
+- Phase 3：MCP v0.6.0 opt-in `--non-military` 与普通 `OperatorAPI.execute()`；两个装备 catalog、最多十条完整紧凑军工行、三州/三建筑单项队列、两组合法法律切换、有限德国顾问和 SWE steel 0–2 民工进口。公共接口不接受坐标、模板、HWND 或 Computer Use 对象；默认未连接 backend 时拒绝 GUI action。换装备、通用滚动/任意州、其他贸易目标、完整 Agent Adapter / native backend 保持未实现。
 - Phase 3B-1：MCP v0.5.0 新增 Production getter / factory-count setter；GUI 临时 ID 的 session/version/TTL、行身份/顺序/数量重新验证、数字 AND 工厂格重复确认、fresh GER telemetry/MIL-total 交叉检查。只有顶部六条校准军工行及 0–15 工厂范围，截断名称两条只观察、拒绝调整；逐线 telemetry、内部 equipment ID、效率、产量继续 UNKNOWN。没有扩展 Telemetry Mod；原 safety/Computer Use pump/动作锁保留，提交 retry 0。
 - Phase 3A：确定性 Research / Focus Executor、集中布局/模板、正常更换研究确认、F12/失焦/独立 watchdog/timeout/Esc recovery、最多一次提交前导航 retry。MCP 两个语义 action 保留，默认不连接 GUI；现有七个只读查询工具与注册配置保留。没有作弊/effect API、Army / Front / AI Planner。
 - Phase 1：完成参考项目和本机 HOI4 1.19.3 的静态能力调查；没有重做该阶段。

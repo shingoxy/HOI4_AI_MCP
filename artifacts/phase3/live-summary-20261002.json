@@ -1,0 +1,433 @@
+{
+  "generated_at": "2026-10-02T00:23:07.815274+00:00",
+  "status": "LIVE VERIFIED; limited Phase 3 PoC",
+  "profile": "HOI4 1.19.3 / GER 1936 start / base Chinese / Telemetry Mod only / 2560x1080 / scale 1.0",
+  "live_date_extension": "Naturally advanced into 1937 for PP and GUI calibration; final April 27 1937 before restoration",
+  "evidence_files": [
+    "advisor-live-1.json",
+    "construction-live-build-1.json",
+    "construction-live-cleanup-1.json",
+    "construction-live-cleanup-2.json",
+    "construction-live-cleanup-3.json",
+    "construction-live-final-1.json",
+    "politics-live-1.json",
+    "production-live-bridge-check.json",
+    "production-live-session-1.json",
+    "production-live-session-2.json",
+    "production-live-session-3.json",
+    "production-live-session-4.json",
+    "production-live-session-5.json",
+    "trade-live-getter-1.json",
+    "trade-live-one-1.json",
+    "trade-live-roundtrip-1.json",
+    "trade-live-two-1.json",
+    "trade-live-zero-1.json",
+    "trade-live-zero-2.json"
+  ],
+  "action_status_counts": {
+    "get_advisors": {
+      "confirmed": 2,
+      "timed_out": 1
+    },
+    "hire_advisor": {
+      "confirmed": 1,
+      "already_satisfied": 1
+    },
+    "get_construction": {
+      "confirmed": 4,
+      "rejected": 1
+    },
+    "build": {
+      "confirmed": 3
+    },
+    "change_construction_priority": {
+      "confirmed": 2
+    },
+    "cancel_construction": {
+      "uncertain": 1,
+      "confirmed": 6
+    },
+    "change_economy_law": {
+      "confirmed": 2
+    },
+    "change_conscription_law": {
+      "confirmed": 2
+    },
+    "get_production_lines": {
+      "timed_out": 3,
+      "confirmed": 4
+    },
+    "create_production_line": {
+      "confirmed": 2
+    },
+    "reorder_production_line": {
+      "rejected": 1,
+      "confirmed": 2
+    },
+    "delete_production_line": {
+      "uncertain": 1,
+      "confirmed": 2
+    },
+    "get_trade_state": {
+      "confirmed": 1
+    },
+    "set_trade_import": {
+      "already_satisfied": 2,
+      "uncertain": 1,
+      "confirmed": 4,
+      "rejected": 1
+    }
+  },
+  "confirmed_metrics": {
+    "get_advisors": {
+      "confirmed_count": 2,
+      "average_duration_ms": 2218.5,
+      "average_stages_ms": {
+        "precheck": 0,
+        "navigation": 2218.5,
+        "target_lookup": 0,
+        "submit": 0,
+        "readback": 0,
+        "confirmation": 0,
+        "total": 2218.5
+      }
+    },
+    "hire_advisor": {
+      "confirmed_count": 1,
+      "average_duration_ms": 7782,
+      "average_stages_ms": {
+        "precheck": 16,
+        "navigation": 938,
+        "target_lookup": 0,
+        "submit": 4031,
+        "readback": 937,
+        "confirmation": 922,
+        "total": 7782
+      }
+    },
+    "get_construction": {
+      "confirmed_count": 4,
+      "average_duration_ms": 2007.75,
+      "average_stages_ms": {
+        "precheck": 0,
+        "navigation": 1886.75,
+        "target_lookup": 0,
+        "submit": 0,
+        "readback": 121,
+        "confirmation": 0,
+        "total": 2007.75
+      }
+    },
+    "build": {
+      "confirmed_count": 3,
+      "average_duration_ms": 13093.67,
+      "average_stages_ms": {
+        "precheck": 0,
+        "navigation": 1645.67,
+        "target_lookup": 115,
+        "submit": 8437.33,
+        "readback": 885.67,
+        "confirmation": 880,
+        "total": 13093.67
+      }
+    },
+    "change_construction_priority": {
+      "confirmed_count": 2,
+      "average_duration_ms": 6250.5,
+      "average_stages_ms": {
+        "precheck": 0,
+        "navigation": 1852,
+        "target_lookup": 117,
+        "submit": 1180,
+        "readback": 953,
+        "confirmation": 1172,
+        "total": 6250.5
+      }
+    },
+    "cancel_construction": {
+      "confirmed_count": 6,
+      "average_duration_ms": 7184.67,
+      "average_stages_ms": {
+        "precheck": 0,
+        "navigation": 2255,
+        "target_lookup": 114.67,
+        "submit": 1916.5,
+        "readback": 1018.17,
+        "confirmation": 903.67,
+        "total": 7184.67
+      }
+    },
+    "change_economy_law": {
+      "confirmed_count": 2,
+      "average_duration_ms": 11875,
+      "average_stages_ms": {
+        "precheck": 0,
+        "navigation": 3578,
+        "target_lookup": 0,
+        "submit": 1774,
+        "readback": 2734.5,
+        "confirmation": 1968.5,
+        "total": 11875
+      }
+    },
+    "change_conscription_law": {
+      "confirmed_count": 2,
+      "average_duration_ms": 17133,
+      "average_stages_ms": {
+        "precheck": 0,
+        "navigation": 4156.5,
+        "target_lookup": 0,
+        "submit": 1883,
+        "readback": 2718.5,
+        "confirmation": 1859.5,
+        "total": 17133
+      }
+    },
+    "get_production_lines": {
+      "confirmed_count": 4,
+      "average_duration_ms": 2746.25,
+      "average_stages_ms": {
+        "precheck": 0,
+        "navigation": 2605.25,
+        "target_lookup": 0,
+        "submit": 0,
+        "readback": 141,
+        "confirmation": 0,
+        "total": 2746.25
+      }
+    },
+    "create_production_line": {
+      "confirmed_count": 2,
+      "average_duration_ms": 10758.5,
+      "average_stages_ms": {
+        "precheck": 0,
+        "navigation": 2742.5,
+        "target_lookup": 117.5,
+        "submit": 2140,
+        "readback": 2883.5,
+        "confirmation": 1929.5,
+        "total": 10758.5
+      }
+    },
+    "reorder_production_line": {
+      "confirmed_count": 2,
+      "average_duration_ms": 11055,
+      "average_stages_ms": {
+        "precheck": 0,
+        "navigation": 2633,
+        "target_lookup": 117,
+        "submit": 2718.5,
+        "readback": 2812.5,
+        "confirmation": 1867.5,
+        "total": 11055
+      }
+    },
+    "delete_production_line": {
+      "confirmed_count": 2,
+      "average_duration_ms": 9601.5,
+      "average_stages_ms": {
+        "precheck": 0,
+        "navigation": 2711.5,
+        "target_lookup": 117,
+        "submit": 1812.5,
+        "readback": 2008,
+        "confirmation": 2031,
+        "total": 9601.5
+      }
+    },
+    "get_trade_state": {
+      "confirmed_count": 1,
+      "average_duration_ms": 5796,
+      "average_stages_ms": {
+        "precheck": 0,
+        "navigation": 5796,
+        "target_lookup": 0,
+        "submit": 0,
+        "readback": 0,
+        "confirmation": 0,
+        "total": 5796
+      }
+    },
+    "set_trade_import": {
+      "confirmed_count": 4,
+      "average_duration_ms": 18867.25,
+      "average_stages_ms": {
+        "precheck": 0,
+        "navigation": 4914,
+        "target_lookup": 0,
+        "submit": 5859.5,
+        "readback": 3554.75,
+        "confirmation": 3547,
+        "total": 18867.25
+      }
+    }
+  },
+  "submission_retry_count": 0,
+  "successful_trade_observation_retry_count": 0,
+  "failures": [
+    {
+      "file": "construction-live-cleanup-1.json",
+      "action": "get_construction",
+      "status": "rejected",
+      "reason": "telemetry_stale",
+      "accepted": false,
+      "duration_ms": 0,
+      "retry_count": 0
+    },
+    {
+      "file": "construction-live-cleanup-2.json",
+      "action": "cancel_construction",
+      "status": "uncertain",
+      "reason": "unexpected_state_change",
+      "accepted": true,
+      "duration_ms": 5438,
+      "retry_count": 0
+    },
+    {
+      "file": "politics-live-1.json",
+      "action": "get_advisors",
+      "status": "timed_out",
+      "reason": "ui_timeout",
+      "accepted": false,
+      "duration_ms": 20015,
+      "retry_count": 0
+    },
+    {
+      "file": "production-live-bridge-check.json",
+      "action": "get_production_lines",
+      "status": "timed_out",
+      "reason": "ui_timeout",
+      "accepted": false,
+      "duration_ms": 20000,
+      "retry_count": 0
+    },
+    {
+      "file": "production-live-session-1.json",
+      "action": "get_production_lines",
+      "status": "timed_out",
+      "reason": "ui_timeout",
+      "accepted": false,
+      "duration_ms": 20016,
+      "retry_count": 0
+    },
+    {
+      "file": "production-live-session-2.json",
+      "action": "get_production_lines",
+      "status": "timed_out",
+      "reason": "ui_timeout",
+      "accepted": false,
+      "duration_ms": 20047,
+      "retry_count": 0
+    },
+    {
+      "file": "production-live-session-3.json",
+      "action": "reorder_production_line",
+      "status": "rejected",
+      "reason": "target_not_visible",
+      "accepted": false,
+      "duration_ms": 5109,
+      "retry_count": 0
+    },
+    {
+      "file": "production-live-session-4.json",
+      "action": "delete_production_line",
+      "status": "uncertain",
+      "reason": "unexpected_state_change",
+      "accepted": true,
+      "duration_ms": 7515,
+      "retry_count": 0
+    },
+    {
+      "file": "trade-live-one-1.json",
+      "action": "set_trade_import",
+      "status": "uncertain",
+      "reason": "readback_ambiguous",
+      "accepted": true,
+      "duration_ms": 13297,
+      "retry_count": 0
+    },
+    {
+      "file": "trade-live-zero-1.json",
+      "action": "set_trade_import",
+      "status": "rejected",
+      "reason": "identity_mismatch",
+      "accepted": false,
+      "duration_ms": 13266,
+      "retry_count": 0
+    }
+  ],
+  "harness_stops": [],
+  "historical_actions": "Research, Focus and factory assignment proof retained from historical reports; not rerun",
+  "restoration": {
+    "manual_and_autosave_hash_comparison": [
+      {
+        "name": "autosave.hoi4",
+        "sha256_before": "e27d9f5fc7e22c52b4ae092d415797f0fd226822ca46d7fb3d96a747f762a460",
+        "sha256_after": "e27d9f5fc7e22c52b4ae092d415797f0fd226822ca46d7fb3d96a747f762a460",
+        "unchanged": true
+      },
+      {
+        "name": "GER_1936_01_01_12.hoi4",
+        "sha256_before": "7964a9999af7877a3afd7f22b0981689d961046970688734c26b345be0fe348b",
+        "sha256_after": "7964a9999af7877a3afd7f22b0981689d961046970688734c26b345be0fe348b",
+        "unchanged": true
+      },
+      {
+        "name": "GER_1936_01_06_23.hoi4",
+        "sha256_before": "37cb12bc948a34d1c445e6787c6354828614dc45920b3b1acfeead34633850f9",
+        "sha256_after": "37cb12bc948a34d1c445e6787c6354828614dc45920b3b1acfeead34633850f9",
+        "unchanged": true
+      },
+      {
+        "name": "GER_1936_01_22_11.hoi4",
+        "sha256_before": "cb7e5356af7dcf4b8a3a47714a8e283e12d0c1463bc0ae0c6a739c9d21d1fdc6",
+        "sha256_after": "cb7e5356af7dcf4b8a3a47714a8e283e12d0c1463bc0ae0c6a739c9d21d1fdc6",
+        "unchanged": true
+      },
+      {
+        "name": "PRC_1936_10_12_10.hoi4",
+        "sha256_before": "5562fbbeade99b3db7f1081485b2c636c1a696fac6342a475e3d0692d19aecf4",
+        "sha256_after": "5562fbbeade99b3db7f1081485b2c636c1a696fac6342a475e3d0692d19aecf4",
+        "unchanged": true
+      },
+      {
+        "name": "PRC_1939_08_12_09.hoi4",
+        "sha256_before": "168e5ef9ade1e9736cc55c77ff19d8e1d7518288f3a894dd42e90cfd1ef6d027",
+        "sha256_after": "168e5ef9ade1e9736cc55c77ff19d8e1d7518288f3a894dd42e90cfd1ef6d027",
+        "unchanged": true
+      },
+      {
+        "name": "PRC_1942_02_28_03.hoi4",
+        "sha256_before": "ce1f4b6dffa621c4d4d3b700bab8cf9fe5bb62edf01d7b52ee79878224778a16",
+        "sha256_after": "ce1f4b6dffa621c4d4d3b700bab8cf9fe5bb62edf01d7b52ee79878224778a16",
+        "unchanged": true
+      },
+      {
+        "name": "PRC_1942_06_01_02.hoi4",
+        "sha256_before": "7188f1bc326778da78be7943731d245f5b1333634a35a9ff8e7d1ba332bc25d7",
+        "sha256_after": "7188f1bc326778da78be7943731d245f5b1333634a35a9ff8e7d1ba332bc25d7",
+        "unchanged": true
+      }
+    ],
+    "paused": null,
+    "gui_date": null,
+    "mod_unchanged": true,
+    "restored_via": "normal in-game Load menu",
+    "fresh_post_load_telemetry_verified": false,
+    "loaded_save": "GER_1936_01_01_12.hoi4",
+    "mod_sha256": "f3c55e20cdd8c2de4fa21f4fa94350590e3ae40f8b5e0a2d1bd8a204af485cdb",
+    "last_fully_verified_restore": {
+      "gui_date": "1936-01-01 12:00",
+      "paused": true,
+      "advisors": "three empty slots verified by same GUI reader",
+      "construction": "empty queue verified by same GUI reader",
+      "capture": "captures/restored-final.jpg",
+      "before_standalone_trade_getter": true
+    },
+    "final_reload_submitted": true,
+    "final_reload_gui_verified": false,
+    "final_verification_reason": "window_minimized; no automatic refocus; latest Load completion unknown",
+    "hashes_checked_at": "2026-10-02T00:22:52.8561986Z"
+  },
+  "proof_limit": "UI confirmation for unsupported telemetry fields; no claimed full trade, queue progress or internal production identities"
+}

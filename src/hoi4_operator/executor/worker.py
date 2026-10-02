@@ -30,6 +30,7 @@ class ComputerUseWorker:
         self.token = secrets.token_urlsafe(32)
         self.hwnd = hwnd
         self.last_capture = None
+        self.last_poll = 0.0
         worker = self
 
         class Handler(BaseHTTPRequestHandler):
@@ -48,6 +49,7 @@ class ComputerUseWorker:
                     if not isinstance(data, dict):
                         raise ValueError("invalid_request")
                     if self.path == "/next":
+                        worker.last_poll = time.monotonic()
                         try:
                             reply = worker.commands.get(timeout=0.5)
                         except queue.Empty:
@@ -95,6 +97,9 @@ class ComputerUseWorker:
         self.last_capture = None
         self.guard.arm(timeout)
 
+    def ready(self):
+        return time.monotonic() - self.last_poll < 2.0
+
     def check(self):
         if not self.guard.active:
             raise ActionError("action_not_armed", "rejected")
@@ -130,16 +135,27 @@ class ComputerUseWorker:
         self.last_capture = result["screenshot_id"]
         return rgb
 
-    def click(self, point):
+    def click(self, point, *, button="left"):
         if self.last_capture is None:
             raise ActionError("observation_required")
-        self.request("click", point=list(point), screenshot_id=self.last_capture)
+        if button not in {"left", "right"}:
+            raise ActionError("button_not_allowed", "rejected")
+        self.request("click", point=list(point), screenshot_id=self.last_capture, button=button)
         self.last_capture = None
 
     def key(self, key):
-        if key not in {"Escape", "w", "q", "y", "Return"}:
+        if key not in {"Escape", "w", "q", "y", "t", "r", "Return"}:
             raise ActionError("key_not_allowed", "rejected")
         self.request("key", key=key)
+        self.last_capture = None
+
+    def scroll(self, point, delta):
+        if self.last_capture is None:
+            raise ActionError("observation_required")
+        if (isinstance(delta, bool) or not isinstance(delta, int) or
+                delta == 0 or abs(delta) > 2400):
+            raise ActionError("invalid_scroll", "rejected")
+        self.request("scroll", point=list(point), delta=delta, screenshot_id=self.last_capture)
         self.last_capture = None
 
     def release(self):

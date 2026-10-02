@@ -1,0 +1,8 @@
+[
+  {"action":"get_construction"},
+  {"action":"build","arguments":{"state_id":65,"building_type":"civilian_factory"}},
+  {"action":"change_construction_priority","arguments":{"queue_item_id":"$snapshot.queue.2.queue_item_id","direction":"up"}},
+  {"action":"cancel_construction","arguments":{"queue_item_id":"$snapshot.queue.0.queue_item_id"}},
+  {"action":"cancel_construction","arguments":{"queue_item_id":"$snapshot.queue.0.queue_item_id"}},
+  {"action":"cancel_construction","arguments":{"queue_item_id":"$snapshot.queue.0.queue_item_id"}}
+]
