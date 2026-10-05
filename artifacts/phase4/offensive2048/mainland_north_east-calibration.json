@@ -1,0 +1,23 @@
+{
+  "source": "manual guarded calibration; not SDK confirmed",
+  "target": "mainland_north_east",
+  "submit_count": 1,
+  "retry_count": 0,
+  "segment": [
+    [
+      1540,
+      600
+    ],
+    [
+      1660,
+      600
+    ]
+  ],
+  "anchors_verified": [
+    "anchor_amsterdam",
+    "anchor_copenhagen",
+    "anchor_konigsberg"
+  ],
+  "result": "drag returned and released; order awaits manual inspection",
+  "duration_ms": 2344
+}

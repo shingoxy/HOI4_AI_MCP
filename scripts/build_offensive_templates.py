@@ -1,0 +1,84 @@
+"""Reproduce the 2048x1280 offensive-only crops from real calibration frames."""
+
+import json
+from pathlib import Path
+
+from PIL import Image
+import numpy as np
+import sys
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+from hoi4_operator.executor.offensive_ui import order_mask, ORDER_ROI
+
+ROOT = Path(__file__).resolve().parents[1]
+CAPTURES = ROOT / "artifacts/phase4/offensive2048/captures"
+DEST = ROOT / "artifacts/phase4/offensive2048/templates"
+BOXES = {
+    "anchor_amsterdam": (377, 648, 470, 668),
+    "anchor_copenhagen": (975, 281, 1049, 302),
+    "anchor_konigsberg": (1622, 404, 1700, 425),
+    "army_name": (52, 70, 113, 87), "army_count_one": (274, 72, 293, 87),
+    "army_no_general": (54, 105, 117, 124),
+    "army_panzer_one": (144, 193, 257, 211),
+    "army_extra_plus": (1070, 1207, 1103, 1241),
+    "army_extra_plus_empty": (1070, 1207, 1103, 1241),
+    "offensive_active": (1025, 1112, 1053, 1139),
+    "offensive_inactive": (1025, 1112, 1053, 1139),
+    "drawing_assignment_zero": (1141,1088,1217,1107),
+    "drawing_assignment_selected": (1141,1088,1217,1107),
+    "operation_white": (788, 1089, 846, 1106),
+    "land_mode": (1997, 1120, 2026, 1149),
+    "front_mainland_0": (1390, 421, 1408, 445),
+    "front_mainland_1": (1364, 491, 1386, 517),
+    "front_mainland_2": (1450, 817, 1473, 841),
+    "front_east_prussia_0": (1515, 506, 1542, 529),
+    "front_east_prussia_1": (1765, 457, 1790, 486),
+    "front_east_prussia_2": (1731, 507, 1758, 531),
+    "order_poz_army_label": (1282,605,1350,621),
+    "order_poz_origin": (1246,604,1274,622),
+    "order_poz_tip": (1342,604,1370,628),
+    "order_poz_target": (1371,650,1387,674),
+    "order_north_east_army_label": (1394,639,1483,655),
+    "order_north_east_origin": (1246,638,1274,657),
+    "order_north_east_tip": (1545,631,1580,661),
+    "order_north_east_target": (1530,607,1553,625),
+}
+
+
+def main():
+    DEST.mkdir(parents=True, exist_ok=True)
+    source = CAPTURES / "offensive-empty.jpg"
+    image = Image.open(source).convert("RGB")
+    if image.size != (2048, 1280):
+        raise ValueError("Unexpected capture profile")
+    scenes = {"empty": "orders-empty.jpg", "poz": "order-mainland-only.jpg",
+              "north_east": "order-mainland-north-east.jpg"}
+    for name, box in BOXES.items():
+        frame = image
+        if name == "offensive_inactive":
+            frame = Image.open(CAPTURES / "mainland_north_east-drag-after.png").convert("RGB")
+        if name in {"army_extra_plus_empty", "drawing_assignment_zero"}:
+            frame = Image.open(CAPTURES / "orders-empty.jpg").convert("RGB")
+        if name == "drawing_assignment_selected":
+            frame = Image.open(CAPTURES / "order-mainland-north-east.jpg").convert("RGB")
+        for scene in ("poz", "north_east"):
+            if name.startswith("order_"+scene+"_"):
+                frame = Image.open(CAPTURES / scenes[scene]).convert("RGB")
+        frame.crop(box).save(DEST / (name + ".png"))
+    for scene, filename in scenes.items():
+        frame = np.asarray(Image.open(CAPTURES / filename).convert("RGB"))
+        Image.fromarray(order_mask(frame)*255).save(DEST / f"scene_{scene}.png")
+    manifest = {"profile": "GER_1936_2048x1280", "ui_scale": 1.0, "map_mode": "land",
+        "physical_game_settings": [2560, 1600], "capture_size": list(image.size),
+        "source": "../captures/offensive-empty.jpg", "crops": BOXES,
+        "calibration": "independent real screenshots; no scaling of the old profile",
+        "supported_targets": ["GER_POL_mainland_Poznan_east", "GER_POL_mainland_Poland_north_east"],
+        "order_scenes": scenes, "order_roi": ORDER_ROI,
+        "order_readback": "Army label, frontline origin, arrow tip, target curve plus entire ROI order mask",
+        "order_mask_tolerance": {"edge_radius_pixels": 2, "max_extra_pixels": 40, "max_missing_pixels": 40},
+        "east_prussia": "unsupported offensive origin; calibration attached to mainland instead"}
+    (DEST / "manifest.json").write_text(json.dumps(manifest, indent=2), encoding="utf-8")
+
+
+if __name__ == "__main__":
+    main()

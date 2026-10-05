@@ -1,0 +1,4 @@
+[
+  {"action":"get_fronts"},
+  {"action":"create_frontline","arguments":{"army_id":"$snapshot.armies.0.army_id","target_id":"GER_POL_mainland"}}
+]

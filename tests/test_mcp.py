@@ -12,6 +12,7 @@ import unittest
 from test_telemetry import frame
 from test_read_model import append
 from test_extended_telemetry import extended_frame
+from hoi4_operator.actions.military import OBSERVATIONS
 
 
 HAS_MCP = importlib.util.find_spec("mcp") is not None
@@ -44,9 +45,13 @@ class MCPTests(unittest.IsolatedAsyncioTestCase):
                 "get_construction", "build", "cancel_construction", "change_construction_priority",
                 "change_economy_law", "change_conscription_law", "get_advisors", "hire_advisor",
                 "get_trade_state", "set_trade_import",
-            })
+                "create_army", "assign_divisions", "remove_divisions_from_army", "assign_general",
+                "create_frontline", "create_offensive_line", "execute_plan", "stop_plan", "move_divisions",
+                "assign_air_wing", "set_air_mission",
+                "assign_fleet_region", "set_naval_mission",
+            } | set(OBSERVATIONS))
             self.assertTrue(all(t.annotations.read_only_hint for t in tools if t.name.startswith("get_") and
-                                t.name not in {"get_production_lines", "get_construction", "get_advisors", "get_trade_state"}))
+                                t.name not in {"get_production_lines", "get_construction", "get_advisors", "get_trade_state"} | set(OBSERVATIONS)))
             self.assertFalse(next(t for t in tools if t.name == "get_production_lines").annotations.read_only_hint)
             self.assertTrue(all(not t.annotations.read_only_hint for t in tools if t.name.startswith("select_")))
             rejected = (await client.call_tool("select_focus", {"focus_id": "GER_remilitarize_the_rhineland"})).structured_content
@@ -185,7 +190,7 @@ class MCPTests(unittest.IsolatedAsyncioTestCase):
                 await process.wait()
         self.assertEqual(process.returncode, 0)
         self.assertEqual(responses[1]["result"]["protocolVersion"], "2025-11-25")
-        self.assertEqual(len(responses[2]["result"]["tools"]), 25)
+        self.assertEqual(len(responses[2]["result"]["tools"]), 50)
         self.assertEqual(responses[3]["result"]["structuredContent"]["game_date"], "1 1月, 1936")
         self.assertEqual(before, (self.path.read_bytes(), self.path.stat().st_mtime_ns))
 

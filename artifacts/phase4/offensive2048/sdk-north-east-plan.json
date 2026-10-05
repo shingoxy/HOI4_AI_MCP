@@ -1,0 +1,4 @@
+[
+  {"action": "get_fronts"},
+  {"action": "create_offensive_line", "arguments": {"army_id": "$snapshot.armies.0.army_id", "target": "GER_POL_mainland_Poland_north_east"}, "expected": ["confirmed"]}
+]

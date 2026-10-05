@@ -1,0 +1,6 @@
+[
+  {"action":"get_navy_state"},
+  {"action":"get_fleets"},
+  {"action":"assign_fleet_region","arguments":{"fleet_id":"$snapshot.fleets.0.fleet_id","region_id":7},"expected":["rejected"]},
+  {"action":"set_naval_mission","arguments":{"fleet_id":"$snapshot.fleets.0.fleet_id","mission":"patrol"},"expected":["rejected"]}
+]

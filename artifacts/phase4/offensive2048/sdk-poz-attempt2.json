@@ -1,0 +1,249 @@
+{
+  "source": "LIVE HOI4 / official SDK stdio / military semantic API / normal GUI",
+  "actions": [
+    {
+      "action": "get_fronts",
+      "arguments": {},
+      "result": {
+        "action": "get_fronts",
+        "accepted": false,
+        "status": "timed_out",
+        "action_id": "0ce20eda-4d37-4dbc-a4ca-4c823952c688",
+        "retry_count": 0,
+        "duration_ms": 20032,
+        "timings_ms": {
+          "precheck": 0,
+          "navigation": 10016,
+          "target_lookup": 0,
+          "submit": 0,
+          "readback": 0,
+          "confirmation": 0,
+          "total": 20032
+        },
+        "reason": "ui_timeout",
+        "recovery": "skipped_safety_stop"
+      }
+    }
+  ],
+  "tool_names": [
+    "get_armies",
+    "get_army",
+    "get_divisions",
+    "get_division",
+    "get_generals",
+    "create_army",
+    "assign_divisions",
+    "remove_divisions_from_army",
+    "assign_general",
+    "get_fronts",
+    "create_frontline",
+    "execute_plan",
+    "stop_plan",
+    "create_offensive_line",
+    "move_divisions",
+    "get_supply_status",
+    "get_air_state",
+    "get_navy_state",
+    "get_air_wings",
+    "get_air_regions",
+    "assign_air_wing",
+    "set_air_mission",
+    "get_fleets",
+    "assign_fleet_region",
+    "set_naval_mission",
+    "get_production_lines",
+    "set_production_factory_count",
+    "get_equipment_catalog",
+    "create_production_line",
+    "delete_production_line",
+    "reorder_production_line",
+    "get_construction",
+    "build",
+    "cancel_construction",
+    "change_construction_priority",
+    "change_economy_law",
+    "change_conscription_law",
+    "get_advisors",
+    "hire_advisor",
+    "get_trade_state",
+    "set_trade_import",
+    "select_research",
+    "select_focus",
+    "get_summary",
+    "get_politics",
+    "get_industry",
+    "get_research",
+    "get_focus",
+    "get_changes",
+    "get_diagnostics"
+  ],
+  "capabilities": {
+    "read_only": false,
+    "telemetry_read_only": true,
+    "country": "GER",
+    "protocol_version": 2,
+    "accepted_protocol_versions": [
+      1,
+      2
+    ],
+    "available": [
+      "politics",
+      "manpower",
+      "factory_totals",
+      "research_slots",
+      "tracked_technology_predicates",
+      "tracked_focus_progress_interval"
+    ],
+    "tracked_technologies": [
+      "basic_machine_tools",
+      "construction1",
+      "electronic_mechanical_engineering"
+    ],
+    "tracked_focus": "GER_remilitarize_the_rhineland",
+    "extended_fields_live_verified": true,
+    "gui_actions": [
+      "select_research",
+      "select_focus",
+      "set_production_factory_count"
+    ],
+    "non_military_runtime_requested": false,
+    "military_runtime_requested": true,
+    "military_executor_attached": true,
+    "military": {
+      "scope_status": "PARTIAL",
+      "army_scope": "one first army; three named GER divisions",
+      "general_scope": [
+        "GER_erich_von_manstein"
+      ],
+      "game_unit_ids": "UNKNOWN",
+      "fronts": "GUI_ONLY; GER_POL_mainland and GER_POL_east_prussia; whole-plan switches",
+      "supply": "GUI_ONLY; 1. Infanterie tooltip; army/front totals UNKNOWN",
+      "air": "GUI_ONLY; fighter wing 132, Brandenburg, region 8, air_superiority or none",
+      "navy": "GUI_ONLY; one twelve-ship task force; missions and region IDs UNKNOWN",
+      "military_telemetry": "UNKNOWN",
+      "right_drag_backend": "WINDOWS_SENDINPUT; guarded right drag only",
+      "offensive_lines": "GUI_ONLY; selected first army / 1. Panzer-Division / no general; two mainland targets; empty order viewport required",
+      "unsupported_actions": [
+        "move_divisions",
+        "assign_fleet_region",
+        "set_naval_mission"
+      ],
+      "live_verified_components": [
+        "army",
+        "frontline",
+        "plan_switch",
+        "division_supply",
+        "air_assignment_and_mission",
+        "navy_observation"
+      ]
+    },
+    "additional_gui_actions": [
+      "create_production_line",
+      "delete_production_line",
+      "reorder_production_line",
+      "build",
+      "cancel_construction",
+      "change_construction_priority",
+      "change_economy_law",
+      "change_conscription_law",
+      "hire_advisor",
+      "set_trade_import"
+    ],
+    "gui_observations": [
+      "get_production_lines",
+      "get_construction",
+      "get_advisors",
+      "get_trade_state"
+    ],
+    "production": {
+      "line_identity": "GUI_ONLY; session-local, not stable game ID",
+      "equipment_type": "GUI_ONLY; visible label matched by template, not game equipment ID",
+      "factory_count": "GUI_ONLY; numeric and grid agreement",
+      "truncated_equipment_labels": "PARTIAL; observation only, actions rejected",
+      "maximum_assignable": "PARTIAL; normal line limit and GUI availability",
+      "efficiency": "UNKNOWN",
+      "current_output": "UNKNOWN",
+      "supported_counts": [
+        0,
+        15
+      ],
+      "viewport": "six complete top rows"
+    },
+    "trade": {
+      "scope": "SWE steel only",
+      "civilian_factories": [
+        0,
+        1,
+        2
+      ],
+      "complete_trade_state": false,
+      "telemetry_trade_state": "UNKNOWN"
+    },
+    "gui_executor_attached": true,
+    "input_backend_ready": true,
+    "unknown_fields": {
+      "active_research": "Only three tracked technologies; slot-to-tech and remaining time are UNKNOWN.",
+      "current_focus": "Current focus ID is UNKNOWN; tracked focus progress is a predicate-derived interval.",
+      "production_lines": "Per-line equipment, efficiency and progress are not verified."
+    },
+    "notifications": "MCP 2026 subscriptions/listen; older clients can poll get_changes"
+  },
+  "before_telemetry": {
+    "status": "fresh",
+    "received_at": "2026-10-04T16:25:26.834112+00:00",
+    "game_date": " 24:00, 8 1月, 1936",
+    "latest_seq": 706647,
+    "state": {
+      "protocol_version": 2,
+      "seq": 706647,
+      "game_date": " 24:00, 8 1月, 1936",
+      "country": "GER",
+      "politics": {
+        "political_power": 18.592,
+        "stability": 0.81,
+        "war_support": 0.35
+      },
+      "manpower": {
+        "available": 1332620,
+        "source_thousands": 1332.62
+      },
+      "industry": {
+        "civilian_factories": 36,
+        "military_factories": 28,
+        "dockyards": 10
+      },
+      "origin": "daily",
+      "research": {
+        "slot_count": 4,
+        "tracked_technologies": [
+          {
+            "tech_id": "basic_machine_tools",
+            "researching": false,
+            "researched": false
+          },
+          {
+            "tech_id": "construction1",
+            "researching": false,
+            "researched": false
+          },
+          {
+            "tech_id": "electronic_mechanical_engineering",
+            "researching": false,
+            "researched": false
+          }
+        ]
+      },
+      "focus": {
+        "tracked_id": "GER_remilitarize_the_rhineland",
+        "completed": false,
+        "progress_lower_bound": 0.0,
+        "progress_upper_bound": 0.1
+      }
+    },
+    "parser_errors": [],
+    "session_id": "42198d0f-3e40-4b7e-9b8a-b6b3f6a8ba4a",
+    "revision": 1,
+    "freshness_basis": "frame_received_at",
+    "log_read_error": null
+  }
+}

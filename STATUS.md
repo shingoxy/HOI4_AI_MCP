@@ -1,10 +1,28 @@
 # 项目状态
 
-更新日期：2026-10-02
+更新日期：2026-10-05
 
 ## 当前阶段
 
-**Phase 3 — Non-Military GUI Executor：COMPLETE / OFFLINE TESTED / LIVE VERIFIED（限定 PoC）。** Production 剩余动作、Construction、Laws、Advisors、Trade 已达到本轮限定验收标准；停止于 Phase 3，不进入 Phase 4 / Army / Front / Air / Navy。报告：[PHASE3_NON_MILITARY_EXECUTOR.md](PHASE3_NON_MILITARY_EXECUTOR.md)，架构：[ARCHITECTURE.md](ARCHITECTURE.md)。
+**Phase 4 — Military Control：COMPLETE / OFFLINE TESTED / LIMITED LIVE VERIFIED。** 唯一剩余 completion gate `create_offensive_line ×2 confirmed` 已完成，完整回归通过。本轮停止于 Phase 4，未进入 Phase 5。报告：[PHASE4_MILITARY_CONTROL.md](PHASE4_MILITARY_CONTROL.md)，架构：[ARCHITECTURE.md](ARCHITECTURE.md)。
+
+2026-10-05 后续 Git 交付按操作者明确的提交 / push 请求执行。验收 JSON 中 staged / committed / pushed 为当时快照，保留原始记录；交付状态以 Git 提交及远端同步结果为准。
+
+新增独立 `GER_1936_2048x1280` MapProfile：UI scale 1.0 / land，使用真实截图校准 Amsterdam、Copenhagen、Königsberg 三处锚点。按实际 capture 的精确宽高选择 profile，再验证锚点和地图模式；任意分辨率、camera 漂移或坏锚点拒绝，没有缩放旧坐标。原 `GER_1936_2560x1080` profile 与既有 Army / Front / Plan / Supply / Air / Navy 证据保留；新 profile 只增加进攻线需要的选中 Army / Front / Order 观察，不迁移其他动作。
+
+两个独立官方 SDK stdio 会话通过未变的 `create_offensive_line(army_id, target)`：`GER_POL_mainland_Poznan_east` 和 `GER_POL_mainland_Poland_north_east` 各 **confirmed ×1 / 5938 ms**。各自从无进攻线开始，fresh telemetry、Army/Front session 身份、三锚点、工具激活检查后，原生右拖只提交一次，右键释放成功，专用 reader 两次确认相同军队、相同前线、预期方向及校准视口无额外订单；retry 均为 0。订单使用 GUI_ONLY / session-local ID / version / 120 秒 TTL / signature。实机军事 telemetry 仍 UNKNOWN。证据：[本轮汇总](artifacts/phase4/offensive2048/live-summary-20261005.json)、[波兹南以东 SDK](artifacts/phase4/offensive2048/sdk-poz-attempt3.json)、[波兰东北 SDK](artifacts/phase4/offensive2048/sdk-north-east-result.json)。
+
+保留人工校准的失败、东普鲁士方向关联到本土前线的错误样本，以及两次只调用 get_fronts 的提交前 SDK timeout；不计为成功，不自动重发。东普鲁士进攻线不启用，本轮按已授权范围使用两个不同的本土 semantic target。独立释放监视、F12、失焦、deadline、watchdog、鼠标 ownership、finally release 与 action lock 保留；异常释放场景的证明来自既有 26 项离线测试，未重做实机故障注入。
+
+本轮完整回归 **295 passed / 10 subtests passed**，在 263 项基线上新增 32 项 profile / 专用进攻线 reader / 单次提交 / 重复回读 / 不确定失效测试；compileall、pip check、文档链接和 diff 检查见 [verification.json](artifacts/phase4/offensive2048/verification.json)。受限环境 pytest Temp 访问被拒绝，使用仓库内新的 `--basetemp` 完成同一完整测试集，未改测试收集或放宽断言。
+
+结束时游戏仍打开，真实 GUI 确认 **1936-01-26 08:00 / paused**，保留第二条验收进攻线和选中集团军，没有执行计划。本轮未保存、读档、重启或修改显示设置；10 个存档及 Mod 选择文件 SHA256 均与基线一致，无新增存档，见 [最终哈希](artifacts/phase4/offensive2048/final-files.json) 和 [结束截图](artifacts/phase4/offensive2048/captures/final-paused.jpg)。SDK 已退出。第二次结果落盘后，额外桥接启动被自动审批以可能重复提交为由拒绝；没有绕过或重复提交，直接读取成功证据并正常暂停。
+
+2026-10-02 的 25 个 SDK 会话 / 74 次调用 / 47 confirmed 历史汇总保留：[历史实机汇总](artifacts/phase4/live-summary-20261002.json)。原 Army、师分配/移除、将领、两处 frontline、Plan 开关、单师 Supply、有限 Air 和 Navy 观察未重验。本轮两个成功会话额外确认 get_fronts ×2 和 offensive line ×2。2026-10-04 的 263 项回归及 profile 不匹配拒绝保留：[原语与显示诊断](artifacts/phase4/offensive/live-summary-20261004.json)。完整游戏对象 ID、通用 province resolver、任意 Air/Navy/分辨率/camera 继续 UNKNOWN / PARTIAL / unsupported；`move_divisions` 和 Navy mutation 明确拒绝，均不新增完成门槛。
+
+## Phase 3 验收历史
+
+**Phase 3 — Non-Military GUI Executor：COMPLETE / OFFLINE TESTED / LIVE VERIFIED（限定 PoC）。** Production 剩余动作、Construction、Laws、Advisors、Trade 达到该轮限定标准，该轮停止于 Phase 3；已提交 `2b1e1f3`。报告：[PHASE3_NON_MILITARY_EXECUTOR.md](PHASE3_NON_MILITARY_EXECUTOR.md)。
 
 vendor-neutral contract / Python facade / InputBackend / guarded transaction 已落实。官方 SDK stdio → 正常 GUI → 重复 readback confirmed：Production create ×2 / reorder ×2 / delete ×2；Construction 三州三建筑 build ×3 / cancel ×6 / priority ×2；经济法 ×2 / 征兵法 ×2（含恢复）；沙赫特 hire ×1；SWE steel import ×4（含归零恢复）及独立 Trade getter ×1。提交 retry 均为 0。原 Research / Focus / factory assignment 的既有 live 证据保留，没有重测。
 
@@ -24,6 +42,7 @@ Phase 2A 保持 **CODE COMPLETE / OFFLINE TESTED / LIVE VERIFIED (GERMANY 1936 +
 
 ## 已实现
 
+- Phase 4：MCP v0.7.0 opt-in `--military` 与 `OperatorAPI.execute()`；军事 SessionSnapshots / 字段来源 / 一次提交和两次精确 readback，两个独立 MapProfile 和可重建模板。既有 Army / Front / Plan / Supply / Air / Navy 观察及新增两处进攻方向达到限定验收；Province movement 和两个 Navy mutation 拒绝，不进入 Phase 5。
 - Phase 3：MCP v0.6.0 opt-in `--non-military` 与普通 `OperatorAPI.execute()`；两个装备 catalog、最多十条完整紧凑军工行、三州/三建筑单项队列、两组合法法律切换、有限德国顾问和 SWE steel 0–2 民工进口。公共接口不接受坐标、模板、HWND 或 Computer Use 对象；默认未连接 backend 时拒绝 GUI action。换装备、通用滚动/任意州、其他贸易目标、完整 Agent Adapter / native backend 保持未实现。
 - Phase 3B-1：MCP v0.5.0 新增 Production getter / factory-count setter；GUI 临时 ID 的 session/version/TTL、行身份/顺序/数量重新验证、数字 AND 工厂格重复确认、fresh GER telemetry/MIL-total 交叉检查。只有顶部六条校准军工行及 0–15 工厂范围，截断名称两条只观察、拒绝调整；逐线 telemetry、内部 equipment ID、效率、产量继续 UNKNOWN。没有扩展 Telemetry Mod；原 safety/Computer Use pump/动作锁保留，提交 retry 0。
 - Phase 3A：确定性 Research / Focus Executor、集中布局/模板、正常更换研究确认、F12/失焦/独立 watchdog/timeout/Esc recovery、最多一次提交前导航 retry。MCP 两个语义 action 保留，默认不连接 GUI；现有七个只读查询工具与注册配置保留。没有作弊/effect API、Army / Front / AI Planner。

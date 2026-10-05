@@ -1,0 +1,11 @@
+[
+  {"action":"get_air_regions"},
+  {"action":"get_air_wings"},
+  {"action":"assign_air_wing","arguments":{"wing_id":"$snapshot.air_wings.0.wing_id","region_id":8}},
+  {"action":"set_air_mission","arguments":{"wing_id":"$snapshot.air_wings.0.wing_id","mission":"air_superiority"}},
+  {"action":"set_air_mission","arguments":{"wing_id":"$snapshot.air_wings.0.wing_id","mission":"none"}},
+  {"action":"get_navy_state"},
+  {"action":"get_fleets"},
+  {"action":"assign_fleet_region","arguments":{"fleet_id":"$snapshot.fleets.0.fleet_id","region_id":7},"expected":["rejected"]},
+  {"action":"set_naval_mission","arguments":{"fleet_id":"$snapshot.fleets.0.fleet_id","mission":"patrol"},"expected":["rejected"]}
+]

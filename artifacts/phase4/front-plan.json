@@ -1,0 +1,10 @@
+[
+  {"action":"get_armies"},
+  {"action":"get_generals"},
+  {"action":"get_supply_status","arguments":{"army_id":"$snapshot.armies.0.army_id"}},
+  {"action":"get_fronts"},
+  {"action":"create_frontline","arguments":{"army_id":"$snapshot.armies.0.army_id","target_id":"GER_POL_mainland"}},
+  {"action":"create_frontline","arguments":{"army_id":"$snapshot.armies.0.army_id","target_id":"GER_POL_east_prussia"}},
+  {"action":"execute_plan","arguments":{"army_id":"$snapshot.armies.0.army_id"}},
+  {"action":"stop_plan","arguments":{"army_id":"$snapshot.armies.0.army_id"}}
+]

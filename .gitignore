@@ -10,3 +10,8 @@ __pycache__/
 /artifacts/phase3/save-backup/
 /artifacts/phase3/runtime/
 /artifacts/phase3/test-temp-*/
+/artifacts/phase4/save-backup/
+/artifacts/phase4/runtime/
+/artifacts/phase4/test-temp-*/
+/artifacts/phase4/captures/live-*/
+/artifacts/phase4/offensive2048/pytest-tmp-*/

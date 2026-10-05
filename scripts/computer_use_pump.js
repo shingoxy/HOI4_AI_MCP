@@ -48,6 +48,13 @@ globalThis.runGuiPump = async function (durationMs = 45000) {
         if (!screen || !/^data:image\/(png|jpeg);base64,/.test(screen.url))
           throw Error('Unsupported screenshot format');
         result = {image_base64: screen.url.split(',')[1], screenshot_id:screen.id};
+        if (globalThis.guiEvidenceDirectory) {
+          // Private local verification evidence; never returned to the Agent API.
+          await fs.mkdir(guiEvidenceDirectory, {recursive:true});
+          const extension = screen.url.startsWith('data:image/png;') ? '.png' : '.jpg';
+          await fs.writeFile(guiEvidenceDirectory + '/' + id + extension,
+            Buffer.from(result.image_base64, 'base64'));
+        }
       } else if (op === 'click') {
         if (!guiState || guiState.screenshots[0].id !== args.screenshot_id)
           throw Error('Stale screenshot');

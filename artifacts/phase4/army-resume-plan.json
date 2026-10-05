@@ -1,0 +1,8 @@
+[
+  {"action":"get_armies"},
+  {"action":"assign_divisions","arguments":{"army_id":"$snapshot.armies.0.army_id","division_ids":["$snapshot.divisions.1.division_id"]},"expected":["already_satisfied"]},
+  {"action":"assign_divisions","arguments":{"army_id":"$snapshot.armies.0.army_id","division_ids":["$snapshot.divisions.2.division_id"]}},
+  {"action":"remove_divisions_from_army","arguments":{"army_id":"$snapshot.armies.0.army_id","division_ids":["$snapshot.divisions.1.division_id"]}},
+  {"action":"assign_divisions","arguments":{"army_id":"$snapshot.armies.0.army_id","division_ids":["$snapshot.divisions.1.division_id"]}},
+  {"action":"get_generals"}
+]

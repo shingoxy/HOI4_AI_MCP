@@ -1,0 +1,147 @@
+{
+  "recorded_at": "2026-10-04T16:42:52.794714+00:00",
+  "source": "LIVE HOI4 / two independent official SDK stdio sessions / semantic API / normal GUI",
+  "profile": "GER_1936_2048x1280",
+  "capture_size": [
+    2048,
+    1280
+  ],
+  "client_size": [
+    2048,
+    1280
+  ],
+  "physical_game_setting": [
+    2560,
+    1600
+  ],
+  "ui_scale": 1.0,
+  "anchors": [
+    "Amsterdam",
+    "Copenhagen",
+    "Konigsberg"
+  ],
+  "supported_targets": [
+    "GER_POL_mainland_Poznan_east",
+    "GER_POL_mainland_Poland_north_east"
+  ],
+  "confirmed_offensive_lines": 2,
+  "results": [
+    {
+      "evidence": "sdk-poz-attempt3.json",
+      "target": "GER_POL_mainland_Poznan_east",
+      "session_id": "569a27fff726",
+      "action_id": "68e521ed-dcd8-4bf1-9bc3-e88d64d4c5ef",
+      "status": "confirmed",
+      "duration_ms": 5938,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 1969,
+        "target_lookup": 0,
+        "submit": 1094,
+        "readback": 1906,
+        "confirmation": 969,
+        "total": 5938
+      },
+      "submit_count": 1,
+      "retry_count": 0,
+      "mouse_release_confirmed": true,
+      "order_id": "order-569a27fff726-0002-0000",
+      "front_target_id": "GER_POL_mainland",
+      "ui_confirmation": {
+        "same_army": true,
+        "same_frontline": true,
+        "new_offensive_order": true,
+        "expected_direction_and_region": true,
+        "no_extra_order_in_calibrated_viewport": true,
+        "repeated_readback": true,
+        "identity_source": "GUI_ONLY"
+      },
+      "telemetry_seq": 706651,
+      "freshness_basis": "frame_received_at"
+    },
+    {
+      "evidence": "sdk-north-east-result.json",
+      "target": "GER_POL_mainland_Poland_north_east",
+      "session_id": "862cb6a1bf7e",
+      "action_id": "b41d178f-f8a8-4036-b667-f2fb7c36b1f9",
+      "status": "confirmed",
+      "duration_ms": 5938,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 1922,
+        "target_lookup": 0,
+        "submit": 1094,
+        "readback": 1750,
+        "confirmation": 1172,
+        "total": 5938
+      },
+      "submit_count": 1,
+      "retry_count": 0,
+      "mouse_release_confirmed": true,
+      "order_id": "order-862cb6a1bf7e-0002-0000",
+      "front_target_id": "GER_POL_mainland",
+      "ui_confirmation": {
+        "same_army": true,
+        "same_frontline": true,
+        "new_offensive_order": true,
+        "expected_direction_and_region": true,
+        "no_extra_order_in_calibrated_viewport": true,
+        "repeated_readback": true,
+        "identity_source": "GUI_ONLY"
+      },
+      "telemetry_seq": 706662,
+      "freshness_basis": "frame_received_at"
+    }
+  ],
+  "pre_submit_sdk_failures": [
+    {
+      "evidence": "sdk-poz-pre-submit-timeout.json",
+      "actions": [
+        {
+          "action": "get_fronts",
+          "status": "timed_out",
+          "duration_ms": 20046,
+          "reason": "ui_timeout"
+        }
+      ],
+      "offensive_action_called": false
+    },
+    {
+      "evidence": "sdk-poz-attempt2.json",
+      "actions": [
+        {
+          "action": "get_fronts",
+          "status": "timed_out",
+          "duration_ms": 20032,
+          "reason": "ui_timeout"
+        }
+      ],
+      "offensive_action_called": false
+    }
+  ],
+  "manual_calibration_counts_as_sdk_acceptance": false,
+  "east_prussia_offensive_supported": false,
+  "east_prussia_limitation": "Calibration attached order to mainland origin; not accepted as East Prussia proof. Two distinct mainland target regions used instead.",
+  "safety_proof": "Native release succeeded in both live submissions; focus/F12/timeout/watchdog/failure release cases remain offline tests, no new live fault injection.",
+  "bridge_auto_review": "After second SDK result persisted, another pump start was rejected as potential duplicate submission. No retry or workaround; read persisted success and paused via normal GUI.",
+  "ending_gui": {
+    "game_date": "1936-01-26 08:00",
+    "paused": true,
+    "screenshot": "captures/final-paused.jpg",
+    "plan_execution_submitted_this_round": false,
+    "remaining_order": "GER_POL_mainland_Poland_north_east"
+  },
+  "files": {
+    "checked": 11,
+    "save_count": 10,
+    "changed": [],
+    "new_save_files": [],
+    "all_baseline_hashes_unchanged": true
+  },
+  "settings_or_mod_selection_changed_this_round": false,
+  "game_restart": false,
+  "save_or_load_this_round": false,
+  "phase5_started": false,
+  "committed": false,
+  "pushed": false
+}

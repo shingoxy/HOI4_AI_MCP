@@ -1,0 +1,8 @@
+{
+  "source": "manual guarded calibration; not SDK confirmed",
+  "target": "mainland_north_east",
+  "submit_count": 0,
+  "retry_count": 0,
+  "error": "Calibration precondition changed",
+  "duration_ms": 2359
+}

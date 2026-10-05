@@ -1,0 +1,869 @@
+{
+  "source": "LIVE HOI4 / official SDK stdio / military semantic API / normal GUI",
+  "actions": [
+    {
+      "action": "get_air_regions",
+      "arguments": {},
+      "result": {
+        "action": "get_air_regions",
+        "accepted": true,
+        "status": "confirmed",
+        "action_id": "63b671ff-8342-41a0-ade0-f5334ae3abaf",
+        "retry_count": 0,
+        "duration_ms": 13422,
+        "timings_ms": {
+          "precheck": 0,
+          "navigation": 7079,
+          "target_lookup": 0,
+          "submit": 0,
+          "readback": 6343,
+          "confirmation": 0,
+          "total": 13422
+        },
+        "air_regions": [
+          {
+            "field_sources": {
+              "region_id": "derived",
+              "name": "gui",
+              "identity_source": "derived",
+              "identity_basis": "derived",
+              "air_superiority": "unknown",
+              "mission_efficiency": "unknown"
+            },
+            "region_id": 8,
+            "name": "东德意志",
+            "identity_source": "derived",
+            "identity_basis": "installed strategic region 8 + Chinese localisation + GUI region title",
+            "air_superiority": null,
+            "mission_efficiency": null
+          }
+        ],
+        "scope_status": "LIMITED",
+        "complete": false,
+        "ui_confirmation": {
+          "repeated_readback": true
+        }
+      }
+    },
+    {
+      "action": "get_air_wings",
+      "arguments": {},
+      "result": {
+        "action": "get_air_wings",
+        "accepted": true,
+        "status": "confirmed",
+        "action_id": "7819f0d2-4b96-4427-85aa-0aeb74c8c95d",
+        "retry_count": 0,
+        "duration_ms": 8094,
+        "timings_ms": {
+          "precheck": 16,
+          "navigation": 4312,
+          "target_lookup": 0,
+          "submit": 0,
+          "readback": 3766,
+          "confirmation": 0,
+          "total": 8094
+        },
+        "air_wings": [
+          {
+            "field_sources": {
+              "name": "gui",
+              "unit_type": "derived",
+              "owner": "derived",
+              "base_name": "gui",
+              "aircraft_count": "gui",
+              "capacity": "gui",
+              "region_id": "gui",
+              "missions": "gui",
+              "mission_efficiency": "unknown"
+            },
+            "name": "第132战斗机联队",
+            "unit_type": "fighter",
+            "owner": "GER",
+            "base_name": "勃兰登堡",
+            "aircraft_count": 80,
+            "capacity": 100,
+            "region_id": null,
+            "missions": [],
+            "mission_efficiency": null,
+            "position": 0,
+            "identity_source": "gui",
+            "stable_game_identity": false,
+            "wing_id": "wing-bd9a18d54e6c-0001-0000",
+            "identity_signature": "21dad085efd13d1ba48ff0b2bb886ad5424feafbee9cdcc7b7294da4c28c2ea8"
+          }
+        ],
+        "scope_status": "LIMITED",
+        "complete": false,
+        "total_air_wings": 15,
+        "unobserved_air_wings": 14,
+        "field_sources": {
+          "air_wings": "gui",
+          "total_air_wings": "gui",
+          "unobserved_air_wings": "derived",
+          "complete": "derived"
+        },
+        "session_id": "bd9a18d54e6c",
+        "snapshot_version": 1,
+        "ttl_seconds": 120,
+        "telemetry_seq": 706651,
+        "stable_game_identity": false,
+        "ui_confirmation": {
+          "repeated_readback": true
+        }
+      }
+    },
+    {
+      "action": "assign_air_wing",
+      "arguments": {
+        "wing_id": "wing-bd9a18d54e6c-0001-0000",
+        "region_id": 8
+      },
+      "result": {
+        "action": "assign_air_wing",
+        "accepted": true,
+        "status": "confirmed",
+        "action_id": "7f88af4a-3573-4fd7-9961-49d1dc33c180",
+        "retry_count": 0,
+        "duration_ms": 26500,
+        "timings_ms": {
+          "precheck": 0,
+          "navigation": 3578,
+          "target_lookup": 0,
+          "submit": 15141,
+          "readback": 3547,
+          "confirmation": 4234,
+          "total": 26500
+        },
+        "before": {
+          "air_wings": [
+            {
+              "field_sources": {
+                "name": "gui",
+                "unit_type": "derived",
+                "owner": "derived",
+                "base_name": "gui",
+                "aircraft_count": "gui",
+                "capacity": "gui",
+                "region_id": "gui",
+                "missions": "gui",
+                "mission_efficiency": "unknown"
+              },
+              "name": "第132战斗机联队",
+              "unit_type": "fighter",
+              "owner": "GER",
+              "base_name": "勃兰登堡",
+              "aircraft_count": 80,
+              "capacity": 100,
+              "region_id": null,
+              "missions": [],
+              "mission_efficiency": null
+            }
+          ],
+          "scope_status": "LIMITED",
+          "complete": false,
+          "total_air_wings": 15,
+          "unobserved_air_wings": 14,
+          "field_sources": {
+            "air_wings": "gui",
+            "total_air_wings": "gui",
+            "unobserved_air_wings": "derived",
+            "complete": "derived"
+          }
+        },
+        "after": {
+          "air_wings": [
+            {
+              "field_sources": {
+                "name": "gui",
+                "unit_type": "derived",
+                "owner": "derived",
+                "base_name": "gui",
+                "aircraft_count": "gui",
+                "capacity": "gui",
+                "region_id": "derived",
+                "missions": "gui",
+                "mission_efficiency": "unknown"
+              },
+              "name": "第132战斗机联队",
+              "unit_type": "fighter",
+              "owner": "GER",
+              "base_name": "勃兰登堡",
+              "aircraft_count": 80,
+              "capacity": 100,
+              "region_id": 8,
+              "missions": [],
+              "mission_efficiency": null,
+              "position": 0,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "wing_id": "wing-bd9a18d54e6c-0002-0000",
+              "identity_signature": "1ea92829c041e1c98e02d3ee413dae0e6ba59e7833d8e90a53e6158a92c3acbf"
+            }
+          ],
+          "scope_status": "LIMITED",
+          "complete": false,
+          "total_air_wings": 15,
+          "unobserved_air_wings": 14,
+          "field_sources": {
+            "air_wings": "gui",
+            "total_air_wings": "gui",
+            "unobserved_air_wings": "derived",
+            "complete": "derived"
+          },
+          "session_id": "bd9a18d54e6c",
+          "snapshot_version": 2,
+          "ttl_seconds": 120,
+          "telemetry_seq": 706656,
+          "stable_game_identity": false
+        },
+        "ui_confirmation": {
+          "wing_name_type_base_count": true,
+          "region_and_missions": true,
+          "repeated_readback": true
+        },
+        "telemetry_confirmation": {
+          "military_state": "UNKNOWN; GUI confirmation"
+        }
+      }
+    },
+    {
+      "action": "set_air_mission",
+      "arguments": {
+        "wing_id": "wing-bd9a18d54e6c-0002-0000",
+        "mission": "air_superiority"
+      },
+      "result": {
+        "action": "set_air_mission",
+        "accepted": true,
+        "status": "confirmed",
+        "action_id": "ea18bff4-c585-4a8b-b128-70f3a2011f94",
+        "retry_count": 0,
+        "duration_ms": 15953,
+        "timings_ms": {
+          "precheck": 0,
+          "navigation": 3641,
+          "target_lookup": 0,
+          "submit": 5234,
+          "readback": 3484,
+          "confirmation": 3594,
+          "total": 15953
+        },
+        "before": {
+          "air_wings": [
+            {
+              "field_sources": {
+                "name": "gui",
+                "unit_type": "derived",
+                "owner": "derived",
+                "base_name": "gui",
+                "aircraft_count": "gui",
+                "capacity": "gui",
+                "region_id": "derived",
+                "missions": "gui",
+                "mission_efficiency": "unknown"
+              },
+              "name": "第132战斗机联队",
+              "unit_type": "fighter",
+              "owner": "GER",
+              "base_name": "勃兰登堡",
+              "aircraft_count": 80,
+              "capacity": 100,
+              "region_id": 8,
+              "missions": [],
+              "mission_efficiency": null
+            }
+          ],
+          "scope_status": "LIMITED",
+          "complete": false,
+          "total_air_wings": 15,
+          "unobserved_air_wings": 14,
+          "field_sources": {
+            "air_wings": "gui",
+            "total_air_wings": "gui",
+            "unobserved_air_wings": "derived",
+            "complete": "derived"
+          }
+        },
+        "after": {
+          "air_wings": [
+            {
+              "field_sources": {
+                "name": "gui",
+                "unit_type": "derived",
+                "owner": "derived",
+                "base_name": "gui",
+                "aircraft_count": "gui",
+                "capacity": "gui",
+                "region_id": "derived",
+                "missions": "gui",
+                "mission_efficiency": "unknown"
+              },
+              "name": "第132战斗机联队",
+              "unit_type": "fighter",
+              "owner": "GER",
+              "base_name": "勃兰登堡",
+              "aircraft_count": 80,
+              "capacity": 100,
+              "region_id": 8,
+              "missions": [
+                "air_superiority"
+              ],
+              "mission_efficiency": null,
+              "position": 0,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "wing_id": "wing-bd9a18d54e6c-0003-0000",
+              "identity_signature": "451c9c303f9295b7e84962c65ecd7513cb67e4750e65f8368369c2c033b08856"
+            }
+          ],
+          "scope_status": "LIMITED",
+          "complete": false,
+          "total_air_wings": 15,
+          "unobserved_air_wings": 14,
+          "field_sources": {
+            "air_wings": "gui",
+            "total_air_wings": "gui",
+            "unobserved_air_wings": "derived",
+            "complete": "derived"
+          },
+          "session_id": "bd9a18d54e6c",
+          "snapshot_version": 3,
+          "ttl_seconds": 120,
+          "telemetry_seq": 706659,
+          "stable_game_identity": false
+        },
+        "ui_confirmation": {
+          "wing_name_type_base_count": true,
+          "region_and_missions": true,
+          "repeated_readback": true
+        },
+        "telemetry_confirmation": {
+          "military_state": "UNKNOWN; GUI confirmation"
+        }
+      }
+    },
+    {
+      "action": "set_air_mission",
+      "arguments": {
+        "wing_id": "wing-bd9a18d54e6c-0003-0000",
+        "mission": "none"
+      },
+      "result": {
+        "action": "set_air_mission",
+        "accepted": true,
+        "status": "confirmed",
+        "action_id": "3e8fac6c-258c-415e-bc7c-61a0e264eb8c",
+        "retry_count": 0,
+        "duration_ms": 16500,
+        "timings_ms": {
+          "precheck": 0,
+          "navigation": 4219,
+          "target_lookup": 0,
+          "submit": 5016,
+          "readback": 3687,
+          "confirmation": 3562,
+          "total": 16500
+        },
+        "before": {
+          "air_wings": [
+            {
+              "field_sources": {
+                "name": "gui",
+                "unit_type": "derived",
+                "owner": "derived",
+                "base_name": "gui",
+                "aircraft_count": "gui",
+                "capacity": "gui",
+                "region_id": "derived",
+                "missions": "gui",
+                "mission_efficiency": "unknown"
+              },
+              "name": "第132战斗机联队",
+              "unit_type": "fighter",
+              "owner": "GER",
+              "base_name": "勃兰登堡",
+              "aircraft_count": 80,
+              "capacity": 100,
+              "region_id": 8,
+              "missions": [
+                "air_superiority"
+              ],
+              "mission_efficiency": null
+            }
+          ],
+          "scope_status": "LIMITED",
+          "complete": false,
+          "total_air_wings": 15,
+          "unobserved_air_wings": 14,
+          "field_sources": {
+            "air_wings": "gui",
+            "total_air_wings": "gui",
+            "unobserved_air_wings": "derived",
+            "complete": "derived"
+          }
+        },
+        "after": {
+          "air_wings": [
+            {
+              "field_sources": {
+                "name": "gui",
+                "unit_type": "derived",
+                "owner": "derived",
+                "base_name": "gui",
+                "aircraft_count": "gui",
+                "capacity": "gui",
+                "region_id": "derived",
+                "missions": "gui",
+                "mission_efficiency": "unknown"
+              },
+              "name": "第132战斗机联队",
+              "unit_type": "fighter",
+              "owner": "GER",
+              "base_name": "勃兰登堡",
+              "aircraft_count": 80,
+              "capacity": 100,
+              "region_id": 8,
+              "missions": [],
+              "mission_efficiency": null,
+              "position": 0,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "wing_id": "wing-bd9a18d54e6c-0004-0000",
+              "identity_signature": "1ea92829c041e1c98e02d3ee413dae0e6ba59e7833d8e90a53e6158a92c3acbf"
+            }
+          ],
+          "scope_status": "LIMITED",
+          "complete": false,
+          "total_air_wings": 15,
+          "unobserved_air_wings": 14,
+          "field_sources": {
+            "air_wings": "gui",
+            "total_air_wings": "gui",
+            "unobserved_air_wings": "derived",
+            "complete": "derived"
+          },
+          "session_id": "bd9a18d54e6c",
+          "snapshot_version": 4,
+          "ttl_seconds": 120,
+          "telemetry_seq": 706663,
+          "stable_game_identity": false
+        },
+        "ui_confirmation": {
+          "wing_name_type_base_count": true,
+          "region_and_missions": true,
+          "repeated_readback": true
+        },
+        "telemetry_confirmation": {
+          "military_state": "UNKNOWN; GUI confirmation"
+        }
+      }
+    },
+    {
+      "action": "get_navy_state",
+      "arguments": {},
+      "result": {
+        "action": "get_navy_state",
+        "accepted": true,
+        "status": "confirmed",
+        "action_id": "7558411f-b8fa-448e-8432-36a19aa65e39",
+        "retry_count": 0,
+        "duration_ms": 7437,
+        "timings_ms": {
+          "precheck": 0,
+          "navigation": 3750,
+          "target_lookup": 0,
+          "submit": 0,
+          "readback": 3687,
+          "confirmation": 0,
+          "total": 7437
+        },
+        "fleets": [
+          {
+            "field_sources": {
+              "name": "gui",
+              "object_type": "derived",
+              "parent_fleet_name": "gui",
+              "owner": "derived",
+              "parent_task_force_count": "gui",
+              "admiral_id": "gui",
+              "home_port_name": "gui",
+              "parent_assigned_region_count": "gui",
+              "ship_count": "gui",
+              "ship_names": "gui",
+              "docked": "gui",
+              "region_ids": "unknown",
+              "mission": "unknown",
+              "supply_ratio": "unknown"
+            },
+            "name": "公海舰队",
+            "object_type": "task_force",
+            "parent_fleet_name": "德国海军",
+            "owner": "GER",
+            "parent_task_force_count": 3,
+            "admiral_id": null,
+            "home_port_name": "威廉港",
+            "parent_assigned_region_count": 0,
+            "ship_count": 12,
+            "ship_names": [
+              "Deutschland",
+              "Admiral Scheer",
+              "Nürnberg",
+              "Leipzig",
+              "Königsberg",
+              "Karlsruhe",
+              "Köln",
+              "Emden",
+              "Jaguar",
+              "Leopard",
+              "Luchs",
+              "Tiger"
+            ],
+            "docked": true,
+            "region_ids": null,
+            "mission": null,
+            "supply_ratio": null,
+            "position": 0,
+            "identity_source": "gui",
+            "stable_game_identity": false,
+            "fleet_id": "fleet-bd9a18d54e6c-0001-0000",
+            "identity_signature": "6810dbbb5c81444ee0a6159989252ffae0d2c16b415cf550be3c2b302b67d962"
+          }
+        ],
+        "scope_status": "LIMITED",
+        "complete": false,
+        "total_task_forces": 6,
+        "unobserved_task_forces": 5,
+        "field_sources": {
+          "fleets": "gui",
+          "total_task_forces": "gui",
+          "unobserved_task_forces": "derived",
+          "complete": "derived"
+        },
+        "session_id": "bd9a18d54e6c",
+        "snapshot_version": 1,
+        "ttl_seconds": 120,
+        "telemetry_seq": 706664,
+        "stable_game_identity": false,
+        "ui_confirmation": {
+          "parent_and_task_force_identity": true,
+          "all_twelve_ship_names": true,
+          "repeated_readback": true
+        }
+      }
+    },
+    {
+      "action": "get_fleets",
+      "arguments": {},
+      "result": {
+        "action": "get_fleets",
+        "accepted": true,
+        "status": "confirmed",
+        "action_id": "6b096d34-e71c-403e-a051-6297a42dd143",
+        "retry_count": 0,
+        "duration_ms": 7313,
+        "timings_ms": {
+          "precheck": 0,
+          "navigation": 3578,
+          "target_lookup": 0,
+          "submit": 0,
+          "readback": 3735,
+          "confirmation": 0,
+          "total": 7313
+        },
+        "fleets": [
+          {
+            "field_sources": {
+              "name": "gui",
+              "object_type": "derived",
+              "parent_fleet_name": "gui",
+              "owner": "derived",
+              "parent_task_force_count": "gui",
+              "admiral_id": "gui",
+              "home_port_name": "gui",
+              "parent_assigned_region_count": "gui",
+              "ship_count": "gui",
+              "ship_names": "gui",
+              "docked": "gui",
+              "region_ids": "unknown",
+              "mission": "unknown",
+              "supply_ratio": "unknown"
+            },
+            "name": "公海舰队",
+            "object_type": "task_force",
+            "parent_fleet_name": "德国海军",
+            "owner": "GER",
+            "parent_task_force_count": 3,
+            "admiral_id": null,
+            "home_port_name": "威廉港",
+            "parent_assigned_region_count": 0,
+            "ship_count": 12,
+            "ship_names": [
+              "Deutschland",
+              "Admiral Scheer",
+              "Nürnberg",
+              "Leipzig",
+              "Königsberg",
+              "Karlsruhe",
+              "Köln",
+              "Emden",
+              "Jaguar",
+              "Leopard",
+              "Luchs",
+              "Tiger"
+            ],
+            "docked": true,
+            "region_ids": null,
+            "mission": null,
+            "supply_ratio": null,
+            "position": 0,
+            "identity_source": "gui",
+            "stable_game_identity": false,
+            "fleet_id": "fleet-bd9a18d54e6c-0002-0000",
+            "identity_signature": "6810dbbb5c81444ee0a6159989252ffae0d2c16b415cf550be3c2b302b67d962"
+          }
+        ],
+        "scope_status": "LIMITED",
+        "complete": false,
+        "total_task_forces": 6,
+        "unobserved_task_forces": 5,
+        "field_sources": {
+          "fleets": "gui",
+          "total_task_forces": "gui",
+          "unobserved_task_forces": "derived",
+          "complete": "derived"
+        },
+        "session_id": "bd9a18d54e6c",
+        "snapshot_version": 2,
+        "ttl_seconds": 120,
+        "telemetry_seq": 706666,
+        "stable_game_identity": false,
+        "ui_confirmation": {
+          "parent_and_task_force_identity": true,
+          "all_twelve_ship_names": true,
+          "repeated_readback": true
+        }
+      }
+    },
+    {
+      "action": "assign_fleet_region",
+      "arguments": {
+        "fleet_id": "fleet-bd9a18d54e6c-0002-0000",
+        "region_id": 7
+      },
+      "result": {
+        "action": "assign_fleet_region",
+        "accepted": false,
+        "status": "rejected",
+        "action_id": "7f4154d1-3b3b-4557-bdc1-ae0f57b2de72",
+        "retry_count": 0,
+        "duration_ms": 0,
+        "timings_ms": {
+          "precheck": 0,
+          "navigation": 0,
+          "target_lookup": 0,
+          "submit": 0,
+          "readback": 0,
+          "confirmation": 0,
+          "total": 0
+        },
+        "reason": "unsupported_target",
+        "limitation": "Sea-region identity and normal task-force assignment readback are uncalibrated"
+      }
+    },
+    {
+      "action": "set_naval_mission",
+      "arguments": {
+        "fleet_id": "fleet-bd9a18d54e6c-0002-0000",
+        "mission": "patrol"
+      },
+      "result": {
+        "action": "set_naval_mission",
+        "accepted": false,
+        "status": "rejected",
+        "action_id": "425a7d71-0802-4395-88c9-f4265c54c129",
+        "retry_count": 0,
+        "duration_ms": 0,
+        "timings_ms": {
+          "precheck": 0,
+          "navigation": 0,
+          "target_lookup": 0,
+          "submit": 0,
+          "readback": 0,
+          "confirmation": 0,
+          "total": 0
+        },
+        "reason": "unsupported_target",
+        "limitation": "Normal naval mission selection and readback are uncalibrated"
+      }
+    }
+  ],
+  "tool_names": [
+    "get_armies",
+    "get_army",
+    "get_divisions",
+    "get_division",
+    "get_generals",
+    "create_army",
+    "assign_divisions",
+    "remove_divisions_from_army",
+    "assign_general",
+    "get_fronts",
+    "create_frontline",
+    "execute_plan",
+    "stop_plan",
+    "create_offensive_line",
+    "move_divisions",
+    "get_supply_status",
+    "get_air_state",
+    "get_navy_state",
+    "get_air_wings",
+    "get_air_regions",
+    "assign_air_wing",
+    "set_air_mission",
+    "get_fleets",
+    "assign_fleet_region",
+    "set_naval_mission",
+    "get_production_lines",
+    "set_production_factory_count",
+    "get_equipment_catalog",
+    "create_production_line",
+    "delete_production_line",
+    "reorder_production_line",
+    "get_construction",
+    "build",
+    "cancel_construction",
+    "change_construction_priority",
+    "change_economy_law",
+    "change_conscription_law",
+    "get_advisors",
+    "hire_advisor",
+    "get_trade_state",
+    "set_trade_import",
+    "select_research",
+    "select_focus",
+    "get_summary",
+    "get_politics",
+    "get_industry",
+    "get_research",
+    "get_focus",
+    "get_changes",
+    "get_diagnostics"
+  ],
+  "before_telemetry": {
+    "status": "fresh",
+    "received_at": "2026-10-02T08:39:50.805907+00:00",
+    "game_date": " 24:00, 8 1月, 1936",
+    "latest_seq": 706647,
+    "state": {
+      "protocol_version": 2,
+      "seq": 706647,
+      "game_date": " 24:00, 8 1月, 1936",
+      "country": "GER",
+      "politics": {
+        "political_power": 10.592,
+        "stability": 0.81,
+        "war_support": 0.35
+      },
+      "manpower": {
+        "available": 1332620,
+        "source_thousands": 1332.62
+      },
+      "industry": {
+        "civilian_factories": 35,
+        "military_factories": 28,
+        "dockyards": 10
+      },
+      "origin": "daily",
+      "research": {
+        "slot_count": 4,
+        "tracked_technologies": [
+          {
+            "tech_id": "basic_machine_tools",
+            "researching": true,
+            "researched": false
+          },
+          {
+            "tech_id": "construction1",
+            "researching": true,
+            "researched": false
+          },
+          {
+            "tech_id": "electronic_mechanical_engineering",
+            "researching": true,
+            "researched": false
+          }
+        ]
+      },
+      "focus": {
+        "tracked_id": "GER_remilitarize_the_rhineland",
+        "completed": false,
+        "progress_lower_bound": 0.2,
+        "progress_upper_bound": 0.3
+      }
+    },
+    "parser_errors": [],
+    "session_id": "39491eac-dd4d-4987-bcbe-c2ab9466a317",
+    "revision": 6,
+    "freshness_basis": "frame_received_at",
+    "log_read_error": null
+  },
+  "after_telemetry": {
+    "status": "fresh",
+    "received_at": "2026-10-02T08:41:27.017176+00:00",
+    "game_date": " 24:00, 27 1月, 1936",
+    "latest_seq": 706666,
+    "state": {
+      "protocol_version": 2,
+      "seq": 706666,
+      "game_date": " 24:00, 27 1月, 1936",
+      "country": "GER",
+      "politics": {
+        "political_power": 35.748,
+        "stability": 0.81,
+        "war_support": 0.35
+      },
+      "manpower": {
+        "available": 1332466,
+        "source_thousands": 1332.466
+      },
+      "industry": {
+        "civilian_factories": 35,
+        "military_factories": 28,
+        "dockyards": 10
+      },
+      "origin": "daily",
+      "research": {
+        "slot_count": 4,
+        "tracked_technologies": [
+          {
+            "tech_id": "basic_machine_tools",
+            "researching": true,
+            "researched": false
+          },
+          {
+            "tech_id": "construction1",
+            "researching": true,
+            "researched": false
+          },
+          {
+            "tech_id": "electronic_mechanical_engineering",
+            "researching": true,
+            "researched": false
+          }
+        ]
+      },
+      "focus": {
+        "tracked_id": "GER_remilitarize_the_rhineland",
+        "completed": false,
+        "progress_lower_bound": 0.7,
+        "progress_upper_bound": 0.8
+      }
+    },
+    "parser_errors": [],
+    "session_id": "39491eac-dd4d-4987-bcbe-c2ab9466a317",
+    "revision": 25,
+    "freshness_basis": "frame_received_at",
+    "log_read_error": null
+  }
+}

@@ -26,7 +26,7 @@ CAPABILITIES_URI = "hoi4://telemetry/capabilities"
 def create_server(log_path: str | Path, *, interval: float = 0.25,
                   stale_seconds: float = 30, executor=None, production_executor=None,
                   gui_window: int | None = None, non_military: bool = False, construction_executor=None,
-                  politics_executor=None, trade_executor=None) -> MCPServer:
+                  politics_executor=None, trade_executor=None, military_executor=None, military: bool = False) -> MCPServer:
     if not math.isfinite(interval) or interval <= 0:
         raise ValueError("interval must be finite and positive")
     if not math.isfinite(stale_seconds) or stale_seconds <= 0:
@@ -38,6 +38,8 @@ def create_server(log_path: str | Path, *, interval: float = 0.25,
     construction_runtime = construction_executor
     politics_runtime = politics_executor
     trade_runtime = trade_executor
+    military_runtime = military_executor
+    right_drag_attached = False
 
     async def watch(model: ReadModel) -> None:
         while True:
@@ -47,7 +49,7 @@ def create_server(log_path: str | Path, *, interval: float = 0.25,
 
     @asynccontextmanager
     async def lifespan(server: MCPServer):
-        nonlocal runtime, action_runtime, production_runtime, construction_runtime, politics_runtime, trade_runtime
+        nonlocal runtime, action_runtime, production_runtime, construction_runtime, politics_runtime, trade_runtime, military_runtime, right_drag_attached
         model = ReadModel(log_path, stale_seconds=stale_seconds)
         runtime = model
         worker = None
@@ -63,6 +65,10 @@ def create_server(log_path: str | Path, *, interval: float = 0.25,
             probe = WindowsProbe()
             worker = ComputerUseWorker(gui_window, probe.pid(gui_window), probe=probe,
                                        endpoint_file=root / "artifacts/phase3a/runtime/endpoint.json")
+            if military:
+                from .executor.right_drag import NativeRightDragBackend
+                worker = NativeRightDragBackend(worker)
+                right_drag_attached = True
             # Independent reader: executor's thread never races the MCP watcher.
             action_model = ReadModel(log_path, stale_seconds=stale_seconds)
             action_runtime = Executor(action_model, worker,
@@ -86,6 +92,12 @@ def create_server(log_path: str | Path, *, interval: float = 0.25,
                 from .executor.trade_ui import TradeUI
                 trade_runtime = TradeExecutor(action_runtime, TradeUI(
                     action_runtime.ui, Templates(root / "artifacts/phase3/templates")))
+            if military:
+                from .executor.military_service import MilitaryExecutor
+                from .executor.military_ui import MilitaryUI
+                military_runtime = MilitaryExecutor(action_runtime, MilitaryUI(
+                    action_runtime.ui, Templates(root / "artifacts/phase4/templates"),
+                    Templates(root / "artifacts/phase4/offensive2048/templates")))
         async with anyio.create_task_group() as tasks:
             tasks.start_soon(watch, model)
             try:
@@ -100,9 +112,11 @@ def create_server(log_path: str | Path, *, interval: float = 0.25,
                     construction_runtime = None
                     politics_runtime = None
                     trade_runtime = None
+                    military_runtime = None
+                    right_drag_attached = False
 
     server = MCPServer(
-        "HOI4 Telemetry and GUI PoC", version="0.6.0", lifespan=lifespan,
+        "HOI4 Telemetry and GUI PoC", version="0.7.0", lifespan=lifespan,
         subscriptions=bus,
         instructions=(
             "Reads Germany telemetry. select_research/select_focus are normal GUI actions "
@@ -118,7 +132,14 @@ def create_server(log_path: str | Path, *, interval: float = 0.25,
             "military factory or infrastructure), calibrated economy/conscription laws, Schacht, "
             "and SWE steel contracts using 0..2 civilian factories. GUI-derived observations are "
             "scoped and are not complete game telemetry. "
-            "No console, effects or military unit actions. "
+            "An explicitly attached --military runtime supports one first army, three known "
+            "GER division names and Manstein, two fixed-camera GER/POL frontlines and whole-plan "
+            "switches, one division's supply tooltip, one fighter wing in strategic region 8, "
+            "and one twelve-ship task force. IDs are temporary and observations incomplete. "
+            "An independently calibrated offensive capability supports two mainland GER/POL directions "
+            "for one selected first army containing 1. Panzer-Division. Requires observed existing fronts, "
+            "an empty calibrated order viewport, and repeated dedicated order readback. "
+            "Province movement and naval mutations reject before input. No console or effects. "
             "Use status and freshness_basis before treating data as current. "
             "A paused game normally becomes stale; startup replay uses file mtime, "
             "an upper bound on frame recency. Dates are localized text. "
@@ -134,6 +155,8 @@ def create_server(log_path: str | Path, *, interval: float = 0.25,
     )
     gui_action = ToolAnnotations(read_only_hint=False, destructive_hint=True,
                                  idempotent_hint=True, open_world_hint=False)
+    from .military_mcp import register_military_tools
+    register_military_tools(server, lambda: military_runtime)
 
     @server.tool(annotations=ToolAnnotations(read_only_hint=False, destructive_hint=False,
                                             idempotent_hint=True, open_world_hint=False), structured_output=True)
@@ -314,7 +337,7 @@ def create_server(log_path: str | Path, *, interval: float = 0.25,
     @server.resource(CAPABILITIES_URI, mime_type="application/json")
     def capabilities() -> str:
         return json.dumps({
-            "read_only": action_runtime is None and production_runtime is None, "telemetry_read_only": True,
+            "read_only": action_runtime is None and production_runtime is None and military_runtime is None, "telemetry_read_only": True,
             "country": "GER", "protocol_version": 2,
             "accepted_protocol_versions": [1, 2],
             "available": ["politics", "manpower", "factory_totals", "research_slots",
@@ -323,6 +346,19 @@ def create_server(log_path: str | Path, *, interval: float = 0.25,
             "extended_fields_live_verified": True,
             "gui_actions": ["select_research", "select_focus", "set_production_factory_count"],
             "non_military_runtime_requested": non_military,
+            "military_runtime_requested": military,
+            "military_executor_attached": military_runtime is not None,
+            "military": {"scope_status": "PARTIAL", "army_scope": "one first army; three named GER divisions",
+                         "general_scope": ["GER_erich_von_manstein"], "game_unit_ids": "UNKNOWN",
+                         "fronts": "GUI_ONLY; GER_POL_mainland and GER_POL_east_prussia; whole-plan switches",
+                         "supply": "GUI_ONLY; 1. Infanterie tooltip; army/front totals UNKNOWN",
+                         "air": "GUI_ONLY; fighter wing 132, Brandenburg, region 8, air_superiority or none",
+                         "navy": "GUI_ONLY; one twelve-ship task force; missions and region IDs UNKNOWN",
+                         "military_telemetry": "UNKNOWN",
+                         "right_drag_backend": "WINDOWS_SENDINPUT; guarded right drag only" if right_drag_attached else "NOT_ATTACHED",
+                         "offensive_lines": "GUI_ONLY; selected first army / 1. Panzer-Division / no general; two mainland targets; empty order viewport required",
+                         "unsupported_actions": ["move_divisions", "assign_fleet_region", "set_naval_mission"],
+                         "live_verified_components": ["army", "frontline", "offensive_line", "plan_switch", "division_supply", "air_assignment_and_mission", "navy_observation"]},
             "additional_gui_actions": ["create_production_line", "delete_production_line", "reorder_production_line",
                                        "build", "cancel_construction", "change_construction_priority",
                                        "change_economy_law", "change_conscription_law", "hire_advisor", "set_trade_import"],
@@ -353,10 +389,11 @@ def main() -> None:
     parser.add_argument("--stale-seconds", type=float, default=30)
     parser.add_argument("--gui-window", type=int, help="Explicit existing HOI4 window ID; requires Computer Use pump")
     parser.add_argument("--non-military", action="store_true", help="Use current Phase 3 calibration and semantic line operations")
+    parser.add_argument("--military", action="store_true", help="Use limited Phase 4 military GUI calibration; requires Computer Use pump")
     args = parser.parse_args()
     try:
         server = create_server(args.log, interval=args.interval, stale_seconds=args.stale_seconds,
-                               gui_window=args.gui_window, non_military=args.non_military)
+                               gui_window=args.gui_window, non_military=args.non_military, military=args.military)
     except ValueError as exc:
         parser.error(str(exc))
     server.run(transport="stdio")

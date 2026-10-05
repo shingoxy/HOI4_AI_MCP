@@ -1,0 +1,375 @@
+{
+  "source": "LIVE HOI4 / official SDK stdio / military semantic API / normal GUI",
+  "actions": [
+    {
+      "action": "get_fronts",
+      "arguments": {},
+      "result": {
+        "action": "get_fronts",
+        "accepted": true,
+        "status": "confirmed",
+        "action_id": "11bd7a79-517c-4b32-8d17-2f173f6905c8",
+        "retry_count": 0,
+        "duration_ms": 14109,
+        "timings_ms": {
+          "precheck": 0,
+          "navigation": 7312,
+          "target_lookup": 0,
+          "submit": 0,
+          "readback": 6797,
+          "confirmation": 0,
+          "total": 14109
+        },
+        "armies": [
+          {
+            "field_sources": {
+              "name": "gui",
+              "general_id": "derived",
+              "division_names": "gui"
+            },
+            "name": "第1集团军",
+            "general_id": "GER_erich_von_manstein",
+            "division_names": [
+              "1. Infanterie-Division",
+              "1. Panzer-Division",
+              "10. Infanterie-Division"
+            ],
+            "position": 0,
+            "identity_source": "gui",
+            "stable_game_identity": false,
+            "army_id": "army-3b7b17a3205b-0001-0000",
+            "identity_signature": "8ad0d0fbfda2c7befcd6847f55daecd8f0c0cdd5f0807fd0fe0c3c63341393d1"
+          }
+        ],
+        "divisions": [
+          {
+            "field_sources": {
+              "name": "gui",
+              "unit_type": "derived",
+              "owner": "derived",
+              "army_name": "gui",
+              "province_id": "unknown",
+              "supply_quality": "unknown",
+              "army_id": "derived"
+            },
+            "name": "1. Infanterie-Division",
+            "unit_type": "infantry",
+            "owner": "GER",
+            "army_name": "第1集团军",
+            "province_id": null,
+            "supply_quality": null,
+            "position": 0,
+            "identity_source": "gui",
+            "stable_game_identity": false,
+            "division_id": "division-3b7b17a3205b-0001-0000",
+            "identity_signature": "71e6b899d0255df9e66395b0a4be3d14623a8f304e26797f88deab0931ebd6cb",
+            "army_id": "army-3b7b17a3205b-0001-0000"
+          },
+          {
+            "field_sources": {
+              "name": "gui",
+              "unit_type": "derived",
+              "owner": "derived",
+              "army_name": "gui",
+              "province_id": "unknown",
+              "supply_quality": "unknown",
+              "army_id": "derived"
+            },
+            "name": "1. Panzer-Division",
+            "unit_type": "armor",
+            "owner": "GER",
+            "army_name": "第1集团军",
+            "province_id": null,
+            "supply_quality": null,
+            "position": 1,
+            "identity_source": "gui",
+            "stable_game_identity": false,
+            "division_id": "division-3b7b17a3205b-0001-0001",
+            "identity_signature": "a63507b49294b4e20276c8074da30c4cbba2b9388298d5ba8ea5a4c1cdfdb68e",
+            "army_id": "army-3b7b17a3205b-0001-0000"
+          },
+          {
+            "field_sources": {
+              "name": "gui",
+              "unit_type": "derived",
+              "owner": "derived",
+              "army_name": "gui",
+              "province_id": "unknown",
+              "supply_quality": "unknown",
+              "army_id": "derived"
+            },
+            "name": "10. Infanterie-Division",
+            "unit_type": "infantry",
+            "owner": "GER",
+            "army_name": "第1集团军",
+            "province_id": null,
+            "supply_quality": null,
+            "position": 2,
+            "identity_source": "gui",
+            "stable_game_identity": false,
+            "division_id": "division-3b7b17a3205b-0001-0002",
+            "identity_signature": "3144d06d75b87d1ee26579fffb3b4f994fcdf8158c249df64293141ec3c2bd13",
+            "army_id": "army-3b7b17a3205b-0001-0000"
+          }
+        ],
+        "scope_status": "LIMITED",
+        "complete": false,
+        "total_divisions": 30,
+        "unobserved_divisions": 27,
+        "field_sources": {
+          "armies": "gui",
+          "divisions": "gui",
+          "total_divisions": "gui",
+          "unobserved_divisions": "derived",
+          "complete": "derived"
+        },
+        "fronts": [],
+        "plan_active": null,
+        "operation_name": null,
+        "marker_read_retries": 0,
+        "map_resolution": {
+          "profile": "GER-Europe-2560x1080-fixed-camera-v2",
+          "anchors_verified": [
+            "amsterdam",
+            "warsaw",
+            "copenhagen"
+          ]
+        },
+        "unobserved_orders": "UNKNOWN; only two calibrated border markers are observed",
+        "session_id": "3b7b17a3205b",
+        "snapshot_version": 1,
+        "ttl_seconds": 120,
+        "telemetry_seq": 706714,
+        "stable_game_identity": false
+      }
+    },
+    {
+      "action": "create_frontline",
+      "arguments": {
+        "army_id": "army-3b7b17a3205b-0001-0000",
+        "target_id": "GER_POL_mainland"
+      },
+      "result": {
+        "action": "create_frontline",
+        "accepted": true,
+        "status": "uncertain",
+        "action_id": "c3ed54e0-2a26-42fd-a6e3-ba5de0b50b4a",
+        "retry_count": 0,
+        "duration_ms": 31719,
+        "timings_ms": {
+          "precheck": 0,
+          "navigation": 7875,
+          "target_lookup": 0,
+          "submit": 10016,
+          "readback": 6812,
+          "confirmation": 6266,
+          "total": 31719
+        },
+        "before": {
+          "armies": [
+            {
+              "field_sources": {
+                "name": "gui",
+                "general_id": "derived",
+                "division_names": "gui"
+              },
+              "name": "第1集团军",
+              "general_id": "GER_erich_von_manstein",
+              "division_names": [
+                "1. Infanterie-Division",
+                "1. Panzer-Division",
+                "10. Infanterie-Division"
+              ]
+            }
+          ],
+          "divisions": [
+            {
+              "field_sources": {
+                "name": "gui",
+                "unit_type": "derived",
+                "owner": "derived",
+                "army_name": "gui",
+                "province_id": "unknown",
+                "supply_quality": "unknown"
+              },
+              "name": "1. Infanterie-Division",
+              "unit_type": "infantry",
+              "owner": "GER",
+              "army_name": "第1集团军",
+              "province_id": null,
+              "supply_quality": null
+            },
+            {
+              "field_sources": {
+                "name": "gui",
+                "unit_type": "derived",
+                "owner": "derived",
+                "army_name": "gui",
+                "province_id": "unknown",
+                "supply_quality": "unknown"
+              },
+              "name": "1. Panzer-Division",
+              "unit_type": "armor",
+              "owner": "GER",
+              "army_name": "第1集团军",
+              "province_id": null,
+              "supply_quality": null
+            },
+            {
+              "field_sources": {
+                "name": "gui",
+                "unit_type": "derived",
+                "owner": "derived",
+                "army_name": "gui",
+                "province_id": "unknown",
+                "supply_quality": "unknown"
+              },
+              "name": "10. Infanterie-Division",
+              "unit_type": "infantry",
+              "owner": "GER",
+              "army_name": "第1集团军",
+              "province_id": null,
+              "supply_quality": null
+            }
+          ],
+          "scope_status": "LIMITED",
+          "complete": false,
+          "total_divisions": 30,
+          "unobserved_divisions": 27,
+          "field_sources": {
+            "armies": "gui",
+            "divisions": "gui",
+            "total_divisions": "gui",
+            "unobserved_divisions": "derived",
+            "complete": "derived"
+          },
+          "fronts": [],
+          "plan_active": null,
+          "operation_name": null,
+          "marker_read_retries": 0,
+          "map_resolution": {
+            "profile": "GER-Europe-2560x1080-fixed-camera-v2",
+            "anchors_verified": [
+              "amsterdam",
+              "warsaw",
+              "copenhagen"
+            ]
+          },
+          "unobserved_orders": "UNKNOWN; only two calibrated border markers are observed"
+        },
+        "reason": "modal_blocked",
+        "recovery": "escape_sent"
+      }
+    }
+  ],
+  "tool_names": [
+    "get_armies",
+    "get_army",
+    "get_divisions",
+    "get_division",
+    "get_generals",
+    "create_army",
+    "assign_divisions",
+    "remove_divisions_from_army",
+    "assign_general",
+    "get_fronts",
+    "create_frontline",
+    "execute_plan",
+    "stop_plan",
+    "create_offensive_line",
+    "move_divisions",
+    "get_supply_status",
+    "get_air_state",
+    "get_navy_state",
+    "get_air_wings",
+    "get_air_regions",
+    "assign_air_wing",
+    "set_air_mission",
+    "get_fleets",
+    "assign_fleet_region",
+    "set_naval_mission",
+    "get_production_lines",
+    "set_production_factory_count",
+    "get_equipment_catalog",
+    "create_production_line",
+    "delete_production_line",
+    "reorder_production_line",
+    "get_construction",
+    "build",
+    "cancel_construction",
+    "change_construction_priority",
+    "change_economy_law",
+    "change_conscription_law",
+    "get_advisors",
+    "hire_advisor",
+    "get_trade_state",
+    "set_trade_import",
+    "select_research",
+    "select_focus",
+    "get_summary",
+    "get_politics",
+    "get_industry",
+    "get_research",
+    "get_focus",
+    "get_changes",
+    "get_diagnostics"
+  ],
+  "before_telemetry": {
+    "status": "fresh",
+    "received_at": "2026-10-02T07:44:24.280895+00:00",
+    "game_date": " 24:00, 15 3月, 1936",
+    "latest_seq": 706713,
+    "state": {
+      "protocol_version": 2,
+      "seq": 706713,
+      "game_date": " 24:00, 15 3月, 1936",
+      "country": "GER",
+      "politics": {
+        "political_power": 211.976,
+        "stability": 0.81,
+        "war_support": 0.4692
+      },
+      "manpower": {
+        "available": 1335746,
+        "source_thousands": 1335.746
+      },
+      "industry": {
+        "civilian_factories": 35,
+        "military_factories": 28,
+        "dockyards": 10
+      },
+      "origin": "daily",
+      "research": {
+        "slot_count": 4,
+        "tracked_technologies": [
+          {
+            "tech_id": "basic_machine_tools",
+            "researching": true,
+            "researched": false
+          },
+          {
+            "tech_id": "construction1",
+            "researching": true,
+            "researched": false
+          },
+          {
+            "tech_id": "electronic_mechanical_engineering",
+            "researching": true,
+            "researched": false
+          }
+        ]
+      },
+      "focus": {
+        "tracked_id": "GER_remilitarize_the_rhineland",
+        "completed": true,
+        "progress_lower_bound": 1.0,
+        "progress_upper_bound": 1.0
+      }
+    },
+    "parser_errors": [],
+    "session_id": "b0d9da82-e245-4214-8550-a50e525a11a4",
+    "revision": 3,
+    "freshness_basis": "frame_received_at",
+    "log_read_error": null
+  }
+}

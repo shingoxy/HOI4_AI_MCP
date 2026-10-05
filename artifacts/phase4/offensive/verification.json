@@ -1,0 +1,20 @@
+{
+  "pytest": {
+    "command": ".venv/Scripts/python.exe -m pytest -q --basetemp=artifacts/phase4/test-temp-offensive-final -p no:cacheprovider",
+    "passed": 263,
+    "subtests_passed": 10,
+    "seconds": 13.87,
+    "execution": "successful full regression; output collected from execution session 75926"
+  },
+  "right_drag_tests": {
+    "count": 26,
+    "native_input": false,
+    "file": "tests/test_right_drag.py"
+  },
+  "compileall": "PASS",
+  "pip_check": "No broken requirements found.",
+  "git_diff_check": "PASS",
+  "local_document_links": "PASS",
+  "live_offensive_confirmed": 0,
+  "offensive_pipeline_test_coverage": "PENDING implementation and calibration"
+}

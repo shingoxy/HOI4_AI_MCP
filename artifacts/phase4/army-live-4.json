@@ -1,0 +1,929 @@
+{
+  "source": "LIVE HOI4 / official SDK stdio / military semantic API / normal GUI",
+  "actions": [
+    {
+      "action": "get_armies",
+      "arguments": {},
+      "result": {
+        "action": "get_armies",
+        "accepted": true,
+        "status": "confirmed",
+        "action_id": "e9f11040-765e-4d58-9a30-a786a0a3534a",
+        "retry_count": 0,
+        "duration_ms": 7157,
+        "timings_ms": {
+          "precheck": 0,
+          "navigation": 2797,
+          "target_lookup": 0,
+          "submit": 0,
+          "readback": 4360,
+          "confirmation": 0,
+          "total": 7157
+        },
+        "armies": [
+          {
+            "field_sources": {
+              "name": "gui",
+              "general_id": "derived",
+              "division_names": "gui"
+            },
+            "name": "第1集团军",
+            "general_id": "GER_erich_von_manstein",
+            "division_names": [
+              "1. Infanterie-Division",
+              "10. Infanterie-Division"
+            ],
+            "position": 0,
+            "identity_source": "gui",
+            "stable_game_identity": false,
+            "army_id": "army-90e893ba6625-0001-0000",
+            "identity_signature": "c2d3c493ab5a6e3814b8ccdf721a3ab9f8ff603cefbb6dac5c1aed8eb5547d87"
+          }
+        ],
+        "divisions": [
+          {
+            "field_sources": {
+              "name": "gui",
+              "unit_type": "derived",
+              "owner": "derived",
+              "army_name": "gui",
+              "province_id": "unknown",
+              "supply_quality": "unknown",
+              "army_id": "derived"
+            },
+            "name": "1. Infanterie-Division",
+            "unit_type": "infantry",
+            "owner": "GER",
+            "army_name": "第1集团军",
+            "province_id": null,
+            "supply_quality": null,
+            "position": 0,
+            "identity_source": "gui",
+            "stable_game_identity": false,
+            "division_id": "division-90e893ba6625-0001-0000",
+            "identity_signature": "71e6b899d0255df9e66395b0a4be3d14623a8f304e26797f88deab0931ebd6cb",
+            "army_id": "army-90e893ba6625-0001-0000"
+          },
+          {
+            "field_sources": {
+              "name": "gui",
+              "unit_type": "derived",
+              "owner": "derived",
+              "army_name": "gui",
+              "province_id": "unknown",
+              "supply_quality": "unknown",
+              "army_id": "derived"
+            },
+            "name": "1. Panzer-Division",
+            "unit_type": "armor",
+            "owner": "GER",
+            "army_name": null,
+            "province_id": null,
+            "supply_quality": null,
+            "position": 1,
+            "identity_source": "gui",
+            "stable_game_identity": false,
+            "division_id": "division-90e893ba6625-0001-0001",
+            "identity_signature": "bac0310d708dce1c7fb22f57e6b049f76093335b8ac42bc7e4e273b3fd8b974a",
+            "army_id": null
+          },
+          {
+            "field_sources": {
+              "name": "gui",
+              "unit_type": "derived",
+              "owner": "derived",
+              "army_name": "gui",
+              "province_id": "unknown",
+              "supply_quality": "unknown",
+              "army_id": "derived"
+            },
+            "name": "10. Infanterie-Division",
+            "unit_type": "infantry",
+            "owner": "GER",
+            "army_name": "第1集团军",
+            "province_id": null,
+            "supply_quality": null,
+            "position": 2,
+            "identity_source": "gui",
+            "stable_game_identity": false,
+            "division_id": "division-90e893ba6625-0001-0002",
+            "identity_signature": "3144d06d75b87d1ee26579fffb3b4f994fcdf8158c249df64293141ec3c2bd13",
+            "army_id": "army-90e893ba6625-0001-0000"
+          }
+        ],
+        "scope_status": "LIMITED",
+        "complete": false,
+        "total_divisions": 30,
+        "unobserved_divisions": 27,
+        "field_sources": {
+          "armies": "gui",
+          "divisions": "gui",
+          "total_divisions": "gui",
+          "unobserved_divisions": "derived",
+          "complete": "derived"
+        },
+        "session_id": "90e893ba6625",
+        "snapshot_version": 1,
+        "ttl_seconds": 120,
+        "telemetry_seq": 706705,
+        "stable_game_identity": false,
+        "ui_confirmation": {
+          "repeated_readback": true
+        }
+      }
+    },
+    {
+      "action": "assign_divisions",
+      "arguments": {
+        "army_id": "army-90e893ba6625-0001-0000",
+        "division_ids": [
+          "division-90e893ba6625-0001-0001"
+        ]
+      },
+      "result": {
+        "action": "assign_divisions",
+        "accepted": true,
+        "status": "confirmed",
+        "action_id": "ec70deb2-1990-4f09-9f89-4df8e726b4d9",
+        "retry_count": 0,
+        "duration_ms": 21625,
+        "timings_ms": {
+          "precheck": 0,
+          "navigation": 4062,
+          "target_lookup": 0,
+          "submit": 9266,
+          "readback": 4078,
+          "confirmation": 4219,
+          "total": 21625
+        },
+        "before": {
+          "armies": [
+            {
+              "field_sources": {
+                "name": "gui",
+                "general_id": "derived",
+                "division_names": "gui"
+              },
+              "name": "第1集团军",
+              "general_id": "GER_erich_von_manstein",
+              "division_names": [
+                "1. Infanterie-Division",
+                "10. Infanterie-Division"
+              ]
+            }
+          ],
+          "divisions": [
+            {
+              "field_sources": {
+                "name": "gui",
+                "unit_type": "derived",
+                "owner": "derived",
+                "army_name": "gui",
+                "province_id": "unknown",
+                "supply_quality": "unknown"
+              },
+              "name": "1. Infanterie-Division",
+              "unit_type": "infantry",
+              "owner": "GER",
+              "army_name": "第1集团军",
+              "province_id": null,
+              "supply_quality": null
+            },
+            {
+              "field_sources": {
+                "name": "gui",
+                "unit_type": "derived",
+                "owner": "derived",
+                "army_name": "gui",
+                "province_id": "unknown",
+                "supply_quality": "unknown"
+              },
+              "name": "1. Panzer-Division",
+              "unit_type": "armor",
+              "owner": "GER",
+              "army_name": null,
+              "province_id": null,
+              "supply_quality": null
+            },
+            {
+              "field_sources": {
+                "name": "gui",
+                "unit_type": "derived",
+                "owner": "derived",
+                "army_name": "gui",
+                "province_id": "unknown",
+                "supply_quality": "unknown"
+              },
+              "name": "10. Infanterie-Division",
+              "unit_type": "infantry",
+              "owner": "GER",
+              "army_name": "第1集团军",
+              "province_id": null,
+              "supply_quality": null
+            }
+          ],
+          "scope_status": "LIMITED",
+          "complete": false,
+          "total_divisions": 30,
+          "unobserved_divisions": 27,
+          "field_sources": {
+            "armies": "gui",
+            "divisions": "gui",
+            "total_divisions": "gui",
+            "unobserved_divisions": "derived",
+            "complete": "derived"
+          }
+        },
+        "after": {
+          "armies": [
+            {
+              "field_sources": {
+                "name": "gui",
+                "general_id": "derived",
+                "division_names": "gui"
+              },
+              "name": "第1集团军",
+              "general_id": "GER_erich_von_manstein",
+              "division_names": [
+                "1. Infanterie-Division",
+                "1. Panzer-Division",
+                "10. Infanterie-Division"
+              ],
+              "position": 0,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "army_id": "army-90e893ba6625-0002-0000",
+              "identity_signature": "8ad0d0fbfda2c7befcd6847f55daecd8f0c0cdd5f0807fd0fe0c3c63341393d1"
+            }
+          ],
+          "divisions": [
+            {
+              "field_sources": {
+                "name": "gui",
+                "unit_type": "derived",
+                "owner": "derived",
+                "army_name": "gui",
+                "province_id": "unknown",
+                "supply_quality": "unknown",
+                "army_id": "derived"
+              },
+              "name": "1. Infanterie-Division",
+              "unit_type": "infantry",
+              "owner": "GER",
+              "army_name": "第1集团军",
+              "province_id": null,
+              "supply_quality": null,
+              "position": 0,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "division_id": "division-90e893ba6625-0002-0000",
+              "identity_signature": "71e6b899d0255df9e66395b0a4be3d14623a8f304e26797f88deab0931ebd6cb",
+              "army_id": "army-90e893ba6625-0002-0000"
+            },
+            {
+              "field_sources": {
+                "name": "gui",
+                "unit_type": "derived",
+                "owner": "derived",
+                "army_name": "gui",
+                "province_id": "unknown",
+                "supply_quality": "unknown",
+                "army_id": "derived"
+              },
+              "name": "1. Panzer-Division",
+              "unit_type": "armor",
+              "owner": "GER",
+              "army_name": "第1集团军",
+              "province_id": null,
+              "supply_quality": null,
+              "position": 1,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "division_id": "division-90e893ba6625-0002-0001",
+              "identity_signature": "a63507b49294b4e20276c8074da30c4cbba2b9388298d5ba8ea5a4c1cdfdb68e",
+              "army_id": "army-90e893ba6625-0002-0000"
+            },
+            {
+              "field_sources": {
+                "name": "gui",
+                "unit_type": "derived",
+                "owner": "derived",
+                "army_name": "gui",
+                "province_id": "unknown",
+                "supply_quality": "unknown",
+                "army_id": "derived"
+              },
+              "name": "10. Infanterie-Division",
+              "unit_type": "infantry",
+              "owner": "GER",
+              "army_name": "第1集团军",
+              "province_id": null,
+              "supply_quality": null,
+              "position": 2,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "division_id": "division-90e893ba6625-0002-0002",
+              "identity_signature": "3144d06d75b87d1ee26579fffb3b4f994fcdf8158c249df64293141ec3c2bd13",
+              "army_id": "army-90e893ba6625-0002-0000"
+            }
+          ],
+          "scope_status": "LIMITED",
+          "complete": false,
+          "total_divisions": 30,
+          "unobserved_divisions": 27,
+          "field_sources": {
+            "armies": "gui",
+            "divisions": "gui",
+            "total_divisions": "gui",
+            "unobserved_divisions": "derived",
+            "complete": "derived"
+          },
+          "session_id": "90e893ba6625",
+          "snapshot_version": 2,
+          "ttl_seconds": 120,
+          "telemetry_seq": 706710,
+          "stable_game_identity": false
+        },
+        "ui_confirmation": {
+          "exact_membership_and_general_transition": true,
+          "repeated_readback": true
+        },
+        "telemetry_confirmation": {
+          "before_seq": 706705,
+          "after_seq": 706710,
+          "military_state": "UNKNOWN; GUI confirmation"
+        }
+      }
+    },
+    {
+      "action": "remove_divisions_from_army",
+      "arguments": {
+        "army_id": "army-90e893ba6625-0002-0000",
+        "division_ids": [
+          "division-90e893ba6625-0002-0001"
+        ]
+      },
+      "result": {
+        "action": "remove_divisions_from_army",
+        "accepted": true,
+        "status": "confirmed",
+        "action_id": "eb8b7cd5-87a0-4762-8dc4-a7e6e0e8b0f5",
+        "retry_count": 0,
+        "duration_ms": 24843,
+        "timings_ms": {
+          "precheck": 0,
+          "navigation": 4515,
+          "target_lookup": 0,
+          "submit": 12078,
+          "readback": 4375,
+          "confirmation": 3875,
+          "total": 24843
+        },
+        "before": {
+          "armies": [
+            {
+              "field_sources": {
+                "name": "gui",
+                "general_id": "derived",
+                "division_names": "gui"
+              },
+              "name": "第1集团军",
+              "general_id": "GER_erich_von_manstein",
+              "division_names": [
+                "1. Infanterie-Division",
+                "1. Panzer-Division",
+                "10. Infanterie-Division"
+              ]
+            }
+          ],
+          "divisions": [
+            {
+              "field_sources": {
+                "name": "gui",
+                "unit_type": "derived",
+                "owner": "derived",
+                "army_name": "gui",
+                "province_id": "unknown",
+                "supply_quality": "unknown"
+              },
+              "name": "1. Infanterie-Division",
+              "unit_type": "infantry",
+              "owner": "GER",
+              "army_name": "第1集团军",
+              "province_id": null,
+              "supply_quality": null
+            },
+            {
+              "field_sources": {
+                "name": "gui",
+                "unit_type": "derived",
+                "owner": "derived",
+                "army_name": "gui",
+                "province_id": "unknown",
+                "supply_quality": "unknown"
+              },
+              "name": "1. Panzer-Division",
+              "unit_type": "armor",
+              "owner": "GER",
+              "army_name": "第1集团军",
+              "province_id": null,
+              "supply_quality": null
+            },
+            {
+              "field_sources": {
+                "name": "gui",
+                "unit_type": "derived",
+                "owner": "derived",
+                "army_name": "gui",
+                "province_id": "unknown",
+                "supply_quality": "unknown"
+              },
+              "name": "10. Infanterie-Division",
+              "unit_type": "infantry",
+              "owner": "GER",
+              "army_name": "第1集团军",
+              "province_id": null,
+              "supply_quality": null
+            }
+          ],
+          "scope_status": "LIMITED",
+          "complete": false,
+          "total_divisions": 30,
+          "unobserved_divisions": 27,
+          "field_sources": {
+            "armies": "gui",
+            "divisions": "gui",
+            "total_divisions": "gui",
+            "unobserved_divisions": "derived",
+            "complete": "derived"
+          }
+        },
+        "after": {
+          "armies": [
+            {
+              "field_sources": {
+                "name": "gui",
+                "general_id": "derived",
+                "division_names": "gui"
+              },
+              "name": "第1集团军",
+              "general_id": "GER_erich_von_manstein",
+              "division_names": [
+                "1. Infanterie-Division",
+                "10. Infanterie-Division"
+              ],
+              "position": 0,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "army_id": "army-90e893ba6625-0003-0000",
+              "identity_signature": "c2d3c493ab5a6e3814b8ccdf721a3ab9f8ff603cefbb6dac5c1aed8eb5547d87"
+            }
+          ],
+          "divisions": [
+            {
+              "field_sources": {
+                "name": "gui",
+                "unit_type": "derived",
+                "owner": "derived",
+                "army_name": "gui",
+                "province_id": "unknown",
+                "supply_quality": "unknown",
+                "army_id": "derived"
+              },
+              "name": "1. Infanterie-Division",
+              "unit_type": "infantry",
+              "owner": "GER",
+              "army_name": "第1集团军",
+              "province_id": null,
+              "supply_quality": null,
+              "position": 0,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "division_id": "division-90e893ba6625-0003-0000",
+              "identity_signature": "71e6b899d0255df9e66395b0a4be3d14623a8f304e26797f88deab0931ebd6cb",
+              "army_id": "army-90e893ba6625-0003-0000"
+            },
+            {
+              "field_sources": {
+                "name": "gui",
+                "unit_type": "derived",
+                "owner": "derived",
+                "army_name": "gui",
+                "province_id": "unknown",
+                "supply_quality": "unknown",
+                "army_id": "derived"
+              },
+              "name": "1. Panzer-Division",
+              "unit_type": "armor",
+              "owner": "GER",
+              "army_name": null,
+              "province_id": null,
+              "supply_quality": null,
+              "position": 1,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "division_id": "division-90e893ba6625-0003-0001",
+              "identity_signature": "bac0310d708dce1c7fb22f57e6b049f76093335b8ac42bc7e4e273b3fd8b974a",
+              "army_id": null
+            },
+            {
+              "field_sources": {
+                "name": "gui",
+                "unit_type": "derived",
+                "owner": "derived",
+                "army_name": "gui",
+                "province_id": "unknown",
+                "supply_quality": "unknown",
+                "army_id": "derived"
+              },
+              "name": "10. Infanterie-Division",
+              "unit_type": "infantry",
+              "owner": "GER",
+              "army_name": "第1集团军",
+              "province_id": null,
+              "supply_quality": null,
+              "position": 2,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "division_id": "division-90e893ba6625-0003-0002",
+              "identity_signature": "3144d06d75b87d1ee26579fffb3b4f994fcdf8158c249df64293141ec3c2bd13",
+              "army_id": "army-90e893ba6625-0003-0000"
+            }
+          ],
+          "scope_status": "LIMITED",
+          "complete": false,
+          "total_divisions": 30,
+          "unobserved_divisions": 27,
+          "field_sources": {
+            "armies": "gui",
+            "divisions": "gui",
+            "total_divisions": "gui",
+            "unobserved_divisions": "derived",
+            "complete": "derived"
+          },
+          "session_id": "90e893ba6625",
+          "snapshot_version": 3,
+          "ttl_seconds": 120,
+          "telemetry_seq": 706714,
+          "stable_game_identity": false
+        },
+        "ui_confirmation": {
+          "exact_membership_and_general_transition": true,
+          "repeated_readback": true
+        },
+        "telemetry_confirmation": {
+          "before_seq": 706710,
+          "after_seq": 706714,
+          "military_state": "UNKNOWN; GUI confirmation"
+        }
+      }
+    },
+    {
+      "action": "assign_divisions",
+      "arguments": {
+        "army_id": "army-90e893ba6625-0003-0000",
+        "division_ids": [
+          "division-90e893ba6625-0003-0001"
+        ]
+      },
+      "result": {
+        "action": "assign_divisions",
+        "accepted": true,
+        "status": "confirmed",
+        "action_id": "971a217d-db42-4c3d-92ee-531b17f2fa16",
+        "retry_count": 0,
+        "duration_ms": 27766,
+        "timings_ms": {
+          "precheck": 0,
+          "navigation": 12953,
+          "target_lookup": 0,
+          "submit": 7703,
+          "readback": 3656,
+          "confirmation": 3454,
+          "total": 27766
+        },
+        "before": {
+          "armies": [
+            {
+              "field_sources": {
+                "name": "gui",
+                "general_id": "derived",
+                "division_names": "gui"
+              },
+              "name": "第1集团军",
+              "general_id": "GER_erich_von_manstein",
+              "division_names": [
+                "1. Infanterie-Division",
+                "10. Infanterie-Division"
+              ]
+            }
+          ],
+          "divisions": [
+            {
+              "field_sources": {
+                "name": "gui",
+                "unit_type": "derived",
+                "owner": "derived",
+                "army_name": "gui",
+                "province_id": "unknown",
+                "supply_quality": "unknown"
+              },
+              "name": "1. Infanterie-Division",
+              "unit_type": "infantry",
+              "owner": "GER",
+              "army_name": "第1集团军",
+              "province_id": null,
+              "supply_quality": null
+            },
+            {
+              "field_sources": {
+                "name": "gui",
+                "unit_type": "derived",
+                "owner": "derived",
+                "army_name": "gui",
+                "province_id": "unknown",
+                "supply_quality": "unknown"
+              },
+              "name": "1. Panzer-Division",
+              "unit_type": "armor",
+              "owner": "GER",
+              "army_name": null,
+              "province_id": null,
+              "supply_quality": null
+            },
+            {
+              "field_sources": {
+                "name": "gui",
+                "unit_type": "derived",
+                "owner": "derived",
+                "army_name": "gui",
+                "province_id": "unknown",
+                "supply_quality": "unknown"
+              },
+              "name": "10. Infanterie-Division",
+              "unit_type": "infantry",
+              "owner": "GER",
+              "army_name": "第1集团军",
+              "province_id": null,
+              "supply_quality": null
+            }
+          ],
+          "scope_status": "LIMITED",
+          "complete": false,
+          "total_divisions": 30,
+          "unobserved_divisions": 27,
+          "field_sources": {
+            "armies": "gui",
+            "divisions": "gui",
+            "total_divisions": "gui",
+            "unobserved_divisions": "derived",
+            "complete": "derived"
+          }
+        },
+        "after": {
+          "armies": [
+            {
+              "field_sources": {
+                "name": "gui",
+                "general_id": "derived",
+                "division_names": "gui"
+              },
+              "name": "第1集团军",
+              "general_id": "GER_erich_von_manstein",
+              "division_names": [
+                "1. Infanterie-Division",
+                "1. Panzer-Division",
+                "10. Infanterie-Division"
+              ],
+              "position": 0,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "army_id": "army-90e893ba6625-0004-0000",
+              "identity_signature": "8ad0d0fbfda2c7befcd6847f55daecd8f0c0cdd5f0807fd0fe0c3c63341393d1"
+            }
+          ],
+          "divisions": [
+            {
+              "field_sources": {
+                "name": "gui",
+                "unit_type": "derived",
+                "owner": "derived",
+                "army_name": "gui",
+                "province_id": "unknown",
+                "supply_quality": "unknown",
+                "army_id": "derived"
+              },
+              "name": "1. Infanterie-Division",
+              "unit_type": "infantry",
+              "owner": "GER",
+              "army_name": "第1集团军",
+              "province_id": null,
+              "supply_quality": null,
+              "position": 0,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "division_id": "division-90e893ba6625-0004-0000",
+              "identity_signature": "71e6b899d0255df9e66395b0a4be3d14623a8f304e26797f88deab0931ebd6cb",
+              "army_id": "army-90e893ba6625-0004-0000"
+            },
+            {
+              "field_sources": {
+                "name": "gui",
+                "unit_type": "derived",
+                "owner": "derived",
+                "army_name": "gui",
+                "province_id": "unknown",
+                "supply_quality": "unknown",
+                "army_id": "derived"
+              },
+              "name": "1. Panzer-Division",
+              "unit_type": "armor",
+              "owner": "GER",
+              "army_name": "第1集团军",
+              "province_id": null,
+              "supply_quality": null,
+              "position": 1,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "division_id": "division-90e893ba6625-0004-0001",
+              "identity_signature": "a63507b49294b4e20276c8074da30c4cbba2b9388298d5ba8ea5a4c1cdfdb68e",
+              "army_id": "army-90e893ba6625-0004-0000"
+            },
+            {
+              "field_sources": {
+                "name": "gui",
+                "unit_type": "derived",
+                "owner": "derived",
+                "army_name": "gui",
+                "province_id": "unknown",
+                "supply_quality": "unknown",
+                "army_id": "derived"
+              },
+              "name": "10. Infanterie-Division",
+              "unit_type": "infantry",
+              "owner": "GER",
+              "army_name": "第1集团军",
+              "province_id": null,
+              "supply_quality": null,
+              "position": 2,
+              "identity_source": "gui",
+              "stable_game_identity": false,
+              "division_id": "division-90e893ba6625-0004-0002",
+              "identity_signature": "3144d06d75b87d1ee26579fffb3b4f994fcdf8158c249df64293141ec3c2bd13",
+              "army_id": "army-90e893ba6625-0004-0000"
+            }
+          ],
+          "scope_status": "LIMITED",
+          "complete": false,
+          "total_divisions": 30,
+          "unobserved_divisions": 27,
+          "field_sources": {
+            "armies": "gui",
+            "divisions": "gui",
+            "total_divisions": "gui",
+            "unobserved_divisions": "derived",
+            "complete": "derived"
+          },
+          "session_id": "90e893ba6625",
+          "snapshot_version": 4,
+          "ttl_seconds": 120,
+          "telemetry_seq": 706720,
+          "stable_game_identity": false
+        },
+        "ui_confirmation": {
+          "exact_membership_and_general_transition": true,
+          "repeated_readback": true
+        },
+        "telemetry_confirmation": {
+          "before_seq": 706714,
+          "after_seq": 706720,
+          "military_state": "UNKNOWN; GUI confirmation"
+        }
+      }
+    },
+    {
+      "action": "get_generals",
+      "arguments": {},
+      "result": {
+        "action": "get_generals",
+        "accepted": false,
+        "status": "rejected",
+        "action_id": "eec38b7a-8671-4c3a-8309-a098f20a32bd",
+        "retry_count": 0,
+        "duration_ms": 6156,
+        "timings_ms": {
+          "precheck": 0,
+          "navigation": 5390,
+          "target_lookup": 0,
+          "submit": 0,
+          "readback": 0,
+          "confirmation": 0,
+          "total": 6156
+        },
+        "reason": "requirements_not_met",
+        "recovery": "escape_sent"
+      }
+    }
+  ],
+  "tool_names": [
+    "get_armies",
+    "get_army",
+    "get_divisions",
+    "get_division",
+    "get_generals",
+    "create_army",
+    "assign_divisions",
+    "remove_divisions_from_army",
+    "assign_general",
+    "get_fronts",
+    "get_supply_status",
+    "get_air_state",
+    "get_navy_state",
+    "get_air_wings",
+    "get_air_regions",
+    "get_fleets",
+    "get_production_lines",
+    "set_production_factory_count",
+    "get_equipment_catalog",
+    "create_production_line",
+    "delete_production_line",
+    "reorder_production_line",
+    "get_construction",
+    "build",
+    "cancel_construction",
+    "change_construction_priority",
+    "change_economy_law",
+    "change_conscription_law",
+    "get_advisors",
+    "hire_advisor",
+    "get_trade_state",
+    "set_trade_import",
+    "select_research",
+    "select_focus",
+    "get_summary",
+    "get_politics",
+    "get_industry",
+    "get_research",
+    "get_focus",
+    "get_changes",
+    "get_diagnostics"
+  ],
+  "before_telemetry": {
+    "status": "fresh",
+    "received_at": "2026-10-02T01:33:35.629413+00:00",
+    "game_date": " 24:00, 6 3月, 1936",
+    "latest_seq": 706704,
+    "state": {
+      "protocol_version": 2,
+      "seq": 706704,
+      "game_date": " 24:00, 6 3月, 1936",
+      "country": "GER",
+      "politics": {
+        "political_power": 191.06,
+        "stability": 0.81,
+        "war_support": 0.46938
+      },
+      "manpower": {
+        "available": 1335946,
+        "source_thousands": 1335.946
+      },
+      "industry": {
+        "civilian_factories": 35,
+        "military_factories": 28,
+        "dockyards": 10
+      },
+      "origin": "daily",
+      "research": {
+        "slot_count": 4,
+        "tracked_technologies": [
+          {
+            "tech_id": "basic_machine_tools",
+            "researching": true,
+            "researched": false
+          },
+          {
+            "tech_id": "construction1",
+            "researching": true,
+            "researched": false
+          },
+          {
+            "tech_id": "electronic_mechanical_engineering",
+            "researching": true,
+            "researched": false
+          }
+        ]
+      },
+      "focus": {
+        "tracked_id": "GER_remilitarize_the_rhineland",
+        "completed": true,
+        "progress_lower_bound": 1.0,
+        "progress_upper_bound": 1.0
+      }
+    },
+    "parser_errors": [],
+    "session_id": "8933328d-1f14-4c84-a03e-e1227fda3f4a",
+    "revision": 4,
+    "freshness_basis": "frame_received_at",
+    "log_read_error": null
+  }
+}

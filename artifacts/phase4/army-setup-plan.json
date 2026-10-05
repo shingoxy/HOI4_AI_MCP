@@ -1,0 +1,9 @@
+[
+  {"action":"get_armies"},
+  {"action":"create_army","arguments":{"division_ids":["$snapshot.divisions.0.division_id"]}},
+  {"action":"assign_general","arguments":{"army_id":"$snapshot.armies.0.army_id","general_id":"GER_erich_von_manstein"}},
+  {"action":"assign_divisions","arguments":{"army_id":"$snapshot.armies.0.army_id","division_ids":["$snapshot.divisions.1.division_id"]}},
+  {"action":"assign_divisions","arguments":{"army_id":"$snapshot.armies.0.army_id","division_ids":["$snapshot.divisions.2.division_id"]}},
+  {"action":"get_generals"},
+  {"action":"get_supply_status","arguments":{"army_id":"$snapshot.armies.0.army_id"}}
+]

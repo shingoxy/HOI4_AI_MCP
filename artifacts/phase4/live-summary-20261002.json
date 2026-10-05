@@ -1,0 +1,2624 @@
+{
+  "source": "Persisted official SDK stdio calls against real HOI4 normal GUI",
+  "manual_calibration_counted_as_sdk_success": false,
+  "sessions": [
+    {
+      "file": "air-navy-live-1.json",
+      "harness_stop": null,
+      "before_date": " 24:00, 11 4月, 1936",
+      "after_date": null
+    },
+    {
+      "file": "air-navy-live-2.json",
+      "harness_stop": null,
+      "before_date": " 24:00, 3 1月, 1936",
+      "after_date": null
+    },
+    {
+      "file": "air-navy-live-3.json",
+      "harness_stop": null,
+      "before_date": " 24:00, 4 1月, 1936",
+      "after_date": null
+    },
+    {
+      "file": "air-navy-live-4.json",
+      "harness_stop": null,
+      "before_date": " 24:00, 25 3月, 1936",
+      "after_date": null
+    },
+    {
+      "file": "air-navy-live-5.json",
+      "harness_stop": null,
+      "before_date": " 24:00, 7 4月, 1936",
+      "after_date": null
+    },
+    {
+      "file": "air-navy-live-6.json",
+      "harness_stop": null,
+      "before_date": " 24:00, 8 1月, 1936",
+      "after_date": " 24:00, 27 1月, 1936"
+    },
+    {
+      "file": "army-live-1.json",
+      "harness_stop": null,
+      "before_date": " 24:00, 6 1月, 1936",
+      "after_date": null
+    },
+    {
+      "file": "army-live-2.json",
+      "harness_stop": null,
+      "before_date": " 24:00, 12 1月, 1936",
+      "after_date": null
+    },
+    {
+      "file": "army-live-3.json",
+      "harness_stop": null,
+      "before_date": " 24:00, 21 1月, 1936",
+      "after_date": null
+    },
+    {
+      "file": "army-live-4.json",
+      "harness_stop": null,
+      "before_date": " 24:00, 6 3月, 1936",
+      "after_date": null
+    },
+    {
+      "file": "army-live-5.json",
+      "harness_stop": null,
+      "before_date": " 24:00, 8 1月, 1936",
+      "after_date": null
+    },
+    {
+      "file": "army-live-6.json",
+      "harness_stop": null,
+      "before_date": " 24:00, 16 1月, 1936",
+      "after_date": null
+    },
+    {
+      "file": "army-live-7.json",
+      "harness_stop": null,
+      "before_date": " 24:00, 19 1月, 1936",
+      "after_date": null
+    },
+    {
+      "file": "front-live-1.json",
+      "harness_stop": null,
+      "before_date": " 24:00, 25 1月, 1936",
+      "after_date": null
+    },
+    {
+      "file": "front-live-10.json",
+      "harness_stop": null,
+      "before_date": " 24:00, 6 4月, 1936",
+      "after_date": " 24:00, 10 4月, 1936"
+    },
+    {
+      "file": "front-live-2.json",
+      "harness_stop": null,
+      "before_date": " 24:00, 7 2月, 1936",
+      "after_date": null
+    },
+    {
+      "file": "front-live-3.json",
+      "harness_stop": null,
+      "before_date": " 24:00, 17 2月, 1936",
+      "after_date": null
+    },
+    {
+      "file": "front-live-4.json",
+      "harness_stop": null,
+      "before_date": " 24:00, 23 2月, 1936",
+      "after_date": null
+    },
+    {
+      "file": "front-live-5.json",
+      "harness_stop": null,
+      "before_date": " 24:00, 28 2月, 1936",
+      "after_date": null
+    },
+    {
+      "file": "front-live-6.json",
+      "harness_stop": null,
+      "before_date": " 24:00, 6 3月, 1936",
+      "after_date": null
+    },
+    {
+      "file": "front-live-7.json",
+      "harness_stop": null,
+      "before_date": " 24:00, 9 3月, 1936",
+      "after_date": null
+    },
+    {
+      "file": "front-live-8.json",
+      "harness_stop": null,
+      "before_date": " 24:00, 15 3月, 1936",
+      "after_date": null
+    },
+    {
+      "file": "front-live-9.json",
+      "harness_stop": null,
+      "before_date": " 24:00, 23 3月, 1936",
+      "after_date": " 24:00, 2 4月, 1936"
+    },
+    {
+      "file": "navy-live-1.json",
+      "harness_stop": null,
+      "before_date": " 24:00, 29 4月, 1936",
+      "after_date": null
+    },
+    {
+      "file": "navy-live-2.json",
+      "harness_stop": null,
+      "before_date": " 24:00, 8 5月, 1936",
+      "after_date": " 24:00, 11 5月, 1936"
+    }
+  ],
+  "status_counts": {
+    "rejected": 18,
+    "confirmed": 47,
+    "uncertain": 5,
+    "timed_out": 2,
+    "already_satisfied": 2
+  },
+  "by_action": {
+    "get_air_regions": {
+      "status_counts": {
+        "rejected": 3,
+        "confirmed": 3
+      },
+      "confirmed_mean_duration_ms": 13025.67,
+      "confirmed_targets": [
+        {},
+        {},
+        {}
+      ]
+    },
+    "get_air_wings": {
+      "status_counts": {
+        "confirmed": 3
+      },
+      "confirmed_mean_duration_ms": 7854.67,
+      "confirmed_targets": [
+        {},
+        {},
+        {}
+      ]
+    },
+    "assign_air_wing": {
+      "status_counts": {
+        "uncertain": 1,
+        "confirmed": 2
+      },
+      "confirmed_mean_duration_ms": 26203.5,
+      "confirmed_targets": [
+        {
+          "wing_id": "wing-d3df1a0610da-0001-0000",
+          "region_id": 8
+        },
+        {
+          "wing_id": "wing-bd9a18d54e6c-0001-0000",
+          "region_id": 8
+        }
+      ]
+    },
+    "set_air_mission": {
+      "status_counts": {
+        "confirmed": 3,
+        "rejected": 1
+      },
+      "confirmed_mean_duration_ms": 16239.33,
+      "confirmed_targets": [
+        {
+          "wing_id": "wing-d3df1a0610da-0002-0000",
+          "mission": "air_superiority"
+        },
+        {
+          "wing_id": "wing-bd9a18d54e6c-0002-0000",
+          "mission": "air_superiority"
+        },
+        {
+          "wing_id": "wing-bd9a18d54e6c-0003-0000",
+          "mission": "none"
+        }
+      ]
+    },
+    "get_navy_state": {
+      "status_counts": {
+        "confirmed": 2,
+        "rejected": 1
+      },
+      "confirmed_mean_duration_ms": 7632.5,
+      "confirmed_targets": [
+        {},
+        {}
+      ]
+    },
+    "get_fleets": {
+      "status_counts": {
+        "confirmed": 2
+      },
+      "confirmed_mean_duration_ms": 7867.5,
+      "confirmed_targets": [
+        {},
+        {}
+      ]
+    },
+    "assign_fleet_region": {
+      "status_counts": {
+        "rejected": 2
+      },
+      "confirmed_mean_duration_ms": null,
+      "confirmed_targets": []
+    },
+    "set_naval_mission": {
+      "status_counts": {
+        "rejected": 2
+      },
+      "confirmed_mean_duration_ms": null,
+      "confirmed_targets": []
+    },
+    "get_armies": {
+      "status_counts": {
+        "confirmed": 8,
+        "rejected": 1
+      },
+      "confirmed_mean_duration_ms": 5257.75,
+      "confirmed_targets": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "create_army": {
+      "status_counts": {
+        "confirmed": 2,
+        "rejected": 2
+      },
+      "confirmed_mean_duration_ms": 12742.5,
+      "confirmed_targets": [
+        {
+          "division_ids": [
+            "division-5fc517c96b1c-0001-0000"
+          ]
+        },
+        {
+          "division_ids": [
+            "division-427f0bb23ac7-0001-0000"
+          ]
+        }
+      ]
+    },
+    "assign_general": {
+      "status_counts": {
+        "confirmed": 2
+      },
+      "confirmed_mean_duration_ms": 17984.5,
+      "confirmed_targets": [
+        {
+          "army_id": "army-5fc517c96b1c-0002-0000",
+          "general_id": "GER_erich_von_manstein"
+        },
+        {
+          "army_id": "army-427f0bb23ac7-0002-0000",
+          "general_id": "GER_erich_von_manstein"
+        }
+      ]
+    },
+    "assign_divisions": {
+      "status_counts": {
+        "timed_out": 1,
+        "already_satisfied": 1,
+        "confirmed": 4,
+        "uncertain": 1
+      },
+      "confirmed_mean_duration_ms": 22711,
+      "confirmed_targets": [
+        {
+          "army_id": "army-a0e11c4d3ed6-0002-0000",
+          "division_ids": [
+            "division-a0e11c4d3ed6-0002-0002"
+          ]
+        },
+        {
+          "army_id": "army-90e893ba6625-0001-0000",
+          "division_ids": [
+            "division-90e893ba6625-0001-0001"
+          ]
+        },
+        {
+          "army_id": "army-90e893ba6625-0003-0000",
+          "division_ids": [
+            "division-90e893ba6625-0003-0001"
+          ]
+        },
+        {
+          "army_id": "army-427f0bb23ac7-0003-0000",
+          "division_ids": [
+            "division-427f0bb23ac7-0003-0001"
+          ]
+        }
+      ]
+    },
+    "remove_divisions_from_army": {
+      "status_counts": {
+        "timed_out": 1,
+        "confirmed": 1
+      },
+      "confirmed_mean_duration_ms": 24843,
+      "confirmed_targets": [
+        {
+          "army_id": "army-90e893ba6625-0002-0000",
+          "division_ids": [
+            "division-90e893ba6625-0002-0001"
+          ]
+        }
+      ]
+    },
+    "get_generals": {
+      "status_counts": {
+        "rejected": 1,
+        "confirmed": 2
+      },
+      "confirmed_mean_duration_ms": 7492.5,
+      "confirmed_targets": [
+        {},
+        {}
+      ]
+    },
+    "get_fronts": {
+      "status_counts": {
+        "confirmed": 8,
+        "rejected": 2
+      },
+      "confirmed_mean_duration_ms": 12550.88,
+      "confirmed_targets": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "create_frontline": {
+      "status_counts": {
+        "rejected": 3,
+        "confirmed": 2,
+        "uncertain": 3,
+        "already_satisfied": 1
+      },
+      "confirmed_mean_duration_ms": 32000,
+      "confirmed_targets": [
+        {
+          "army_id": "army-8f4e6e4fbe61-0001-0000",
+          "target_id": "GER_POL_mainland"
+        },
+        {
+          "army_id": "army-75e07ba395ad-0002-0000",
+          "target_id": "GER_POL_east_prussia"
+        }
+      ]
+    },
+    "get_supply_status": {
+      "status_counts": {
+        "confirmed": 1
+      },
+      "confirmed_mean_duration_ms": 8578,
+      "confirmed_targets": [
+        {
+          "army_id": "army-f4def593a2e8-0001-0000"
+        }
+      ]
+    },
+    "execute_plan": {
+      "status_counts": {
+        "confirmed": 1
+      },
+      "confirmed_mean_duration_ms": 34156,
+      "confirmed_targets": [
+        {
+          "army_id": "army-75e07ba395ad-0003-0000"
+        }
+      ]
+    },
+    "stop_plan": {
+      "status_counts": {
+        "confirmed": 1
+      },
+      "confirmed_mean_duration_ms": 32250,
+      "confirmed_targets": [
+        {
+          "army_id": "army-75e07ba395ad-0004-0000"
+        }
+      ]
+    }
+  },
+  "failures": [
+    {
+      "file": "air-navy-live-1.json",
+      "action": "get_air_regions",
+      "arguments": {},
+      "action_id": "2664cdfb-002a-4459-bee1-d7616a796320",
+      "status": "rejected",
+      "accepted": false,
+      "reason": "telemetry_stale",
+      "duration_ms": 0,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 0,
+        "target_lookup": 0,
+        "submit": 0,
+        "readback": 0,
+        "confirmation": 0,
+        "total": 0
+      }
+    },
+    {
+      "file": "air-navy-live-2.json",
+      "action": "get_air_regions",
+      "arguments": {},
+      "action_id": "227664b3-54b6-4458-aa00-1df4c3111922",
+      "status": "rejected",
+      "accepted": false,
+      "reason": "map_target_unresolved",
+      "duration_ms": 5265,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 4437,
+        "target_lookup": 0,
+        "submit": 0,
+        "readback": 0,
+        "confirmation": 0,
+        "total": 5265
+      }
+    },
+    {
+      "file": "air-navy-live-3.json",
+      "action": "assign_air_wing",
+      "arguments": {
+        "wing_id": "wing-c6aa7e4f91a8-0001-0000",
+        "region_id": 8
+      },
+      "action_id": "94f546d4-8e3c-481b-a7a5-38aeb3f6e014",
+      "status": "uncertain",
+      "accepted": true,
+      "reason": "telemetry_stale",
+      "duration_ms": 27015,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 3453,
+        "target_lookup": 0,
+        "submit": 14968,
+        "readback": 3610,
+        "confirmation": 4219,
+        "total": 27015
+      }
+    },
+    {
+      "file": "air-navy-live-4.json",
+      "action": "get_air_regions",
+      "arguments": {},
+      "action_id": "3771a7fc-176b-42d2-8020-e5c6c6f9d8e6",
+      "status": "rejected",
+      "accepted": false,
+      "reason": "modal_blocked",
+      "duration_ms": 1062,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 16,
+        "navigation": 250,
+        "target_lookup": 0,
+        "submit": 0,
+        "readback": 0,
+        "confirmation": 0,
+        "total": 1062
+      }
+    },
+    {
+      "file": "air-navy-live-5.json",
+      "action": "set_air_mission",
+      "arguments": {
+        "wing_id": "wing-d3df1a0610da-0003-0000",
+        "mission": "none"
+      },
+      "action_id": "604d1e43-6797-46b7-bd6f-e8dd57d917cf",
+      "status": "rejected",
+      "accepted": false,
+      "reason": "identity_mismatch",
+      "duration_ms": 8797,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 3562,
+        "target_lookup": 0,
+        "submit": 4438,
+        "readback": 0,
+        "confirmation": 0,
+        "total": 8797
+      }
+    },
+    {
+      "file": "air-navy-live-6.json",
+      "action": "assign_fleet_region",
+      "arguments": {
+        "fleet_id": "fleet-bd9a18d54e6c-0002-0000",
+        "region_id": 7
+      },
+      "action_id": "7f4154d1-3b3b-4557-bdc1-ae0f57b2de72",
+      "status": "rejected",
+      "accepted": false,
+      "reason": "unsupported_target",
+      "duration_ms": 0,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 0,
+        "target_lookup": 0,
+        "submit": 0,
+        "readback": 0,
+        "confirmation": 0,
+        "total": 0
+      }
+    },
+    {
+      "file": "air-navy-live-6.json",
+      "action": "set_naval_mission",
+      "arguments": {
+        "fleet_id": "fleet-bd9a18d54e6c-0002-0000",
+        "mission": "patrol"
+      },
+      "action_id": "425a7d71-0802-4395-88c9-f4265c54c129",
+      "status": "rejected",
+      "accepted": false,
+      "reason": "unsupported_target",
+      "duration_ms": 0,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 0,
+        "target_lookup": 0,
+        "submit": 0,
+        "readback": 0,
+        "confirmation": 0,
+        "total": 0
+      }
+    },
+    {
+      "file": "army-live-1.json",
+      "action": "assign_divisions",
+      "arguments": {
+        "army_id": "army-5fc517c96b1c-0003-0000",
+        "division_ids": [
+          "division-5fc517c96b1c-0003-0001"
+        ]
+      },
+      "action_id": "0c5b5cc7-56da-47fe-9412-07ab194fc614",
+      "status": "timed_out",
+      "accepted": true,
+      "reason": "ui_timeout",
+      "duration_ms": 40656,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 3984,
+        "target_lookup": 0,
+        "submit": 9485,
+        "readback": 3953,
+        "confirmation": 13203,
+        "total": 40656
+      }
+    },
+    {
+      "file": "army-live-2.json",
+      "action": "get_armies",
+      "arguments": {},
+      "action_id": "1eb7530f-f234-4b5a-90bb-c56d595523f6",
+      "status": "rejected",
+      "accepted": false,
+      "reason": "telemetry_stale",
+      "duration_ms": 9078,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 3922,
+        "target_lookup": 0,
+        "submit": 0,
+        "readback": 4187,
+        "confirmation": 0,
+        "total": 9078
+      }
+    },
+    {
+      "file": "army-live-3.json",
+      "action": "remove_divisions_from_army",
+      "arguments": {
+        "army_id": "army-a0e11c4d3ed6-0003-0000",
+        "division_ids": [
+          "division-a0e11c4d3ed6-0003-0001"
+        ]
+      },
+      "action_id": "a5d20fde-99c9-4006-9d08-e0722d9c85e6",
+      "status": "timed_out",
+      "accepted": true,
+      "reason": "ui_timeout",
+      "duration_ms": 39344,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 4406,
+        "target_lookup": 0,
+        "submit": 12469,
+        "readback": 12453,
+        "confirmation": 0,
+        "total": 39344
+      }
+    },
+    {
+      "file": "army-live-4.json",
+      "action": "get_generals",
+      "arguments": {},
+      "action_id": "eec38b7a-8671-4c3a-8309-a098f20a32bd",
+      "status": "rejected",
+      "accepted": false,
+      "reason": "requirements_not_met",
+      "duration_ms": 6156,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 5390,
+        "target_lookup": 0,
+        "submit": 0,
+        "readback": 0,
+        "confirmation": 0,
+        "total": 6156
+      }
+    },
+    {
+      "file": "army-live-5.json",
+      "action": "create_army",
+      "arguments": {
+        "division_ids": [
+          "division-b9e394e8556b-0001-0000"
+        ]
+      },
+      "action_id": "9378d8e2-584f-476d-b670-9a9a4ea17cd2",
+      "status": "rejected",
+      "accepted": false,
+      "reason": "identity_mismatch",
+      "duration_ms": 5953,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 984,
+        "target_lookup": 0,
+        "submit": 3766,
+        "readback": 0,
+        "confirmation": 0,
+        "total": 5953
+      }
+    },
+    {
+      "file": "army-live-6.json",
+      "action": "create_army",
+      "arguments": {
+        "division_ids": [
+          "division-b9d8444e3534-0001-0000"
+        ]
+      },
+      "action_id": "3a3a0c98-0be0-4b75-a8a0-ecd5d7292b06",
+      "status": "rejected",
+      "accepted": false,
+      "reason": "identity_mismatch",
+      "duration_ms": 6140,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 1437,
+        "target_lookup": 0,
+        "submit": 3969,
+        "readback": 0,
+        "confirmation": 0,
+        "total": 6140
+      }
+    },
+    {
+      "file": "army-live-7.json",
+      "action": "assign_divisions",
+      "arguments": {
+        "army_id": "army-427f0bb23ac7-0004-0000",
+        "division_ids": [
+          "division-427f0bb23ac7-0004-0002"
+        ]
+      },
+      "action_id": "680abf4c-c785-43cb-a483-4f2e5a01f5b3",
+      "status": "uncertain",
+      "accepted": true,
+      "reason": "telemetry_stale",
+      "duration_ms": 19782,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 3594,
+        "target_lookup": 0,
+        "submit": 8563,
+        "readback": 3437,
+        "confirmation": 3453,
+        "total": 19782
+      }
+    },
+    {
+      "file": "front-live-1.json",
+      "action": "create_frontline",
+      "arguments": {
+        "army_id": "army-34889710b91b-0002-0000",
+        "target_id": "GER_POL_mainland"
+      },
+      "action_id": "7855a326-03d3-4090-a2f1-7a5c61ea2b81",
+      "status": "rejected",
+      "accepted": false,
+      "reason": "map_target_unresolved",
+      "duration_ms": 11297,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 4360,
+        "target_lookup": 0,
+        "submit": 6187,
+        "readback": 0,
+        "confirmation": 0,
+        "total": 11297
+      }
+    },
+    {
+      "file": "front-live-2.json",
+      "action": "create_frontline",
+      "arguments": {
+        "army_id": "army-f4def593a2e8-0002-0000",
+        "target_id": "GER_POL_mainland"
+      },
+      "action_id": "11ebf3be-0065-412f-8690-f6af68adac25",
+      "status": "uncertain",
+      "accepted": true,
+      "reason": "readback_ambiguous",
+      "duration_ms": 17359,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 4797,
+        "target_lookup": 0,
+        "submit": 7562,
+        "readback": 4250,
+        "confirmation": 0,
+        "total": 17359
+      }
+    },
+    {
+      "file": "front-live-3.json",
+      "action": "create_frontline",
+      "arguments": {
+        "army_id": "army-9583994ec34f-0001-0000",
+        "target_id": "GER_POL_mainland"
+      },
+      "action_id": "03d434a7-0368-4f0e-9aa0-112d8e9a089f",
+      "status": "uncertain",
+      "accepted": true,
+      "reason": "readback_ambiguous",
+      "duration_ms": 16969,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 4437,
+        "target_lookup": 0,
+        "submit": 6985,
+        "readback": 4781,
+        "confirmation": 0,
+        "total": 16969
+      }
+    },
+    {
+      "file": "front-live-4.json",
+      "action": "get_fronts",
+      "arguments": {},
+      "action_id": "361e7e9a-cc02-4397-9358-54edb1874b37",
+      "status": "rejected",
+      "accepted": false,
+      "reason": "readback_ambiguous",
+      "duration_ms": 12312,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 15,
+        "navigation": 6360,
+        "target_lookup": 0,
+        "submit": 0,
+        "readback": 5156,
+        "confirmation": 0,
+        "total": 12312
+      }
+    },
+    {
+      "file": "front-live-5.json",
+      "action": "create_frontline",
+      "arguments": {
+        "army_id": "army-5d2d9d29682b-0001-0000",
+        "target_id": "GER_POL_mainland"
+      },
+      "action_id": "066ffef7-6d43-40df-b465-280431753b67",
+      "status": "rejected",
+      "accepted": false,
+      "reason": "readback_ambiguous",
+      "duration_ms": 15250,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 15,
+        "navigation": 6516,
+        "target_lookup": 0,
+        "submit": 7859,
+        "readback": 0,
+        "confirmation": 0,
+        "total": 15250
+      }
+    },
+    {
+      "file": "front-live-6.json",
+      "action": "get_fronts",
+      "arguments": {},
+      "action_id": "431e01fe-b191-42ae-aa71-fae1b812c405",
+      "status": "rejected",
+      "accepted": false,
+      "reason": "identity_mismatch",
+      "duration_ms": 3219,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 2000,
+        "target_lookup": 0,
+        "submit": 0,
+        "readback": 0,
+        "confirmation": 0,
+        "total": 3219
+      }
+    },
+    {
+      "file": "front-live-7.json",
+      "action": "create_frontline",
+      "arguments": {
+        "army_id": "army-d48f3efe2116-0001-0000",
+        "target_id": "GER_POL_mainland"
+      },
+      "action_id": "be187c40-b62e-4f14-89e0-f3b7539562dd",
+      "status": "rejected",
+      "accepted": false,
+      "reason": "modal_blocked",
+      "duration_ms": 7187,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 6453,
+        "target_lookup": 0,
+        "submit": 0,
+        "readback": 0,
+        "confirmation": 0,
+        "total": 7187
+      }
+    },
+    {
+      "file": "front-live-8.json",
+      "action": "create_frontline",
+      "arguments": {
+        "army_id": "army-3b7b17a3205b-0001-0000",
+        "target_id": "GER_POL_mainland"
+      },
+      "action_id": "c3ed54e0-2a26-42fd-a6e3-ba5de0b50b4a",
+      "status": "uncertain",
+      "accepted": true,
+      "reason": "modal_blocked",
+      "duration_ms": 31719,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 7875,
+        "target_lookup": 0,
+        "submit": 10016,
+        "readback": 6812,
+        "confirmation": 6266,
+        "total": 31719
+      }
+    },
+    {
+      "file": "navy-live-1.json",
+      "action": "get_navy_state",
+      "arguments": {},
+      "action_id": "b1591939-aa3e-433e-a9d7-93b8730203ef",
+      "status": "rejected",
+      "accepted": false,
+      "reason": "modal_blocked",
+      "duration_ms": 5313,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 4000,
+        "target_lookup": 0,
+        "submit": 0,
+        "readback": 250,
+        "confirmation": 0,
+        "total": 5313
+      }
+    },
+    {
+      "file": "navy-live-2.json",
+      "action": "assign_fleet_region",
+      "arguments": {
+        "fleet_id": "fleet-429ea705527b-0002-0000",
+        "region_id": 7
+      },
+      "action_id": "e0223574-cf8d-41ea-8e78-13e28fef4454",
+      "status": "rejected",
+      "accepted": false,
+      "reason": "unsupported_target",
+      "duration_ms": 0,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 0,
+        "target_lookup": 0,
+        "submit": 0,
+        "readback": 0,
+        "confirmation": 0,
+        "total": 0
+      }
+    },
+    {
+      "file": "navy-live-2.json",
+      "action": "set_naval_mission",
+      "arguments": {
+        "fleet_id": "fleet-429ea705527b-0002-0000",
+        "mission": "patrol"
+      },
+      "action_id": "63d06a6f-56cb-44b9-b49a-b37650ac9d8e",
+      "status": "rejected",
+      "accepted": false,
+      "reason": "unsupported_target",
+      "duration_ms": 0,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 0,
+        "target_lookup": 0,
+        "submit": 0,
+        "readback": 0,
+        "confirmation": 0,
+        "total": 0
+      }
+    }
+  ],
+  "actions": [
+    {
+      "file": "air-navy-live-1.json",
+      "action": "get_air_regions",
+      "arguments": {},
+      "action_id": "2664cdfb-002a-4459-bee1-d7616a796320",
+      "status": "rejected",
+      "accepted": false,
+      "reason": "telemetry_stale",
+      "duration_ms": 0,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 0,
+        "target_lookup": 0,
+        "submit": 0,
+        "readback": 0,
+        "confirmation": 0,
+        "total": 0
+      }
+    },
+    {
+      "file": "air-navy-live-2.json",
+      "action": "get_air_regions",
+      "arguments": {},
+      "action_id": "227664b3-54b6-4458-aa00-1df4c3111922",
+      "status": "rejected",
+      "accepted": false,
+      "reason": "map_target_unresolved",
+      "duration_ms": 5265,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 4437,
+        "target_lookup": 0,
+        "submit": 0,
+        "readback": 0,
+        "confirmation": 0,
+        "total": 5265
+      }
+    },
+    {
+      "file": "air-navy-live-3.json",
+      "action": "get_air_regions",
+      "arguments": {},
+      "action_id": "dd372377-4053-4916-b318-19f51c9c2a28",
+      "status": "confirmed",
+      "accepted": true,
+      "reason": null,
+      "duration_ms": 12968,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 6765,
+        "target_lookup": 0,
+        "submit": 0,
+        "readback": 6203,
+        "confirmation": 0,
+        "total": 12968
+      }
+    },
+    {
+      "file": "air-navy-live-3.json",
+      "action": "get_air_wings",
+      "arguments": {},
+      "action_id": "4b3f88bf-8468-46aa-b9df-f7594f6a1021",
+      "status": "confirmed",
+      "accepted": true,
+      "reason": null,
+      "duration_ms": 7532,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 4000,
+        "target_lookup": 0,
+        "submit": 0,
+        "readback": 3532,
+        "confirmation": 0,
+        "total": 7532
+      }
+    },
+    {
+      "file": "air-navy-live-3.json",
+      "action": "assign_air_wing",
+      "arguments": {
+        "wing_id": "wing-c6aa7e4f91a8-0001-0000",
+        "region_id": 8
+      },
+      "action_id": "94f546d4-8e3c-481b-a7a5-38aeb3f6e014",
+      "status": "uncertain",
+      "accepted": true,
+      "reason": "telemetry_stale",
+      "duration_ms": 27015,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 3453,
+        "target_lookup": 0,
+        "submit": 14968,
+        "readback": 3610,
+        "confirmation": 4219,
+        "total": 27015
+      }
+    },
+    {
+      "file": "air-navy-live-4.json",
+      "action": "get_air_regions",
+      "arguments": {},
+      "action_id": "3771a7fc-176b-42d2-8020-e5c6c6f9d8e6",
+      "status": "rejected",
+      "accepted": false,
+      "reason": "modal_blocked",
+      "duration_ms": 1062,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 16,
+        "navigation": 250,
+        "target_lookup": 0,
+        "submit": 0,
+        "readback": 0,
+        "confirmation": 0,
+        "total": 1062
+      }
+    },
+    {
+      "file": "air-navy-live-5.json",
+      "action": "get_air_regions",
+      "arguments": {},
+      "action_id": "1b62b872-af12-450c-9f79-6cbfc39e2402",
+      "status": "confirmed",
+      "accepted": true,
+      "reason": null,
+      "duration_ms": 12687,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 6375,
+        "target_lookup": 0,
+        "submit": 0,
+        "readback": 6312,
+        "confirmation": 0,
+        "total": 12687
+      }
+    },
+    {
+      "file": "air-navy-live-5.json",
+      "action": "get_air_wings",
+      "arguments": {},
+      "action_id": "1ce83de0-efb8-4660-9e4b-da9c16fe2afc",
+      "status": "confirmed",
+      "accepted": true,
+      "reason": null,
+      "duration_ms": 7938,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 4078,
+        "target_lookup": 0,
+        "submit": 0,
+        "readback": 3860,
+        "confirmation": 0,
+        "total": 7938
+      }
+    },
+    {
+      "file": "air-navy-live-5.json",
+      "action": "assign_air_wing",
+      "arguments": {
+        "wing_id": "wing-d3df1a0610da-0001-0000",
+        "region_id": 8
+      },
+      "action_id": "ff61bc14-6ccc-41aa-9ead-783c08a0b595",
+      "status": "confirmed",
+      "accepted": true,
+      "reason": null,
+      "duration_ms": 25907,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 3641,
+        "target_lookup": 0,
+        "submit": 15094,
+        "readback": 3547,
+        "confirmation": 3625,
+        "total": 25907
+      }
+    },
+    {
+      "file": "air-navy-live-5.json",
+      "action": "set_air_mission",
+      "arguments": {
+        "wing_id": "wing-d3df1a0610da-0002-0000",
+        "mission": "air_superiority"
+      },
+      "action_id": "8b218692-bf23-4f37-b650-77de9c822278",
+      "status": "confirmed",
+      "accepted": true,
+      "reason": null,
+      "duration_ms": 16265,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 3609,
+        "target_lookup": 0,
+        "submit": 4516,
+        "readback": 4609,
+        "confirmation": 3531,
+        "total": 16265
+      }
+    },
+    {
+      "file": "air-navy-live-5.json",
+      "action": "set_air_mission",
+      "arguments": {
+        "wing_id": "wing-d3df1a0610da-0003-0000",
+        "mission": "none"
+      },
+      "action_id": "604d1e43-6797-46b7-bd6f-e8dd57d917cf",
+      "status": "rejected",
+      "accepted": false,
+      "reason": "identity_mismatch",
+      "duration_ms": 8797,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 3562,
+        "target_lookup": 0,
+        "submit": 4438,
+        "readback": 0,
+        "confirmation": 0,
+        "total": 8797
+      }
+    },
+    {
+      "file": "air-navy-live-6.json",
+      "action": "get_air_regions",
+      "arguments": {},
+      "action_id": "63b671ff-8342-41a0-ade0-f5334ae3abaf",
+      "status": "confirmed",
+      "accepted": true,
+      "reason": null,
+      "duration_ms": 13422,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 7079,
+        "target_lookup": 0,
+        "submit": 0,
+        "readback": 6343,
+        "confirmation": 0,
+        "total": 13422
+      }
+    },
+    {
+      "file": "air-navy-live-6.json",
+      "action": "get_air_wings",
+      "arguments": {},
+      "action_id": "7819f0d2-4b96-4427-85aa-0aeb74c8c95d",
+      "status": "confirmed",
+      "accepted": true,
+      "reason": null,
+      "duration_ms": 8094,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 16,
+        "navigation": 4312,
+        "target_lookup": 0,
+        "submit": 0,
+        "readback": 3766,
+        "confirmation": 0,
+        "total": 8094
+      }
+    },
+    {
+      "file": "air-navy-live-6.json",
+      "action": "assign_air_wing",
+      "arguments": {
+        "wing_id": "wing-bd9a18d54e6c-0001-0000",
+        "region_id": 8
+      },
+      "action_id": "7f88af4a-3573-4fd7-9961-49d1dc33c180",
+      "status": "confirmed",
+      "accepted": true,
+      "reason": null,
+      "duration_ms": 26500,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 3578,
+        "target_lookup": 0,
+        "submit": 15141,
+        "readback": 3547,
+        "confirmation": 4234,
+        "total": 26500
+      }
+    },
+    {
+      "file": "air-navy-live-6.json",
+      "action": "set_air_mission",
+      "arguments": {
+        "wing_id": "wing-bd9a18d54e6c-0002-0000",
+        "mission": "air_superiority"
+      },
+      "action_id": "ea18bff4-c585-4a8b-b128-70f3a2011f94",
+      "status": "confirmed",
+      "accepted": true,
+      "reason": null,
+      "duration_ms": 15953,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 3641,
+        "target_lookup": 0,
+        "submit": 5234,
+        "readback": 3484,
+        "confirmation": 3594,
+        "total": 15953
+      }
+    },
+    {
+      "file": "air-navy-live-6.json",
+      "action": "set_air_mission",
+      "arguments": {
+        "wing_id": "wing-bd9a18d54e6c-0003-0000",
+        "mission": "none"
+      },
+      "action_id": "3e8fac6c-258c-415e-bc7c-61a0e264eb8c",
+      "status": "confirmed",
+      "accepted": true,
+      "reason": null,
+      "duration_ms": 16500,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 4219,
+        "target_lookup": 0,
+        "submit": 5016,
+        "readback": 3687,
+        "confirmation": 3562,
+        "total": 16500
+      }
+    },
+    {
+      "file": "air-navy-live-6.json",
+      "action": "get_navy_state",
+      "arguments": {},
+      "action_id": "7558411f-b8fa-448e-8432-36a19aa65e39",
+      "status": "confirmed",
+      "accepted": true,
+      "reason": null,
+      "duration_ms": 7437,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 3750,
+        "target_lookup": 0,
+        "submit": 0,
+        "readback": 3687,
+        "confirmation": 0,
+        "total": 7437
+      }
+    },
+    {
+      "file": "air-navy-live-6.json",
+      "action": "get_fleets",
+      "arguments": {},
+      "action_id": "6b096d34-e71c-403e-a051-6297a42dd143",
+      "status": "confirmed",
+      "accepted": true,
+      "reason": null,
+      "duration_ms": 7313,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 3578,
+        "target_lookup": 0,
+        "submit": 0,
+        "readback": 3735,
+        "confirmation": 0,
+        "total": 7313
+      }
+    },
+    {
+      "file": "air-navy-live-6.json",
+      "action": "assign_fleet_region",
+      "arguments": {
+        "fleet_id": "fleet-bd9a18d54e6c-0002-0000",
+        "region_id": 7
+      },
+      "action_id": "7f4154d1-3b3b-4557-bdc1-ae0f57b2de72",
+      "status": "rejected",
+      "accepted": false,
+      "reason": "unsupported_target",
+      "duration_ms": 0,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 0,
+        "target_lookup": 0,
+        "submit": 0,
+        "readback": 0,
+        "confirmation": 0,
+        "total": 0
+      }
+    },
+    {
+      "file": "air-navy-live-6.json",
+      "action": "set_naval_mission",
+      "arguments": {
+        "fleet_id": "fleet-bd9a18d54e6c-0002-0000",
+        "mission": "patrol"
+      },
+      "action_id": "425a7d71-0802-4395-88c9-f4265c54c129",
+      "status": "rejected",
+      "accepted": false,
+      "reason": "unsupported_target",
+      "duration_ms": 0,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 0,
+        "target_lookup": 0,
+        "submit": 0,
+        "readback": 0,
+        "confirmation": 0,
+        "total": 0
+      }
+    },
+    {
+      "file": "army-live-1.json",
+      "action": "get_armies",
+      "arguments": {},
+      "action_id": "18ef9a5a-daaf-4c81-8884-a84d041e0c1d",
+      "status": "confirmed",
+      "accepted": true,
+      "reason": null,
+      "duration_ms": 2922,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 1906,
+        "target_lookup": 0,
+        "submit": 0,
+        "readback": 1016,
+        "confirmation": 0,
+        "total": 2922
+      }
+    },
+    {
+      "file": "army-live-1.json",
+      "action": "create_army",
+      "arguments": {
+        "division_ids": [
+          "division-5fc517c96b1c-0001-0000"
+        ]
+      },
+      "action_id": "4d2eafe5-4c93-4a44-88a0-6f22bca082c6",
+      "status": "confirmed",
+      "accepted": true,
+      "reason": null,
+      "duration_ms": 12813,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 1047,
+        "target_lookup": 0,
+        "submit": 4641,
+        "readback": 3500,
+        "confirmation": 3625,
+        "total": 12813
+      }
+    },
+    {
+      "file": "army-live-1.json",
+      "action": "assign_general",
+      "arguments": {
+        "army_id": "army-5fc517c96b1c-0002-0000",
+        "general_id": "GER_erich_von_manstein"
+      },
+      "action_id": "02926a63-28f4-4dd0-8c8a-eac6612f11dd",
+      "status": "confirmed",
+      "accepted": true,
+      "reason": null,
+      "duration_ms": 18922,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 4062,
+        "target_lookup": 0,
+        "submit": 6672,
+        "readback": 4235,
+        "confirmation": 3953,
+        "total": 18922
+      }
+    },
+    {
+      "file": "army-live-1.json",
+      "action": "assign_divisions",
+      "arguments": {
+        "army_id": "army-5fc517c96b1c-0003-0000",
+        "division_ids": [
+          "division-5fc517c96b1c-0003-0001"
+        ]
+      },
+      "action_id": "0c5b5cc7-56da-47fe-9412-07ab194fc614",
+      "status": "timed_out",
+      "accepted": true,
+      "reason": "ui_timeout",
+      "duration_ms": 40656,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 3984,
+        "target_lookup": 0,
+        "submit": 9485,
+        "readback": 3953,
+        "confirmation": 13203,
+        "total": 40656
+      }
+    },
+    {
+      "file": "army-live-2.json",
+      "action": "get_armies",
+      "arguments": {},
+      "action_id": "1eb7530f-f234-4b5a-90bb-c56d595523f6",
+      "status": "rejected",
+      "accepted": false,
+      "reason": "telemetry_stale",
+      "duration_ms": 9078,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 3922,
+        "target_lookup": 0,
+        "submit": 0,
+        "readback": 4187,
+        "confirmation": 0,
+        "total": 9078
+      }
+    },
+    {
+      "file": "army-live-3.json",
+      "action": "get_armies",
+      "arguments": {},
+      "action_id": "478a23b7-da4b-46cc-94aa-ece6c63a89ff",
+      "status": "confirmed",
+      "accepted": true,
+      "reason": null,
+      "duration_ms": 8046,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 3906,
+        "target_lookup": 0,
+        "submit": 0,
+        "readback": 4140,
+        "confirmation": 0,
+        "total": 8046
+      }
+    },
+    {
+      "file": "army-live-3.json",
+      "action": "assign_divisions",
+      "arguments": {
+        "army_id": "army-a0e11c4d3ed6-0001-0000",
+        "division_ids": [
+          "division-a0e11c4d3ed6-0001-0001"
+        ]
+      },
+      "action_id": "0edd7db1-5383-43b1-8d72-9f7f47ff4c71",
+      "status": "already_satisfied",
+      "accepted": true,
+      "reason": null,
+      "duration_ms": 4313,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 4313,
+        "target_lookup": 0,
+        "submit": 0,
+        "readback": 0,
+        "confirmation": 0,
+        "total": 4313
+      }
+    },
+    {
+      "file": "army-live-3.json",
+      "action": "assign_divisions",
+      "arguments": {
+        "army_id": "army-a0e11c4d3ed6-0002-0000",
+        "division_ids": [
+          "division-a0e11c4d3ed6-0002-0002"
+        ]
+      },
+      "action_id": "2bc3fd79-0369-46bf-b1ba-c46aaa9ee861",
+      "status": "confirmed",
+      "accepted": true,
+      "reason": null,
+      "duration_ms": 23172,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 4391,
+        "target_lookup": 0,
+        "submit": 9531,
+        "readback": 4625,
+        "confirmation": 4625,
+        "total": 23172
+      }
+    },
+    {
+      "file": "army-live-3.json",
+      "action": "remove_divisions_from_army",
+      "arguments": {
+        "army_id": "army-a0e11c4d3ed6-0003-0000",
+        "division_ids": [
+          "division-a0e11c4d3ed6-0003-0001"
+        ]
+      },
+      "action_id": "a5d20fde-99c9-4006-9d08-e0722d9c85e6",
+      "status": "timed_out",
+      "accepted": true,
+      "reason": "ui_timeout",
+      "duration_ms": 39344,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 4406,
+        "target_lookup": 0,
+        "submit": 12469,
+        "readback": 12453,
+        "confirmation": 0,
+        "total": 39344
+      }
+    },
+    {
+      "file": "army-live-4.json",
+      "action": "get_armies",
+      "arguments": {},
+      "action_id": "e9f11040-765e-4d58-9a30-a786a0a3534a",
+      "status": "confirmed",
+      "accepted": true,
+      "reason": null,
+      "duration_ms": 7157,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 2797,
+        "target_lookup": 0,
+        "submit": 0,
+        "readback": 4360,
+        "confirmation": 0,
+        "total": 7157
+      }
+    },
+    {
+      "file": "army-live-4.json",
+      "action": "assign_divisions",
+      "arguments": {
+        "army_id": "army-90e893ba6625-0001-0000",
+        "division_ids": [
+          "division-90e893ba6625-0001-0001"
+        ]
+      },
+      "action_id": "ec70deb2-1990-4f09-9f89-4df8e726b4d9",
+      "status": "confirmed",
+      "accepted": true,
+      "reason": null,
+      "duration_ms": 21625,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 4062,
+        "target_lookup": 0,
+        "submit": 9266,
+        "readback": 4078,
+        "confirmation": 4219,
+        "total": 21625
+      }
+    },
+    {
+      "file": "army-live-4.json",
+      "action": "remove_divisions_from_army",
+      "arguments": {
+        "army_id": "army-90e893ba6625-0002-0000",
+        "division_ids": [
+          "division-90e893ba6625-0002-0001"
+        ]
+      },
+      "action_id": "eb8b7cd5-87a0-4762-8dc4-a7e6e0e8b0f5",
+      "status": "confirmed",
+      "accepted": true,
+      "reason": null,
+      "duration_ms": 24843,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 4515,
+        "target_lookup": 0,
+        "submit": 12078,
+        "readback": 4375,
+        "confirmation": 3875,
+        "total": 24843
+      }
+    },
+    {
+      "file": "army-live-4.json",
+      "action": "assign_divisions",
+      "arguments": {
+        "army_id": "army-90e893ba6625-0003-0000",
+        "division_ids": [
+          "division-90e893ba6625-0003-0001"
+        ]
+      },
+      "action_id": "971a217d-db42-4c3d-92ee-531b17f2fa16",
+      "status": "confirmed",
+      "accepted": true,
+      "reason": null,
+      "duration_ms": 27766,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 12953,
+        "target_lookup": 0,
+        "submit": 7703,
+        "readback": 3656,
+        "confirmation": 3454,
+        "total": 27766
+      }
+    },
+    {
+      "file": "army-live-4.json",
+      "action": "get_generals",
+      "arguments": {},
+      "action_id": "eec38b7a-8671-4c3a-8309-a098f20a32bd",
+      "status": "rejected",
+      "accepted": false,
+      "reason": "requirements_not_met",
+      "duration_ms": 6156,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 5390,
+        "target_lookup": 0,
+        "submit": 0,
+        "readback": 0,
+        "confirmation": 0,
+        "total": 6156
+      }
+    },
+    {
+      "file": "army-live-5.json",
+      "action": "get_armies",
+      "arguments": {},
+      "action_id": "796e013f-a42e-41ba-b009-c8c00247a0e2",
+      "status": "confirmed",
+      "accepted": true,
+      "reason": null,
+      "duration_ms": 3094,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 2000,
+        "target_lookup": 0,
+        "submit": 0,
+        "readback": 1094,
+        "confirmation": 0,
+        "total": 3094
+      }
+    },
+    {
+      "file": "army-live-5.json",
+      "action": "create_army",
+      "arguments": {
+        "division_ids": [
+          "division-b9e394e8556b-0001-0000"
+        ]
+      },
+      "action_id": "9378d8e2-584f-476d-b670-9a9a4ea17cd2",
+      "status": "rejected",
+      "accepted": false,
+      "reason": "identity_mismatch",
+      "duration_ms": 5953,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 984,
+        "target_lookup": 0,
+        "submit": 3766,
+        "readback": 0,
+        "confirmation": 0,
+        "total": 5953
+      }
+    },
+    {
+      "file": "army-live-6.json",
+      "action": "get_armies",
+      "arguments": {},
+      "action_id": "d183d291-e695-4568-9026-cf8232de6d31",
+      "status": "confirmed",
+      "accepted": true,
+      "reason": null,
+      "duration_ms": 3094,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 2015,
+        "target_lookup": 0,
+        "submit": 0,
+        "readback": 1079,
+        "confirmation": 0,
+        "total": 3094
+      }
+    },
+    {
+      "file": "army-live-6.json",
+      "action": "create_army",
+      "arguments": {
+        "division_ids": [
+          "division-b9d8444e3534-0001-0000"
+        ]
+      },
+      "action_id": "3a3a0c98-0be0-4b75-a8a0-ecd5d7292b06",
+      "status": "rejected",
+      "accepted": false,
+      "reason": "identity_mismatch",
+      "duration_ms": 6140,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 1437,
+        "target_lookup": 0,
+        "submit": 3969,
+        "readback": 0,
+        "confirmation": 0,
+        "total": 6140
+      }
+    },
+    {
+      "file": "army-live-7.json",
+      "action": "get_armies",
+      "arguments": {},
+      "action_id": "d3704656-2f6a-442b-8b96-21e655deb08c",
+      "status": "confirmed",
+      "accepted": true,
+      "reason": null,
+      "duration_ms": 3234,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 1984,
+        "target_lookup": 0,
+        "submit": 0,
+        "readback": 1250,
+        "confirmation": 0,
+        "total": 3234
+      }
+    },
+    {
+      "file": "army-live-7.json",
+      "action": "create_army",
+      "arguments": {
+        "division_ids": [
+          "division-427f0bb23ac7-0001-0000"
+        ]
+      },
+      "action_id": "228caee4-c05d-45a3-9345-79ca0336f23b",
+      "status": "confirmed",
+      "accepted": true,
+      "reason": null,
+      "duration_ms": 12672,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 1047,
+        "target_lookup": 0,
+        "submit": 4563,
+        "readback": 3625,
+        "confirmation": 3437,
+        "total": 12672
+      }
+    },
+    {
+      "file": "army-live-7.json",
+      "action": "assign_general",
+      "arguments": {
+        "army_id": "army-427f0bb23ac7-0002-0000",
+        "general_id": "GER_erich_von_manstein"
+      },
+      "action_id": "12100a70-f312-426a-aab2-c2e1609bf106",
+      "status": "confirmed",
+      "accepted": true,
+      "reason": null,
+      "duration_ms": 17047,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 3656,
+        "target_lookup": 0,
+        "submit": 6375,
+        "readback": 3610,
+        "confirmation": 3406,
+        "total": 17047
+      }
+    },
+    {
+      "file": "army-live-7.json",
+      "action": "assign_divisions",
+      "arguments": {
+        "army_id": "army-427f0bb23ac7-0003-0000",
+        "division_ids": [
+          "division-427f0bb23ac7-0003-0001"
+        ]
+      },
+      "action_id": "abe31c30-5dbd-44d2-a024-59d5f512cc97",
+      "status": "confirmed",
+      "accepted": true,
+      "reason": null,
+      "duration_ms": 18281,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 3547,
+        "target_lookup": 0,
+        "submit": 7656,
+        "readback": 3594,
+        "confirmation": 3484,
+        "total": 18281
+      }
+    },
+    {
+      "file": "army-live-7.json",
+      "action": "assign_divisions",
+      "arguments": {
+        "army_id": "army-427f0bb23ac7-0004-0000",
+        "division_ids": [
+          "division-427f0bb23ac7-0004-0002"
+        ]
+      },
+      "action_id": "680abf4c-c785-43cb-a483-4f2e5a01f5b3",
+      "status": "uncertain",
+      "accepted": true,
+      "reason": "telemetry_stale",
+      "duration_ms": 19782,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 3594,
+        "target_lookup": 0,
+        "submit": 8563,
+        "readback": 3437,
+        "confirmation": 3453,
+        "total": 19782
+      }
+    },
+    {
+      "file": "front-live-1.json",
+      "action": "get_armies",
+      "arguments": {},
+      "action_id": "3576499b-8776-4346-8528-41dd78fb9a46",
+      "status": "confirmed",
+      "accepted": true,
+      "reason": null,
+      "duration_ms": 7375,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 3875,
+        "target_lookup": 0,
+        "submit": 0,
+        "readback": 3500,
+        "confirmation": 0,
+        "total": 7375
+      }
+    },
+    {
+      "file": "front-live-1.json",
+      "action": "get_generals",
+      "arguments": {},
+      "action_id": "22e23b4c-52ca-4dc9-a4c3-f6483c4da8ee",
+      "status": "confirmed",
+      "accepted": true,
+      "reason": null,
+      "duration_ms": 7875,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 4156,
+        "target_lookup": 0,
+        "submit": 0,
+        "readback": 3719,
+        "confirmation": 0,
+        "total": 7875
+      }
+    },
+    {
+      "file": "front-live-1.json",
+      "action": "get_fronts",
+      "arguments": {},
+      "action_id": "666b86fe-843b-4e8c-8cec-2514a1d1493b",
+      "status": "confirmed",
+      "accepted": true,
+      "reason": null,
+      "duration_ms": 8890,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 4594,
+        "target_lookup": 0,
+        "submit": 0,
+        "readback": 4296,
+        "confirmation": 0,
+        "total": 8890
+      }
+    },
+    {
+      "file": "front-live-1.json",
+      "action": "create_frontline",
+      "arguments": {
+        "army_id": "army-34889710b91b-0002-0000",
+        "target_id": "GER_POL_mainland"
+      },
+      "action_id": "7855a326-03d3-4090-a2f1-7a5c61ea2b81",
+      "status": "rejected",
+      "accepted": false,
+      "reason": "map_target_unresolved",
+      "duration_ms": 11297,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 4360,
+        "target_lookup": 0,
+        "submit": 6187,
+        "readback": 0,
+        "confirmation": 0,
+        "total": 11297
+      }
+    },
+    {
+      "file": "front-live-10.json",
+      "action": "get_fronts",
+      "arguments": {},
+      "action_id": "b2e9f6a9-d53b-45a7-802c-990ee7211cb0",
+      "status": "confirmed",
+      "accepted": true,
+      "reason": null,
+      "duration_ms": 16047,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 8031,
+        "target_lookup": 0,
+        "submit": 0,
+        "readback": 8016,
+        "confirmation": 0,
+        "total": 16047
+      }
+    },
+    {
+      "file": "front-live-10.json",
+      "action": "create_frontline",
+      "arguments": {
+        "army_id": "army-8f4e6e4fbe61-0001-0000",
+        "target_id": "GER_POL_mainland"
+      },
+      "action_id": "c76d5c65-0002-4e89-87dc-f73c79b57589",
+      "status": "confirmed",
+      "accepted": true,
+      "reason": null,
+      "duration_ms": 33234,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 8203,
+        "target_lookup": 0,
+        "submit": 9547,
+        "readback": 7625,
+        "confirmation": 7859,
+        "total": 33234
+      }
+    },
+    {
+      "file": "front-live-2.json",
+      "action": "get_armies",
+      "arguments": {},
+      "action_id": "572b0a47-1134-4b49-a723-ce7839f22a9a",
+      "status": "confirmed",
+      "accepted": true,
+      "reason": null,
+      "duration_ms": 7140,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 15,
+        "navigation": 3547,
+        "target_lookup": 0,
+        "submit": 0,
+        "readback": 3578,
+        "confirmation": 0,
+        "total": 7140
+      }
+    },
+    {
+      "file": "front-live-2.json",
+      "action": "get_generals",
+      "arguments": {},
+      "action_id": "348f55f4-616b-4e0f-8c90-b4b618f9f755",
+      "status": "confirmed",
+      "accepted": true,
+      "reason": null,
+      "duration_ms": 7110,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 3657,
+        "target_lookup": 0,
+        "submit": 0,
+        "readback": 3453,
+        "confirmation": 0,
+        "total": 7110
+      }
+    },
+    {
+      "file": "front-live-2.json",
+      "action": "get_supply_status",
+      "arguments": {
+        "army_id": "army-f4def593a2e8-0001-0000"
+      },
+      "action_id": "11910630-e521-4197-9f6d-738c155420dc",
+      "status": "confirmed",
+      "accepted": true,
+      "reason": null,
+      "duration_ms": 8578,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 4297,
+        "target_lookup": 0,
+        "submit": 0,
+        "readback": 4281,
+        "confirmation": 0,
+        "total": 8578
+      }
+    },
+    {
+      "file": "front-live-2.json",
+      "action": "get_fronts",
+      "arguments": {},
+      "action_id": "f45f0733-6880-43ad-836d-759768f2c983",
+      "status": "confirmed",
+      "accepted": true,
+      "reason": null,
+      "duration_ms": 9047,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 4547,
+        "target_lookup": 0,
+        "submit": 0,
+        "readback": 4500,
+        "confirmation": 0,
+        "total": 9047
+      }
+    },
+    {
+      "file": "front-live-2.json",
+      "action": "create_frontline",
+      "arguments": {
+        "army_id": "army-f4def593a2e8-0002-0000",
+        "target_id": "GER_POL_mainland"
+      },
+      "action_id": "11ebf3be-0065-412f-8690-f6af68adac25",
+      "status": "uncertain",
+      "accepted": true,
+      "reason": "readback_ambiguous",
+      "duration_ms": 17359,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 4797,
+        "target_lookup": 0,
+        "submit": 7562,
+        "readback": 4250,
+        "confirmation": 0,
+        "total": 17359
+      }
+    },
+    {
+      "file": "front-live-3.json",
+      "action": "get_fronts",
+      "arguments": {},
+      "action_id": "7c974905-65d1-44e2-81bb-c799c6748ee9",
+      "status": "confirmed",
+      "accepted": true,
+      "reason": null,
+      "duration_ms": 8922,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 4547,
+        "target_lookup": 0,
+        "submit": 0,
+        "readback": 4375,
+        "confirmation": 0,
+        "total": 8922
+      }
+    },
+    {
+      "file": "front-live-3.json",
+      "action": "create_frontline",
+      "arguments": {
+        "army_id": "army-9583994ec34f-0001-0000",
+        "target_id": "GER_POL_mainland"
+      },
+      "action_id": "03d434a7-0368-4f0e-9aa0-112d8e9a089f",
+      "status": "uncertain",
+      "accepted": true,
+      "reason": "readback_ambiguous",
+      "duration_ms": 16969,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 4437,
+        "target_lookup": 0,
+        "submit": 6985,
+        "readback": 4781,
+        "confirmation": 0,
+        "total": 16969
+      }
+    },
+    {
+      "file": "front-live-4.json",
+      "action": "get_fronts",
+      "arguments": {},
+      "action_id": "361e7e9a-cc02-4397-9358-54edb1874b37",
+      "status": "rejected",
+      "accepted": false,
+      "reason": "readback_ambiguous",
+      "duration_ms": 12312,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 15,
+        "navigation": 6360,
+        "target_lookup": 0,
+        "submit": 0,
+        "readback": 5156,
+        "confirmation": 0,
+        "total": 12312
+      }
+    },
+    {
+      "file": "front-live-5.json",
+      "action": "get_fronts",
+      "arguments": {},
+      "action_id": "6d4a56ed-5c8e-4d03-8f2e-619fb22f9e4e",
+      "status": "confirmed",
+      "accepted": true,
+      "reason": null,
+      "duration_ms": 14907,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 6610,
+        "target_lookup": 0,
+        "submit": 0,
+        "readback": 8297,
+        "confirmation": 0,
+        "total": 14907
+      }
+    },
+    {
+      "file": "front-live-5.json",
+      "action": "create_frontline",
+      "arguments": {
+        "army_id": "army-5d2d9d29682b-0001-0000",
+        "target_id": "GER_POL_mainland"
+      },
+      "action_id": "066ffef7-6d43-40df-b465-280431753b67",
+      "status": "rejected",
+      "accepted": false,
+      "reason": "readback_ambiguous",
+      "duration_ms": 15250,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 15,
+        "navigation": 6516,
+        "target_lookup": 0,
+        "submit": 7859,
+        "readback": 0,
+        "confirmation": 0,
+        "total": 15250
+      }
+    },
+    {
+      "file": "front-live-6.json",
+      "action": "get_fronts",
+      "arguments": {},
+      "action_id": "431e01fe-b191-42ae-aa71-fae1b812c405",
+      "status": "rejected",
+      "accepted": false,
+      "reason": "identity_mismatch",
+      "duration_ms": 3219,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 2000,
+        "target_lookup": 0,
+        "submit": 0,
+        "readback": 0,
+        "confirmation": 0,
+        "total": 3219
+      }
+    },
+    {
+      "file": "front-live-7.json",
+      "action": "get_fronts",
+      "arguments": {},
+      "action_id": "573867c7-4b69-400d-ae65-4c68855deb9e",
+      "status": "confirmed",
+      "accepted": true,
+      "reason": null,
+      "duration_ms": 14360,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 7297,
+        "target_lookup": 0,
+        "submit": 0,
+        "readback": 7063,
+        "confirmation": 0,
+        "total": 14360
+      }
+    },
+    {
+      "file": "front-live-7.json",
+      "action": "create_frontline",
+      "arguments": {
+        "army_id": "army-d48f3efe2116-0001-0000",
+        "target_id": "GER_POL_mainland"
+      },
+      "action_id": "be187c40-b62e-4f14-89e0-f3b7539562dd",
+      "status": "rejected",
+      "accepted": false,
+      "reason": "modal_blocked",
+      "duration_ms": 7187,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 6453,
+        "target_lookup": 0,
+        "submit": 0,
+        "readback": 0,
+        "confirmation": 0,
+        "total": 7187
+      }
+    },
+    {
+      "file": "front-live-8.json",
+      "action": "get_fronts",
+      "arguments": {},
+      "action_id": "11bd7a79-517c-4b32-8d17-2f173f6905c8",
+      "status": "confirmed",
+      "accepted": true,
+      "reason": null,
+      "duration_ms": 14109,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 7312,
+        "target_lookup": 0,
+        "submit": 0,
+        "readback": 6797,
+        "confirmation": 0,
+        "total": 14109
+      }
+    },
+    {
+      "file": "front-live-8.json",
+      "action": "create_frontline",
+      "arguments": {
+        "army_id": "army-3b7b17a3205b-0001-0000",
+        "target_id": "GER_POL_mainland"
+      },
+      "action_id": "c3ed54e0-2a26-42fd-a6e3-ba5de0b50b4a",
+      "status": "uncertain",
+      "accepted": true,
+      "reason": "modal_blocked",
+      "duration_ms": 31719,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 7875,
+        "target_lookup": 0,
+        "submit": 10016,
+        "readback": 6812,
+        "confirmation": 6266,
+        "total": 31719
+      }
+    },
+    {
+      "file": "front-live-9.json",
+      "action": "get_fronts",
+      "arguments": {},
+      "action_id": "be6e86ea-8b15-4bae-8a24-04d8cd8192ae",
+      "status": "confirmed",
+      "accepted": true,
+      "reason": null,
+      "duration_ms": 14125,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 7329,
+        "target_lookup": 0,
+        "submit": 0,
+        "readback": 6796,
+        "confirmation": 0,
+        "total": 14125
+      }
+    },
+    {
+      "file": "front-live-9.json",
+      "action": "create_frontline",
+      "arguments": {
+        "army_id": "army-75e07ba395ad-0001-0000",
+        "target_id": "GER_POL_mainland"
+      },
+      "action_id": "ff340ba8-5ef7-4a2c-868e-23e9a5b14241",
+      "status": "already_satisfied",
+      "accepted": true,
+      "reason": null,
+      "duration_ms": 7469,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 7469,
+        "target_lookup": 0,
+        "submit": 0,
+        "readback": 0,
+        "confirmation": 0,
+        "total": 7469
+      }
+    },
+    {
+      "file": "front-live-9.json",
+      "action": "create_frontline",
+      "arguments": {
+        "army_id": "army-75e07ba395ad-0002-0000",
+        "target_id": "GER_POL_east_prussia"
+      },
+      "action_id": "bfdf16d4-3d4c-45d9-b804-34e3b1646c68",
+      "status": "confirmed",
+      "accepted": true,
+      "reason": null,
+      "duration_ms": 30766,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 6797,
+        "target_lookup": 0,
+        "submit": 10188,
+        "readback": 6843,
+        "confirmation": 6938,
+        "total": 30766
+      }
+    },
+    {
+      "file": "front-live-9.json",
+      "action": "execute_plan",
+      "arguments": {
+        "army_id": "army-75e07ba395ad-0003-0000"
+      },
+      "action_id": "7c6f97c6-9b3a-47dd-ac92-71aa582ae681",
+      "status": "confirmed",
+      "accepted": true,
+      "reason": null,
+      "duration_ms": 34156,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 9078,
+        "target_lookup": 0,
+        "submit": 8750,
+        "readback": 8484,
+        "confirmation": 7844,
+        "total": 34156
+      }
+    },
+    {
+      "file": "front-live-9.json",
+      "action": "stop_plan",
+      "arguments": {
+        "army_id": "army-75e07ba395ad-0004-0000"
+      },
+      "action_id": "a805a6a2-d600-40c1-b794-9fec4720725d",
+      "status": "confirmed",
+      "accepted": true,
+      "reason": null,
+      "duration_ms": 32250,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 8250,
+        "target_lookup": 0,
+        "submit": 8078,
+        "readback": 7687,
+        "confirmation": 8235,
+        "total": 32250
+      }
+    },
+    {
+      "file": "navy-live-1.json",
+      "action": "get_navy_state",
+      "arguments": {},
+      "action_id": "b1591939-aa3e-433e-a9d7-93b8730203ef",
+      "status": "rejected",
+      "accepted": false,
+      "reason": "modal_blocked",
+      "duration_ms": 5313,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 4000,
+        "target_lookup": 0,
+        "submit": 0,
+        "readback": 250,
+        "confirmation": 0,
+        "total": 5313
+      }
+    },
+    {
+      "file": "navy-live-2.json",
+      "action": "get_navy_state",
+      "arguments": {},
+      "action_id": "b1938838-a57a-4177-a4c9-852047fe3efc",
+      "status": "confirmed",
+      "accepted": true,
+      "reason": null,
+      "duration_ms": 7828,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 4234,
+        "target_lookup": 0,
+        "submit": 0,
+        "readback": 3594,
+        "confirmation": 0,
+        "total": 7828
+      }
+    },
+    {
+      "file": "navy-live-2.json",
+      "action": "get_fleets",
+      "arguments": {},
+      "action_id": "91722883-f689-401f-85ec-02ebaf3aedb9",
+      "status": "confirmed",
+      "accepted": true,
+      "reason": null,
+      "duration_ms": 8422,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 4469,
+        "target_lookup": 0,
+        "submit": 0,
+        "readback": 3953,
+        "confirmation": 0,
+        "total": 8422
+      }
+    },
+    {
+      "file": "navy-live-2.json",
+      "action": "assign_fleet_region",
+      "arguments": {
+        "fleet_id": "fleet-429ea705527b-0002-0000",
+        "region_id": 7
+      },
+      "action_id": "e0223574-cf8d-41ea-8e78-13e28fef4454",
+      "status": "rejected",
+      "accepted": false,
+      "reason": "unsupported_target",
+      "duration_ms": 0,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 0,
+        "target_lookup": 0,
+        "submit": 0,
+        "readback": 0,
+        "confirmation": 0,
+        "total": 0
+      }
+    },
+    {
+      "file": "navy-live-2.json",
+      "action": "set_naval_mission",
+      "arguments": {
+        "fleet_id": "fleet-429ea705527b-0002-0000",
+        "mission": "patrol"
+      },
+      "action_id": "63d06a6f-56cb-44b9-b49a-b37650ac9d8e",
+      "status": "rejected",
+      "accepted": false,
+      "reason": "unsupported_target",
+      "duration_ms": 0,
+      "retry_count": 0,
+      "timings_ms": {
+        "precheck": 0,
+        "navigation": 0,
+        "target_lookup": 0,
+        "submit": 0,
+        "readback": 0,
+        "confirmation": 0,
+        "total": 0
+      }
+    }
+  ],
+  "limitations": {
+    "offensive_line": "Documented backend has no right-button drag",
+    "move_divisions": "Province identity and order readback uncalibrated",
+    "naval_mutations": "Sea region mapping and mission readback uncalibrated"
+  }
+}

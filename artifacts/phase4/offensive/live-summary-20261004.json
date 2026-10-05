@@ -1,0 +1,98 @@
+{
+  "date": "2026-10-04",
+  "phase4_status": "IN PROGRESS / PARTIAL / OFFLINE TESTED / LIMITED LIVE VERIFIED",
+  "scope": "offensive line only; prior military components not revalidated",
+  "completion_gate": {
+    "action": "create_offensive_line",
+    "required_independent_sdk_confirmed": 2,
+    "confirmed": 0
+  },
+  "native_primitive": {
+    "implemented": true,
+    "offline_tests": 26,
+    "sdk_attachment_verified": true,
+    "live_input_verified": false
+  },
+  "new_sessions": {
+    "official_sdk_metadata_sessions": 1,
+    "offensive_action_calls": 0,
+    "native_input_calls": 0,
+    "confirmed": 0,
+    "retry_count": 0
+  },
+  "profile": {
+    "required_capture": [
+      2560,
+      1080
+    ],
+    "actual_capture": [
+      2048,
+      1280
+    ],
+    "actual_client": [
+      2048,
+      1280
+    ],
+    "settings_restored": {
+      "resolution": [
+        2560,
+        1600
+      ],
+      "mode": "fullscreen",
+      "refresh_hz": 60,
+      "gui_scale": 1.0
+    },
+    "gui_available_resolutions": [
+      [
+        1280,
+        720
+      ],
+      [
+        2560,
+        1600
+      ]
+    ],
+    "restart_required_by_gui": true,
+    "game_restarted": false,
+    "native_geometry_precheck": {
+      "status": "rejected",
+      "reason": "unsupported_resolution"
+    },
+    "saved_capture_reader": {
+      "status": "rejected",
+      "reason": "unsupported_resolution",
+      "source": "offline replay of current real screenshot; no GUI navigation"
+    },
+    "os_display_settings_changed": false
+  },
+  "pending": [
+    "offensive target/segment calibration on existing fixed map profile",
+    "army/front identity and offensive tool pipeline",
+    "new-order/excess-order repeated readback and dedicated tests",
+    "two independent official SDK stdio confirmed"
+  ],
+  "final_game": {
+    "source": "real Computer Use screenshot, manual visual inspection",
+    "date": "1936-01-01 12:00",
+    "paused": true,
+    "open": true,
+    "military_orders_submitted": 0,
+    "dates_advanced": false,
+    "fresh_current_telemetry": "UNKNOWN; SDK only replayed historical paused log"
+  },
+  "files": {
+    "checked": 11,
+    "unchanged": true
+  },
+  "evidence": {
+    "readiness": "readiness.json",
+    "verification": "verification.json",
+    "final_screenshot": "captures/final-paused.jpg",
+    "baseline_hashes": "baseline-files.json",
+    "final_hashes": "final-files.json"
+  },
+  "prior_evidence": "../live-summary-20261002.json; 25 action sessions / 74 calls / 47 confirmed unchanged",
+  "commit": false,
+  "push": false,
+  "phase5": false
+}

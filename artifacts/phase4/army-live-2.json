@@ -1,0 +1,129 @@
+{
+  "source": "LIVE HOI4 / official SDK stdio / military semantic API / normal GUI",
+  "actions": [
+    {
+      "action": "get_armies",
+      "arguments": {},
+      "result": {
+        "action": "get_armies",
+        "accepted": false,
+        "status": "rejected",
+        "action_id": "1eb7530f-f234-4b5a-90bb-c56d595523f6",
+        "retry_count": 0,
+        "duration_ms": 9078,
+        "timings_ms": {
+          "precheck": 0,
+          "navigation": 3922,
+          "target_lookup": 0,
+          "submit": 0,
+          "readback": 4187,
+          "confirmation": 0,
+          "total": 9078
+        },
+        "reason": "telemetry_stale",
+        "recovery": "escape_sent"
+      }
+    }
+  ],
+  "tool_names": [
+    "get_armies",
+    "get_army",
+    "get_divisions",
+    "get_division",
+    "get_generals",
+    "create_army",
+    "assign_divisions",
+    "remove_divisions_from_army",
+    "assign_general",
+    "get_fronts",
+    "get_supply_status",
+    "get_air_state",
+    "get_navy_state",
+    "get_air_wings",
+    "get_air_regions",
+    "get_fleets",
+    "get_production_lines",
+    "set_production_factory_count",
+    "get_equipment_catalog",
+    "create_production_line",
+    "delete_production_line",
+    "reorder_production_line",
+    "get_construction",
+    "build",
+    "cancel_construction",
+    "change_construction_priority",
+    "change_economy_law",
+    "change_conscription_law",
+    "get_advisors",
+    "hire_advisor",
+    "get_trade_state",
+    "set_trade_import",
+    "select_research",
+    "select_focus",
+    "get_summary",
+    "get_politics",
+    "get_industry",
+    "get_research",
+    "get_focus",
+    "get_changes",
+    "get_diagnostics"
+  ],
+  "before_telemetry": {
+    "status": "fresh",
+    "received_at": "2026-10-02T01:27:09.970543+00:00",
+    "game_date": " 24:00, 12 1月, 1936",
+    "latest_seq": 706651,
+    "state": {
+      "protocol_version": 2,
+      "seq": 706651,
+      "game_date": " 24:00, 12 1月, 1936",
+      "country": "GER",
+      "politics": {
+        "political_power": 15.888,
+        "stability": 0.81,
+        "war_support": 0.35
+      },
+      "manpower": {
+        "available": 1332576,
+        "source_thousands": 1332.576
+      },
+      "industry": {
+        "civilian_factories": 35,
+        "military_factories": 28,
+        "dockyards": 10
+      },
+      "origin": "daily",
+      "research": {
+        "slot_count": 4,
+        "tracked_technologies": [
+          {
+            "tech_id": "basic_machine_tools",
+            "researching": true,
+            "researched": false
+          },
+          {
+            "tech_id": "construction1",
+            "researching": true,
+            "researched": false
+          },
+          {
+            "tech_id": "electronic_mechanical_engineering",
+            "researching": true,
+            "researched": false
+          }
+        ]
+      },
+      "focus": {
+        "tracked_id": "GER_remilitarize_the_rhineland",
+        "completed": false,
+        "progress_lower_bound": 0.3,
+        "progress_upper_bound": 0.4
+      }
+    },
+    "parser_errors": [],
+    "session_id": "ca83ce06-7a64-4cc0-a3f6-560c73e1146b",
+    "revision": 0,
+    "freshness_basis": "log_mtime_upper_bound",
+    "log_read_error": null
+  }
+}

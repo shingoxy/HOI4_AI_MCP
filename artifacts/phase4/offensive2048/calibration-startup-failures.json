@@ -1,0 +1,18 @@
+[
+  {
+    "target": "mainland",
+    "submit_count": 0,
+    "retry_count": 0,
+    "error": "worker_timeout",
+    "duration_ms": 10234,
+    "source": "original execution result, before pump readiness wait"
+  },
+  {
+    "source": "manual guarded calibration; not SDK confirmed",
+    "target": "mainland",
+    "submit_count": 0,
+    "retry_count": 0,
+    "error": "Computer Use pump unavailable",
+    "duration_ms": 60375
+  }
+]

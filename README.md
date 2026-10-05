@@ -1,6 +1,8 @@
 # HOI4 AI Operator
 
-Phase 3B-1 Production GUI Executor PoC 已离线测试及实机验证：生产 snapshot 和正常增减工厂，三次 confirmed，范围见 [Phase 3B-1 报告](PHASE3B1_PRODUCTION_EXECUTOR.md)。Phase 3A 的 Research / Focus 各三次实机确认及 Phase 2A / 2B 只读 telemetry 验收保持有效；阶段边界见 [STATUS.md](STATUS.md)。
+当前为 **Phase 4 Military Control：COMPLETE / OFFLINE TESTED / LIMITED LIVE VERIFIED**。有限组军、师分配 / 移除、任命将领、两处前线、计划开关、单师补给、空军分配 / 制空和海军观察的既有验收保留。新增独立 2048×1280 / UI scale 1.0 进攻线 profile，保留原 2560×1080 profile；两个本土进攻方向分别通过独立官方 SDK stdio → 一次受限原生右拖 → 正常 GUI → 重复回读 confirmed。未进入 Phase 5。范围与失败见 [Phase 4 报告](PHASE4_MILITARY_CONTROL.md)，当前状态见 [STATUS.md](STATUS.md)。
+
+全项目回归 **295 passed / 10 subtests passed**。Phase 3 非军事 Executor 已完成限定验收并提交为 `2b1e1f3`；Research / Focus 和 Phase 2 只读 telemetry 的历史证据保留。
 
 ```text
 Telemetry Mod → game.log → FrameParser / StateCache → MCP stdio
@@ -45,7 +47,20 @@ args:    ["D:\Projects\HOI4 AI Operator\scripts\run_mcp.py"]
 | `get_changes(after_revision=0)` | 本次进程内最多 100 条变化；重复查询不消耗记录 |
 | `get_diagnostics()` | 日志读错误、parser 错误、日志 generation、未知字段 |
 
-资源 `hoi4://state/current` 返回 JSON 状态；`hoi4://telemetry/capabilities` 列出可读范围及 GUI action 连接状态。以上七个查询工具标注只读，返回 `structuredContent` 和兼容的文本内容。v0.5.0 另提供 `select_research(slot, tech_id)` / `select_focus(focus_id)`、`get_production_lines()` / `set_production_factory_count(line_id, factories)`；四个 GUI 工具都标注非只读，getter 只导航/观察。默认启动不连接 Executor，返回 `executor_not_connected`。显式连接既有游戏窗口及 Computer Use pump 的方式见 Phase 3A 报告；Production 使用 session-local GUI ID，完整范围见 Phase 3B-1 报告。现有 Codex 接入配置仍仅启用七个查询工具，新增 GUI 工具当前聊天接入未验证。
+资源 `hoi4://state/current` 返回 JSON 状态；`hoi4://telemetry/capabilities` 列出可读范围及 GUI action 连接状态。以上七个查询工具标注只读，返回 `structuredContent` 和兼容文本。MCP v0.7.0 共 50 个工具，包含历史 Research / Focus / Production、Phase 3 非军事动作及 25 个 Phase 4 工具。默认启动不连接 GUI Executor，GUI 调用返回未连接结果；现有 Codex 配置未启用 Executor，新增 GUI 工具当前聊天接入未验证。
+
+显式连接既有 HOI4 窗口和已授权 Computer Use pump 的方式见 [Phase 3A 报告](PHASE3A_GUI_EXECUTOR.md)。私有启动参数 `--gui-window` 指定实际窗口，`--non-military` 启用 Phase 3、`--military` 启用 Phase 4；它们不允许 Agent 通过动作参数传坐标或 backend。GUI getter 会导航，因此均标注非只读。军事对象 ID 是 session-local，刷新后必须使用新 ID。
+
+| Phase 4 工具组 | 范围 |
+|---|---|
+| Army / Division / General | 观察及创建第1集团军，单师分配 / 移除，任命曼施坦因；只覆盖三个已知师 |
+| Front / Plan / Supply | 两处德波边界前线，整体计划执行 / 停止，单师补给 tooltip |
+| Offensive Line | 独立 2048×1280 profile；第1集团军 / 单个装甲师 / 无将领，波兹南以东和波兰东北两个本土方向，要求订单视口为空 |
+| Air | 单个 80/100 战斗机联队，东德意志 region 8，制空 / 关闭 |
+| Navy | 单支 12 艘舰船 task force 观察；海域分配 / 任务未校准，拒绝 |
+| 尚未支持 | `move_divisions`、`assign_fleet_region`、`set_naval_mission` 明确拒绝；任意分辨率 / camera 拒绝 |
+
+工具列表发现、离线测试、人工校准与实际动作确认是不同证据。军事字段标为 GUI / derived / unknown，未扩展军事 telemetry；不支持通用军队、任意地图或完整海空军控制。历史官方 SDK 47 次 confirmed 保留，本轮增加 get_fronts ×2 和 offensive line ×2，具体计数及失败见 Phase 4 报告。
 
 ## 时效、读档与通知
 

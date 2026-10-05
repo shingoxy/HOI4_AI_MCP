@@ -30,6 +30,7 @@ class ComputerUseWorker:
         self.token = secrets.token_urlsafe(32)
         self.hwnd = hwnd
         self.last_capture = None
+        self.last_capture_size = None
         self.last_poll = 0.0
         worker = self
 
@@ -133,6 +134,7 @@ class ComputerUseWorker:
         raw = base64.b64decode(result["image_base64"], validate=True)
         rgb = np.asarray(Image.open(BytesIO(raw)).convert("RGB"))
         self.last_capture = result["screenshot_id"]
+        self.last_capture_size = (rgb.shape[1], rgb.shape[0])
         return rgb
 
     def click(self, point, *, button="left"):

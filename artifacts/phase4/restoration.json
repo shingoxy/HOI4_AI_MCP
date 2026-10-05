@@ -1,0 +1,127 @@
+{
+  "source": "normal GUI load and real paused screenshots; no post-load SDK live confirmation",
+  "save": "GER_1936_01_01_12.hoi4",
+  "game_date": "1936-01-01 12:00",
+  "paused": true,
+  "known_divisions": [
+    {
+      "field_sources": {
+        "name": "gui",
+        "unit_type": "derived",
+        "owner": "derived",
+        "army_name": "gui",
+        "province_id": "unknown",
+        "supply_quality": "unknown"
+      },
+      "name": "1. Infanterie-Division",
+      "unit_type": "infantry",
+      "owner": "GER",
+      "army_name": null,
+      "province_id": null,
+      "supply_quality": null
+    },
+    {
+      "field_sources": {
+        "name": "gui",
+        "unit_type": "derived",
+        "owner": "derived",
+        "army_name": "gui",
+        "province_id": "unknown",
+        "supply_quality": "unknown"
+      },
+      "name": "1. Panzer-Division",
+      "unit_type": "armor",
+      "owner": "GER",
+      "army_name": null,
+      "province_id": null,
+      "supply_quality": null
+    },
+    {
+      "field_sources": {
+        "name": "gui",
+        "unit_type": "derived",
+        "owner": "derived",
+        "army_name": "gui",
+        "province_id": "unknown",
+        "supply_quality": "unknown"
+      },
+      "name": "10. Infanterie-Division",
+      "unit_type": "infantry",
+      "owner": "GER",
+      "army_name": null,
+      "province_id": null,
+      "supply_quality": null
+    }
+  ],
+  "no_army_card": true,
+  "known_air_wing": {
+    "field_sources": {
+      "name": "gui",
+      "unit_type": "derived",
+      "owner": "derived",
+      "base_name": "gui",
+      "aircraft_count": "gui",
+      "capacity": "gui",
+      "region_id": "gui",
+      "missions": "gui",
+      "mission_efficiency": "unknown"
+    },
+    "name": "第132战斗机联队",
+    "unit_type": "fighter",
+    "owner": "GER",
+    "base_name": "勃兰登堡",
+    "aircraft_count": 80,
+    "capacity": 100,
+    "region_id": null,
+    "missions": [],
+    "mission_efficiency": null
+  },
+  "file_hashes": {
+    "saves": [
+      {
+        "name": "autosave.hoi4",
+        "sha256": "e27d9f5fc7e22c52b4ae092d415797f0fd226822ca46d7fb3d96a747f762a460",
+        "unchanged": true
+      },
+      {
+        "name": "GER_1936_01_01_12.hoi4",
+        "sha256": "7964a9999af7877a3afd7f22b0981689d961046970688734c26b345be0fe348b",
+        "unchanged": true
+      },
+      {
+        "name": "GER_1936_01_06_23.hoi4",
+        "sha256": "37cb12bc948a34d1c445e6787c6354828614dc45920b3b1acfeead34633850f9",
+        "unchanged": true
+      },
+      {
+        "name": "GER_1936_01_22_11.hoi4",
+        "sha256": "cb7e5356af7dcf4b8a3a47714a8e283e12d0c1463bc0ae0c6a739c9d21d1fdc6",
+        "unchanged": true
+      },
+      {
+        "name": "PRC_1936_10_12_10.hoi4",
+        "sha256": "5562fbbeade99b3db7f1081485b2c636c1a696fac6342a475e3d0692d19aecf4",
+        "unchanged": true
+      },
+      {
+        "name": "PRC_1939_08_12_09.hoi4",
+        "sha256": "168e5ef9ade1e9736cc55c77ff19d8e1d7518288f3a894dd42e90cfd1ef6d027",
+        "unchanged": true
+      },
+      {
+        "name": "PRC_1942_02_28_03.hoi4",
+        "sha256": "ce1f4b6dffa621c4d4d3b700bab8cf9fe5bb62edf01d7b52ee79878224778a16",
+        "unchanged": true
+      },
+      {
+        "name": "PRC_1942_06_01_02.hoi4",
+        "sha256": "7188f1bc326778da78be7943731d245f5b1333634a35a9ff8e7d1ba332bc25d7",
+        "unchanged": true
+      }
+    ],
+    "mod_sha256": "f3c55e20cdd8c2de4fa21f4fa94350590e3ae40f8b5e0a2d1bd8a204af485cdb",
+    "mod_unchanged": true
+  },
+  "post_load_telemetry": "UNKNOWN; paused without two new daily frames",
+  "restoration_during_minimized_window": "User-authorized normal window activation after refreshing accessibility state; executor guard not bypassed"
+}
