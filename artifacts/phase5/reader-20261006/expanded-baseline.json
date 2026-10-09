@@ -1,0 +1,32 @@
+[
+  {
+    "source": "production-1-0-before.png",
+    "numeric_AND_grid": 10,
+    "header": "20/28"
+  },
+  {
+    "source": "production-3-0-before.png",
+    "numeric_AND_grid": 10,
+    "header": "20/28"
+  },
+  {
+    "source": "production-after-uncertain.png",
+    "numeric_AND_grid": 10,
+    "header": "20/28"
+  },
+  {
+    "source": "production-nav.png",
+    "numeric_AND_grid": 10,
+    "header": "20/28"
+  },
+  {
+    "source": "production-readback-1-production-readback.png",
+    "numeric_AND_grid": 11,
+    "header": "21/28"
+  },
+  {
+    "source": "production-readback-2-production-readback.png",
+    "numeric_AND_grid": 11,
+    "header": "21/28"
+  }
+]

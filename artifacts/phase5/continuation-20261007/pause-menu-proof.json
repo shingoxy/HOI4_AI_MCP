@@ -1,0 +1,12 @@
+{
+  "status": "confirmed",
+  "paused": true,
+  "source": "existing calibrated known_GUI_game_menu",
+  "capture": "final-physical.png",
+  "template": "artifacts/phase5/templates/clock_menu.png",
+  "score": 1.0,
+  "threshold": 0.9,
+  "input_count": 0,
+  "pump": "OFF",
+  "original_clock_reader": "UNKNOWN / clock_header_unrecognized; retained in final-state.json"
+}

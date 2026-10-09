@@ -1,0 +1,38 @@
+{
+  "pump": "OFF",
+  "backend": "WindowsNativeBackend",
+  "role": "operator_test_preparation",
+  "counts_toward_agent_behavior": false,
+  "agent": null,
+  "strategy_target": 12,
+  "authorization": "Explicit user reply 2026-10-07 authorizes this once-only 12-to-11 preparation",
+  "status": "PREPARATION_CONFIRMED",
+  "stages": [
+    {
+      "stage": "fresh_bootstrap",
+      "status": "confirmed"
+    },
+    {
+      "stage": "before",
+      "status": "confirmed"
+    },
+    {
+      "stage": "setter",
+      "status": "confirmed"
+    },
+    {
+      "stage": "independent_readback",
+      "status": "confirmed"
+    }
+  ],
+  "before": 12,
+  "after": 11,
+  "setter_action_id": "b3b41eba-01c5-4b56-8422-64aba604c503",
+  "setter_duration_ms": 12672,
+  "readback_duration_ms": 5734,
+  "readback_source": "target numeric AND 15-cell grid AND full-list/global assigned MIL",
+  "mutation_submitted": true,
+  "retry_count": 0,
+  "final_paused": true,
+  "wall_time_seconds": 36.953
+}

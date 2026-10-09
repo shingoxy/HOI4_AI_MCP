@@ -1,0 +1,71 @@
+{
+  "state": "TOOL_NOT_SELECTED",
+  "reason": "normal_map_mode; hover_is_not_selection",
+  "panel": {
+    "score": 0.9798584580421448,
+    "confirmed": true
+  },
+  "icon": {
+    "score": 0.9619120955467224,
+    "confirmed": true
+  },
+  "legacy_selected": {
+    "score": 0.9594194293022156,
+    "confirmed": true
+  },
+  "mode": {
+    "score": 0.7871174216270447,
+    "confirmed": false
+  },
+  "land_mode": {
+    "score": 1.0,
+    "confirmed": true
+  },
+  "outline": {
+    "counts": {
+      "top": 0,
+      "bottom": 0,
+      "left": 0,
+      "right": 0
+    },
+    "confirmed": false
+  },
+  "other_icon": {
+    "score": 0.9874210357666016,
+    "confirmed": true
+  },
+  "other_outline": {
+    "counts": {
+      "top": 0,
+      "bottom": 0,
+      "left": 0,
+      "right": 0
+    },
+    "confirmed": false
+  },
+  "modals": {
+    "clock_menu": {
+      "score": 0.1487082988023758,
+      "confirmed": false
+    },
+    "world_news": {
+      "score": 0.1306082010269165,
+      "confirmed": false
+    },
+    "focus_completed_popup": {
+      "score": 0.08407647162675858,
+      "confirmed": false
+    },
+    "construction_modal": {
+      "score": 0.12735170125961304,
+      "confirmed": false
+    }
+  },
+  "cursor_state": "UNKNOWN; GDI capture excludes cursor",
+  "map_state": {
+    "state": "MAP_RECOVERABLE",
+    "reason": "guarded_capital_navigation_required",
+    "profile": null,
+    "pose": null
+  }
+}

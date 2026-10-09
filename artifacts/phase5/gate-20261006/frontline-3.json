@@ -1,0 +1,1720 @@
+{
+  "source": "LIVE HOI4 / official SDK stdio / WindowsNativeBackend",
+  "computer_use_pump": "OFF",
+  "computer_use_required": false,
+  "model_client": "NONE; Codex selected the bounded semantic plan",
+  "actions": [
+    {
+      "action": "get_fronts",
+      "arguments": {},
+      "result": {
+        "action": "get_fronts",
+        "accepted": true,
+        "status": "confirmed",
+        "action_id": "4b562695-6361-482f-a600-0a8700c9f4de",
+        "retry_count": 0,
+        "duration_ms": 9156,
+        "timings_ms": {
+          "precheck": 0,
+          "navigation": 4609,
+          "target_lookup": 0,
+          "submit": 0,
+          "readback": 4532,
+          "confirmation": 0,
+          "total": 9156
+        },
+        "armies": [
+          {
+            "field_sources": {
+              "name": "gui",
+              "general_id": "gui",
+              "division_names": "gui"
+            },
+            "name": "第1集团军",
+            "general_id": null,
+            "division_names": [
+              "1. Infanterie-Division",
+              "1. Panzer-Division"
+            ],
+            "position": 0,
+            "identity_source": "gui",
+            "stable_game_identity": false,
+            "army_id": "army-105602af220e-0001-0000",
+            "identity_signature": "c8c1046fc277abe1d87028eef5af8d1591439afd9bda03b6eb231c1e83a4ec37"
+          }
+        ],
+        "divisions": [
+          {
+            "field_sources": {
+              "name": "gui",
+              "unit_type": "derived",
+              "owner": "derived",
+              "army_name": "gui",
+              "province_id": "unknown",
+              "supply_quality": "unknown",
+              "army_id": "derived"
+            },
+            "name": "1. Infanterie-Division",
+            "unit_type": "infantry",
+            "owner": "GER",
+            "army_name": "第1集团军",
+            "province_id": null,
+            "supply_quality": null,
+            "position": 0,
+            "identity_source": "gui",
+            "stable_game_identity": false,
+            "division_id": "division-105602af220e-0001-0000",
+            "identity_signature": "71e6b899d0255df9e66395b0a4be3d14623a8f304e26797f88deab0931ebd6cb",
+            "army_id": "army-105602af220e-0001-0000"
+          },
+          {
+            "field_sources": {
+              "name": "gui",
+              "unit_type": "derived",
+              "owner": "derived",
+              "army_name": "gui",
+              "province_id": "unknown",
+              "supply_quality": "unknown",
+              "army_id": "derived"
+            },
+            "name": "1. Panzer-Division",
+            "unit_type": "armor",
+            "owner": "GER",
+            "army_name": "第1集团军",
+            "province_id": null,
+            "supply_quality": null,
+            "position": 1,
+            "identity_source": "gui",
+            "stable_game_identity": false,
+            "division_id": "division-105602af220e-0001-0001",
+            "identity_signature": "a63507b49294b4e20276c8074da30c4cbba2b9388298d5ba8ea5a4c1cdfdb68e",
+            "army_id": "army-105602af220e-0001-0000"
+          },
+          {
+            "field_sources": {
+              "name": "gui",
+              "unit_type": "derived",
+              "owner": "derived",
+              "army_name": "gui",
+              "province_id": "unknown",
+              "supply_quality": "unknown",
+              "army_id": "derived"
+            },
+            "name": "10. Infanterie-Division",
+            "unit_type": "infantry",
+            "owner": "GER",
+            "army_name": null,
+            "province_id": null,
+            "supply_quality": null,
+            "position": 2,
+            "identity_source": "gui",
+            "stable_game_identity": false,
+            "division_id": "division-105602af220e-0001-0002",
+            "identity_signature": "6c7c094be9e176227632254dfb0309b827f9e427ce19acdf6b0de0a7fb8c043e",
+            "army_id": null
+          }
+        ],
+        "scope_status": "LIMITED",
+        "complete": false,
+        "total_divisions": 30,
+        "unobserved_divisions": 27,
+        "field_sources": {
+          "armies": "gui",
+          "divisions": "gui",
+          "total_divisions": "gui",
+          "unobserved_divisions": "derived",
+          "complete": "derived"
+        },
+        "fronts": [],
+        "plan_active": null,
+        "operation_name": null,
+        "map_resolution": {
+          "profile": "GER_2560x1600_DPI120_PHYSICAL",
+          "anchors_verified": [
+            "amsterdam",
+            "copenhagen",
+            "warsaw"
+          ]
+        },
+        "unobserved_orders": "UNKNOWN outside three calibrated mainland border segments",
+        "session_id": "105602af220e",
+        "snapshot_version": 1,
+        "ttl_seconds": 120,
+        "telemetry_seq": 706707,
+        "stable_game_identity": false,
+        "mutation_submitted": false
+      },
+      "before_capture": {
+        "status": "captured",
+        "path": "D:\\Projects\\HOI4 AI Operator\\artifacts\\phase5\\gate-20261006\\captures\\frontline-3-0-before.png",
+        "size": [
+          2560,
+          1600
+        ]
+      },
+      "after_capture": {
+        "status": "captured",
+        "path": "D:\\Projects\\HOI4 AI Operator\\artifacts\\phase5\\gate-20261006\\captures\\frontline-3-0-after.png",
+        "size": [
+          2560,
+          1600
+        ]
+      },
+      "native_audit": [
+        {
+          "trace_id": "39ccd3b0-7185-4826-8a84-510af9d41fe1",
+          "backend": "WindowsNativeBackend",
+          "capture_method": "GDI_BitBlt_RGB",
+          "pump": "OFF",
+          "events": [
+            {
+              "op": "capture",
+              "size": [
+                2560,
+                1600
+              ],
+              "profile": {
+                "name": "GER_2560x1600_DPI120_PHYSICAL",
+                "client_width": 2560,
+                "client_height": 1600,
+                "dpi": 120,
+                "capture_width": 2560,
+                "capture_height": 1600,
+                "template_set": "phase3a/phase3; top UI only",
+                "backend": "windows_native_gdi",
+                "offset": [
+                  0,
+                  0
+                ]
+              },
+              "duration_ms": 63
+            },
+            {
+              "op": "capture",
+              "size": [
+                2560,
+                1600
+              ],
+              "profile": {
+                "name": "GER_2560x1600_DPI120_PHYSICAL",
+                "client_width": 2560,
+                "client_height": 1600,
+                "dpi": 120,
+                "capture_width": 2560,
+                "capture_height": 1600,
+                "template_set": "phase3a/phase3; top UI only",
+                "backend": "windows_native_gdi",
+                "offset": [
+                  0,
+                  0
+                ]
+              },
+              "duration_ms": 47
+            },
+            {
+              "op": "click",
+              "point": [
+                2510,
+                1412
+              ],
+              "physical_point": [
+                2510,
+                1412
+              ],
+              "button": "left",
+              "primitive": "SendInput.MOUSEINPUT"
+            },
+            {
+              "op": "down_attempt",
+              "kind": "mouse",
+              "code": "left",
+              "primitive": "SendInput"
+            },
+            {
+              "op": "release",
+              "kind": "mouse",
+              "code": "left",
+              "success": true
+            },
+            {
+              "op": "capture",
+              "size": [
+                2560,
+                1600
+              ],
+              "profile": {
+                "name": "GER_2560x1600_DPI120_PHYSICAL",
+                "client_width": 2560,
+                "client_height": 1600,
+                "dpi": 120,
+                "capture_width": 2560,
+                "capture_height": 1600,
+                "template_set": "phase3a/phase3; top UI only",
+                "backend": "windows_native_gdi",
+                "offset": [
+                  0,
+                  0
+                ]
+              },
+              "duration_ms": 47
+            },
+            {
+              "op": "click",
+              "point": [
+                2302,
+                62
+              ],
+              "physical_point": [
+                2302,
+                62
+              ],
+              "button": "left",
+              "primitive": "SendInput.MOUSEINPUT"
+            },
+            {
+              "op": "down_attempt",
+              "kind": "mouse",
+              "code": "left",
+              "primitive": "SendInput"
+            },
+            {
+              "op": "release",
+              "kind": "mouse",
+              "code": "left",
+              "success": true
+            },
+            {
+              "op": "capture",
+              "size": [
+                2560,
+                1600
+              ],
+              "profile": {
+                "name": "GER_2560x1600_DPI120_PHYSICAL",
+                "client_width": 2560,
+                "client_height": 1600,
+                "dpi": 120,
+                "capture_width": 2560,
+                "capture_height": 1600,
+                "template_set": "phase3a/phase3; top UI only",
+                "backend": "windows_native_gdi",
+                "offset": [
+                  0,
+                  0
+                ]
+              },
+              "duration_ms": 47
+            },
+            {
+              "op": "click",
+              "point": [
+                1700,
+                12
+              ],
+              "physical_point": [
+                1700,
+                12
+              ],
+              "button": "left",
+              "primitive": "SendInput.MOUSEINPUT"
+            },
+            {
+              "op": "down_attempt",
+              "kind": "mouse",
+              "code": "left",
+              "primitive": "SendInput"
+            },
+            {
+              "op": "release",
+              "kind": "mouse",
+              "code": "left",
+              "success": true
+            },
+            {
+              "op": "capture",
+              "size": [
+                2560,
+                1600
+              ],
+              "profile": {
+                "name": "GER_2560x1600_DPI120_PHYSICAL",
+                "client_width": 2560,
+                "client_height": 1600,
+                "dpi": 120,
+                "capture_width": 2560,
+                "capture_height": 1600,
+                "template_set": "phase3a/phase3; top UI only",
+                "backend": "windows_native_gdi",
+                "offset": [
+                  0,
+                  0
+                ]
+              },
+              "duration_ms": 47
+            },
+            {
+              "op": "click",
+              "point": [
+                1270,
+                1535
+              ],
+              "physical_point": [
+                1270,
+                1535
+              ],
+              "button": "left",
+              "primitive": "SendInput.MOUSEINPUT"
+            },
+            {
+              "op": "down_attempt",
+              "kind": "mouse",
+              "code": "left",
+              "primitive": "SendInput"
+            },
+            {
+              "op": "release",
+              "kind": "mouse",
+              "code": "left",
+              "success": true
+            },
+            {
+              "op": "capture",
+              "size": [
+                2560,
+                1600
+              ],
+              "profile": {
+                "name": "GER_2560x1600_DPI120_PHYSICAL",
+                "client_width": 2560,
+                "client_height": 1600,
+                "dpi": 120,
+                "capture_width": 2560,
+                "capture_height": 1600,
+                "template_set": "phase3a/phase3; top UI only",
+                "backend": "windows_native_gdi",
+                "offset": [
+                  0,
+                  0
+                ]
+              },
+              "duration_ms": 62
+            },
+            {
+              "op": "click",
+              "point": [
+                1700,
+                12
+              ],
+              "physical_point": [
+                1700,
+                12
+              ],
+              "button": "left",
+              "primitive": "SendInput.MOUSEINPUT"
+            },
+            {
+              "op": "down_attempt",
+              "kind": "mouse",
+              "code": "left",
+              "primitive": "SendInput"
+            },
+            {
+              "op": "release",
+              "kind": "mouse",
+              "code": "left",
+              "success": true
+            },
+            {
+              "op": "capture",
+              "size": [
+                2560,
+                1600
+              ],
+              "profile": {
+                "name": "GER_2560x1600_DPI120_PHYSICAL",
+                "client_width": 2560,
+                "client_height": 1600,
+                "dpi": 120,
+                "capture_width": 2560,
+                "capture_height": 1600,
+                "template_set": "phase3a/phase3; top UI only",
+                "backend": "windows_native_gdi",
+                "offset": [
+                  0,
+                  0
+                ]
+              },
+              "duration_ms": 47
+            },
+            {
+              "op": "capture",
+              "size": [
+                2560,
+                1600
+              ],
+              "profile": {
+                "name": "GER_2560x1600_DPI120_PHYSICAL",
+                "client_width": 2560,
+                "client_height": 1600,
+                "dpi": 120,
+                "capture_width": 2560,
+                "capture_height": 1600,
+                "template_set": "phase3a/phase3; top UI only",
+                "backend": "windows_native_gdi",
+                "offset": [
+                  0,
+                  0
+                ]
+              },
+              "duration_ms": 47
+            },
+            {
+              "op": "click",
+              "point": [
+                1263,
+                1405
+              ],
+              "physical_point": [
+                1263,
+                1405
+              ],
+              "button": "left",
+              "primitive": "SendInput.MOUSEINPUT"
+            },
+            {
+              "op": "down_attempt",
+              "kind": "mouse",
+              "code": "left",
+              "primitive": "SendInput"
+            },
+            {
+              "op": "release",
+              "kind": "mouse",
+              "code": "left",
+              "success": true
+            },
+            {
+              "op": "capture",
+              "size": [
+                2560,
+                1600
+              ],
+              "profile": {
+                "name": "GER_2560x1600_DPI120_PHYSICAL",
+                "client_width": 2560,
+                "client_height": 1600,
+                "dpi": 120,
+                "capture_width": 2560,
+                "capture_height": 1600,
+                "template_set": "phase3a/phase3; top UI only",
+                "backend": "windows_native_gdi",
+                "offset": [
+                  0,
+                  0
+                ]
+              },
+              "duration_ms": 47
+            },
+            {
+              "op": "click",
+              "point": [
+                1700,
+                12
+              ],
+              "physical_point": [
+                1700,
+                12
+              ],
+              "button": "left",
+              "primitive": "SendInput.MOUSEINPUT"
+            },
+            {
+              "op": "down_attempt",
+              "kind": "mouse",
+              "code": "left",
+              "primitive": "SendInput"
+            },
+            {
+              "op": "release",
+              "kind": "mouse",
+              "code": "left",
+              "success": true
+            },
+            {
+              "op": "capture",
+              "size": [
+                2560,
+                1600
+              ],
+              "profile": {
+                "name": "GER_2560x1600_DPI120_PHYSICAL",
+                "client_width": 2560,
+                "client_height": 1600,
+                "dpi": 120,
+                "capture_width": 2560,
+                "capture_height": 1600,
+                "template_set": "phase3a/phase3; top UI only",
+                "backend": "windows_native_gdi",
+                "offset": [
+                  0,
+                  0
+                ]
+              },
+              "duration_ms": 47
+            },
+            {
+              "op": "native_order_read",
+              "scenes": {
+                "empty": {
+                  "extra": 0,
+                  "missing": 2,
+                  "yellow_counts": [
+                    194,
+                    171,
+                    234
+                  ]
+                }
+              },
+              "red_pixels": 436,
+              "matches": [
+                "empty"
+              ]
+            },
+            {
+              "op": "capture",
+              "size": [
+                2560,
+                1600
+              ],
+              "profile": {
+                "name": "GER_2560x1600_DPI120_PHYSICAL",
+                "client_width": 2560,
+                "client_height": 1600,
+                "dpi": 120,
+                "capture_width": 2560,
+                "capture_height": 1600,
+                "template_set": "phase3a/phase3; top UI only",
+                "backend": "windows_native_gdi",
+                "offset": [
+                  0,
+                  0
+                ]
+              },
+              "duration_ms": 47
+            },
+            {
+              "op": "capture",
+              "size": [
+                2560,
+                1600
+              ],
+              "profile": {
+                "name": "GER_2560x1600_DPI120_PHYSICAL",
+                "client_width": 2560,
+                "client_height": 1600,
+                "dpi": 120,
+                "capture_width": 2560,
+                "capture_height": 1600,
+                "template_set": "phase3a/phase3; top UI only",
+                "backend": "windows_native_gdi",
+                "offset": [
+                  0,
+                  0
+                ]
+              },
+              "duration_ms": 47
+            },
+            {
+              "op": "click",
+              "point": [
+                2510,
+                1412
+              ],
+              "physical_point": [
+                2510,
+                1412
+              ],
+              "button": "left",
+              "primitive": "SendInput.MOUSEINPUT"
+            },
+            {
+              "op": "down_attempt",
+              "kind": "mouse",
+              "code": "left",
+              "primitive": "SendInput"
+            },
+            {
+              "op": "release",
+              "kind": "mouse",
+              "code": "left",
+              "success": true
+            },
+            {
+              "op": "capture",
+              "size": [
+                2560,
+                1600
+              ],
+              "profile": {
+                "name": "GER_2560x1600_DPI120_PHYSICAL",
+                "client_width": 2560,
+                "client_height": 1600,
+                "dpi": 120,
+                "capture_width": 2560,
+                "capture_height": 1600,
+                "template_set": "phase3a/phase3; top UI only",
+                "backend": "windows_native_gdi",
+                "offset": [
+                  0,
+                  0
+                ]
+              },
+              "duration_ms": 47
+            },
+            {
+              "op": "click",
+              "point": [
+                2302,
+                62
+              ],
+              "physical_point": [
+                2302,
+                62
+              ],
+              "button": "left",
+              "primitive": "SendInput.MOUSEINPUT"
+            },
+            {
+              "op": "down_attempt",
+              "kind": "mouse",
+              "code": "left",
+              "primitive": "SendInput"
+            },
+            {
+              "op": "release",
+              "kind": "mouse",
+              "code": "left",
+              "success": true
+            },
+            {
+              "op": "capture",
+              "size": [
+                2560,
+                1600
+              ],
+              "profile": {
+                "name": "GER_2560x1600_DPI120_PHYSICAL",
+                "client_width": 2560,
+                "client_height": 1600,
+                "dpi": 120,
+                "capture_width": 2560,
+                "capture_height": 1600,
+                "template_set": "phase3a/phase3; top UI only",
+                "backend": "windows_native_gdi",
+                "offset": [
+                  0,
+                  0
+                ]
+              },
+              "duration_ms": 47
+            },
+            {
+              "op": "click",
+              "point": [
+                1700,
+                12
+              ],
+              "physical_point": [
+                1700,
+                12
+              ],
+              "button": "left",
+              "primitive": "SendInput.MOUSEINPUT"
+            },
+            {
+              "op": "down_attempt",
+              "kind": "mouse",
+              "code": "left",
+              "primitive": "SendInput"
+            },
+            {
+              "op": "release",
+              "kind": "mouse",
+              "code": "left",
+              "success": true
+            },
+            {
+              "op": "capture",
+              "size": [
+                2560,
+                1600
+              ],
+              "profile": {
+                "name": "GER_2560x1600_DPI120_PHYSICAL",
+                "client_width": 2560,
+                "client_height": 1600,
+                "dpi": 120,
+                "capture_width": 2560,
+                "capture_height": 1600,
+                "template_set": "phase3a/phase3; top UI only",
+                "backend": "windows_native_gdi",
+                "offset": [
+                  0,
+                  0
+                ]
+              },
+              "duration_ms": 47
+            },
+            {
+              "op": "click",
+              "point": [
+                1270,
+                1535
+              ],
+              "physical_point": [
+                1270,
+                1535
+              ],
+              "button": "left",
+              "primitive": "SendInput.MOUSEINPUT"
+            },
+            {
+              "op": "down_attempt",
+              "kind": "mouse",
+              "code": "left",
+              "primitive": "SendInput"
+            },
+            {
+              "op": "release",
+              "kind": "mouse",
+              "code": "left",
+              "success": true
+            },
+            {
+              "op": "capture",
+              "size": [
+                2560,
+                1600
+              ],
+              "profile": {
+                "name": "GER_2560x1600_DPI120_PHYSICAL",
+                "client_width": 2560,
+                "client_height": 1600,
+                "dpi": 120,
+                "capture_width": 2560,
+                "capture_height": 1600,
+                "template_set": "phase3a/phase3; top UI only",
+                "backend": "windows_native_gdi",
+                "offset": [
+                  0,
+                  0
+                ]
+              },
+              "duration_ms": 47
+            },
+            {
+              "op": "click",
+              "point": [
+                1700,
+                12
+              ],
+              "physical_point": [
+                1700,
+                12
+              ],
+              "button": "left",
+              "primitive": "SendInput.MOUSEINPUT"
+            },
+            {
+              "op": "down_attempt",
+              "kind": "mouse",
+              "code": "left",
+              "primitive": "SendInput"
+            },
+            {
+              "op": "release",
+              "kind": "mouse",
+              "code": "left",
+              "success": true
+            },
+            {
+              "op": "capture",
+              "size": [
+                2560,
+                1600
+              ],
+              "profile": {
+                "name": "GER_2560x1600_DPI120_PHYSICAL",
+                "client_width": 2560,
+                "client_height": 1600,
+                "dpi": 120,
+                "capture_width": 2560,
+                "capture_height": 1600,
+                "template_set": "phase3a/phase3; top UI only",
+                "backend": "windows_native_gdi",
+                "offset": [
+                  0,
+                  0
+                ]
+              },
+              "duration_ms": 47
+            },
+            {
+              "op": "capture",
+              "size": [
+                2560,
+                1600
+              ],
+              "profile": {
+                "name": "GER_2560x1600_DPI120_PHYSICAL",
+                "client_width": 2560,
+                "client_height": 1600,
+                "dpi": 120,
+                "capture_width": 2560,
+                "capture_height": 1600,
+                "template_set": "phase3a/phase3; top UI only",
+                "backend": "windows_native_gdi",
+                "offset": [
+                  0,
+                  0
+                ]
+              },
+              "duration_ms": 47
+            },
+            {
+              "op": "click",
+              "point": [
+                1263,
+                1405
+              ],
+              "physical_point": [
+                1263,
+                1405
+              ],
+              "button": "left",
+              "primitive": "SendInput.MOUSEINPUT"
+            },
+            {
+              "op": "down_attempt",
+              "kind": "mouse",
+              "code": "left",
+              "primitive": "SendInput"
+            },
+            {
+              "op": "release",
+              "kind": "mouse",
+              "code": "left",
+              "success": true
+            },
+            {
+              "op": "capture",
+              "size": [
+                2560,
+                1600
+              ],
+              "profile": {
+                "name": "GER_2560x1600_DPI120_PHYSICAL",
+                "client_width": 2560,
+                "client_height": 1600,
+                "dpi": 120,
+                "capture_width": 2560,
+                "capture_height": 1600,
+                "template_set": "phase3a/phase3; top UI only",
+                "backend": "windows_native_gdi",
+                "offset": [
+                  0,
+                  0
+                ]
+              },
+              "duration_ms": 47
+            },
+            {
+              "op": "click",
+              "point": [
+                1700,
+                12
+              ],
+              "physical_point": [
+                1700,
+                12
+              ],
+              "button": "left",
+              "primitive": "SendInput.MOUSEINPUT"
+            },
+            {
+              "op": "down_attempt",
+              "kind": "mouse",
+              "code": "left",
+              "primitive": "SendInput"
+            },
+            {
+              "op": "release",
+              "kind": "mouse",
+              "code": "left",
+              "success": true
+            },
+            {
+              "op": "capture",
+              "size": [
+                2560,
+                1600
+              ],
+              "profile": {
+                "name": "GER_2560x1600_DPI120_PHYSICAL",
+                "client_width": 2560,
+                "client_height": 1600,
+                "dpi": 120,
+                "capture_width": 2560,
+                "capture_height": 1600,
+                "template_set": "phase3a/phase3; top UI only",
+                "backend": "windows_native_gdi",
+                "offset": [
+                  0,
+                  0
+                ]
+              },
+              "duration_ms": 47
+            },
+            {
+              "op": "native_order_read",
+              "scenes": {
+                "empty": {
+                  "extra": 14,
+                  "missing": 0,
+                  "yellow_counts": [
+                    194,
+                    171,
+                    234
+                  ]
+                }
+              },
+              "red_pixels": 960,
+              "matches": [
+                "empty"
+              ]
+            }
+          ],
+          "guard_reason": null,
+          "held_input_remaining": false
+        }
+      ]
+    },
+    {
+      "action": "create_frontline",
+      "arguments": {
+        "army_id": "army-105602af220e-0001-0000",
+        "target_id": "GER_POL_mainland"
+      },
+      "result": {
+        "action": "create_frontline",
+        "accepted": false,
+        "status": "rejected",
+        "action_id": "4eaf0140-b5a8-4969-96c4-da955af959f9",
+        "retry_count": 0,
+        "duration_ms": 5187,
+        "timings_ms": {
+          "precheck": 0,
+          "navigation": 4609,
+          "target_lookup": 0,
+          "submit": 0,
+          "readback": 0,
+          "confirmation": 0,
+          "total": 5187
+        },
+        "reason": "readback_ambiguous",
+        "recovery": "escape_sent",
+        "mutation_submitted": false
+      },
+      "before_capture": {
+        "status": "captured",
+        "path": "D:\\Projects\\HOI4 AI Operator\\artifacts\\phase5\\gate-20261006\\captures\\frontline-3-1-before.png",
+        "size": [
+          2560,
+          1600
+        ]
+      },
+      "after_capture": {
+        "status": "captured",
+        "path": "D:\\Projects\\HOI4 AI Operator\\artifacts\\phase5\\gate-20261006\\captures\\frontline-3-1-after.png",
+        "size": [
+          2560,
+          1600
+        ]
+      },
+      "native_audit": [
+        {
+          "trace_id": "6119fbfe-980d-4412-aa1e-61e59bfd71bb",
+          "backend": "WindowsNativeBackend",
+          "capture_method": "GDI_BitBlt_RGB",
+          "pump": "OFF",
+          "events": [
+            {
+              "op": "capture",
+              "size": [
+                2560,
+                1600
+              ],
+              "profile": {
+                "name": "GER_2560x1600_DPI120_PHYSICAL",
+                "client_width": 2560,
+                "client_height": 1600,
+                "dpi": 120,
+                "capture_width": 2560,
+                "capture_height": 1600,
+                "template_set": "phase3a/phase3; top UI only",
+                "backend": "windows_native_gdi",
+                "offset": [
+                  0,
+                  0
+                ]
+              },
+              "duration_ms": 62
+            },
+            {
+              "op": "capture",
+              "size": [
+                2560,
+                1600
+              ],
+              "profile": {
+                "name": "GER_2560x1600_DPI120_PHYSICAL",
+                "client_width": 2560,
+                "client_height": 1600,
+                "dpi": 120,
+                "capture_width": 2560,
+                "capture_height": 1600,
+                "template_set": "phase3a/phase3; top UI only",
+                "backend": "windows_native_gdi",
+                "offset": [
+                  0,
+                  0
+                ]
+              },
+              "duration_ms": 47
+            },
+            {
+              "op": "click",
+              "point": [
+                2510,
+                1412
+              ],
+              "physical_point": [
+                2510,
+                1412
+              ],
+              "button": "left",
+              "primitive": "SendInput.MOUSEINPUT"
+            },
+            {
+              "op": "down_attempt",
+              "kind": "mouse",
+              "code": "left",
+              "primitive": "SendInput"
+            },
+            {
+              "op": "release",
+              "kind": "mouse",
+              "code": "left",
+              "success": true
+            },
+            {
+              "op": "capture",
+              "size": [
+                2560,
+                1600
+              ],
+              "profile": {
+                "name": "GER_2560x1600_DPI120_PHYSICAL",
+                "client_width": 2560,
+                "client_height": 1600,
+                "dpi": 120,
+                "capture_width": 2560,
+                "capture_height": 1600,
+                "template_set": "phase3a/phase3; top UI only",
+                "backend": "windows_native_gdi",
+                "offset": [
+                  0,
+                  0
+                ]
+              },
+              "duration_ms": 47
+            },
+            {
+              "op": "click",
+              "point": [
+                2302,
+                62
+              ],
+              "physical_point": [
+                2302,
+                62
+              ],
+              "button": "left",
+              "primitive": "SendInput.MOUSEINPUT"
+            },
+            {
+              "op": "down_attempt",
+              "kind": "mouse",
+              "code": "left",
+              "primitive": "SendInput"
+            },
+            {
+              "op": "release",
+              "kind": "mouse",
+              "code": "left",
+              "success": true
+            },
+            {
+              "op": "capture",
+              "size": [
+                2560,
+                1600
+              ],
+              "profile": {
+                "name": "GER_2560x1600_DPI120_PHYSICAL",
+                "client_width": 2560,
+                "client_height": 1600,
+                "dpi": 120,
+                "capture_width": 2560,
+                "capture_height": 1600,
+                "template_set": "phase3a/phase3; top UI only",
+                "backend": "windows_native_gdi",
+                "offset": [
+                  0,
+                  0
+                ]
+              },
+              "duration_ms": 47
+            },
+            {
+              "op": "click",
+              "point": [
+                1700,
+                12
+              ],
+              "physical_point": [
+                1700,
+                12
+              ],
+              "button": "left",
+              "primitive": "SendInput.MOUSEINPUT"
+            },
+            {
+              "op": "down_attempt",
+              "kind": "mouse",
+              "code": "left",
+              "primitive": "SendInput"
+            },
+            {
+              "op": "release",
+              "kind": "mouse",
+              "code": "left",
+              "success": true
+            },
+            {
+              "op": "capture",
+              "size": [
+                2560,
+                1600
+              ],
+              "profile": {
+                "name": "GER_2560x1600_DPI120_PHYSICAL",
+                "client_width": 2560,
+                "client_height": 1600,
+                "dpi": 120,
+                "capture_width": 2560,
+                "capture_height": 1600,
+                "template_set": "phase3a/phase3; top UI only",
+                "backend": "windows_native_gdi",
+                "offset": [
+                  0,
+                  0
+                ]
+              },
+              "duration_ms": 47
+            },
+            {
+              "op": "click",
+              "point": [
+                1270,
+                1535
+              ],
+              "physical_point": [
+                1270,
+                1535
+              ],
+              "button": "left",
+              "primitive": "SendInput.MOUSEINPUT"
+            },
+            {
+              "op": "down_attempt",
+              "kind": "mouse",
+              "code": "left",
+              "primitive": "SendInput"
+            },
+            {
+              "op": "release",
+              "kind": "mouse",
+              "code": "left",
+              "success": true
+            },
+            {
+              "op": "capture",
+              "size": [
+                2560,
+                1600
+              ],
+              "profile": {
+                "name": "GER_2560x1600_DPI120_PHYSICAL",
+                "client_width": 2560,
+                "client_height": 1600,
+                "dpi": 120,
+                "capture_width": 2560,
+                "capture_height": 1600,
+                "template_set": "phase3a/phase3; top UI only",
+                "backend": "windows_native_gdi",
+                "offset": [
+                  0,
+                  0
+                ]
+              },
+              "duration_ms": 47
+            },
+            {
+              "op": "click",
+              "point": [
+                1700,
+                12
+              ],
+              "physical_point": [
+                1700,
+                12
+              ],
+              "button": "left",
+              "primitive": "SendInput.MOUSEINPUT"
+            },
+            {
+              "op": "down_attempt",
+              "kind": "mouse",
+              "code": "left",
+              "primitive": "SendInput"
+            },
+            {
+              "op": "release",
+              "kind": "mouse",
+              "code": "left",
+              "success": true
+            },
+            {
+              "op": "capture",
+              "size": [
+                2560,
+                1600
+              ],
+              "profile": {
+                "name": "GER_2560x1600_DPI120_PHYSICAL",
+                "client_width": 2560,
+                "client_height": 1600,
+                "dpi": 120,
+                "capture_width": 2560,
+                "capture_height": 1600,
+                "template_set": "phase3a/phase3; top UI only",
+                "backend": "windows_native_gdi",
+                "offset": [
+                  0,
+                  0
+                ]
+              },
+              "duration_ms": 47
+            },
+            {
+              "op": "capture",
+              "size": [
+                2560,
+                1600
+              ],
+              "profile": {
+                "name": "GER_2560x1600_DPI120_PHYSICAL",
+                "client_width": 2560,
+                "client_height": 1600,
+                "dpi": 120,
+                "capture_width": 2560,
+                "capture_height": 1600,
+                "template_set": "phase3a/phase3; top UI only",
+                "backend": "windows_native_gdi",
+                "offset": [
+                  0,
+                  0
+                ]
+              },
+              "duration_ms": 46
+            },
+            {
+              "op": "click",
+              "point": [
+                1263,
+                1405
+              ],
+              "physical_point": [
+                1263,
+                1405
+              ],
+              "button": "left",
+              "primitive": "SendInput.MOUSEINPUT"
+            },
+            {
+              "op": "down_attempt",
+              "kind": "mouse",
+              "code": "left",
+              "primitive": "SendInput"
+            },
+            {
+              "op": "release",
+              "kind": "mouse",
+              "code": "left",
+              "success": true
+            },
+            {
+              "op": "capture",
+              "size": [
+                2560,
+                1600
+              ],
+              "profile": {
+                "name": "GER_2560x1600_DPI120_PHYSICAL",
+                "client_width": 2560,
+                "client_height": 1600,
+                "dpi": 120,
+                "capture_width": 2560,
+                "capture_height": 1600,
+                "template_set": "phase3a/phase3; top UI only",
+                "backend": "windows_native_gdi",
+                "offset": [
+                  0,
+                  0
+                ]
+              },
+              "duration_ms": 46
+            },
+            {
+              "op": "click",
+              "point": [
+                1700,
+                12
+              ],
+              "physical_point": [
+                1700,
+                12
+              ],
+              "button": "left",
+              "primitive": "SendInput.MOUSEINPUT"
+            },
+            {
+              "op": "down_attempt",
+              "kind": "mouse",
+              "code": "left",
+              "primitive": "SendInput"
+            },
+            {
+              "op": "release",
+              "kind": "mouse",
+              "code": "left",
+              "success": true
+            },
+            {
+              "op": "capture",
+              "size": [
+                2560,
+                1600
+              ],
+              "profile": {
+                "name": "GER_2560x1600_DPI120_PHYSICAL",
+                "client_width": 2560,
+                "client_height": 1600,
+                "dpi": 120,
+                "capture_width": 2560,
+                "capture_height": 1600,
+                "template_set": "phase3a/phase3; top UI only",
+                "backend": "windows_native_gdi",
+                "offset": [
+                  0,
+                  0
+                ]
+              },
+              "duration_ms": 47
+            },
+            {
+              "op": "native_order_read",
+              "scenes": {
+                "empty": {
+                  "extra": 0,
+                  "missing": 0,
+                  "yellow_counts": [
+                    0
+                  ]
+                }
+              },
+              "red_pixels": 529,
+              "matches": []
+            },
+            {
+              "op": "key",
+              "key": "Escape",
+              "primitive": "SendInput.KEYBDINPUT_SCANCODE"
+            },
+            {
+              "op": "down_attempt",
+              "kind": "key",
+              "code": 27,
+              "primitive": "SendInput"
+            },
+            {
+              "op": "release",
+              "kind": "key",
+              "code": 27,
+              "success": true
+            }
+          ],
+          "guard_reason": null,
+          "held_input_remaining": false
+        }
+      ]
+    }
+  ],
+  "capabilities": {
+    "read_only": false,
+    "telemetry_read_only": true,
+    "country": "GER",
+    "protocol_version": 2,
+    "accepted_protocol_versions": [
+      1,
+      2
+    ],
+    "available": [
+      "politics",
+      "manpower",
+      "factory_totals",
+      "research_slots",
+      "tracked_technology_predicates",
+      "tracked_focus_progress_interval"
+    ],
+    "tracked_technologies": [
+      "basic_machine_tools",
+      "construction1",
+      "electronic_mechanical_engineering"
+    ],
+    "tracked_focus": "GER_remilitarize_the_rhineland",
+    "extended_fields_live_verified": true,
+    "gui_actions": [
+      "select_research",
+      "select_focus",
+      "set_production_factory_count"
+    ],
+    "non_military_runtime_requested": true,
+    "military_runtime_requested": true,
+    "military_executor_attached": true,
+    "military": {
+      "scope_status": "PARTIAL",
+      "army_scope": "one first army; three named GER divisions",
+      "general_scope": [
+        "GER_erich_von_manstein"
+      ],
+      "game_unit_ids": "UNKNOWN",
+      "fronts": "GUI_ONLY; GER_POL_mainland and GER_POL_east_prussia; whole-plan switches",
+      "supply": "GUI_ONLY; 1. Infanterie tooltip; army/front totals UNKNOWN",
+      "air": "GUI_ONLY; fighter wing 132, Brandenburg, region 8, air_superiority or none",
+      "navy": "GUI_ONLY; one twelve-ship task force; missions and region IDs UNKNOWN",
+      "military_telemetry": "UNKNOWN",
+      "right_drag_backend": "WINDOWS_SENDINPUT; guarded right drag only",
+      "offensive_lines": "GUI_ONLY; selected first army / 1. Panzer-Division / no general; two mainland targets; empty order viewport required",
+      "unsupported_actions": [
+        "move_divisions",
+        "assign_fleet_region",
+        "set_naval_mission"
+      ],
+      "live_verified_components": [
+        "army",
+        "frontline",
+        "offensive_line",
+        "plan_switch",
+        "division_supply",
+        "air_assignment_and_mission",
+        "navy_observation"
+      ]
+    },
+    "additional_gui_actions": [
+      "create_production_line",
+      "delete_production_line",
+      "reorder_production_line",
+      "build",
+      "cancel_construction",
+      "change_construction_priority",
+      "change_economy_law",
+      "change_conscription_law",
+      "hire_advisor",
+      "set_trade_import"
+    ],
+    "gui_observations": [
+      "get_production_lines",
+      "get_construction",
+      "get_advisors",
+      "get_trade_state"
+    ],
+    "production": {
+      "line_identity": "GUI_ONLY; session-local, not stable game ID",
+      "equipment_type": "GUI_ONLY; visible label matched by template, not game equipment ID",
+      "factory_count": "GUI_ONLY; numeric and grid agreement",
+      "truncated_equipment_labels": "PARTIAL; observation only, actions rejected",
+      "maximum_assignable": "PARTIAL; normal line limit and GUI availability",
+      "efficiency": "UNKNOWN",
+      "current_output": "UNKNOWN",
+      "supported_counts": [
+        0,
+        15
+      ],
+      "viewport": "complete calibrated military list (max 10)"
+    },
+    "trade": {
+      "scope": "SWE steel only",
+      "civilian_factories": [
+        0,
+        1,
+        2
+      ],
+      "complete_trade_state": false,
+      "telemetry_trade_state": "UNKNOWN"
+    },
+    "gui_executor_attached": true,
+    "input_backend": "native",
+    "capture_space": "physical",
+    "computer_use_required": false,
+    "input_capabilities": {
+      "capture": true,
+      "click": true,
+      "key_tap": true,
+      "scroll": true,
+      "left_drag": true,
+      "right_drag": true,
+      "held_input": false
+    },
+    "input_backend_ready": true,
+    "unknown_fields": {
+      "active_research": "Only three tracked technologies; slot-to-tech and remaining time are UNKNOWN.",
+      "current_focus": "Current focus ID is UNKNOWN; tracked focus progress is a predicate-derived interval.",
+      "production_lines": "Per-line equipment, efficiency and progress are not verified."
+    },
+    "notifications": "MCP 2026 subscriptions/listen; older clients can poll get_changes"
+  },
+  "tools": [
+    "get_armies",
+    "get_army",
+    "get_divisions",
+    "get_division",
+    "get_generals",
+    "create_army",
+    "assign_divisions",
+    "remove_divisions_from_army",
+    "assign_general",
+    "get_fronts",
+    "create_frontline",
+    "execute_plan",
+    "stop_plan",
+    "create_offensive_line",
+    "move_divisions",
+    "get_supply_status",
+    "get_air_state",
+    "get_navy_state",
+    "get_air_wings",
+    "get_air_regions",
+    "assign_air_wing",
+    "set_air_mission",
+    "get_fleets",
+    "assign_fleet_region",
+    "set_naval_mission",
+    "get_production_lines",
+    "set_production_factory_count",
+    "get_equipment_catalog",
+    "create_production_line",
+    "delete_production_line",
+    "reorder_production_line",
+    "get_construction",
+    "build",
+    "cancel_construction",
+    "change_construction_priority",
+    "change_economy_law",
+    "change_conscription_law",
+    "get_advisors",
+    "hire_advisor",
+    "get_trade_state",
+    "set_trade_import",
+    "select_research",
+    "select_focus",
+    "get_summary",
+    "get_politics",
+    "get_industry",
+    "get_research",
+    "get_focus",
+    "get_changes",
+    "get_diagnostics"
+  ],
+  "telemetry_only": false,
+  "before_telemetry": {
+    "status": "fresh",
+    "received_at": "2026-10-06T07:01:27.464143+00:00",
+    "game_date": " 24:00, 9 3月, 1936",
+    "latest_seq": 706707,
+    "state": {
+      "protocol_version": 2,
+      "seq": 706707,
+      "game_date": " 24:00, 9 3月, 1936",
+      "country": "GER",
+      "politics": {
+        "political_power": 198.032,
+        "stability": 0.81,
+        "war_support": 0.46932
+      },
+      "manpower": {
+        "available": 1335746,
+        "source_thousands": 1335.746
+      },
+      "industry": {
+        "civilian_factories": 36,
+        "military_factories": 28,
+        "dockyards": 10
+      },
+      "origin": "daily",
+      "research": {
+        "slot_count": 4,
+        "tracked_technologies": [
+          {
+            "tech_id": "basic_machine_tools",
+            "researching": true,
+            "researched": false
+          },
+          {
+            "tech_id": "construction1",
+            "researching": false,
+            "researched": false
+          },
+          {
+            "tech_id": "electronic_mechanical_engineering",
+            "researching": false,
+            "researched": false
+          }
+        ]
+      },
+      "focus": {
+        "tracked_id": "GER_remilitarize_the_rhineland",
+        "completed": true,
+        "progress_lower_bound": 1.0,
+        "progress_upper_bound": 1.0
+      }
+    },
+    "parser_errors": [],
+    "session_id": "dc950f75-314a-401a-888d-f63f4d7ee790",
+    "revision": 1,
+    "freshness_basis": "frame_received_at",
+    "log_read_error": null
+  },
+  "harness_stop": "action_not_confirmed"
+}

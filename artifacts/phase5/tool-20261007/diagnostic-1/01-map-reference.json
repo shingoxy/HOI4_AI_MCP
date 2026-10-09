@@ -1,0 +1,95 @@
+{
+  "stage": "01-map-reference",
+  "seconds": 4.172,
+  "map_state": {
+    "state": "MAP_READY",
+    "reason": "calibrated_capital_camera_range",
+    "profile": "home",
+    "pose": {
+      "amsterdam": [
+        450,
+        840
+      ],
+      "copenhagen": [
+        1292,
+        322
+      ],
+      "warsaw": [
+        2205,
+        868
+      ]
+    }
+  },
+  "scores": {
+    "construction_title": {
+      "phase3": {
+        "score": 0.19100303947925568,
+        "location": [
+          47,
+          100
+        ]
+      },
+      "native": null
+    },
+    "construction_selected_civilian_factory": {
+      "phase3": {
+        "score": 0.012198114767670631,
+        "location": [
+          497,
+          266
+        ]
+      },
+      "native": null
+    },
+    "construction_button_civilian_factory": {
+      "phase3": {
+        "score": 0.03716569393873215,
+        "location": [
+          519,
+          285
+        ]
+      },
+      "native": null
+    },
+    "construction_modal_title": {
+      "phase3": {
+        "score": 0.1282818466424942,
+        "location": [
+          1271,
+          382
+        ]
+      },
+      "native": null
+    }
+  },
+  "construction_mode": {
+    "score": 0.7871174216270447,
+    "location": [
+      2494,
+      1400
+    ]
+  },
+  "modals": {
+    "clock_menu": {
+      "score": 0.18424838781356812,
+      "location": [
+        1249,
+        588
+      ]
+    },
+    "world_news": {
+      "score": 0.1251150667667389,
+      "location": [
+        1155,
+        498
+      ]
+    },
+    "focus_completed_popup": {
+      "score": 0.06521155685186386,
+      "location": [
+        1240,
+        683
+      ]
+    }
+  }
+}

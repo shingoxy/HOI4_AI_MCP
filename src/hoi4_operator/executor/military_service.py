@@ -166,7 +166,12 @@ class MilitaryExecutor:
                 repeated = self.ui.observe_orders()
                 if order_signature(before) != order_signature(repeated):
                     raise ActionError("readback_ambiguous", "rejected")
+                if 'offensive_orders' in before or 'offensive_orders' in repeated:
+                    from .offensive_ui import offensive_signature
+                    if offensive_signature(before)!=offensive_signature(repeated):
+                        raise ActionError('readback_ambiguous','rejected')
                 tx.result.evidence.update(self.publish(repeated,tx.fresh()["latest_seq"]))
+                tx.result.evidence['ui_confirmation']={'repeated_readback':True,'same_front_and_offensive_signature':True}
             tx.result.accepted, tx.result.status = True, "confirmed"
         return self.pipeline.run("get_fronts", operation, invalidate=self.invalidate)
 

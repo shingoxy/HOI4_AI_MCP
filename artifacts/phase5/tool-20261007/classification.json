@@ -1,0 +1,860 @@
+[
+  {
+    "file": "artifacts\\phase5\\tool-20261007\\diagnostic-1\\00-map.png",
+    "state": "TOOL_OCCLUDED",
+    "outline": {
+      "counts": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "confirmed": false
+    },
+    "other": {
+      "counts": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "confirmed": false
+    }
+  },
+  {
+    "file": "artifacts\\phase5\\tool-20261007\\diagnostic-1\\01-map-reference.png",
+    "state": "TOOL_OCCLUDED",
+    "outline": {
+      "counts": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "confirmed": false
+    },
+    "other": {
+      "counts": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "confirmed": false
+    }
+  },
+  {
+    "file": "artifacts\\phase5\\tool-20261007\\diagnostic-1\\03-click-first.png",
+    "state": "TOOL_ANIMATING",
+    "outline": {
+      "counts": {
+        "top": 18,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "confirmed": false
+    },
+    "other": {
+      "counts": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "confirmed": false
+    }
+  },
+  {
+    "file": "artifacts\\phase5\\tool-20261007\\diagnostic-1\\04-click-stable.png",
+    "state": "TOOL_ANIMATING",
+    "outline": {
+      "counts": {
+        "top": 1,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "confirmed": false
+    },
+    "other": {
+      "counts": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "confirmed": false
+    }
+  },
+  {
+    "file": "artifacts\\phase5\\tool-20261007\\diagnostic-1\\05-neutral-first.png",
+    "state": "TOOL_SELECTED",
+    "outline": {
+      "counts": {
+        "top": 41,
+        "bottom": 6,
+        "left": 40,
+        "right": 41
+      },
+      "confirmed": true
+    },
+    "other": {
+      "counts": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "confirmed": false
+    }
+  },
+  {
+    "file": "artifacts\\phase5\\tool-20261007\\diagnostic-1\\06-neutral-stable.png",
+    "state": "TOOL_SELECTED",
+    "outline": {
+      "counts": {
+        "top": 38,
+        "bottom": 4,
+        "left": 37,
+        "right": 37
+      },
+      "confirmed": true
+    },
+    "other": {
+      "counts": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "confirmed": false
+    }
+  },
+  {
+    "file": "artifacts\\phase5\\tool-20261007\\diagnostic-1\\07-closed.png",
+    "state": "TOOL_OCCLUDED",
+    "outline": {
+      "counts": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "confirmed": false
+    },
+    "other": {
+      "counts": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "confirmed": false
+    }
+  },
+  {
+    "file": "artifacts\\phase5\\tool-20261007\\diagnostic-2\\00-map.png",
+    "state": "TOOL_OCCLUDED",
+    "outline": {
+      "counts": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "confirmed": false
+    },
+    "other": {
+      "counts": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "confirmed": false
+    }
+  },
+  {
+    "file": "artifacts\\phase5\\tool-20261007\\diagnostic-2\\01-map-reference.png",
+    "state": "TOOL_OCCLUDED",
+    "outline": {
+      "counts": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "confirmed": false
+    },
+    "other": {
+      "counts": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "confirmed": false
+    }
+  },
+  {
+    "file": "artifacts\\phase5\\tool-20261007\\diagnostic-2\\02-hover-only.png",
+    "state": "TOOL_NOT_SELECTED",
+    "outline": {
+      "counts": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "confirmed": false
+    },
+    "other": {
+      "counts": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "confirmed": false
+    }
+  },
+  {
+    "file": "artifacts\\phase5\\tool-20261007\\diagnostic-2\\03-click-first.png",
+    "state": "TOOL_SELECTED",
+    "outline": {
+      "counts": {
+        "top": 43,
+        "bottom": 6,
+        "left": 41,
+        "right": 43
+      },
+      "confirmed": true
+    },
+    "other": {
+      "counts": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "confirmed": false
+    }
+  },
+  {
+    "file": "artifacts\\phase5\\tool-20261007\\diagnostic-2\\04-click-stable.png",
+    "state": "TOOL_ANIMATING",
+    "outline": {
+      "counts": {
+        "top": 5,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "confirmed": false
+    },
+    "other": {
+      "counts": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "confirmed": false
+    }
+  },
+  {
+    "file": "artifacts\\phase5\\tool-20261007\\diagnostic-2\\05-neutral-first.png",
+    "state": "TOOL_ANIMATING",
+    "outline": {
+      "counts": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "confirmed": false
+    },
+    "other": {
+      "counts": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "confirmed": false
+    }
+  },
+  {
+    "file": "artifacts\\phase5\\tool-20261007\\diagnostic-2\\06-neutral-stable.png",
+    "state": "TOOL_SELECTED",
+    "outline": {
+      "counts": {
+        "top": 42,
+        "bottom": 6,
+        "left": 41,
+        "right": 41
+      },
+      "confirmed": true
+    },
+    "other": {
+      "counts": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "confirmed": false
+    }
+  },
+  {
+    "file": "artifacts\\phase5\\tool-20261007\\diagnostic-2\\06-passive-0.png",
+    "state": "TOOL_ANIMATING",
+    "outline": {
+      "counts": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "confirmed": false
+    },
+    "other": {
+      "counts": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "confirmed": false
+    }
+  },
+  {
+    "file": "artifacts\\phase5\\tool-20261007\\diagnostic-2\\06-passive-1.png",
+    "state": "TOOL_SELECTED",
+    "outline": {
+      "counts": {
+        "top": 43,
+        "bottom": 8,
+        "left": 42,
+        "right": 43
+      },
+      "confirmed": true
+    },
+    "other": {
+      "counts": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "confirmed": false
+    }
+  },
+  {
+    "file": "artifacts\\phase5\\tool-20261007\\diagnostic-2\\06-passive-2.png",
+    "state": "TOOL_ANIMATING",
+    "outline": {
+      "counts": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "confirmed": false
+    },
+    "other": {
+      "counts": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "confirmed": false
+    }
+  },
+  {
+    "file": "artifacts\\phase5\\tool-20261007\\diagnostic-2\\06-passive-3.png",
+    "state": "TOOL_SELECTED",
+    "outline": {
+      "counts": {
+        "top": 40,
+        "bottom": 6,
+        "left": 40,
+        "right": 40
+      },
+      "confirmed": true
+    },
+    "other": {
+      "counts": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "confirmed": false
+    }
+  },
+  {
+    "file": "artifacts\\phase5\\tool-20261007\\diagnostic-2\\06-passive-4.png",
+    "state": "TOOL_ANIMATING",
+    "outline": {
+      "counts": {
+        "top": 1,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "confirmed": false
+    },
+    "other": {
+      "counts": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "confirmed": false
+    }
+  },
+  {
+    "file": "artifacts\\phase5\\tool-20261007\\diagnostic-2\\06-passive-5.png",
+    "state": "TOOL_SELECTED",
+    "outline": {
+      "counts": {
+        "top": 38,
+        "bottom": 4,
+        "left": 37,
+        "right": 37
+      },
+      "confirmed": true
+    },
+    "other": {
+      "counts": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "confirmed": false
+    }
+  },
+  {
+    "file": "artifacts\\phase5\\tool-20261007\\diagnostic-2\\06-passive-6.png",
+    "state": "TOOL_ANIMATING",
+    "outline": {
+      "counts": {
+        "top": 36,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "confirmed": false
+    },
+    "other": {
+      "counts": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "confirmed": false
+    }
+  },
+  {
+    "file": "artifacts\\phase5\\tool-20261007\\diagnostic-2\\06-passive-7.png",
+    "state": "TOOL_ANIMATING",
+    "outline": {
+      "counts": {
+        "top": 4,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "confirmed": false
+    },
+    "other": {
+      "counts": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "confirmed": false
+    }
+  },
+  {
+    "file": "artifacts\\phase5\\tool-20261007\\diagnostic-2\\07-closed.png",
+    "state": "TOOL_OCCLUDED",
+    "outline": {
+      "counts": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "confirmed": false
+    },
+    "other": {
+      "counts": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "confirmed": false
+    }
+  },
+  {
+    "file": "artifacts\\phase5\\tool-20261007\\diagnostic-wrong\\00-map.png",
+    "state": "TOOL_OCCLUDED",
+    "outline": {
+      "counts": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "confirmed": false
+    },
+    "other": {
+      "counts": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "confirmed": false
+    }
+  },
+  {
+    "file": "artifacts\\phase5\\tool-20261007\\diagnostic-wrong\\01-map-reference.png",
+    "state": "TOOL_OCCLUDED",
+    "outline": {
+      "counts": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "confirmed": false
+    },
+    "other": {
+      "counts": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "confirmed": false
+    }
+  },
+  {
+    "file": "artifacts\\phase5\\tool-20261007\\diagnostic-wrong\\02-hover-only.png",
+    "state": "TOOL_NOT_SELECTED",
+    "outline": {
+      "counts": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "confirmed": false
+    },
+    "other": {
+      "counts": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "confirmed": false
+    }
+  },
+  {
+    "file": "artifacts\\phase5\\tool-20261007\\diagnostic-wrong\\03-click-first.png",
+    "state": "TOOL_NOT_SELECTED",
+    "outline": {
+      "counts": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "confirmed": false
+    },
+    "other": {
+      "counts": {
+        "top": 41,
+        "bottom": 6,
+        "left": 39,
+        "right": 42
+      },
+      "confirmed": true
+    }
+  },
+  {
+    "file": "artifacts\\phase5\\tool-20261007\\diagnostic-wrong\\04-click-stable.png",
+    "state": "TOOL_ANIMATING",
+    "outline": {
+      "counts": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "confirmed": false
+    },
+    "other": {
+      "counts": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "confirmed": false
+    }
+  },
+  {
+    "file": "artifacts\\phase5\\tool-20261007\\diagnostic-wrong\\05-neutral-first.png",
+    "state": "TOOL_ANIMATING",
+    "outline": {
+      "counts": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "confirmed": false
+    },
+    "other": {
+      "counts": {
+        "top": 37,
+        "bottom": 2,
+        "left": 34,
+        "right": 36
+      },
+      "confirmed": false
+    }
+  },
+  {
+    "file": "artifacts\\phase5\\tool-20261007\\diagnostic-wrong\\06-neutral-stable.png",
+    "state": "TOOL_NOT_SELECTED",
+    "outline": {
+      "counts": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "confirmed": false
+    },
+    "other": {
+      "counts": {
+        "top": 43,
+        "bottom": 8,
+        "left": 41,
+        "right": 44
+      },
+      "confirmed": true
+    }
+  },
+  {
+    "file": "artifacts\\phase5\\tool-20261007\\diagnostic-wrong\\06-passive-0.png",
+    "state": "TOOL_ANIMATING",
+    "outline": {
+      "counts": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "confirmed": false
+    },
+    "other": {
+      "counts": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "confirmed": false
+    }
+  },
+  {
+    "file": "artifacts\\phase5\\tool-20261007\\diagnostic-wrong\\06-passive-1.png",
+    "state": "TOOL_NOT_SELECTED",
+    "outline": {
+      "counts": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "confirmed": false
+    },
+    "other": {
+      "counts": {
+        "top": 41,
+        "bottom": 6,
+        "left": 39,
+        "right": 42
+      },
+      "confirmed": true
+    }
+  },
+  {
+    "file": "artifacts\\phase5\\tool-20261007\\diagnostic-wrong\\06-passive-2.png",
+    "state": "TOOL_ANIMATING",
+    "outline": {
+      "counts": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "confirmed": false
+    },
+    "other": {
+      "counts": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "confirmed": false
+    }
+  },
+  {
+    "file": "artifacts\\phase5\\tool-20261007\\diagnostic-wrong\\06-passive-3.png",
+    "state": "TOOL_NOT_SELECTED",
+    "outline": {
+      "counts": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "confirmed": false
+    },
+    "other": {
+      "counts": {
+        "top": 38,
+        "bottom": 4,
+        "left": 36,
+        "right": 38
+      },
+      "confirmed": true
+    }
+  },
+  {
+    "file": "artifacts\\phase5\\tool-20261007\\diagnostic-wrong\\06-passive-4.png",
+    "state": "TOOL_ANIMATING",
+    "outline": {
+      "counts": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "confirmed": false
+    },
+    "other": {
+      "counts": {
+        "top": 37,
+        "bottom": 2,
+        "left": 35,
+        "right": 36
+      },
+      "confirmed": false
+    }
+  },
+  {
+    "file": "artifacts\\phase5\\tool-20261007\\diagnostic-wrong\\06-passive-5.png",
+    "state": "TOOL_ANIMATING",
+    "outline": {
+      "counts": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "confirmed": false
+    },
+    "other": {
+      "counts": {
+        "top": 20,
+        "bottom": 0,
+        "left": 0,
+        "right": 1
+      },
+      "confirmed": false
+    }
+  },
+  {
+    "file": "artifacts\\phase5\\tool-20261007\\diagnostic-wrong\\06-passive-6.png",
+    "state": "TOOL_NOT_SELECTED",
+    "outline": {
+      "counts": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "confirmed": false
+    },
+    "other": {
+      "counts": {
+        "top": 39,
+        "bottom": 6,
+        "left": 38,
+        "right": 41
+      },
+      "confirmed": true
+    }
+  },
+  {
+    "file": "artifacts\\phase5\\tool-20261007\\diagnostic-wrong\\06-passive-7.png",
+    "state": "TOOL_ANIMATING",
+    "outline": {
+      "counts": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "confirmed": false
+    },
+    "other": {
+      "counts": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "confirmed": false
+    }
+  },
+  {
+    "file": "artifacts\\phase5\\tool-20261007\\diagnostic-wrong\\07-closed.png",
+    "state": "TOOL_OCCLUDED",
+    "outline": {
+      "counts": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "confirmed": false
+    },
+    "other": {
+      "counts": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "confirmed": false
+    }
+  }
+]

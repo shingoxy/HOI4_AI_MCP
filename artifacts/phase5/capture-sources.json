@@ -1,0 +1,23 @@
+[
+  {
+    "name": "client-physical",
+    "blit": 1,
+    "rows": 1280,
+    "header_mae": 49.45280490451389,
+    "flag_correlation": 0.30064138770103455
+  },
+  {
+    "name": "client-unaware",
+    "blit": 1,
+    "rows": 1280,
+    "header_mae": 49.45280490451389,
+    "flag_correlation": 0.30064138770103455
+  },
+  {
+    "name": "desktop-unaware",
+    "blit": 1,
+    "rows": 1280,
+    "header_mae": 49.36787109375,
+    "flag_correlation": 0.30064138770103455
+  }
+]

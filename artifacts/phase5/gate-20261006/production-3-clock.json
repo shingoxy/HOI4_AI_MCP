@@ -1,0 +1,13 @@
+{
+  "pump": "OFF",
+  "maximum_running_seconds": 25,
+  "primitive": "SendInput.KEYBDINPUT_SCANCODE",
+  "events": [
+    {
+      "event": "unpause",
+      "confirmed": true
+    }
+  ],
+  "final_paused": true,
+  "duration_ms": 20656
+}

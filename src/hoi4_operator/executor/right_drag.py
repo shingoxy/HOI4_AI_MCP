@@ -82,6 +82,10 @@ class NativeRightDragBackend:
         self._held = False
         self._lock = threading.Lock()
 
+    @property
+    def capabilities(self):
+        return {**getattr(self.backend, "capabilities", {}), "right_drag": True}
+
     def __getattr__(self, name):
         return getattr(self.backend, name)
 

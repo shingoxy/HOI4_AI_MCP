@@ -1,0 +1,53 @@
+ M .gitignore
+ M ARCHITECTURE.md
+ M README.md
+ M STATUS.md
+ M scripts/phase3_client.py
+ M scripts/phase3_domain_client.py
+ M scripts/phase3a_client.py
+ M scripts/phase3b1_client.py
+ M scripts/phase4_client.py
+ M src/hoi4_operator/executor/construction_ui.py
+ M src/hoi4_operator/executor/military_service.py
+ M src/hoi4_operator/executor/pipeline.py
+ M src/hoi4_operator/executor/production_service.py
+ M src/hoi4_operator/executor/production_ui.py
+ M src/hoi4_operator/executor/right_drag.py
+ M src/hoi4_operator/executor/service.py
+ M src/hoi4_operator/executor/ui_state.py
+ M src/hoi4_operator/executor/worker.py
+ M src/hoi4_operator/mcp_server.py
+ M src/hoi4_operator/operator.py
+ M tests/test_executor.py
+ M tests/test_mcp.py
+?? AGENT_API.md
+?? AGENT_RUNTIME.md
+?? NATIVE_BACKEND.md
+?? PHASE5_AGENT_RUNTIME.md
+?? artifacts/phase5/
+?? scripts/build_phase5_templates.py
+?? scripts/check_native_capture.py
+?? scripts/check_native_panel.py
+?? scripts/native_client.py
+?? scripts/native_gate.py
+?? scripts/native_inspect.py
+?? scripts/run_agent_runtime.py
+?? src/hoi4_operator/action_catalog.py
+?? src/hoi4_operator/agent.py
+?? src/hoi4_operator/agent_runtime.py
+?? src/hoi4_operator/executor/native_calibration.py
+?? src/hoi4_operator/executor/native_military_ui.py
+?? src/hoi4_operator/executor/native_order_ui.py
+?? src/hoi4_operator/executor/native_runtime.py
+?? src/hoi4_operator/executor/native_win32.py
+?? src/hoi4_operator/executor/windows_native.py
+?? src/hoi4_operator/game_time.py
+?? src/hoi4_operator/observation.py
+?? tests/test_agent_runtime.py
+?? tests/test_native_construction.py
+?? tests/test_native_gate.py
+?? tests/test_native_mcp.py
+?? tests/test_native_military.py
+?? tests/test_native_production.py
+?? tests/test_native_win32.py
+?? tests/test_windows_native.py

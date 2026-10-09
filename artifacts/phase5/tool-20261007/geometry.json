@@ -1,0 +1,306 @@
+[
+  {
+    "folder": "diagnostic-1",
+    "file": "06-neutral-stable.png",
+    "confirmed": false,
+    "matches": 302,
+    "unchanged": 284,
+    "unchanged_ratio": 0.9403973509933775,
+    "sectors": [
+      38,
+      105,
+      141
+    ],
+    "target_neighborhood_matches": 9,
+    "maximum_displacement_pixels": 1,
+    "target_transform_used": false
+  },
+  {
+    "folder": "diagnostic-2",
+    "file": "06-neutral-stable.png",
+    "confirmed": false,
+    "matches": 312,
+    "unchanged": 288,
+    "unchanged_ratio": 0.9230769230769231,
+    "sectors": [
+      41,
+      103,
+      144
+    ],
+    "target_neighborhood_matches": 8,
+    "maximum_displacement_pixels": 1,
+    "target_transform_used": false
+  },
+  {
+    "folder": "diagnostic-2",
+    "file": "06-passive-0.png",
+    "confirmed": false,
+    "matches": 308,
+    "unchanged": 285,
+    "unchanged_ratio": 0.9253246753246753,
+    "sectors": [
+      36,
+      102,
+      147
+    ],
+    "target_neighborhood_matches": 5,
+    "maximum_displacement_pixels": 1,
+    "target_transform_used": false
+  },
+  {
+    "folder": "diagnostic-2",
+    "file": "06-passive-1.png",
+    "confirmed": false,
+    "matches": 307,
+    "unchanged": 287,
+    "unchanged_ratio": 0.9348534201954397,
+    "sectors": [
+      39,
+      102,
+      146
+    ],
+    "target_neighborhood_matches": 7,
+    "maximum_displacement_pixels": 1,
+    "target_transform_used": false
+  },
+  {
+    "folder": "diagnostic-2",
+    "file": "06-passive-2.png",
+    "confirmed": false,
+    "matches": 314,
+    "unchanged": 292,
+    "unchanged_ratio": 0.9299363057324841,
+    "sectors": [
+      40,
+      103,
+      149
+    ],
+    "target_neighborhood_matches": 8,
+    "maximum_displacement_pixels": 1,
+    "target_transform_used": false
+  },
+  {
+    "folder": "diagnostic-2",
+    "file": "06-passive-3.png",
+    "confirmed": false,
+    "matches": 314,
+    "unchanged": 292,
+    "unchanged_ratio": 0.9299363057324841,
+    "sectors": [
+      40,
+      103,
+      149
+    ],
+    "target_neighborhood_matches": 7,
+    "maximum_displacement_pixels": 1,
+    "target_transform_used": false
+  },
+  {
+    "folder": "diagnostic-2",
+    "file": "06-passive-4.png",
+    "confirmed": false,
+    "matches": 309,
+    "unchanged": 291,
+    "unchanged_ratio": 0.941747572815534,
+    "sectors": [
+      40,
+      103,
+      148
+    ],
+    "target_neighborhood_matches": 7,
+    "maximum_displacement_pixels": 1,
+    "target_transform_used": false
+  },
+  {
+    "folder": "diagnostic-2",
+    "file": "06-passive-5.png",
+    "confirmed": false,
+    "matches": 318,
+    "unchanged": 293,
+    "unchanged_ratio": 0.9213836477987422,
+    "sectors": [
+      41,
+      102,
+      150
+    ],
+    "target_neighborhood_matches": 8,
+    "maximum_displacement_pixels": 1,
+    "target_transform_used": false
+  },
+  {
+    "folder": "diagnostic-2",
+    "file": "06-passive-6.png",
+    "confirmed": false,
+    "matches": 310,
+    "unchanged": 287,
+    "unchanged_ratio": 0.9258064516129032,
+    "sectors": [
+      39,
+      102,
+      146
+    ],
+    "target_neighborhood_matches": 8,
+    "maximum_displacement_pixels": 1,
+    "target_transform_used": false
+  },
+  {
+    "folder": "diagnostic-2",
+    "file": "06-passive-7.png",
+    "confirmed": false,
+    "matches": 315,
+    "unchanged": 288,
+    "unchanged_ratio": 0.9142857142857143,
+    "sectors": [
+      40,
+      102,
+      146
+    ],
+    "target_neighborhood_matches": 7,
+    "maximum_displacement_pixels": 1,
+    "target_transform_used": false
+  },
+  {
+    "folder": "diagnostic-wrong",
+    "file": "06-neutral-stable.png",
+    "confirmed": false,
+    "matches": 297,
+    "unchanged": 273,
+    "unchanged_ratio": 0.9191919191919192,
+    "sectors": [
+      28,
+      96,
+      149
+    ],
+    "target_neighborhood_matches": 3,
+    "maximum_displacement_pixels": 1,
+    "target_transform_used": false
+  },
+  {
+    "folder": "diagnostic-wrong",
+    "file": "06-passive-0.png",
+    "confirmed": false,
+    "matches": 305,
+    "unchanged": 280,
+    "unchanged_ratio": 0.9180327868852459,
+    "sectors": [
+      30,
+      95,
+      155
+    ],
+    "target_neighborhood_matches": 5,
+    "maximum_displacement_pixels": 1,
+    "target_transform_used": false
+  },
+  {
+    "folder": "diagnostic-wrong",
+    "file": "06-passive-1.png",
+    "confirmed": false,
+    "matches": 300,
+    "unchanged": 274,
+    "unchanged_ratio": 0.9133333333333333,
+    "sectors": [
+      31,
+      97,
+      146
+    ],
+    "target_neighborhood_matches": 5,
+    "maximum_displacement_pixels": 1,
+    "target_transform_used": false
+  },
+  {
+    "folder": "diagnostic-wrong",
+    "file": "06-passive-2.png",
+    "confirmed": false,
+    "matches": 300,
+    "unchanged": 275,
+    "unchanged_ratio": 0.9166666666666666,
+    "sectors": [
+      28,
+      97,
+      150
+    ],
+    "target_neighborhood_matches": 4,
+    "maximum_displacement_pixels": 1,
+    "target_transform_used": false
+  },
+  {
+    "folder": "diagnostic-wrong",
+    "file": "06-passive-3.png",
+    "confirmed": false,
+    "matches": 293,
+    "unchanged": 273,
+    "unchanged_ratio": 0.931740614334471,
+    "sectors": [
+      29,
+      96,
+      148
+    ],
+    "target_neighborhood_matches": 4,
+    "maximum_displacement_pixels": 1,
+    "target_transform_used": false
+  },
+  {
+    "folder": "diagnostic-wrong",
+    "file": "06-passive-4.png",
+    "confirmed": false,
+    "matches": 300,
+    "unchanged": 272,
+    "unchanged_ratio": 0.9066666666666666,
+    "sectors": [
+      31,
+      97,
+      144
+    ],
+    "target_neighborhood_matches": 5,
+    "maximum_displacement_pixels": 1,
+    "target_transform_used": false
+  },
+  {
+    "folder": "diagnostic-wrong",
+    "file": "06-passive-5.png",
+    "confirmed": false,
+    "matches": 299,
+    "unchanged": 277,
+    "unchanged_ratio": 0.9264214046822743,
+    "sectors": [
+      30,
+      97,
+      150
+    ],
+    "target_neighborhood_matches": 4,
+    "maximum_displacement_pixels": 1,
+    "target_transform_used": false
+  },
+  {
+    "folder": "diagnostic-wrong",
+    "file": "06-passive-6.png",
+    "confirmed": false,
+    "matches": 303,
+    "unchanged": 278,
+    "unchanged_ratio": 0.9174917491749175,
+    "sectors": [
+      33,
+      97,
+      148
+    ],
+    "target_neighborhood_matches": 5,
+    "maximum_displacement_pixels": 1,
+    "target_transform_used": false
+  },
+  {
+    "folder": "diagnostic-wrong",
+    "file": "06-passive-7.png",
+    "confirmed": false,
+    "matches": 304,
+    "unchanged": 277,
+    "unchanged_ratio": 0.9111842105263158,
+    "sectors": [
+      33,
+      97,
+      147
+    ],
+    "target_neighborhood_matches": 7,
+    "maximum_displacement_pixels": 1,
+    "target_transform_used": false
+  }
+]

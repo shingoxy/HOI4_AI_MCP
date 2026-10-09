@@ -1,0 +1,20 @@
+[
+  {
+    "file": "artifacts\\phase5\\tool-20261007\\diagnostic-2\\06-neutral-stable.png",
+    "matches": 74,
+    "unchanged": 65,
+    "ratio": 0.8783783783783784
+  },
+  {
+    "file": "artifacts\\phase5\\tool-20261007\\diagnostic-2\\06-passive-1.png",
+    "matches": 68,
+    "unchanged": 62,
+    "ratio": 0.9117647058823529
+  },
+  {
+    "file": "artifacts\\phase5\\stability-20261007\\investigation\\drawing4-selected.png",
+    "matches": 109,
+    "unchanged": 98,
+    "ratio": 0.8990825688073395
+  }
+]

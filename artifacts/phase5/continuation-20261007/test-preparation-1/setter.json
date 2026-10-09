@@ -1,0 +1,64 @@
+{
+  "accepted": true,
+  "action_id": "b3b41eba-01c5-4b56-8422-64aba604c503",
+  "status": "confirmed",
+  "retry_count": 0,
+  "telemetry_confirmation": {
+    "before_seq": 706725,
+    "after_seq": 706725,
+    "military_factories": 28,
+    "totals_agree": true,
+    "per_line_count": "UNKNOWN; confirmation source is GUI"
+  },
+  "ui_confirmation": {
+    "same_equipment_and_position": true,
+    "requested_factories": 11,
+    "readback_factories": 11,
+    "repeated_readback": true,
+    "count_sources": "target numeric AND 15-cell grid AND complete-list global assigned total; other rows numeric AND global total"
+  },
+  "timings_ms": {
+    "snapshot": 172,
+    "navigation": 1453,
+    "adjustment": 5391,
+    "confirmation": 4969
+  },
+  "line_id": "prod-bf4b961f4d7b-0001-0001",
+  "snapshot_version": 1,
+  "before": {
+    "equipment": "Kar 98k式步枪",
+    "equipment_type": "步兵装备 I型",
+    "equipment_id": "infantry_equipment_1",
+    "equipment_game_id": null,
+    "position": 0,
+    "factories": 12,
+    "identity_source": "gui",
+    "stable_game_identity": false,
+    "visible": true,
+    "identity_complete": true,
+    "action_supported": true,
+    "maximum_assignable_factories": 18,
+    "supported_factory_count_max": 15,
+    "line_id": "prod-bf4b961f4d7b-0001-0001",
+    "identity_signature": "5f9e17194f83a43f7c446db7ca21cc69f468f91581b17c5b225f2fe03a315aab"
+  },
+  "after": {
+    "equipment": "Kar 98k式步枪",
+    "equipment_type": "步兵装备 I型",
+    "equipment_id": "infantry_equipment_1",
+    "equipment_game_id": null,
+    "position": 0,
+    "factories": 11,
+    "identity_source": "gui",
+    "stable_game_identity": false,
+    "visible": true,
+    "identity_complete": true,
+    "action_supported": true,
+    "maximum_assignable_factories": 18,
+    "supported_factory_count_max": 15,
+    "line_id": "prod-bf4b961f4d7b-0001-0001",
+    "identity_signature": "1b78c5c935916880e864d16ab1ef4796a05f4367cb2a0da7866fdcfd5d9508f1"
+  },
+  "mutation_submitted": true,
+  "duration_ms": 12672
+}

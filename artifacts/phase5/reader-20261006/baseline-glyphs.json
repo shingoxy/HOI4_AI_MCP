@@ -1,0 +1,321 @@
+[
+  {
+    "sample": "production-compact.png",
+    "kind": "header",
+    "ROI": [
+      210,
+      215,
+      262,
+      236
+    ],
+    "pieces": [
+      {
+        "columns": [
+          10,
+          17
+        ],
+        "bounding_box": [
+          0,
+          3,
+          7,
+          12
+        ],
+        "foreground": 39
+      },
+      {
+        "columns": [
+          18,
+          31
+        ],
+        "bounding_box": [
+          0,
+          2,
+          13,
+          16
+        ],
+        "foreground": 61
+      },
+      {
+        "columns": [
+          32,
+          39
+        ],
+        "bounding_box": [
+          0,
+          3,
+          7,
+          12
+        ],
+        "foreground": 38
+      },
+      {
+        "columns": [
+          40,
+          47
+        ],
+        "bounding_box": [
+          0,
+          3,
+          7,
+          12
+        ],
+        "foreground": 44
+      }
+    ]
+  },
+  {
+    "sample": "production-compact.png",
+    "kind": "count",
+    "ROI": [
+      412,
+      377,
+      460,
+      399
+    ],
+    "pieces": [
+      {
+        "columns": [
+          18,
+          24
+        ],
+        "bounding_box": [
+          0,
+          6,
+          6,
+          10
+        ],
+        "foreground": 28
+      },
+      {
+        "columns": [
+          25,
+          31
+        ],
+        "bounding_box": [
+          0,
+          6,
+          6,
+          10
+        ],
+        "foreground": 36
+      }
+    ]
+  },
+  {
+    "sample": "production-after-submit.png",
+    "kind": "header",
+    "ROI": [
+      210,
+      215,
+      262,
+      236
+    ],
+    "pieces": [
+      {
+        "columns": [
+          11,
+          18
+        ],
+        "bounding_box": [
+          0,
+          3,
+          7,
+          12
+        ],
+        "foreground": 37
+      },
+      {
+        "columns": [
+          19,
+          24
+        ],
+        "bounding_box": [
+          0,
+          3,
+          5,
+          12
+        ],
+        "foreground": 27
+      },
+      {
+        "columns": [
+          25,
+          31
+        ],
+        "bounding_box": [
+          0,
+          2,
+          6,
+          16
+        ],
+        "foreground": 20
+      },
+      {
+        "columns": [
+          32,
+          39
+        ],
+        "bounding_box": [
+          0,
+          3,
+          7,
+          12
+        ],
+        "foreground": 38
+      },
+      {
+        "columns": [
+          40,
+          47
+        ],
+        "bounding_box": [
+          0,
+          3,
+          7,
+          12
+        ],
+        "foreground": 44
+      }
+    ]
+  },
+  {
+    "sample": "production-after-submit.png",
+    "kind": "count",
+    "ROI": [
+      412,
+      377,
+      460,
+      399
+    ],
+    "pieces": [
+      {
+        "columns": [
+          18,
+          24
+        ],
+        "bounding_box": [
+          0,
+          6,
+          6,
+          10
+        ],
+        "foreground": 28
+      },
+      {
+        "columns": [
+          25,
+          31
+        ],
+        "bounding_box": [
+          0,
+          6,
+          6,
+          10
+        ],
+        "foreground": 28
+      }
+    ]
+  },
+  {
+    "sample": "production-after-uncertain.png",
+    "kind": "header",
+    "ROI": [
+      210,
+      215,
+      262,
+      236
+    ],
+    "pieces": [
+      {
+        "columns": [
+          10,
+          17
+        ],
+        "bounding_box": [
+          0,
+          3,
+          7,
+          12
+        ],
+        "foreground": 39
+      },
+      {
+        "columns": [
+          18,
+          31
+        ],
+        "bounding_box": [
+          0,
+          2,
+          13,
+          16
+        ],
+        "foreground": 61
+      },
+      {
+        "columns": [
+          32,
+          39
+        ],
+        "bounding_box": [
+          0,
+          3,
+          7,
+          12
+        ],
+        "foreground": 38
+      },
+      {
+        "columns": [
+          40,
+          47
+        ],
+        "bounding_box": [
+          0,
+          3,
+          7,
+          12
+        ],
+        "foreground": 44
+      }
+    ]
+  },
+  {
+    "sample": "production-after-uncertain.png",
+    "kind": "count",
+    "ROI": [
+      412,
+      377,
+      460,
+      399
+    ],
+    "pieces": [
+      {
+        "columns": [
+          18,
+          24
+        ],
+        "bounding_box": [
+          0,
+          6,
+          6,
+          10
+        ],
+        "foreground": 28
+      },
+      {
+        "columns": [
+          25,
+          31
+        ],
+        "bounding_box": [
+          0,
+          6,
+          6,
+          10
+        ],
+        "foreground": 36
+      }
+    ]
+  }
+]

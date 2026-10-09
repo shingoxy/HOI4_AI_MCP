@@ -6,8 +6,13 @@ from .contracts import ActionResult
 
 
 class OperatorAPI:
-    def __init__(self, model, *, executor=None, production=None, construction=None, politics=None, trade=None, military=None):
+    def __init__(self, model, *, executor=None, production=None, construction=None, politics=None, trade=None, military=None,
+                 runtime_capability=None, observation_refresh=None):
         self.model = model
+        self.services = [s for s in (executor, production, construction, politics, trade, military) if s]
+        self.runtime_capability = runtime_capability or (lambda: {"backend": "unattached", "native_subset_ready": False})
+        from .observation import ObservationAggregator
+        self.observation = ObservationAggregator(model, capabilities=self.runtime_capability, refresh=observation_refresh)
         self.actions = {}
         groups = ((executor, ("select_research", "select_focus")),
                   (production, ("get_production_lines", "set_production_factory_count", "create_production_line",
@@ -32,6 +37,21 @@ class OperatorAPI:
         self.model.poll()
         return self.model.summary()
 
+    def get_game_state(self, detail="strategic"):
+        return self.observation.get(detail)
+
+    def get_action_catalog(self):
+        from .action_catalog import build_catalog
+        return build_catalog(self.get_game_state("summary"), self.actions, self.runtime_capability())
+
+    def invalidate_snapshots(self):
+        self.observation.invalidate()
+        for service in self.services:
+            if hasattr(service, "invalidate"):
+                service.invalidate()
+            elif hasattr(service, "snapshots"):
+                service.snapshots.invalidate()
+
     def execute(self, action, arguments=None):
         method = self.actions.get(action) if isinstance(action, str) else None
         result = ActionResult(action if isinstance(action, str) else "invalid_action")
@@ -46,4 +66,15 @@ class OperatorAPI:
         except TypeError:
             result.evidence["reason"] = "invalid_arguments"
             return result.as_dict()
-        return method(**arguments)
+        answer = method(**arguments)
+        from .action_catalog import DOMAINS
+        getters = {"get_production_lines": "production", "get_construction": "construction",
+                   "get_armies": "military", "get_divisions": "military", "get_fronts": "military"}
+        if answer.get("status") in {"confirmed", "already_satisfied"}:
+            domain = getters.get(action)
+            if domain:
+                self.observation.remember(domain, answer, complete=answer.get("complete", domain == "construction"))
+            elif action in DOMAINS:
+                # A mutation may change related cached domains and session versions.
+                self.observation.invalidate()
+        return answer

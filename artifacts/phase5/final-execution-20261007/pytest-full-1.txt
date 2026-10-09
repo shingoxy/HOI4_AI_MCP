@@ -1,0 +1,2048 @@
+........................................................................ [ 11%]
+.........................................................................FFEFEFEFEFEFEF............................................... [ 33%]
+........................................................................ [ 45%]
+........................................................................ [ 57%]
+........................................................................ [ 68%]
+............................FEFEFEFEFEFE................................ [ 79%]
+...FFFFFF............................................................... [ 91%]
+.................................................                        [100%]
+=================================== ERRORS ====================================
+_ ERROR at teardown of MCPTests.test_extended_sections_after_protocol_upgrade_notify_and_keep_unknowns _
+
+path = 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmpo7zs14bk'
+onerror = <function TemporaryDirectory._rmtree.<locals>.onerror at 0x000001A67C0EF060>
+
+    def _rmtree_unsafe(path, onerror):
+        try:
+            with os.scandir(path) as scandir_it:
+                entries = list(scandir_it)
+        except OSError:
+            onerror(os.scandir, path, sys.exc_info())
+            entries = []
+        for entry in entries:
+            fullname = entry.path
+            if _rmtree_isdir(entry):
+                try:
+                    if entry.is_symlink():
+                        # This can only happen if someone replaces
+                        # a directory with a symlink after the call to
+                        # os.scandir or entry.is_dir above.
+                        raise OSError("Cannot call rmtree on a symbolic link")
+                except OSError:
+                    onerror(os.path.islink, fullname, sys.exc_info())
+                    continue
+                _rmtree_unsafe(fullname, onerror)
+            else:
+                try:
+                    os.unlink(fullname)
+                except OSError:
+                    onerror(os.unlink, fullname, sys.exc_info())
+        try:
+>           os.rmdir(path)
+E           PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmpo7zs14bk'
+
+D:\Software\MiniConda3-py311\Lib\shutil.py:636: PermissionError
+
+During handling of the above exception, another exception occurred:
+D:\Software\MiniConda3-py311\Lib\unittest\async_case.py:99: in _callCleanup
+    self._callMaybeAsync(function, *args, **kwargs)
+D:\Software\MiniConda3-py311\Lib\unittest\async_case.py:117: in _callMaybeAsync
+    return self._asyncioTestContext.run(func, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+D:\Software\MiniConda3-py311\Lib\tempfile.py:947: in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+D:\Software\MiniConda3-py311\Lib\tempfile.py:929: in _rmtree
+    _shutil.rmtree(name, onerror=onerror)
+D:\Software\MiniConda3-py311\Lib\shutil.py:787: in rmtree
+    return _rmtree_unsafe(path, onerror)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+D:\Software\MiniConda3-py311\Lib\shutil.py:638: in _rmtree_unsafe
+    onerror(os.rmdir, path, sys.exc_info())
+D:\Software\MiniConda3-py311\Lib\tempfile.py:890: in onerror
+    _resetperms(path)
+D:\Software\MiniConda3-py311\Lib\tempfile.py:287: in _resetperms
+    _dont_follow_symlinks(_os.chmod, path, 0o700)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+func = <built-in function chmod>
+path = 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmpo7zs14bk'
+args = (448,)
+
+    def _dont_follow_symlinks(func, path, *args):
+        # Pass follow_symlinks=False, unless not supported on this platform.
+        if func in _os.supports_follow_symlinks:
+            func(path, *args, follow_symlinks=False)
+        elif _os.name == 'nt' or not _os.path.islink(path):
+>           func(path, *args)
+E           PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmpo7zs14bk'
+
+D:\Software\MiniConda3-py311\Lib\tempfile.py:278: PermissionError
+_ ERROR at teardown of MCPTests.test_fresh_to_stale_notifies_without_a_new_frame _
+
+path = 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmp52bcjdua'
+onerror = <function TemporaryDirectory._rmtree.<locals>.onerror at 0x000001A6799ADEE0>
+
+    def _rmtree_unsafe(path, onerror):
+        try:
+            with os.scandir(path) as scandir_it:
+                entries = list(scandir_it)
+        except OSError:
+            onerror(os.scandir, path, sys.exc_info())
+            entries = []
+        for entry in entries:
+            fullname = entry.path
+            if _rmtree_isdir(entry):
+                try:
+                    if entry.is_symlink():
+                        # This can only happen if someone replaces
+                        # a directory with a symlink after the call to
+                        # os.scandir or entry.is_dir above.
+                        raise OSError("Cannot call rmtree on a symbolic link")
+                except OSError:
+                    onerror(os.path.islink, fullname, sys.exc_info())
+                    continue
+                _rmtree_unsafe(fullname, onerror)
+            else:
+                try:
+                    os.unlink(fullname)
+                except OSError:
+                    onerror(os.unlink, fullname, sys.exc_info())
+        try:
+>           os.rmdir(path)
+E           PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmp52bcjdua'
+
+D:\Software\MiniConda3-py311\Lib\shutil.py:636: PermissionError
+
+During handling of the above exception, another exception occurred:
+D:\Software\MiniConda3-py311\Lib\unittest\async_case.py:99: in _callCleanup
+    self._callMaybeAsync(function, *args, **kwargs)
+D:\Software\MiniConda3-py311\Lib\unittest\async_case.py:117: in _callMaybeAsync
+    return self._asyncioTestContext.run(func, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+D:\Software\MiniConda3-py311\Lib\tempfile.py:947: in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+D:\Software\MiniConda3-py311\Lib\tempfile.py:929: in _rmtree
+    _shutil.rmtree(name, onerror=onerror)
+D:\Software\MiniConda3-py311\Lib\shutil.py:787: in rmtree
+    return _rmtree_unsafe(path, onerror)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+D:\Software\MiniConda3-py311\Lib\shutil.py:638: in _rmtree_unsafe
+    onerror(os.rmdir, path, sys.exc_info())
+D:\Software\MiniConda3-py311\Lib\tempfile.py:890: in onerror
+    _resetperms(path)
+D:\Software\MiniConda3-py311\Lib\tempfile.py:287: in _resetperms
+    _dont_follow_symlinks(_os.chmod, path, 0o700)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+func = <built-in function chmod>
+path = 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmp52bcjdua'
+args = (448,)
+
+    def _dont_follow_symlinks(func, path, *args):
+        # Pass follow_symlinks=False, unless not supported on this platform.
+        if func in _os.supports_follow_symlinks:
+            func(path, *args, follow_symlinks=False)
+        elif _os.name == 'nt' or not _os.path.islink(path):
+>           func(path, *args)
+E           PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmp52bcjdua'
+
+D:\Software\MiniConda3-py311\Lib\tempfile.py:278: PermissionError
+_ ERROR at teardown of MCPTests.test_legacy_initialize_tools_and_utf8_over_stdio _
+
+path = 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmpfiy3rmc3'
+onerror = <function TemporaryDirectory._rmtree.<locals>.onerror at 0x000001A679E5D800>
+
+    def _rmtree_unsafe(path, onerror):
+        try:
+            with os.scandir(path) as scandir_it:
+                entries = list(scandir_it)
+        except OSError:
+            onerror(os.scandir, path, sys.exc_info())
+            entries = []
+        for entry in entries:
+            fullname = entry.path
+            if _rmtree_isdir(entry):
+                try:
+                    if entry.is_symlink():
+                        # This can only happen if someone replaces
+                        # a directory with a symlink after the call to
+                        # os.scandir or entry.is_dir above.
+                        raise OSError("Cannot call rmtree on a symbolic link")
+                except OSError:
+                    onerror(os.path.islink, fullname, sys.exc_info())
+                    continue
+                _rmtree_unsafe(fullname, onerror)
+            else:
+                try:
+                    os.unlink(fullname)
+                except OSError:
+                    onerror(os.unlink, fullname, sys.exc_info())
+        try:
+>           os.rmdir(path)
+E           PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmpfiy3rmc3'
+
+D:\Software\MiniConda3-py311\Lib\shutil.py:636: PermissionError
+
+During handling of the above exception, another exception occurred:
+D:\Software\MiniConda3-py311\Lib\unittest\async_case.py:99: in _callCleanup
+    self._callMaybeAsync(function, *args, **kwargs)
+D:\Software\MiniConda3-py311\Lib\unittest\async_case.py:117: in _callMaybeAsync
+    return self._asyncioTestContext.run(func, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+D:\Software\MiniConda3-py311\Lib\tempfile.py:947: in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+D:\Software\MiniConda3-py311\Lib\tempfile.py:929: in _rmtree
+    _shutil.rmtree(name, onerror=onerror)
+D:\Software\MiniConda3-py311\Lib\shutil.py:787: in rmtree
+    return _rmtree_unsafe(path, onerror)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+D:\Software\MiniConda3-py311\Lib\shutil.py:638: in _rmtree_unsafe
+    onerror(os.rmdir, path, sys.exc_info())
+D:\Software\MiniConda3-py311\Lib\tempfile.py:890: in onerror
+    _resetperms(path)
+D:\Software\MiniConda3-py311\Lib\tempfile.py:287: in _resetperms
+    _dont_follow_symlinks(_os.chmod, path, 0o700)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+func = <built-in function chmod>
+path = 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmpfiy3rmc3'
+args = (448,)
+
+    def _dont_follow_symlinks(func, path, *args):
+        # Pass follow_symlinks=False, unless not supported on this platform.
+        if func in _os.supports_follow_symlinks:
+            func(path, *args, follow_symlinks=False)
+        elif _os.name == 'nt' or not _os.path.islink(path):
+>           func(path, *args)
+E           PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmpfiy3rmc3'
+
+D:\Software\MiniConda3-py311\Lib\tempfile.py:278: PermissionError
+_ ERROR at teardown of MCPTests.test_live_check_watch_reports_rollback_and_stale _
+
+path = 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmpfkku6uo7'
+onerror = <function TemporaryDirectory._rmtree.<locals>.onerror at 0x000001A67C3CDF80>
+
+    def _rmtree_unsafe(path, onerror):
+        try:
+            with os.scandir(path) as scandir_it:
+                entries = list(scandir_it)
+        except OSError:
+            onerror(os.scandir, path, sys.exc_info())
+            entries = []
+        for entry in entries:
+            fullname = entry.path
+            if _rmtree_isdir(entry):
+                try:
+                    if entry.is_symlink():
+                        # This can only happen if someone replaces
+                        # a directory with a symlink after the call to
+                        # os.scandir or entry.is_dir above.
+                        raise OSError("Cannot call rmtree on a symbolic link")
+                except OSError:
+                    onerror(os.path.islink, fullname, sys.exc_info())
+                    continue
+                _rmtree_unsafe(fullname, onerror)
+            else:
+                try:
+                    os.unlink(fullname)
+                except OSError:
+                    onerror(os.unlink, fullname, sys.exc_info())
+        try:
+>           os.rmdir(path)
+E           PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmpfkku6uo7'
+
+D:\Software\MiniConda3-py311\Lib\shutil.py:636: PermissionError
+
+During handling of the above exception, another exception occurred:
+D:\Software\MiniConda3-py311\Lib\unittest\async_case.py:99: in _callCleanup
+    self._callMaybeAsync(function, *args, **kwargs)
+D:\Software\MiniConda3-py311\Lib\unittest\async_case.py:117: in _callMaybeAsync
+    return self._asyncioTestContext.run(func, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+D:\Software\MiniConda3-py311\Lib\tempfile.py:947: in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+D:\Software\MiniConda3-py311\Lib\tempfile.py:929: in _rmtree
+    _shutil.rmtree(name, onerror=onerror)
+D:\Software\MiniConda3-py311\Lib\shutil.py:787: in rmtree
+    return _rmtree_unsafe(path, onerror)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+D:\Software\MiniConda3-py311\Lib\shutil.py:638: in _rmtree_unsafe
+    onerror(os.rmdir, path, sys.exc_info())
+D:\Software\MiniConda3-py311\Lib\tempfile.py:890: in onerror
+    _resetperms(path)
+D:\Software\MiniConda3-py311\Lib\tempfile.py:287: in _resetperms
+    _dont_follow_symlinks(_os.chmod, path, 0o700)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+func = <built-in function chmod>
+path = 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmpfkku6uo7'
+args = (448,)
+
+    def _dont_follow_symlinks(func, path, *args):
+        # Pass follow_symlinks=False, unless not supported on this platform.
+        if func in _os.supports_follow_symlinks:
+            func(path, *args, follow_symlinks=False)
+        elif _os.name == 'nt' or not _os.path.islink(path):
+>           func(path, *args)
+E           PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmpfkku6uo7'
+
+D:\Software\MiniConda3-py311\Lib\tempfile.py:278: PermissionError
+_ ERROR at teardown of MCPTests.test_live_check_watch_times_out_without_claiming_updates _
+
+path = 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmprgls2ks7'
+onerror = <function TemporaryDirectory._rmtree.<locals>.onerror at 0x000001A67C3CC5E0>
+
+    def _rmtree_unsafe(path, onerror):
+        try:
+            with os.scandir(path) as scandir_it:
+                entries = list(scandir_it)
+        except OSError:
+            onerror(os.scandir, path, sys.exc_info())
+            entries = []
+        for entry in entries:
+            fullname = entry.path
+            if _rmtree_isdir(entry):
+                try:
+                    if entry.is_symlink():
+                        # This can only happen if someone replaces
+                        # a directory with a symlink after the call to
+                        # os.scandir or entry.is_dir above.
+                        raise OSError("Cannot call rmtree on a symbolic link")
+                except OSError:
+                    onerror(os.path.islink, fullname, sys.exc_info())
+                    continue
+                _rmtree_unsafe(fullname, onerror)
+            else:
+                try:
+                    os.unlink(fullname)
+                except OSError:
+                    onerror(os.unlink, fullname, sys.exc_info())
+        try:
+>           os.rmdir(path)
+E           PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmprgls2ks7'
+
+D:\Software\MiniConda3-py311\Lib\shutil.py:636: PermissionError
+
+During handling of the above exception, another exception occurred:
+D:\Software\MiniConda3-py311\Lib\unittest\async_case.py:99: in _callCleanup
+    self._callMaybeAsync(function, *args, **kwargs)
+D:\Software\MiniConda3-py311\Lib\unittest\async_case.py:117: in _callMaybeAsync
+    return self._asyncioTestContext.run(func, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+D:\Software\MiniConda3-py311\Lib\tempfile.py:947: in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+D:\Software\MiniConda3-py311\Lib\tempfile.py:929: in _rmtree
+    _shutil.rmtree(name, onerror=onerror)
+D:\Software\MiniConda3-py311\Lib\shutil.py:787: in rmtree
+    return _rmtree_unsafe(path, onerror)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+D:\Software\MiniConda3-py311\Lib\shutil.py:638: in _rmtree_unsafe
+    onerror(os.rmdir, path, sys.exc_info())
+D:\Software\MiniConda3-py311\Lib\tempfile.py:890: in onerror
+    _resetperms(path)
+D:\Software\MiniConda3-py311\Lib\tempfile.py:287: in _resetperms
+    _dont_follow_symlinks(_os.chmod, path, 0o700)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+func = <built-in function chmod>
+path = 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmprgls2ks7'
+args = (448,)
+
+    def _dont_follow_symlinks(func, path, *args):
+        # Pass follow_symlinks=False, unless not supported on this platform.
+        if func in _os.supports_follow_symlinks:
+            func(path, *args, follow_symlinks=False)
+        elif _os.name == 'nt' or not _os.path.islink(path):
+>           func(path, *args)
+E           PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmprgls2ks7'
+
+D:\Software\MiniConda3-py311\Lib\tempfile.py:278: PermissionError
+_ ERROR at teardown of MCPTests.test_subscription_refetch_and_changes_on_new_frame _
+
+path = 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmp49n569r1'
+onerror = <function TemporaryDirectory._rmtree.<locals>.onerror at 0x000001A67C3CDEE0>
+
+    def _rmtree_unsafe(path, onerror):
+        try:
+            with os.scandir(path) as scandir_it:
+                entries = list(scandir_it)
+        except OSError:
+            onerror(os.scandir, path, sys.exc_info())
+            entries = []
+        for entry in entries:
+            fullname = entry.path
+            if _rmtree_isdir(entry):
+                try:
+                    if entry.is_symlink():
+                        # This can only happen if someone replaces
+                        # a directory with a symlink after the call to
+                        # os.scandir or entry.is_dir above.
+                        raise OSError("Cannot call rmtree on a symbolic link")
+                except OSError:
+                    onerror(os.path.islink, fullname, sys.exc_info())
+                    continue
+                _rmtree_unsafe(fullname, onerror)
+            else:
+                try:
+                    os.unlink(fullname)
+                except OSError:
+                    onerror(os.unlink, fullname, sys.exc_info())
+        try:
+>           os.rmdir(path)
+E           PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmp49n569r1'
+
+D:\Software\MiniConda3-py311\Lib\shutil.py:636: PermissionError
+
+During handling of the above exception, another exception occurred:
+D:\Software\MiniConda3-py311\Lib\unittest\async_case.py:99: in _callCleanup
+    self._callMaybeAsync(function, *args, **kwargs)
+D:\Software\MiniConda3-py311\Lib\unittest\async_case.py:117: in _callMaybeAsync
+    return self._asyncioTestContext.run(func, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+D:\Software\MiniConda3-py311\Lib\tempfile.py:947: in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+D:\Software\MiniConda3-py311\Lib\tempfile.py:929: in _rmtree
+    _shutil.rmtree(name, onerror=onerror)
+D:\Software\MiniConda3-py311\Lib\shutil.py:787: in rmtree
+    return _rmtree_unsafe(path, onerror)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+D:\Software\MiniConda3-py311\Lib\shutil.py:638: in _rmtree_unsafe
+    onerror(os.rmdir, path, sys.exc_info())
+D:\Software\MiniConda3-py311\Lib\tempfile.py:890: in onerror
+    _resetperms(path)
+D:\Software\MiniConda3-py311\Lib\tempfile.py:287: in _resetperms
+    _dont_follow_symlinks(_os.chmod, path, 0o700)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+func = <built-in function chmod>
+path = 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmp49n569r1'
+args = (448,)
+
+    def _dont_follow_symlinks(func, path, *args):
+        # Pass follow_symlinks=False, unless not supported on this platform.
+        if func in _os.supports_follow_symlinks:
+            func(path, *args, follow_symlinks=False)
+        elif _os.name == 'nt' or not _os.path.islink(path):
+>           func(path, *args)
+E           PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmp49n569r1'
+
+D:\Software\MiniConda3-py311\Lib\tempfile.py:278: PermissionError
+_ ERROR at teardown of ReadModelTests.test_each_frame_in_batch_is_recorded_and_duplicate_ignored _
+
+path = 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmphmxg6ugr'
+onerror = <function TemporaryDirectory._rmtree.<locals>.onerror at 0x000001A600C4E160>
+
+    def _rmtree_unsafe(path, onerror):
+        try:
+            with os.scandir(path) as scandir_it:
+                entries = list(scandir_it)
+        except OSError:
+            onerror(os.scandir, path, sys.exc_info())
+            entries = []
+        for entry in entries:
+            fullname = entry.path
+            if _rmtree_isdir(entry):
+                try:
+                    if entry.is_symlink():
+                        # This can only happen if someone replaces
+                        # a directory with a symlink after the call to
+                        # os.scandir or entry.is_dir above.
+                        raise OSError("Cannot call rmtree on a symbolic link")
+                except OSError:
+                    onerror(os.path.islink, fullname, sys.exc_info())
+                    continue
+                _rmtree_unsafe(fullname, onerror)
+            else:
+                try:
+                    os.unlink(fullname)
+                except OSError:
+                    onerror(os.unlink, fullname, sys.exc_info())
+        try:
+>           os.rmdir(path)
+E           PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmphmxg6ugr'
+
+D:\Software\MiniConda3-py311\Lib\shutil.py:636: PermissionError
+
+During handling of the above exception, another exception occurred:
+D:\Software\MiniConda3-py311\Lib\tempfile.py:947: in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+D:\Software\MiniConda3-py311\Lib\tempfile.py:929: in _rmtree
+    _shutil.rmtree(name, onerror=onerror)
+D:\Software\MiniConda3-py311\Lib\shutil.py:787: in rmtree
+    return _rmtree_unsafe(path, onerror)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+D:\Software\MiniConda3-py311\Lib\shutil.py:638: in _rmtree_unsafe
+    onerror(os.rmdir, path, sys.exc_info())
+D:\Software\MiniConda3-py311\Lib\tempfile.py:890: in onerror
+    _resetperms(path)
+D:\Software\MiniConda3-py311\Lib\tempfile.py:287: in _resetperms
+    _dont_follow_symlinks(_os.chmod, path, 0o700)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+func = <built-in function chmod>
+path = 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmphmxg6ugr'
+args = (448,)
+
+    def _dont_follow_symlinks(func, path, *args):
+        # Pass follow_symlinks=False, unless not supported on this platform.
+        if func in _os.supports_follow_symlinks:
+            func(path, *args, follow_symlinks=False)
+        elif _os.name == 'nt' or not _os.path.islink(path):
+>           func(path, *args)
+E           PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmphmxg6ugr'
+
+D:\Software\MiniConda3-py311\Lib\tempfile.py:278: PermissionError
+_ ERROR at teardown of ReadModelTests.test_freshness_transition_notifies_once_and_history_is_bounded _
+
+path = 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmpoht0ej6o'
+onerror = <function TemporaryDirectory._rmtree.<locals>.onerror at 0x000001A600C4E020>
+
+    def _rmtree_unsafe(path, onerror):
+        try:
+            with os.scandir(path) as scandir_it:
+                entries = list(scandir_it)
+        except OSError:
+            onerror(os.scandir, path, sys.exc_info())
+            entries = []
+        for entry in entries:
+            fullname = entry.path
+            if _rmtree_isdir(entry):
+                try:
+                    if entry.is_symlink():
+                        # This can only happen if someone replaces
+                        # a directory with a symlink after the call to
+                        # os.scandir or entry.is_dir above.
+                        raise OSError("Cannot call rmtree on a symbolic link")
+                except OSError:
+                    onerror(os.path.islink, fullname, sys.exc_info())
+                    continue
+                _rmtree_unsafe(fullname, onerror)
+            else:
+                try:
+                    os.unlink(fullname)
+                except OSError:
+                    onerror(os.unlink, fullname, sys.exc_info())
+        try:
+>           os.rmdir(path)
+E           PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmpoht0ej6o'
+
+D:\Software\MiniConda3-py311\Lib\shutil.py:636: PermissionError
+
+During handling of the above exception, another exception occurred:
+D:\Software\MiniConda3-py311\Lib\tempfile.py:947: in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+D:\Software\MiniConda3-py311\Lib\tempfile.py:929: in _rmtree
+    _shutil.rmtree(name, onerror=onerror)
+D:\Software\MiniConda3-py311\Lib\shutil.py:787: in rmtree
+    return _rmtree_unsafe(path, onerror)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+D:\Software\MiniConda3-py311\Lib\shutil.py:638: in _rmtree_unsafe
+    onerror(os.rmdir, path, sys.exc_info())
+D:\Software\MiniConda3-py311\Lib\tempfile.py:890: in onerror
+    _resetperms(path)
+D:\Software\MiniConda3-py311\Lib\tempfile.py:287: in _resetperms
+    _dont_follow_symlinks(_os.chmod, path, 0o700)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+func = <built-in function chmod>
+path = 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmpoht0ej6o'
+args = (448,)
+
+    def _dont_follow_symlinks(func, path, *args):
+        # Pass follow_symlinks=False, unless not supported on this platform.
+        if func in _os.supports_follow_symlinks:
+            func(path, *args, follow_symlinks=False)
+        elif _os.name == 'nt' or not _os.path.islink(path):
+>           func(path, *args)
+E           PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmpoht0ej6o'
+
+D:\Software\MiniConda3-py311\Lib\tempfile.py:278: PermissionError
+_ ERROR at teardown of ReadModelTests.test_missing_and_recreated_log_do_not_compare_across_generations _
+
+path = 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmp9rs37zpq'
+onerror = <function TemporaryDirectory._rmtree.<locals>.onerror at 0x000001A600C4F7E0>
+
+    def _rmtree_unsafe(path, onerror):
+        try:
+            with os.scandir(path) as scandir_it:
+                entries = list(scandir_it)
+        except OSError:
+            onerror(os.scandir, path, sys.exc_info())
+            entries = []
+        for entry in entries:
+            fullname = entry.path
+            if _rmtree_isdir(entry):
+                try:
+                    if entry.is_symlink():
+                        # This can only happen if someone replaces
+                        # a directory with a symlink after the call to
+                        # os.scandir or entry.is_dir above.
+                        raise OSError("Cannot call rmtree on a symbolic link")
+                except OSError:
+                    onerror(os.path.islink, fullname, sys.exc_info())
+                    continue
+                _rmtree_unsafe(fullname, onerror)
+            else:
+                try:
+                    os.unlink(fullname)
+                except OSError:
+                    onerror(os.unlink, fullname, sys.exc_info())
+        try:
+>           os.rmdir(path)
+E           PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmp9rs37zpq'
+
+D:\Software\MiniConda3-py311\Lib\shutil.py:636: PermissionError
+
+During handling of the above exception, another exception occurred:
+D:\Software\MiniConda3-py311\Lib\tempfile.py:947: in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+D:\Software\MiniConda3-py311\Lib\tempfile.py:929: in _rmtree
+    _shutil.rmtree(name, onerror=onerror)
+D:\Software\MiniConda3-py311\Lib\shutil.py:787: in rmtree
+    return _rmtree_unsafe(path, onerror)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+D:\Software\MiniConda3-py311\Lib\shutil.py:638: in _rmtree_unsafe
+    onerror(os.rmdir, path, sys.exc_info())
+D:\Software\MiniConda3-py311\Lib\tempfile.py:890: in onerror
+    _resetperms(path)
+D:\Software\MiniConda3-py311\Lib\tempfile.py:287: in _resetperms
+    _dont_follow_symlinks(_os.chmod, path, 0o700)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+func = <built-in function chmod>
+path = 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmp9rs37zpq'
+args = (448,)
+
+    def _dont_follow_symlinks(func, path, *args):
+        # Pass follow_symlinks=False, unless not supported on this platform.
+        if func in _os.supports_follow_symlinks:
+            func(path, *args, follow_symlinks=False)
+        elif _os.name == 'nt' or not _os.path.islink(path):
+>           func(path, *args)
+E           PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmp9rs37zpq'
+
+D:\Software\MiniConda3-py311\Lib\tempfile.py:278: PermissionError
+_ ERROR at teardown of ReadModelTests.test_read_failure_is_visible_and_recovery_does_not_replay _
+
+path = 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmpy1lh1u2e'
+onerror = <function TemporaryDirectory._rmtree.<locals>.onerror at 0x000001A600C4E480>
+
+    def _rmtree_unsafe(path, onerror):
+        try:
+            with os.scandir(path) as scandir_it:
+                entries = list(scandir_it)
+        except OSError:
+            onerror(os.scandir, path, sys.exc_info())
+            entries = []
+        for entry in entries:
+            fullname = entry.path
+            if _rmtree_isdir(entry):
+                try:
+                    if entry.is_symlink():
+                        # This can only happen if someone replaces
+                        # a directory with a symlink after the call to
+                        # os.scandir or entry.is_dir above.
+                        raise OSError("Cannot call rmtree on a symbolic link")
+                except OSError:
+                    onerror(os.path.islink, fullname, sys.exc_info())
+                    continue
+                _rmtree_unsafe(fullname, onerror)
+            else:
+                try:
+                    os.unlink(fullname)
+                except OSError:
+                    onerror(os.unlink, fullname, sys.exc_info())
+        try:
+>           os.rmdir(path)
+E           PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmpy1lh1u2e'
+
+D:\Software\MiniConda3-py311\Lib\shutil.py:636: PermissionError
+
+During handling of the above exception, another exception occurred:
+D:\Software\MiniConda3-py311\Lib\tempfile.py:947: in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+D:\Software\MiniConda3-py311\Lib\tempfile.py:929: in _rmtree
+    _shutil.rmtree(name, onerror=onerror)
+D:\Software\MiniConda3-py311\Lib\shutil.py:787: in rmtree
+    return _rmtree_unsafe(path, onerror)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+D:\Software\MiniConda3-py311\Lib\shutil.py:638: in _rmtree_unsafe
+    onerror(os.rmdir, path, sys.exc_info())
+D:\Software\MiniConda3-py311\Lib\tempfile.py:890: in onerror
+    _resetperms(path)
+D:\Software\MiniConda3-py311\Lib\tempfile.py:287: in _resetperms
+    _dont_follow_symlinks(_os.chmod, path, 0o700)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+func = <built-in function chmod>
+path = 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmpy1lh1u2e'
+args = (448,)
+
+    def _dont_follow_symlinks(func, path, *args):
+        # Pass follow_symlinks=False, unless not supported on this platform.
+        if func in _os.supports_follow_symlinks:
+            func(path, *args, follow_symlinks=False)
+        elif _os.name == 'nt' or not _os.path.islink(path):
+>           func(path, *args)
+E           PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmpy1lh1u2e'
+
+D:\Software\MiniConda3-py311\Lib\tempfile.py:278: PermissionError
+_ ERROR at teardown of ReadModelTests.test_replay_is_stale_baseline_and_queries_do_not_write _
+
+path = 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmppiktju1i'
+onerror = <function TemporaryDirectory._rmtree.<locals>.onerror at 0x000001A600C4E700>
+
+    def _rmtree_unsafe(path, onerror):
+        try:
+            with os.scandir(path) as scandir_it:
+                entries = list(scandir_it)
+        except OSError:
+            onerror(os.scandir, path, sys.exc_info())
+            entries = []
+        for entry in entries:
+            fullname = entry.path
+            if _rmtree_isdir(entry):
+                try:
+                    if entry.is_symlink():
+                        # This can only happen if someone replaces
+                        # a directory with a symlink after the call to
+                        # os.scandir or entry.is_dir above.
+                        raise OSError("Cannot call rmtree on a symbolic link")
+                except OSError:
+                    onerror(os.path.islink, fullname, sys.exc_info())
+                    continue
+                _rmtree_unsafe(fullname, onerror)
+            else:
+                try:
+                    os.unlink(fullname)
+                except OSError:
+                    onerror(os.unlink, fullname, sys.exc_info())
+        try:
+>           os.rmdir(path)
+E           PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmppiktju1i'
+
+D:\Software\MiniConda3-py311\Lib\shutil.py:636: PermissionError
+
+During handling of the above exception, another exception occurred:
+D:\Software\MiniConda3-py311\Lib\tempfile.py:947: in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+D:\Software\MiniConda3-py311\Lib\tempfile.py:929: in _rmtree
+    _shutil.rmtree(name, onerror=onerror)
+D:\Software\MiniConda3-py311\Lib\shutil.py:787: in rmtree
+    return _rmtree_unsafe(path, onerror)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+D:\Software\MiniConda3-py311\Lib\shutil.py:638: in _rmtree_unsafe
+    onerror(os.rmdir, path, sys.exc_info())
+D:\Software\MiniConda3-py311\Lib\tempfile.py:890: in onerror
+    _resetperms(path)
+D:\Software\MiniConda3-py311\Lib\tempfile.py:287: in _resetperms
+    _dont_follow_symlinks(_os.chmod, path, 0o700)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+func = <built-in function chmod>
+path = 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmppiktju1i'
+args = (448,)
+
+    def _dont_follow_symlinks(func, path, *args):
+        # Pass follow_symlinks=False, unless not supported on this platform.
+        if func in _os.supports_follow_symlinks:
+            func(path, *args, follow_symlinks=False)
+        elif _os.name == 'nt' or not _os.path.islink(path):
+>           func(path, *args)
+E           PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmppiktju1i'
+
+D:\Software\MiniConda3-py311\Lib\tempfile.py:278: PermissionError
+_ ERROR at teardown of ReadModelTests.test_rollback_is_timeline_reset_without_false_gameplay_delta _
+
+path = 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmps1jbe6jl'
+onerror = <function TemporaryDirectory._rmtree.<locals>.onerror at 0x000001A600C4E5C0>
+
+    def _rmtree_unsafe(path, onerror):
+        try:
+            with os.scandir(path) as scandir_it:
+                entries = list(scandir_it)
+        except OSError:
+            onerror(os.scandir, path, sys.exc_info())
+            entries = []
+        for entry in entries:
+            fullname = entry.path
+            if _rmtree_isdir(entry):
+                try:
+                    if entry.is_symlink():
+                        # This can only happen if someone replaces
+                        # a directory with a symlink after the call to
+                        # os.scandir or entry.is_dir above.
+                        raise OSError("Cannot call rmtree on a symbolic link")
+                except OSError:
+                    onerror(os.path.islink, fullname, sys.exc_info())
+                    continue
+                _rmtree_unsafe(fullname, onerror)
+            else:
+                try:
+                    os.unlink(fullname)
+                except OSError:
+                    onerror(os.unlink, fullname, sys.exc_info())
+        try:
+>           os.rmdir(path)
+E           PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmps1jbe6jl'
+
+D:\Software\MiniConda3-py311\Lib\shutil.py:636: PermissionError
+
+During handling of the above exception, another exception occurred:
+D:\Software\MiniConda3-py311\Lib\tempfile.py:947: in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+D:\Software\MiniConda3-py311\Lib\tempfile.py:929: in _rmtree
+    _shutil.rmtree(name, onerror=onerror)
+D:\Software\MiniConda3-py311\Lib\shutil.py:787: in rmtree
+    return _rmtree_unsafe(path, onerror)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+D:\Software\MiniConda3-py311\Lib\shutil.py:638: in _rmtree_unsafe
+    onerror(os.rmdir, path, sys.exc_info())
+D:\Software\MiniConda3-py311\Lib\tempfile.py:890: in onerror
+    _resetperms(path)
+D:\Software\MiniConda3-py311\Lib\tempfile.py:287: in _resetperms
+    _dont_follow_symlinks(_os.chmod, path, 0o700)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+func = <built-in function chmod>
+path = 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmps1jbe6jl'
+args = (448,)
+
+    def _dont_follow_symlinks(func, path, *args):
+        # Pass follow_symlinks=False, unless not supported on this platform.
+        if func in _os.supports_follow_symlinks:
+            func(path, *args, follow_symlinks=False)
+        elif _os.name == 'nt' or not _os.path.islink(path):
+>           func(path, *args)
+E           PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmps1jbe6jl'
+
+D:\Software\MiniConda3-py311\Lib\tempfile.py:278: PermissionError
+================================== FAILURES ===================================
+_ ExtendedReadModelTests.test_protocol_upgrade_downgrade_records_fields_and_unavailable_sections _
+
+self = <test_extended_telemetry.ExtendedReadModelTests testMethod=test_protocol_upgrade_downgrade_records_fields_and_unavailable_sections>
+
+    def test_protocol_upgrade_downgrade_records_fields_and_unavailable_sections(self):
+        with tempfile.TemporaryDirectory() as folder:
+            path = Path(folder) / "game.log"
+>           append(path, frame())
+
+tests\test_extended_telemetry.py:102: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_read_model.py:15: in append
+    with path.open("a", encoding="utf-8") as handle:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/28778/AppData/Local/Packages/sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}/AC/Temp/tmp_4h1p3fr/game.log')
+mode = 'a', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       PermissionError: [Errno 13] Permission denied: 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmp_4h1p3fr\\game.log'
+
+D:\Software\MiniConda3-py311\Lib\pathlib.py:1044: PermissionError
+
+During handling of the above exception, another exception occurred:
+
+path = 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmp_4h1p3fr'
+onerror = <function TemporaryDirectory._rmtree.<locals>.onerror at 0x000001A6000FD4E0>
+
+    def _rmtree_unsafe(path, onerror):
+        try:
+            with os.scandir(path) as scandir_it:
+                entries = list(scandir_it)
+        except OSError:
+            onerror(os.scandir, path, sys.exc_info())
+            entries = []
+        for entry in entries:
+            fullname = entry.path
+            if _rmtree_isdir(entry):
+                try:
+                    if entry.is_symlink():
+                        # This can only happen if someone replaces
+                        # a directory with a symlink after the call to
+                        # os.scandir or entry.is_dir above.
+                        raise OSError("Cannot call rmtree on a symbolic link")
+                except OSError:
+                    onerror(os.path.islink, fullname, sys.exc_info())
+                    continue
+                _rmtree_unsafe(fullname, onerror)
+            else:
+                try:
+                    os.unlink(fullname)
+                except OSError:
+                    onerror(os.unlink, fullname, sys.exc_info())
+        try:
+>           os.rmdir(path)
+E           PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmp_4h1p3fr'
+
+D:\Software\MiniConda3-py311\Lib\shutil.py:636: PermissionError
+
+During handling of the above exception, another exception occurred:
+
+self = <test_extended_telemetry.ExtendedReadModelTests testMethod=test_protocol_upgrade_downgrade_records_fields_and_unavailable_sections>
+
+    def test_protocol_upgrade_downgrade_records_fields_and_unavailable_sections(self):
+>       with tempfile.TemporaryDirectory() as folder:
+
+tests\test_extended_telemetry.py:100: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+D:\Software\MiniConda3-py311\Lib\tempfile.py:943: in __exit__
+    self.cleanup()
+D:\Software\MiniConda3-py311\Lib\tempfile.py:947: in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+D:\Software\MiniConda3-py311\Lib\tempfile.py:929: in _rmtree
+    _shutil.rmtree(name, onerror=onerror)
+D:\Software\MiniConda3-py311\Lib\shutil.py:787: in rmtree
+    return _rmtree_unsafe(path, onerror)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+D:\Software\MiniConda3-py311\Lib\shutil.py:638: in _rmtree_unsafe
+    onerror(os.rmdir, path, sys.exc_info())
+D:\Software\MiniConda3-py311\Lib\tempfile.py:890: in onerror
+    _resetperms(path)
+D:\Software\MiniConda3-py311\Lib\tempfile.py:287: in _resetperms
+    _dont_follow_symlinks(_os.chmod, path, 0o700)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+func = <built-in function chmod>
+path = 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmp_4h1p3fr'
+args = (448,)
+
+    def _dont_follow_symlinks(func, path, *args):
+        # Pass follow_symlinks=False, unless not supported on this platform.
+        if func in _os.supports_follow_symlinks:
+            func(path, *args, follow_symlinks=False)
+        elif _os.name == 'nt' or not _os.path.islink(path):
+>           func(path, *args)
+E           PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmp_4h1p3fr'
+
+D:\Software\MiniConda3-py311\Lib\tempfile.py:278: PermissionError
+_ MCPTests.test_extended_sections_after_protocol_upgrade_notify_and_keep_unknowns _
+
+self = <test_mcp.MCPTests testMethod=test_extended_sections_after_protocol_upgrade_notify_and_keep_unknowns>
+
+    async def test_extended_sections_after_protocol_upgrade_notify_and_keep_unknowns(self):
+>       append(self.path, frame())
+
+tests\test_mcp.py:90: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_read_model.py:15: in append
+    with path.open("a", encoding="utf-8") as handle:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/28778/AppData/Local/Packages/sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}/AC/Temp/tmpo7zs14bk/game.log')
+mode = 'a', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       PermissionError: [Errno 13] Permission denied: 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmpo7zs14bk\\game.log'
+
+D:\Software\MiniConda3-py311\Lib\pathlib.py:1044: PermissionError
+__________ MCPTests.test_fresh_to_stale_notifies_without_a_new_frame __________
+
+self = <test_mcp.MCPTests testMethod=test_fresh_to_stale_notifies_without_a_new_frame>
+
+    async def test_fresh_to_stale_notifies_without_a_new_frame(self):
+>       append(self.path, frame())
+
+tests\test_mcp.py:108: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_read_model.py:15: in append
+    with path.open("a", encoding="utf-8") as handle:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/28778/AppData/Local/Packages/sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}/AC/Temp/tmp52bcjdua/game.log')
+mode = 'a', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       PermissionError: [Errno 13] Permission denied: 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmp52bcjdua\\game.log'
+
+D:\Software\MiniConda3-py311\Lib\pathlib.py:1044: PermissionError
+__________ MCPTests.test_legacy_initialize_tools_and_utf8_over_stdio __________
+
+self = <test_mcp.MCPTests testMethod=test_legacy_initialize_tools_and_utf8_over_stdio>
+
+    async def test_legacy_initialize_tools_and_utf8_over_stdio(self):
+>       append(self.path, frame(date="1 1月, 1936"))
+
+tests\test_mcp.py:157: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_read_model.py:15: in append
+    with path.open("a", encoding="utf-8") as handle:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/28778/AppData/Local/Packages/sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}/AC/Temp/tmpfiy3rmc3/game.log')
+mode = 'a', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       PermissionError: [Errno 13] Permission denied: 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmpfiy3rmc3\\game.log'
+
+D:\Software\MiniConda3-py311\Lib\pathlib.py:1044: PermissionError
+__________ MCPTests.test_live_check_watch_reports_rollback_and_stale __________
+
+self = <test_mcp.MCPTests testMethod=test_live_check_watch_reports_rollback_and_stale>
+
+    async def test_live_check_watch_reports_rollback_and_stale(self):
+>       append(self.path, frame(706650, date="11 1月, 1936"))
+
+tests\test_mcp.py:118: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_read_model.py:15: in append
+    with path.open("a", encoding="utf-8") as handle:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/28778/AppData/Local/Packages/sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}/AC/Temp/tmpfkku6uo7/game.log')
+mode = 'a', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       PermissionError: [Errno 13] Permission denied: 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmpfkku6uo7\\game.log'
+
+D:\Software\MiniConda3-py311\Lib\pathlib.py:1044: PermissionError
+______ MCPTests.test_live_check_watch_times_out_without_claiming_updates ______
+
+self = <test_mcp.MCPTests testMethod=test_live_check_watch_times_out_without_claiming_updates>
+
+    async def test_live_check_watch_times_out_without_claiming_updates(self):
+>       append(self.path, frame())
+
+tests\test_mcp.py:148: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_read_model.py:15: in append
+    with path.open("a", encoding="utf-8") as handle:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/28778/AppData/Local/Packages/sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}/AC/Temp/tmprgls2ks7/game.log')
+mode = 'a', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       PermissionError: [Errno 13] Permission denied: 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmprgls2ks7\\game.log'
+
+D:\Software\MiniConda3-py311\Lib\pathlib.py:1044: PermissionError
+_________ MCPTests.test_subscription_refetch_and_changes_on_new_frame _________
+
+self = <test_mcp.MCPTests testMethod=test_subscription_refetch_and_changes_on_new_frame>
+
+    async def test_subscription_refetch_and_changes_on_new_frame(self):
+>       append(self.path, frame(date="1 1月, 1936"))
+
+tests\test_mcp.py:73: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_read_model.py:15: in append
+    with path.open("a", encoding="utf-8") as handle:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/28778/AppData/Local/Packages/sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}/AC/Temp/tmp49n569r1/game.log')
+mode = 'a', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       PermissionError: [Errno 13] Permission denied: 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmp49n569r1\\game.log'
+
+D:\Software\MiniConda3-py311\Lib\pathlib.py:1044: PermissionError
+___ MCPTests.test_tools_and_resources_missing_log_and_read_only_annotations ___
+
+path = 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmpekc4tnyq'
+onerror = <function TemporaryDirectory._rmtree.<locals>.onerror at 0x000001A6008559E0>
+
+    def _rmtree_unsafe(path, onerror):
+        try:
+            with os.scandir(path) as scandir_it:
+                entries = list(scandir_it)
+        except OSError:
+            onerror(os.scandir, path, sys.exc_info())
+            entries = []
+        for entry in entries:
+            fullname = entry.path
+            if _rmtree_isdir(entry):
+                try:
+                    if entry.is_symlink():
+                        # This can only happen if someone replaces
+                        # a directory with a symlink after the call to
+                        # os.scandir or entry.is_dir above.
+                        raise OSError("Cannot call rmtree on a symbolic link")
+                except OSError:
+                    onerror(os.path.islink, fullname, sys.exc_info())
+                    continue
+                _rmtree_unsafe(fullname, onerror)
+            else:
+                try:
+                    os.unlink(fullname)
+                except OSError:
+                    onerror(os.unlink, fullname, sys.exc_info())
+        try:
+>           os.rmdir(path)
+E           PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmpekc4tnyq'
+
+D:\Software\MiniConda3-py311\Lib\shutil.py:636: PermissionError
+
+During handling of the above exception, another exception occurred:
+D:\Software\MiniConda3-py311\Lib\unittest\async_case.py:99: in _callCleanup
+    self._callMaybeAsync(function, *args, **kwargs)
+D:\Software\MiniConda3-py311\Lib\unittest\async_case.py:117: in _callMaybeAsync
+    return self._asyncioTestContext.run(func, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+D:\Software\MiniConda3-py311\Lib\tempfile.py:947: in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+D:\Software\MiniConda3-py311\Lib\tempfile.py:929: in _rmtree
+    _shutil.rmtree(name, onerror=onerror)
+D:\Software\MiniConda3-py311\Lib\shutil.py:787: in rmtree
+    return _rmtree_unsafe(path, onerror)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+D:\Software\MiniConda3-py311\Lib\shutil.py:638: in _rmtree_unsafe
+    onerror(os.rmdir, path, sys.exc_info())
+D:\Software\MiniConda3-py311\Lib\tempfile.py:890: in onerror
+    _resetperms(path)
+D:\Software\MiniConda3-py311\Lib\tempfile.py:287: in _resetperms
+    _dont_follow_symlinks(_os.chmod, path, 0o700)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+func = <built-in function chmod>
+path = 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmpekc4tnyq'
+args = (448,)
+
+    def _dont_follow_symlinks(func, path, *args):
+        # Pass follow_symlinks=False, unless not supported on this platform.
+        if func in _os.supports_follow_symlinks:
+            func(path, *args, follow_symlinks=False)
+        elif _os.name == 'nt' or not _os.path.islink(path):
+>           func(path, *args)
+E           PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmpekc4tnyq'
+
+D:\Software\MiniConda3-py311\Lib\tempfile.py:278: PermissionError
+__ ReadModelTests.test_each_frame_in_batch_is_recorded_and_duplicate_ignored __
+
+self = <test_read_model.ReadModelTests testMethod=test_each_frame_in_batch_is_recorded_and_duplicate_ignored>
+
+    def test_each_frame_in_batch_is_recorded_and_duplicate_ignored(self):
+>       append(self.path, frame())
+
+tests\test_read_model.py:39: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_read_model.py:15: in append
+    with path.open("a", encoding="utf-8") as handle:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/28778/AppData/Local/Packages/sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}/AC/Temp/tmphmxg6ugr/game.log')
+mode = 'a', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       PermissionError: [Errno 13] Permission denied: 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmphmxg6ugr\\game.log'
+
+D:\Software\MiniConda3-py311\Lib\pathlib.py:1044: PermissionError
+_ ReadModelTests.test_freshness_transition_notifies_once_and_history_is_bounded _
+
+self = <test_read_model.ReadModelTests testMethod=test_freshness_transition_notifies_once_and_history_is_bounded>
+
+    def test_freshness_transition_notifies_once_and_history_is_bounded(self):
+>       append(self.path, frame())
+
+tests\test_read_model.py:86: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_read_model.py:15: in append
+    with path.open("a", encoding="utf-8") as handle:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/28778/AppData/Local/Packages/sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}/AC/Temp/tmpoht0ej6o/game.log')
+mode = 'a', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       PermissionError: [Errno 13] Permission denied: 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmpoht0ej6o\\game.log'
+
+D:\Software\MiniConda3-py311\Lib\pathlib.py:1044: PermissionError
+_ ReadModelTests.test_missing_and_recreated_log_do_not_compare_across_generations _
+
+self = <test_read_model.ReadModelTests testMethod=test_missing_and_recreated_log_do_not_compare_across_generations>
+
+    def test_missing_and_recreated_log_do_not_compare_across_generations(self):
+>       append(self.path, frame(706650))
+
+tests\test_read_model.py:65: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_read_model.py:15: in append
+    with path.open("a", encoding="utf-8") as handle:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/28778/AppData/Local/Packages/sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}/AC/Temp/tmp9rs37zpq/game.log')
+mode = 'a', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       PermissionError: [Errno 13] Permission denied: 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmp9rs37zpq\\game.log'
+
+D:\Software\MiniConda3-py311\Lib\pathlib.py:1044: PermissionError
+__ ReadModelTests.test_read_failure_is_visible_and_recovery_does_not_replay ___
+
+self = <test_read_model.ReadModelTests testMethod=test_read_failure_is_visible_and_recovery_does_not_replay>
+
+    def test_read_failure_is_visible_and_recovery_does_not_replay(self):
+>       append(self.path, frame())
+
+tests\test_read_model.py:76: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_read_model.py:15: in append
+    with path.open("a", encoding="utf-8") as handle:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/28778/AppData/Local/Packages/sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}/AC/Temp/tmpy1lh1u2e/game.log')
+mode = 'a', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       PermissionError: [Errno 13] Permission denied: 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmpy1lh1u2e\\game.log'
+
+D:\Software\MiniConda3-py311\Lib\pathlib.py:1044: PermissionError
+____ ReadModelTests.test_replay_is_stale_baseline_and_queries_do_not_write ____
+
+self = <test_read_model.ReadModelTests testMethod=test_replay_is_stale_baseline_and_queries_do_not_write>
+
+    def test_replay_is_stale_baseline_and_queries_do_not_write(self):
+>       append(self.path, frame())
+
+tests\test_read_model.py:26: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_read_model.py:15: in append
+    with path.open("a", encoding="utf-8") as handle:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/28778/AppData/Local/Packages/sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}/AC/Temp/tmppiktju1i/game.log')
+mode = 'a', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       PermissionError: [Errno 13] Permission denied: 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmppiktju1i\\game.log'
+
+D:\Software\MiniConda3-py311\Lib\pathlib.py:1044: PermissionError
+_ ReadModelTests.test_rollback_is_timeline_reset_without_false_gameplay_delta _
+
+self = <test_read_model.ReadModelTests testMethod=test_rollback_is_timeline_reset_without_false_gameplay_delta>
+
+    def test_rollback_is_timeline_reset_without_false_gameplay_delta(self):
+>       append(self.path, frame(706650))
+
+tests\test_read_model.py:52: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_read_model.py:15: in append
+    with path.open("a", encoding="utf-8") as handle:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/28778/AppData/Local/Packages/sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}/AC/Temp/tmps1jbe6jl/game.log')
+mode = 'a', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       PermissionError: [Errno 13] Permission denied: 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmps1jbe6jl\\game.log'
+
+D:\Software\MiniConda3-py311\Lib\pathlib.py:1044: PermissionError
+________ TailerTests.test_partial_end_and_recreated_log_reset_service _________
+
+self = <test_telemetry.TailerTests testMethod=test_partial_end_and_recreated_log_reset_service>
+
+    def test_partial_end_and_recreated_log_reset_service(self):
+        with tempfile.TemporaryDirectory() as folder:
+            path = Path(folder) / "game.log"
+>           path.write_text("\n".join(frame(706650)[:2]) + "\nCODEX_STATE_END|seq=706650", encoding="utf-8")
+
+tests\test_telemetry.py:154: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+D:\Software\MiniConda3-py311\Lib\pathlib.py:1078: in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/28778/AppData/Local/Packages/sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}/AC/Temp/tmpmf7m04nf/game.log')
+mode = 'w', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       PermissionError: [Errno 13] Permission denied: 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmpmf7m04nf\\game.log'
+
+D:\Software\MiniConda3-py311\Lib\pathlib.py:1044: PermissionError
+
+During handling of the above exception, another exception occurred:
+
+path = 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmpmf7m04nf'
+onerror = <function TemporaryDirectory._rmtree.<locals>.onerror at 0x000001A600C4EA20>
+
+    def _rmtree_unsafe(path, onerror):
+        try:
+            with os.scandir(path) as scandir_it:
+                entries = list(scandir_it)
+        except OSError:
+            onerror(os.scandir, path, sys.exc_info())
+            entries = []
+        for entry in entries:
+            fullname = entry.path
+            if _rmtree_isdir(entry):
+                try:
+                    if entry.is_symlink():
+                        # This can only happen if someone replaces
+                        # a directory with a symlink after the call to
+                        # os.scandir or entry.is_dir above.
+                        raise OSError("Cannot call rmtree on a symbolic link")
+                except OSError:
+                    onerror(os.path.islink, fullname, sys.exc_info())
+                    continue
+                _rmtree_unsafe(fullname, onerror)
+            else:
+                try:
+                    os.unlink(fullname)
+                except OSError:
+                    onerror(os.unlink, fullname, sys.exc_info())
+        try:
+>           os.rmdir(path)
+E           PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmpmf7m04nf'
+
+D:\Software\MiniConda3-py311\Lib\shutil.py:636: PermissionError
+
+During handling of the above exception, another exception occurred:
+
+self = <test_telemetry.TailerTests testMethod=test_partial_end_and_recreated_log_reset_service>
+
+    def test_partial_end_and_recreated_log_reset_service(self):
+>       with tempfile.TemporaryDirectory() as folder:
+
+tests\test_telemetry.py:152: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+D:\Software\MiniConda3-py311\Lib\tempfile.py:943: in __exit__
+    self.cleanup()
+D:\Software\MiniConda3-py311\Lib\tempfile.py:947: in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+D:\Software\MiniConda3-py311\Lib\tempfile.py:929: in _rmtree
+    _shutil.rmtree(name, onerror=onerror)
+D:\Software\MiniConda3-py311\Lib\shutil.py:787: in rmtree
+    return _rmtree_unsafe(path, onerror)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+D:\Software\MiniConda3-py311\Lib\shutil.py:638: in _rmtree_unsafe
+    onerror(os.rmdir, path, sys.exc_info())
+D:\Software\MiniConda3-py311\Lib\tempfile.py:890: in onerror
+    _resetperms(path)
+D:\Software\MiniConda3-py311\Lib\tempfile.py:287: in _resetperms
+    _dont_follow_symlinks(_os.chmod, path, 0o700)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+func = <built-in function chmod>
+path = 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmpmf7m04nf'
+args = (448,)
+
+    def _dont_follow_symlinks(func, path, *args):
+        # Pass follow_symlinks=False, unless not supported on this platform.
+        if func in _os.supports_follow_symlinks:
+            func(path, *args, follow_symlinks=False)
+        elif _os.name == 'nt' or not _os.path.islink(path):
+>           func(path, *args)
+E           PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmpmf7m04nf'
+
+D:\Software\MiniConda3-py311\Lib\tempfile.py:278: PermissionError
+_________________ TailerTests.test_partial_line_and_truncate __________________
+
+self = <test_telemetry.TailerTests testMethod=test_partial_line_and_truncate>
+
+    def test_partial_line_and_truncate(self):
+        with tempfile.TemporaryDirectory() as folder:
+            path = Path(folder) / "game.log"
+>           path.write_bytes(b"first\npartial")
+
+tests\test_telemetry.py:119: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+D:\Software\MiniConda3-py311\Lib\pathlib.py:1067: in write_bytes
+    with self.open(mode='wb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/28778/AppData/Local/Packages/sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}/AC/Temp/tmpn37bgyfq/game.log')
+mode = 'wb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       PermissionError: [Errno 13] Permission denied: 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmpn37bgyfq\\game.log'
+
+D:\Software\MiniConda3-py311\Lib\pathlib.py:1044: PermissionError
+
+During handling of the above exception, another exception occurred:
+
+path = 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmpn37bgyfq'
+onerror = <function TemporaryDirectory._rmtree.<locals>.onerror at 0x000001A600C4EAC0>
+
+    def _rmtree_unsafe(path, onerror):
+        try:
+            with os.scandir(path) as scandir_it:
+                entries = list(scandir_it)
+        except OSError:
+            onerror(os.scandir, path, sys.exc_info())
+            entries = []
+        for entry in entries:
+            fullname = entry.path
+            if _rmtree_isdir(entry):
+                try:
+                    if entry.is_symlink():
+                        # This can only happen if someone replaces
+                        # a directory with a symlink after the call to
+                        # os.scandir or entry.is_dir above.
+                        raise OSError("Cannot call rmtree on a symbolic link")
+                except OSError:
+                    onerror(os.path.islink, fullname, sys.exc_info())
+                    continue
+                _rmtree_unsafe(fullname, onerror)
+            else:
+                try:
+                    os.unlink(fullname)
+                except OSError:
+                    onerror(os.unlink, fullname, sys.exc_info())
+        try:
+>           os.rmdir(path)
+E           PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmpn37bgyfq'
+
+D:\Software\MiniConda3-py311\Lib\shutil.py:636: PermissionError
+
+During handling of the above exception, another exception occurred:
+
+self = <test_telemetry.TailerTests testMethod=test_partial_line_and_truncate>
+
+    def test_partial_line_and_truncate(self):
+>       with tempfile.TemporaryDirectory() as folder:
+
+tests\test_telemetry.py:117: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+D:\Software\MiniConda3-py311\Lib\tempfile.py:943: in __exit__
+    self.cleanup()
+D:\Software\MiniConda3-py311\Lib\tempfile.py:947: in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+D:\Software\MiniConda3-py311\Lib\tempfile.py:929: in _rmtree
+    _shutil.rmtree(name, onerror=onerror)
+D:\Software\MiniConda3-py311\Lib\shutil.py:787: in rmtree
+    return _rmtree_unsafe(path, onerror)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+D:\Software\MiniConda3-py311\Lib\shutil.py:638: in _rmtree_unsafe
+    onerror(os.rmdir, path, sys.exc_info())
+D:\Software\MiniConda3-py311\Lib\tempfile.py:890: in onerror
+    _resetperms(path)
+D:\Software\MiniConda3-py311\Lib\tempfile.py:287: in _resetperms
+    _dont_follow_symlinks(_os.chmod, path, 0o700)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+func = <built-in function chmod>
+path = 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmpn37bgyfq'
+args = (448,)
+
+    def _dont_follow_symlinks(func, path, *args):
+        # Pass follow_symlinks=False, unless not supported on this platform.
+        if func in _os.supports_follow_symlinks:
+            func(path, *args, follow_symlinks=False)
+        elif _os.name == 'nt' or not _os.path.islink(path):
+>           func(path, *args)
+E           PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmpn37bgyfq'
+
+D:\Software\MiniConda3-py311\Lib\tempfile.py:278: PermissionError
+_________ TailerTests.test_recreated_file_and_initially_missing_file __________
+
+self = <test_telemetry.TailerTests testMethod=test_recreated_file_and_initially_missing_file>
+
+    def test_recreated_file_and_initially_missing_file(self):
+        with tempfile.TemporaryDirectory() as folder:
+            path = Path(folder) / "game.log"
+            tailer = LogTailer(path)
+            self.assertEqual(tailer.poll(), [])
+>           path.write_bytes(b"created\n")
+
+tests\test_telemetry.py:133: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+D:\Software\MiniConda3-py311\Lib\pathlib.py:1067: in write_bytes
+    with self.open(mode='wb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/28778/AppData/Local/Packages/sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}/AC/Temp/tmp8wrds8ld/game.log')
+mode = 'wb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       PermissionError: [Errno 13] Permission denied: 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmp8wrds8ld\\game.log'
+
+D:\Software\MiniConda3-py311\Lib\pathlib.py:1044: PermissionError
+
+During handling of the above exception, another exception occurred:
+
+path = 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmp8wrds8ld'
+onerror = <function TemporaryDirectory._rmtree.<locals>.onerror at 0x000001A600C4EC00>
+
+    def _rmtree_unsafe(path, onerror):
+        try:
+            with os.scandir(path) as scandir_it:
+                entries = list(scandir_it)
+        except OSError:
+            onerror(os.scandir, path, sys.exc_info())
+            entries = []
+        for entry in entries:
+            fullname = entry.path
+            if _rmtree_isdir(entry):
+                try:
+                    if entry.is_symlink():
+                        # This can only happen if someone replaces
+                        # a directory with a symlink after the call to
+                        # os.scandir or entry.is_dir above.
+                        raise OSError("Cannot call rmtree on a symbolic link")
+                except OSError:
+                    onerror(os.path.islink, fullname, sys.exc_info())
+                    continue
+                _rmtree_unsafe(fullname, onerror)
+            else:
+                try:
+                    os.unlink(fullname)
+                except OSError:
+                    onerror(os.unlink, fullname, sys.exc_info())
+        try:
+>           os.rmdir(path)
+E           PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmp8wrds8ld'
+
+D:\Software\MiniConda3-py311\Lib\shutil.py:636: PermissionError
+
+During handling of the above exception, another exception occurred:
+
+self = <test_telemetry.TailerTests testMethod=test_recreated_file_and_initially_missing_file>
+
+    def test_recreated_file_and_initially_missing_file(self):
+>       with tempfile.TemporaryDirectory() as folder:
+
+tests\test_telemetry.py:129: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+D:\Software\MiniConda3-py311\Lib\tempfile.py:943: in __exit__
+    self.cleanup()
+D:\Software\MiniConda3-py311\Lib\tempfile.py:947: in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+D:\Software\MiniConda3-py311\Lib\tempfile.py:929: in _rmtree
+    _shutil.rmtree(name, onerror=onerror)
+D:\Software\MiniConda3-py311\Lib\shutil.py:787: in rmtree
+    return _rmtree_unsafe(path, onerror)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+D:\Software\MiniConda3-py311\Lib\shutil.py:638: in _rmtree_unsafe
+    onerror(os.rmdir, path, sys.exc_info())
+D:\Software\MiniConda3-py311\Lib\tempfile.py:890: in onerror
+    _resetperms(path)
+D:\Software\MiniConda3-py311\Lib\tempfile.py:287: in _resetperms
+    _dont_follow_symlinks(_os.chmod, path, 0o700)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+func = <built-in function chmod>
+path = 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmp8wrds8ld'
+args = (448,)
+
+    def _dont_follow_symlinks(func, path, *args):
+        # Pass follow_symlinks=False, unless not supported on this platform.
+        if func in _os.supports_follow_symlinks:
+            func(path, *args, follow_symlinks=False)
+        elif _os.name == 'nt' or not _os.path.islink(path):
+>           func(path, *args)
+E           PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmp8wrds8ld'
+
+D:\Software\MiniConda3-py311\Lib\tempfile.py:278: PermissionError
+__________ TailerTests.test_service_keeps_only_complete_latest_frame __________
+
+self = <test_telemetry.TailerTests testMethod=test_service_keeps_only_complete_latest_frame>
+
+    def test_service_keeps_only_complete_latest_frame(self):
+        with tempfile.TemporaryDirectory() as folder:
+            path = Path(folder) / "game.log"
+>           path.write_text("\n".join(frame() + frame(706641)[:2]) + "\n", encoding="utf-8")
+
+tests\test_telemetry.py:142: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+D:\Software\MiniConda3-py311\Lib\pathlib.py:1078: in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/28778/AppData/Local/Packages/sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}/AC/Temp/tmpa_2_8u9k/game.log')
+mode = 'w', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       PermissionError: [Errno 13] Permission denied: 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmpa_2_8u9k\\game.log'
+
+D:\Software\MiniConda3-py311\Lib\pathlib.py:1044: PermissionError
+
+During handling of the above exception, another exception occurred:
+
+path = 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmpa_2_8u9k'
+onerror = <function TemporaryDirectory._rmtree.<locals>.onerror at 0x000001A600C4E5C0>
+
+    def _rmtree_unsafe(path, onerror):
+        try:
+            with os.scandir(path) as scandir_it:
+                entries = list(scandir_it)
+        except OSError:
+            onerror(os.scandir, path, sys.exc_info())
+            entries = []
+        for entry in entries:
+            fullname = entry.path
+            if _rmtree_isdir(entry):
+                try:
+                    if entry.is_symlink():
+                        # This can only happen if someone replaces
+                        # a directory with a symlink after the call to
+                        # os.scandir or entry.is_dir above.
+                        raise OSError("Cannot call rmtree on a symbolic link")
+                except OSError:
+                    onerror(os.path.islink, fullname, sys.exc_info())
+                    continue
+                _rmtree_unsafe(fullname, onerror)
+            else:
+                try:
+                    os.unlink(fullname)
+                except OSError:
+                    onerror(os.unlink, fullname, sys.exc_info())
+        try:
+>           os.rmdir(path)
+E           PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmpa_2_8u9k'
+
+D:\Software\MiniConda3-py311\Lib\shutil.py:636: PermissionError
+
+During handling of the above exception, another exception occurred:
+
+self = <test_telemetry.TailerTests testMethod=test_service_keeps_only_complete_latest_frame>
+
+    def test_service_keeps_only_complete_latest_frame(self):
+>       with tempfile.TemporaryDirectory() as folder:
+
+tests\test_telemetry.py:140: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+D:\Software\MiniConda3-py311\Lib\tempfile.py:943: in __exit__
+    self.cleanup()
+D:\Software\MiniConda3-py311\Lib\tempfile.py:947: in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+D:\Software\MiniConda3-py311\Lib\tempfile.py:929: in _rmtree
+    _shutil.rmtree(name, onerror=onerror)
+D:\Software\MiniConda3-py311\Lib\shutil.py:787: in rmtree
+    return _rmtree_unsafe(path, onerror)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+D:\Software\MiniConda3-py311\Lib\shutil.py:638: in _rmtree_unsafe
+    onerror(os.rmdir, path, sys.exc_info())
+D:\Software\MiniConda3-py311\Lib\tempfile.py:890: in onerror
+    _resetperms(path)
+D:\Software\MiniConda3-py311\Lib\tempfile.py:287: in _resetperms
+    _dont_follow_symlinks(_os.chmod, path, 0o700)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+func = <built-in function chmod>
+path = 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmpa_2_8u9k'
+args = (448,)
+
+    def _dont_follow_symlinks(func, path, *args):
+        # Pass follow_symlinks=False, unless not supported on this platform.
+        if func in _os.supports_follow_symlinks:
+            func(path, *args, follow_symlinks=False)
+        elif _os.name == 'nt' or not _os.path.islink(path):
+>           func(path, *args)
+E           PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmpa_2_8u9k'
+
+D:\Software\MiniConda3-py311\Lib\tempfile.py:278: PermissionError
+______ DiagnosticTests.test_missing_log_and_malformed_frame_are_reported ______
+
+self = <test_telemetry.DiagnosticTests testMethod=test_missing_log_and_malformed_frame_are_reported>
+
+    def test_missing_log_and_malformed_frame_are_reported(self):
+        with tempfile.TemporaryDirectory() as folder:
+            path = Path(folder) / "game.log"
+            command = Path(__file__).resolve().parents[1] / "scripts" / "check_telemetry.py"
+            missing = subprocess.run(
+                [sys.executable, str(command), "--log", str(path)],
+                capture_output=True, text=True, check=True,
+            )
+            self.assertFalse(json.loads(missing.stdout)["log_exists"])
+>           path.write_text("\n".join(frame(pp="invalid")) + "\n", encoding="utf-8")
+
+tests\test_telemetry.py:194: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+D:\Software\MiniConda3-py311\Lib\pathlib.py:1078: in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/28778/AppData/Local/Packages/sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}/AC/Temp/tmp4jp0yk9f/game.log')
+mode = 'w', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       PermissionError: [Errno 13] Permission denied: 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmp4jp0yk9f\\game.log'
+
+D:\Software\MiniConda3-py311\Lib\pathlib.py:1044: PermissionError
+
+During handling of the above exception, another exception occurred:
+
+path = 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmp4jp0yk9f'
+onerror = <function TemporaryDirectory._rmtree.<locals>.onerror at 0x000001A600C4EB60>
+
+    def _rmtree_unsafe(path, onerror):
+        try:
+            with os.scandir(path) as scandir_it:
+                entries = list(scandir_it)
+        except OSError:
+            onerror(os.scandir, path, sys.exc_info())
+            entries = []
+        for entry in entries:
+            fullname = entry.path
+            if _rmtree_isdir(entry):
+                try:
+                    if entry.is_symlink():
+                        # This can only happen if someone replaces
+                        # a directory with a symlink after the call to
+                        # os.scandir or entry.is_dir above.
+                        raise OSError("Cannot call rmtree on a symbolic link")
+                except OSError:
+                    onerror(os.path.islink, fullname, sys.exc_info())
+                    continue
+                _rmtree_unsafe(fullname, onerror)
+            else:
+                try:
+                    os.unlink(fullname)
+                except OSError:
+                    onerror(os.unlink, fullname, sys.exc_info())
+        try:
+>           os.rmdir(path)
+E           PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmp4jp0yk9f'
+
+D:\Software\MiniConda3-py311\Lib\shutil.py:636: PermissionError
+
+During handling of the above exception, another exception occurred:
+
+self = <test_telemetry.DiagnosticTests testMethod=test_missing_log_and_malformed_frame_are_reported>
+
+    def test_missing_log_and_malformed_frame_are_reported(self):
+>       with tempfile.TemporaryDirectory() as folder:
+
+tests\test_telemetry.py:186: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+D:\Software\MiniConda3-py311\Lib\tempfile.py:943: in __exit__
+    self.cleanup()
+D:\Software\MiniConda3-py311\Lib\tempfile.py:947: in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+D:\Software\MiniConda3-py311\Lib\tempfile.py:929: in _rmtree
+    _shutil.rmtree(name, onerror=onerror)
+D:\Software\MiniConda3-py311\Lib\shutil.py:787: in rmtree
+    return _rmtree_unsafe(path, onerror)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+D:\Software\MiniConda3-py311\Lib\shutil.py:638: in _rmtree_unsafe
+    onerror(os.rmdir, path, sys.exc_info())
+D:\Software\MiniConda3-py311\Lib\tempfile.py:890: in onerror
+    _resetperms(path)
+D:\Software\MiniConda3-py311\Lib\tempfile.py:287: in _resetperms
+    _dont_follow_symlinks(_os.chmod, path, 0o700)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+func = <built-in function chmod>
+path = 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmp4jp0yk9f'
+args = (448,)
+
+    def _dont_follow_symlinks(func, path, *args):
+        # Pass follow_symlinks=False, unless not supported on this platform.
+        if func in _os.supports_follow_symlinks:
+            func(path, *args, follow_symlinks=False)
+        elif _os.name == 'nt' or not _os.path.islink(path):
+>           func(path, *args)
+E           PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmp4jp0yk9f'
+
+D:\Software\MiniConda3-py311\Lib\tempfile.py:278: PermissionError
+_________ DiagnosticTests.test_read_only_command_reports_latest_frame _________
+
+self = <test_telemetry.DiagnosticTests testMethod=test_read_only_command_reports_latest_frame>
+
+    def test_read_only_command_reports_latest_frame(self):
+        with tempfile.TemporaryDirectory() as folder:
+            path = Path(folder) / "game.log"
+>           path.write_text("\n".join(frame()) + "\n", encoding="utf-8")
+
+tests\test_telemetry.py:171: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+D:\Software\MiniConda3-py311\Lib\pathlib.py:1078: in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/28778/AppData/Local/Packages/sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}/AC/Temp/tmpsvwv4pw5/game.log')
+mode = 'w', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       PermissionError: [Errno 13] Permission denied: 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmpsvwv4pw5\\game.log'
+
+D:\Software\MiniConda3-py311\Lib\pathlib.py:1044: PermissionError
+
+During handling of the above exception, another exception occurred:
+
+path = 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmpsvwv4pw5'
+onerror = <function TemporaryDirectory._rmtree.<locals>.onerror at 0x000001A600C4F4C0>
+
+    def _rmtree_unsafe(path, onerror):
+        try:
+            with os.scandir(path) as scandir_it:
+                entries = list(scandir_it)
+        except OSError:
+            onerror(os.scandir, path, sys.exc_info())
+            entries = []
+        for entry in entries:
+            fullname = entry.path
+            if _rmtree_isdir(entry):
+                try:
+                    if entry.is_symlink():
+                        # This can only happen if someone replaces
+                        # a directory with a symlink after the call to
+                        # os.scandir or entry.is_dir above.
+                        raise OSError("Cannot call rmtree on a symbolic link")
+                except OSError:
+                    onerror(os.path.islink, fullname, sys.exc_info())
+                    continue
+                _rmtree_unsafe(fullname, onerror)
+            else:
+                try:
+                    os.unlink(fullname)
+                except OSError:
+                    onerror(os.unlink, fullname, sys.exc_info())
+        try:
+>           os.rmdir(path)
+E           PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmpsvwv4pw5'
+
+D:\Software\MiniConda3-py311\Lib\shutil.py:636: PermissionError
+
+During handling of the above exception, another exception occurred:
+
+self = <test_telemetry.DiagnosticTests testMethod=test_read_only_command_reports_latest_frame>
+
+    def test_read_only_command_reports_latest_frame(self):
+>       with tempfile.TemporaryDirectory() as folder:
+
+tests\test_telemetry.py:169: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+D:\Software\MiniConda3-py311\Lib\tempfile.py:943: in __exit__
+    self.cleanup()
+D:\Software\MiniConda3-py311\Lib\tempfile.py:947: in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+D:\Software\MiniConda3-py311\Lib\tempfile.py:929: in _rmtree
+    _shutil.rmtree(name, onerror=onerror)
+D:\Software\MiniConda3-py311\Lib\shutil.py:787: in rmtree
+    return _rmtree_unsafe(path, onerror)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+D:\Software\MiniConda3-py311\Lib\shutil.py:638: in _rmtree_unsafe
+    onerror(os.rmdir, path, sys.exc_info())
+D:\Software\MiniConda3-py311\Lib\tempfile.py:890: in onerror
+    _resetperms(path)
+D:\Software\MiniConda3-py311\Lib\tempfile.py:287: in _resetperms
+    _dont_follow_symlinks(_os.chmod, path, 0o700)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+func = <built-in function chmod>
+path = 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmpsvwv4pw5'
+args = (448,)
+
+    def _dont_follow_symlinks(func, path, *args):
+        # Pass follow_symlinks=False, unless not supported on this platform.
+        if func in _os.supports_follow_symlinks:
+            func(path, *args, follow_symlinks=False)
+        elif _os.name == 'nt' or not _os.path.islink(path):
+>           func(path, *args)
+E           PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\28778\\AppData\\Local\\Packages\\sandbox.{bc034f21-bee0-4fc5-b292-c8b3ed4ded49}\\AC\\Temp\\tmpsvwv4pw5'
+
+D:\Software\MiniConda3-py311\Lib\tempfile.py:278: PermissionError
+=========================== short test summary info ===========================
+FAILED tests/test_extended_telemetry.py::ExtendedReadModelTests::test_protocol_upgrade_downgrade_records_fields_and_unavailable_sections
+FAILED tests/test_mcp.py::MCPTests::test_extended_sections_after_protocol_upgrade_notify_and_keep_unknowns
+FAILED tests/test_mcp.py::MCPTests::test_fresh_to_stale_notifies_without_a_new_frame
+FAILED tests/test_mcp.py::MCPTests::test_legacy_initialize_tools_and_utf8_over_stdio
+FAILED tests/test_mcp.py::MCPTests::test_live_check_watch_reports_rollback_and_stale
+FAILED tests/test_mcp.py::MCPTests::test_live_check_watch_times_out_without_claiming_updates
+FAILED tests/test_mcp.py::MCPTests::test_subscription_refetch_and_changes_on_new_frame
+FAILED tests/test_mcp.py::MCPTests::test_tools_and_resources_missing_log_and_read_only_annotations
+FAILED tests/test_read_model.py::ReadModelTests::test_each_frame_in_batch_is_recorded_and_duplicate_ignored
+FAILED tests/test_read_model.py::ReadModelTests::test_freshness_transition_notifies_once_and_history_is_bounded
+FAILED tests/test_read_model.py::ReadModelTests::test_missing_and_recreated_log_do_not_compare_across_generations
+FAILED tests/test_read_model.py::ReadModelTests::test_read_failure_is_visible_and_recovery_does_not_replay
+FAILED tests/test_read_model.py::ReadModelTests::test_replay_is_stale_baseline_and_queries_do_not_write
+FAILED tests/test_read_model.py::ReadModelTests::test_rollback_is_timeline_reset_without_false_gameplay_delta
+FAILED tests/test_telemetry.py::TailerTests::test_partial_end_and_recreated_log_reset_service
+FAILED tests/test_telemetry.py::TailerTests::test_partial_line_and_truncate
+FAILED tests/test_telemetry.py::TailerTests::test_recreated_file_and_initially_missing_file
+FAILED tests/test_telemetry.py::TailerTests::test_service_keeps_only_complete_latest_frame
+FAILED tests/test_telemetry.py::DiagnosticTests::test_missing_log_and_malformed_frame_are_reported
+FAILED tests/test_telemetry.py::DiagnosticTests::test_read_only_command_reports_latest_frame
+ERROR tests/test_mcp.py::MCPTests::test_extended_sections_after_protocol_upgrade_notify_and_keep_unknowns
+ERROR tests/test_mcp.py::MCPTests::test_fresh_to_stale_notifies_without_a_new_frame
+ERROR tests/test_mcp.py::MCPTests::test_legacy_initialize_tools_and_utf8_over_stdio
+ERROR tests/test_mcp.py::MCPTests::test_live_check_watch_reports_rollback_and_stale
+ERROR tests/test_mcp.py::MCPTests::test_live_check_watch_times_out_without_claiming_updates
+ERROR tests/test_mcp.py::MCPTests::test_subscription_refetch_and_changes_on_new_frame
+ERROR tests/test_read_model.py::ReadModelTests::test_each_frame_in_batch_is_recorded_and_duplicate_ignored
+ERROR tests/test_read_model.py::ReadModelTests::test_freshness_transition_notifies_once_and_history_is_bounded
+ERROR tests/test_read_model.py::ReadModelTests::test_missing_and_recreated_log_do_not_compare_across_generations
+ERROR tests/test_read_model.py::ReadModelTests::test_read_failure_is_visible_and_recovery_does_not_replay
+ERROR tests/test_read_model.py::ReadModelTests::test_replay_is_stale_baseline_and_queries_do_not_write
+ERROR tests/test_read_model.py::ReadModelTests::test_rollback_is_timeline_reset_without_false_gameplay_delta
+20 failed, 583 passed, 12 errors, 10 subtests passed in 74.81s (0:01:14)

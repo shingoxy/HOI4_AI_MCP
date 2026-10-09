@@ -145,13 +145,19 @@ class Executor:
                 result["recovery"] = recover(self.worker)
             return result
         finally:
+            result["mutation_submitted"] = committed
             if armed:
                 try:
                     if result["status"] == "confirmed":
                         self.ui.close_panel()
                 except ActionError:
                     result["cleanup"] = "panel_close_safety_stop"
+                except Exception:
+                    result["cleanup"] = "panel_close_error"
                 finally:
-                    self.worker.end()
+                    try:
+                        self.worker.end()
+                    except Exception:
+                        result["cleanup"] = "input_release_safety_stop"
             result["duration_ms"] = round((time.monotonic() - started) * 1000)
             self.lock.release()

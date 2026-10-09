@@ -1,0 +1,80 @@
+{
+  "run_id": "c6d10d44-d4f7-4916-8475-e08f81041d35",
+  "agent": "scripted",
+  "backend": "windows_native",
+  "pump": "OFF",
+  "started_at": "2026-10-07T09:48:37.634076+00:00",
+  "start_date": "1936-08-08",
+  "end_date": "1936-08-16",
+  "observations": 12,
+  "alerts": 36,
+  "decisions": 2,
+  "actions": 0,
+  "results": 0,
+  "confirmed": 0,
+  "already_satisfied": 0,
+  "mutations_submitted": 0,
+  "confirmed_mutations": 0,
+  "rejected": 0,
+  "uncertain": 0,
+  "timeouts": 0,
+  "timed_out": 0,
+  "backend_errors": 0,
+  "timeline_reset": 0,
+  "circuit_breaker": "time_stop_failed",
+  "game_days": 7,
+  "unused_MIL_observations": {
+    "known": 4,
+    "unused": 4,
+    "unknown": 8
+  },
+  "research_idle_days": {
+    "status": "partial",
+    "known_game_dates": 2,
+    "observed_idle_dates": 2,
+    "meaning": "Dates with a reliable idle observation; not continuous 24-hour idle duration."
+  },
+  "focus_idle_days": {
+    "status": "partial",
+    "known_game_dates": 2,
+    "observed_idle_dates": 2,
+    "meaning": "Dates with a reliable idle observation; not continuous 24-hour idle duration."
+  },
+  "construction_queue_idle_days": {
+    "status": "partial",
+    "known_game_dates": 2,
+    "observed_idle_dates": 0,
+    "meaning": "Dates with a reliable idle observation; not continuous 24-hour idle duration."
+  },
+  "wall_time_seconds": 96.485,
+  "shutdown": "unsafe_stop_failed",
+  "game_pause": "UNKNOWN",
+  "operator_intervention_required": true,
+  "status": "BLOCKED",
+  "time_metrics": {
+    "time_ownership_acquired": 9,
+    "time_ownership_released": 8,
+    "pause_attempts": 9,
+    "pause_failures": 1,
+    "safe_stop_attempts": 1,
+    "safe_stop_successes": 0,
+    "modal_block_count": 4,
+    "unknown_modal_count": 0,
+    "operator_safety_interventions": 0
+  },
+  "time_ownership": "STOP_FAILED_OWNED",
+  "blocker": "owned_running_stop_unconfirmed",
+  "native_map_metrics": {
+    "MAP_READY": 17,
+    "MAP_RECOVERABLE": 0,
+    "MAP_UNRESOLVED": 2,
+    "recovery_attempted": 0,
+    "recovery_succeeded": 0,
+    "recovery_failed": 0,
+    "recovery_duration_ms": 0,
+    "clock_recovery_count": 0,
+    "meaning": "Counts of audited native readiness checks; not unique game days.",
+    "clock_recovery_scope": "Confirmed stop-only menu routes; no automatic modal acknowledgement or resume."
+  },
+  "human_strategic_interventions": 0
+}

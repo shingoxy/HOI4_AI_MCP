@@ -1,8 +1,133 @@
 # 项目状态
 
-更新日期：2026-10-05
+## 2026-10-09 提交 checkpoint
+
+**Phase 5：IN PROGRESS / MODAL STOP-ONLY MATRIX OFFLINE TESTED / WORLD NEWS LIVE GATE PENDING。** seven-action 7/7、Scripted 单轮 mutation、Construction 单轮、有限 7 天及 Time Safety A/B 实机结果保留；原21/30与最新7个confirmed推进日的失败记录不改写。本次提交前完整回归为 **604 passed / 10 subtests passed，82.95s**：[日志](artifacts/phase5/commit-20261009/pytest-full-1.txt)；compileall、pip check 通过。沙箱临时目录 WinError 5 的历史失败日志也保留。
+
+新增六态 stop-only Matrix 保留旧 reader 分类；新停止路径须匹配 immutable live proof、PNG 哈希、双次菜单暂停及退出菜单后 modal identity 不变。**World News 尚无实机证明，stop_route 仍 none。** 最近只读 preflight 为 loss_of_focus / pause UNKNOWN，未发送输入；本次提交准备也不操作 HOI4。
+
+最新用户计划已取代历史“任一 gate 失败即停”规则：普通代码或校准失败保留证据后修复、回归、重测；真实外部阻塞或无法安全暂停时交操作者处理。顺序仍为 World News 独立安全停止 gate → fresh paused / NO_MODAL baseline → 新 Scripted 30 天 → 真实 Codex mutation 和有限多周期 → 一个非 Codex 模型 → 德国1936和平经营180天；全部属于 Phase 5，已通过 Construction 不为制造证明而重做。[执行 checkpoint](artifacts/phase5/final-execution-20261007/CHECKPOINT.md)
+
+本次提交包含源码、文档、模板、测试必需截图、关键实机证据与日志；其余大截图保留本地，完整路径、大小与哈希见 [证据清单](artifacts/phase5/commit-20261009/evidence-inventory.json)。维持 pump OFF、正常 GUI、原 save / Mod 边界。以下章节为历史 checkpoint。
+
+## 2026-10-07 时间安全修复后 checkpoint
+
+**Phase 5：IN PROGRESS / TIME SAFETY A+B CONFIRMED / SCRIPTED CONSTRUCTION CONFIRMED / NEW 30-DAY GATE FAILED。** 尚未达到无人值守可用；真实 Codex 未运行，模型调用 0。保持现有五阶段，旧 seven-action 7/7、Production reader、single / 7-day 和原 21/30 失败全部保留。
+
+- 修复 time ownership：暂停失败后保留 STOP_FAILED_OWNED；advance/watchdog/bootstrap/circuit/退出均走独立有界停机。未知 / 叠层 modal 拒绝输入；精确失败 RGB 与 ROI 在恢复前保存，guard 捕获失败明确 unavailable。
+- Time Safety A/B 实机通过，C 仅离线；新 paused / NO_MODAL / fresh frame_received_at baseline 通过。[逐项证据](artifacts/phase5/time-safety-20261007/TIME_SAFETY_GATE.md)
+- 新 ScriptedAgent Construction：**confirmed**，自主 build(state64,civilian_factory,1)，一次提交、13094 ms、retry 0；fresh 后置观察通过，退出暂停确认、ownership 释放。[单轮](artifacts/phase5/time-safety-20261007/construction-single-1/assessment.json)
+- 新 30-day run：**失败，7 个 confirmed 游戏日**；1936-08-08→08-16 的 fresh 日期差为 8 天，但第 8 次推进未确认暂停，不能计通过。12 次观察 / 2 次 valid no-op / 0 战略动作，wall 96.485s；不算自主战略成功。[原始 summary](artifacts/phase5/time-safety-20261007/scripted-days30-1/summary.json)
+- 实际阻断：奥林匹克新闻 KNOWN_BLOCKING_MODAL，stop_route=null；正常 pause 被阻挡，有界 safe stop 不发送未校准 Escape。acquired/released=9/8，pause_failure=1、safe_stop=1/0、modal_count=4（非四个独立弹窗）、circuit=time_stop_failed。保留 ownership；诚实报告 **unsafe_stop_failed / pause UNKNOWN / operator intervention required**。
+- 已请求人工安全暂停。当前只读 checkpoint 尚未确认暂停；日志最后到1937-01-11，来源为 log_mtime_upper_bound，只作收尾 last-known，额外时间全部不计 benchmark。原9个手动存档、autosave、Mod哈希无变更，无新增/删除。[只读收尾](artifacts/phase5/time-safety-20261007/final-readonly-1/final-state.json)
+
+完整回归 **585 passed / 10 subtests，75.34s**，保留原554并新增31项 time safety tests；compileall 通过。全程 GDI physical 2560×1600/DPI120、SendInput、**Computer Use pump OFF**；无console/effect/memory/save编辑、其他模型、commit/push。按附件失败即停规则，本轮不修新 modal route、不重跑30天、不进入真实 Codex / multi-cycle。
+
+下一步先在停止的测试 baseline 上验证这个已知新闻 modal 的有界 stop-only 路径，恢复确定性停机覆盖，再重新按30天→真实Codex→3–5 cycles验收。国家自治的后续路线已写入 [COUNTRY_AUTONOMY_PLAN.md](COUNTRY_AUTONOMY_PLAN.md)：先德国1936和平经营半年，再陆战、空海军、其他国家；本轮只规划，未扩大动作范围。
+
+## 前一轮 tool-20261007 checkpoint（历史保留）
+
+更新日期：2026-10-07。本轮checkpoint。
+
+**Phase 5：IN PROGRESS / CONSTRUCTION TOOL NAVIGATION CONFIRMED / CONSTRUCTION ACCEPTANCE BLOCKED BY BOOTSTRAP MODAL PAUSE FAILURE。** 尚未达到“能用”。新30天及真实Codex未运行，实际模型调用0。旧seven-action 7/7、Production reader、Scripted single、7天及原21/30失败历史均保留，未重做。
+
+本轮完整回归 **554 passed /10 subtests，60.96s**（原531保留，新增23）；相关79 passed，22.23s。原0.9模板、90%几何一致率、一像素位移、局部>=10和Production阈值保持。未commit/push、接其他模型或使用Computer Use；pump全程OFF。
+
+| 本轮验收 | 真实结果 |
+|---|---|
+| 工具只读诊断 | 两组civilian和一组military，各只选工具一次，未点击建设州，queue前后[]。保存full RGB、ROI、首帧/稳定帧、map/modal/mode和原始NCC；不能把旧失败瞬间RGB的缺口改写成已补回 |
+| 工具根因 | 旧selected模板在未激活工具时也匹配0.9594；实际激活后随边框循环动画在0.8959～0.9689变化。安装游戏GUI定义的start_construction_overlay引用两帧1.5fps循环sprite，与实机采样相符。hover、pulse和selected不能只凭一次NCC区分；没有证据证明DPI/GDI缩放、cursor或sprite替换为根因 |
+| Reader | TOOL_NOT_SELECTED / SELECTED / ANIMATING / OCCLUDED / UNKNOWN。civilian图标core NCC>=.9、四边选中轮廓及正向construction mode联合确认，两次独立正向观察。最多3秒/12帧被动采样，不重发工具click；错误MIL工具或未知/遮挡拒绝。GDI cursor证据仍UNKNOWN。所有阶段先存PNG/ROI/JSON，Operator私有proof保存详细证据，provider history不接收 |
+| 几何采样覆盖 | 新帧在1500-feature预算下局部只有7～9匹配；3000预算下局部20、全图93.8%～94.2%。只增加特征提取覆盖，不改变原匹配/位移/count阈值、目标点/区域或camera范围；小/大pan及遮挡仍拒绝 |
+| 实机工具导航 | **TOOL_NAVIGATION_CONFIRMED**；一次工具click、两次正向truth，最终MAP_READY：665/714、93.14%、state64局部21。state64/GER独立身份、queue前后[]、paused=true；GDI physical2560×1600/DPI120，SendInput，0 semantic commit。结果先落盘后才启动新Agent session |
+| 新Construction session | run **69144e62-4e5a-4f75-914d-3ec335360448**：**BLOCKED BEFORE AGENT**，wall5.156s；observations0 / decisions0 / actions0 / results0 / confirmed0 / rejected0 / uncertain0 / mutation0。build及queue mutation readback根本没有进入，不能算Construction confirmed或action rejected |
+| 直接阻断 | fresh bootstrap **failed / modal_blocked / paused=false / 4687ms**。fresh telemetry已到1936-05-01，但正常暂停因modal抛错。Native trace只有一次Space resume，没有成功pause输入。GameTimeController.pause_owned在finally无条件清空owns_running，即使pause失败；close不再拥有停止路径，这是实质时间安全缺陷。此次没有自动retry或再次提交build |
+| 后续安全处理 | 游戏在bootstrap失败后继续走时。之后真实截图包含新闻及科研完成叠层；该later frame不是精确bootstrap失败帧。操作者仅做**一次Escape安全暂停**，已校准菜单NCC1.0；随后独立只读确认paused=true、resumable=false。没有人工战略动作，但有1次人工安全干预，不能宣称无人工运行 |
+| 时间证据 | bootstrap结束日期1936-05-01来自run内fresh telemetry；收尾日志最后已到**1936-08-03**，但状态stale/log_mtime_upper_bound，只作last-known。GUI日期解码UNKNOWN；额外推进的时间全部不计benchmark，game_days仍0，不把它伪装成30天成功 |
+| 地图审计 | prepare/require/capability和recovery起止单独记入native trace。Find View→Go to Capital→bounded wheel的attempt/success/failure/duration独立汇总，不隐藏于action duration。新session未进入观察，map各计数0；导航诊断的计数另列verification。无自动clock recovery route，clock_recovery_count=0 |
+| 新30天 / 真实Codex | **全部NOT RUN**；Construction mutation gate前的时间安全gate失败后停止。真实provider boundary实现/新测试与真实推理不能提前接入，历史fake测试仍仅offline。无截图/坐标/backend进入任何模型 |
+
+收尾9个手动存档、autosave与Mod哈希均未改变，无新增/删除，0 console/effect/memory/save编辑。首次收尾helper因host.templates属性错误未完成pause字段；原日志和PNG保留，第二次只读检查改为实际clock模板路径，已确认菜单暂停。当前NativeMapState在later未知叠层弹窗帧仍可能返回MAP_READY，不能据此宣称通用modal覆盖。
+
+**剩余blocker：**先修复模态下时间ownership与独立停止路径，并保存clock失败精确RGB；明确未知/叠层modal的fail-closed范围。需新的fresh baseline后重新进行一次Construction mutation验收，再按30天→真实Codex→3–5 cycles顺序。依本轮附件停止规则，此checkpoint不继续修复或重跑gate，等待下一步。不得用工具导航成功或554项离线测试代替完整Construction/长期/模型实机验收。
+
+证据：[verification](artifacts/phase5/tool-20261007/verification.json)、[工具真实诊断](artifacts/phase5/tool-20261007/diagnostic-2/result.json)、[实机工具导航](artifacts/phase5/tool-20261007/selector-native-1/result.json)、[新session](artifacts/phase5/tool-20261007/construction-single-1/summary.json)、[bootstrap事件](artifacts/phase5/tool-20261007/construction-single-1/events.jsonl)、[安全暂停](artifacts/phase5/tool-20261007/safety-stop-1/result.json)、[最终只读](artifacts/phase5/tool-20261007/final-readonly-2/final-state.json)、[完整回归](artifacts/phase5/tool-20261007/pytest-full-1.txt)。
+
+## 前一轮checkpoint（保留历史，工具修复之前）
+
+更新日期：2026-10-07。
+
+**Phase 5：IN PROGRESS / MAP AND CLOCK REPAIR OFFLINE TESTED / CONSTRUCTION REVALIDATION FAILED。** 尚未达到“能用”。原seven-action 7/7、新Scripted工厂单轮confirmed和7天有限稳定性保留；原30天第21日失败不改写。本轮新的Construction单轮在提交前返回rejected / requirements_not_met，mutation_submitted=false、retry0；按用户附件“若任一关键验收失败，停在当前安全checkpoint”停止。新30天、真实Codex及multi-cycle均NOT RUN。
+
+当前报告：[本轮验证](artifacts/phase5/stability-20261007/verification.json)、[Construction run](artifacts/phase5/stability-20261007/construction-single-1/summary.json)、[事件和Operator proof](artifacts/phase5/stability-20261007/construction-single-1/events.jsonl)、[只读收尾](artifacts/phase5/stability-20261007/final-state.json)。完整531 passed / 10 subtests（原493保留）；最终相关111 passed。pump OFF，GDI physical 2560×1600/DPI120、SendInput；未降低模板/production/grid阈值。只读收尾确认paused=true，9个原手动存档、autosave及Mod哈希均未变，无新增/删除、console/effect/save编辑、其他模型或commit/push。
+
+最终完整复核 **531 passed /10 subtests，46.85s**：[pytest-final2.txt](artifacts/phase5/stability-20261007/pytest-final2.txt)。前一次收尾复核有1项summary.tmp替换WinError5（530 passed）；原日志保留，相同失败组4/4及随后全量均通过，暂时权限/占用错误的根因仍UNKNOWN，未修改Runtime策略。
+
+## 前一轮checkpoint（保留历史）
+
+更新日期：2026-10-07
 
 ## 当前阶段
+
+**Phase 5：SCRIPTED SINGLE MUTATION CONFIRMED / 7-DAY RUNTIME STABILITY CONFIRMED WITH LIMITED STRATEGY COVERAGE / 30-DAY GATE STOPPED AT DAY 21。** seven-action gate仍7/7，未重跑；Scripted目标仍为Kar98k 12，未改为11。本轮用户单独授权的12→11准备已独立confirmed，不计Agent成绩。
+
+| 本轮步骤 | 真实结果 |
+|---|---|
+| 独立GUI准备 | 12→11一次；原setter及独立getter均confirmed；paused；role=operator_test_preparation |
+| 新Scripted单轮 | **confirmed**；fresh observation/catalog/session，自主11→12一次；duration 13391 ms、retry 0；fresh后置观察通过 |
+| 7游戏日 | 1936-03-31→04-07，82.657s；11观察、2有效决策均valid no-op、0动作/错误/战略人工干预；实际7天，目标12重复确认。只证明有限Runtime稳定性，战略动作覆盖不足 |
+| 30游戏日 | **未通过，实际21天**：1936-04-08→04-29，211.203s；28观察、4有效决策（3 no-op）、1 build attempt，0 confirmed / 1 rejected / 0 uncertain / 0 timed_out；PLAN_STOPPED，无circuit pause |
+| 真实Codex | **NOT RUN**；因前一gate失败停止。官方SDK/CLI路径及本机CLI/ChatGPT登录只读核对完成，不等于真实provider或semantic action验收；fake callback仍不算真实模型 |
+
+失败动作 `325bff43-716c-480e-b753-ad14b1b59198`：Agent在队列为空后自主选择state64/civilian_factory/count1，schema/catalog合法；native提交前地图锚点校验返回 **map_target_unresolved / rejected**，duration3000ms、mutation_submitted=false、retry0。Runtime失效snapshot、summary重观察、隔离proposal并停止；没有重发、绕过校准或继续跑满30天。下一步先在现有physical profile/state64范围内调查地图校准/视口失配，再重新评估30天及真实Codex gate。
+
+全程GDI physical 2560×1600/DPI120、SendInput、**pump OFF**；没有console/effect/save编辑、Mod变更或commit/push。普通clock reader收尾返回clock_header_unrecognized，原记录保留；另一只读检查以既有game-menu模板NCC=1.0（阈值0.9）确认菜单暂停。10个原存档及Mod哈希均未变。完整回归 **493 passed / 10 subtests passed**，保留原483并新增10项准备脚本的单次提交/错误停止测试。
+
+证据：[Phase5报告](PHASE5_AGENT_RUNTIME.md)、[本轮验证](artifacts/phase5/continuation-20261007/verification.json)、[single](artifacts/phase5/continuation-20261007/scripted-single-1/summary.json)、[7天评估](artifacts/phase5/continuation-20261007/scripted-days7-1/assessment.json)、[30天事件](artifacts/phase5/continuation-20261007/scripted-days30-1/events.jsonl)、[暂停菜单证明](artifacts/phase5/continuation-20261007/pause-menu-proof.json)。没有宣称完整自主战略验收成功，也未扩大整个项目Computer Use optional的表述。
+
+## 2026-10-06 reader / single-cycle checkpoint（历史）
+
+**Phase 5：IN PROGRESS / PRODUCTION READER READ-ONLY CONFIRMED / SCRIPTED SINGLE GATE NOT PASSED (ZERO MUTATIONS)。** 当前Kar98k工厂数确定为 **12**：numeric AND 15-cell grid AND 完整八行合计/header 22/28，重复读回一致。原11→12 action仍为uncertain，仅新增later_readback=12。本轮未重发setter、未重跑seven-action gate、未修改Runtime failure policy或Scripted策略。
+
+修复真实GDI joined `2/` glyph，保留0.84/0.10/grid 0.85阈值；展开/折叠读回采用guard内两秒被动捕获与既有neutral导航。目标numeric/grid/global矛盾返回readback_ambiguous，不使用OCR/LLM reader。最终全量 **483 passed / 10 subtests passed**，原452保持；compileall/pip check/diff check通过：[verification.json](artifacts/phase5/reader-20261006/verification.json)。
+
+新 [Scripted single-cycle #2](artifacts/phase5/reader-20261006/scripted-single-2/summary.json) 使用fresh observation/catalog/snapshots；1936-03-27、19.375s、2 observations、1 valid decision、**0 mutation**，无rejected/uncertain/timeout/backend error/timeline reset/circuit pause，pump OFF。当前12已到有限目录上界，原策略只向上推荐，Agent提出空actions。零动作不能过single gate；7/30天与真实Codex均NOT RUN。已询问benchmark前固定维持11的策略选择，未收到回答前不改规则。
+
+只读收尾确认游戏暂停、Kar98k=12、原10个存档和Mod选择哈希不变，无新增/删除；没有commit/push：[final-state.json](artifacts/phase5/reader-20261006/final-state.json)。停在安全checkpoint，下一步需确定Scripted目标规则并通过有confirmed mutation的新单轮，才能进入7→30→Codex。详见 [Phase 5报告](PHASE5_AGENT_RUNTIME.md)，不扩大Computer Use optional表述。
+
+## 前一轮 Runtime checkpoint（历史）
+
+**Phase 5：IN PROGRESS / RUNTIME OFFLINE TESTED / SCRIPTED SINGLE-CYCLE UNCERTAIN。** 已实现 strategic observation、有限 Action Catalog、独立 AgentRuntime、ScriptedAgent、有限时间控制和 CodexAdapter 的 semantic/fake-provider 边界。MCP 新增两个语义接口，共 52 tools；不意味着全部工具 native live verified。
+
+完整回归 **452 passed / 10 subtests passed**，保留原 389 项并新增 63 项；compileall、pip check 通过。报告：[Runtime API](AGENT_API.md)、[运行规则](AGENT_RUNTIME.md)、[验证记录](artifacts/phase5/runtime-20261006/verification.json)。首次完整测试的工具清单预期已按新增接口修正；所有旧功能测试保留。
+
+初次 preflight 的 loss_of_focus 记录保留。用户保持前台后，[observation/catalog checkpoint](artifacts/phase5/runtime-20261006/observation-2/summary.json) 通过，四个页面串行读取并恢复安全页面；随后 [Scripted single-cycle](artifacts/phase5/runtime-20261006/scripted-single-1/summary.json) 自行选择 Production 11→12，提交一次，返回 **uncertain / production_number_unreadable / 7797 ms**。Runtime 停止计划、失效缓存并重新观察，retry 0，没有重发或人工选择动作。native GDI physical / SendInput left click / pump OFF；数字读回缺口尚未修复，实际 after count 保持 UNKNOWN，不能计 gate 通过。
+
+按规定顺序停在 Scripted single-cycle 不稳定点；7/30 天及真实 Codex decision/action/multi-cycle 均 NOT RUN。只读收尾确认 **GER / 1936-03-26 04:00 / paused**；10 个已有存档和 Mod 选择文件哈希不变：[final-state.json](artifacts/phase5/runtime-20261006/final-state.json)。两次正常 GUI fresh bootstrap 单独记录，非 autonomous benchmark 游戏日。真实 Codex provider 尚未接入；Phase 5 不宣称 COMPLETE 或 Computer Use 已对整个 Phase 5 Runtime 可选。没有 commit/push。下一步须先只读核实生产数字 reader 与已提交动作，不能直接重跑 setter。
+
+## Seven-action gate 验收历史
+
+**Phase 5：NATIVE SEVEN-ACTION GATE 7/7 CONFIRMED / WAITING FOR NEXT INSTRUCTION。** 当前 Germany 1936 测试局面的 Research、National Focus、Production factory count、Construction、Army assignment、Frontline、Offensive Line 全部以正常 GUI 完成一次 mutation 和确定性重复读回。每项成功先落盘；Computer Use pump 全程 **OFF**。
+
+七项均为 native GDI BitBlt / physical 2560×1600、DPI120；输入为 SendInput，Army 使用一次 right click、Offensive 使用一次 right_drag，其余 mutation 为 left click。五项原调用 uncertain 后重新观察并做只读确认，没有重发；另有一次必要 Army 创建准备。逐项 confirmed、native capture/input primitive、duration 和 readback source 见 [Phase 5 报告](PHASE5_AGENT_RUNTIME.md) 与 [gate-summary.json](artifacts/phase5/gate-20261006/gate-summary.json)。
+
+| Action | Gate | Native capture | Native input primitive | 原调用 ms / 后续确认 ms | Readback source | Pump |
+|---|---|---|---|---|---|---|
+| Research | confirmed | GDI physical | SendInput left click | 5531 / 0 | GUI slot + fresh v2 researching | OFF |
+| National Focus | confirmed | GDI physical | SendInput left click | 3782 / 0 | GUI active/cancel + fresh v2 progress | OFF |
+| Production | confirmed | GDI physical | SendInput left click | 7391 / 11563 | GUI 数字 AND 格子 AND 总数；重复 | OFF |
+| Construction | confirmed | GDI physical | SendInput state click | 8594 / 1844 | GUI 完整队列/州/建筑/数量；重复 | OFF |
+| Army | confirmed | GDI physical | SendInput right click | 14109 / 13140 | GUI 精确成员/无将领/第三师未分配；重复 | OFF |
+| Frontline | confirmed | GDI physical | SendInput border click | 17672 / 23109 | GUI 三边界段 + 全视口 mask + Army/plan；重复 | OFF |
+| Offensive Line | confirmed | GDI physical | SendInput right_drag | 17641 / 13469 | GUI Army/front + 起点/尖端/目标/标签 + 全视口 mask；重复 | OFF |
+
+最终完整回归 **389 passed / 10 subtests passed**；compileall、pip check、diff check 通过。首次旧 loopback WinError 10053 已精准复测及完整复测通过，原失败日志保留。[验证证据](artifacts/phase5/gate-20261006/verification.json)。
+
+结束 **GER / 1936-03-24 05:00 / paused**，保留测试前线/进攻线，计划停止。没有 console/effect/memory write/save edit、Mod 选择变更、人工保存/覆盖或读档。10 个已有存档及 Mod 选择文件哈希全部一致：[最终文件复核](artifacts/phase5/gate-20261006/final/files.json)。本轮没有 commit/push。
+
+验收限定当前 physical profile、固定 camera 和已校准目标。其他 native domain/camera/resolution 未验收，军事 telemetry 仍 UNKNOWN，不宣称 Computer Use 已完全可选。**AgentRuntime、其他 AI 和 autonomous benchmark 均未开始；按用户要求停止，等待下一步。**
+
+## Phase 4 验收历史
 
 **Phase 4 — Military Control：COMPLETE / OFFLINE TESTED / LIMITED LIVE VERIFIED。** 唯一剩余 completion gate `create_offensive_line ×2 confirmed` 已完成，完整回归通过。本轮停止于 Phase 4，未进入 Phase 5。报告：[PHASE4_MILITARY_CONTROL.md](PHASE4_MILITARY_CONTROL.md)，架构：[ARCHITECTURE.md](ARCHITECTURE.md)。
 

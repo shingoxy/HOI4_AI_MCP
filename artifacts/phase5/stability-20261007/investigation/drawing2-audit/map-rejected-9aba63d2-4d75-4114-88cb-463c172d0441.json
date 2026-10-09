@@ -1,0 +1,20 @@
+{
+  "state": "MAP_UNRESOLVED",
+  "reason": "map_mode_mismatch",
+  "profile": null,
+  "pose": null,
+  "drawing_geometry": {
+    "confirmed": false,
+    "matches": 284,
+    "unchanged": 261,
+    "unchanged_ratio": 0.9190140845070423,
+    "sectors": [
+      33,
+      94,
+      134
+    ],
+    "target_neighborhood_matches": 1,
+    "maximum_displacement_pixels": 1,
+    "target_transform_used": false
+  }
+}

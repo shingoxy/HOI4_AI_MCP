@@ -1,0 +1,115 @@
+{
+  "checkpoint": "PRODUCTION_READER_CONFIRMED / SINGLE_GATE_NOT_PASSED_ZERO_MUTATIONS",
+  "tests": {
+    "passed": 483,
+    "subtests_passed": 10,
+    "seconds": 41.41,
+    "previous_baseline": 452,
+    "added": 31
+  },
+  "checks": {
+    "compileall": {
+      "exit_code": 0,
+      "output": ""
+    },
+    "pip_check": {
+      "exit_code": 0,
+      "output": "No broken requirements found."
+    },
+    "diff_check": {
+      "exit_code": 0,
+      "output": "warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'STATUS.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'scripts/phase3_client.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'scripts/phase3_domain_client.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'scripts/phase3a_client.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'scripts/phase3b1_client.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'scripts/phase4_client.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'src/hoi4_operator/executor/construction_ui.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'src/hoi4_operator/executor/military_service.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'src/hoi4_operator/executor/pipeline.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'src/hoi4_operator/executor/production_lines_service.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'src/hoi4_operator/executor/production_lines_ui.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'src/hoi4_operator/executor/production_service.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'src/hoi4_operator/executor/production_ui.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'src/hoi4_operator/executor/right_drag.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'src/hoi4_operator/executor/service.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'src/hoi4_operator/executor/ui_state.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'src/hoi4_operator/executor/worker.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'src/hoi4_operator/mcp_server.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'src/hoi4_operator/operator.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'tests/test_executor.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'tests/test_mcp.py', LF will be replaced by CRLF the next time Git touches it"
+    }
+  },
+  "reader": {
+    "original_status": "uncertain",
+    "later_readback": 12,
+    "pump": "OFF",
+    "mutation_count": 0,
+    "source": "live-read-5/readback.json",
+    "duration_ms": 7500
+  },
+  "joined_pair": {
+    "shape": [
+      16,
+      13
+    ],
+    "foreground_pixels": 57,
+    "independent_two_slash_union_IoU": 1.0,
+    "threshold_minimum": 0.84,
+    "threshold_margin": 0.1
+  },
+  "single": {
+    "run_id": "61d1ddc1-72db-4f20-8f0f-278941cb2679",
+    "agent": "scripted",
+    "backend": "windows_native",
+    "pump": "OFF",
+    "started_at": "2026-10-06T14:52:52.558191+00:00",
+    "start_date": "1936-03-27",
+    "end_date": "1936-03-27",
+    "observations": 2,
+    "alerts": 12,
+    "decisions": 1,
+    "actions": 0,
+    "results": 0,
+    "confirmed": 0,
+    "already_satisfied": 0,
+    "mutations_submitted": 0,
+    "confirmed_mutations": 0,
+    "rejected": 0,
+    "uncertain": 0,
+    "timeouts": 0,
+    "timed_out": 0,
+    "backend_errors": 0,
+    "timeline_reset": 0,
+    "circuit_breaker": null,
+    "game_days": 0,
+    "unused_MIL_observations": {
+      "known": 2,
+      "unused": 2,
+      "unknown": 0
+    },
+    "research_idle_days": {
+      "status": "partial",
+      "known_game_dates": 1,
+      "observed_idle_dates": 1,
+      "meaning": "Dates with a reliable idle observation; not continuous 24-hour idle duration."
+    },
+    "focus_idle_days": {
+      "status": "partial",
+      "known_game_dates": 1,
+      "observed_idle_dates": 1,
+      "meaning": "Dates with a reliable idle observation; not continuous 24-hour idle duration."
+    },
+    "construction_queue_idle_days": {
+      "status": "partial",
+      "known_game_dates": 1,
+      "observed_idle_dates": 0,
+      "meaning": "Dates with a reliable idle observation; not continuous 24-hour idle duration."
+    },
+    "wall_time_seconds": 19.375,
+    "status": "SINGLE_GATE_NOT_PASSED"
+  },
+  "protected_files": {
+    "count": 11,
+    "changed": [],
+    "added": [],
+    "removed": []
+  },
+  "paused": true,
+  "native_trace_count": 10,
+  "semantic_commits": 0,
+  "held_input_remaining": false,
+  "runtime_failure_policy_changed": false,
+  "runtime_core_ast_sha256": "cb776eb8cd537956395ce3c37f711a98a4dddcd9e0a59851ebc45bd95fc3baf5",
+  "pending": "Scripted production target rule; no strategy change without answer",
+  "scripted_7_days": "NOT RUN",
+  "scripted_30_days": "NOT RUN",
+  "real_codex": "NOT RUN",
+  "other_ai": "NOT USED",
+  "commit": false,
+  "push": false,
+  "document_links": {
+    "missing": []
+  }
+}

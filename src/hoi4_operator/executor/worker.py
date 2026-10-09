@@ -22,6 +22,9 @@ from .guard import ActionError, Guard, WindowsProbe
 
 
 class ComputerUseWorker:
+    capabilities = {"capture": True, "click": True, "key_tap": True, "scroll": True,
+                    "left_drag": False, "right_drag": False, "held_input": False}
+
     def __init__(self, hwnd: int, pid: int, *, endpoint_file: Path, probe=None):
         self.guard = Guard(probe or WindowsProbe(), hwnd, pid)
         self.commands = queue.Queue()

@@ -1,0 +1,4 @@
+[
+  {"action":"get_construction","expected":["confirmed"]},
+  {"action":"get_construction","expected":["confirmed"]}
+]

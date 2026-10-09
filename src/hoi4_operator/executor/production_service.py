@@ -31,6 +31,9 @@ class ProductionExecutor:
         def commit():
             nonlocal committed
             committed = True
+            record = getattr(self.worker, "_record", None)
+            if record:
+                record("semantic_commit", action="set_production_factory_count")
         if not self.executor.lock.acquire(blocking=False):
             return {**result, "reason": "executor_busy", "duration_ms": 0}
         try:
@@ -70,6 +73,8 @@ class ProductionExecutor:
             if factories > SUPPORTED_MAX:
                 raise ActionError("unsupported_factory_count", "rejected")
             if target["factories"] == factories:
+                if getattr(self.ui, "native_physical", False):
+                    view = self.ui.verify_target_grid(view, position)
                 result.update(accepted=True, status="already_satisfied", after=deepcopy(target),
                               ui_confirmation={"same_equipment_and_position": True,
                                                "readback_factories": factories,
@@ -117,6 +122,8 @@ class ProductionExecutor:
                 raise ActionError("telemetry_ui_disagreement", "uncertain")
             if signature(after) != signature(view) or after["lines"][position]["factories"] != factories:
                 raise ActionError("post_action_ui_mismatch", "uncertain")
+            if getattr(self.ui, "native_physical", False):
+                after = self.ui.verify_target_grid(after, position)
             self.snapshots.update(after)
             result.update(status="confirmed", after=deepcopy(self.snapshots.view["lines"][position]),
                           ui_confirmation={"same_equipment_and_position": True, "requested_factories": factories,
@@ -146,6 +153,7 @@ class ProductionExecutor:
                 result["recovery"] = recover(self.worker)
             return result
         finally:
+            result["mutation_submitted"] = committed
             if adjustment is not None and not result["timings_ms"]["adjustment"]:
                 result["timings_ms"]["adjustment"] = round(((confirm or time.monotonic())-adjustment)*1000)
             if confirm is not None and not result["timings_ms"]["confirmation"]:

@@ -1,0 +1,486 @@
+[
+  {
+    "file": "compact-0",
+    "pieces": [
+      {
+        "columns": [
+          10,
+          17
+        ],
+        "shape": [
+          12,
+          7
+        ],
+        "foreground": 37,
+        "scores": [
+          [
+            1.0,
+            "header_digit_2_after_p0.png"
+          ],
+          [
+            0.9737,
+            "header_digit_2_native_p2.png"
+          ],
+          [
+            0.9737,
+            "header_digit_2_after_p3.png"
+          ],
+          [
+            0.9487,
+            "header_digit_2_native_p0.png"
+          ]
+        ]
+      },
+      {
+        "columns": [
+          18,
+          31
+        ],
+        "shape": [
+          16,
+          13
+        ],
+        "foreground": 57,
+        "scores": [
+          [
+            0.5526,
+            "header_digit_zero_slash_native_p1.png"
+          ],
+          [
+            0,
+            "header_digit_slash_dock_p2.png"
+          ],
+          [
+            0,
+            "header_digit_slash_after_p2.png"
+          ],
+          [
+            0,
+            "header_digit_8_native_p3.png"
+          ]
+        ]
+      },
+      {
+        "columns": [
+          32,
+          39
+        ],
+        "shape": [
+          12,
+          7
+        ],
+        "foreground": 38,
+        "scores": [
+          [
+            1.0,
+            "header_digit_2_native_p2.png"
+          ],
+          [
+            1.0,
+            "header_digit_2_after_p3.png"
+          ],
+          [
+            0.9744,
+            "header_digit_2_native_p0.png"
+          ],
+          [
+            0.9737,
+            "header_digit_2_after_p0.png"
+          ]
+        ]
+      },
+      {
+        "columns": [
+          40,
+          47
+        ],
+        "shape": [
+          12,
+          7
+        ],
+        "foreground": 44,
+        "scores": [
+          [
+            1.0,
+            "header_digit_8_native_p3.png"
+          ],
+          [
+            1.0,
+            "header_digit_8_after_p4.png"
+          ],
+          [
+            0.5714,
+            "header_digit_0_dock_p4.png"
+          ],
+          [
+            0.5714,
+            "header_digit_0_dock_p1.png"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "file": "compact-1",
+    "pieces": [
+      {
+        "columns": [
+          10,
+          17
+        ],
+        "shape": [
+          12,
+          7
+        ],
+        "foreground": 37,
+        "scores": [
+          [
+            1.0,
+            "header_digit_2_after_p0.png"
+          ],
+          [
+            0.9737,
+            "header_digit_2_native_p2.png"
+          ],
+          [
+            0.9737,
+            "header_digit_2_after_p3.png"
+          ],
+          [
+            0.9487,
+            "header_digit_2_native_p0.png"
+          ]
+        ]
+      },
+      {
+        "columns": [
+          18,
+          31
+        ],
+        "shape": [
+          16,
+          13
+        ],
+        "foreground": 57,
+        "scores": [
+          [
+            0.5526,
+            "header_digit_zero_slash_native_p1.png"
+          ],
+          [
+            0,
+            "header_digit_slash_dock_p2.png"
+          ],
+          [
+            0,
+            "header_digit_slash_after_p2.png"
+          ],
+          [
+            0,
+            "header_digit_8_native_p3.png"
+          ]
+        ]
+      },
+      {
+        "columns": [
+          32,
+          39
+        ],
+        "shape": [
+          12,
+          7
+        ],
+        "foreground": 38,
+        "scores": [
+          [
+            1.0,
+            "header_digit_2_native_p2.png"
+          ],
+          [
+            1.0,
+            "header_digit_2_after_p3.png"
+          ],
+          [
+            0.9744,
+            "header_digit_2_native_p0.png"
+          ],
+          [
+            0.9737,
+            "header_digit_2_after_p0.png"
+          ]
+        ]
+      },
+      {
+        "columns": [
+          40,
+          47
+        ],
+        "shape": [
+          12,
+          7
+        ],
+        "foreground": 44,
+        "scores": [
+          [
+            1.0,
+            "header_digit_8_native_p3.png"
+          ],
+          [
+            1.0,
+            "header_digit_8_after_p4.png"
+          ],
+          [
+            0.5714,
+            "header_digit_0_dock_p4.png"
+          ],
+          [
+            0.5714,
+            "header_digit_0_dock_p1.png"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "file": "expanded-0",
+    "pieces": [
+      {
+        "columns": [
+          10,
+          17
+        ],
+        "shape": [
+          12,
+          7
+        ],
+        "foreground": 37,
+        "scores": [
+          [
+            1.0,
+            "header_digit_2_after_p0.png"
+          ],
+          [
+            0.9737,
+            "header_digit_2_native_p2.png"
+          ],
+          [
+            0.9737,
+            "header_digit_2_after_p3.png"
+          ],
+          [
+            0.9487,
+            "header_digit_2_native_p0.png"
+          ]
+        ]
+      },
+      {
+        "columns": [
+          18,
+          31
+        ],
+        "shape": [
+          16,
+          13
+        ],
+        "foreground": 57,
+        "scores": [
+          [
+            0.5526,
+            "header_digit_zero_slash_native_p1.png"
+          ],
+          [
+            0,
+            "header_digit_slash_dock_p2.png"
+          ],
+          [
+            0,
+            "header_digit_slash_after_p2.png"
+          ],
+          [
+            0,
+            "header_digit_8_native_p3.png"
+          ]
+        ]
+      },
+      {
+        "columns": [
+          32,
+          39
+        ],
+        "shape": [
+          12,
+          7
+        ],
+        "foreground": 38,
+        "scores": [
+          [
+            1.0,
+            "header_digit_2_native_p2.png"
+          ],
+          [
+            1.0,
+            "header_digit_2_after_p3.png"
+          ],
+          [
+            0.9744,
+            "header_digit_2_native_p0.png"
+          ],
+          [
+            0.9737,
+            "header_digit_2_after_p0.png"
+          ]
+        ]
+      },
+      {
+        "columns": [
+          40,
+          47
+        ],
+        "shape": [
+          12,
+          7
+        ],
+        "foreground": 44,
+        "scores": [
+          [
+            1.0,
+            "header_digit_8_native_p3.png"
+          ],
+          [
+            1.0,
+            "header_digit_8_after_p4.png"
+          ],
+          [
+            0.5714,
+            "header_digit_0_dock_p4.png"
+          ],
+          [
+            0.5714,
+            "header_digit_0_dock_p1.png"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "file": "expanded-1",
+    "pieces": [
+      {
+        "columns": [
+          10,
+          17
+        ],
+        "shape": [
+          12,
+          7
+        ],
+        "foreground": 37,
+        "scores": [
+          [
+            1.0,
+            "header_digit_2_after_p0.png"
+          ],
+          [
+            0.9737,
+            "header_digit_2_native_p2.png"
+          ],
+          [
+            0.9737,
+            "header_digit_2_after_p3.png"
+          ],
+          [
+            0.9487,
+            "header_digit_2_native_p0.png"
+          ]
+        ]
+      },
+      {
+        "columns": [
+          18,
+          31
+        ],
+        "shape": [
+          16,
+          13
+        ],
+        "foreground": 57,
+        "scores": [
+          [
+            0.5526,
+            "header_digit_zero_slash_native_p1.png"
+          ],
+          [
+            0,
+            "header_digit_slash_dock_p2.png"
+          ],
+          [
+            0,
+            "header_digit_slash_after_p2.png"
+          ],
+          [
+            0,
+            "header_digit_8_native_p3.png"
+          ]
+        ]
+      },
+      {
+        "columns": [
+          32,
+          39
+        ],
+        "shape": [
+          12,
+          7
+        ],
+        "foreground": 38,
+        "scores": [
+          [
+            1.0,
+            "header_digit_2_native_p2.png"
+          ],
+          [
+            1.0,
+            "header_digit_2_after_p3.png"
+          ],
+          [
+            0.9744,
+            "header_digit_2_native_p0.png"
+          ],
+          [
+            0.9737,
+            "header_digit_2_after_p0.png"
+          ]
+        ]
+      },
+      {
+        "columns": [
+          40,
+          47
+        ],
+        "shape": [
+          12,
+          7
+        ],
+        "foreground": 44,
+        "scores": [
+          [
+            1.0,
+            "header_digit_8_native_p3.png"
+          ],
+          [
+            1.0,
+            "header_digit_8_after_p4.png"
+          ],
+          [
+            0.5714,
+            "header_digit_0_dock_p4.png"
+          ],
+          [
+            0.5714,
+            "header_digit_0_dock_p1.png"
+          ]
+        ]
+      }
+    ]
+  }
+]

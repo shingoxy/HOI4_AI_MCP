@@ -19,7 +19,7 @@ async def run(args):
         args.output.parent.mkdir(parents=True, exist_ok=True)
         args.output.write_text(json.dumps(evidence, ensure_ascii=False, indent=2), encoding="utf-8")
     transport = StdioServerParameters(command=sys.executable, args=[str(root/"scripts/run_mcp.py"),
-        "--gui-window", str(args.window), "--non-military"])
+        "--gui-window", str(args.window), "--backend", "computer-use", "--non-military"])
     async with Client(transport, read_timeout_seconds=180) as client:
         deadline = time.monotonic()+240
         while time.monotonic() < deadline:

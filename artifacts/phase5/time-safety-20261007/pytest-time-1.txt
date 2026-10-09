@@ -1,0 +1,62 @@
+.....................FF.                                                 [100%]
+================================== FAILURES ===================================
+_ test_native_host_shutdown_reports_unsafe_owned_time_and_stops_before_backend_close[False] _
+
+can_stop = False
+
+    @pytest.mark.parametrize('can_stop',[False,True])
+    def test_native_host_shutdown_reports_unsafe_owned_time_and_stops_before_backend_close(can_stop):
+        t=controller(GUI(None if can_stop else True));acquire(t)
+        host=object.__new__(NativeRuntimeHost);host.time=t
+        host.backend=SimpleNamespace(close=lambda:None)
+>       result=host.close()
+               ^^^^^^^^^^^^
+
+tests\test_time_safety.py:154: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <hoi4_operator.executor.native_runtime.NativeRuntimeHost object at 0x000002357FF2D510>
+
+    def close(self):
+        stop=self.time.ensure_game_stopped()
+        unsafe=self.time.owns_running
+        try:
+>           return dict(shutdown='unsafe_stop_failed' if unsafe else 'clean_no_owned_time',
+                        game_pause=True if stop['paused'] else 'UNKNOWN',
+                        operator_intervention_required=unsafe,stop=stop,
+                        time_metrics=dict(self.time.metrics),**self.time.contract())
+E                       TypeError: dict() got multiple values for keyword argument 'operator_intervention_required'
+
+src\hoi4_operator\executor\native_runtime.py:357: TypeError
+_ test_native_host_shutdown_reports_unsafe_owned_time_and_stops_before_backend_close[True] _
+
+can_stop = True
+
+    @pytest.mark.parametrize('can_stop',[False,True])
+    def test_native_host_shutdown_reports_unsafe_owned_time_and_stops_before_backend_close(can_stop):
+        t=controller(GUI(None if can_stop else True));acquire(t)
+        host=object.__new__(NativeRuntimeHost);host.time=t
+        host.backend=SimpleNamespace(close=lambda:None)
+>       result=host.close()
+               ^^^^^^^^^^^^
+
+tests\test_time_safety.py:154: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <hoi4_operator.executor.native_runtime.NativeRuntimeHost object at 0x000002357FEED3D0>
+
+    def close(self):
+        stop=self.time.ensure_game_stopped()
+        unsafe=self.time.owns_running
+        try:
+>           return dict(shutdown='unsafe_stop_failed' if unsafe else 'clean_no_owned_time',
+                        game_pause=True if stop['paused'] else 'UNKNOWN',
+                        operator_intervention_required=unsafe,stop=stop,
+                        time_metrics=dict(self.time.metrics),**self.time.contract())
+E                       TypeError: dict() got multiple values for keyword argument 'operator_intervention_required'
+
+src\hoi4_operator\executor\native_runtime.py:357: TypeError
+=========================== short test summary info ===========================
+FAILED tests/test_time_safety.py::test_native_host_shutdown_reports_unsafe_owned_time_and_stops_before_backend_close[False]
+FAILED tests/test_time_safety.py::test_native_host_shutdown_reports_unsafe_owned_time_and_stops_before_backend_close[True]
+2 failed, 22 passed in 6.35s

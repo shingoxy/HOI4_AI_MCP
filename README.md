@@ -1,8 +1,8 @@
 # HOI4 AI Operator
 
-当前为 **Phase 4 Military Control：COMPLETE / OFFLINE TESTED / LIMITED LIVE VERIFIED**。有限组军、师分配 / 移除、任命将领、两处前线、计划开关、单师补给、空军分配 / 制空和海军观察的既有验收保留。新增独立 2048×1280 / UI scale 1.0 进攻线 profile，保留原 2560×1080 profile；两个本土进攻方向分别通过独立官方 SDK stdio → 一次受限原生右拖 → 正常 GUI → 重复回读 confirmed。未进入 Phase 5。范围与失败见 [Phase 4 报告](PHASE4_MILITARY_CONTROL.md)，当前状态见 [STATUS.md](STATUS.md)。
+当前为 **Phase 5：IN PROGRESS**。WindowsNativeBackend 的 seven-action gate 已 7/7 confirmed；AgentRuntime 已实现，ScriptedAgent 单轮 mutation、Construction 单轮和有限 7 天稳定性已实机验证。最新 30 天测试因 World News 弹窗下无法确认安全暂停而失败；新增 stop-only Matrix 目前仅通过离线验证，World News 路径尚未启用。真实 Codex、其他模型和德国 180 天自治验收仍未完成。Computer Use pump 保持 OFF。逐项证据与限制见 [Phase 5 报告](PHASE5_AGENT_RUNTIME.md)、[原生后端](NATIVE_BACKEND.md) 和 [STATUS.md](STATUS.md)。
 
-全项目回归 **295 passed / 10 subtests passed**。Phase 3 非军事 Executor 已完成限定验收并提交为 `2b1e1f3`；Research / Focus 和 Phase 2 只读 telemetry 的历史证据保留。
+最新已完成全项目回归 **604 passed / 10 subtests passed**，保留 Phase 4 的 295 项基线；[本次提交前完整日志](artifacts/phase5/commit-20261009/pytest-full-1.txt)。离线通过不替代未完成的实机 gate。Phase 3 非军事 Executor 已完成限定验收并提交为 `2b1e1f3`；Research / Focus 和 Phase 2 只读 telemetry 的历史证据保留。
 
 ```text
 Telemetry Mod → game.log → FrameParser / StateCache → MCP stdio
@@ -47,9 +47,9 @@ args:    ["D:\Projects\HOI4 AI Operator\scripts\run_mcp.py"]
 | `get_changes(after_revision=0)` | 本次进程内最多 100 条变化；重复查询不消耗记录 |
 | `get_diagnostics()` | 日志读错误、parser 错误、日志 generation、未知字段 |
 
-资源 `hoi4://state/current` 返回 JSON 状态；`hoi4://telemetry/capabilities` 列出可读范围及 GUI action 连接状态。以上七个查询工具标注只读，返回 `structuredContent` 和兼容文本。MCP v0.7.0 共 50 个工具，包含历史 Research / Focus / Production、Phase 3 非军事动作及 25 个 Phase 4 工具。默认启动不连接 GUI Executor，GUI 调用返回未连接结果；现有 Codex 配置未启用 Executor，新增 GUI 工具当前聊天接入未验证。
+资源 `hoi4://state/current` 返回 JSON 状态；`hoi4://telemetry/capabilities` 列出可读范围及 GUI action 连接状态，以及 native/optional CU 和输入能力。以上七个查询工具标注只读，返回 `structuredContent` 和兼容文本。MCP v0.8.0 共 50 个工具，包含历史 Research / Focus / Production、Phase 3 非军事动作及 25 个 Phase 4 工具。默认启动不连接 GUI Executor，GUI 调用返回未连接结果；现有 Codex 配置未启用 Executor，新增 GUI 工具当前聊天接入未验证。
 
-显式连接既有 HOI4 窗口和已授权 Computer Use pump 的方式见 [Phase 3A 报告](PHASE3A_GUI_EXECUTOR.md)。私有启动参数 `--gui-window` 指定实际窗口，`--non-military` 启用 Phase 3、`--military` 启用 Phase 4；它们不允许 Agent 通过动作参数传坐标或 backend。GUI getter 会导航，因此均标注非只读。军事对象 ID 是 session-local，刷新后必须使用新 ID。
+显式连接已有窗口时默认使用独立 native，方式见 [NATIVE_BACKEND.md](NATIVE_BACKEND.md)。旧 Computer Use pump 方式见 [Phase 3A 报告](PHASE3A_GUI_EXECUTOR.md)，旧验证客户端已明确选择 `--backend computer-use`。私有启动参数 `--gui-window` 指定实际窗口，`--non-military` 启用 Phase 3、`--military` 启用 Phase 4；它们不允许 Agent 通过动作参数传坐标或 backend。GUI getter 会导航，因此均标注非只读。军事对象 ID 是 session-local，刷新后必须使用新 ID。原生截图能够捕获当前显示，不表示所有 reader 已完成该显示的校准。
 
 | Phase 4 工具组 | 范围 |
 |---|---|

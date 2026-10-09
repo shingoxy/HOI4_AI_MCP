@@ -1,0 +1,21 @@
+{
+  "run_id": "cd8a6f58-450c-47de-9aa3-c03648288be9",
+  "agent": "scripted",
+  "backend": "windows_native",
+  "pump": "OFF",
+  "started_at": "2026-10-06T13:41:01.820819+00:00",
+  "start_date": "1936-03-25",
+  "end_date": "1936-03-25",
+  "observations": 1,
+  "alerts": 6,
+  "decisions": 0,
+  "actions": 0,
+  "results": 0,
+  "rejected": 0,
+  "uncertain": 0,
+  "timeouts": 0,
+  "circuit_breaker": null,
+  "game_days": 0,
+  "wall_time_seconds": 16.328,
+  "status": "OBSERVATION_CATALOG_CONFIRMED"
+}

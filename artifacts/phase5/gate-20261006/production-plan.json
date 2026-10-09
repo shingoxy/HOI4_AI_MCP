@@ -1,0 +1,18 @@
+[
+  {
+    "action": "get_production_lines",
+    "expected": [
+      "confirmed"
+    ]
+  },
+  {
+    "action": "set_production_factory_count",
+    "arguments": {
+      "line_id": "$snapshot.lines.0.line_id",
+      "factories": 11
+    },
+    "expected": [
+      "confirmed"
+    ]
+  }
+]

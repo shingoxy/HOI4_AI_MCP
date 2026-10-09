@@ -1,0 +1,91 @@
+{
+  "reason": "safe_stop_route_unavailable",
+  "captured_at": "2026-10-07T09:50:11.592167+00:00",
+  "recorded_at": "2026-10-07T09:50:11.650164+00:00",
+  "ownership": {
+    "ownership_state": "STOP_FAILED_OWNED",
+    "owns_running": true,
+    "operator_intervention_required": true,
+    "failure_evidence_error": null
+  },
+  "telemetry": {
+    "status": "fresh",
+    "received_at": "2026-10-07T09:50:10.811824+00:00",
+    "game_date": " 24:00, 15 8月, 1936",
+    "latest_seq": 706866,
+    "state": {
+      "protocol_version": 2,
+      "seq": 706866,
+      "game_date": " 24:00, 15 8月, 1936",
+      "country": "GER",
+      "politics": {
+        "political_power": 567.548,
+        "stability": 0.81,
+        "war_support": 0.47384
+      },
+      "manpower": {
+        "available": 1342501,
+        "source_thousands": 1342.501
+      },
+      "industry": {
+        "civilian_factories": 37,
+        "military_factories": 28,
+        "dockyards": 10
+      },
+      "origin": "daily",
+      "research": {
+        "slot_count": 4,
+        "tracked_technologies": [
+          {
+            "tech_id": "basic_machine_tools",
+            "researching": false,
+            "researched": true
+          },
+          {
+            "tech_id": "construction1",
+            "researching": false,
+            "researched": false
+          },
+          {
+            "tech_id": "electronic_mechanical_engineering",
+            "researching": false,
+            "researched": false
+          }
+        ]
+      },
+      "focus": {
+        "tracked_id": "GER_remilitarize_the_rhineland",
+        "completed": true,
+        "progress_lower_bound": 1.0,
+        "progress_upper_bound": 1.0
+      }
+    },
+    "parser_errors": [],
+    "session_id": "41147638-d68d-42c5-8c05-09efacfe8d34",
+    "revision": 9,
+    "freshness_basis": "frame_received_at",
+    "log_read_error": null
+  },
+  "hwnd": 589988,
+  "pid": 16820,
+  "foreground": 589988,
+  "guard_reason": null,
+  "exact_rgb_available": true,
+  "gui_date": null,
+  "gui_date_status": "UNKNOWN",
+  "modal": {
+    "state": "KNOWN_BLOCKING_MODAL",
+    "names": [
+      "world_news"
+    ],
+    "stop_route": null,
+    "scope": "Calibrated menu/news/focus/research and centered rectangular popup candidates only"
+  },
+  "directory": "artifacts\\phase5\\time-safety-20261007\\scripted-days30-1\\native-audit\\time-failure-0e162cfd-1456-4c64-b535-4c91011b741b",
+  "ownership_after_failure": {
+    "ownership_state": "STOP_FAILED_OWNED",
+    "owns_running": true,
+    "operator_intervention_required": true,
+    "failure_evidence_error": null
+  }
+}

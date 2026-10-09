@@ -1,0 +1,8 @@
+{
+  "pump": "OFF",
+  "semantic_mutations": 0,
+  "role": "GUI_map_calibration",
+  "selected": true,
+  "status": "blocked",
+  "reason": "map_target_unresolved"
+}

@@ -1,0 +1,38 @@
+{
+  "pump": "OFF",
+  "backend": "WindowsNativeBackend",
+  "geometry": {
+    "width": 2560,
+    "height": 1600,
+    "x": 0,
+    "y": 0,
+    "dpi": 120,
+    "desktop": [
+      0,
+      0,
+      2560,
+      1600
+    ],
+    "capture_profile": {
+      "name": "GER_2560x1600_DPI120_PHYSICAL",
+      "client_width": 2560,
+      "client_height": 1600,
+      "dpi": 120,
+      "capture_width": 2560,
+      "capture_height": 1600,
+      "template_set": "phase3a/phase3 + phase5 physical seven-action gate; limited targets",
+      "backend": "windows_native_gdi",
+      "offset": [
+        0,
+        0
+      ]
+    }
+  },
+  "key": null,
+  "click": [
+    2540,
+    1378
+  ],
+  "scroll": null,
+  "hover": null
+}

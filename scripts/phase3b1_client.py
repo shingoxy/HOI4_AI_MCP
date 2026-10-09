@@ -13,7 +13,7 @@ from mcp.client.stdio import StdioServerParameters
 async def run(args):
     root = Path(__file__).resolve().parents[1]
     transport = StdioServerParameters(command=sys.executable, args=[str(root / "scripts/run_mcp.py"),
-                                                                   "--gui-window", str(args.window)])
+                                                                   "--gui-window", str(args.window), "--backend", "computer-use"])
     evidence = {"source": "LIVE HOI4 / official SDK stdio / semantic Executor / Computer Use",
                 "actions": []}
     def save():

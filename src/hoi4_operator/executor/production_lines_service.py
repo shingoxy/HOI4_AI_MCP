@@ -21,6 +21,11 @@ class ProductionLineExecutor(ProductionExecutor):
                 rgb = self.ui.open()
             with tx.stage("readback"):
                 view = self.ui.read(rgb)
+                if getattr(self.ui, "native_physical", False):
+                    position = next((line["position"] for line in view["lines"]
+                                     if line.get("equipment_id") == "infantry_equipment_1"), None)
+                    if position is not None:
+                        view = self.ui.verify_target_grid(view, position)
                 if not telemetry_agrees(tx.fresh(), view):
                     raise ActionError("readback_failed", "uncertain")
                 snapshot = self.snapshots.replace(view, tx.before["latest_seq"])

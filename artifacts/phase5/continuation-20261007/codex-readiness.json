@@ -1,0 +1,24 @@
+{
+  "kind": "READ_ONLY_READINESS_CHECK_NOT_MODEL_GATE",
+  "cli_version": "0.151.0",
+  "cli_installed": true,
+  "chatgpt_login_succeeded": true,
+  "openai_api_key_present": false,
+  "openai_codex_package_installed": false,
+  "openai_package_installed": false,
+  "documented_routes": [
+    "Codex SDK",
+    "Codex CLI exec",
+    "Codex app-server"
+  ],
+  "sources": [
+    "https://developers.openai.com/codex/sdk",
+    "https://learn.chatgpt.com/docs/app-server"
+  ],
+  "protocol_schema": "codex-protocol/v2/ThreadStartParams.json",
+  "structured_output_available": true,
+  "model_inference_attempts": 0,
+  "real_semantic_provider_validated": false,
+  "blocker": "NOT RUN: earlier 30-day gate stopped after map_target_unresolved at day21",
+  "remaining": "Implement/verify semantic-only provider isolation before a real Codex decision/action gate; fake callback is not live proof"
+}

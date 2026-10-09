@@ -1,0 +1,51 @@
+{
+  "run_id": "a267d0f1-4d8e-44a3-b18b-5d72bbf01df0",
+  "agent": "scripted",
+  "backend": "windows_native",
+  "pump": "OFF",
+  "started_at": "2026-10-07T02:18:08.708438+00:00",
+  "start_date": "1936-03-29",
+  "end_date": "1936-03-30",
+  "observations": 3,
+  "alerts": 18,
+  "decisions": 1,
+  "actions": 1,
+  "results": 1,
+  "confirmed": 1,
+  "already_satisfied": 0,
+  "mutations_submitted": 1,
+  "confirmed_mutations": 1,
+  "rejected": 0,
+  "uncertain": 0,
+  "timeouts": 0,
+  "timed_out": 0,
+  "backend_errors": 0,
+  "timeline_reset": 0,
+  "circuit_breaker": null,
+  "game_days": 0,
+  "unused_MIL_observations": {
+    "known": 3,
+    "unused": 3,
+    "unknown": 0
+  },
+  "research_idle_days": {
+    "status": "partial",
+    "known_game_dates": 2,
+    "observed_idle_dates": 2,
+    "meaning": "Dates with a reliable idle observation; not continuous 24-hour idle duration."
+  },
+  "focus_idle_days": {
+    "status": "partial",
+    "known_game_dates": 2,
+    "observed_idle_dates": 2,
+    "meaning": "Dates with a reliable idle observation; not continuous 24-hour idle duration."
+  },
+  "construction_queue_idle_days": {
+    "status": "partial",
+    "known_game_dates": 2,
+    "observed_idle_dates": 0,
+    "meaning": "Dates with a reliable idle observation; not continuous 24-hour idle duration."
+  },
+  "wall_time_seconds": 51.328,
+  "status": "SINGLE_CYCLE_CONFIRMED"
+}

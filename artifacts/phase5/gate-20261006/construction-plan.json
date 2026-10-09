@@ -1,0 +1,3 @@
+[
+  {"action":"build","arguments":{"state_id":64,"building_type":"civilian_factory","count":1},"expected":["confirmed"]}
+]

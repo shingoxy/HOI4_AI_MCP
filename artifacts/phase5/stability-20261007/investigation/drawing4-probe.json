@@ -1,0 +1,44 @@
+{
+  "pump": "OFF",
+  "semantic_mutations": 0,
+  "role": "GUI_map_calibration",
+  "selected": true,
+  "map_readiness": {
+    "state": "MAP_READY",
+    "reason": "known_construction_mode_unchanged_geometry",
+    "profile": "home",
+    "pose": {
+      "amsterdam": [
+        450,
+        840
+      ],
+      "copenhagen": [
+        1292,
+        322
+      ],
+      "warsaw": [
+        2205,
+        868
+      ]
+    },
+    "geometry": {
+      "confirmed": true,
+      "matches": 278,
+      "unchanged": 258,
+      "unchanged_ratio": 0.9280575539568345,
+      "sectors": [
+        36,
+        86,
+        136
+      ],
+      "target_neighborhood_matches": 12,
+      "maximum_displacement_pixels": 1,
+      "target_transform_used": false
+    },
+    "city_anchor_source": "all three revalidated before opening construction mode",
+    "current_mode": "known_civilian_construction_overlay"
+  },
+  "queue_after_selection": [],
+  "paused": true,
+  "status": "confirmed"
+}

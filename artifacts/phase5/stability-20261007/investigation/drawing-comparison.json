@@ -1,0 +1,249 @@
+{
+  "drawing-before.png": {
+    "inspect": {
+      "state": "MAP_READY",
+      "reason": "calibrated_capital_camera_range",
+      "profile": "home",
+      "pose": {
+        "amsterdam": [
+          450,
+          840
+        ],
+        "copenhagen": [
+          1292,
+          322
+        ],
+        "warsaw": [
+          2205,
+          868
+        ]
+      }
+    },
+    "scores": {
+      "amsterdam": [
+        {
+          "variant": 1,
+          "score": 0.9677637219429016,
+          "center": [
+            450,
+            840
+          ]
+        },
+        {
+          "variant": 2,
+          "score": 0.9940460920333862,
+          "center": [
+            450,
+            840
+          ]
+        },
+        {
+          "variant": 3,
+          "score": 0.9377161264419556,
+          "center": [
+            450,
+            840
+          ]
+        },
+        {
+          "variant": 4,
+          "score": 0.9979490041732788,
+          "center": [
+            450,
+            840
+          ]
+        }
+      ],
+      "copenhagen": [
+        {
+          "variant": 1,
+          "score": 0.9695929288864136,
+          "center": [
+            1292,
+            322
+          ]
+        },
+        {
+          "variant": 2,
+          "score": 0.984236478805542,
+          "center": [
+            1292,
+            322
+          ]
+        },
+        {
+          "variant": 3,
+          "score": 0.9639179110527039,
+          "center": [
+            1292,
+            322
+          ]
+        },
+        {
+          "variant": 4,
+          "score": 0.9998804926872253,
+          "center": [
+            1292,
+            322
+          ]
+        }
+      ],
+      "warsaw": [
+        {
+          "variant": 1,
+          "score": 0.9495173692703247,
+          "center": [
+            2205,
+            868
+          ]
+        },
+        {
+          "variant": 2,
+          "score": 0.9868614673614502,
+          "center": [
+            2205,
+            868
+          ]
+        },
+        {
+          "variant": 3,
+          "score": 0.8977383375167847,
+          "center": [
+            2205,
+            868
+          ]
+        },
+        {
+          "variant": 4,
+          "score": 0.997960090637207,
+          "center": [
+            2205,
+            868
+          ]
+        }
+      ]
+    },
+    "land_mode": [
+      2510,
+      1415
+    ],
+    "panel": null
+  },
+  "drawing-selected.png": {
+    "inspect": {
+      "state": "MAP_UNRESOLVED",
+      "reason": "map_mode_mismatch",
+      "profile": null,
+      "pose": null
+    },
+    "scores": {
+      "amsterdam": [
+        {
+          "variant": 1,
+          "score": 0.09495609253644943,
+          "center": [
+            430,
+            841
+          ]
+        },
+        {
+          "variant": 2,
+          "score": 0.09714624285697937,
+          "center": [
+            430,
+            841
+          ]
+        },
+        {
+          "variant": 3,
+          "score": 0.08303193002939224,
+          "center": [
+            350,
+            845
+          ]
+        },
+        {
+          "variant": 4,
+          "score": 0.09322960674762726,
+          "center": [
+            445,
+            846
+          ]
+        }
+      ],
+      "copenhagen": [
+        {
+          "variant": 1,
+          "score": 0.0043383510783314705,
+          "center": [
+            1292,
+            320
+          ]
+        },
+        {
+          "variant": 2,
+          "score": -0.013959280215203762,
+          "center": [
+            1292,
+            270
+          ]
+        },
+        {
+          "variant": 3,
+          "score": 0.014119098894298077,
+          "center": [
+            1291,
+            270
+          ]
+        },
+        {
+          "variant": 4,
+          "score": -0.0163118839263916,
+          "center": [
+            1291,
+            270
+          ]
+        }
+      ],
+      "warsaw": [
+        {
+          "variant": 1,
+          "score": 0.21553538739681244,
+          "center": [
+            2219,
+            876
+          ]
+        },
+        {
+          "variant": 2,
+          "score": 0.26510900259017944,
+          "center": [
+            2205,
+            869
+          ]
+        },
+        {
+          "variant": 3,
+          "score": 0.13431914150714874,
+          "center": [
+            2290,
+            870
+          ]
+        },
+        {
+          "variant": 4,
+          "score": 0.25996869802474976,
+          "center": [
+            2205,
+            868
+          ]
+        }
+      ]
+    },
+    "land_mode": null,
+    "panel": [
+      62,
+      103
+    ]
+  }
+}

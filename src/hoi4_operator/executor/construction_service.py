@@ -63,8 +63,16 @@ class ConstructionExecutor:
                     raise ActionError("unsupported_target", "rejected")
                 tx.fresh()
             with tx.stage("submit"):
-                self.ui.change(action, before, tx.commit, state_id=state_id, building_type=building_type,
-                               target=target, direction=direction)
+                try:
+                    def commit():
+                        tx.fresh()
+                        tx.commit()
+                    self.ui.change(action, before, commit, state_id=state_id, building_type=building_type,
+                                   target=target, direction=direction)
+                finally:
+                    reader=getattr(self.ui,'tool_reader',None)
+                    if action=='build' and reader and reader.evidence:
+                        tx.result.evidence['construction_tool']=deepcopy(reader.evidence)
             with tx.stage("readback"):
                 after = self.ui.observe()
                 diff = validate(before, after, action, state_id=state_id, building_type=building_type,

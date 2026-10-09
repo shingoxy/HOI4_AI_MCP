@@ -26,11 +26,16 @@ CAPABILITIES_URI = "hoi4://telemetry/capabilities"
 def create_server(log_path: str | Path, *, interval: float = 0.25,
                   stale_seconds: float = 30, executor=None, production_executor=None,
                   gui_window: int | None = None, non_military: bool = False, construction_executor=None,
-                  politics_executor=None, trade_executor=None, military_executor=None, military: bool = False) -> MCPServer:
+                  politics_executor=None, trade_executor=None, military_executor=None, military: bool = False,
+                  input_backend: str = "native", capture_space: str = "physical") -> MCPServer:
     if not math.isfinite(interval) or interval <= 0:
         raise ValueError("interval must be finite and positive")
     if not math.isfinite(stale_seconds) or stale_seconds <= 0:
         raise ValueError("stale_seconds must be finite and positive")
+    if input_backend not in {"native", "computer-use"}:
+        raise ValueError("input_backend must be native or computer-use")
+    if capture_space not in {"physical", "legacy"}:
+        raise ValueError("capture_space must be physical or legacy")
     bus = InMemorySubscriptionBus()
     runtime: ReadModel | None = None
     action_runtime = executor
@@ -40,6 +45,7 @@ def create_server(log_path: str | Path, *, interval: float = 0.25,
     trade_runtime = trade_executor
     military_runtime = military_executor
     right_drag_attached = False
+    api_runtime = None
 
     async def watch(model: ReadModel) -> None:
         while True:
@@ -49,7 +55,7 @@ def create_server(log_path: str | Path, *, interval: float = 0.25,
 
     @asynccontextmanager
     async def lifespan(server: MCPServer):
-        nonlocal runtime, action_runtime, production_runtime, construction_runtime, politics_runtime, trade_runtime, military_runtime, right_drag_attached
+        nonlocal runtime, action_runtime, production_runtime, construction_runtime, politics_runtime, trade_runtime, military_runtime, right_drag_attached, api_runtime
         model = ReadModel(log_path, stale_seconds=stale_seconds)
         runtime = model
         worker = None
@@ -60,30 +66,40 @@ def create_server(log_path: str | Path, *, interval: float = 0.25,
             from .executor.production_ui import ProductionUI
             from .executor.templates import Templates
             from .executor.ui_state import UIState
-            from .executor.worker import ComputerUseWorker
             root = Path(__file__).resolve().parents[2]
             probe = WindowsProbe()
-            worker = ComputerUseWorker(gui_window, probe.pid(gui_window), probe=probe,
-                                       endpoint_file=root / "artifacts/phase3a/runtime/endpoint.json")
-            if military:
+            if input_backend == "native":
+                from .executor.windows_native import WindowsNativeBackend
+                worker = WindowsNativeBackend(gui_window, probe.pid(gui_window), probe=probe,
+                                              capture_space=capture_space,
+                                              audit_directory=root / "artifacts/phase5/runtime/native-audit")
+                right_drag_attached = military
+            else:
+                from .executor.worker import ComputerUseWorker
+                worker = ComputerUseWorker(gui_window, probe.pid(gui_window), probe=probe,
+                                           endpoint_file=root / "artifacts/phase3a/runtime/endpoint.json")
+            if military and input_backend == "computer-use":
                 from .executor.right_drag import NativeRightDragBackend
                 worker = NativeRightDragBackend(worker)
                 right_drag_attached = True
             # Independent reader: executor's thread never races the MCP watcher.
             action_model = ReadModel(log_path, stale_seconds=stale_seconds)
             action_runtime = Executor(action_model, worker,
-                                      UIState(worker, Templates(root / "artifacts/phase3a/templates")))
+                                      UIState(worker, Templates(root / "artifacts/phase3a/templates"),
+                                              Templates(root / "artifacts/phase5/templates") if input_backend == "native" else None))
             production_runtime = ProductionExecutor(action_runtime, ProductionUI(
                 action_runtime.ui, Templates(root / "artifacts/phase3b1/templates")))
             if non_military:
                 from .executor.production_lines_service import ProductionLineExecutor
                 from .executor.production_lines_ui import ProductionLinesUI
                 production_runtime = ProductionLineExecutor(action_runtime, ProductionLinesUI(
-                    action_runtime.ui, Templates(root / "artifacts/phase3/templates")))
+                    action_runtime.ui, Templates(root / "artifacts/phase3/templates"),
+                    root / "artifacts/phase5/templates/production" if input_backend == "native" else None))
                 from .executor.construction_service import ConstructionExecutor
                 from .executor.construction_ui import ConstructionUI
                 construction_runtime = ConstructionExecutor(action_runtime, ConstructionUI(
-                    action_runtime.ui, Templates(root / "artifacts/phase3/templates")))
+                    action_runtime.ui, Templates(root / "artifacts/phase3/templates"),
+                    Templates(root/'artifacts/phase5/templates/map') if input_backend == 'native' else None))
                 from .executor.politics_service import PoliticsExecutor
                 from .executor.politics_ui import PoliticsUI
                 politics_runtime = PoliticsExecutor(action_runtime, PoliticsUI(
@@ -95,9 +111,23 @@ def create_server(log_path: str | Path, *, interval: float = 0.25,
             if military:
                 from .executor.military_service import MilitaryExecutor
                 from .executor.military_ui import MilitaryUI
-                military_runtime = MilitaryExecutor(action_runtime, MilitaryUI(
-                    action_runtime.ui, Templates(root / "artifacts/phase4/templates"),
-                    Templates(root / "artifacts/phase4/offensive2048/templates")))
+                if input_backend == 'native' and capture_space == 'physical':
+                    from .executor.native_military_ui import NativeMilitaryUI
+                    military_ui=NativeMilitaryUI(action_runtime.ui,Templates(root/'artifacts/phase4/templates'),
+                                                Templates(root/'artifacts/phase5/templates/military'))
+                else:
+                    military_ui=MilitaryUI(action_runtime.ui,Templates(root/'artifacts/phase4/templates'),
+                                           Templates(root/'artifacts/phase4/offensive2048/templates'))
+                military_runtime = MilitaryExecutor(action_runtime,military_ui)
+        from .operator import OperatorAPI
+        if gui_window is not None and input_backend == "native" and capture_space == "physical":
+            from .executor.native_runtime import NativeObservationHost
+            observation_host = NativeObservationHost(action_runtime.model, action_runtime, production_runtime,
+                                                     construction_runtime, military_runtime)
+            api_runtime = observation_host.operator
+        else:
+            api_runtime = OperatorAPI(model, executor=action_runtime, production=production_runtime,
+                construction=construction_runtime, politics=politics_runtime, trade=trade_runtime, military=military_runtime)
         async with anyio.create_task_group() as tasks:
             tasks.start_soon(watch, model)
             try:
@@ -105,6 +135,7 @@ def create_server(log_path: str | Path, *, interval: float = 0.25,
             finally:
                 tasks.cancel_scope.cancel()
                 runtime = None
+                api_runtime = None
                 if worker:
                     worker.close()
                     action_runtime = None
@@ -116,11 +147,15 @@ def create_server(log_path: str | Path, *, interval: float = 0.25,
                     right_drag_attached = False
 
     server = MCPServer(
-        "HOI4 Telemetry and GUI PoC", version="0.7.0", lifespan=lifespan,
+        "HOI4 Telemetry and GUI PoC", version="0.9.0", lifespan=lifespan,
         subscriptions=bus,
         instructions=(
+            "get_game_state and get_action_catalog provide scoped semantic runtime observations and current targets. "
+            "summary/catalog use telemetry and cache; strategic/detailed may navigate GUI pages serially. "
+            "The catalog limits the native runtime to the validated physical Germany seven-action subset; "
+            "registration of historical tools does not mean all tools are native live verified. "
             "Reads Germany telemetry. select_research/select_focus are normal GUI actions "
-            "requiring an explicitly attached local Computer Use worker and fresh v2 telemetry. "
+            "requiring an explicitly attached guarded backend and fresh v2 telemetry. "
             "Only three tracked technologies and Rhineland are supported at 2560x1080/1.0. "
             "Production supports get_production_lines and set_production_factory_count: "
             "six calibrated visible military lines, GUI session-local IDs and counts 0..15; "
@@ -157,6 +192,21 @@ def create_server(log_path: str | Path, *, interval: float = 0.25,
                                  idempotent_hint=True, open_world_hint=False)
     from .military_mcp import register_military_tools
     register_military_tools(server, lambda: military_runtime)
+
+    @server.tool(annotations=ToolAnnotations(read_only_hint=False, destructive_hint=False,
+                                            idempotent_hint=True, open_world_hint=False), structured_output=True)
+    async def get_game_state(detail: str = "strategic") -> dict[str, Any]:
+        """Unified semantic state. summary uses telemetry/cache; strategic/detailed may serially navigate calibrated GUI pages. Unknown and incomplete domains remain explicit."""
+        if api_runtime is None:
+            return {"status": "rejected", "reason": "backend_unavailable"}
+        return await anyio.to_thread.run_sync(api_runtime.get_game_state, detail)
+
+    @server.tool(annotations=read_only, structured_output=True)
+    async def get_action_catalog() -> dict[str, Any]:
+        """Current scoped semantic targets. Tool registration does not imply native runtime availability; snapshot/freshness/profile/backend constraints apply."""
+        if api_runtime is None:
+            return {"status": "rejected", "reason": "backend_unavailable"}
+        return await anyio.to_thread.run_sync(api_runtime.get_action_catalog)
 
     @server.tool(annotations=ToolAnnotations(read_only_hint=False, destructive_hint=False,
                                             idempotent_hint=True, open_world_hint=False), structured_output=True)
@@ -373,6 +423,10 @@ def create_server(log_path: str | Path, *, interval: float = 0.25,
             "trade": {"scope": "SWE steel only", "civilian_factories": [0, 1, 2],
                       "complete_trade_state": False, "telemetry_trade_state": "UNKNOWN"},
             "gui_executor_attached": action_runtime is not None,
+            "input_backend": input_backend if gui_window is not None else "NOT_ATTACHED",
+            "capture_space": capture_space if gui_window is not None and input_backend == "native" else None,
+            "computer_use_required": gui_window is not None and input_backend == "computer-use",
+            "input_capabilities": dict(getattr(getattr(action_runtime, "worker", None), "capabilities", {})),
             "input_backend_ready": bool(action_runtime and
                 getattr(getattr(action_runtime, "worker", None), "ready", lambda: False)()),
             "unknown_fields": UNKNOWN_FIELDS,
@@ -387,13 +441,18 @@ def main() -> None:
     parser.add_argument("--log", type=Path, default=default_log_path())
     parser.add_argument("--interval", type=float, default=0.25)
     parser.add_argument("--stale-seconds", type=float, default=30)
-    parser.add_argument("--gui-window", type=int, help="Explicit existing HOI4 window ID; requires Computer Use pump")
+    parser.add_argument("--gui-window", type=int, help="Explicit existing HOI4 window ID; never launches or activates")
+    parser.add_argument("--backend", choices=("native", "computer-use"), default="native",
+                        help="Independent Windows native backend (default), or optional Computer Use pump")
+    parser.add_argument("--capture-space", choices=("physical", "legacy"), default="physical",
+                        help="Native physical pixels (default) or exact calibrated legacy DPI mapping")
     parser.add_argument("--non-military", action="store_true", help="Use current Phase 3 calibration and semantic line operations")
-    parser.add_argument("--military", action="store_true", help="Use limited Phase 4 military GUI calibration; requires Computer Use pump")
+    parser.add_argument("--military", action="store_true", help="Use limited Phase 4 military GUI calibration")
     args = parser.parse_args()
     try:
         server = create_server(args.log, interval=args.interval, stale_seconds=args.stale_seconds,
-                               gui_window=args.gui_window, non_military=args.non_military, military=args.military)
+                               gui_window=args.gui_window, non_military=args.non_military, military=args.military,
+                               input_backend=args.backend, capture_space=args.capture_space)
     except ValueError as exc:
         parser.error(str(exc))
     server.run(transport="stdio")

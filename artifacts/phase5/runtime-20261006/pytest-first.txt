@@ -1,0 +1,68 @@
+........................................................................ [ 16%]
+.................................................F............ [ 31%]
+........................................................................ [ 47%]
+........................................................................ [ 64%]
+........................................................................ [ 81%]
+........................................................................ [ 97%]
+.........                                                                [100%]
+================================== FAILURES ===================================
+___ MCPTests.test_tools_and_resources_missing_log_and_read_only_annotations ___
+  + Exception Group Traceback (most recent call last):
+  |   File "D:\Projects\HOI4 AI Operator\tests\test_mcp.py", line 39, in test_tools_and_resources_missing_log_and_read_only_annotations
+  |     async with Client(server) as client:
+  |   File "D:\Software\MiniConda3-py311\Lib\contextlib.py", line 745, in __aexit__
+  |     raise exc_details[1]
+  |   File "D:\Software\MiniConda3-py311\Lib\contextlib.py", line 728, in __aexit__
+  |     cb_suppress = await cb(*exc_details)
+  |                   ^^^^^^^^^^^^^^^^^^^^^^
+  |   File "D:\Software\MiniConda3-py311\Lib\contextlib.py", line 231, in __aexit__
+  |     await self.gen.athrow(typ, value, traceback)
+  |   File "D:\Projects\HOI4 AI Operator\.venv\Lib\site-packages\mcp\server\mcpserver\server.py", line 151, in wrap
+  |     async with lifespan(app) as context:
+  |   File "D:\Software\MiniConda3-py311\Lib\contextlib.py", line 231, in __aexit__
+  |     await self.gen.athrow(typ, value, traceback)
+  |   File "D:\Projects\HOI4 AI Operator\src\hoi4_operator\mcp_server.py", line 131, in lifespan
+  |     async with anyio.create_task_group() as tasks:
+  |   File "D:\Projects\HOI4 AI Operator\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 847, in __aexit__
+  |     raise BaseExceptionGroup(
+  | ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+  +-+---------------- 1 ----------------
+    | Exception Group Traceback (most recent call last):
+    |   File "D:\Projects\HOI4 AI Operator\src\hoi4_operator\mcp_server.py", line 134, in lifespan
+    |     yield model
+    |   File "D:\Projects\HOI4 AI Operator\.venv\Lib\site-packages\mcp\server\mcpserver\server.py", line 152, in wrap
+    |     yield context
+    |   File "D:\Software\MiniConda3-py311\Lib\contextlib.py", line 728, in __aexit__
+    |     cb_suppress = await cb(*exc_details)
+    |                   ^^^^^^^^^^^^^^^^^^^^^^
+    |   File "D:\Projects\HOI4 AI Operator\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 847, in __aexit__
+    |     raise BaseExceptionGroup(
+    | ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+    +-+---------------- 1 ----------------
+      | Exception Group Traceback (most recent call last):
+      |   File "D:\Software\MiniConda3-py311\Lib\contextlib.py", line 728, in __aexit__
+      |     cb_suppress = await cb(*exc_details)
+      |                   ^^^^^^^^^^^^^^^^^^^^^^
+      |   File "D:\Projects\HOI4 AI Operator\.venv\Lib\site-packages\mcp\client\session.py", line 514, in __aexit__
+      |     result = await self._task_group.__aexit__(exc_type, exc_val, exc_tb)
+      |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      |   File "D:\Projects\HOI4 AI Operator\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 847, in __aexit__
+      |     raise BaseExceptionGroup(
+      | ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+      +-+---------------- 1 ----------------
+        | Traceback (most recent call last):
+        |   File "D:\Projects\HOI4 AI Operator\tests\test_mcp.py", line 41, in test_tools_and_resources_missing_log_and_read_only_annotations
+        |     self.assertEqual({t.name for t in tools}, {
+        |   File "D:\Software\MiniConda3-py311\Lib\unittest\case.py", line 873, in assertEqual
+        |     assertion_func(first, second, msg=msg)
+        |   File "D:\Software\MiniConda3-py311\Lib\unittest\case.py", line 1133, in assertSetEqual
+        |     self.fail(self._formatMessage(msg, standardMsg))
+        |   File "D:\Software\MiniConda3-py311\Lib\unittest\case.py", line 703, in fail
+        |     raise self.failureException(msg)
+        | AssertionError: Items in the first set but not the second:
+        | 'get_game_state'
+        | 'get_action_catalog'
+        +------------------------------------
+=========================== short test summary info ===========================
+FAILED tests/test_mcp.py::MCPTests::test_tools_and_resources_missing_log_and_read_only_annotations
+1 failed, 430 passed, 10 subtests passed in 32.26s

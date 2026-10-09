@@ -1,0 +1,4 @@
+[
+  {"action":"get_divisions","expected":["confirmed"]},
+  {"action":"get_divisions","expected":["confirmed"]}
+]

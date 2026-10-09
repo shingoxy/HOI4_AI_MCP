@@ -1,0 +1,45 @@
+{
+  "capture_profile": "GER_2560x1600_DPI120_PHYSICAL",
+  "threshold": 0.9,
+  "escape_route_scope": "research_complete/basic_machine_tools alone; not arbitrary news or overlay stacks",
+  "escape_before": "artifacts\\phase5\\tool-20261007\\safety-stop-1\\before.png",
+  "escape_after": "artifacts/phase5/tool-20261007/safety-stop-1/after.png",
+  "templates": {
+    "research_title": {
+      "source": "artifacts\\phase5\\tool-20261007\\safety-stop-1\\before.png",
+      "box": [
+        1235,
+        673,
+        1395,
+        702
+      ]
+    },
+    "research_basic_body": {
+      "source": "artifacts\\phase5\\tool-20261007\\safety-stop-1\\before.png",
+      "box": [
+        1225,
+        800,
+        1385,
+        832
+      ]
+    },
+    "research_chrome": {
+      "source": "artifacts\\phase5\\tool-20261007\\safety-stop-1\\before.png",
+      "box": [
+        1060,
+        644,
+        1545,
+        668
+      ]
+    },
+    "news_chrome": {
+      "source": "artifacts\\phase5\\tool-20261007\\final-physical.png",
+      "box": [
+        1003,
+        518,
+        1557,
+        537
+      ]
+    }
+  }
+}

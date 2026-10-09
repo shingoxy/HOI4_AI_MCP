@@ -2,6 +2,7 @@
 
 import cv2
 import numpy as np
+import time
 
 from ..actions.production import signature
 from ..actions.equipment import EQUIPMENT
@@ -17,6 +18,10 @@ DISPLAY_TYPES = ("步兵装备 I型", "支援装备", "牵引式火炮", "改进
 
 
 class ProductionLinesUI(ProductionUI):
+    @property
+    def native_physical(self):
+        return getattr(getattr(self.worker, "capture_profile", None), "name", None) == "GER_2560x1600_DPI120_PHYSICAL"
+
     def row_tops(self, rgb):
         self.found(rgb, "line_delete")  # Populate the ordinary template cache.
         template = self.templates.cache.get("line_delete")
@@ -97,7 +102,7 @@ class ProductionLinesUI(ProductionUI):
                           "maximum_assignable_factories": min(150, count+total-used),
                           "supported_factory_count_max": 15})
         if not 0 <= used <= total <= 150 or sum(line["factories"] for line in lines) != used:
-            raise ActionError("readback_failed", "uncertain")
+            raise ActionError("readback_ambiguous" if self.native_physical else "readback_failed", "uncertain")
         # With the entire viewport covered, a visible scrollbar would mean hidden
         # rows; reject rather than infer them from the total-factory sum.
         if self.found(rgb, "production_top_scroll", (520, 366, 540, 403), threshold=0.85):
@@ -179,6 +184,95 @@ class ProductionLinesUI(ProductionUI):
             raise ActionError("readback_failed", "uncertain")
         return count
 
+    def expanded_evidence(self, rgb, expected, position, delta=0):
+        """Compare three independent GUI sources with the complete compact list."""
+        top = LAYOUT["first_top"] + position*LAYOUT["compact_pitch"]
+        if DISPLAY_NAMES[self.name_index(rgb, top)] != expected["lines"][position]["equipment"]:
+            raise ActionError("identity_mismatch", "rejected")
+        try:
+            count = self.grid_count(rgb, top)
+        except ActionError as exc:
+            if exc.reason == "readback_failed":
+                raise ActionError("readback_ambiguous", "uncertain") from exc
+            raise
+        try:
+            used, total = map(int, self.number(rgb, HEADER_BOX, header=True).split("/"))
+        except ValueError as exc:
+            raise ActionError("production_number_unreadable") from exc
+        if (count != expected["lines"][position]["factories"]+delta or
+                used != expected["assigned_military_factories"]+delta or
+                total != expected["military_factories"] or
+                used != sum(line["factories"] for line in expected["lines"])+delta):
+            raise ActionError("readback_ambiguous", "uncertain")
+        return dict(numeric=count, grid=count, assigned_military_factories=used, military_factories=total)
+
+    def stable_expanded(self, rgb, expected, position, delta=0):
+        # Unfold/number animations may span one capture. Only passive capture is
+        # repeated here: no mutation, navigation retry or weaker matching threshold.
+        deadline, consecutive, last = time.monotonic()+2, 0, None
+        while True:
+            self.worker.check()
+            try:
+                evidence = self.expanded_evidence(rgb, expected, position, delta)
+                consecutive += 1
+                if consecutive == 2:
+                    return evidence
+            except ActionError as exc:
+                if exc.reason not in {"readback_ambiguous", "production_number_unreadable"}:
+                    raise
+                consecutive, last = 0, exc
+            if time.monotonic() >= deadline:
+                raise last or ActionError("readback_ambiguous", "uncertain")
+            time.sleep(.1)
+            rgb = self.ui.capture()
+
+    def verify_target_grid(self, view, position):
+        """Read-only native target proof; other rows retain numeric/total scope."""
+        if not self.native_physical:
+            return view
+        top = LAYOUT["first_top"] + position*LAYOUT["compact_pitch"]
+        rgb = self.ui.capture()
+        current = self.read(rgb)
+        if (signature(current) != signature(view) or
+                current["assigned_military_factories"] != view["assigned_military_factories"] or
+                current["military_factories"] != view["military_factories"]):
+            raise ActionError("snapshot_stale", "rejected")
+        self.worker.click((LAYOUT["fold_x"], top+LAYOUT["fold_y_offset"]))
+        self.ui.capture()
+        self.worker.click(LAYOUT["neutral"])
+        evidence = self.stable_expanded(self.ui.capture(), view, position)
+        self.worker.click((LAYOUT["fold_x"], top+LAYOUT["fold_y_offset"]))
+        self.ui.capture()
+        self.worker.click(LAYOUT["neutral"])
+        repeated = self.stable_compact(self.ui.capture(), view)
+        repeated["grid_verified_positions"] = [position]
+        repeated["target_factory_count_evidence"] = dict(position=position, repeated_readback=True, **evidence)
+        repeated["factory_count_evidence"] = "target numeric AND 15-cell grid AND complete-list global assigned total; other rows numeric AND global total"
+        return repeated
+
+    def stable_compact(self, rgb, expected):
+        """Only used after a known fold; scrolling/identity never triggers input."""
+        deadline, consecutive, last = time.monotonic()+2, 0, None
+        while True:
+            self.worker.check()
+            try:
+                current = self.read(rgb)
+                if (signature(current) != signature(expected) or
+                        current["assigned_military_factories"] != expected["assigned_military_factories"] or
+                        current["military_factories"] != expected["military_factories"]):
+                    raise ActionError("readback_ambiguous", "uncertain")
+                consecutive += 1
+                if consecutive == 2:
+                    return current
+            except ActionError as exc:
+                if exc.reason not in {"readback_ambiguous", "production_number_unreadable", "identity_mismatch", "target_not_visible"}:
+                    raise
+                consecutive, last = 0, exc
+            if time.monotonic() >= deadline:
+                raise last or ActionError("readback_ambiguous", "uncertain")
+            time.sleep(.1)
+            rgb = self.ui.capture()
+
     def adjust_one(self, position, increasing, on_commit, expected):
         rgb = self.ui.capture()
         if signature(self.read(rgb)) != signature(expected):
@@ -190,7 +284,8 @@ class ProductionLinesUI(ProductionUI):
         rgb = self.ui.capture()
         if not self.found(rgb, "line_expanded", production_boxes(top)["fold"], threshold=0.85):
             raise ActionError("target_not_visible", "rejected")
-        count = self.grid_count(rgb, top)
+        count = (self.stable_expanded(rgb, expected, position)["numeric"] if self.native_physical
+                 else self.grid_count(rgb, top))
         if count != expected["lines"][position]["factories"]:
             raise ActionError("snapshot_stale", "rejected")
         point = self.found(rgb, "production_add" if increasing else "production_sub",
@@ -202,7 +297,10 @@ class ProductionLinesUI(ProductionUI):
         rgb = self.ui.capture()
         self.worker.click(LAYOUT["neutral"])
         rgb = self.ui.capture()
-        if self.grid_count(rgb, top) != count + (1 if increasing else -1):
+        delta = 1 if increasing else -1
+        if self.native_physical:
+            self.stable_expanded(rgb, expected, position, delta)
+        elif self.grid_count(rgb, top) != count + delta:
             raise ActionError("readback_failed", "uncertain")
         self.worker.click((LAYOUT["fold_x"], top+LAYOUT["fold_y_offset"]))
         self.ui.capture()

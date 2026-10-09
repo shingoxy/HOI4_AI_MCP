@@ -1,0 +1,22 @@
+{
+  "run_id": "83e4be05-f9da-404a-8a6d-01efb46b42b8",
+  "agent": "scripted",
+  "backend": "windows_native",
+  "pump": "OFF",
+  "started_at": "2026-10-06T13:24:21.498097+00:00",
+  "start_date": null,
+  "end_date": null,
+  "observations": 0,
+  "alerts": 0,
+  "decisions": 0,
+  "actions": 0,
+  "results": 0,
+  "rejected": 0,
+  "uncertain": 0,
+  "timeouts": 0,
+  "circuit_breaker": null,
+  "game_days": 0,
+  "wall_time_seconds": 0.109,
+  "status": "BLOCKED",
+  "blocker": "loss_of_focus"
+}

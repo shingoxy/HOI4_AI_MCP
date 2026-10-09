@@ -1,0 +1,989 @@
+{
+  "status": "BLOCKED_30_DAY_SAFE_STOP_COVERAGE",
+  "phase": 5,
+  "pump": "OFF",
+  "tests": {
+    "passed": 585,
+    "subtests": 10,
+    "duration_seconds": 75.34,
+    "log": "pytest-full-2.txt",
+    "compileall": "passed",
+    "git_diff_check": "passed"
+  },
+  "time_gates": {
+    "A": {
+      "run_id": "6a53a661-2d13-4abc-b963-c3009f87bb44",
+      "gate": "A",
+      "pump": "OFF",
+      "backend": "WindowsNativeBackend",
+      "capture": "GDI_BitBlt_RGB_PHYSICAL",
+      "input": "SendInput",
+      "semantic_mutations": 0,
+      "agent_decisions": 0,
+      "model_calls": 0,
+      "status": "PASSED",
+      "geometry": {
+        "width": 2560,
+        "height": 1600,
+        "x": 0,
+        "y": 0,
+        "dpi": 120,
+        "desktop": [
+          0,
+          0,
+          2560,
+          1600
+        ],
+        "capture_profile": {
+          "name": "GER_2560x1600_DPI120_PHYSICAL",
+          "client_width": 2560,
+          "client_height": 1600,
+          "dpi": 120,
+          "capture_width": 2560,
+          "capture_height": 1600,
+          "template_set": "phase3a/phase3 + phase5 physical seven-action gate; limited targets",
+          "backend": "windows_native_gdi",
+          "offset": [
+            0,
+            0
+          ]
+        }
+      },
+      "initial_modal": {
+        "state": "NO_MODAL",
+        "names": [],
+        "stop_route": null,
+        "scope": "Calibrated menu/news/focus/research and centered rectangular popup candidates only"
+      },
+      "initial_telemetry": {
+        "status": "stale",
+        "received_at": "2026-10-07T07:45:01.786970+00:00",
+        "game_date": " 24:00, 2 8月, 1936",
+        "latest_seq": 706853,
+        "state": {
+          "protocol_version": 2,
+          "seq": 706853,
+          "game_date": " 24:00, 2 8月, 1936",
+          "country": "GER",
+          "politics": {
+            "political_power": 537.336,
+            "stability": 0.81,
+            "war_support": 0.47436
+          },
+          "manpower": {
+            "available": 1342767,
+            "source_thousands": 1342.767
+          },
+          "industry": {
+            "civilian_factories": 37,
+            "military_factories": 28,
+            "dockyards": 10
+          },
+          "origin": "daily",
+          "research": {
+            "slot_count": 4,
+            "tracked_technologies": [
+              {
+                "tech_id": "basic_machine_tools",
+                "researching": false,
+                "researched": true
+              },
+              {
+                "tech_id": "construction1",
+                "researching": false,
+                "researched": false
+              },
+              {
+                "tech_id": "electronic_mechanical_engineering",
+                "researching": false,
+                "researched": false
+              }
+            ]
+          },
+          "focus": {
+            "tracked_id": "GER_remilitarize_the_rhineland",
+            "completed": true,
+            "progress_lower_bound": 1.0,
+            "progress_upper_bound": 1.0
+          }
+        },
+        "parser_errors": [],
+        "session_id": "beafdcf8-09ad-4ece-91e5-bbdfa5aca2b4",
+        "revision": 0,
+        "freshness_basis": "log_mtime_upper_bound",
+        "log_read_error": null
+      },
+      "advance": {
+        "status": "confirmed",
+        "reason": "fresh_date_advanced",
+        "start_date": " 24:00, 2 8月, 1936",
+        "start_date_freshness": "stale",
+        "start_date_source": "telemetry_last_known",
+        "end_date": " 24:00, 3 8月, 1936",
+        "end_date_source": "fresh_telemetry_frame_received_at",
+        "gui_date": null,
+        "gui_date_status": "UNKNOWN",
+        "paused": true,
+        "pause_source": "validated_GUI_clock_glyph_stability",
+        "pump": "OFF",
+        "stop": {
+          "status": "confirmed",
+          "paused": true,
+          "reason": "normal_pause_confirmed",
+          "ownership_state": "PAUSED_CONFIRMED",
+          "owns_running": false,
+          "operator_intervention_required": false,
+          "failure_evidence_error": null
+        },
+        "duration_ms": 7563,
+        "ownership_state": "PAUSED_CONFIRMED",
+        "owns_running": false,
+        "operator_intervention_required": false,
+        "failure_evidence_error": null
+      },
+      "pause_proof": {
+        "paused": true,
+        "pause_source": "validated_GUI_clock_glyph_stability",
+        "gui_date_status": "UNKNOWN",
+        "gui_date": null,
+        "resumable": true
+      },
+      "final_modal": {
+        "state": "NO_MODAL",
+        "names": [],
+        "stop_route": null,
+        "scope": "Calibrated menu/news/focus/research and centered rectangular popup candidates only"
+      },
+      "final_telemetry": {
+        "status": "fresh",
+        "received_at": "2026-10-07T09:41:53.101662+00:00",
+        "game_date": " 24:00, 3 8月, 1936",
+        "latest_seq": 706854,
+        "state": {
+          "protocol_version": 2,
+          "seq": 706854,
+          "game_date": " 24:00, 3 8月, 1936",
+          "country": "GER",
+          "politics": {
+            "political_power": 539.66,
+            "stability": 0.81,
+            "war_support": 0.47432
+          },
+          "manpower": {
+            "available": 1342723,
+            "source_thousands": 1342.723
+          },
+          "industry": {
+            "civilian_factories": 37,
+            "military_factories": 28,
+            "dockyards": 10
+          },
+          "origin": "daily",
+          "research": {
+            "slot_count": 4,
+            "tracked_technologies": [
+              {
+                "tech_id": "basic_machine_tools",
+                "researching": false,
+                "researched": true
+              },
+              {
+                "tech_id": "construction1",
+                "researching": false,
+                "researched": false
+              },
+              {
+                "tech_id": "electronic_mechanical_engineering",
+                "researching": false,
+                "researched": false
+              }
+            ]
+          },
+          "focus": {
+            "tracked_id": "GER_remilitarize_the_rhineland",
+            "completed": true,
+            "progress_lower_bound": 1.0,
+            "progress_upper_bound": 1.0
+          }
+        },
+        "parser_errors": [],
+        "session_id": "beafdcf8-09ad-4ece-91e5-bbdfa5aca2b4",
+        "revision": 1,
+        "freshness_basis": "frame_received_at",
+        "log_read_error": null
+      },
+      "shutdown": {
+        "shutdown": "clean_no_owned_time",
+        "game_pause": true,
+        "stop": {
+          "status": "confirmed",
+          "paused": true,
+          "ownership_state": "PAUSED_CONFIRMED",
+          "owns_running": false,
+          "operator_intervention_required": false,
+          "failure_evidence_error": null
+        },
+        "time_metrics": {
+          "time_ownership_acquired": 1,
+          "time_ownership_released": 1,
+          "pause_attempts": 1,
+          "pause_failures": 0,
+          "safe_stop_attempts": 0,
+          "safe_stop_successes": 0,
+          "modal_block_count": 0,
+          "unknown_modal_count": 0,
+          "operator_safety_interventions": 0
+        },
+        "ownership_state": "PAUSED_CONFIRMED",
+        "owns_running": false,
+        "operator_intervention_required": false,
+        "failure_evidence_error": null
+      },
+      "time_metrics": {
+        "time_ownership_acquired": 1,
+        "time_ownership_released": 1,
+        "pause_attempts": 1,
+        "pause_failures": 0,
+        "safe_stop_attempts": 0,
+        "safe_stop_successes": 0,
+        "modal_block_count": 0,
+        "unknown_modal_count": 0,
+        "operator_safety_interventions": 0
+      }
+    },
+    "B": {
+      "run_id": "056ddff4-1d7c-4b12-b436-66c54379187a",
+      "gate": "B",
+      "pump": "OFF",
+      "backend": "WindowsNativeBackend",
+      "capture": "GDI_BitBlt_RGB_PHYSICAL",
+      "input": "SendInput",
+      "semantic_mutations": 0,
+      "agent_decisions": 0,
+      "model_calls": 0,
+      "status": "PASSED",
+      "geometry": {
+        "width": 2560,
+        "height": 1600,
+        "x": 0,
+        "y": 0,
+        "dpi": 120,
+        "desktop": [
+          0,
+          0,
+          2560,
+          1600
+        ],
+        "capture_profile": {
+          "name": "GER_2560x1600_DPI120_PHYSICAL",
+          "client_width": 2560,
+          "client_height": 1600,
+          "dpi": 120,
+          "capture_width": 2560,
+          "capture_height": 1600,
+          "template_set": "phase3a/phase3 + phase5 physical seven-action gate; limited targets",
+          "backend": "windows_native_gdi",
+          "offset": [
+            0,
+            0
+          ]
+        }
+      },
+      "initial_modal": {
+        "state": "NO_MODAL",
+        "names": [],
+        "stop_route": null,
+        "scope": "Calibrated menu/news/focus/research and centered rectangular popup candidates only"
+      },
+      "initial_telemetry": {
+        "status": "fresh",
+        "received_at": "2026-10-07T09:41:52.965065+00:00",
+        "game_date": " 24:00, 3 8月, 1936",
+        "latest_seq": 706854,
+        "state": {
+          "protocol_version": 2,
+          "seq": 706854,
+          "game_date": " 24:00, 3 8月, 1936",
+          "country": "GER",
+          "politics": {
+            "political_power": 539.66,
+            "stability": 0.81,
+            "war_support": 0.47432
+          },
+          "manpower": {
+            "available": 1342723,
+            "source_thousands": 1342.723
+          },
+          "industry": {
+            "civilian_factories": 37,
+            "military_factories": 28,
+            "dockyards": 10
+          },
+          "origin": "daily",
+          "research": {
+            "slot_count": 4,
+            "tracked_technologies": [
+              {
+                "tech_id": "basic_machine_tools",
+                "researching": false,
+                "researched": true
+              },
+              {
+                "tech_id": "construction1",
+                "researching": false,
+                "researched": false
+              },
+              {
+                "tech_id": "electronic_mechanical_engineering",
+                "researching": false,
+                "researched": false
+              }
+            ]
+          },
+          "focus": {
+            "tracked_id": "GER_remilitarize_the_rhineland",
+            "completed": true,
+            "progress_lower_bound": 1.0,
+            "progress_upper_bound": 1.0
+          }
+        },
+        "parser_errors": [],
+        "session_id": "d5762301-047d-4a58-afc3-aae8f312638e",
+        "revision": 0,
+        "freshness_basis": "log_mtime_upper_bound",
+        "log_read_error": null
+      },
+      "running_ownership": {
+        "ownership_state": "RUNNING_OWNED",
+        "owns_running": true,
+        "operator_intervention_required": false,
+        "failure_evidence_error": null
+      },
+      "controlled_modal": {
+        "state": "KNOWN_SAFE_MODAL",
+        "names": [
+          "clock_menu"
+        ],
+        "stop_route": "menu_pause_readback",
+        "scope": "Calibrated menu/news/focus/research and centered rectangular popup candidates only"
+      },
+      "ownership_before_stop": {
+        "ownership_state": "RUNNING_OWNED",
+        "owns_running": true,
+        "operator_intervention_required": false,
+        "failure_evidence_error": null
+      },
+      "stop": {
+        "status": "confirmed",
+        "paused": true,
+        "reason": "safe_stop_confirmed",
+        "ownership_state": "PAUSED_CONFIRMED",
+        "owns_running": false,
+        "operator_intervention_required": false,
+        "failure_evidence_error": null
+      },
+      "pause_proof": {
+        "paused": true,
+        "pause_source": "known_game_menu_template",
+        "gui_date_status": "UNKNOWN",
+        "gui_date": null,
+        "resumable": false
+      },
+      "final_modal": {
+        "state": "KNOWN_SAFE_MODAL",
+        "names": [
+          "clock_menu"
+        ],
+        "stop_route": "menu_pause_readback",
+        "scope": "Calibrated menu/news/focus/research and centered rectangular popup candidates only"
+      },
+      "final_telemetry": {
+        "status": "stale",
+        "received_at": "2026-10-07T09:41:52.965065+00:00",
+        "game_date": " 24:00, 3 8月, 1936",
+        "latest_seq": 706854,
+        "state": {
+          "protocol_version": 2,
+          "seq": 706854,
+          "game_date": " 24:00, 3 8月, 1936",
+          "country": "GER",
+          "politics": {
+            "political_power": 539.66,
+            "stability": 0.81,
+            "war_support": 0.47432
+          },
+          "manpower": {
+            "available": 1342723,
+            "source_thousands": 1342.723
+          },
+          "industry": {
+            "civilian_factories": 37,
+            "military_factories": 28,
+            "dockyards": 10
+          },
+          "origin": "daily",
+          "research": {
+            "slot_count": 4,
+            "tracked_technologies": [
+              {
+                "tech_id": "basic_machine_tools",
+                "researching": false,
+                "researched": true
+              },
+              {
+                "tech_id": "construction1",
+                "researching": false,
+                "researched": false
+              },
+              {
+                "tech_id": "electronic_mechanical_engineering",
+                "researching": false,
+                "researched": false
+              }
+            ]
+          },
+          "focus": {
+            "tracked_id": "GER_remilitarize_the_rhineland",
+            "completed": true,
+            "progress_lower_bound": 1.0,
+            "progress_upper_bound": 1.0
+          }
+        },
+        "parser_errors": [],
+        "session_id": "d5762301-047d-4a58-afc3-aae8f312638e",
+        "revision": 0,
+        "freshness_basis": "log_mtime_upper_bound",
+        "log_read_error": null
+      },
+      "shutdown": {
+        "shutdown": "clean_no_owned_time",
+        "game_pause": true,
+        "stop": {
+          "status": "confirmed",
+          "paused": true,
+          "ownership_state": "PAUSED_CONFIRMED",
+          "owns_running": false,
+          "operator_intervention_required": false,
+          "failure_evidence_error": null
+        },
+        "time_metrics": {
+          "time_ownership_acquired": 1,
+          "time_ownership_released": 1,
+          "pause_attempts": 1,
+          "pause_failures": 1,
+          "safe_stop_attempts": 1,
+          "safe_stop_successes": 1,
+          "modal_block_count": 1,
+          "unknown_modal_count": 0,
+          "operator_safety_interventions": 0
+        },
+        "ownership_state": "PAUSED_CONFIRMED",
+        "owns_running": false,
+        "operator_intervention_required": false,
+        "failure_evidence_error": null
+      },
+      "time_metrics": {
+        "time_ownership_acquired": 1,
+        "time_ownership_released": 1,
+        "pause_attempts": 1,
+        "pause_failures": 1,
+        "safe_stop_attempts": 1,
+        "safe_stop_successes": 1,
+        "modal_block_count": 1,
+        "unknown_modal_count": 0,
+        "operator_safety_interventions": 0
+      }
+    },
+    "baseline": {
+      "run_id": "08664687-1c60-40e2-9797-785247cb7dc8",
+      "gate": "baseline",
+      "pump": "OFF",
+      "backend": "WindowsNativeBackend",
+      "capture": "GDI_BitBlt_RGB_PHYSICAL",
+      "input": "SendInput",
+      "semantic_mutations": 0,
+      "agent_decisions": 0,
+      "model_calls": 0,
+      "status": "PASSED",
+      "geometry": {
+        "width": 2560,
+        "height": 1600,
+        "x": 0,
+        "y": 0,
+        "dpi": 120,
+        "desktop": [
+          0,
+          0,
+          2560,
+          1600
+        ],
+        "capture_profile": {
+          "name": "GER_2560x1600_DPI120_PHYSICAL",
+          "client_width": 2560,
+          "client_height": 1600,
+          "dpi": 120,
+          "capture_width": 2560,
+          "capture_height": 1600,
+          "template_set": "phase3a/phase3 + phase5 physical seven-action gate; limited targets",
+          "backend": "windows_native_gdi",
+          "offset": [
+            0,
+            0
+          ]
+        }
+      },
+      "initial_modal": {
+        "state": "KNOWN_SAFE_MODAL",
+        "names": [
+          "clock_menu"
+        ],
+        "stop_route": "menu_pause_readback",
+        "scope": "Calibrated menu/news/focus/research and centered rectangular popup candidates only"
+      },
+      "initial_telemetry": {
+        "status": "stale",
+        "received_at": "2026-10-07T09:41:52.965065+00:00",
+        "game_date": " 24:00, 3 8月, 1936",
+        "latest_seq": 706854,
+        "state": {
+          "protocol_version": 2,
+          "seq": 706854,
+          "game_date": " 24:00, 3 8月, 1936",
+          "country": "GER",
+          "politics": {
+            "political_power": 539.66,
+            "stability": 0.81,
+            "war_support": 0.47432
+          },
+          "manpower": {
+            "available": 1342723,
+            "source_thousands": 1342.723
+          },
+          "industry": {
+            "civilian_factories": 37,
+            "military_factories": 28,
+            "dockyards": 10
+          },
+          "origin": "daily",
+          "research": {
+            "slot_count": 4,
+            "tracked_technologies": [
+              {
+                "tech_id": "basic_machine_tools",
+                "researching": false,
+                "researched": true
+              },
+              {
+                "tech_id": "construction1",
+                "researching": false,
+                "researched": false
+              },
+              {
+                "tech_id": "electronic_mechanical_engineering",
+                "researching": false,
+                "researched": false
+              }
+            ]
+          },
+          "focus": {
+            "tracked_id": "GER_remilitarize_the_rhineland",
+            "completed": true,
+            "progress_lower_bound": 1.0,
+            "progress_upper_bound": 1.0
+          }
+        },
+        "parser_errors": [],
+        "session_id": "db68ca0d-ed3f-4b97-b1da-0369a4e60977",
+        "revision": 0,
+        "freshness_basis": "log_mtime_upper_bound",
+        "log_read_error": null
+      },
+      "controlled_modal": {
+        "state": "NO_MODAL",
+        "names": [],
+        "stop_route": null,
+        "scope": "Calibrated menu/news/focus/research and centered rectangular popup candidates only"
+      },
+      "ownership_before_stop": {
+        "ownership_state": "RUNNING_OWNED",
+        "owns_running": true,
+        "operator_intervention_required": false,
+        "failure_evidence_error": null
+      },
+      "stop": {
+        "status": "confirmed",
+        "paused": true,
+        "reason": "normal_pause_confirmed",
+        "ownership_state": "PAUSED_CONFIRMED",
+        "owns_running": false,
+        "operator_intervention_required": false,
+        "failure_evidence_error": null
+      },
+      "fresh_bootstrap": {
+        "status": "confirmed",
+        "reason": "fresh_date_advanced",
+        "start_date": " 24:00, 3 8月, 1936",
+        "start_date_freshness": "stale",
+        "start_date_source": "telemetry_last_known",
+        "end_date": " 24:00, 4 8月, 1936",
+        "end_date_source": "fresh_telemetry_frame_received_at",
+        "gui_date": null,
+        "gui_date_status": "UNKNOWN",
+        "paused": true,
+        "pause_source": "validated_GUI_clock_glyph_stability",
+        "pump": "OFF",
+        "stop": {
+          "status": "confirmed",
+          "paused": true,
+          "reason": "normal_pause_confirmed",
+          "ownership_state": "PAUSED_CONFIRMED",
+          "owns_running": false,
+          "operator_intervention_required": false,
+          "failure_evidence_error": null
+        },
+        "duration_ms": 6219,
+        "ownership_state": "PAUSED_CONFIRMED",
+        "owns_running": false,
+        "operator_intervention_required": false,
+        "failure_evidence_error": null
+      },
+      "pause_proof": {
+        "paused": true,
+        "pause_source": "validated_GUI_clock_glyph_stability",
+        "gui_date_status": "UNKNOWN",
+        "gui_date": null,
+        "resumable": true
+      },
+      "final_modal": {
+        "state": "NO_MODAL",
+        "names": [],
+        "stop_route": null,
+        "scope": "Calibrated menu/news/focus/research and centered rectangular popup candidates only"
+      },
+      "final_telemetry": {
+        "status": "fresh",
+        "received_at": "2026-10-07T09:42:53.062650+00:00",
+        "game_date": " 24:00, 4 8月, 1936",
+        "latest_seq": 706855,
+        "state": {
+          "protocol_version": 2,
+          "seq": 706855,
+          "game_date": " 24:00, 4 8月, 1936",
+          "country": "GER",
+          "politics": {
+            "political_power": 541.984,
+            "stability": 0.81,
+            "war_support": 0.47428
+          },
+          "manpower": {
+            "available": 1342723,
+            "source_thousands": 1342.723
+          },
+          "industry": {
+            "civilian_factories": 37,
+            "military_factories": 28,
+            "dockyards": 10
+          },
+          "origin": "daily",
+          "research": {
+            "slot_count": 4,
+            "tracked_technologies": [
+              {
+                "tech_id": "basic_machine_tools",
+                "researching": false,
+                "researched": true
+              },
+              {
+                "tech_id": "construction1",
+                "researching": false,
+                "researched": false
+              },
+              {
+                "tech_id": "electronic_mechanical_engineering",
+                "researching": false,
+                "researched": false
+              }
+            ]
+          },
+          "focus": {
+            "tracked_id": "GER_remilitarize_the_rhineland",
+            "completed": true,
+            "progress_lower_bound": 1.0,
+            "progress_upper_bound": 1.0
+          }
+        },
+        "parser_errors": [],
+        "session_id": "db68ca0d-ed3f-4b97-b1da-0369a4e60977",
+        "revision": 1,
+        "freshness_basis": "frame_received_at",
+        "log_read_error": null
+      },
+      "shutdown": {
+        "shutdown": "clean_no_owned_time",
+        "game_pause": true,
+        "stop": {
+          "status": "confirmed",
+          "paused": true,
+          "ownership_state": "PAUSED_CONFIRMED",
+          "owns_running": false,
+          "operator_intervention_required": false,
+          "failure_evidence_error": null
+        },
+        "time_metrics": {
+          "time_ownership_acquired": 2,
+          "time_ownership_released": 2,
+          "pause_attempts": 2,
+          "pause_failures": 0,
+          "safe_stop_attempts": 0,
+          "safe_stop_successes": 0,
+          "modal_block_count": 0,
+          "unknown_modal_count": 0,
+          "operator_safety_interventions": 0
+        },
+        "ownership_state": "PAUSED_CONFIRMED",
+        "owns_running": false,
+        "operator_intervention_required": false,
+        "failure_evidence_error": null
+      },
+      "time_metrics": {
+        "time_ownership_acquired": 2,
+        "time_ownership_released": 2,
+        "pause_attempts": 2,
+        "pause_failures": 0,
+        "safe_stop_attempts": 0,
+        "safe_stop_successes": 0,
+        "modal_block_count": 0,
+        "unknown_modal_count": 0,
+        "operator_safety_interventions": 0
+      }
+    }
+  },
+  "time_gate_C": "offline_only_31_new_tests",
+  "construction_single": {
+    "run_id": "577347d0-3ff3-4f0f-b4c4-c7a5ab5eb198",
+    "agent": "scripted",
+    "backend": "windows_native",
+    "pump": "OFF",
+    "started_at": "2026-10-07T09:44:59.444971+00:00",
+    "start_date": "1936-08-06",
+    "end_date": "1936-08-07",
+    "observations": 3,
+    "alerts": 23,
+    "decisions": 1,
+    "actions": 1,
+    "results": 1,
+    "confirmed": 1,
+    "already_satisfied": 0,
+    "mutations_submitted": 1,
+    "confirmed_mutations": 1,
+    "rejected": 0,
+    "uncertain": 0,
+    "timeouts": 0,
+    "timed_out": 0,
+    "backend_errors": 0,
+    "timeline_reset": 0,
+    "circuit_breaker": null,
+    "game_days": 0,
+    "unused_MIL_observations": {
+      "known": 3,
+      "unused": 3,
+      "unknown": 0
+    },
+    "research_idle_days": {
+      "status": "partial",
+      "known_game_dates": 2,
+      "observed_idle_dates": 2,
+      "meaning": "Dates with a reliable idle observation; not continuous 24-hour idle duration."
+    },
+    "focus_idle_days": {
+      "status": "partial",
+      "known_game_dates": 2,
+      "observed_idle_dates": 2,
+      "meaning": "Dates with a reliable idle observation; not continuous 24-hour idle duration."
+    },
+    "construction_queue_idle_days": {
+      "status": "partial",
+      "known_game_dates": 2,
+      "observed_idle_dates": 1,
+      "meaning": "Dates with a reliable idle observation; not continuous 24-hour idle duration."
+    },
+    "wall_time_seconds": 56.344,
+    "status": "SINGLE_CYCLE_CONFIRMED",
+    "shutdown": "clean_no_owned_time",
+    "game_pause": true,
+    "operator_intervention_required": false,
+    "time_metrics": {
+      "time_ownership_acquired": 2,
+      "time_ownership_released": 2,
+      "pause_attempts": 2,
+      "pause_failures": 0,
+      "safe_stop_attempts": 0,
+      "safe_stop_successes": 0,
+      "modal_block_count": 0,
+      "unknown_modal_count": 0,
+      "operator_safety_interventions": 0
+    },
+    "time_ownership": "PAUSED_CONFIRMED",
+    "native_map_metrics": {
+      "MAP_READY": 16,
+      "MAP_RECOVERABLE": 0,
+      "MAP_UNRESOLVED": 0,
+      "recovery_attempted": 0,
+      "recovery_succeeded": 0,
+      "recovery_failed": 0,
+      "recovery_duration_ms": 0,
+      "clock_recovery_count": 0,
+      "meaning": "Counts of audited native readiness checks; not unique game days.",
+      "clock_recovery_scope": "Confirmed stop-only menu routes; no automatic modal acknowledgement or resume."
+    },
+    "human_strategic_interventions": 0
+  },
+  "days30": {
+    "run_id": "c6d10d44-d4f7-4916-8475-e08f81041d35",
+    "agent": "scripted",
+    "backend": "windows_native",
+    "pump": "OFF",
+    "started_at": "2026-10-07T09:48:37.634076+00:00",
+    "start_date": "1936-08-08",
+    "end_date": "1936-08-16",
+    "observations": 12,
+    "alerts": 36,
+    "decisions": 2,
+    "actions": 0,
+    "results": 0,
+    "confirmed": 0,
+    "already_satisfied": 0,
+    "mutations_submitted": 0,
+    "confirmed_mutations": 0,
+    "rejected": 0,
+    "uncertain": 0,
+    "timeouts": 0,
+    "timed_out": 0,
+    "backend_errors": 0,
+    "timeline_reset": 0,
+    "circuit_breaker": "time_stop_failed",
+    "game_days": 7,
+    "unused_MIL_observations": {
+      "known": 4,
+      "unused": 4,
+      "unknown": 8
+    },
+    "research_idle_days": {
+      "status": "partial",
+      "known_game_dates": 2,
+      "observed_idle_dates": 2,
+      "meaning": "Dates with a reliable idle observation; not continuous 24-hour idle duration."
+    },
+    "focus_idle_days": {
+      "status": "partial",
+      "known_game_dates": 2,
+      "observed_idle_dates": 2,
+      "meaning": "Dates with a reliable idle observation; not continuous 24-hour idle duration."
+    },
+    "construction_queue_idle_days": {
+      "status": "partial",
+      "known_game_dates": 2,
+      "observed_idle_dates": 0,
+      "meaning": "Dates with a reliable idle observation; not continuous 24-hour idle duration."
+    },
+    "wall_time_seconds": 96.485,
+    "shutdown": "unsafe_stop_failed",
+    "game_pause": "UNKNOWN",
+    "operator_intervention_required": true,
+    "status": "BLOCKED",
+    "time_metrics": {
+      "time_ownership_acquired": 9,
+      "time_ownership_released": 8,
+      "pause_attempts": 9,
+      "pause_failures": 1,
+      "safe_stop_attempts": 1,
+      "safe_stop_successes": 0,
+      "modal_block_count": 4,
+      "unknown_modal_count": 0,
+      "operator_safety_interventions": 0
+    },
+    "time_ownership": "STOP_FAILED_OWNED",
+    "blocker": "owned_running_stop_unconfirmed",
+    "native_map_metrics": {
+      "MAP_READY": 17,
+      "MAP_RECOVERABLE": 0,
+      "MAP_UNRESOLVED": 2,
+      "recovery_attempted": 0,
+      "recovery_succeeded": 0,
+      "recovery_failed": 0,
+      "recovery_duration_ms": 0,
+      "clock_recovery_count": 0,
+      "meaning": "Counts of audited native readiness checks; not unique game days.",
+      "clock_recovery_scope": "Confirmed stop-only menu routes; no automatic modal acknowledgement or resume."
+    },
+    "human_strategic_interventions": 0
+  },
+  "first_exact_time_failure": {
+    "path": "scripted-days30-1\\native-audit\\time-failure-bb3bc13e-bc8d-4021-bde6-60560861add0\\failure.json",
+    "reason": "modal_blocked",
+    "captured_at": "2026-10-07T09:50:11.094940+00:00",
+    "exact_rgb_available": true,
+    "modal": {
+      "state": "KNOWN_BLOCKING_MODAL",
+      "names": [
+        "world_news"
+      ],
+      "stop_route": null,
+      "scope": "Calibrated menu/news/focus/research and centered rectangular popup candidates only"
+    },
+    "ownership": {
+      "ownership_state": "STOPPING",
+      "owns_running": true,
+      "operator_intervention_required": false,
+      "failure_evidence_error": null
+    },
+    "ownership_after_failure": {
+      "ownership_state": "STOP_FAILED_OWNED",
+      "owns_running": true,
+      "operator_intervention_required": true,
+      "failure_evidence_error": null
+    },
+    "images_present": {
+      "physical": true,
+      "clock": true,
+      "modal": true,
+      "menu": true
+    }
+  },
+  "exact_time_failure_count": 5,
+  "final_readonly": "final-readonly-1/final-state.json",
+  "current_pause": "UNKNOWN",
+  "operator_safety_intervention_requested_after_run": true,
+  "operator_pause_confirmation": "pending",
+  "preservation": {
+    "manual_save_count": 9,
+    "manual_saves_unchanged": true,
+    "mod_selection_unchanged": true,
+    "changed": [],
+    "added": [],
+    "removed": []
+  },
+  "real_codex": {
+    "status": "NOT_RUN",
+    "reason": "prior_30_day_gate_failed",
+    "model_calls": 0
+  },
+  "future_plan": "COUNTRY_AUTONOMY_PLAN.md",
+  "source_sha256": {
+    "src/hoi4_operator/game_time.py": "2985ebb00416a700490673671018c14e61d8f8efe46983645f000bdc47f8d34f",
+    "src/hoi4_operator/agent_runtime.py": "e2624eef57566e2249a2d71cad1bb8d501337eed8e104d5b4ae7f30a7066b40b",
+    "src/hoi4_operator/executor/native_runtime.py": "94bb94522ddb9183290167d80d98d57611fabb91359061e5aaacefb2cfcfb361",
+    "src/hoi4_operator/executor/native_modal.py": "23d7bdbf35bf517a6e9a70990fec9915c95b2334dbf43c1f3d5707b838fc2071",
+    "src/hoi4_operator/executor/native_map_state.py": "dc1bdec26261a53cc3c42577352f7efe7a2dae5ed8044407b2d3b0ff61a2b7b7",
+    "src/hoi4_operator/executor/ui_state.py": "5a9239e6d0b8b121dbe77e5ff2b8ff6ed03ee6f09dbef027b14754f26e1f0965",
+    "src/hoi4_operator/executor/native_audit.py": "7e00c0f099ab1b395048e816851382e8cf3582f6c6c5264234b90b12612ce448",
+    "scripts/run_agent_runtime.py": "5d9914c42f4338ff74c8c2c1fb90c3d5f2b564742dcc8ff8bb08e040a8ecf9e1",
+    "tests/test_time_safety.py": "9d7b375564ea7ac64be5adb7c4ec88f03f76214ec87fb0c7314e6fef2655ca71",
+    "STATUS.md": "16a1e74378797ea710095452dcd18d516981ac801e4932b122544ba08510bea4",
+    "PHASE5_AGENT_RUNTIME.md": "032e97157d38ba0e7b329c2dd7c516032c19706b530871e406cf582ba417b6ff",
+    "AGENT_RUNTIME.md": "6a7c06808026ead513586f547216860d8ac0f7f07bcc5488917a78c6359aca0a",
+    "AGENT_API.md": "82e163a9e16e88f4b46c8cb199b81222da0e99bc49ef95131b5fa19d3356088e",
+    "ARCHITECTURE.md": "5edea297f1bbc4f8f05808421c0c05b1c12d798b39acc3561a995a7b19824664",
+    "COUNTRY_AUTONOMY_PLAN.md": "5cdce1f97fe12276b0c6c3c6dfa62633ac321bb90321a50bab73540a4ec399c2"
+  }
+}

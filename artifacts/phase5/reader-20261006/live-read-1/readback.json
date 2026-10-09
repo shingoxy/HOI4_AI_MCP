@@ -1,0 +1,11 @@
+{
+  "backend": "WindowsNativeBackend",
+  "pump": "OFF",
+  "mutation_count": 0,
+  "original_status": "uncertain",
+  "original_action_id": "4d8accb9-2765-465c-be7a-86259134d317",
+  "samples": [],
+  "telemetry_not_used": true,
+  "status": "blocked",
+  "reason": "loss_of_focus"
+}

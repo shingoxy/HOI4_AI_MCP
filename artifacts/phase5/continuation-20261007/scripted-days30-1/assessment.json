@@ -1,0 +1,74 @@
+{
+  "run_id": "13b9f1f3-f1f6-4b8b-8803-477fd3679c69",
+  "requested_game_days": 30,
+  "actual_game_days": 21,
+  "runtime_stability_confirmed": false,
+  "checks": {
+    "requested_game_days_completed": false,
+    "all_time_steps_confirmed_paused": true,
+    "all_observations_fresh": true,
+    "navigation_confirmed": true,
+    "scripted_decisions_valid": true,
+    "no_errors": false,
+    "pump_off": true
+  },
+  "valid_decisions": 4,
+  "valid_noops": 3,
+  "attempted_actions": 1,
+  "confirmed_mutations": 0,
+  "operator_strategic_interventions": 0,
+  "manual_preparation_counted": false,
+  "strategy_target": 12,
+  "observed_factory_targets": [
+    {
+      "date": "1936-04-08",
+      "factories": 12
+    },
+    {
+      "date": "1936-04-08",
+      "factories": 12
+    },
+    {
+      "date": "1936-04-15",
+      "factories": 12
+    },
+    {
+      "date": "1936-04-22",
+      "factories": 12
+    },
+    {
+      "date": "1936-04-29",
+      "factories": 12
+    }
+  ],
+  "strategic_action_coverage": "supported action attempted but not confirmed",
+  "full_autonomous_strategy_acceptance": false,
+  "idle_metrics": {
+    "unused_MIL_observations": {
+      "known": 6,
+      "unused": 6,
+      "unknown": 22
+    },
+    "research_idle_days": {
+      "status": "partial",
+      "known_game_dates": 4,
+      "observed_idle_dates": 4,
+      "meaning": "Dates with a reliable idle observation; not continuous 24-hour idle duration."
+    },
+    "focus_idle_days": {
+      "status": "partial",
+      "known_game_dates": 4,
+      "observed_idle_dates": 4,
+      "meaning": "Dates with a reliable idle observation; not continuous 24-hour idle duration."
+    },
+    "construction_queue_idle_days": {
+      "status": "partial",
+      "known_game_dates": 4,
+      "observed_idle_dates": 1,
+      "meaning": "Dates with a reliable idle observation; not continuous 24-hour idle duration."
+    }
+  },
+  "continuous_research_focus_queue_idle_duration": "UNKNOWN: GUI observations are sampled, not continuous",
+  "no_semantic_mutation_days": 21,
+  "note": "Stability requires fresh observations, validated autonomous decisions and confirmed time control, not dates alone."
+}

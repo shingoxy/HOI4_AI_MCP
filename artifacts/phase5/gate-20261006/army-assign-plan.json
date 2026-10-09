@@ -1,0 +1,1 @@
+[{"action":"get_divisions"},{"action":"assign_divisions","arguments":{"army_id":"$snapshot.armies.0.army_id","division_ids":["$snapshot.divisions.1.division_id"]}}]

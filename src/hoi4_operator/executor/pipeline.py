@@ -26,8 +26,13 @@ class Transaction:
 
     def commit(self):
         self.executor.worker.check()
+        if self.committed:
+            raise ActionError('duplicate_submit','uncertain')
         self.committed = True
         self.result.accepted = True
+        record=getattr(self.executor.worker,'_record',None)
+        if record:
+            record('semantic_commit',action=self.result.action)
 
     def fresh(self):
         current = self.executor.snapshot()
@@ -72,7 +77,7 @@ class ActionPipeline:
             elif exc.status == "rejected":
                 result.accepted = False
             if armed:
-                result.evidence["recovery"] = self.recovery()
+                result.evidence["recovery"] = 'modal_left_open' if exc.reason == 'modal_blocked' else self.recovery()
         except Exception:
             result.status = ActionStatus.UNCERTAIN if tx.committed else ActionStatus.FAILED
             result.evidence["reason"] = "backend_unavailable"
@@ -96,6 +101,7 @@ class ActionPipeline:
                         except Exception:
                             result.evidence["backend_cleanup"] = "backend_unavailable"
             finally:
+                result.evidence["mutation_submitted"] = tx.committed
                 result.timings_ms["total"] = round((time.monotonic() - start) * 1000)
                 self.executor.lock.release()
         return result.as_dict()

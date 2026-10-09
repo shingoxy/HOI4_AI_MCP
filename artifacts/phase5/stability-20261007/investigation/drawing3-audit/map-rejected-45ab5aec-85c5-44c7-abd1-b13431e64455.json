@@ -1,0 +1,20 @@
+{
+  "state": "MAP_RECOVERABLE",
+  "reason": "guarded_capital_navigation_required",
+  "profile": null,
+  "pose": null,
+  "drawing_geometry": {
+    "confirmed": true,
+    "matches": 870,
+    "unchanged": 867,
+    "unchanged_ratio": 0.996551724137931,
+    "sectors": [
+      268,
+      249,
+      350
+    ],
+    "target_neighborhood_matches": 81,
+    "maximum_displacement_pixels": 1,
+    "target_transform_used": false
+  }
+}

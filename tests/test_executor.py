@@ -124,6 +124,17 @@ def test_research_telemetry_and_correct_slot_confirm(tech):
     assert worker.events[-2:] == ["release", "end"]
 
 
+@pytest.mark.parametrize("error", [ActionError, RuntimeError])
+def test_native_release_failure_is_reported_and_action_lock_is_released(error):
+    executor, worker, _ = setup()
+    def fail_end(): raise error("native_release_failed")
+    worker.end = fail_end
+    result = executor.select_research(0, "basic_machine_tools")
+    assert result["status"] == "confirmed"
+    assert result["cleanup"] == "input_release_safety_stop"
+    assert not executor.lock.locked()
+
+
 def test_focus_ui_and_new_frame_confirm_zero_interval_is_not_sufficient_alone():
     executor, _, _ = setup([summary(), summary(11)])
     assert executor.select_focus(FOCUS)["status"] == "confirmed"

@@ -1,0 +1,230 @@
+{
+  "trace_id": "b27820b3-d570-4046-b92e-436a700a7d56",
+  "backend": "WindowsNativeBackend",
+  "capture_method": "GDI_BitBlt_RGB",
+  "pump": "OFF",
+  "events": [
+    {
+      "op": "capture",
+      "size": [
+        2560,
+        1600
+      ],
+      "profile": {
+        "name": "GER_2560x1600_DPI120_PHYSICAL",
+        "client_width": 2560,
+        "client_height": 1600,
+        "dpi": 120,
+        "capture_width": 2560,
+        "capture_height": 1600,
+        "template_set": "phase3a/phase3 + phase5 physical seven-action gate; limited targets",
+        "backend": "windows_native_gdi",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "duration_ms": 62
+    },
+    {
+      "op": "capture",
+      "size": [
+        2560,
+        1600
+      ],
+      "profile": {
+        "name": "GER_2560x1600_DPI120_PHYSICAL",
+        "client_width": 2560,
+        "client_height": 1600,
+        "dpi": 120,
+        "capture_width": 2560,
+        "capture_height": 1600,
+        "template_set": "phase3a/phase3 + phase5 physical seven-action gate; limited targets",
+        "backend": "windows_native_gdi",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "duration_ms": 47
+    },
+    {
+      "op": "capture",
+      "size": [
+        2560,
+        1600
+      ],
+      "profile": {
+        "name": "GER_2560x1600_DPI120_PHYSICAL",
+        "client_width": 2560,
+        "client_height": 1600,
+        "dpi": 120,
+        "capture_width": 2560,
+        "capture_height": 1600,
+        "template_set": "phase3a/phase3 + phase5 physical seven-action gate; limited targets",
+        "backend": "windows_native_gdi",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "duration_ms": 47
+    },
+    {
+      "op": "capture",
+      "size": [
+        2560,
+        1600
+      ],
+      "profile": {
+        "name": "GER_2560x1600_DPI120_PHYSICAL",
+        "client_width": 2560,
+        "client_height": 1600,
+        "dpi": 120,
+        "capture_width": 2560,
+        "capture_height": 1600,
+        "template_set": "phase3a/phase3 + phase5 physical seven-action gate; limited targets",
+        "backend": "windows_native_gdi",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "duration_ms": 47
+    },
+    {
+      "op": "capture",
+      "size": [
+        2560,
+        1600
+      ],
+      "profile": {
+        "name": "GER_2560x1600_DPI120_PHYSICAL",
+        "client_width": 2560,
+        "client_height": 1600,
+        "dpi": 120,
+        "capture_width": 2560,
+        "capture_height": 1600,
+        "template_set": "phase3a/phase3 + phase5 physical seven-action gate; limited targets",
+        "backend": "windows_native_gdi",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "duration_ms": 62
+    },
+    {
+      "op": "capture",
+      "size": [
+        2560,
+        1600
+      ],
+      "profile": {
+        "name": "GER_2560x1600_DPI120_PHYSICAL",
+        "client_width": 2560,
+        "client_height": 1600,
+        "dpi": 120,
+        "capture_width": 2560,
+        "capture_height": 1600,
+        "template_set": "phase3a/phase3 + phase5 physical seven-action gate; limited targets",
+        "backend": "windows_native_gdi",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "duration_ms": 46
+    },
+    {
+      "op": "capture",
+      "size": [
+        2560,
+        1600
+      ],
+      "profile": {
+        "name": "GER_2560x1600_DPI120_PHYSICAL",
+        "client_width": 2560,
+        "client_height": 1600,
+        "dpi": 120,
+        "capture_width": 2560,
+        "capture_height": 1600,
+        "template_set": "phase3a/phase3 + phase5 physical seven-action gate; limited targets",
+        "backend": "windows_native_gdi",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "duration_ms": 46
+    },
+    {
+      "op": "capture",
+      "size": [
+        2560,
+        1600
+      ],
+      "profile": {
+        "name": "GER_2560x1600_DPI120_PHYSICAL",
+        "client_width": 2560,
+        "client_height": 1600,
+        "dpi": 120,
+        "capture_width": 2560,
+        "capture_height": 1600,
+        "template_set": "phase3a/phase3 + phase5 physical seven-action gate; limited targets",
+        "backend": "windows_native_gdi",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "duration_ms": 46
+    },
+    {
+      "op": "capture",
+      "size": [
+        2560,
+        1600
+      ],
+      "profile": {
+        "name": "GER_2560x1600_DPI120_PHYSICAL",
+        "client_width": 2560,
+        "client_height": 1600,
+        "dpi": 120,
+        "capture_width": 2560,
+        "capture_height": 1600,
+        "template_set": "phase3a/phase3 + phase5 physical seven-action gate; limited targets",
+        "backend": "windows_native_gdi",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "duration_ms": 46
+    },
+    {
+      "op": "capture",
+      "size": [
+        2560,
+        1600
+      ],
+      "profile": {
+        "name": "GER_2560x1600_DPI120_PHYSICAL",
+        "client_width": 2560,
+        "client_height": 1600,
+        "dpi": 120,
+        "capture_width": 2560,
+        "capture_height": 1600,
+        "template_set": "phase3a/phase3 + phase5 physical seven-action gate; limited targets",
+        "backend": "windows_native_gdi",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "duration_ms": 46
+    }
+  ],
+  "guard_reason": null,
+  "held_input_remaining": false
+}

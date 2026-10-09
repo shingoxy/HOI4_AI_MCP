@@ -1,0 +1,4 @@
+[
+  {"action":"get_divisions","expected":["confirmed"]},
+  {"action":"create_army","arguments":{"division_ids":["$snapshot.divisions.0.division_id"]},"expected":["confirmed"]}
+]

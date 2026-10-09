@@ -1,0 +1,44 @@
+.......................................................F.............................................................................. [ 34%]
+........................................................................ [ 52%]
+........................................................................ [ 71%]
+........................................................................ [ 89%]
+.......................................                                  [100%]
+================================== FAILURES ===================================
+____________ test_unknown_commands_and_malformed_requests_rejected ____________
+tests\test_executor_transport.py:43: in test_unknown_commands_and_malformed_requests_rejected
+    post(worker, "/next", {}, token="wrong")
+tests\test_executor_transport.py:36: in post
+    with urlopen(request, timeout=2) as response:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+D:\Software\MiniConda3-py311\Lib\urllib\request.py:216: in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+D:\Software\MiniConda3-py311\Lib\urllib\request.py:519: in open
+    response = self._open(req, data)
+               ^^^^^^^^^^^^^^^^^^^^^
+D:\Software\MiniConda3-py311\Lib\urllib\request.py:536: in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+D:\Software\MiniConda3-py311\Lib\urllib\request.py:496: in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+D:\Software\MiniConda3-py311\Lib\urllib\request.py:1377: in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+D:\Software\MiniConda3-py311\Lib\urllib\request.py:1352: in do_open
+    r = h.getresponse()
+        ^^^^^^^^^^^^^^^
+D:\Software\MiniConda3-py311\Lib\http\client.py:1395: in getresponse
+    response.begin()
+D:\Software\MiniConda3-py311\Lib\http\client.py:325: in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+D:\Software\MiniConda3-py311\Lib\http\client.py:286: in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+D:\Software\MiniConda3-py311\Lib\socket.py:718: in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+E   ConnectionAbortedError: [WinError 10053] ��������е�������ֹ��һ���ѽ��������ӡ�
+=========================== short test summary info ===========================
+FAILED tests/test_executor_transport.py::test_unknown_commands_and_malformed_requests_rejected
+1 failed, 388 passed, 10 subtests passed in 33.21s

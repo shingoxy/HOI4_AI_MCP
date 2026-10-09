@@ -1,0 +1,96 @@
+{
+  "pump": "OFF",
+  "input_count": 0,
+  "pause_evidence": {
+    "paused": true,
+    "pause_source": "validated_GUI_clock_glyph_stability",
+    "gui_date_status": "UNKNOWN",
+    "gui_date": null,
+    "resumable": true
+  },
+  "geometry": {
+    "width": 2560,
+    "height": 1600,
+    "x": 0,
+    "y": 0,
+    "dpi": 120,
+    "desktop": [
+      0,
+      0,
+      2560,
+      1600
+    ],
+    "capture_profile": {
+      "name": "GER_2560x1600_DPI120_PHYSICAL",
+      "client_width": 2560,
+      "client_height": 1600,
+      "dpi": 120,
+      "capture_width": 2560,
+      "capture_height": 1600,
+      "template_set": "phase3a/phase3 + phase5 physical seven-action gate; limited targets",
+      "backend": "windows_native_gdi",
+      "offset": [
+        0,
+        0
+      ]
+    }
+  },
+  "telemetry": {
+    "status": "stale",
+    "received_at": "2026-10-07T07:45:01.786970+00:00",
+    "game_date": " 24:00, 2 8月, 1936",
+    "latest_seq": 706853,
+    "state": {
+      "protocol_version": 2,
+      "seq": 706853,
+      "game_date": " 24:00, 2 8月, 1936",
+      "country": "GER",
+      "politics": {
+        "political_power": 537.336,
+        "stability": 0.81,
+        "war_support": 0.47436
+      },
+      "manpower": {
+        "available": 1342767,
+        "source_thousands": 1342.767
+      },
+      "industry": {
+        "civilian_factories": 37,
+        "military_factories": 28,
+        "dockyards": 10
+      },
+      "origin": "daily",
+      "research": {
+        "slot_count": 4,
+        "tracked_technologies": [
+          {
+            "tech_id": "basic_machine_tools",
+            "researching": false,
+            "researched": true
+          },
+          {
+            "tech_id": "construction1",
+            "researching": false,
+            "researched": false
+          },
+          {
+            "tech_id": "electronic_mechanical_engineering",
+            "researching": false,
+            "researched": false
+          }
+        ]
+      },
+      "focus": {
+        "tracked_id": "GER_remilitarize_the_rhineland",
+        "completed": true,
+        "progress_lower_bound": 1.0,
+        "progress_upper_bound": 1.0
+      }
+    },
+    "parser_errors": [],
+    "session_id": "f9481188-5dbb-47b9-8ad6-894695de899f",
+    "revision": 0,
+    "freshness_basis": "log_mtime_upper_bound",
+    "log_read_error": null
+  }
+}

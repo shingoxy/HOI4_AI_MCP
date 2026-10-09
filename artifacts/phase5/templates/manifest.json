@@ -1,0 +1,191 @@
+{
+  "capture_profile": "GER_2560x1600_DPI120_PHYSICAL",
+  "tech_bar": {
+    "source": "D:\\Projects\\HOI4 AI Operator\\artifacts\\phase5\\gate-20261006\\captures\\research-tree-nav.png",
+    "box": [
+      25,
+      95,
+      210,
+      129
+    ]
+  },
+  "production": {
+    "source": "D:\\Projects\\HOI4 AI Operator\\artifacts\\phase5\\gate-20261006\\captures\\production-compact.png",
+    "known_counts": [
+      10,
+      2,
+      1,
+      2,
+      2,
+      1,
+      1,
+      1
+    ],
+    "header": "20/28",
+    "dock_header": "10/10",
+    "factory_digits": [
+      0,
+      1,
+      2
+    ],
+    "thresholds_unchanged": true,
+    "count_12_source": "D:\\Projects\\HOI4 AI Operator\\artifacts\\phase5\\reader-20261006\\live-read-2\\compact-0.png",
+    "header_12": "22/28",
+    "joined_header_tokens": [
+      "0/",
+      "2/"
+    ],
+    "glyph_score_minimum": 0.84,
+    "glyph_score_margin": 0.1
+  },
+  "map": {
+    "source": "D:\\Projects\\HOI4 AI Operator\\artifacts\\phase5\\gate-20261006\\captures\\map-zoom-out-3.png",
+    "anchors": {
+      "amsterdam": [
+        422,
+        823,
+        513,
+        851
+      ],
+      "copenhagen": [
+        1343,
+        266,
+        1423,
+        289
+      ],
+      "warsaw": [
+        2360,
+        858,
+        2408,
+        881
+      ]
+    },
+    "label_rounding_tolerance_px": 1,
+    "state_64_point": [
+      1385,
+      812
+    ]
+  },
+  "military": {
+    "army_sources": [
+      "army-one-native.png",
+      "army-two-native.png"
+    ],
+    "known_divisions": [
+      "1. Infanterie-Division",
+      "1. Panzer-Division",
+      "10. Infanterie-Division"
+    ],
+    "counts": [
+      1,
+      2
+    ],
+    "general": null,
+    "hud_offset_y": 520
+  },
+  "frontline": {
+    "empty_source": "front-empty-native.png",
+    "present_source": "front-present-native.png",
+    "target": "GER_POL_mainland",
+    "point": [
+      1775,
+      730
+    ],
+    "segments": [
+      [
+        1900,
+        620,
+        1940,
+        660
+      ],
+      [
+        1725,
+        805,
+        1765,
+        845
+      ],
+      [
+        1985,
+        985,
+        2025,
+        1025
+      ]
+    ]
+  },
+  "offensive": {
+    "empty_source": "offensive-empty-native.png",
+    "front_read_source": "offensive-present-front-native.png",
+    "drawing_read_source": "offensive-present-native.png",
+    "parts": {
+      "origin": [
+        1780,
+        881,
+        1835,
+        924
+      ],
+      "tip": [
+        2015,
+        799,
+        2056,
+        857
+      ],
+      "army_label": [
+        1914,
+        841,
+        2018,
+        884
+      ],
+      "target": [
+        2020,
+        741,
+        2048,
+        879
+      ]
+    },
+    "tool_hatching_boxes": [
+      [
+        2030,
+        700,
+        2110,
+        780
+      ],
+      [
+        1900,
+        780,
+        1980,
+        860
+      ],
+      [
+        2220,
+        1140,
+        2300,
+        1220
+      ]
+    ],
+    "start": [
+      2030,
+      760
+    ],
+    "end": [
+      2030,
+      870
+    ]
+  },
+  "order_mask": {
+    "roi": [
+      1610,
+      350,
+      2510,
+      1325
+    ],
+    "edge_tolerance_px": 2,
+    "maximum_extra_or_missing_pixels": 40,
+    "passive_render_wait_seconds": 2,
+    "submit_retry": false
+  },
+  "known_modals": [
+    "clock_menu",
+    "world_news",
+    "focus_completed_popup"
+  ]
+}

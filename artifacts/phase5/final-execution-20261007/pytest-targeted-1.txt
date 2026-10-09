@@ -1,0 +1,16 @@
+
+=================================== ERRORS ====================================
+______________ ERROR collecting tests/test_modal_stop_matrix.py _______________
+ImportError while importing test module 'D:\Projects\HOI4 AI Operator\tests\test_modal_stop_matrix.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+D:\Software\MiniConda3-py311\Lib\importlib\__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\test_modal_stop_matrix.py:10: in <module>
+    from hoi4_operator.executor.modal_stop_matrix import ModalStopState, VerifiedModalStops, stop_policy
+E   ModuleNotFoundError: No module named 'hoi4_operator'
+=========================== short test summary info ===========================
+ERROR tests/test_modal_stop_matrix.py
+!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+1 error in 0.57s

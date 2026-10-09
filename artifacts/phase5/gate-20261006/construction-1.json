@@ -1,0 +1,549 @@
+{
+  "source": "LIVE HOI4 / official SDK stdio / WindowsNativeBackend",
+  "computer_use_pump": "OFF",
+  "computer_use_required": false,
+  "model_client": "NONE; Codex selected the bounded semantic plan",
+  "actions": [
+    {
+      "action": "build",
+      "arguments": {
+        "state_id": 64,
+        "building_type": "civilian_factory",
+        "count": 1
+      },
+      "result": {
+        "action": "build",
+        "accepted": false,
+        "status": "rejected",
+        "action_id": "d5ec9520-ff8d-4aff-a4d7-d467ec830007",
+        "retry_count": 0,
+        "duration_ms": 3125,
+        "timings_ms": {
+          "precheck": 0,
+          "navigation": 1407,
+          "target_lookup": 187,
+          "submit": 969,
+          "readback": 0,
+          "confirmation": 0,
+          "total": 3125
+        },
+        "before": {
+          "queue": [],
+          "identity_source": "gui",
+          "stable_game_identity": false,
+          "scope": "complete visible queue; <=8 one-building rows; states 64/65/66 only",
+          "unknown_fields": [
+            "numeric_progress",
+            "uncalibrated_factory_allocations",
+            "internal_queue_id"
+          ]
+        },
+        "reason": "map_target_unresolved",
+        "recovery": "escape_sent",
+        "mutation_submitted": false
+      },
+      "before_capture": {
+        "status": "captured",
+        "path": "D:\\Projects\\HOI4 AI Operator\\artifacts\\phase5\\gate-20261006\\captures\\construction-1-0-before.png",
+        "size": [
+          2560,
+          1600
+        ]
+      },
+      "after_capture": {
+        "status": "captured",
+        "path": "D:\\Projects\\HOI4 AI Operator\\artifacts\\phase5\\gate-20261006\\captures\\construction-1-0-after.png",
+        "size": [
+          2560,
+          1600
+        ]
+      },
+      "native_audit": [
+        {
+          "trace_id": "9ea975fc-bfd3-41e0-abf6-85dea521afae",
+          "backend": "WindowsNativeBackend",
+          "capture_method": "GDI_BitBlt_RGB",
+          "pump": "OFF",
+          "events": [
+            {
+              "op": "capture",
+              "size": [
+                2560,
+                1600
+              ],
+              "profile": {
+                "name": "GER_2560x1600_DPI120_PHYSICAL",
+                "client_width": 2560,
+                "client_height": 1600,
+                "dpi": 120,
+                "capture_width": 2560,
+                "capture_height": 1600,
+                "template_set": "phase3a/phase3; top UI only",
+                "backend": "windows_native_gdi",
+                "offset": [
+                  0,
+                  0
+                ]
+              },
+              "duration_ms": 94
+            },
+            {
+              "op": "key",
+              "key": "t",
+              "primitive": "SendInput.KEYBDINPUT_SCANCODE"
+            },
+            {
+              "op": "down_attempt",
+              "kind": "key",
+              "code": 84,
+              "primitive": "SendInput"
+            },
+            {
+              "op": "release",
+              "kind": "key",
+              "code": 84,
+              "success": true
+            },
+            {
+              "op": "capture",
+              "size": [
+                2560,
+                1600
+              ],
+              "profile": {
+                "name": "GER_2560x1600_DPI120_PHYSICAL",
+                "client_width": 2560,
+                "client_height": 1600,
+                "dpi": 120,
+                "capture_width": 2560,
+                "capture_height": 1600,
+                "template_set": "phase3a/phase3; top UI only",
+                "backend": "windows_native_gdi",
+                "offset": [
+                  0,
+                  0
+                ]
+              },
+              "duration_ms": 93
+            },
+            {
+              "op": "click",
+              "point": [
+                180,
+                103
+              ],
+              "physical_point": [
+                180,
+                103
+              ],
+              "button": "left",
+              "primitive": "SendInput.MOUSEINPUT"
+            },
+            {
+              "op": "down_attempt",
+              "kind": "mouse",
+              "code": "left",
+              "primitive": "SendInput"
+            },
+            {
+              "op": "release",
+              "kind": "mouse",
+              "code": "left",
+              "success": true
+            },
+            {
+              "op": "capture",
+              "size": [
+                2560,
+                1600
+              ],
+              "profile": {
+                "name": "GER_2560x1600_DPI120_PHYSICAL",
+                "client_width": 2560,
+                "client_height": 1600,
+                "dpi": 120,
+                "capture_width": 2560,
+                "capture_height": 1600,
+                "template_set": "phase3a/phase3; top UI only",
+                "backend": "windows_native_gdi",
+                "offset": [
+                  0,
+                  0
+                ]
+              },
+              "duration_ms": 47
+            },
+            {
+              "op": "capture",
+              "size": [
+                2560,
+                1600
+              ],
+              "profile": {
+                "name": "GER_2560x1600_DPI120_PHYSICAL",
+                "client_width": 2560,
+                "client_height": 1600,
+                "dpi": 120,
+                "capture_width": 2560,
+                "capture_height": 1600,
+                "template_set": "phase3a/phase3; top UI only",
+                "backend": "windows_native_gdi",
+                "offset": [
+                  0,
+                  0
+                ]
+              },
+              "duration_ms": 63
+            },
+            {
+              "op": "capture",
+              "size": [
+                2560,
+                1600
+              ],
+              "profile": {
+                "name": "GER_2560x1600_DPI120_PHYSICAL",
+                "client_width": 2560,
+                "client_height": 1600,
+                "dpi": 120,
+                "capture_width": 2560,
+                "capture_height": 1600,
+                "template_set": "phase3a/phase3; top UI only",
+                "backend": "windows_native_gdi",
+                "offset": [
+                  0,
+                  0
+                ]
+              },
+              "duration_ms": 62
+            },
+            {
+              "op": "click",
+              "point": [
+                665,
+                103
+              ],
+              "physical_point": [
+                665,
+                103
+              ],
+              "button": "left",
+              "primitive": "SendInput.MOUSEINPUT"
+            },
+            {
+              "op": "down_attempt",
+              "kind": "mouse",
+              "code": "left",
+              "primitive": "SendInput"
+            },
+            {
+              "op": "release",
+              "kind": "mouse",
+              "code": "left",
+              "success": true
+            },
+            {
+              "op": "capture",
+              "size": [
+                2560,
+                1600
+              ],
+              "profile": {
+                "name": "GER_2560x1600_DPI120_PHYSICAL",
+                "client_width": 2560,
+                "client_height": 1600,
+                "dpi": 120,
+                "capture_width": 2560,
+                "capture_height": 1600,
+                "template_set": "phase3a/phase3; top UI only",
+                "backend": "windows_native_gdi",
+                "offset": [
+                  0,
+                  0
+                ]
+              },
+              "duration_ms": 62
+            },
+            {
+              "op": "capture",
+              "size": [
+                2560,
+                1600
+              ],
+              "profile": {
+                "name": "GER_2560x1600_DPI120_PHYSICAL",
+                "client_width": 2560,
+                "client_height": 1600,
+                "dpi": 120,
+                "capture_width": 2560,
+                "capture_height": 1600,
+                "template_set": "phase3a/phase3; top UI only",
+                "backend": "windows_native_gdi",
+                "offset": [
+                  0,
+                  0
+                ]
+              },
+              "duration_ms": 63
+            },
+            {
+              "op": "key",
+              "key": "Escape",
+              "primitive": "SendInput.KEYBDINPUT_SCANCODE"
+            },
+            {
+              "op": "down_attempt",
+              "kind": "key",
+              "code": 27,
+              "primitive": "SendInput"
+            },
+            {
+              "op": "release",
+              "kind": "key",
+              "code": 27,
+              "success": true
+            }
+          ],
+          "guard_reason": null,
+          "held_input_remaining": false
+        }
+      ]
+    }
+  ],
+  "capabilities": {
+    "read_only": false,
+    "telemetry_read_only": true,
+    "country": "GER",
+    "protocol_version": 2,
+    "accepted_protocol_versions": [
+      1,
+      2
+    ],
+    "available": [
+      "politics",
+      "manpower",
+      "factory_totals",
+      "research_slots",
+      "tracked_technology_predicates",
+      "tracked_focus_progress_interval"
+    ],
+    "tracked_technologies": [
+      "basic_machine_tools",
+      "construction1",
+      "electronic_mechanical_engineering"
+    ],
+    "tracked_focus": "GER_remilitarize_the_rhineland",
+    "extended_fields_live_verified": true,
+    "gui_actions": [
+      "select_research",
+      "select_focus",
+      "set_production_factory_count"
+    ],
+    "non_military_runtime_requested": true,
+    "military_runtime_requested": true,
+    "military_executor_attached": true,
+    "military": {
+      "scope_status": "PARTIAL",
+      "army_scope": "one first army; three named GER divisions",
+      "general_scope": [
+        "GER_erich_von_manstein"
+      ],
+      "game_unit_ids": "UNKNOWN",
+      "fronts": "GUI_ONLY; GER_POL_mainland and GER_POL_east_prussia; whole-plan switches",
+      "supply": "GUI_ONLY; 1. Infanterie tooltip; army/front totals UNKNOWN",
+      "air": "GUI_ONLY; fighter wing 132, Brandenburg, region 8, air_superiority or none",
+      "navy": "GUI_ONLY; one twelve-ship task force; missions and region IDs UNKNOWN",
+      "military_telemetry": "UNKNOWN",
+      "right_drag_backend": "WINDOWS_SENDINPUT; guarded right drag only",
+      "offensive_lines": "GUI_ONLY; selected first army / 1. Panzer-Division / no general; two mainland targets; empty order viewport required",
+      "unsupported_actions": [
+        "move_divisions",
+        "assign_fleet_region",
+        "set_naval_mission"
+      ],
+      "live_verified_components": [
+        "army",
+        "frontline",
+        "offensive_line",
+        "plan_switch",
+        "division_supply",
+        "air_assignment_and_mission",
+        "navy_observation"
+      ]
+    },
+    "additional_gui_actions": [
+      "create_production_line",
+      "delete_production_line",
+      "reorder_production_line",
+      "build",
+      "cancel_construction",
+      "change_construction_priority",
+      "change_economy_law",
+      "change_conscription_law",
+      "hire_advisor",
+      "set_trade_import"
+    ],
+    "gui_observations": [
+      "get_production_lines",
+      "get_construction",
+      "get_advisors",
+      "get_trade_state"
+    ],
+    "production": {
+      "line_identity": "GUI_ONLY; session-local, not stable game ID",
+      "equipment_type": "GUI_ONLY; visible label matched by template, not game equipment ID",
+      "factory_count": "GUI_ONLY; numeric and grid agreement",
+      "truncated_equipment_labels": "PARTIAL; observation only, actions rejected",
+      "maximum_assignable": "PARTIAL; normal line limit and GUI availability",
+      "efficiency": "UNKNOWN",
+      "current_output": "UNKNOWN",
+      "supported_counts": [
+        0,
+        15
+      ],
+      "viewport": "complete calibrated military list (max 10)"
+    },
+    "trade": {
+      "scope": "SWE steel only",
+      "civilian_factories": [
+        0,
+        1,
+        2
+      ],
+      "complete_trade_state": false,
+      "telemetry_trade_state": "UNKNOWN"
+    },
+    "gui_executor_attached": true,
+    "input_backend": "native",
+    "capture_space": "physical",
+    "computer_use_required": false,
+    "input_capabilities": {
+      "capture": true,
+      "click": true,
+      "key_tap": true,
+      "scroll": true,
+      "left_drag": true,
+      "right_drag": true,
+      "held_input": false
+    },
+    "input_backend_ready": true,
+    "unknown_fields": {
+      "active_research": "Only three tracked technologies; slot-to-tech and remaining time are UNKNOWN.",
+      "current_focus": "Current focus ID is UNKNOWN; tracked focus progress is a predicate-derived interval.",
+      "production_lines": "Per-line equipment, efficiency and progress are not verified."
+    },
+    "notifications": "MCP 2026 subscriptions/listen; older clients can poll get_changes"
+  },
+  "tools": [
+    "get_armies",
+    "get_army",
+    "get_divisions",
+    "get_division",
+    "get_generals",
+    "create_army",
+    "assign_divisions",
+    "remove_divisions_from_army",
+    "assign_general",
+    "get_fronts",
+    "create_frontline",
+    "execute_plan",
+    "stop_plan",
+    "create_offensive_line",
+    "move_divisions",
+    "get_supply_status",
+    "get_air_state",
+    "get_navy_state",
+    "get_air_wings",
+    "get_air_regions",
+    "assign_air_wing",
+    "set_air_mission",
+    "get_fleets",
+    "assign_fleet_region",
+    "set_naval_mission",
+    "get_production_lines",
+    "set_production_factory_count",
+    "get_equipment_catalog",
+    "create_production_line",
+    "delete_production_line",
+    "reorder_production_line",
+    "get_construction",
+    "build",
+    "cancel_construction",
+    "change_construction_priority",
+    "change_economy_law",
+    "change_conscription_law",
+    "get_advisors",
+    "hire_advisor",
+    "get_trade_state",
+    "set_trade_import",
+    "select_research",
+    "select_focus",
+    "get_summary",
+    "get_politics",
+    "get_industry",
+    "get_research",
+    "get_focus",
+    "get_changes",
+    "get_diagnostics"
+  ],
+  "telemetry_only": false,
+  "before_telemetry": {
+    "status": "fresh",
+    "received_at": "2026-10-06T04:15:02.072618+00:00",
+    "game_date": " 24:00, 3 2月, 1936",
+    "latest_seq": 706673,
+    "state": {
+      "protocol_version": 2,
+      "seq": 706673,
+      "game_date": " 24:00, 3 2月, 1936",
+      "country": "GER",
+      "politics": {
+        "political_power": 45.016,
+        "stability": 0.81,
+        "war_support": 0.35
+      },
+      "manpower": {
+        "available": 1334493,
+        "source_thousands": 1334.493
+      },
+      "industry": {
+        "civilian_factories": 36,
+        "military_factories": 28,
+        "dockyards": 10
+      },
+      "origin": "daily",
+      "research": {
+        "slot_count": 4,
+        "tracked_technologies": [
+          {
+            "tech_id": "basic_machine_tools",
+            "researching": true,
+            "researched": false
+          },
+          {
+            "tech_id": "construction1",
+            "researching": false,
+            "researched": false
+          },
+          {
+            "tech_id": "electronic_mechanical_engineering",
+            "researching": false,
+            "researched": false
+          }
+        ]
+      },
+      "focus": {
+        "tracked_id": "GER_remilitarize_the_rhineland",
+        "completed": false,
+        "progress_lower_bound": 0.9,
+        "progress_upper_bound": 1.0
+      }
+    },
+    "parser_errors": [],
+    "session_id": "c7a44eb8-e1ee-4c89-b80d-ae340b8e9be6",
+    "revision": 1,
+    "freshness_basis": "frame_received_at",
+    "log_read_error": null
+  },
+  "harness_stop": "action_not_confirmed"
+}

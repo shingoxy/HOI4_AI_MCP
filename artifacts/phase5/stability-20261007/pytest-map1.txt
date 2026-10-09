@@ -1,0 +1,73 @@
+FFFF.................................................................... [ 71%]
+.............................                                            [100%]
+================================== FAILURES ===================================
+_____________ test_actual_home_camera_and_independent_identity[1] _____________
+
+n = 1
+
+    @pytest.mark.parametrize('n',[1,2,3,4])
+    def test_actual_home_camera_and_independent_identity(n):
+        view=resolver().require(load(INV/f'canonical-{n}-map.png'))
+        assert view['profile']=='home' and NativeMapState.target_point(view)==(1280,800)
+        rgb=load(INV/f'canonical-{n}-state.png')
+        t=Templates(MAP)
+>       assert t.find(rgb,'state_title_64',(165,952,320,988),.9)
+E       AssertionError: assert None
+E        +  where None = find(array([[[164, 164, 164],\n        [119, 119, 119],\n        [ 59,  58,  58],\n        ...,\n        [ 40,  53,  78],\n     ...  ...,\n        [ 40,  40,  36],\n        [ 41,  42,  38],\n        [ 42,  44,  40]]], shape=(1600, 2560, 3), dtype=uint8), 'state_title_64', (165, 952, 320, 988), 0.9)
+E        +    where find = <hoi4_operator.executor.templates.Templates object at 0x000001CD55C43590>.find
+
+tests\test_native_map_state.py:32: AssertionError
+_____________ test_actual_home_camera_and_independent_identity[2] _____________
+
+n = 2
+
+    @pytest.mark.parametrize('n',[1,2,3,4])
+    def test_actual_home_camera_and_independent_identity(n):
+        view=resolver().require(load(INV/f'canonical-{n}-map.png'))
+        assert view['profile']=='home' and NativeMapState.target_point(view)==(1280,800)
+        rgb=load(INV/f'canonical-{n}-state.png')
+        t=Templates(MAP)
+>       assert t.find(rgb,'state_title_64',(165,952,320,988),.9)
+E       AssertionError: assert None
+E        +  where None = find(array([[[164, 164, 164],\n        [119, 119, 119],\n        [ 59,  58,  58],\n        ...,\n        [ 54,  64, 105],\n     ...  ...,\n        [ 38,  40,  34],\n        [ 41,  42,  38],\n        [ 44,  45,  41]]], shape=(1600, 2560, 3), dtype=uint8), 'state_title_64', (165, 952, 320, 988), 0.9)
+E        +    where find = <hoi4_operator.executor.templates.Templates object at 0x000001CD577C73D0>.find
+
+tests\test_native_map_state.py:32: AssertionError
+_____________ test_actual_home_camera_and_independent_identity[3] _____________
+
+n = 3
+
+    @pytest.mark.parametrize('n',[1,2,3,4])
+    def test_actual_home_camera_and_independent_identity(n):
+        view=resolver().require(load(INV/f'canonical-{n}-map.png'))
+        assert view['profile']=='home' and NativeMapState.target_point(view)==(1280,800)
+        rgb=load(INV/f'canonical-{n}-state.png')
+        t=Templates(MAP)
+>       assert t.find(rgb,'state_title_64',(165,952,320,988),.9)
+E       AssertionError: assert None
+E        +  where None = find(array([[[164, 164, 164],\n        [119, 119, 119],\n        [ 59,  58,  58],\n        ...,\n        [ 44,  62,  91],\n     ...  ...,\n        [ 49,  41,  42],\n        [ 51,  44,  45],\n        [ 54,  46,  47]]], shape=(1600, 2560, 3), dtype=uint8), 'state_title_64', (165, 952, 320, 988), 0.9)
+E        +    where find = <hoi4_operator.executor.templates.Templates object at 0x000001CD7FA6AA90>.find
+
+tests\test_native_map_state.py:32: AssertionError
+_____________ test_actual_home_camera_and_independent_identity[4] _____________
+
+n = 4
+
+    @pytest.mark.parametrize('n',[1,2,3,4])
+    def test_actual_home_camera_and_independent_identity(n):
+        view=resolver().require(load(INV/f'canonical-{n}-map.png'))
+        assert view['profile']=='home' and NativeMapState.target_point(view)==(1280,800)
+        rgb=load(INV/f'canonical-{n}-state.png')
+        t=Templates(MAP)
+>       assert t.find(rgb,'state_title_64',(165,952,320,988),.9)
+E       AssertionError: assert None
+E        +  where None = find(array([[[164, 164, 164],\n        [119, 119, 119],\n        [ 59,  58,  58],\n        ...,\n        [ 59,  72, 114],\n     ...  ...,\n        [ 40,  40,  36],\n        [ 41,  42,  38],\n        [ 44,  45,  40]]], shape=(1600, 2560, 3), dtype=uint8), 'state_title_64', (165, 952, 320, 988), 0.9)
+E        +    where find = <hoi4_operator.executor.templates.Templates object at 0x000001CD7FA3BC50>.find
+
+tests\test_native_map_state.py:32: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/test_native_map_state.py::test_actual_home_camera_and_independent_identity[1]
+FAILED tests/test_native_map_state.py::test_actual_home_camera_and_independent_identity[2]
+FAILED tests/test_native_map_state.py::test_actual_home_camera_and_independent_identity[3]
+FAILED tests/test_native_map_state.py::test_actual_home_camera_and_independent_identity[4]
+4 failed, 97 passed in 5.86s

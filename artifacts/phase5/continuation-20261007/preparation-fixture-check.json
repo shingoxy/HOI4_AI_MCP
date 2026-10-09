@@ -1,0 +1,15 @@
+{
+  "kind": "OFFLINE_REAL_FIXTURE_CHECK_ONLY",
+  "live_preparation_executed": false,
+  "agent_strategy_unchanged": true,
+  "expected_before": 12,
+  "expected_after": {
+    "numeric": 11,
+    "grid": 11,
+    "assigned_military_factories": 21,
+    "military_factories": 28
+  },
+  "pump": "OFF",
+  "gui_inputs": 0,
+  "mutation_count": 0
+}

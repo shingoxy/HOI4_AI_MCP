@@ -1,0 +1,83 @@
+{
+  "date": "2026-10-06",
+  "phase": "Phase 5",
+  "status": "IN PROGRESS",
+  "original_gate": "7/7 confirmed; not repeated",
+  "tests": {
+    "passed": 452,
+    "subtests": 10,
+    "baseline": 389,
+    "new_tests": 63,
+    "duration_seconds": 32.1,
+    "log": "pytest-delivery.txt",
+    "initial_failure": "New tools were absent from historical MCP list/annotation expectations; corrected and full suite passed."
+  },
+  "compileall": "passed: src scripts tests",
+  "pip_check": "passed: No broken requirements found",
+  "diff_check": "passed",
+  "document_links": "passed",
+  "live": {
+    "status": "SCRIPTED_SINGLE_UNCERTAIN",
+    "backend": "WindowsNativeBackend",
+    "pump": "OFF",
+    "observation_catalog": "confirmed",
+    "observation_run": "cd8a6f58-450c-47de-9aa3-c03648288be9",
+    "scripted_single_run": "19788257-2686-4091-8e56-3cc6e3661732",
+    "action": "set_production_factory_count",
+    "before": 11,
+    "requested": 12,
+    "after": "UNKNOWN",
+    "status_original": "uncertain",
+    "reason": "production_number_unreadable",
+    "action_id": "4d8accb9-2765-465c-be7a-86259134d317",
+    "native_capture": "GDI_BitBlt_RGB physical 2560x1600 DPI120",
+    "native_input_primitive": "SendInput.MOUSEINPUT left click",
+    "duration_ms": 7797,
+    "readback_source": "GUI numeric reader failed; no deterministic confirmation",
+    "mutation_submissions": 1,
+    "retry_count": 0,
+    "scripted_observations": 3,
+    "scripted_decisions": 1,
+    "rejected": 0,
+    "uncertain": 1,
+    "timeouts": 0,
+    "scripted_wall_time_seconds": 23.672,
+    "benchmark_game_days": 0,
+    "fresh_bootstraps": 2,
+    "bootstrap_dates": [
+      "1936-03-25",
+      "1936-03-26"
+    ],
+    "fresh_bootstrap_pause": "confirmed",
+    "scripted_7": "NOT RUN",
+    "scripted_30": "NOT RUN",
+    "codex_live": "NOT RUN",
+    "final_game_date": "1936-03-26 04:00",
+    "final_paused": true,
+    "held_input_remaining": false,
+    "save_mod_hashes_unchanged": 11,
+    "do_not_resubmit": "pending uncertain action; observe read-only before deciding"
+  },
+  "codex": {
+    "adapter_boundary": "offline fake-provider tested",
+    "actual_provider": "not connected",
+    "other_models": "not integrated"
+  },
+  "safety": {
+    "normal_gui_mutations_this_turn": 1,
+    "time_inputs_this_turn": "2 bounded resume/pause bootstrap cycles",
+    "console": false,
+    "effect": false,
+    "memory_write": false,
+    "save_edit": false,
+    "mod_selection_changed": false,
+    "automatic_refocus": false,
+    "computer_use_fallback": false
+  },
+  "git": {
+    "started_dirty": true,
+    "baseline_file": "git-status-before.txt",
+    "commit": false,
+    "push": false
+  }
+}

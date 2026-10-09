@@ -1,0 +1,82 @@
+{
+  "stage": "06-passive-0",
+  "seconds": 11.344,
+  "map_state": {
+    "state": "MAP_UNRESOLVED",
+    "reason": "map_mode_mismatch",
+    "profile": null,
+    "pose": null
+  },
+  "scores": {
+    "construction_title": {
+      "phase3": {
+        "score": 0.9798584580421448,
+        "location": [
+          35,
+          92
+        ]
+      },
+      "native": null
+    },
+    "construction_selected_civilian_factory": {
+      "phase3": {
+        "score": 0.9594194293022156,
+        "location": [
+          500,
+          269
+        ]
+      },
+      "native": null
+    },
+    "construction_button_civilian_factory": {
+      "phase3": {
+        "score": 0.9619120955467224,
+        "location": [
+          508,
+          277
+        ]
+      },
+      "native": null
+    },
+    "construction_modal_title": {
+      "phase3": {
+        "score": 0.13528724014759064,
+        "location": [
+          1264,
+          381
+        ]
+      },
+      "native": null
+    }
+  },
+  "construction_mode": {
+    "score": 1.0,
+    "location": [
+      2494,
+      1400
+    ]
+  },
+  "modals": {
+    "clock_menu": {
+      "score": 0.10610164701938629,
+      "location": [
+        1249,
+        588
+      ]
+    },
+    "world_news": {
+      "score": 0.09839753061532974,
+      "location": [
+        1136,
+        492
+      ]
+    },
+    "focus_completed_popup": {
+      "score": 0.11385417729616165,
+      "location": [
+        1277,
+        668
+      ]
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "role": "operator_safety_pause_only",
+  "pump": "OFF",
+  "semantic_mutations": 0,
+  "known_menu": true,
+  "paused": true
+}

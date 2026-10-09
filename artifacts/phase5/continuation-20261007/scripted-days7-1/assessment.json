@@ -1,0 +1,65 @@
+{
+  "run_id": "b9e4a657-129b-48b6-b16a-6b0d61f321c0",
+  "requested_game_days": 7,
+  "actual_game_days": 7,
+  "runtime_stability_confirmed": true,
+  "checks": {
+    "requested_game_days_completed": true,
+    "all_time_steps_confirmed_paused": true,
+    "all_observations_fresh": true,
+    "navigation_confirmed": true,
+    "scripted_decisions_valid": true,
+    "no_errors": true,
+    "pump_off": true
+  },
+  "valid_decisions": 2,
+  "valid_noops": 2,
+  "confirmed_mutations": 0,
+  "operator_strategic_interventions": 0,
+  "manual_preparation_counted": false,
+  "strategy_target": 12,
+  "observed_factory_targets": [
+    {
+      "date": "1936-03-31",
+      "factories": 12
+    },
+    {
+      "date": "1936-03-31",
+      "factories": 12
+    },
+    {
+      "date": "1936-04-07",
+      "factories": 12
+    }
+  ],
+  "strategic_action_coverage": "no-op-only; insufficient action-branch coverage",
+  "full_autonomous_strategy_acceptance": false,
+  "idle_metrics": {
+    "unused_MIL_observations": {
+      "known": 4,
+      "unused": 4,
+      "unknown": 7
+    },
+    "research_idle_days": {
+      "status": "partial",
+      "known_game_dates": 2,
+      "observed_idle_dates": 2,
+      "meaning": "Dates with a reliable idle observation; not continuous 24-hour idle duration."
+    },
+    "focus_idle_days": {
+      "status": "partial",
+      "known_game_dates": 2,
+      "observed_idle_dates": 2,
+      "meaning": "Dates with a reliable idle observation; not continuous 24-hour idle duration."
+    },
+    "construction_queue_idle_days": {
+      "status": "partial",
+      "known_game_dates": 2,
+      "observed_idle_dates": 0,
+      "meaning": "Dates with a reliable idle observation; not continuous 24-hour idle duration."
+    }
+  },
+  "continuous_research_focus_queue_idle_duration": "UNKNOWN: GUI observations are sampled, not continuous",
+  "no_semantic_mutation_days": 7,
+  "note": "Stability requires fresh observations, validated autonomous decisions and confirmed time control, not dates alone."
+}

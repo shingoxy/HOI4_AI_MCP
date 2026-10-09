@@ -1,0 +1,24 @@
+{
+  "pytest": {
+    "passed": 370,
+    "subtests_passed": 10,
+    "duration_seconds": 17.53,
+    "basetemp": "artifacts/phase5/test-temp-full-4",
+    "TEMP_TMP": "repository-local test directory"
+  },
+  "compileall": "passed",
+  "pip_check": "passed",
+  "diff_check": "passed",
+  "document_link_errors": [],
+  "mutation_confirmed": 0,
+  "native_navigation_verified": true,
+  "computer_use_pump": "OFF",
+  "other_model_adapter": "DEFERRED_BY_USER",
+  "auto_review": "research/focus selections rejected; specific approval pending",
+  "committed": false,
+  "pushed": false,
+  "unchanged_save_count": 10,
+  "mod_selection_hash_unchanged": true,
+  "game_date_advanced": false,
+  "ending_gui": "1936-01-01 12:00 / paused"
+}

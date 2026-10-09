@@ -1,0 +1,4 @@
+5ee82e6 Complete Phase 4 military control and offensive-line verification
+2b1e1f3 Complete Phase 3 non-military GUI executor PoC
+f9cb617 Implement telemetry and GUI executors through Phase 3B-1
+6bddc51 docs: record phase 1 investigation status

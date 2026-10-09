@@ -7,6 +7,7 @@ from PIL import Image
 from .catalog import (BOXES, POINTS, PRODUCTION_ROWS, PRODUCTION_BOXES,
                       PRODUCTION_ROW_BOXES, PRODUCTION_GRID)
 from .guard import ActionError
+from .templates import Templates
 
 PRODUCTION_NAMES = ("Kar 98k式步枪", "支援装备", "105毫米18型轻型野...",
                     "二号轻型坦克A型", "欧宝 “闪电”", "梅塞施密特 Bf-109D...")
@@ -27,12 +28,19 @@ def text_mask(rgb, header=False):
 
 
 class ProductionUI:
-    def __init__(self, ui, templates):
+    def __init__(self, ui, templates, native_digits=None):
         self.ui, self.worker, self.templates = ui, ui.worker, templates
+        self.native_digits = native_digits
+        self.native_templates = Templates(native_digits) if native_digits else None
         self.digits = {}
 
     def found(self, rgb, name, box=None, threshold=0.90):
-        return self.templates.find(rgb, name, box, threshold)
+        point = self.templates.find(rgb, name, box, threshold)
+        profile = getattr(self.worker, "capture_profile", None)
+        if (point is None and self.native_templates is not None and
+                getattr(profile, "name", None) == "GER_2560x1600_DPI120_PHYSICAL"):
+            point = self.native_templates.find(rgb, name, box, threshold)
+        return point
 
     @staticmethod
     def glyph_score(glyph, piece, header):
@@ -67,11 +75,22 @@ class ProductionUI:
             x, y, w, h = cv2.boundingRect(cv2.findNonZero(piece))
             piece = piece[y:y+h, x:x+w]
             scores = []
-            for digit in ("0123456789/" if header else "0123456789"):
-                name = ("header_digit_" if header else "factory_digit_") + ("slash" if digit == "/" else digit)
+            profile = getattr(self.worker, "capture_profile", None)
+            native_profile = bool(self.native_digits and getattr(profile, "name", None) == "GER_2560x1600_DPI120_PHYSICAL")
+            tokens = list("0123456789/" if header else "0123456789")
+            if header and native_profile:
+                tokens.extend(("0/", "2/"))  # Independently calibrated native joined pairs.
+            for digit in tokens:
+                label = {"/": "slash", "0/": "zero_slash", "2/": "two_slash"}.get(digit, digit)
+                name = ("header_digit_" if header else "factory_digit_") + label
                 if name not in self.digits:
                     paths = (list(self.templates.directory.glob(name + "_*_p*.png")) if header else
                              [self.templates.directory / (name + ".png")])
+                    if native_profile:
+                        native = (list(self.native_digits.glob(name+"_*_p*.png")) if header else
+                                  list(self.native_digits.glob(name+".png")))
+                        if native:
+                            paths = native
                     self.digits[name] = [np.asarray(Image.open(p)) > 0 for p in paths]
                 values = [self.glyph_score(glyph, piece, header) for glyph in self.digits[name]]
                 if values:

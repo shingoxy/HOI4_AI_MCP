@@ -1,0 +1,75 @@
+{
+  "pump": "OFF",
+  "input_count": 0,
+  "real_model_calls": 0,
+  "new30": "NOT_RUN",
+  "construction_mutations": 0,
+  "gui_date_status": "UNKNOWN",
+  "gui_date": null,
+  "geometry": {
+    "width": 2560,
+    "height": 1600,
+    "x": 0,
+    "y": 0,
+    "dpi": 120,
+    "desktop": [
+      0,
+      0,
+      2560,
+      1600
+    ],
+    "capture_profile": {
+      "name": "GER_2560x1600_DPI120_PHYSICAL",
+      "client_width": 2560,
+      "client_height": 1600,
+      "dpi": 120,
+      "capture_width": 2560,
+      "capture_height": 1600,
+      "template_set": "phase3a/phase3 + phase5 physical seven-action gate; limited targets",
+      "backend": "windows_native_gdi",
+      "offset": [
+        0,
+        0
+      ]
+    }
+  },
+  "map": {
+    "state": "MAP_READY",
+    "reason": "calibrated_capital_camera_range",
+    "profile": "home",
+    "pose": {
+      "amsterdam": [
+        450,
+        840
+      ],
+      "copenhagen": [
+        1292,
+        322
+      ],
+      "warsaw": [
+        2205,
+        868
+      ]
+    }
+  },
+  "error": "AttributeError",
+  "files": {
+    "D:\\Documents\\Paradox Interactive\\Hearts of Iron IV\\dlc_load.json": "f3c55e20cdd8c2de4fa21f4fa94350590e3ae40f8b5e0a2d1bd8a204af485cdb",
+    "D:\\Documents\\Paradox Interactive\\Hearts of Iron IV\\save games\\autosave.hoi4": "e27d9f5fc7e22c52b4ae092d415797f0fd226822ca46d7fb3d96a747f762a460",
+    "D:\\Documents\\Paradox Interactive\\Hearts of Iron IV\\save games\\GER_1936_01_01_12.hoi4": "7964a9999af7877a3afd7f22b0981689d961046970688734c26b345be0fe348b",
+    "D:\\Documents\\Paradox Interactive\\Hearts of Iron IV\\save games\\GER_1936_01_06_23.hoi4": "37cb12bc948a34d1c445e6787c6354828614dc45920b3b1acfeead34633850f9",
+    "D:\\Documents\\Paradox Interactive\\Hearts of Iron IV\\save games\\GER_1936_01_22_11.hoi4": "cb7e5356af7dcf4b8a3a47714a8e283e12d0c1463bc0ae0c6a739c9d21d1fdc6",
+    "D:\\Documents\\Paradox Interactive\\Hearts of Iron IV\\save games\\PRC1111.hoi4": "a6d3a68a2be2b1911ada79e4cf6481ed4db09a14a2ab945e047fdbcf88c17447",
+    "D:\\Documents\\Paradox Interactive\\Hearts of Iron IV\\save games\\PRC_1936_10_12_10.hoi4": "5562fbbeade99b3db7f1081485b2c636c1a696fac6342a475e3d0692d19aecf4",
+    "D:\\Documents\\Paradox Interactive\\Hearts of Iron IV\\save games\\PRC_1939_08_12_09.hoi4": "168e5ef9ade1e9736cc55c77ff19d8e1d7518288f3a894dd42e90cfd1ef6d027",
+    "D:\\Documents\\Paradox Interactive\\Hearts of Iron IV\\save games\\PRC_1942_02_28_03.hoi4": "ce1f4b6dffa621c4d4d3b700bab8cf9fe5bb62edf01d7b52ee79878224778a16",
+    "D:\\Documents\\Paradox Interactive\\Hearts of Iron IV\\save games\\PRC_1942_06_01_02.hoi4": "7188f1bc326778da78be7943731d245f5b1333634a35a9ff8e7d1ba332bc25d7",
+    "D:\\Documents\\Paradox Interactive\\Hearts of Iron IV\\save games\\PRC_1947_04_24_09.....hoi4": "b93767e62567492d12e3ec1a604d567a6998cd4cbefa45f1b9bf1b814ef46052"
+  },
+  "changed": [],
+  "added": [],
+  "removed": [],
+  "manual_save_count": 9,
+  "manual_saves_unchanged": true,
+  "mod_selection_unchanged": true
+}

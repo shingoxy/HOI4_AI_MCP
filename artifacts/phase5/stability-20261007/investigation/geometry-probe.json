@@ -1,0 +1,35 @@
+{
+  "actual": {
+    "matches": 445,
+    "stable": 411,
+    "ratio": 0.9235955056179775,
+    "cells": [
+      55,
+      165,
+      191
+    ],
+    "center": 2
+  },
+  "small_pan": {
+    "matches": 440,
+    "stable": 0,
+    "ratio": 0.0,
+    "cells": [
+      0,
+      0,
+      0
+    ],
+    "center": 0
+  },
+  "wrong_camera": {
+    "matches": 40,
+    "stable": 33,
+    "ratio": 0.825,
+    "cells": [
+      0,
+      0,
+      33
+    ],
+    "center": 0
+  }
+}

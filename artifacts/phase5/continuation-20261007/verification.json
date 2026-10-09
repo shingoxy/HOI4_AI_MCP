@@ -1,0 +1,329 @@
+{
+  "checkpoint": "30-DAY GATE STOPPED AT DAY21 / REAL CODEX NOT RUN",
+  "preparation": {
+    "pump": "OFF",
+    "backend": "WindowsNativeBackend",
+    "role": "operator_test_preparation",
+    "counts_toward_agent_behavior": false,
+    "agent": null,
+    "strategy_target": 12,
+    "authorization": "Explicit user reply 2026-10-07 authorizes this once-only 12-to-11 preparation",
+    "status": "PREPARATION_CONFIRMED",
+    "stages": [
+      {
+        "stage": "fresh_bootstrap",
+        "status": "confirmed"
+      },
+      {
+        "stage": "before",
+        "status": "confirmed"
+      },
+      {
+        "stage": "setter",
+        "status": "confirmed"
+      },
+      {
+        "stage": "independent_readback",
+        "status": "confirmed"
+      }
+    ],
+    "before": 12,
+    "after": 11,
+    "setter_action_id": "b3b41eba-01c5-4b56-8422-64aba604c503",
+    "setter_duration_ms": 12672,
+    "readback_duration_ms": 5734,
+    "readback_source": "target numeric AND 15-cell grid AND full-list/global assigned MIL",
+    "mutation_submitted": true,
+    "retry_count": 0,
+    "final_paused": true,
+    "wall_time_seconds": 36.953
+  },
+  "scripted_single": {
+    "run_id": "a267d0f1-4d8e-44a3-b18b-5d72bbf01df0",
+    "agent": "scripted",
+    "backend": "windows_native",
+    "pump": "OFF",
+    "started_at": "2026-10-07T02:18:08.708438+00:00",
+    "start_date": "1936-03-29",
+    "end_date": "1936-03-30",
+    "observations": 3,
+    "alerts": 18,
+    "decisions": 1,
+    "actions": 1,
+    "results": 1,
+    "confirmed": 1,
+    "already_satisfied": 0,
+    "mutations_submitted": 1,
+    "confirmed_mutations": 1,
+    "rejected": 0,
+    "uncertain": 0,
+    "timeouts": 0,
+    "timed_out": 0,
+    "backend_errors": 0,
+    "timeline_reset": 0,
+    "circuit_breaker": null,
+    "game_days": 0,
+    "unused_MIL_observations": {
+      "known": 3,
+      "unused": 3,
+      "unknown": 0
+    },
+    "research_idle_days": {
+      "status": "partial",
+      "known_game_dates": 2,
+      "observed_idle_dates": 2,
+      "meaning": "Dates with a reliable idle observation; not continuous 24-hour idle duration."
+    },
+    "focus_idle_days": {
+      "status": "partial",
+      "known_game_dates": 2,
+      "observed_idle_dates": 2,
+      "meaning": "Dates with a reliable idle observation; not continuous 24-hour idle duration."
+    },
+    "construction_queue_idle_days": {
+      "status": "partial",
+      "known_game_dates": 2,
+      "observed_idle_dates": 0,
+      "meaning": "Dates with a reliable idle observation; not continuous 24-hour idle duration."
+    },
+    "wall_time_seconds": 51.328,
+    "status": "SINGLE_CYCLE_CONFIRMED"
+  },
+  "scripted_days7": {
+    "run_id": "b9e4a657-129b-48b6-b16a-6b0d61f321c0",
+    "requested_game_days": 7,
+    "actual_game_days": 7,
+    "runtime_stability_confirmed": true,
+    "checks": {
+      "requested_game_days_completed": true,
+      "all_time_steps_confirmed_paused": true,
+      "all_observations_fresh": true,
+      "navigation_confirmed": true,
+      "scripted_decisions_valid": true,
+      "no_errors": true,
+      "pump_off": true
+    },
+    "valid_decisions": 2,
+    "valid_noops": 2,
+    "confirmed_mutations": 0,
+    "operator_strategic_interventions": 0,
+    "manual_preparation_counted": false,
+    "strategy_target": 12,
+    "observed_factory_targets": [
+      {
+        "date": "1936-03-31",
+        "factories": 12
+      },
+      {
+        "date": "1936-03-31",
+        "factories": 12
+      },
+      {
+        "date": "1936-04-07",
+        "factories": 12
+      }
+    ],
+    "strategic_action_coverage": "no-op-only; insufficient action-branch coverage",
+    "full_autonomous_strategy_acceptance": false,
+    "idle_metrics": {
+      "unused_MIL_observations": {
+        "known": 4,
+        "unused": 4,
+        "unknown": 7
+      },
+      "research_idle_days": {
+        "status": "partial",
+        "known_game_dates": 2,
+        "observed_idle_dates": 2,
+        "meaning": "Dates with a reliable idle observation; not continuous 24-hour idle duration."
+      },
+      "focus_idle_days": {
+        "status": "partial",
+        "known_game_dates": 2,
+        "observed_idle_dates": 2,
+        "meaning": "Dates with a reliable idle observation; not continuous 24-hour idle duration."
+      },
+      "construction_queue_idle_days": {
+        "status": "partial",
+        "known_game_dates": 2,
+        "observed_idle_dates": 0,
+        "meaning": "Dates with a reliable idle observation; not continuous 24-hour idle duration."
+      }
+    },
+    "continuous_research_focus_queue_idle_duration": "UNKNOWN: GUI observations are sampled, not continuous",
+    "no_semantic_mutation_days": 7,
+    "note": "Stability requires fresh observations, validated autonomous decisions and confirmed time control, not dates alone."
+  },
+  "scripted_days30": {
+    "run_id": "13b9f1f3-f1f6-4b8b-8803-477fd3679c69",
+    "requested_game_days": 30,
+    "actual_game_days": 21,
+    "runtime_stability_confirmed": false,
+    "checks": {
+      "requested_game_days_completed": false,
+      "all_time_steps_confirmed_paused": true,
+      "all_observations_fresh": true,
+      "navigation_confirmed": true,
+      "scripted_decisions_valid": true,
+      "no_errors": false,
+      "pump_off": true
+    },
+    "valid_decisions": 4,
+    "valid_noops": 3,
+    "attempted_actions": 1,
+    "confirmed_mutations": 0,
+    "operator_strategic_interventions": 0,
+    "manual_preparation_counted": false,
+    "strategy_target": 12,
+    "observed_factory_targets": [
+      {
+        "date": "1936-04-08",
+        "factories": 12
+      },
+      {
+        "date": "1936-04-08",
+        "factories": 12
+      },
+      {
+        "date": "1936-04-15",
+        "factories": 12
+      },
+      {
+        "date": "1936-04-22",
+        "factories": 12
+      },
+      {
+        "date": "1936-04-29",
+        "factories": 12
+      }
+    ],
+    "strategic_action_coverage": "supported action attempted but not confirmed",
+    "full_autonomous_strategy_acceptance": false,
+    "idle_metrics": {
+      "unused_MIL_observations": {
+        "known": 6,
+        "unused": 6,
+        "unknown": 22
+      },
+      "research_idle_days": {
+        "status": "partial",
+        "known_game_dates": 4,
+        "observed_idle_dates": 4,
+        "meaning": "Dates with a reliable idle observation; not continuous 24-hour idle duration."
+      },
+      "focus_idle_days": {
+        "status": "partial",
+        "known_game_dates": 4,
+        "observed_idle_dates": 4,
+        "meaning": "Dates with a reliable idle observation; not continuous 24-hour idle duration."
+      },
+      "construction_queue_idle_days": {
+        "status": "partial",
+        "known_game_dates": 4,
+        "observed_idle_dates": 1,
+        "meaning": "Dates with a reliable idle observation; not continuous 24-hour idle duration."
+      }
+    },
+    "continuous_research_focus_queue_idle_duration": "UNKNOWN: GUI observations are sampled, not continuous",
+    "no_semantic_mutation_days": 21,
+    "note": "Stability requires fresh observations, validated autonomous decisions and confirmed time control, not dates alone."
+  },
+  "failed_action": {
+    "action": "build",
+    "action_id": "325bff43-716c-480e-b753-ad14b1b59198",
+    "status": "rejected",
+    "reason": "map_target_unresolved",
+    "duration_ms": 3000,
+    "mutation_submitted": false,
+    "retry_count": 0,
+    "proposal": {
+      "action": "build",
+      "arguments": {
+        "state_id": 64,
+        "building_type": "civilian_factory",
+        "count": 1
+      },
+      "rationale": "Use the highest priority known unmet target."
+    }
+  },
+  "real_codex": {
+    "kind": "READ_ONLY_READINESS_CHECK_NOT_MODEL_GATE",
+    "cli_version": "0.151.0",
+    "cli_installed": true,
+    "chatgpt_login_succeeded": true,
+    "openai_api_key_present": false,
+    "openai_codex_package_installed": false,
+    "openai_package_installed": false,
+    "documented_routes": [
+      "Codex SDK",
+      "Codex CLI exec",
+      "Codex app-server"
+    ],
+    "sources": [
+      "https://developers.openai.com/codex/sdk",
+      "https://learn.chatgpt.com/docs/app-server"
+    ],
+    "protocol_schema": "codex-protocol/v2/ThreadStartParams.json",
+    "structured_output_available": true,
+    "model_inference_attempts": 0,
+    "real_semantic_provider_validated": false,
+    "blocker": "NOT RUN: earlier 30-day gate stopped after map_target_unresolved at day21",
+    "remaining": "Implement/verify semantic-only provider isolation before a real Codex decision/action gate; fake callback is not live proof"
+  },
+  "native_evidence": {
+    "test-preparation-1": {
+      "native_traces": 7,
+      "semantic_commits": 1,
+      "held_input_remaining": false
+    },
+    "scripted-single-1": {
+      "native_traces": 16,
+      "semantic_commits": 1,
+      "held_input_remaining": false
+    },
+    "scripted-days7-1": {
+      "native_traces": 21,
+      "semantic_commits": 0,
+      "held_input_remaining": false
+    },
+    "scripted-days30-1": {
+      "native_traces": 48,
+      "semantic_commits": 0,
+      "held_input_remaining": false
+    }
+  },
+  "tests": {
+    "passed": 493,
+    "subtests_passed": 10,
+    "seconds": 43.01,
+    "previous_baseline": 483,
+    "added": 10
+  },
+  "checks": {
+    "compileall": {
+      "exit_code": 0
+    },
+    "pip_check": {
+      "exit_code": 0
+    },
+    "diff_check": {
+      "exit_code": 0
+    }
+  },
+  "runtime_core_ast_sha256": "cb776eb8cd537956395ce3c37f711a98a4dddcd9e0a59851ebc45bd95fc3baf5",
+  "runtime_failure_policy_unchanged": true,
+  "strategy_target": 12,
+  "pump": "OFF",
+  "paused": true,
+  "pause_source": "existing calibrated known_GUI_game_menu",
+  "original_clock_reader": "clock_header_unrecognized",
+  "protected_files_unchanged": true,
+  "operator_strategic_interventions": 0,
+  "save_mutation_by_operator": false,
+  "commit": false,
+  "push": false,
+  "next_step": "Read-only failed-frame/current viewport investigation in existing native state64 scope; no automatic build replay.",
+  "document_links": {
+    "missing": []
+  }
+}

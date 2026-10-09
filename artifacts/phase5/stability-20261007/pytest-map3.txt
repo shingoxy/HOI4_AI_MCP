@@ -1,0 +1,68 @@
+...........................F............................................ [ 64%]
+.......................................                                  [100%]
+================================== FAILURES ===================================
+__ test_real_construction_mode_changes_labels_but_preserves_camera_geometry ___
+
+    def test_real_construction_mode_changes_labels_but_preserves_camera_geometry():
+        r=resolver()
+        before=load(INV/'drawing-before.png')
+        after=load(INV/'drawing-selected.png')
+        pose=r.require(before)
+        assert r.inspect(after)['state']=='MAP_UNRESOLVED'
+>       result=r.require(after,same=pose,construction_panel=True,reference=before)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_native_map_state.py:137: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <hoi4_operator.executor.native_map_state.NativeMapState object at 0x000001D76A47F250>
+rgb = array([[[164, 164, 164],
+        [119, 119, 119],
+        [ 59,  58,  58],
+        ...,
+        [ 23,  45,  55],
+     ...  ...,
+        [ 24,  29,  29],
+        [ 25,  31,  31],
+        [ 26,  32,  32]]], shape=(1600, 2560, 3), dtype=uint8)
+same = {'state': 'MAP_READY', 'reason': 'calibrated_capital_camera_range', 'profile': 'home', 'pose': {'amsterdam': (450, 840), 'copenhagen': (1292, 322), 'warsaw': (2205, 868)}}
+construction_panel = True
+reference = array([[[164, 164, 164],
+        [119, 119, 119],
+        [ 59,  58,  58],
+        ...,
+        [ 60,  73, 114],
+     ...  ...,
+        [ 40,  40,  36],
+        [ 41,  42,  38],
+        [ 44,  45,  40]]], shape=(1600, 2560, 3), dtype=uint8)
+
+    def require(self, rgb, *, same=None, construction_panel=False, reference=None):
+        state = self.inspect(rgb)
+        if construction_panel and same and reference is not None:
+            self.require(reference,same=same)
+            panels = Templates(self.templates.directory.parents[2] / "phase3/templates")
+            geometry = self.drawing_geometry(reference,rgb)
+            if (panels.find(rgb,"construction_title",(20,83,150,124),.9) and
+                    panels.find(rgb,"construction_selected_civilian_factory",(497,266,545,314),.9) and
+                    self.home.find(rgb,"construction_map_mode",(2494,1400,2526,1431),.9) and geometry["confirmed"]):
+                state = dict(state="MAP_READY",reason="known_construction_mode_unchanged_geometry",
+                    profile=same["profile"],pose=same["pose"],geometry=geometry,
+                    city_anchor_source="all three revalidated before opening construction mode",
+                    current_mode="known_civilian_construction_overlay")
+            else:
+                state["drawing_geometry"] = geometry
+        valid = state["state"] == "MAP_READY"
+        if same is not None:
+            valid &= state["profile"] == same["profile"] and state["pose"] is not None
+            valid &= bool(valid and all(max(abs(a-b) for a,b in zip(state["pose"][k],point)) <= 1
+                                       for k,point in same["pose"].items()))
+        if not valid:
+            self.evidence(rgb, state, "rejected")
+>           raise ActionError("map_target_unresolved" if same is not None else state["reason"], "rejected")
+E           hoi4_operator.executor.guard.ActionError: map_target_unresolved
+
+src\hoi4_operator\executor\native_map_state.py:124: ActionError
+=========================== short test summary info ===========================
+FAILED tests/test_native_map_state.py::test_real_construction_mode_changes_labels_but_preserves_camera_geometry
+1 failed, 110 passed in 9.44s

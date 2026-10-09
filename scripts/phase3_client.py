@@ -14,7 +14,7 @@ from mcp.client.stdio import StdioServerParameters
 async def run(args):
     root = Path(__file__).resolve().parents[1]
     transport = StdioServerParameters(command=sys.executable, args=[str(root / "scripts/run_mcp.py"),
-        "--gui-window", str(args.window), "--non-military"])
+        "--gui-window", str(args.window), "--backend", "computer-use", "--non-military"])
     evidence = {"source": "LIVE HOI4 / official SDK stdio / semantic API / normal GUI", "actions": []}
     def save():
         args.output.parent.mkdir(parents=True, exist_ok=True)

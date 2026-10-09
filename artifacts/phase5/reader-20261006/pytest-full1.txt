@@ -1,0 +1,18 @@
+.................................................................F...... [ 15%]
+...................................................................................................................................... [ 42%]
+........................................................................ [ 57%]
+........................................................................ [ 72%]
+........................................................................ [ 87%]
+..........................................................               [100%]
+================================== FAILURES ===================================
+___ test_single_gate_requires_confirmed_mutation_and_valid_post_observation ___
+tests\test_agent_runtime.py:535: in test_single_gate_requires_confirmed_mutation_and_valid_post_observation
+    events = [json.loads(line) for line in (audit.path/'events.jsonl').read_text().splitlines()]
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+D:\Software\MiniConda3-py311\Lib\pathlib.py:1059: in read_text
+    return f.read()
+           ^^^^^^^^
+E   UnicodeDecodeError: 'gbk' codec can't decode byte 0x88 in position 152: illegal multibyte sequence
+=========================== short test summary info ===========================
+FAILED tests/test_agent_runtime.py::test_single_gate_requires_confirmed_mutation_and_valid_post_observation
+1 failed, 479 passed, 10 subtests passed in 43.05s

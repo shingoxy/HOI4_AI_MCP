@@ -1,0 +1,71 @@
+{
+  "state": "TOOL_SELECTED",
+  "reason": "civilian_icon_outline_and_construction_mode",
+  "panel": {
+    "score": 0.9798584580421448,
+    "confirmed": true
+  },
+  "icon": {
+    "score": 0.944277822971344,
+    "confirmed": true
+  },
+  "legacy_selected": {
+    "score": 0.9272751212120056,
+    "confirmed": true
+  },
+  "mode": {
+    "score": 1.0,
+    "confirmed": true
+  },
+  "land_mode": {
+    "score": 0.7871174216270447,
+    "confirmed": false
+  },
+  "outline": {
+    "counts": {
+      "top": 41,
+      "bottom": 6,
+      "left": 40,
+      "right": 41
+    },
+    "confirmed": true
+  },
+  "other_icon": {
+    "score": 0.9874210357666016,
+    "confirmed": true
+  },
+  "other_outline": {
+    "counts": {
+      "top": 0,
+      "bottom": 0,
+      "left": 0,
+      "right": 0
+    },
+    "confirmed": false
+  },
+  "modals": {
+    "clock_menu": {
+      "score": 0.17385032773017883,
+      "confirmed": false
+    },
+    "world_news": {
+      "score": 0.09703360497951508,
+      "confirmed": false
+    },
+    "focus_completed_popup": {
+      "score": 0.13205964863300323,
+      "confirmed": false
+    },
+    "construction_modal": {
+      "score": 0.13422052562236786,
+      "confirmed": false
+    }
+  },
+  "cursor_state": "UNKNOWN; GDI capture excludes cursor",
+  "map_state": {
+    "state": "MAP_UNRESOLVED",
+    "reason": "map_mode_mismatch",
+    "profile": null,
+    "pose": null
+  }
+}

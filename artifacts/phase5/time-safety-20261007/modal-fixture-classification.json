@@ -1,0 +1,37 @@
+[
+  {
+    "file": "artifacts/phase5/tool-20261007/safety-stop-1/before.png",
+    "state": "KNOWN_BLOCKING_MODAL",
+    "names": [
+      "research_complete"
+    ],
+    "stop_route": "escape_to_menu",
+    "scope": "Calibrated menu/news/focus/research and centered rectangular popup candidates only"
+  },
+  {
+    "file": "artifacts/phase5/tool-20261007/safety-stop-1/after.png",
+    "state": "KNOWN_SAFE_MODAL",
+    "names": [
+      "clock_menu"
+    ],
+    "stop_route": "menu_pause_readback",
+    "scope": "Calibrated menu/news/focus/research and centered rectangular popup candidates only"
+  },
+  {
+    "file": "artifacts/phase5/tool-20261007/final-physical.png",
+    "state": "OVERLAY_STACK",
+    "names": [
+      "research_complete",
+      "world_news"
+    ],
+    "stop_route": null,
+    "scope": "Calibrated menu/news/focus/research and centered rectangular popup candidates only"
+  },
+  {
+    "file": "artifacts/phase5/time-safety-20261007/preflight-2/physical.png",
+    "state": "NO_MODAL",
+    "names": [],
+    "stop_route": null,
+    "scope": "Calibrated menu/news/focus/research and centered rectangular popup candidates only"
+  }
+]

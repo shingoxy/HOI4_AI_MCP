@@ -1,0 +1,75 @@
+{
+  "backend": "WindowsNativeBackend",
+  "pump": "OFF",
+  "mutation_count": 0,
+  "original_status": "uncertain",
+  "original_action_id": "4d8accb9-2765-465c-be7a-86259134d317",
+  "samples": [
+    {
+      "kind": "compact",
+      "file": "compact-0.png",
+      "view": {
+        "status": "unknown",
+        "reason": "production_number_unreadable"
+      },
+      "numeric": {
+        "status": "read",
+        "value": "12"
+      },
+      "header": {
+        "status": "unknown",
+        "reason": "production_number_unreadable"
+      }
+    },
+    {
+      "kind": "compact",
+      "file": "compact-1.png",
+      "view": {
+        "status": "unknown",
+        "reason": "production_number_unreadable"
+      },
+      "numeric": {
+        "status": "read",
+        "value": "12"
+      },
+      "header": {
+        "status": "unknown",
+        "reason": "production_number_unreadable"
+      }
+    },
+    {
+      "kind": "expanded",
+      "file": "expanded-0.png",
+      "numeric": {
+        "status": "read",
+        "value": "12"
+      },
+      "grid": {
+        "status": "unknown",
+        "reason": "readback_failed"
+      },
+      "header": {
+        "status": "unknown",
+        "reason": "production_number_unreadable"
+      }
+    },
+    {
+      "kind": "expanded",
+      "file": "expanded-1.png",
+      "numeric": {
+        "status": "read",
+        "value": "12"
+      },
+      "grid": {
+        "status": "read",
+        "value": 12
+      },
+      "header": {
+        "status": "unknown",
+        "reason": "production_number_unreadable"
+      }
+    }
+  ],
+  "telemetry_not_used": true,
+  "restored_safe_page": true
+}

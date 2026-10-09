@@ -1,0 +1,52 @@
+...................F.................................................... [ 13%]
+...................................................................................................................................... [ 38%]
+........................................................................ [ 52%]
+........................................................................ [ 65%]
+........................................................................ [ 79%]
+........................................................................ [ 93%]
+.....................................                                    [100%]
+================================== FAILURES ===================================
+_____ test_failure_stops_plan_invalidates_reobserves_no_resend[uncertain] _____
+
+tmp_path = WindowsPath('D:/Projects/HOI4 AI Operator/artifacts/phase5/stability-20261007/test-temp-final/test_failure_stops_plan_invali0')
+status = 'uncertain'
+
+    @pytest.mark.parametrize("status", ["uncertain", "timed_out", "failed", "rejected"])
+    def test_failure_stops_plan_invalidates_reobserves_no_resend(tmp_path, status):
+        value = decision()
+        value["actions"].append(dict(action="select_focus", arguments=dict(focus_id="GER_remilitarize_the_rhineland"), rationale="No active focus"))
+        rt, op, audit = runtime(tmp_path, status, value=value)
+>       assert rt.cycle() == "PLAN_STOPPED"
+               ^^^^^^^^^^
+
+tests\test_agent_runtime.py:199: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+src\hoi4_operator\agent_runtime.py:221: in cycle
+    self.audit.emit("action", item)
+src\hoi4_operator\agent_runtime.py:88: in emit
+    self.save()  # Every action result is durable before any subsequent action.
+    ^^^^^^^^^^^
+src\hoi4_operator\agent_runtime.py:98: in save
+    temp.replace(self.path / "summary.json")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('D:/Projects/HOI4 AI Operator/artifacts/phase5/stability-20261007/test-temp-final/test_failure_stops_plan_invali0/run/summary.tmp')
+target = WindowsPath('D:/Projects/HOI4 AI Operator/artifacts/phase5/stability-20261007/test-temp-final/test_failure_stops_plan_invali0/run/summary.json')
+
+    def replace(self, target):
+        """
+        Rename this path to the target path, overwriting if that path exists.
+    
+        The target path may be absolute or relative. Relative paths are
+        interpreted relative to the current working directory, *not* the
+        directory of the Path object.
+    
+        Returns the new Path instance pointing to the target path.
+        """
+>       os.replace(self, target)
+E       PermissionError: [WinError 5] �ܾ����ʡ�: 'D:\\Projects\\HOI4 AI Operator\\artifacts\\phase5\\stability-20261007\\test-temp-final\\test_failure_stops_plan_invali0\\run\\summary.tmp' -> 'D:\\Projects\\HOI4 AI Operator\\artifacts\\phase5\\stability-20261007\\test-temp-final\\test_failure_stops_plan_invali0\\run\\summary.json'
+
+D:\Software\MiniConda3-py311\Lib\pathlib.py:1188: PermissionError
+=========================== short test summary info ===========================
+FAILED tests/test_agent_runtime.py::test_failure_stops_plan_invalidates_reobserves_no_resend[uncertain]
+1 failed, 530 passed, 10 subtests passed in 46.73s

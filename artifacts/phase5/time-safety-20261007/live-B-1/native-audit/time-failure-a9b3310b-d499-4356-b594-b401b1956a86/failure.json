@@ -1,0 +1,91 @@
+{
+  "reason": "modal_blocked",
+  "captured_at": "2026-10-07T09:42:24.454576+00:00",
+  "recorded_at": "2026-10-07T09:42:24.510807+00:00",
+  "ownership": {
+    "ownership_state": "STOPPING",
+    "owns_running": true,
+    "operator_intervention_required": false,
+    "failure_evidence_error": null
+  },
+  "telemetry": {
+    "status": "stale",
+    "received_at": "2026-10-07T09:41:52.965065+00:00",
+    "game_date": " 24:00, 3 8月, 1936",
+    "latest_seq": 706854,
+    "state": {
+      "protocol_version": 2,
+      "seq": 706854,
+      "game_date": " 24:00, 3 8月, 1936",
+      "country": "GER",
+      "politics": {
+        "political_power": 539.66,
+        "stability": 0.81,
+        "war_support": 0.47432
+      },
+      "manpower": {
+        "available": 1342723,
+        "source_thousands": 1342.723
+      },
+      "industry": {
+        "civilian_factories": 37,
+        "military_factories": 28,
+        "dockyards": 10
+      },
+      "origin": "daily",
+      "research": {
+        "slot_count": 4,
+        "tracked_technologies": [
+          {
+            "tech_id": "basic_machine_tools",
+            "researching": false,
+            "researched": true
+          },
+          {
+            "tech_id": "construction1",
+            "researching": false,
+            "researched": false
+          },
+          {
+            "tech_id": "electronic_mechanical_engineering",
+            "researching": false,
+            "researched": false
+          }
+        ]
+      },
+      "focus": {
+        "tracked_id": "GER_remilitarize_the_rhineland",
+        "completed": true,
+        "progress_lower_bound": 1.0,
+        "progress_upper_bound": 1.0
+      }
+    },
+    "parser_errors": [],
+    "session_id": "d5762301-047d-4a58-afc3-aae8f312638e",
+    "revision": 0,
+    "freshness_basis": "log_mtime_upper_bound",
+    "log_read_error": null
+  },
+  "hwnd": 589988,
+  "pid": 16820,
+  "foreground": 589988,
+  "guard_reason": null,
+  "exact_rgb_available": true,
+  "gui_date": null,
+  "gui_date_status": "UNKNOWN",
+  "modal": {
+    "state": "KNOWN_SAFE_MODAL",
+    "names": [
+      "clock_menu"
+    ],
+    "stop_route": "menu_pause_readback",
+    "scope": "Calibrated menu/news/focus/research and centered rectangular popup candidates only"
+  },
+  "directory": "D:\\Projects\\HOI4 AI Operator\\artifacts\\phase5\\time-safety-20261007\\live-B-1\\native-audit\\time-failure-a9b3310b-d499-4356-b594-b401b1956a86",
+  "ownership_after_failure": {
+    "ownership_state": "STOP_FAILED_OWNED",
+    "owns_running": true,
+    "operator_intervention_required": true,
+    "failure_evidence_error": null
+  }
+}

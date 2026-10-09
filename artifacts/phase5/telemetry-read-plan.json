@@ -1,0 +1,5 @@
+[
+  {"action":"get_summary","expected":["fresh","stale","unavailable"]},
+  {"action":"get_research","expected":["fresh","stale","unavailable"]},
+  {"action":"get_focus","expected":["fresh","stale","unavailable"]}
+]

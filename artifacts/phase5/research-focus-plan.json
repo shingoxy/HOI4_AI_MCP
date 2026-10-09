@@ -1,0 +1,4 @@
+[
+  {"action":"select_research","arguments":{"slot":0,"tech_id":"basic_machine_tools"},"expected":["confirmed"]},
+  {"action":"select_focus","arguments":{"focus_id":"GER_remilitarize_the_rhineland"},"expected":["confirmed"]}
+]

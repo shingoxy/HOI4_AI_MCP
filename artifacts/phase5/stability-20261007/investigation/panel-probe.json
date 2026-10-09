@@ -1,0 +1,19 @@
+{
+  "pump": "OFF",
+  "semantic_mutations": 0,
+  "scope": "construction navigation and pause evidence only",
+  "paused_before": true,
+  "construction": {
+    "queue": [],
+    "identity_source": "gui",
+    "stable_game_identity": false,
+    "scope": "complete visible queue; <=8 one-building rows; states 64/65/66 only",
+    "unknown_fields": [
+      "numeric_progress",
+      "uncalibrated_factory_allocations",
+      "internal_queue_id"
+    ]
+  },
+  "paused_after": true,
+  "status": "confirmed"
+}

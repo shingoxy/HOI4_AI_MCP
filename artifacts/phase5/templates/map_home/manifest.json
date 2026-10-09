@@ -1,0 +1,202 @@
+{
+  "status": "LIVE_NAVIGATION_CALIBRATED",
+  "capture_profile": "GER_2560x1600_DPI120_PHYSICAL",
+  "scope": "Germany1936 capital only; state64; observed home camera range only",
+  "threshold": 0.9,
+  "anchor_boxes": {
+    "amsterdam": [
+      300,
+      825,
+      497,
+      861
+    ],
+    "copenhagen": [
+      1245,
+      259,
+      1333,
+      335
+    ],
+    "warsaw": [
+      2180,
+      856,
+      2332,
+      889
+    ]
+  },
+  "variants": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "state_point": [
+    1280,
+    800
+  ],
+  "navigation": {
+    "find_entry": [
+      2540,
+      1378
+    ],
+    "home_button": [
+      2488,
+      1334
+    ],
+    "close": "park pointer then Escape",
+    "wheel_point": [
+      1280,
+      800
+    ],
+    "wheel_delta": 120,
+    "wheel_events": 5
+  },
+  "samples": [
+    {
+      "source": "artifacts\\phase5\\stability-20261007\\investigation\\canonical-1-map.png",
+      "identity_proof": "artifacts\\phase5\\stability-20261007\\investigation\\canonical-1.json",
+      "anchors": {
+        "amsterdam": {
+          "box": [
+            358,
+            832,
+            449,
+            860
+          ],
+          "historical_template_score": 0.9180589914321899,
+          "identity_source": "actual Chinese city label, visually inspected; unchanged NCC .9 for new templates"
+        },
+        "copenhagen": {
+          "box": [
+            1249,
+            292,
+            1329,
+            315
+          ],
+          "historical_template_score": 0.9687404036521912,
+          "identity_source": "actual Chinese city label, visually inspected; unchanged NCC .9 for new templates"
+        },
+        "warsaw": {
+          "box": [
+            2227,
+            865,
+            2275,
+            888
+          ],
+          "historical_template_score": 0.8730705976486206,
+          "identity_source": "actual Chinese city label, visually inspected; unchanged NCC .9 for new templates"
+        }
+      }
+    },
+    {
+      "source": "artifacts\\phase5\\stability-20261007\\investigation\\canonical-2-map.png",
+      "identity_proof": "artifacts\\phase5\\stability-20261007\\investigation\\canonical-2.json",
+      "anchors": {
+        "amsterdam": {
+          "box": [
+            396,
+            826,
+            487,
+            854
+          ],
+          "historical_template_score": 0.9160962700843811,
+          "identity_source": "actual Chinese city label, visually inspected; unchanged NCC .9 for new templates"
+        },
+        "copenhagen": {
+          "box": [
+            1251,
+            306,
+            1331,
+            329
+          ],
+          "historical_template_score": 0.9521376490592957,
+          "identity_source": "actual Chinese city label, visually inspected; unchanged NCC .9 for new templates"
+        },
+        "warsaw": {
+          "box": [
+            2190,
+            858,
+            2238,
+            881
+          ],
+          "historical_template_score": 0.8460894823074341,
+          "identity_source": "actual Chinese city label, visually inspected; unchanged NCC .9 for new templates"
+        }
+      }
+    },
+    {
+      "source": "artifacts\\phase5\\stability-20261007\\investigation\\canonical-3-map.png",
+      "identity_proof": "artifacts\\phase5\\stability-20261007\\investigation\\canonical-3.json",
+      "anchors": {
+        "amsterdam": {
+          "box": [
+            301,
+            830,
+            392,
+            858
+          ],
+          "historical_template_score": 0.9222947359085083,
+          "identity_source": "actual Chinese city label, visually inspected; unchanged NCC .9 for new templates"
+        },
+        "copenhagen": {
+          "box": [
+            1246,
+            260,
+            1326,
+            283
+          ],
+          "historical_template_score": 0.9576162099838257,
+          "identity_source": "actual Chinese city label, visually inspected; unchanged NCC .9 for new templates"
+        },
+        "warsaw": {
+          "box": [
+            2283,
+            865,
+            2331,
+            888
+          ],
+          "historical_template_score": 0.9055666923522949,
+          "identity_source": "actual Chinese city label, visually inspected; unchanged NCC .9 for new templates"
+        }
+      }
+    },
+    {
+      "source": "artifacts\\phase5\\stability-20261007\\investigation\\canonical-4-map.png",
+      "identity_proof": "artifacts\\phase5\\stability-20261007\\investigation\\canonical-4.json",
+      "anchors": {
+        "amsterdam": {
+          "box": [
+            405,
+            826,
+            496,
+            854
+          ],
+          "historical_template_score": 0.9145389199256897,
+          "identity_source": "actual Chinese city label, visually inspected; unchanged NCC .9 for new templates"
+        },
+        "copenhagen": {
+          "box": [
+            1252,
+            311,
+            1332,
+            334
+          ],
+          "historical_template_score": 0.9503994584083557,
+          "identity_source": "actual Chinese city label, visually inspected; unchanged NCC .9 for new templates"
+        },
+        "warsaw": {
+          "box": [
+            2181,
+            857,
+            2229,
+            880
+          ],
+          "historical_template_score": 0.8465257883071899,
+          "identity_source": "actual Chinese city label, visually inspected; unchanged NCC .9 for new templates"
+        }
+      }
+    }
+  ],
+  "exact_pixel_recovery": false,
+  "requires_independent_state_identity": true,
+  "requires_same_anchor_pose_before_commit": true
+}

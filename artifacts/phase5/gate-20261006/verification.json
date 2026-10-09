@@ -1,0 +1,20 @@
+{
+  "pytest": {
+    "status": "passed",
+    "passed": 389,
+    "subtests_passed": 10,
+    "seconds": 32.55,
+    "source": "pytest-final-recheck.txt",
+    "first_run": "388 passed, 1 WinError 10053 loopback failure; retained in pytest-final.txt",
+    "precision_recheck": "tests/test_executor_transport.py: 2 passed; pytest-transport.txt"
+  },
+  "compileall": "passed",
+  "pip_check": "No broken requirements found",
+  "git_diff_check": "passed",
+  "template_manifest": "artifacts/phase5/templates/manifest.json",
+  "gate_summary": "gate-summary.json",
+  "document_links": "passed: 5 docs, no missing links",
+  "submission_count_check": "passed: 7 gate submissions + 1 necessary Army preparation; no resubmission",
+  "final_native_capture": "final/native-final-physical.png",
+  "final_native_capture_input_count": 0
+}

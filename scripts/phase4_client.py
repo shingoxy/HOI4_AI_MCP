@@ -28,7 +28,7 @@ async def run(args):
         if isinstance(value,dict): return {key:resolve(item,snapshot) for key,item in value.items()}
         return value
     transport = StdioServerParameters(command=sys.executable, args=[str(root/"scripts/run_mcp.py"),
-        "--gui-window", str(args.window), "--military"])
+        "--gui-window", str(args.window), "--backend", "computer-use", "--military"])
     async with Client(transport, read_timeout_seconds=180) as client:
         evidence["tool_names"] = [tool.name for tool in (await client.list_tools()).tools]
         deadline = time.monotonic()+120
